@@ -16,7 +16,7 @@ icon: "📋"
 > 💡 **New to the process? Here's the 5-step version.** Each step maps to a phase below.
 
 1. **Validate the problem (Learn)** — Talk to 3+ customers. Find evidence. Check with your SVP of Product.
-2. **Build the business case (Decide)** — Write a RFC. Score with RICE. Get RFC approved.
+2. **Build the business case (Decide)** — Write an RFC. Score with RICE. Get RFC approved.
 3. **Shape the solution (Shape)** — Approved RFC lives. Align Product, Engineering, Design & GTM on scope, success/failure modes, and guardrails.
 4. **Ship the feature (Build → Launch)** — Build behind a flag. Preview with trusted customers. Launch to everyone.
 5. **Measure and learn (Sell)** — Track adoption. Review at 2 weeks, 30 days, 60-90 days. Decide next steps.
@@ -485,7 +485,7 @@ Gate requirements scale with launch tier — T4 doesn't need SVP sign-off. See t
 ## Related
 
 - [RFC guide](product-specs.md) — How RFCs are written and approved
-- [Discovery](discovery.md) — How to validate problems before writing a RFC
+- [Discovery](discovery.md) — How to validate problems before writing an RFC
 - [Handling Product Feedback](customer-feedback.md) — Processing and routing customer feedback
 - [Decision Framework](decision-framework.md) — Signal → Standard → Speed
 - [Product Playbook](../product-playbook.md) — The 6-phase operating model

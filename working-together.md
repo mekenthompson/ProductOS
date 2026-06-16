@@ -123,7 +123,7 @@ RFCs aren't exclusive to PMs either. If an engineer or a Design Engineer identif
 
 ## The RFC
 
-One document, not a separate product spec and tech spec. One ship-coupled RFC that captures the problem, the solution, and how we'll build and measure it.
+One document, not a separate PRD and tech spec. One ship-coupled RFC that captures the problem, the solution, and how we'll build and measure it.
 
 | Section | Led by |
 |---------|--------|

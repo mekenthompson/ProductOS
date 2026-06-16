@@ -1,20 +1,20 @@
 ---
 title: Discovery
-description: How to learn what to build before writing a RFC
+description: How to learn what to build before writing an RFC
 last_reviewed: 2026-05-12
 icon: "🔍"
 ---
 
 # Discovery
 
-Discovery is how you replace assumptions with evidence. Do it before you write a RFC.
+Discovery is how you replace assumptions with evidence. Do it before you write an RFC.
 
 ---
 
 ## When to Do Discovery
 
 **Do discovery when:**
-- You're writing a RFC and need evidence (3+ customer conversations minimum)
+- You're writing an RFC and need evidence (3+ customer conversations minimum)
 - Customer feedback is contradictory ("Some want X, others want Y" → understand the job)
 - You're guessing ("I think users would..." → stop thinking, go ask)
 - Data shows a problem but you don't know why (drop-off, low adoption, support tickets spiking)

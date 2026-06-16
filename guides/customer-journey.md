@@ -9,7 +9,7 @@ icon: "🗺️"
 
 Organise product strategy around how customers actually experience the product — not around your org chart. The six phases below are a generic framework; **rename, split, or collapse them to fit your product**. The shape is what matters: a customer goes from "never heard of you" to "tells other people about you," and your strategy should know where each phase's friction lives.
 
-**How this is used:** Strategic levers in the RFC map to journey phases — Acquisition ≈ Phases 1–2, Retention ≈ Phases 3–4, Expansion ≈ Phase 5. See [RFC guide — Strategic Alignment](product-specs.md#strategic-alignment) for details.
+**How this is used:** Strategic levers in the RFC map to journey phases — Acquisition ≈ Phases 1–2, Retention ≈ Phases 3–4, Expansion ≈ Phase 5. See [RFC guide — Strategic Alignment](product-specs.md) for details.
 
 ![Customer Journey](images/customer-journey.png)
 
