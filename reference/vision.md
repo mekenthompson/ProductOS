@@ -1,16 +1,15 @@
 ---
 title: ProductOS vision
-status: STRAWMAN — you own this anchor; edit freely, I drafted it only to react to
+status: ratified 2026-06-16 (human-owned anchor — edit any time, agents never rewrite it)
 audience: anyone deciding whether a feature, skill, or doc belongs in ProductOS
 ---
 
 # ProductOS vision
 
-> This is a **strawman**. The vision is the one anchor the method says is
-> human-owned: agents consume it, they never author it. I drafted it so you
-> have something to react to instead of a blank page. Rewrite, cut, or keep.
-> Once you ratify it, I cascade Principles, Invariants, and the Product Spec
-> from it.
+> The human-owned anchor. Agents consume it; they never author or silently
+> rewrite it. Principles, Invariants, and the Product Spec are derived from
+> it ([`principles.md`](principles.md), [`invariants.md`](invariants.md),
+> [`product-spec.md`](product-spec.md)).
 
 ## Headline
 
@@ -54,13 +53,8 @@ job identified to a ratified, UAT-verifiable Job Spec*.)
 - We do not ship a model runtime, an analytics product, or a generic agent
   framework.
 
-## Invariants (candidates — graduate to `invariants.md` on ratification)
+## Invariants
 
-- **Anchors are human-owned.** Agents consume the vision, principles, and
-  invariants; they never author or silently rewrite them.
-- **The reviewer is always a separate process.** No agent grades its own
-  work.
-- **Outcome UAT is binding.** "Done" means the user's job is proven on the
-  real path, not that unit tests pass.
-- **The job outlives the build.** When the implementation changes, narrate
-  the retired approach; never silently rewrite the job.
+The lines we won't cross by construction (anchors human-owned, reviewer a
+separate process, outcome UAT binding, the job outlives the build) live in
+[`invariants.md`](invariants.md).

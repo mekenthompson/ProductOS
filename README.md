@@ -1,21 +1,29 @@
 # ProductOS
 
-Operating system for building product the way it should be built — anchored on
-**user outcomes**, not features or bugs. The thought-leadership series (spine:
-**KEN-35**) turns the day-to-day practice into reusable skills and writeups.
+The executable operating system a product leader runs their org on: the
+method that keeps work anchored to the customer's job, plus the skills that
+automate the PM work of running it. The canonical, private home of the
+method (the executable evolution of the product-playbook); the public "lite"
+kit and the thought-leadership series (spine: **KEN-35**) are later exports.
 
-> Anchor project: **KEN-56** (ProductOS).
+> Anchor project: **KEN-56** (ProductOS). Augment the judgment, automate the
+> delivery. See [`PLAN.md`](PLAN.md) for the strategy and roadmap.
 
-## Principles in play
+## Design contract
 
-- **User-failure-as-first-class.** Every failure is one of four kinds — *hard*
-  (visible), *soft* (degraded), *silent* (metrics look fine), *adoption* (user
-  quietly stops trusting it). Silent and adoption failures are the ones that
-  kill products, because nothing red lights up.
-- **Solve from the outcome, not the point bug.** The bug is a mechanism; the
-  failure is a broken job promise. Fix the promise.
-- **The fuzz corpus is the arbiter.** A change is outcome-true only if the
-  UAT-for-the-outcome passes across the corpus, not just the happy path.
+ProductOS is defined by its own method. The anchors live in
+[`reference/`](reference/):
+
+- [`reference/vision.md`](reference/vision.md) — the why (human-owned).
+- [`reference/principles.md`](reference/principles.md) — the built-well
+  standards.
+- [`reference/invariants.md`](reference/invariants.md) — the lines we won't
+  cross.
+- [`reference/product-spec.md`](reference/product-spec.md) — the outcomes,
+  how it functions, and the job/skill index.
+
+Each PM job ProductOS automates becomes a Job Spec ([template](templates/job-spec.md))
+delivered by a skill.
 
 ## Contents
 
