@@ -9,7 +9,7 @@ icon: "📖"
 
 One document. Not two.
 
-> 🧭 **An RFC is not a named tier of its own** — it's the ship-coupled, per-initiative delivery layer that sits *beneath* the anchors ([Vision](../product-vision.md), [Principles](product-principles.md), [Invariants](../reference/invariants.md)), the product-level **Product Spec** (which owns the job list), and the **[Job Specs](../templates/job-spec.md)**. It's your existing RFC/PR process for one piece of work; this guide is a reference *shape* for it, not a new gate. Each RFC references the [Job Spec](../templates/job-spec.md) it serves.
+> 🧭 **An RFC is not a named tier of its own** — it's the ship-coupled, per-initiative delivery layer that sits *beneath* the anchors ([Vision](../product-vision.md), [Principles](product-principles.md), [Invariants](invariants.md)), the product-level **Product Spec** (which owns the job list), and the **[Job Specs](../templates/job-spec.md)**. It's your existing RFC/PR process for one piece of work; this guide is a reference *shape* for it, not a new gate. Each RFC references the [Job Spec](../templates/job-spec.md) it serves.
 
 An **RFC** does the work that used to be split between a PRD ("should we build this?") and a separate delivery spec ("how do we build it?"). The shift matters: by combining them and framing the document around the **user's job to be done**, the RFC becomes useful at every phase — approval, design, build, launch, and post-ship review — and it stays useful for both humans and AI agents.
 
@@ -175,7 +175,7 @@ Then name your **pivot triggers** and **stop triggers**. Specific. "60d adoption
 Four buckets:
 - **Quality / principle** — your [Product Principles](product-principles.md) applied as engineering standards.
 - **Performance / reliability** — latency budgets, error budgets, API contracts that can't break.
-- **Trust / safety** — privacy, security, reversibility. Anything the initiative must not cross by construction belongs to a named [invariant](../reference/invariants.md), not just a guardrail.
+- **Trust / safety** — privacy, security, reversibility. Anything the initiative must not cross by construction belongs to a named [invariant](invariants.md), not just a guardrail.
 - **Out of scope** — explicit non-goals, even when asked.
 
 Guardrails are the part of the RFC that says *no* to creativity in specific places. The rest of the RFC invites it.

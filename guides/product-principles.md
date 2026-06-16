@@ -9,7 +9,7 @@ icon: "📖"
 
 Product principles are the engineering and design standards that turn the [product vision](../product-vision.md) into day-to-day quality gates. They are applied in every PR, every design review, every release. They are the "Standard" in [Signal → Standard → Speed](decision-framework.md).
 
-> 🧭 Principles are the **second of three anchors** — **[Vision](../product-vision.md)** (why), **Principles** (built well), and **[Invariants](../reference/invariants.md)** (lines we won't cross by construction). Together they fuse into the [verdict rule](agentic-delivery.md).
+> 🧭 Principles are the **second of three anchors** — **[Vision](../product-vision.md)** (why), **Principles** (built well), and **[Invariants](invariants.md)** (lines we won't cross by construction). Together they fuse into the [verdict rule](agentic-delivery.md).
 
 This guide explains the purpose of principles, what a good set looks like, how to write yours, and how to use them as a working tool — not wall art.
 
@@ -183,6 +183,6 @@ If you can't answer all three, you're not done. Redesign, don't ship and patch l
 ## Related
 
 - [Product Vision](../product-vision.md) — Principles are derived from the vision (the first anchor).
-- [Invariants](../reference/invariants.md) — The third anchor; the lines you won't cross by construction.
+- [Invariants](invariants.md) — The third anchor; the lines you won't cross by construction.
 - [Decision Framework](decision-framework.md) — How "Standard" uses the principles to filter work.
 - [RFC Guide](product-specs.md) — How to apply principles when writing a ship-coupled RFC.

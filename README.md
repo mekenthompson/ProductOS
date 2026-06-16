@@ -1,85 +1,71 @@
 # ProductOS
 
-The executable operating system a product leader runs their org on: the
-method that keeps work anchored to the customer's job, plus the skills that
-automate the PM work of running it. The canonical, private home of the
-method (the executable evolution of the product-playbook); the public "lite"
-kit and the thought-leadership series (spine: **KEN-35**) are later exports.
+The evolution of a product playbook into an operating system. It's still a
+playbook — how to run product, anchored on the customer's job and its
+outcome — but it also carries the **automation and agent-executable
+guidance** (skills, templates, the operating contract) that make it *run*,
+not just advise. That's the difference between PM guidance and an OS.
 
-> Anchor project: **KEN-56** (ProductOS). Augment the judgment, automate the
-> delivery. See [`PLAN.md`](PLAN.md) for the strategy and roadmap.
+ProductOS is the method, not an instance of itself. The **working example in
+action is [switchroom](https://github.com/mekenthompson/switchroom)** — when
+a guide here needs a worked example, it points there.
 
-## Design contract
+> Augment the judgment, automate the delivery. Canonical and private for now;
+> a public "lite" kit is a later export. See [`PLAN.md`](PLAN.md).
 
-ProductOS is defined by its own method. The anchors live in
-[`reference/`](reference/):
+## The hierarchy
 
-- [`reference/vision.md`](reference/vision.md) — the why (human-owned).
-- [`reference/principles.md`](reference/principles.md) — the built-well
-  standards.
-- [`reference/invariants.md`](reference/invariants.md) — the lines we won't
-  cross.
-- [`reference/product-spec.md`](reference/product-spec.md) — the outcomes,
-  how it functions, and the job/skill index.
+```
+Vision / Principles / Invariants   (three anchors)
+        → Product Spec             (per product, owns the job list)
+        → Job Specs                (per job, durable, UAT-verifiable)
+        → RFCs / PRs               (ship-coupled delivery, not a named tier)
+```
 
-Each PM job ProductOS automates becomes a Job Spec ([template](templates/job-spec.md))
-delivered by a skill.
+Verdict rule (4 clauses): a change ships only when it advances a vision
+outcome ∧ satisfies its Job Spec ∧ passes every principle ∧ crosses no
+invariant.
 
-## The method (migrated from the product-playbook, now ProductOS-native)
-
-The reusable method — vocabulary reconciled to the hierarchy below
-(Vision / Principles / Invariants → **Product Spec** → **Job Specs** →
-**RFCs**; the old "JTBD doc" is now the **Job Spec**, the old ship-coupled
-"Product Spec" is now an **RFC**).
+## The method
 
 - [`index.md`](index.md) — the reading guide; start here.
-- [`product-playbook.md`](product-playbook.md) — the six-phase operating loop
+- [`product-playbook.md`](product-playbook.md) — the six-phase loop
   (Learn → Decide → Shape → Build → Launch → Sell).
+- The three anchor how-to guides: [`product-vision.md`](product-vision.md),
+  [`guides/product-principles.md`](guides/product-principles.md),
+  [`guides/invariants.md`](guides/invariants.md).
 - [`guides/`](guides/) — how to write each artifact:
-  [agentic-delivery](guides/agentic-delivery.md) (the verdict rule + the four
-  parts), [jtbd-guide](guides/jtbd-guide.md), [product-principles](guides/product-principles.md),
-  [decision-framework](guides/decision-framework.md), [product-specs](guides/product-specs.md)
-  (the RFC guide), personas, rice, and more.
-- [`templates/`](templates/) — blank shapes: [`job-spec.md`](templates/job-spec.md)
-  (canonical), [`rfc.md`](templates/rfc.md), post-launch-review, research,
-  customer-call, ritual-review.
-- [`product-vision.md`](product-vision.md) / [`pm-handbook.md`](pm-handbook.md)
-  / [`working-together.md`](working-together.md) — vision-writing guide, the
-  PM role, and how the triad collaborates.
-- [`AGENTS.md`](AGENTS.md) — the terse, agent-executable operating contract
-  (the verdict rule as a gate). Read this to *execute* the method.
+  [agentic-delivery](guides/agentic-delivery.md) (the verdict rule + four
+  parts), [jtbd-guide](guides/jtbd-guide.md),
+  [decision-framework](guides/decision-framework.md),
+  [product-specs](guides/product-specs.md) (the RFC guide), personas, rice,
+  and more.
+- [`templates/`](templates/) — blank shapes:
+  [`job-spec.md`](templates/job-spec.md) (canonical), [`rfc.md`](templates/rfc.md),
+  post-launch-review, research, customer-call, ritual-review.
+- [`AGENTS.md`](AGENTS.md) — the terse, agent-executable operating contract.
+  Read this to *execute* the method.
 
-## Contents
+## Example skills (how to run product using ProductOS)
 
-### Skills (invocable)
-- [`skills/create-job-spec`](skills/create-job-spec/SKILL.md) — interview the
-  user to shared alignment on a job, then write a durable Job Spec
-  (**KEN-57**) against the template and anchors. Interview one question at a
-  time; do not write until everything is agreed. The entry point to the
-  method.
-- [`skills/uat-ux-debug`](skills/uat-ux-debug/SKILL.md) — debug a UAT/UX failure
-  from the user outcome. The user-outcome counterpart to engineering debugging.
-  Loop: failure → job-spec check (**KEN-57**) → UAT coverage
-  (**KEN-60** / **KEN-29** probabilistic UAT) → durable UX fix.
+- [`skills/create-job-spec`](skills/create-job-spec/SKILL.md) — interview to
+  shared alignment on a job, then write a durable Job Spec. The entry point.
+- [`skills/uat-ux-debug`](skills/uat-ux-debug/SKILL.md) — debug a UX failure
+  from the user outcome, not the point bug.
 
-### Templates
-- [`templates/job-spec.md`](templates/job-spec.md) — the ratified Job Spec
-  shape: dual-audience (human + agent), one screen, `serves:`/`invariants:`
-  up-anchor, merged good/bad, UAT wired to real scenarios + fuzz corpus,
-  verdict. See [`PLAN.md`](PLAN.md) for the spec hierarchy it sits in.
+## The worked example in action
 
-### Writeups (the series)
-- [`writeups/uat-ux-debug-klanker.md`](writeups/uat-ux-debug-klanker.md) —
-  "A UX failure, debugged from the outcome." The first worked example: an admin
-  agent's config-edit-from-chat collapsed into hand-fed shell commands. Used as
-  the narrative spine for the `uat-ux-debug` skill.
+**[switchroom](https://github.com/mekenthompson/switchroom/tree/docs/job-spec-golden/reference)**
+is the canonical instantiation: real anchors, a product spec, and 19 Job
+Specs that show the method filled in and proven against a live UAT harness.
+When a guide here needs a worked example, it points there.
 
-## Issue anchors
+## Writeups (the series)
 
-| Anchor | Meaning |
-| --- | --- |
-| KEN-56 | ProductOS (project) |
-| KEN-35 | Product OS thought-leadership series (spine) |
-| KEN-57 | Job spec — the stated job/UX outcome a change must serve |
-| KEN-29 | Probabilistic UAT — fuzz the failure class so it can't silently recur |
-| KEN-60 | UAT coverage — a scenario per outcome |
+- [`writeups/uat-ux-debug-klanker.md`](writeups/uat-ux-debug-klanker.md) — a
+  UX failure, debugged from the outcome (a switchroom worked example).
+
+## Tracking
+
+KEN-56 (ProductOS) · KEN-35 (series) · KEN-57 (Job Spec) · KEN-29
+(probabilistic UAT) · KEN-60 (UAT coverage).

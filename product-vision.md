@@ -9,7 +9,7 @@ icon: "🎯"
 
 > The product vision is the single source of truth that every other artifact in this playbook ties back to. Strategy, the Product Spec, RICE scores, post-launch reviews — they all reference the vision either to justify a "yes" or explain a "not now." If the vision is vague, everything downstream gets vague too.
 
-> 🧭 The vision is the first of **three anchors** that hold for the whole product: **Vision** (why we build), **[Principles](guides/product-principles.md)** (what "built well" means), and **[Invariants](reference/invariants.md)** (the lines we won't cross by construction). The vision *names* the invariants that matter; the Invariants doc *owns* them. Beneath the anchors sit the **Product Spec** (one per product — outcomes, how the product functions, and the job list) and the **Job Specs** (one per job). See [Agentic Delivery](guides/agentic-delivery.md) for how the anchors fuse into the verdict rule.
+> 🧭 The vision is the first of **three anchors** that hold for the whole product: **Vision** (why we build), **[Principles](guides/product-principles.md)** (what "built well" means), and **[Invariants](guides/invariants.md)** (the lines we won't cross by construction). The vision *names* the invariants that matter; the Invariants doc *owns* them. Beneath the anchors sit the **Product Spec** (one per product — outcomes, how the product functions, and the job list) and the **Job Specs** (one per job). See [Agentic Delivery](guides/agentic-delivery.md) for how the anchors fuse into the verdict rule.
 
 This page explains how to write a product vision that's actually load-bearing for the rest of the playbook. It is intentionally a **guide**, not a vision statement — the actual vision belongs to your product and your company. Replace the example section at the end with yours.
 
@@ -33,7 +33,7 @@ If those three questions aren't answered crisply, the playbook can't help you pr
 |---|---|
 | [Decision Framework](guides/decision-framework.md) (Signal → Standard → Speed) | "Signal" tests whether an idea aligns with the vision. No alignment = no signal, regardless of how good the idea sounds. |
 | [Product Principles](guides/product-principles.md) | Principles are how the vision becomes engineering and design standards. They are the vision applied at the level of individual decisions. |
-| [Invariants](reference/invariants.md) | The third anchor. The vision *names* the lines you won't cross; the Invariants doc *owns* and enforces them. They are the kill-clause in the verdict rule. |
+| [Invariants](guides/invariants.md) | The third anchor. The vision *names* the lines you won't cross; the Invariants doc *owns* and enforces them. They are the kill-clause in the verdict rule. |
 | Product Spec | The product-level container (one per product) ties its outcomes and job list directly back to the vision and its headline metric. |
 | [RFC Template](templates/rfc.md) | A ship-coupled RFC's "Strategic Alignment" check confirms the initiative serves the vision and its headline metric. |
 | [RICE](guides/rice.md) | Reach and Impact are scored relative to the personas and metric the vision identifies. |
@@ -53,7 +53,7 @@ A strong product vision has four properties:
 
 2. **A measurable headline.** Pick one metric, not three. The metric should be the *thing that gets better when you are succeeding*, not a proxy. Examples: time-to-first-value, weekly active builders, recovery time, retention at 90 days. Whatever it is, every PM should be able to recite it.
 
-3. **Explicit scope — and explicit non-scope.** Saying what you *don't* do is harder and more useful than saying what you do. "We don't compete on storage cost" or "We don't ship a mobile app" forces alignment in a way "we do AI" never will. Some non-scope items are stronger than priorities: they are **invariants** — compliance, identity, or trust boundaries you won't cross *by construction*, however useful a feature seems. The vision *names* these; they graduate into the separate **[Invariants](reference/invariants.md)** anchor, which owns and enforces them. They become the kill-clause in the [verdict rule](guides/agentic-delivery.md).
+3. **Explicit scope — and explicit non-scope.** Saying what you *don't* do is harder and more useful than saying what you do. "We don't compete on storage cost" or "We don't ship a mobile app" forces alignment in a way "we do AI" never will. Some non-scope items are stronger than priorities: they are **invariants** — compliance, identity, or trust boundaries you won't cross *by construction*, however useful a feature seems. The vision *names* these; they graduate into the separate **[Invariants](guides/invariants.md)** anchor, which owns and enforces them. They become the kill-clause in the [verdict rule](guides/agentic-delivery.md).
 
 4. **Personas with motivations, not job titles.** "Operations managers" is a category. "Operations managers accountable for throughput across a multi-team org, judged monthly on error rate" is a persona. The vision should make it obvious which jobs-to-be-done you serve — each becomes a [Job Spec](templates/job-spec.md). See [JTBD Guide](guides/jtbd-guide.md).
 
@@ -68,7 +68,7 @@ The vision is ready to anchor the playbook when **every one of these is true**:
 - [ ] **One-sentence headline** — Under 40 words. Names the territory, the change, and who benefits.
 - [ ] **Headline metric named** — A single number that goes up (or down) when the vision is being realised. Defined precisely enough that an engineer could instrument it.
 - [ ] **Personas listed** — 2–4 personas, each with a motivation and a one-line "vision lens" describing how they experience the metric.
-- [ ] **Out of scope listed** — At least three things you are *not* doing. Specific, not aspirational ("we don't do X" not "we focus on Y"). The strongest of these — the lines you won't cross *by construction* — graduate to named [invariants](reference/invariants.md).
+- [ ] **Out of scope listed** — At least three things you are *not* doing. Specific, not aspirational ("we don't do X" not "we focus on Y"). The strongest of these — the lines you won't cross *by construction* — graduate to named [invariants](guides/invariants.md).
 - [ ] **Industry-metric tie-in** — How does your headline metric connect to metrics the rest of the industry uses (DORA, SPACE, NPS, retention cohorts, etc.)? If it doesn't, you'll struggle to benchmark.
 - [ ] **Applied to a real decision** — Take an in-flight initiative and run it through Signal → Standard → Speed using only this vision. If the vision didn't disambiguate, it isn't done.
 - [ ] **PMs can recite it** — Without reading. If they can't, it isn't the operating document — it's wallpaper.
@@ -114,7 +114,7 @@ Pick three in-flight projects. For each, write one sentence on how the vision ju
 The vision lives at `product-vision.md` (this file). It is the only document in the playbook that is allowed to be opinionated about *what* you're building. Every other document is opinionated about *how* you build it.
 
 When the vision changes, update this file first, then propagate downstream in this order:
-1. `reference/invariants.md` (if the lines you won't cross changed — the vision names them, this anchor owns them)
+1. your invariants doc (if the lines you won't cross changed)
 2. `guides/personas.md` (if personas changed)
 3. `guides/product-principles.md` (if "what good looks like" changed)
 4. The product-level **Product Spec** (if outcomes or the job list changed) and any affected **[Job Specs](templates/job-spec.md)**
@@ -164,4 +164,4 @@ TTD is the inverse of MTTR for our category. As TTD drops, customer-side through
 - **[Decision Framework](guides/decision-framework.md)** — Signal → Standard → Speed; the operational check against the vision.
 - **[Three Personas](guides/personas.md)** — Canonical structure for the persona section above.
 - **[Product Principles](guides/product-principles.md)** — Turning the vision into engineering standards (the second anchor).
-- **[Invariants](reference/invariants.md)** — The lines you won't cross by construction (the third anchor); the vision names them, this doc owns them.
+- **[Invariants](guides/invariants.md)** — The lines you won't cross by construction (the third anchor); the vision names them, this doc owns them.
