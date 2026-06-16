@@ -20,10 +20,21 @@ Operating system for building product the way it should be built — anchored on
 ## Contents
 
 ### Skills (invocable)
+- [`skills/create-job-spec`](skills/create-job-spec/SKILL.md) — interview the
+  user to shared alignment on a job, then write a durable Job Spec
+  (**KEN-57**) against the template and anchors. Interview one question at a
+  time; do not write until everything is agreed. The entry point to the
+  method.
 - [`skills/uat-ux-debug`](skills/uat-ux-debug/SKILL.md) — debug a UAT/UX failure
   from the user outcome. The user-outcome counterpart to engineering debugging.
   Loop: failure → job-spec check (**KEN-57**) → UAT coverage
   (**KEN-60** / **KEN-29** probabilistic UAT) → durable UX fix.
+
+### Templates
+- [`templates/job-spec.md`](templates/job-spec.md) — the ratified Job Spec
+  shape: dual-audience (human + agent), one screen, `serves:`/`invariants:`
+  up-anchor, merged good/bad, UAT wired to real scenarios + fuzz corpus,
+  verdict. See [`PLAN.md`](PLAN.md) for the spec hierarchy it sits in.
 
 ### Writeups (the series)
 - [`writeups/uat-ux-debug-klanker.md`](writeups/uat-ux-debug-klanker.md) —

@@ -1,6 +1,7 @@
 # Plan: the spec hierarchy and the skills that run it
 
-Status: ratified with Ken 2026-06-16. Phase 1 in progress.
+Status: ratified with Ken 2026-06-16. Phases 1–2 complete (reviewer
+APPROVE); Phase 3 in progress (`create-job-spec` shipped).
 
 ## What we are building
 
@@ -106,7 +107,7 @@ gap is consistent and fixable:
 
 ## The phased plan
 
-### Phase 1 — Golden Job Spec + template (in progress)
+### Phase 1 — Golden Job Spec + template (done)
 
 - `productos/templates/job-spec.md` — the ratified template. **Done.**
 - `switchroom/reference/know-what-my-agent-is-doing.md` — rewritten as the
@@ -116,7 +117,7 @@ gap is consistent and fixable:
   from `vision.md`, so the golden job has something to anchor to.
 - This plan, with the critique above.
 
-### Phase 2 — Instantiate the switchroom hierarchy
+### Phase 2 — Instantiate the switchroom hierarchy (done)
 
 - Split `vision.md` into Vision (the why) + the Product Spec (outcomes + how
   it functions).
@@ -125,12 +126,15 @@ gap is consistent and fixable:
 - Refactor the remaining `reference/` job specs to the template.
 - Update `reference/README.md` and the CLAUDE.md design-contract section.
 
-### Phase 3 — Skills (the method as tooling)
+### Phase 3 — Skills (the method as tooling, in progress)
 
-- `create-job-spec` — interviews the user until shared alignment on a job,
-  then writes the Job Spec.
-- `design` / `review` / `debug` / `uat` skills that anchor to a Job Spec.
-  `uat-ux-debug` already exists and slots in.
+- `create-job-spec` (done) — interviews the user one question at a time
+  until shared alignment, then writes the Job Spec against the template and
+  anchors. Codifies the interview pattern used to ratify this plan.
+- `review` / `uat` against-spec skills — judge a change against its job
+  spec (good/bad + verdict rule + invariants) and run the outcome UAT.
+  Remaining.
+- `uat-ux-debug` already exists and slots in as the debug skill.
 
 ### Phase 4 — Reconcile the playbook + decide the repo boundary
 
