@@ -1,0 +1,178 @@
+---
+title: Agentic Delivery
+description: How to run delivery with an agentic workforce — the four working parts (anchors, JTBD docs, design loops, outcome UAT) and who owns what when agents do much of the building
+last_reviewed: 2026-06-13
+icon: "🤖"
+---
+
+# Agentic Delivery
+
+The six-phase [Product Loop](../product-playbook.md) says how work *enters* and how you *learn* from what shipped. This guide covers the middle when **an agentic workforce does much of the building**: how the same handful of artifacts keep humans in control of the *outcome* while agents move fast on the *implementation*.
+
+It is written for the whole triad — **product, design, and engineering**. Engineering is not a footnote here: when agents write the code, the scarce thing is no longer engineering hours, it's **judgement and oversight**, and engineers are the ones who set the technical bar the agents build to.
+
+> 📖 Read this alongside [Product Principles](product-principles.md) and [Product Vision](../product-vision.md) (the anchors), [JTBD Guide](jtbd-guide.md) (the outcome docs), and [Working Together](../working-together.md) (who owns what). The terse, agent-executable version of everything below lives in **[AGENTS.md](../../AGENTS.md)** under "Agentic Delivery — operating contract."
+
+---
+
+## The core idea
+
+**Good ideas are abundant; now building is cheap too.** An agent can draft a spec, write the code, and run the tests in the time it used to take to schedule a kickoff. That changes what's scarce. It is no longer *capacity*. It is *knowing whether the thing is right* — and catching it when it isn't.
+
+So the method keeps four artifacts as the constants that **don't move while the implementation churns underneath them**. Agents build fast *inside* these gates; humans own the gates.
+
+1. **Anchors** — the durable *why* and *good*. (Vision + principles → a verdict.)
+2. **JTBD docs** — the stable outcome contract. (The job, decoupled from the build.)
+3. **Design loops** — research the unknowns, never assume; review adversarially.
+4. **Outcome UAT** — validate the job end-to-end, independent of unit tests.
+
+> 💡 "Four" describes *this method's* anatomy — not a law for your product. A product picks its *own* small number of vision outcomes and principles (see [Product Vision](../product-vision.md) and [Product Principles](product-principles.md)). Keep those sets small; keep these four parts.
+
+---
+
+## 1. Anchors — the durable "why" and "good"
+
+Two documents, judged together, produce a verdict on any change:
+
+- **The vision** answers *should we build this?* — a small, fixed set of named outcomes every change must serve, plus an explicit "what we are *not*." See [Product Vision](../product-vision.md).
+- **The principles** answer *did we build it well?* — a short checklist of named, memorable standards, each reduced to a few yes/no check questions, applied at **every** authoring, review, and release. A "no" on any one is a **redesign, not a follow-up**. See [Product Principles](product-principles.md).
+
+**Engineering belongs in the anchors.** Principles are *product/UX standards and engineering standards*. Where the stakes warrant it, the non-functional bar — security, reliability, scalability, availability, performance, maintainability — is part of "did we build it well" and rides in the verdict like any other principle. An agent that ships a feature which works but leaks data, falls over under load, or can't be operated has not passed.
+
+---
+
+## 2. JTBD docs — the stable outcome contract
+
+There are two different things that both get called "JTBD," and the difference is load-bearing here:
+
+- A **job story** is a *sentence* — `When [situation], [persona] wants to [motivation], so they can [outcome]`. It lives inside a spec and is the framing tool taught in the [JTBD Guide](jtbd-guide.md).
+- A **JTBD doc** is a *standing document* — one per job — that captures the outcome (`job` / `outcome` / `stakes`), the signs it's working, the anti-patterns, and the acceptance scenarios. It is **durable**: it outlives any single spec, feature, or implementation. Use the [JTBD doc template](../templates/jtbd-doc.md).
+
+The whole point of the standing doc is that **the feature and the tech are free to evolve underneath while the job stays still.** When the implementation changes, you do not silently rewrite the job — you **narrate the retired approach** ("we used to do X; we changed it because Y; the job underneath is unchanged") and keep the `job` / `outcome` / `stakes` stable. That narration is what lets the next agent (or person) trust the doc.
+
+**Engineering reads the JTBD doc as the brief** — the *what* and *why* — and owns the *how* (architecture, data model, non-functional approach). Where a job has real engineering stakes, the doc carries an optional **engineering acceptance criteria** section: the non-functional targets the build must hit, beside the customer-facing signs.
+
+---
+
+## 3. Design loops — research, never assume; review adversarially
+
+Work starts from a JTBD doc, not a blank page. The loop:
+
+1. **Name the unknowns and research them.** Enumerate what you don't know — technical and product — and *find out*, rather than guessing and hoping. An assumption that turns out wrong is the cheapest bug to prevent and the most expensive to discover in production. Engineering unknowns (will it scale? is this safe? what fails first?) get spikes, not optimism.
+2. **Build it, with tests that pin the behaviour.** A change lands with a test that fails before and passes after. Pick the test shape to the work: example tests for ordinary modules, property/fuzz tests for state machines and pure functions.
+3. **Review adversarially, with a fresh process.** This is the part most teams skip and the part that matters most when an agent wrote the code.
+
+> ⚠️ **The author cannot grade its own work — it rubber-stamps.** The reviewer must be a **separate process** (a different agent with fresh context, or a human) that did not write the change. It returns an explicit verdict — **APPROVE / REQUEST_CHANGES / BLOCK** — and cites a specific location for every blocker. You **iterate until APPROVE**. And you **do not let an automated merge fire before the reviewer has approved** — a green test suite is necessary, not sufficient.
+
+**Engineering leads the loop for implementation.** Engineers *direct and oversee* the agentic workforce: they frame the task, set the technical bar, and own the fresh-process review as quality control — especially for agent-written code, where plausible-but-wrong is the failure mode to hunt. The agents do the typing; the engineering judgement stays human.
+
+---
+
+## 4. Outcome UAT — validate the job, not the diff
+
+Unit and feature tests prove the code does what the author *intended*. They do not prove the **user's job got done**. That is a separate, binding, pre-ship gate:
+
+- **Named by job × surface**, not by implementation — so the scenario survives any number of internal rewrites. The scenario *is* the constant you keep re-proving against as models, features, and code change underneath.
+- **Exercises the real end-to-end path** and asserts the *user-observable outcome* (and timing), not internal state.
+- **Proven on every surface the job can reach.** A single-surface proof hides surface-specific bugs.
+
+> The release isn't done when the unit tests are green. It's done when the **outcome** is proven. Tagging, publishing, and rolling out are necessary but not sufficient.
+
+Three distinct gates, and **none implies the others**:
+
+| Gate | Question | Owner |
+|---|---|---|
+| Unit / feature tests | Does the code do what the author intended? | Whoever wrote it (agent or human) |
+| **Outcome UAT** (customer-ready) | Did the user's job actually get done, well, on the real path? | Product defines; the delivery agent runs it |
+| **Production-readiness** (engineering acceptance) | Is it secure, reliable, scalable, available, operable — to the level the stakes demand? | Engineering signs off |
+
+The loop is **build → validate the outcome → improve** — not "ship when unit tests pass."
+
+---
+
+## The verdict rule
+
+The anchors, the JTBD doc, and the gates fuse into one decision. A change ships only when **all** of these are true:
+
+1. It **advances a named anchor outcome** (it's in scope at all).
+2. It **satisfies its JTBD doc** (it does the user's job) — proven by the outcome UAT.
+3. It **passes every principle check** — product *and* engineering standards. (A "no" is a redesign.)
+4. It **violates no non-negotiable constraint** — the lines you won't cross by construction (see [Product Vision](../product-vision.md) on non-scope).
+
+Anything else is out of scope, **however clever it seems.** The four are orthogonal: the vision says *is it ours to build*, the JTBD says *did it do the job*, the principles say *did we build it well*, the non-negotiables say *are we even allowed*. All must pass independently.
+
+---
+
+## How each discipline uses this
+
+- **Product** owns the anchors' *why* and the JTBD docs: which outcomes the vision serves, which jobs matter, what "the job is done" means. Product defines the outcome UAT and decides *customer-ready*.
+- **Design** owns the experience inside the solution space and is in the room when the job is framed — not brought in to polish afterward. Design's consistency concerns are principle checks, not opinions.
+- **Engineering** owns the *how*: architecture, the non-functional bar, and the technical unknowns the loop must research. Engineering runs the fresh-process review, **directs and oversees the agentic workforce**, and decides *production-ready*. Engineering's standards are anchors too.
+
+Nobody dictates another's domain. Product doesn't pick the data store; engineering doesn't wave away a real customer problem as "too complex" without proposing an alternative. See [Working Together](../working-together.md).
+
+---
+
+## When agents do the delivery — who owns what
+
+The shift from a human team to an agent-assisted one does **not** move ownership of the anchors. It moves ownership of *execution*.
+
+- **Agents own delivery execution within the gates** — drafting JTBD docs, implementing, running the design loop, running the outcome UAT.
+- **Humans own the gates and the judgement** — the vision, the principles, the non-negotiables, the ratification of the job statement, and the engineering oversight. Agents *consume* the anchors; they never author them.
+- **The adversarial reviewer is always a separate process.** An agent reviewing its own change is not a review.
+
+This *extends* the playbook's existing "augmentation, not automation" stance rather than replacing it (see [PM Handbook → Using AI](../pm-handbook.md)): **augment the judgement, automate the delivery, and keep the four parts as the safety rail.** The full ownership table — including engineering's rows — is in [Working Together](../working-together.md#roles-when-agents-do-much-of-the-delivery).
+
+---
+
+## Stakes scale with the work
+
+The same four parts run a weekend hobby project and a regulated, always-on production system. What changes is **depth**, not shape.
+
+- At the **low-stakes** end — a personal, single-user tool built almost entirely by agents — oversight is light, the non-functional bar is low, and the outcome UAT can be a handful of real round-trips. The method still pays off, because the anchors and the JTBD docs are what keep a one-person, agent-built project coherent instead of a pile of clever diffs.
+- At the **high-stakes** end — many users, real money, uptime and security obligations — human engineering expertise and oversight become the gate, the non-functional bar rises sharply, and production-readiness gets real teeth (load tests, security review, failure drills).
+
+Don't run a payments system the way you'd run a weekend project. But run both with the same four parts — dialling oversight and the engineering bar to the stakes. The method is the constant; the rigour scales.
+
+---
+
+## The self-teaching check (dogfood this guide)
+
+This guide has done its job only if someone — or some agent — can *execute* the method from it alone. Use this as a repeatable check whenever the guide changes:
+
+> Give a fresh agent **only this playbook** (no other context) and a sample job, e.g. *"a new user gets their first useful result without reading documentation."* Ask it to run one full design loop. **Do not tell it there are "four parts."** It passes if it, using only the playbook's own templates and triggers:
+> 1. names which anchor outcome the job serves and applies the verdict rule as an all-must-pass gate (including the non-negotiable clause);
+> 2. writes a JTBD doc from the [template](../templates/jtbd-doc.md), with a non-empty acceptance-scenario section (and engineering acceptance criteria where the stakes warrant);
+> 3. describes the design loop and correctly identifies the reviewer as a *separate process that cannot grade its own work*, and how an engineer directs and oversees a delivery agent;
+> 4. writes an outcome UAT named by *job × surface, independent of unit tests*, and distinguishes it from the production-readiness gate.
+
+If the agent has to invent structure or reach outside the playbook, the guide failed its own **docs test** — fix the guide and re-run, don't paper over it. (This is the method applied to the method.)
+
+---
+
+## Glossary
+
+- **JTBD doc** — the canonical term for a standing, per-job outcome document. *(The older synonym "red doc" is retired — don't use it.)*
+- **Anchor** — the vision and principles, judged together to produce a verdict.
+- **Verdict rule** — the all-must-pass gate above (outcome ∧ JTBD ∧ principles ∧ no non-negotiable broken).
+- **Design loop** — research-the-unknowns → build-with-tests → fresh-process adversarial review → iterate to APPROVE.
+- **Fresh-process review** — review by a separate process that did not author the change; never the author.
+- **Outcome UAT** — a pre-ship gate that validates the user's job end-to-end on the real path, independent of unit tests.
+- **Production-readiness** — engineering's acceptance gate: secure, reliable, scalable, available, operable to the level the stakes demand.
+
+---
+
+## For agents
+
+The terse, executable version of this method — the verdict rule as a gate, the per-activity triggers, and the reviewer checklist — is in **[AGENTS.md](../../AGENTS.md)** under "Agentic Delivery — operating contract." Read *that* to execute the method; read *this* to understand it.
+
+---
+
+## Related
+
+- [Product Vision](../product-vision.md) — the anchor that says *should we build this*
+- [Product Principles](product-principles.md) — the anchor that says *did we build it well*
+- [JTBD Guide](jtbd-guide.md) — the job-story sentence; [JTBD doc template](../templates/jtbd-doc.md) — the standing outcome doc
+- [Working Together](../working-together.md) — who owns what, including when agents deliver
+- [Delivery Standards](delivery-standards.md) — where the outcome UAT and production-readiness gates sit in the lifecycle
+- [Product Specs](product-specs.md) — how a spec references a JTBD doc and gets an adversarial review

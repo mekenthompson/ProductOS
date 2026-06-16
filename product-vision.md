@@ -1,0 +1,160 @@
+---
+title: Product Vision
+description: How to write the product vision that anchors every decision in this playbook
+last_reviewed: 2026-05-12
+icon: "🎯"
+---
+
+# Product Vision
+
+> The product vision is the single source of truth that every other artifact in this playbook ties back to. Strategy, Product Specs, RICE scores, post-launch reviews — they all reference the vision either to justify a "yes" or explain a "not now." If the vision is vague, everything downstream gets vague too.
+
+This page explains how to write a product vision that's actually load-bearing for the rest of the playbook. It is intentionally a **guide**, not a vision statement — the actual vision belongs to your product and your company. Replace the example section at the end with yours.
+
+---
+
+## What this artifact is for
+
+The product vision answers three questions in one short document:
+
+1. **Where do we play?** — The territory we own and the territory we don't.
+2. **What do we measure?** — One headline metric that captures whether the vision is being realised. Every shipped feature should move this number or be challenged.
+3. **Who do we build for?** — The personas whose lives we're trying to change. See [Three Personas](guides/personas.md) for how to define yours.
+
+If those three questions aren't answered crisply, the playbook can't help you prioritise — every idea will sound reasonable, because nothing is being excluded.
+
+---
+
+## How it ties into the rest of the playbook
+
+| Playbook artifact | How it uses the vision |
+|---|---|
+| [Decision Framework](guides/decision-framework.md) (Signal → Standard → Speed) | "Signal" tests whether an idea aligns with the vision. No alignment = no signal, regardless of how good the idea sounds. |
+| [Product Principles](guides/product-principles.md) | Principles are how the vision becomes engineering and design standards. They are the vision applied at the level of individual decisions. |
+| [Product Spec Template](templates/product-spec.md) | The "Strategic Alignment" section is a direct check against the vision and its headline metric. |
+| [RICE](guides/rice.md) | Reach and Impact are scored relative to the personas and metric the vision identifies. |
+| [Post-Launch Review](templates/post-launch-review.md) | The headline metric from the vision is the long-arc number reviewed at 60–90 days. |
+| [Roadmap](product-playbook.md#phase-3-shape) | Three-band roadmap is organised around the vision's themes, not features. |
+| [Agentic Delivery](guides/agentic-delivery.md) | The vision's outcomes, the JTBD docs, and the principles fuse into the **verdict rule** — the all-must-pass gate every change clears. Non-negotiable constraints are its kill-clause. |
+
+If you change the vision, expect everything above to need re-anchoring. That's a feature, not a bug — vision changes are rare and consequential.
+
+---
+
+## What a good product vision looks like
+
+A strong product vision has four properties:
+
+1. **One sentence you can say out loud.** If the headline takes a paragraph, it isn't a vision — it's a strategy memo. The sentence should name the territory, the change you're making, and who benefits. Aim for under 40 words.
+
+2. **A measurable headline.** Pick one metric, not three. The metric should be the *thing that gets better when you are succeeding*, not a proxy. Examples: time-to-first-value, weekly active builders, recovery time, retention at 90 days. Whatever it is, every PM should be able to recite it.
+
+3. **Explicit scope — and explicit non-scope.** Saying what you *don't* do is harder and more useful than saying what you do. "We don't compete on storage cost" or "We don't ship a mobile app" forces alignment in a way "we do AI" never will. Some non-scope items are stronger than priorities: they are **non-negotiable constraints** — compliance, identity, or trust boundaries you won't cross *by construction*, however useful a feature seems. Mark those explicitly; they become the kill-clause in the [verdict rule](guides/agentic-delivery.md).
+
+4. **Personas with motivations, not job titles.** "Operations managers" is a category. "Operations managers accountable for throughput across a multi-team org, judged monthly on error rate" is a persona. The vision should make it obvious which jobs-to-be-done you serve. See [JTBD Guide](guides/jtbd-guide.md).
+
+A weak product vision usually fails on one of those four — most commonly #3 (no boundaries) or #2 (no headline metric).
+
+---
+
+## When is the vision "done"?
+
+The vision is ready to anchor the playbook when **every one of these is true**:
+
+- [ ] **One-sentence headline** — Under 40 words. Names the territory, the change, and who benefits.
+- [ ] **Headline metric named** — A single number that goes up (or down) when the vision is being realised. Defined precisely enough that an engineer could instrument it.
+- [ ] **Personas listed** — 2–4 personas, each with a motivation and a one-line "vision lens" describing how they experience the metric.
+- [ ] **Out of scope listed** — At least three things you are *not* doing. Specific, not aspirational ("we don't do X" not "we focus on Y").
+- [ ] **Industry-metric tie-in** — How does your headline metric connect to metrics the rest of the industry uses (DORA, SPACE, NPS, retention cohorts, etc.)? If it doesn't, you'll struggle to benchmark.
+- [ ] **Applied to a real decision** — Take an in-flight initiative and run it through Signal → Standard → Speed using only this vision. If the vision didn't disambiguate, it isn't done.
+- [ ] **PMs can recite it** — Without reading. If they can't, it isn't the operating document — it's wallpaper.
+
+> 💡 The seventh check is the most often-skipped and the most important. A vision that nobody remembers is identical to no vision.
+
+---
+
+## How to adapt the vision for a different product
+
+The structure below is what works regardless of product. The *contents* obviously change.
+
+### Step 1 — Pick the headline metric first
+
+Most teams start with a vision sentence and try to back-fit a metric. Do it the other way. Ask: **what is the one number we'd publish to the company every month, and what would the leadership team interrogate us on?** That's your headline. Then write the sentence around it.
+
+For developer tools, time-based metrics (time-to-X) tend to win because they capture both speed and clarity. For consumer products, retention or DAU/MAU ratios. For marketplaces, GMV-per-cohort or take-rate-with-NPS. Pick the one your business actually runs on. See [Headline Metric](guides/headline-metric.md) for a deeper guide.
+
+### Step 2 — Write the sentence
+
+Template:
+
+> `[Product]` is the `[category / orchestration layer / system of record]` for `[domain]`, where `[the change you're making for personas]`, so that `[customer outcome that moves the headline metric]`.
+
+If it takes more than one of those clauses to differentiate you, the differentiation isn't strong enough yet. Iterate.
+
+### Step 3 — Define 2–4 personas
+
+Most products have a *creator* persona, a *consumer* persona, and a *sponsor* persona — the person who *configures* the product, the person who *uses it day to day*, and the person who *pays for it or is accountable for the outcome*. The names change; the structure rarely does. See [Three Personas](guides/personas.md) for the canonical structure.
+
+### Step 4 — Write down what you are not
+
+Three to five bullets. Be brutal. "We are not building X" is the highest-leverage sentence in the document, because it ends the most arguments.
+
+### Step 5 — Stress-test against current work
+
+Pick three in-flight projects. For each, write one sentence on how the vision justifies (or doesn't justify) the work. If two of the three feel forced, your vision is misaligned with reality. Either change the vision or stop the work — both are valid; doing neither is the dangerous path.
+
+---
+
+## Where to put the vision
+
+The vision lives at `playbook/product-vision.md` (this file). It is the only document in the playbook that is allowed to be opinionated about *what* you're building. Every other document is opinionated about *how* you build it.
+
+When the vision changes, update this file first, then propagate downstream in this order:
+1. `guides/personas.md` (if personas changed)
+2. `guides/product-principles.md` (if "what good looks like" changed)
+3. `templates/product-spec.md` (the Strategic Alignment prompts)
+4. `product-playbook.md` (the anchor doc's framing)
+
+---
+
+## Example: filling in this template
+
+> The example below is intentionally short, generic, and unrelated to any specific company. It exists to show the *shape* of a finished vision, not to be copied verbatim.
+
+### The Vision
+
+Acme is the system of record for `[domain]`, where every `[event]` produces a trustworthy next step, so that teams spend their hours making decisions instead of reconciling state.
+
+### Where We Play
+
+- We own: the moment data enters the system through to the decision it informs.
+- We don't own: long-term storage, advanced analytics, downstream notification routing.
+
+### Headline Metric
+
+**Time to Trusted Decision (TTD)** — the median time, in minutes, from a new event arriving to a user marking it actioned. Measured per persona, reported monthly.
+
+### Personas
+
+- **Configurators** — operations leaders who define how events are routed and what counts as actioned.
+- **Operators** — frontline staff who act on events and need zero ambiguity about what to do next.
+- **Sponsors** — VPs accountable for throughput and error rate; care about trend lines, not individual events.
+
+### Out of scope
+
+- We do not build BI dashboards.
+- We do not own customer notifications (email/SMS).
+- We do not optimise for batch / overnight workloads.
+
+### Industry tie-in
+
+TTD is the inverse of MTTR for our category. As TTD drops, customer-side throughput rises and error rates fall, both of which are tracked in standard operations KPIs.
+
+---
+
+## What's next
+
+- **[Product Playbook](product-playbook.md)** — How the six phases use this vision as the spine of every decision.
+- **[Decision Framework](guides/decision-framework.md)** — Signal → Standard → Speed; the operational check against the vision.
+- **[Three Personas](guides/personas.md)** — Canonical structure for the persona section above.
+- **[Product Principles](guides/product-principles.md)** — Turning the vision into engineering standards.
