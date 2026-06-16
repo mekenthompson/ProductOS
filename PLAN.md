@@ -1,10 +1,15 @@
 # ProductOS — plan and strategy
 
-Status: 2026-06-16. Foundation built and reviewed (spec hierarchy + template
-+ two skills, instantiated in switchroom). Strategic direction set: this repo
-becomes the canonical, private **ProductOS**. This doc is the plan; the
-product-os Vision/Principles/Invariants are **yours to ratify** (see
-`reference/vision.md`, drafted as a strawman).
+Status: 2026-06-17. This repo is now the canonical, private **ProductOS**.
+Done + reviewed: the spec hierarchy + Job Spec template + two skills;
+ProductOS's own anchors (vision ratified, principles/invariants/product-spec
+cascaded); switchroom instantiated (19 jobs, restructured into jobs/+
+artifacts/); and the **product-playbook method migrated in and vocabulary-
+reconciled** to the hierarchy (JTBD doc → Job Spec, ship-coupled Product
+Spec → RFC, Invariants the third anchor, product-level Product Spec
+introduced). **Remaining: the public "lite" export — gated on explicit go.**
+The derived anchors (`reference/principles|invariants|product-spec.md`) are
+marked "draft for ratification" pending your sign-off.
 
 ## What ProductOS is
 
