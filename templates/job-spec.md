@@ -1,0 +1,94 @@
+---
+job: <imperative, user-voiced; a job, not a feature>
+outcome: <the user-observable end state, present tense>
+stakes: <what breaks, and why it matters, if you get this wrong>
+serves: <the Product Spec outcome this job ladders up to>
+invariants: [<named lines this job must never cross, by construction>]
+---
+
+# Job Spec: <the job, in plain words>
+
+> A **Job Spec** is the durable, per-job outcome contract. One per job. It
+> is read by both a human (judging a change) and an agent (deciding what to
+> do mid-task), and both ask it the same question: *does this advance the
+> job's UX outcome without tripping an anti-pattern or breaking an
+> invariant?*
+>
+> It is **outcome-oriented, never tech- or feature-specific.** Features,
+> code, even the implementation language are free to change underneath it.
+> The job, the outcome, and the way you prove it stay still. When the
+> implementation changes you **narrate the retired approach** in one line;
+> you never silently rewrite the job.
+>
+> **Doc-class rule (decide from the frontmatter key alone):** `job:`
+> frontmatter ⇒ this is a Job Spec, keep `job` / `outcome` / `stakes`
+> stable. `serves:` / `artifact:` frontmatter ⇒ this is a churny design
+> artifact that points *up* at a Job Spec and carries the implementation
+> that changes. The how lives there, not here.
+>
+> **Length discipline:** aim for one screen. The frontmatter carries ~80%.
+> If the body runs long, implementation has leaked in: move it to the
+> design artifact and link down to it.
+
+## The job
+
+> One short paragraph, from the user's side. Who is hiring this, in what
+> situation, to make what progress. Name what they are really trying to do,
+> not the feature they asked for. If the implementation has changed, add one
+> line: "We used to do X; we changed to Y; the job underneath is unchanged."
+
+## Good / bad
+
+> The load-bearing section. Paired, observable, UX-level. The left list is
+> what a human sees when it is working and what an agent should steer
+> toward. The right list is the anti-pattern and the agent's "never do
+> this." Phrase every line as user-observable behaviour, not implementation.
+> Keep each list to roughly five to seven bullets.
+
+**Good looks like**
+
+- <observable success the user can see or feel>
+- ...
+
+**Bad looks like — never ship this**
+
+- <the tempting-but-wrong behaviour that betrays the job>
+- ...
+
+## Prove it
+
+> Outcome-level acceptance, named by **job × surface**, independent of unit
+> tests. Each line points at a real, runnable scenario and names the
+> **invariant** it protects. This is what makes the job *UAT-verifiable*: a
+> scenario exists and asserts the user-observable outcome, not internal
+> state. End with the **fuzz corpus** dimensions so the failure *class*
+> (not just one instance) is covered.
+
+- **<job × surface>** — `<path/to/real/scenario>`. *Watch:* <user-observable
+  outcome>. *Invariant:* <the property that must always hold>.
+- ...
+
+**Fuzz corpus:** vary `<dimensions, e.g. latency × retries × ordering ×
+partial failure>`; the invariants above must hold across the corpus, not
+just the happy path.
+
+## Verdict
+
+> One line the verdict rule can check.
+
+- **Done when:** <the user-observable definition of done, proven by the
+  scenarios above>.
+
+## Production-readiness
+
+> *Optional. Include only where the stakes warrant it.* The non-functional
+> bar (security, reliability, availability, performance), scaled to the
+> stakes. Distinct from the customer-facing "Prove it" gate above. Omit
+> entirely for a soft, low-stakes job.
+
+- *<dimension>:* <target>.
+
+---
+
+> **Implementation:** the how lives in `<design-artifact.md>` (frontmatter
+> `serves:` this job). That artifact churns; this Job Spec outlives it.
