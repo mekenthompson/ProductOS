@@ -1,11 +1,11 @@
 # ProductOS — plan and strategy
 
-Status: 2026-06-17. This repo is the canonical, private **ProductOS**: the
-evolution of a product playbook into an operating system — the playbook plus
-the automation and agent-executable guidance (skills, templates, the
-operating contract) that make it run, not just advise. **switchroom is the
-working example in action; ProductOS does not instantiate itself.** A public
-"lite" export is a later, gated step.
+Status: 2026-06-17. This repo is the canonical, private **ProductOS**: a
+product operating system — a playbook plus the automation and
+agent-executable guidance (skills, templates, the operating contract) that
+make it run, not just advise. **switchroom is the working example in action;
+ProductOS does not instantiate itself.** A public "lite" export is a later,
+gated step.
 
 ## What ProductOS is
 
@@ -36,7 +36,7 @@ the jobs; **Invariants** is the third anchor (was folded into the vision).
 
 ## What's done (built + reviewed)
 
-- The method, migrated from product-playbook and reconciled to the hierarchy:
+- The method, reconciled to the hierarchy:
   the six-phase loop, the guides (incl. the three anchor how-to guides:
   product-vision, product-principles, invariants), the templates
   (`job-spec.md` canonical, `rfc.md`), and `AGENTS.md`.

@@ -1,10 +1,10 @@
 # ProductOS
 
-The evolution of a product playbook into an operating system. It's still a
-playbook — how to run product, anchored on the customer's job and its
-outcome — but it also carries the **automation and agent-executable
-guidance** (skills, templates, the operating contract) that make it *run*,
-not just advise. That's the difference between PM guidance and an OS.
+ProductOS is a product operating system: a playbook for running product —
+anchored on the customer's job and its outcome — plus the **automation and
+agent-executable guidance** (skills, templates, the operating contract) that
+make it *run*, not just advise. That's what makes it an OS and not just PM
+guidance.
 
 ProductOS is the method, not an instance of itself. The **working example in
 action is [switchroom](https://github.com/mekenthompson/switchroom)** — when
