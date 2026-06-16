@@ -1,6 +1,6 @@
 ---
 title: ProductOS principles
-status: derived from the ratified vision — edit if any read off
+status: draft for ratification — derived from the ratified vision; edit if any read off
 audience: anyone judging whether a skill, doc, or feature is good enough to ship in ProductOS
 ---
 

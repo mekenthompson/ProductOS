@@ -1,6 +1,6 @@
 ---
 title: ProductOS invariants
-status: graduated from the vision's candidate list — edit if any read off
+status: draft for ratification — graduated from the vision's candidate list; edit if any read off
 audience: anyone designing, building, or reviewing ProductOS
 ---
 

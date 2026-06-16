@@ -1,6 +1,6 @@
 ---
 title: ProductOS product spec
-status: derived from the ratified vision — owns the job/skill index
+status: draft for ratification — derived from the ratified vision; owns the job/skill index
 anchors: [vision.md, principles.md, invariants.md]
 ---
 
@@ -18,9 +18,11 @@ automate the PM work of running it.
 
 ## Outcomes
 
-Every skill and job ladders up to one of these. (They line up with the
-thought-leadership spine: kernel/decisions, daemons, integrity/UAT,
-syscall/taste.)
+Every skill and job ladders up to one of these.
+
+> Series-spine cross-reference only (ignore when defining another product):
+> these map to the KEN-35 articles kernel/decisions, daemons, integrity/UAT,
+> syscall/taste.
 
 - **`anchored-decisions`** — work stays anchored to the customer's job and
   its UX outcome, so decisions are directionally accurate instead of
@@ -34,8 +36,9 @@ syscall/taste.)
 
 ## How it functions, at a high level
 
-ProductOS is a **design contract** (the five-layer hierarchy: vision /
-principles / invariants → product spec → job specs) plus **skills** that
+ProductOS is a **design contract** (a five-document, three-tier hierarchy:
+three anchors — vision / principles / invariants → product spec → job specs)
+plus **skills** that
 consume it. The human owns and ratifies the anchors; skills deliver within
 the gates (fresh-process review + outcome UAT). It is **instantiated per
 product**: switchroom is the first instantiation, AutoGrab next. The public
