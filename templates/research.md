@@ -7,7 +7,7 @@ icon: "\U0001F52C"
 
 # [Research Title]
 
-> Turn raw data into structured findings that can feed Product Spec evidence and prioritisation decisions.
+> Turn raw data into structured findings that can feed RFC evidence and prioritisation decisions.
 
 ## Objective
 

@@ -14,7 +14,7 @@ This guide is about the **categories** of tooling a product team needs and the c
 | Category | What it does | Example tools |
 |---|---|---|
 | **Issue tracker** | Issues, roadmap, project tracking, customer feedback | Linear, Jira, Shortcut, GitHub Issues, Asana |
-| **Long-form docs** | Product Specs, specs, research, process documentation | Notion, Confluence, Coda, Google Docs, Obsidian |
+| **Long-form docs** | RFCs, specs, research, process documentation | Notion, Confluence, Coda, Google Docs, Obsidian |
 | **Source control** | Code, PRs, playbook repository | GitHub, GitLab, Bitbucket |
 | **Design** | Wireframes, mockups, prototypes | Figma, Sketch, Penpot |
 | **Customer comms / support** | Tickets, calls, transcripts | Zendesk, Intercom, Plain, Front |
@@ -44,9 +44,9 @@ You only need **one tool per category**. More than that creates copy-paste tax a
   - ❌ "Email change event listener edge case"
 
 ### Project Linking
-- One project per Product Spec
-- Product Spec link in project description
-- Keep project status synced with Product Spec status (Draft → In Progress → Shipped)
+- One project per RFC
+- RFC link in project description
+- Keep project status synced with RFC status (Draft → In Progress → Shipped)
 
 ### Labels
 - Use tier labels (T1/T2/T3/T4) for customer impact
@@ -58,7 +58,7 @@ You only need **one tool per category**. More than that creates copy-paste tax a
 ## Long-form docs (e.g. Notion / Confluence)
 
 **What lives here:**
-- Product Specs (product requirements documents)
+- RFCs (product requirements documents)
 - Specs (product, design, technical)
 - Research docs (customer calls, competitive analysis, problem briefs)
 - Process documentation (this playbook)
@@ -66,17 +66,17 @@ You only need **one tool per category**. More than that creates copy-paste tax a
 **Conventions:**
 
 ### File Naming
-- Product Specs: `[Project Name] Product Spec`
-- Product specs: `[Project Name] Product Spec`
+- RFCs: `[Project Name] RFC`
+- RFCs: `[Project Name] RFC`
 - Research: `[Project Name] — [Research Type]` (e.g., "Retry Logic — Customer Research")
 
 ### Linking
-- Always link Product Spec ↔ tracker project (bidirectional)
-- Link Product Spec → research docs in Evidence section
-- Link specs → Product Spec in Context section
+- Always link RFC ↔ tracker project (bidirectional)
+- Link RFC → research docs in Evidence section
+- Link specs → RFC in Context section
 
 ### Status
-- Keep Product Spec status in sync with tracker project status
+- Keep RFC status in sync with tracker project status
 - Archive old specs after launch (don't delete — keep for reference)
 
 ---
@@ -103,7 +103,7 @@ Whatever your team has approved enterprise access to — Claude (Claude Code, cl
 
 **What to use it for:**
 - Synthesising customer feedback from support tickets, calls, and channel threads
-- Drafting Product Spec Evidence sections (turns raw feedback into structured problem statements)
+- Drafting RFC Evidence sections (turns raw feedback into structured problem statements)
 - Summarising competitive research
 - Generating job stories from interview transcripts
 

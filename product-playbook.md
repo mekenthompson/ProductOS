@@ -15,7 +15,7 @@ Six phases, each feeding the next. The loop closes back to the start.
    Customer research, usage data, and post-launch measurement all feed the same pool. You can't build the right thing if you don't understand the problem.
 
 2. **Decide** — Every idea passes three checks.
-   **Signal** (strategy-aligned with real need?), **Standard** (meets our [product principles](guides/product-principles.md)?), **Speed** (half a day or less? flag it with your EM/PM and ship it if it aligns with priorities. More? Write a Product Spec, bring it to the prioritisation session). Not now ≠ bad idea — it means something else is higher leverage right now.
+   **Signal** (strategy-aligned with real need?), **Standard** (meets our [product principles](guides/product-principles.md)?), **Speed** (half a day or less? flag it with your EM/PM and ship it if it aligns with priorities. More? Write an RFC, bring it to the prioritisation session). Not now ≠ bad idea — it means something else is higher leverage right now.
 
 3. **Shape** — Define the solution and align the team.
    Write specs, align Product, Engineering, Design & GTM on scope. Roadmap with honest fidelity: this quarter is high confidence, next quarter is themes, beyond that is direction. Monthly updates, non-negotiable.
@@ -112,18 +112,18 @@ Three checks, every time — **Signal → Standard → Speed**:
    Run the principle check questions against the proposed solution. If you can't answer "yes" to each, the standard isn't met yet.
 
 3. **Speed** — How big is it?
-   - **≤ half a day:** Flag it with your EM or PM. If it aligns with current priorities, ship it. No Product Spec needed, but each team has a limited Quick Win budget per sprint. Changelog if UX, notify support always.
-   - **> half a day:** Write a Product Spec with RICE score. Bring it to the prioritisation session.
+   - **≤ half a day:** Flag it with your EM or PM. If it aligns with current priorities, ship it. No RFC needed, but each team has a limited Quick Win budget per sprint. Changelog if UX, notify support always.
+   - **> half a day:** Write an RFC with RICE score. Bring it to the prioritisation session.
 
-The prioritisation session is where Product Specs compete for engineering time. RICE ranks items *within* strategic investment buckets, not across them — a B-grade bet in a high-priority bucket may beat an A-grade item in a lower-priority one. This keeps strategy driving allocation, not RICE gaming.
+The prioritisation session is where RFCs compete for engineering time. RICE ranks items *within* strategic investment buckets, not across them — a B-grade bet in a high-priority bucket may beat an A-grade item in a lower-priority one. This keeps strategy driving allocation, not RICE gaming.
 
 Every decision gets communicated back to the proposer with reasoning. **"Not now because X"** is a complete, respectful answer. Silence is not.
 
 ### Assets
 - [Signal → Standard → Speed decision framework](guides/decision-framework.md) — three paths: Quick Win, Lightweight, Full Spec
 - [Product principles](guides/product-principles.md) with check questions
-- Quick win path (≤ half a day, no Product Spec, EM/PM alignment)
-- Product Spec path — [Writing Product Specs](guides/product-specs.md), [Product Spec Template](templates/product-spec.md), [RICE scoring](guides/rice.md)
+- Quick win path (≤ half a day, no RFC, EM/PM alignment)
+- RFC path — [Writing RFCs](guides/product-specs.md), [RFC Template](templates/rfc.md), [RICE scoring](guides/rice.md)
 - Prioritisation session cadence (fortnightly or monthly, aligned to your sprint)
 
 ### Why It Matters
@@ -136,10 +136,10 @@ Speed comes from clarity, not skipping steps. When everyone knows the criteria, 
 > *"Shape the solution before committing the team."*
 
 ### Belief
-Shaping is where alignment happens. The Product Spec got the "yes" — now the team needs to agree on scope, approach, and delivery plan. Roadmaps should make promises proportional to what we actually know. Pretending otherwise — vague when we should be specific, specific when we should be honest — destroys credibility.
+Shaping is where alignment happens. The RFC got the "yes" — now the team needs to agree on scope, approach, and delivery plan. Roadmaps should make promises proportional to what we actually know. Pretending otherwise — vague when we should be specific, specific when we should be honest — destroys credibility.
 
 ### Behaviour
-- **Write the [Product Spec](templates/product-spec.md)** — a single, living document framed around the user's job, with success and failure modes, guardrails, and a solution space (constraints, not prescriptions)
+- **Write the [RFC](templates/rfc.md)** — a single, living document framed around the user's job, with success and failure modes, guardrails, and a solution space (constraints, not prescriptions)
 - **Align the team** — Product, Engineering, Design & GTM agree on scope, approach, and priority before build starts
 - **This quarter (0–3 months): HIGH fidelity.** Specific dates, named owners, hard commitments. Misses are explained, not quietly adjusted.
 - **Next quarter (3–6 months): MEDIUM fidelity.** Themes, initiatives, approximate timing. Refined monthly as decisions land.
@@ -148,7 +148,7 @@ Shaping is where alignment happens. The Product Spec got the "yes" — now the t
 - **Internal and external roadmaps tell the same story** at different detail levels. Internal: full picture, all bands, reasoning, trade-offs. External: commitments and themes. Never a different narrative.
 
 ### Assets
-- [Product Spec](templates/product-spec.md) — delivery contract for build phase
+- [RFC](templates/rfc.md) — delivery contract for build phase
 - Three-band roadmap (high / medium / low fidelity)
 - Monthly roadmap update cadence
 - Internal roadmap (full detail)
@@ -168,12 +168,12 @@ Product principles aren't aspirations for some future state. They're engineering
 
 ### Behaviour
 - Product principles applied as **design and engineering standards**, not post-hoc review criteria
-- **Instrumentation before shipping** — if you can't measure it, don't ship it. Define success criteria in the Product Spec, wire up analytics before launch.
+- **Instrumentation before shipping** — if you can't measure it, don't ship it. Define success criteria in the RFC, wire up analytics before launch.
 - Existing lifecycle and gates remain unchanged — this framework adds a front door and a feedback loop, not a replacement for delivery process
 
 ### Assets
 - Product principles as PR/design review checklist
-- Instrumentation requirements in [Product Spec Template](templates/product-spec.md)
+- Instrumentation requirements in [RFC Template](templates/rfc.md)
 - Success metrics defined before build starts
 - [Delivery Standards](guides/delivery-standards.md) — Operational workflow with gate checklists
 
@@ -271,9 +271,9 @@ Full decision-to-outcome transparency. Trace from strategy → roadmap → shipp
 
 **Not a substitute for strategy.** Strategy tells you which bets matter *this year*. This framework tells you how to evaluate and execute *always*. Strategy changes yearly. The loop is durable.
 
-**Not process for process' sake.** The quick-win path (≤ half day) is lightweight — flag it with your EM/PM and go. The Product Spec path has *clearer* process. The measurement loop is new — and it's the part that makes everything else worthwhile.
+**Not process for process' sake.** The quick-win path (≤ half day) is lightweight — flag it with your EM/PM and go. The RFC path has *clearer* process. The measurement loop is new — and it's the part that makes everything else worthwhile.
 
-**Not something you build all at once.** Mental models and behaviours come first. Assets follow. You don't need a dashboard to start asking "how will we measure this?" You don't need a template to start writing a Product Spec. Start with the thinking. The tools catch up.
+**Not something you build all at once.** Mental models and behaviours come first. Assets follow. You don't need a dashboard to start asking "how will we measure this?" You don't need a template to start writing an RFC. Start with the thinking. The tools catch up.
 
 ---
 
@@ -297,14 +297,14 @@ Everything below is a reference asset produced by this framework. Read them when
 |---------------------|----------|
 | Understand the vision and personas | [Product Vision](product-vision.md) |
 | Decide the right path for work | [Decision Framework](guides/decision-framework.md) |
-| Write a Product Spec | [Product Specs](guides/product-specs.md) + [Product Spec Template](templates/product-spec.md) |
+| Write an RFC | [RFC Guide](guides/product-specs.md) + [RFC Template](templates/rfc.md) |
 | Score a project | [RICE Guide](guides/rice.md) |
 | Process feedback | [Handling Product Feedback](guides/customer-feedback.md) |
 | Document research | [Research Template](templates/research.md) + [Customer Call Template](templates/customer-call.md) |
 | Understand delivery workflow | [Delivery Standards](guides/delivery-standards.md) |
 | Run a post-launch review | [Post-Launch Review](templates/post-launch-review.md) |
 | Write job stories | [JTBD Guide](guides/jtbd-guide.md) |
-| Write a durable per-job outcome doc | [JTBD Doc Template](templates/jtbd-doc.md) |
+| Write a durable per-job outcome doc | [Job Spec Template](templates/job-spec.md) |
 | Deliver with an agentic workforce | [Agentic Delivery](guides/agentic-delivery.md) |
 | Understand your role (PM) | [PM Handbook](pm-handbook.md) |
 | Understand how the triad works | [Working Together](working-together.md) |

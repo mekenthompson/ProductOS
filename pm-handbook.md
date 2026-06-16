@@ -18,10 +18,10 @@ Companion to the [Product Playbook](product-playbook.md) (how we build product a
 ## If You Do Only 5 Things
 
 1. **Talk to 3+ customers per initiative**
-   Ground decisions in evidence, not assumptions. Every Product Spec should link to real customer conversations, not sales hearsay or internal hunches.
+   Ground decisions in evidence, not assumptions. Every RFC should link to real customer conversations, not sales hearsay or internal hunches.
 
-2. **Write clear Product Specs with evidence**
-   Get approval before building; link to research. A Product Spec without evidence is an untested opinion — it doesn't earn engineering time.
+2. **Write clear RFCs with evidence**
+   Get approval before building; link to research. An RFC without evidence is an untested opinion — it doesn't earn engineering time.
 
 3. **Complete monthly rituals**
    Dogfood, onboarding review, competitor review. If you don't use your own product (and theirs), you don't understand the problem space.
@@ -53,8 +53,8 @@ Everything else in this doc supports these 5.
 | Phase | What PMs Do | Persona Lens | Key Docs |
 |-------|-------------|--------------|----------|
 | **Learn** | Talk to 3+ customers, document evidence, estimate impact | Which persona has this problem? | [Handling Product Feedback](guides/customer-feedback.md), [Research Template](templates/research.md) |
-| **Decide** | Write Product Spec, RICE score, get approval | Does the solution serve the vision for this persona? | [Product Specs](guides/product-specs.md), [RICE](guides/rice.md), [Decision Framework](guides/decision-framework.md) |
-| **Shape + Build** | Write Product Spec, collaborate with Design + Engineering, validate in Preview | Does it meet all product principles? | [Product Spec Template](templates/product-spec.md) |
+| **Decide** | Write RFC, RICE score, get approval | Does the solution serve the vision for this persona? | [Writing an RFC](guides/product-specs.md), [RICE](guides/rice.md), [Decision Framework](guides/decision-framework.md) |
+| **Shape + Build** | Maintain the living RFC, collaborate with Design + Engineering, validate in Preview | Does it meet all product principles? | [RFC Template](templates/rfc.md) |
 | **Launch** | Coordinate GTM, plan rollout, monitor adoption, conduct post-launch review | Are the right personas adopting? | [Delivery Standards](guides/delivery-standards.md), [Post-Launch Review](templates/post-launch-review.md) |
 | **Sell** | Ensure self-onboarding works, support sales enablement, track adoption | Can each persona find and adopt this without help? | — |
 
@@ -69,7 +69,7 @@ Outcomes matter more than calendar slots. Here's what needs to happen and roughl
 | **Feedback is triaged and categorised** | Daily | Process new feedback in your tracker. Categorise, tag persona, escalate critical issues. See [Handling Product Feedback](guides/customer-feedback.md). |
 | **Quick wins are identified and scoped** | Weekly | Review triaged feedback with your Tech Lead. Scope quick wins (≤ half a day). Ship the obvious ones. |
 | **Planned work is balanced against emerging needs** | Weekly | Prioritise with Engineering. Compare new signals against current commitments. |
-| **Product Specs compete for engineering time** | Fortnightly | Prioritisation session. See [Decision Framework](guides/decision-framework.md) for how this works. |
+| **RFCs compete for engineering time** | Fortnightly | Prioritisation session. See [Decision Framework](guides/decision-framework.md) for how this works. |
 | **You understand the product from the customer's perspective** | Monthly | Dogfooding + onboarding review + competitor review. See Monthly Rituals below. |
 | **Shipped work is measured against predictions** | Post-launch | Reviews at 2 weeks, 30 days, 60–90 days. Accelerate, iterate, pivot, or stop. See [Post-Launch Review](templates/post-launch-review.md). |
 
@@ -84,10 +84,10 @@ Outcomes matter more than calendar slots. Here's what needs to happen and roughl
 | **Day 1–2** | Get set up | Accounts: product, issue tracker, docs, source control, comms, AI tooling. Follow your engineering onboarding doc for access. |
 | **Week 1** | Learn the product and meet your team | Complete your product's internal training. Play with the product — build, break things, use AI agents to explore and ask questions. Meet your product and engineering teammates through informal 1:1s. Attend product meetings. Listen, learn, ask questions. |
 | **Week 2** | Broaden context and start contributing | Connect with Design and other leadership through informal 1:1s. Process and triage your first customer feedback. Attend team meetings across your area. Find a quick-delight problem (≤ 3 hours) you can help shape with engineering and get scheduled. |
-| **Week 3** | Write your first Product Spec stub | Pick a problem from the discovery backlog. Talk to 3+ customers using the [Customer Call Template](templates/customer-call.md). Fill Problem + Evidence + Impact in the [Product Spec Template](templates/product-spec.md). Review in product team meetings — get feedback, iterate. |
+| **Week 3** | Write your first RFC stub | Pick a problem from the discovery backlog. Talk to 3+ customers using the [Customer Call Template](templates/customer-call.md). Fill Problem + Evidence + Impact in the [RFC Template](templates/rfc.md). Review in product team meetings — get feedback, iterate. |
 | **Week 4** | Complete all monthly rituals | Dogfooding + onboarding review + competitor review. See Monthly Rituals below. |
-| **Month 2** | Get first Product Spec approved | Finish Product Spec (Solution, Scope, Success Metrics). RICE score. Submit for approval. See [Product Specs](guides/product-specs.md). |
-| **Month 3** | Coordinate delivery | Write Product Spec. Collaborate with Design + Engineering. Enter Building status. |
+| **Month 2** | Get first RFC approved | Finish the RFC (Solution, Scope, Success Metrics). RICE score. Submit for approval. See [Writing an RFC](guides/product-specs.md). |
+| **Month 3** | Coordinate delivery | Maintain the living RFC. Collaborate with Design + Engineering. Enter Building status. |
 
 ---
 
@@ -101,7 +101,7 @@ Ground decisions in data, not intuition.
 
 | DO | DON'T |
 |----|-------|
-| Link Product Specs to research with ≥3 customer quotes | Start with "I think customers want..." |
+| Link RFCs to research with ≥3 customer quotes | Start with "I think customers want..." |
 | Validate with 3+ customer conversations | Build based on one customer request |
 | Use data to challenge your own ideas | Cherry-pick supporting data |
 
@@ -123,7 +123,7 @@ Understand the customer's problem before proposing solutions.
 |----|-------|
 | Ask "What problem are you trying to solve?" | Ask "Do you want feature X?" |
 | Reframe requests as underlying needs | Take feature requests at face value |
-| Talk to 3+ customers before writing Product Spec | Write Product Spec from 1 conversation |
+| Talk to 3+ customers before writing an RFC | Write an RFC from 1 conversation |
 
 ---
 
@@ -140,7 +140,7 @@ We use AI for **augmentation, not automation**. AI tools make you more effective
 
 **Where AI helps PMs:**
 - Analysing customer research and feedback patterns
-- Drafting Product Specs (you refine and own the output)
+- Drafting RFCs (you refine and own the output)
 - Competitive analysis and market research
 - Exploring the product — use agents to ask questions, try new things, understand features
 - Writing customer communications and summaries
@@ -150,7 +150,7 @@ We use AI for **augmentation, not automation**. AI tools make you more effective
 - Replacing customer conversations
 - Judging product quality (you need to use the product yourself)
 
-**When agents do much of the delivery.** "Augmentation, not automation" governs *judgement* — the vision, the headline metric, which jobs matter, strategy. That stays yours. But agents can *own delivery* — drafting [JTBD docs](templates/jtbd-doc.md), implementing, running design loops, running outcome UATs — **inside the four parts** of [Agentic Delivery](guides/agentic-delivery.md). The rule: augment the judgement, automate the delivery, keep the gates as the safety rail. Two gates are load-bearing — the **fresh-process reviewer** (an agent can't grade its own work) and the **outcome UAT** (the job is proven, not assumed). The anchors stay human-owned; agents consume them, never author them.
+**When agents do much of the delivery.** "Augmentation, not automation" governs *judgement* — the vision, the headline metric, which jobs matter, strategy. That stays yours. But agents can *own delivery* — drafting [Job Specs](templates/job-spec.md), implementing, running design loops, running outcome UATs — **inside the four parts** of [Agentic Delivery](guides/agentic-delivery.md). The rule: augment the judgement, automate the delivery, keep the gates as the safety rail. Two gates are load-bearing — the **fresh-process reviewer** (an agent can't grade its own work) and the **outcome UAT** (the job is proven, not assumed). The anchors stay human-owned; agents consume them, never author them.
 
 ---
 
@@ -198,7 +198,7 @@ See [Working Together](working-together.md) for how the product triad (product, 
 
 ### With Engineering
 
-**PMs own:** Problem definition, success criteria, Product Spec with requirements
+**PMs own:** Problem definition, success criteria, RFC with requirements
 **Tech Leads own:** Technical approach, architecture, effort estimates, delivery
 **Shared:** Scope negotiation, timeline assessment, trade-off decisions
 
@@ -227,13 +227,13 @@ Anti-pattern: "Sales needs this for a deal" → Instead: "Sales hears this from 
 - [Working Together](working-together.md) — How the product triad collaborates
 
 **Guides:**
-- [Product Specs](guides/product-specs.md) — How to write, approve, and deliver
+- [Writing an RFC](guides/product-specs.md) — How to write, approve, and deliver
 - [Handling Product Feedback](guides/customer-feedback.md) — Feedback processing
 - [RICE Guide](guides/rice.md) — Scoring framework
 - [Decision Framework](guides/decision-framework.md) — Signal → Standard → Speed
 
 **Templates:**
-- [Product Spec Template](templates/product-spec.md) · [Post-Launch Review](templates/post-launch-review.md) · [Research Template](templates/research.md) · [Customer Call Template](templates/customer-call.md)
+- [RFC Template](templates/rfc.md) · [Job Spec Template](templates/job-spec.md) · [Post-Launch Review](templates/post-launch-review.md) · [Research Template](templates/research.md) · [Customer Call Template](templates/customer-call.md)
 
 **Frameworks:**
 - [JTBD Guide](guides/jtbd-guide.md) · [Customer Journey](guides/customer-journey.md)

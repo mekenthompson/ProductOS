@@ -32,7 +32,7 @@ Each persona experiences the product (and the [headline metric](../product-visio
 | Where it shows up | How personas are used |
 |---|---|
 | [Product Vision](../product-vision.md) | Each persona gets a one-line "vision lens" question. |
-| [Product Spec Template](../templates/product-spec.md) | Every Product Spec names the primary persona served and (optionally) the secondary. Unclear persona = unclear value. |
+| [RFC Template](../templates/rfc.md) | Every RFC names the primary persona served and (optionally) the secondary. Unclear persona = unclear value. |
 | [RICE](rice.md) | Reach is scored *per persona*, not as a single blended number. |
 | [Decision Framework](decision-framework.md) | "Signal" depends on whether a real persona has a real problem. |
 | [Customer Journey](customer-journey.md) | Each persona has their own journey; do not collapse them. |
@@ -62,7 +62,7 @@ The personas are ready to anchor the playbook when **every one of these is true*
 - [ ] **Each persona has a one-sentence outcome statement.**
 - [ ] **Each persona has a vision-lens question** that maps to the headline metric.
 - [ ] **Buying / not-buying split is explicit.** It is clear which persona pays.
-- [ ] **A real Product Spec can name its primary persona** without ambiguity. Try one. If two personas look equally plausible, your descriptions aren't sharp enough.
+- [ ] **A real RFC can name its primary persona** without ambiguity. Try one. If two personas look equally plausible, your descriptions aren't sharp enough.
 - [ ] **Trade-offs surface.** Look at the last three things you shipped. Can you say which persona each one served *at the expense of* another? If every feature serves all personas equally, the personas are too vague.
 
 ---
@@ -99,7 +99,7 @@ Pick three real customers (named, not hypothetical). Map each individual contact
 
 ### Step 5 — Use them
 
-Personas only earn their keep when they're load-bearing. Add a *primary persona* field to your Product Spec template. Score Reach per persona in RICE. Slice adoption dashboards by persona. When a PR review surfaces a trade-off, name the persona on each side.
+Personas only earn their keep when they're load-bearing. Add a *primary persona* field to your RFC template. Score Reach per persona in RICE. Slice adoption dashboards by persona. When a PR review surfaces a trade-off, name the persona on each side.
 
 ---
 
@@ -132,7 +132,7 @@ VPs and directors accountable for throughput, error rate, and overall team outpu
 
 ## Using Personas in Product Decisions
 
-When evaluating a feature or Product Spec, ask:
+When evaluating a feature or RFC, ask:
 
 1. **Which persona does this serve?** (You should be able to name at least one)
 2. **Does it meet their needs as defined above?**

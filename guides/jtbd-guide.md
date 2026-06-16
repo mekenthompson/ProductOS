@@ -14,11 +14,11 @@ icon: "📖"
 
 JTBD shifts focus from *what we're building* to *why customers need it*. Instead of defining features by user type, we focus on the **situation**, **motivation**, and **desired outcome**.
 
-**Where this is used:** Job stories go in the [Product Spec](../templates/product-spec.md)'s **Jobs to be Done** section. They're also useful in research documents and Product Spec problem statements.
+**Where this is used:** Job stories go inside a [Job Spec](../templates/job-spec.md) (the durable per-job doc) and inside an [RFC](../templates/rfc.md) when scoping a delivery. They're also useful in research documents and RFC problem statements.
 
 **Key insight:** Products come and go. The underlying job stays. Understanding the job creates better, more durable solutions.
 
-> **Job story vs JTBD doc.** This guide teaches the job *story* — a single sentence (`When… [persona] wants to… so they can…`) used inside a [Product Spec](../templates/product-spec.md). A **JTBD doc** is the *standing document* built around that job: one per job, with `job` / `outcome` / `stakes` frontmatter, that **outlives any single spec or implementation**. Write the sentence here; promote durable, cross-cutting jobs into a standing doc with the [JTBD Doc template](../templates/jtbd-doc.md). See [Agentic Delivery](agentic-delivery.md) for how the standing doc anchors agent-delivered work.
+> **Job story vs Job Spec.** This guide teaches the job *story* — a single sentence (`When… [persona] wants to… so they can…`) used inside a [Job Spec](../templates/job-spec.md) or an [RFC](../templates/rfc.md). A **Job Spec** is the *standing document* built around that job: one per job, with `job` / `outcome` / `stakes` frontmatter, that **outlives any single RFC or implementation**. Write the sentence here; promote durable, cross-cutting jobs into a standing doc with the [Job Spec template](../templates/job-spec.md). See [Agentic Delivery](agentic-delivery.md) for how the standing doc anchors agent-delivered work.
 
 ---
 

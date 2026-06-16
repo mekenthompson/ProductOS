@@ -7,7 +7,7 @@ icon: "📖"
 
 # The Headline Metric
 
-The headline metric is the **single number** named in the [product vision](../product-vision.md) that goes up (or down) when the vision is being realised. It's the question every Product Spec has to answer: *does this move the headline?*
+The headline metric is the **single number** named in the [product vision](../product-vision.md) that goes up (or down) when the vision is being realised. It's the question every RFC has to answer: *does this move the headline?*
 
 Most teams have several "important metrics." That's fine for dashboards. It's fatal for prioritisation. When everything is important, RICE becomes negotiation and roadmaps become wish lists. Picking *one* headline forces the team to make trade-offs in the open.
 
@@ -19,7 +19,7 @@ This guide is about choosing that one number, framing it so the rest of the play
 
 Three jobs:
 
-1. **It anchors prioritisation.** Every Product Spec's expected impact is expressed in headline-metric terms. RICE Impact uses it. If a Product Spec can't articulate impact on the headline, it should be sent back.
+1. **It anchors prioritisation.** Every RFC's expected impact is expressed in headline-metric terms. RICE Impact uses it. If an RFC can't articulate impact on the headline, it should be sent back.
 
 2. **It defines "we succeeded."** The 60–90 day [post-launch review](../templates/post-launch-review.md) tests whether the shipped feature actually moved the headline (or moved a credible leading indicator of it). Without a headline, "success" is whatever the team feels good about.
 
@@ -32,7 +32,7 @@ Three jobs:
 | Where it shows up | How it's used |
 |---|---|
 | [Product Vision](../product-vision.md) | One sentence after the vision: "We measure ourselves on `[metric]`." |
-| [Product Spec Template](../templates/product-spec.md) | Strategic Alignment names which headline lever the Product Spec pulls. |
+| [RFC Template](../templates/rfc.md) | Strategic Alignment names which headline lever the RFC pulls. |
 | [RICE](rice.md) | Impact is scored in headline-metric units. |
 | Personas | Each persona's [vision-lens question](personas.md) is a persona-specific version of the headline. |
 | [Post-Launch Review](../templates/post-launch-review.md) | The 60–90 day question is "did this move the headline?" |

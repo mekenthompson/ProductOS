@@ -1,17 +1,19 @@
 ---
-title: Product Specs
-description: How to write, approve, and deliver a JTBD-led Product Spec — the single document that replaces the Product Spec + delivery-spec pair
+title: Writing an RFC
+description: How to write, approve, and deliver a JTBD-led RFC — the ship-coupled, per-initiative delivery document
 last_reviewed: 2026-05-12
 icon: "📖"
 ---
 
-# Product Specs
+# Writing an RFC
 
 One document. Not two.
 
-A **Product Spec** does the work that used to be split between a Product Spec ("should we build this?") and a separate delivery spec ("how do we build it?"). The shift matters: by combining them and framing the document around the **user's job to be done**, the spec becomes useful at every phase — approval, design, build, launch, and post-ship review — and it stays useful for both humans and AI agents.
+> 🧭 **An RFC is not a named tier of its own** — it's the ship-coupled, per-initiative delivery layer that sits *beneath* the anchors ([Vision](../product-vision.md), [Principles](product-principles.md), [Invariants](../reference/invariants.md)), the product-level **Product Spec** (which owns the job list), and the **[Job Specs](../templates/job-spec.md)**. It's your existing RFC/PR process for one piece of work; this guide is a reference *shape* for it, not a new gate. Each RFC references the [Job Spec](../templates/job-spec.md) it serves.
 
-> If you're looking for the document itself, the template is here: [Product Spec Template](../templates/product-spec.md).
+An **RFC** does the work that used to be split between a PRD ("should we build this?") and a separate delivery spec ("how do we build it?"). The shift matters: by combining them and framing the document around the **user's job to be done**, the RFC becomes useful at every phase — approval, design, build, launch, and post-ship review — and it stays useful for both humans and AI agents.
+
+> If you're looking for the document itself, the template is here: [RFC Template](../templates/rfc.md).
 
 ---
 
@@ -20,28 +22,28 @@ A **Product Spec** does the work that used to be split between a Product Spec ("
 Previously this playbook had two documents:
 
 - **PRD** — the approval document. Answered "should we build this?"
-- **Product Spec** — the delivery document. Answered "how do we build this?"
+- **Delivery spec** — the build document. Answered "how do we build this?"
 
 That separation produced three problems:
-1. The PRD became stale the moment the spec started, but it was still the document everyone cited.
-2. Spec authors kept restating the Product Spec's "why" because the spec was the doc people actually read during build.
-3. The PRD's "how" sections (Solution, Acceptance Criteria, Non-goals) overlapped with the spec, and the two drifted.
+1. The PRD became stale the moment the delivery spec started, but it was still the document everyone cited.
+2. Authors kept restating the PRD's "why" because the delivery spec was the doc people actually read during build.
+3. The PRD's "how" sections (Solution, Acceptance Criteria, Non-goals) overlapped with the delivery spec, and the two drifted.
 
-The new Product Spec collapses both. It's a living document from approval through ship. It's framed around the **user's job**, not our launch. And it leaves the **how** open — solutions are the team's (and the AI's) creative work, not the spec author's prescription.
+The RFC collapses both. It's a living document from approval through ship. It's framed around the **user's job**, not our launch. And it leaves the **how** open — solutions are the team's (and the AI's) creative work, not the RFC author's prescription.
 
 ---
 
 ## Principles
 
-The Product Spec is built on five principles. If a section of the template doesn't serve one of these, cut it.
+The RFC is built on five principles. If a section of the template doesn't serve one of these, cut it.
 
 ### 1. Job first, feature last
 
-The spec opens with the user's job (in JTBD form), not the feature we want to build. If you can't write the job statement crisply, you don't yet understand the problem. Drop down to discovery before continuing. See [JTBD Guide](jtbd-guide.md).
+The RFC opens with the user's job (in JTBD form), not the feature we want to build. If you can't write the job statement crisply, you don't yet understand the problem. Drop down to discovery before continuing. The job itself lives in a durable [Job Spec](../templates/job-spec.md); the RFC references it. See [JTBD Guide](jtbd-guide.md).
 
 ### 2. Failure is a first-class concept
 
-Every spec must name how the **user** would fail at the job — not just how our launch would fail.
+Every RFC must name how the **user** would fail at the job — not just how our launch would fail.
 - **Hard failure** — user can't complete the job.
 - **Soft failure** — user completes it but is worse off than before.
 - **Silent failure** — user appears to succeed but didn't get the outcome they wanted (often the most damaging because it looks fine in analytics).
@@ -51,11 +53,11 @@ If you can't articulate at least three plausible user-failure modes, you don't y
 
 ### 3. Guardrails, not blueprints
 
-The spec names what cannot break (principles, performance, trust, scope), but leaves **how to build the thing** open. Specs that prescribe components, layouts, or data models prematurely waste the team's craft and the AI's pattern-matching strength.
+The RFC names what cannot break (principles, performance, trust, scope), but leaves **how to build the thing** open. RFCs that prescribe components, layouts, or data models prematurely waste the team's craft and the AI's pattern-matching strength.
 
 ### 4. AI-readable and human-readable
 
-The same document gets read by a coding agent drafting a first cut, by an engineer reviewing trade-offs, and by an exec deciding whether to approve. That means:
+The same RFC gets read by a coding agent drafting a first cut, by an engineer reviewing trade-offs, and by an exec deciding whether to approve. That means:
 - Predictable section headers (so agents can locate the right context)
 - Structured fields rather than free-form prose where possible
 - Explicit anti-goals (so agents don't fabricate them)
@@ -63,58 +65,58 @@ The same document gets read by a coding agent drafting a first cut, by an engine
 
 ### 5. Living document
 
-A spec is approved in draft and stays alive through ship. Decisions made during delivery update the spec. When the team learns the job is shaped differently than expected, the spec changes (or the spec gets re-approved if the change is large).
+An RFC is approved in draft and stays alive through ship. Decisions made during delivery update the RFC. When the team learns the job is shaped differently than expected, the RFC changes (or it gets re-approved if the change is large) — and if the *job itself* shifted, the durable [Job Spec](../templates/job-spec.md) it references is updated too.
 
 ---
 
-## When to write a Product Spec
+## When to write an RFC
 
 | Path | Size | What you write | Who approves |
 |------|------|---------------|--------------|
 | **Quick Win** | ≤ half a day | Nothing. Flag with EM/PM, then ship. Changelog if UX, support notification always. | EM/PM alignment |
 | **Lightweight** | Half a day – 2 weeks | 1-page brief (Problem, Solution, Acceptance Criteria, Metrics, Persona) | PM + Tech Lead |
-| **Full Spec** | > 2 weeks | Full Product Spec using the [template](../templates/product-spec.md) | SVP Product (T1/T2), PM Lead (T3/T4) |
+| **Full Spec** | > 2 weeks | Full RFC using the [template](../templates/rfc.md) | SVP Product (T1/T2), PM Lead (T3/T4) |
 
 Use the [Decision Framework](decision-framework.md) to pick the path.
 
-**Don't write a full spec for:** bug fixes, internal tooling with no customer impact, prototypes (use research docs), or T4 work.
+**Don't write a full RFC for:** bug fixes, internal tooling with no customer impact, prototypes (use research docs), or T4 work.
 
 ---
 
-## Who can write a Product Spec
+## Who can write an RFC
 
 **Anyone on the team:**
 
-- **Product Managers** — Specs are how you scope, justify, and get approval. Core PM skill.
+- **Product Managers** — RFCs are how you scope, justify, and get approval. Core PM skill.
 - **Engineers** — Platform/technical initiatives, infrastructure improvements.
 - **Support & Success** — Operational improvements, workflow enhancements.
 - **Sales & Marketing** — Growth experiments, customer feature requests.
 - **Leadership** — Strategic initiatives.
 
-The spec author owns shepherding it through approval. Anyone can be the author.
+The RFC author owns shepherding it through approval. Anyone can be the author.
 
-**New to writing specs?** Ask in your team's #product channel for a sponsor to help with problem framing, RICE scoring, and template navigation.
+**New to writing RFCs?** Ask in your team's #product channel for a sponsor to help with problem framing, RICE scoring, and template navigation.
 
 ---
 
-## Spec lifecycle
+## RFC lifecycle
 
-| Phase | Spec Status | What's Happening | Tracker Status |
+| Phase | RFC Status | What's Happening | Tracker Status |
 |-------|------------|------------------|----------------|
-| **Learn** | (no spec yet) | Discovery — talking to customers, validating struggling moments. | (Evidence gathering) |
-| **Decide** | Draft → In Review | Spec author writes the spec, refines, submits for approval. | Backlog → Shaping |
-| **Shape** | Approved | Team agrees scope and approach. Solution space narrows as design and engineering propose options. Spec updated as decisions land. | Shaping → Readying for Build |
-| **Build** | Approved (living) | Build behind a flag. Spec updated when decisions are made; re-approved only if scope changes >20%. | Building → In Preview |
-| **Launch** | Approved | GTM activities. Spec is the source of truth for what we shipped. | GTM Launch Planning → Launched |
+| **Learn** | (no RFC yet) | Discovery — talking to customers, validating struggling moments. | (Evidence gathering) |
+| **Decide** | Draft → In Review | RFC author writes the RFC, refines, submits for approval. | Backlog → Shaping |
+| **Shape** | Approved | Team agrees scope and approach. Solution space narrows as design and engineering propose options. RFC updated as decisions land. | Shaping → Readying for Build |
+| **Build** | Approved (living) | Build behind a flag. RFC updated when decisions are made; re-approved only if scope changes >20%. | Building → In Preview |
+| **Launch** | Approved | GTM activities. The RFC is the source of truth for what we shipped. | GTM Launch Planning → Launched |
 | **Sell** | Archived | Document actual vs predicted in the [Post-Launch Review](../templates/post-launch-review.md). | Launched (Retro) |
 
 See [Delivery Standards](delivery-standards.md) for full phase and gate details.
 
 ---
 
-## Spec structure
+## RFC structure
 
-The [template](../templates/product-spec.md) has these sections. The order matters — it's the order a reader (human or agent) needs them.
+The [template](../templates/rfc.md) has these sections. The order matters — it's the order a reader (human or agent) needs them.
 
 1. **Status** — Header block with owner, approver, lever, tier, tracker.
 2. **TL;DR** — Three sentences: the job, what success looks like, the biggest constraint.
@@ -135,7 +137,7 @@ The [template](../templates/product-spec.md) has these sections. The order matte
 
 ### TL;DR
 
-Three sentences. The job, the success criterion, the binding constraint. A busy exec or an agent picking up the doc cold should understand the spec in 15 seconds.
+Three sentences. The job, the success criterion, the binding constraint. A busy exec or an agent picking up the doc cold should understand the RFC in 15 seconds.
 
 ### The Job
 
@@ -156,7 +158,7 @@ If you have fewer than two struggling moments with real evidence, you need more 
 Three flavours of success, in order of weight:
 - **Behavioural** — observable in product analytics.
 - **Felt** — observable in qualitative signal (NPS, interviews, support sentiment).
-- **Headline-metric** — the specific movement on the [headline metric](headline-metric.md) that this spec is responsible for.
+- **Headline-metric** — the specific movement on the [headline metric](headline-metric.md) that this RFC is responsible for.
 
 Plus **leading indicators** — early signals (≤ 2 weeks post-launch) that tell you whether you're on track.
 
@@ -173,10 +175,10 @@ Then name your **pivot triggers** and **stop triggers**. Specific. "60d adoption
 Four buckets:
 - **Quality / principle** — your [Product Principles](product-principles.md) applied as engineering standards.
 - **Performance / reliability** — latency budgets, error budgets, API contracts that can't break.
-- **Trust / safety** — privacy, security, reversibility.
+- **Trust / safety** — privacy, security, reversibility. Anything the initiative must not cross by construction belongs to a named [invariant](../reference/invariants.md), not just a guardrail.
 - **Out of scope** — explicit non-goals, even when asked.
 
-Guardrails are the part of the spec that says *no* to creativity in specific places. The rest of the spec invites it.
+Guardrails are the part of the RFC that says *no* to creativity in specific places. The rest of the RFC invites it.
 
 ### Solution Space
 
@@ -190,11 +192,11 @@ It's okay (and helpful) to include 2–3 *illustrative* approaches as one-line s
 
 ### Evidence
 
-Hard limit: 3 bullets, each one linking out. The spec is not the research document; it points to research.
+Hard limit: 3 bullets, each one linking out. The RFC is not the research document; it points to research.
 
 ### Bets & Risks
 
-Name what you're betting on. "If the user genuinely doesn't have this struggling moment, the spec is wrong" is the kind of bet to surface. Risks should have mitigations.
+Name what you're betting on. "If the user genuinely doesn't have this struggling moment, the RFC is wrong" is the kind of bet to surface. Risks should have mitigations.
 
 ### Rollout
 
@@ -252,7 +254,7 @@ Before marking "In Review":
 
 ### Re-approval triggers
 
-A spec must be re-approved if:
+An RFC must be re-approved if:
 
 - **Scope changes significantly** — more than 20% effort change
 - **Timeline slips** — more than one quarter delay
@@ -267,7 +269,7 @@ Otherwise, ship.
 
 A coding/writing agent (whichever your team has approved) is excellent at:
 
-- Drafting the first cut of a spec from research notes and customer quotes
+- Drafting the first cut of an RFC from research notes and customer quotes
 - Generating user-failure-mode candidates given a job statement
 - Reviewing a draft against the approval checklist
 - Proposing 2–3 illustrative solution-space sketches
@@ -281,24 +283,25 @@ It is not good at (and shouldn't be trusted with):
 
 Useful prompts:
 
-- *"Draft a Product Spec for `[job]`. Use the template at `templates/product-spec.md`. Lead with the JTBD. Generate 3 plausible user-failure modes, each with a detection signal."*
-- *"Review this Product Spec against the approval checklist. Flag missing sections and ungrounded claims. Don't invent evidence."*
+- *"Draft an RFC for `[job]`. Use the template at `templates/rfc.md`. Lead with the JTBD. Generate 3 plausible user-failure modes, each with a detection signal."*
+- *"Review this RFC against the approval checklist. Flag missing sections and ungrounded claims. Don't invent evidence."*
 - *"Propose 3 illustrative solution-space sketches that respect the guardrails. Label each as illustrative — do not commit to one."*
 
-### When an agent authors or implements the spec: review it adversarially
+### When an agent authors or implements the RFC: review it adversarially
 
-When an agent drafts the spec — or implements against it — the **author cannot grade its own work** (it rubber-stamps). A separate, **fresh-process reviewer** (a different agent with fresh context, or a human) must check it and return an explicit **APPROVE / REQUEST_CHANGES / BLOCK** verdict, citing the specific section or `file:line`. Iterate until APPROVE, and don't let an automated merge fire before then. This is the design-loop discipline from [Agentic Delivery](agentic-delivery.md) — it *extends* the [approval](#approval) gate above, it doesn't replace it.
+When an agent drafts the RFC — or implements against it — the **author cannot grade its own work** (it rubber-stamps). A separate, **fresh-process reviewer** (a different agent with fresh context, or a human) must check it and return an explicit **APPROVE / REQUEST_CHANGES / BLOCK** verdict, citing the specific section or `file:line`. Iterate until APPROVE, and don't let an automated merge fire before then. This is the design-loop discipline from [Agentic Delivery](agentic-delivery.md) — it *extends* the [approval](#approval) gate above, it doesn't replace it.
 
 ---
 
 ## Resources
 
-- **Template:** [Product Spec Template](../templates/product-spec.md)
+- **Template:** [RFC Template](../templates/rfc.md)
+- **Job Spec:** [Job Spec Template](../templates/job-spec.md) — the durable, per-job outcome contract an RFC references
 - **Discovery:** [Discovery guide](discovery.md) — validate problems before writing
 - **Research:** [Research Template](../templates/research.md) — document findings
 - **JTBD:** [JTBD Guide](jtbd-guide.md) — framing the job and forces
 - **Decisions:** [Decision Framework](decision-framework.md) — Signal → Standard → Speed (pick the right path)
 - **Lifecycle:** [Delivery Standards](delivery-standards.md) — full operational workflow and gate definitions
 - **Strategy:** Your annual strategy doc — strategic context
-- **Vision:** [Product Vision](../product-vision.md) — the anchor every spec ties back to
+- **Vision:** [Product Vision](../product-vision.md) — the anchor every RFC ties back to
 - **Measurement:** [Post-Launch Review](../templates/post-launch-review.md) — closes the loop

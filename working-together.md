@@ -41,7 +41,7 @@ Nobody dictates another's domain. Product doesn't tell engineering which databas
 
 The triad sets direction. Engineers on the team build it. That doesn't make you passive in the process.
 
-**You can identify problems and propose solutions.** If you spot a customer pain point, a UX problem, or a pattern in support tickets, say something. File a bug, raise it in standup, bring it to your EM or PM, or write a Product Spec yourself. You don't need permission. The bar for a good Product Spec is evidence of a real problem and a clear solution, regardless of who writes it.
+**You can identify problems and propose solutions.** If you spot a customer pain point, a UX problem, or a pattern in support tickets, say something. File a bug, raise it in standup, bring it to your EM or PM, or write an RFC yourself. You don't need permission. The bar for a good RFC is evidence of a real problem and a clear solution, regardless of who writes it.
 
 **You should know why you're building something.** If you're handed an implementation without context on the problem it solves, ask. "What problem does this solve?" is always a fair question. If the answer isn't clear, that's a signal the work isn't ready.
 
@@ -86,9 +86,9 @@ The triad above still owns the product when an **agentic workforce** does much o
 
 | Responsibility | Human-triad default | When agents deliver |
 |---|---|---|
-| Vision / anchors / non-negotiables | Product | **Stays human** — agents consume, never author |
+| Anchors — vision, principles, invariants | Product | **Stays human** — agents consume, never author |
 | Principles (product + engineering standards) | Triad | Human-owned; agents *apply* them as a gate |
-| JTBD docs | PM authors | Agent may *draft*; a human (or fresh-process reviewer) ratifies the job statement |
+| Job Specs | PM authors | Agent may *draft*; a human (or fresh-process reviewer) ratifies the job statement |
 | Technical approach / architecture / NFRs | Engineering | **Engineering owns** — sets the non-functional bar the agents build to |
 | Design loops (implement, research unknowns) | Engineering | Delivery agents run it **under engineering oversight** |
 | Adversarial review | Tech Lead / peer | **Fresh-process reviewer** — a separate process, never the author |
@@ -111,19 +111,19 @@ Ideas enter through customer feedback, research, analytics, or internal discover
 |------|------|---------------------|--------------|
 | **Quick Win** | Half a day or less | Verbal scope | Flag with EM/PM, then ship. Limited budget per sprint. |
 | **Lightweight** | Half a day to 2 weeks | 1-page brief (Problem, Solution, Acceptance Criteria, Metrics) | Engineering confirms sizing. Build behind flag. |
-| **Full Spec** | More than 2 weeks | Product Spec + Product Spec | Engineering confirms feasibility. Full triad alignment before build. |
+| **Full Spec** | More than 2 weeks | RFC | Engineering confirms feasibility. Full triad alignment before build. |
 
-Quick Wins are worth calling out. If you see something that takes less than half a day and passes Signal and Standard, you don't need a Product Spec or a meeting. Just do it. This is true for anyone on the team, not just the triad.
+Quick Wins are worth calling out. If you see something that takes less than half a day and passes Signal and Standard, you don't need an RFC or a meeting. Just do it. This is true for anyone on the team, not just the triad.
 
-Product Specs aren't exclusive to PMs either. If an engineer or a Design Engineer identifies a problem worth solving, write the Product Spec. It still gets reviewed and prioritised through the normal process.
+RFCs aren't exclusive to PMs either. If an engineer or a Design Engineer identifies a problem worth solving, write the RFC. It still gets reviewed and prioritised through the normal process.
 
 > 🔗 See [Decision Framework](guides/decision-framework.md) for the full detail.
 
 ---
 
-## The Product Spec
+## The RFC
 
-One document, not a separate product spec and tech spec. One spec that captures the problem, the solution, and how we'll build and measure it.
+One document, not a separate product spec and tech spec. One ship-coupled RFC that captures the problem, the solution, and how we'll build and measure it.
 
 | Section | Led by |
 |---------|--------|
@@ -131,9 +131,9 @@ One document, not a separate product spec and tech spec. One spec that captures 
 | Technical approach | Engineering |
 | Experience | Design |
 
-All three review the whole thing before build starts. If you're an engineer on the team and the spec doesn't make sense, raise it before you start building. Specs should answer your questions, not create them.
+All three review the whole thing before build starts. If you're an engineer on the team and the RFC doesn't make sense, raise it before you start building. RFCs should answer your questions, not create them.
 
-> 🔗 See [Product Specs](guides/product-specs.md) for the full guide and [Product Spec Template](templates/product-spec.md) for the template.
+> 🔗 See [Writing an RFC](guides/product-specs.md) for the full guide and [RFC Template](templates/rfc.md) for the template.
 
 ---
 
@@ -186,9 +186,9 @@ Stopping is not failure. Continuing to invest in something the data says isn't w
 
 ## Technical decisions and tech debt
 
-If a technical approach involves trade-offs that future engineers will wonder about, write it down. ADRs (Architecture Decision Records) capture the context, options considered, and rationale. Link them from the Product Spec so the reasoning is discoverable.
+If a technical approach involves trade-offs that future engineers will wonder about, write it down. ADRs (Architecture Decision Records) capture the context, options considered, and rationale. Link them from the RFC so the reasoning is discoverable.
 
-Tech debt, infrastructure work, refactors, and reliability improvements don't need Product Specs. But they need visibility.
+Tech debt, infrastructure work, refactors, and reliability improvements don't need an RFC. But they need visibility.
 
 > ⚠️ EMs and Tech Leads: drop a note in the issue tracker so the rest of the team knows where capacity is going. If nobody knew a refactor was eating two weeks of capacity, that's a problem regardless of whether the refactor was worth it.
 
@@ -206,7 +206,7 @@ Tech debt, infrastructure work, refactors, and reliability improvements don't ne
 **The problem is real but the solution is too expensive.**
 Find a cheaper path to the same outcome. "Just build it" and "drop it" are both wrong answers.
 
-**You want to build without a Product Spec.**
+**You want to build without an RFC.**
 Fine for tech debt, infrastructure, refactors, reliability. But make it visible in your tracker.
 
 **Who decides when to ship?**
@@ -247,6 +247,6 @@ If the triad can't resolve a disagreement, bring it to your leads with context a
 | Understand the full operating model | [Product Playbook](product-playbook.md) |
 | See the product vision and personas | [Product Vision](product-vision.md) |
 | Understand how we decide what to build | [Decision Framework](guides/decision-framework.md) |
-| See how Product Specs work | [Product Specs](guides/product-specs.md) |
+| See how RFCs work | [Writing an RFC](guides/product-specs.md) |
 | Understand the delivery workflow | [Delivery Standards](guides/delivery-standards.md) |
-| Grab a Product Spec template | [Product Spec](templates/product-spec.md) |
+| Grab an RFC template | [RFC](templates/rfc.md) |

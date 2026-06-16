@@ -9,6 +9,8 @@ icon: "📖"
 
 Product principles are the engineering and design standards that turn the [product vision](../product-vision.md) into day-to-day quality gates. They are applied in every PR, every design review, every release. They are the "Standard" in [Signal → Standard → Speed](decision-framework.md).
 
+> 🧭 Principles are the **second of three anchors** — **[Vision](../product-vision.md)** (why), **Principles** (built well), and **[Invariants](../reference/invariants.md)** (lines we won't cross by construction). Together they fuse into the [verdict rule](agentic-delivery.md).
+
 This guide explains the purpose of principles, what a good set looks like, how to write yours, and how to use them as a working tool — not wall art.
 
 ---
@@ -28,8 +30,8 @@ Principles fix this by making "good" *teachable*. A new engineer should be able 
 | Where they show up | How they're used |
 |---|---|
 | [Decision Framework](decision-framework.md) | "Standard" is *literally* the principle check. No principle conformance, no shipping. |
-| [Product Spec Template](../templates/product-spec.md) | Strategic Alignment section confirms the proposal meets each principle, with reasoning. |
-| [Product Spec](../templates/product-spec.md) | Solution sections reference the principles they uphold and any tensions. |
+| [RFC Template](../templates/rfc.md) | Strategic Alignment section confirms the ship-coupled initiative meets each principle, with reasoning. |
+| [RFC](../templates/rfc.md) | Solution sections reference the principles they uphold and any tensions. |
 | Code review / design review | Each principle has check questions reviewers can paste into a comment. |
 | [Post-Launch Review](../templates/post-launch-review.md) | If the launch underperformed, ask: which principle did we compromise on? |
 
@@ -103,7 +105,7 @@ Take three real PRs and run them through your principles. If every PR sails thro
 
 ## How to use principles operationally
 
-- **In Product Specs:** The Strategic Alignment section calls out which principles the proposal serves and any tensions it creates.
+- **In RFCs:** The Strategic Alignment section calls out which principles the ship-coupled initiative serves and any tensions it creates.
 - **In design reviews:** Reviewer pastes the check questions for the relevant principle and asks for specific evidence.
 - **In code reviews:** "Does this meet principle [N]? If not, what's the plan?"
 - **In post-launch reviews:** If adoption is below target, the first question is "did we compromise a principle?"
@@ -174,12 +176,13 @@ Before you ship, ask:
 
 If you can't answer all three, you're not done. Redesign, don't ship and patch later.
 
-> **Principles judge the JTBD docs — they don't replace them.** A change can satisfy its [JTBD doc](../templates/jtbd-doc.md) (it does the user's job) and still fail a principle check (it was built badly). When that happens, the job is the goal; the principles are how you get there without making the product feel like a kit. Both must pass — that all-must-pass gate across the vision outcome, the JTBD, and the principles (and any non-negotiable constraint) is the **verdict rule**. See [Agentic Delivery](agentic-delivery.md).
+> **Principles judge the Job Specs — they don't replace them.** A change can satisfy its [Job Spec](../templates/job-spec.md) (it does the user's job) and still fail a principle check (it was built badly). When that happens, the job is the goal; the principles are how you get there without making the product feel like a kit. Both must pass — that all-must-pass gate across the vision outcome, the Job Spec, the principles, and the invariants (no line crossed) is the **verdict rule**. See [Agentic Delivery](agentic-delivery.md).
 
 ---
 
 ## Related
 
-- [Product Vision](../product-vision.md) — Principles are derived from the vision.
+- [Product Vision](../product-vision.md) — Principles are derived from the vision (the first anchor).
+- [Invariants](../reference/invariants.md) — The third anchor; the lines you won't cross by construction.
 - [Decision Framework](decision-framework.md) — How "Standard" uses the principles to filter work.
-- [Product Specs](product-specs.md) — How to apply principles when writing specs.
+- [RFC Guide](product-specs.md) — How to apply principles when writing a ship-coupled RFC.

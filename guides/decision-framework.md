@@ -11,7 +11,7 @@ icon: "📖"
 
 Every idea, request, or problem that reaches a PM needs an answer to one question: **what's the right path for this work?**
 
-Not everything needs a Product Spec. Not everything is a quick win. The path should match the size and risk — not force everything through the same process.
+Not everything needs an RFC. Not everything is a quick win. The path should match the size and risk — not force everything through the same process.
 
 ---
 
@@ -20,9 +20,9 @@ Not everything needs a Product Spec. Not everything is a quick win. The path sho
 | | Quick Win | Lightweight | Full Spec |
 |---|---|---|---|
 | **Size** | ≤ half a day of engineering | Half a day – 2 weeks | > 2 weeks |
-| **Process** | Flag with EM/PM, then ship | 1-page brief | Full Spec + Product Spec |
+| **Process** | Flag with EM/PM, then ship | 1-page brief | Full RFC |
 | **Approval** | EM/PM alignment | PM + Tech Lead | SVP Product (T1/T2), PM Lead (T3/T4) |
-| **Documentation** | Changelog if UX. Support notification always. | Problem, Solution, Acceptance Criteria, Metrics, Persona | Product Spec template, RICE score, Product Spec |
+| **Documentation** | Changelog if UX. Support notification always. | Problem, Solution, Acceptance Criteria, Metrics, Persona | RFC ([template](../templates/rfc.md)), RICE score |
 | **Feature flag** | Optional | Yes | Yes |
 | **Post-launch review** | No | 2-week check-in | 2wk / 30d / 90d reviews |
 
@@ -53,13 +53,13 @@ If Standard fails, redesign the approach before investing engineering time. A fa
 How big is the work? This determines the path.
 
 **≤ half a day → Quick Win**
-Flag it with your EM or PM. If it aligns with the team's current priorities, get on with it. No Product Spec needed, but use good judgment — each team has a limited budget for Quick Wins per sprint so we stay focused on strategic work. Changelog if it changes UX. Notify support always. Tag it `quick-win` in your tracker.
+Flag it with your EM or PM. If it aligns with the team's current priorities, get on with it. No RFC needed, but use good judgment — each team has a limited budget for Quick Wins per sprint so we stay focused on strategic work. Changelog if it changes UX. Notify support always. Tag it `quick-win` in your tracker.
 
 **Half a day – 2 weeks → Lightweight**
 Write a 1-page brief (see template below). Get PM + Tech Lead sign-off. Ship behind a feature flag. Do a 2-week check-in after launch.
 
 **> 2 weeks → Full Spec**
-Write a full Product Spec with RICE score. Get approval (SVP for T1/T2, PM Lead for T3/T4). Write a Product Spec after approval. Follow the full delivery process.
+Write a full [RFC](../templates/rfc.md) with RICE score. Get approval (SVP for T1/T2, PM Lead for T3/T4). Follow the full delivery process. (The RFC references the relevant [Job Spec](../templates/job-spec.md) — the durable outcome contract that outlives this initiative.)
 
 ---
 
@@ -117,14 +117,14 @@ How does this move the headline metric from the [product vision](../product-visi
 **Signal:** Top-3 deal blocker. 15 deal opportunities waiting on the native capability. Strategy lever: Expansion. RICE Grade B.
 **Standard:** Must feel like part of the core product, not a bolted-on module.
 **Speed:** ~2 months of engineering. New data flow, UI surfaces, API endpoints.
-**Path:** Full Spec. RICE scored. Senior product approval (T2). Product Spec. Full delivery process.
+**Path:** Full Spec. RICE scored. Senior product approval (T2). RFC. Full delivery process.
 
 ---
 
 ## Common Questions
 
 **What if I'm not sure about the size?**
-Talk to your Tech Lead in the weekly scoping session (Monday). Sizing is a 5-minute conversation, not a week of analysis. If the Tech Lead says "I'm not sure," that usually means it's bigger than a lightweight — write the Product Spec.
+Talk to your Tech Lead in the weekly scoping session (Monday). Sizing is a 5-minute conversation, not a week of analysis. If the Tech Lead says "I'm not sure," that usually means it's bigger than a lightweight — write the RFC.
 
 **What about urgent customer issues?**
 Urgent doesn't change the path — it changes the priority. A 3-day fix for a churning customer is still a Lightweight brief, but it goes to the top of the queue. The PM + Tech Lead approve same-day. Escalation to SVP if needed (see [PM Handbook escalation table](../pm-handbook.md#escalation)).
@@ -144,7 +144,7 @@ The PM, informed by the Tech Lead's sizing. If there's disagreement, the PM deci
 
 - [Product Playbook](../product-playbook.md) — The 6-phase operating model (this framework is Phase 2: DECIDE)
 - [Product Vision](../product-vision.md) — Vision and personas
-- [Product Specs](product-specs.md) — Full Spec path guidance
+- [RFC Guide](product-specs.md) — Full Spec path guidance (writing a ship-coupled RFC)
 - [RICE Assessment](rice.md) — Scoring for Full Spec path
 
 ---

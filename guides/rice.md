@@ -22,7 +22,7 @@ RICE is a framework for **comparing projects** on the same basis. Three value di
 - Override business judgment or strategic considerations
 
 **Applies to:** Projects (not Specs)
-**When to score:** During Shaping — include in Product Spec
+**When to score:** During Shaping — include in RFC
 **Owner:** PM assigned to project
 
 ---
@@ -195,11 +195,11 @@ Every project must include a RICE Explanation that:
 | Phase | RICE Status |
 |-------|-------------|
 | **Discovery** | Optional — rough estimate helps early comparison |
-| **Definition** | Recommended — all dimensions scored for Product Spec |
+| **Definition** | Recommended — all dimensions scored for RFC |
 | **Delivery** | Reference — update if scope changes significantly |
 | **Shipped** | Retrospective — compare predicted vs actual |
 
-Score before Product Spec approval when possible. The score is input to the decision, not a gate.
+Score before RFC approval when possible. The score is input to the decision, not a gate.
 
 **Re-score triggers:**
 

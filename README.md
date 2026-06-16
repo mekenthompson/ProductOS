@@ -25,6 +25,30 @@ ProductOS is defined by its own method. The anchors live in
 Each PM job ProductOS automates becomes a Job Spec ([template](templates/job-spec.md))
 delivered by a skill.
 
+## The method (migrated from the product-playbook, now ProductOS-native)
+
+The reusable method — vocabulary reconciled to the hierarchy below
+(Vision / Principles / Invariants → **Product Spec** → **Job Specs** →
+**RFCs**; the old "JTBD doc" is now the **Job Spec**, the old ship-coupled
+"Product Spec" is now an **RFC**).
+
+- [`index.md`](index.md) — the reading guide; start here.
+- [`product-playbook.md`](product-playbook.md) — the six-phase operating loop
+  (Learn → Decide → Shape → Build → Launch → Sell).
+- [`guides/`](guides/) — how to write each artifact:
+  [agentic-delivery](guides/agentic-delivery.md) (the verdict rule + the four
+  parts), [jtbd-guide](guides/jtbd-guide.md), [product-principles](guides/product-principles.md),
+  [decision-framework](guides/decision-framework.md), [product-specs](guides/product-specs.md)
+  (the RFC guide), personas, rice, and more.
+- [`templates/`](templates/) — blank shapes: [`job-spec.md`](templates/job-spec.md)
+  (canonical), [`rfc.md`](templates/rfc.md), post-launch-review, research,
+  customer-call, ritual-review.
+- [`product-vision.md`](product-vision.md) / [`pm-handbook.md`](pm-handbook.md)
+  / [`working-together.md`](working-together.md) — vision-writing guide, the
+  PM role, and how the triad collaborates.
+- [`AGENTS.md`](AGENTS.md) — the terse, agent-executable operating contract
+  (the verdict rule as a gate). Read this to *execute* the method.
+
 ## Contents
 
 ### Skills (invocable)

@@ -21,11 +21,11 @@ This is for everyone who builds, shapes, or ships product — PMs, engineers, de
 
 Three things you write once and reuse everywhere:
 
-1. **[Product Vision](product-vision.md)** — territory, headline metric, personas, out-of-scope. The single anchor every Product Spec ties back to.
+1. **[Product Vision](product-vision.md)** — territory, headline metric, personas, invariants (the lines you won't cross). The single anchor every RFC ties back to.
 2. **[Three Personas](guides/personas.md)** — your version of Creators / Consumers / Sponsors (or whatever shape fits your product). Each gets a vision-lens question that frames every decision.
 3. **[Product Principles](guides/product-principles.md)** — three to five engineering-and-design standards that turn the vision into day-to-day quality gates.
 
-Once those three are written and stress-tested, the rest of the playbook clicks into place: the [decision framework](guides/decision-framework.md) tests against them, the [Product Spec template](templates/product-spec.md) demands them, and the [post-launch review](templates/post-launch-review.md) measures against them.
+Once those three are written and stress-tested, the rest of the playbook clicks into place: the [decision framework](guides/decision-framework.md) tests against them, the [RFC template](templates/rfc.md) demands them, and the [post-launch review](templates/post-launch-review.md) measures against them.
 
 ## The Product Loop
 
@@ -37,7 +37,7 @@ Each phase has explicit beliefs, behaviours, and assets. See [Product Playbook](
 
 ## How We Decide
 
-Every idea passes three checks: **Signal** (strategy-aligned with real need?), **Standard** (meets our principles?), **Speed** (how big?). Half a day or less? Flag it with your EM/PM and ship it. Bigger? Write a Product Spec with a RICE score. Every decision gets communicated back with reasoning. [Full framework](guides/decision-framework.md).
+Every idea passes three checks: **Signal** (strategy-aligned with real need?), **Standard** (meets our principles?), **Speed** (how big?). Half a day or less? Flag it with your EM/PM and ship it. Bigger? Write an RFC with a RICE score. Every decision gets communicated back with reasoning. [Full framework](guides/decision-framework.md).
 
 ## Reading Guide
 
@@ -48,7 +48,7 @@ Every idea passes three checks: **Signal** (strategy-aligned with real need?), *
 
 ### PMs
 - [PM Handbook](pm-handbook.md) — Role, rituals, first 90 days
-- [Product Specs](guides/product-specs.md) — Writing and approval guide
+- [RFC Guide](guides/product-specs.md) — Writing and approval guide
 - [Decision Framework](guides/decision-framework.md) — Signal, Standard, Speed in detail
 - [Discovery](guides/discovery.md) — How to research before building
 - [Handling Product Feedback](guides/customer-feedback.md) — Processing and triaging feedback
@@ -67,4 +67,4 @@ Every idea passes three checks: **Signal** (strategy-aligned with real need?), *
 ### Reference
 - **Core Concepts:** [Three Personas](guides/personas.md) | [Product Principles](guides/product-principles.md) | [Headline Metric](guides/headline-metric.md)
 - **Frameworks:** [Agentic Delivery](guides/agentic-delivery.md) | [RICE Scoring](guides/rice.md) | [JTBD Guide](guides/jtbd-guide.md) | [Customer Journey](guides/customer-journey.md) | [Tools We Use](guides/tools-we-use.md)
-- **Templates:** [Product Spec](templates/product-spec.md) | [JTBD Doc](templates/jtbd-doc.md) | [Customer Call](templates/customer-call.md) | [Research](templates/research.md) | [Post-Launch Review](templates/post-launch-review.md) | [Ritual Review](templates/ritual-review.md)
+- **Templates:** [RFC](templates/rfc.md) | [Job Spec](templates/job-spec.md) | [Customer Call](templates/customer-call.md) | [Research](templates/research.md) | [Post-Launch Review](templates/post-launch-review.md) | [Ritual Review](templates/ritual-review.md)

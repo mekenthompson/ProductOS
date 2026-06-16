@@ -1,6 +1,6 @@
 # Product Playbook — Agent Guidance
 
-This repository is a **reusable, product-agnostic operating system for running product organisations**. The playbook framework (six phases, RICE, decision framework, Product Spec/spec templates) is product-agnostic. Anything specific to a real product (vision, personas, principles, headline metric) is documented as a *guide* — what good looks like, when it's "done," and how to write your own.
+This repository is a **reusable, product-agnostic operating system for running product organisations**. The playbook framework (six phases, RICE, decision framework, RFC/spec templates) is product-agnostic. Anything specific to a real product (vision, personas, principles, invariants, headline metric) is documented as a *guide* — what good looks like, when it's "done," and how to write your own.
 
 ## ⚠️ Important: Notion Page Handling
 
@@ -20,41 +20,43 @@ When in doubt, leave the page and ask the user.
 
 ## Agentic Delivery — operating contract
 
-The terse, executable contract for the method narrated in [`playbook/guides/agentic-delivery.md`](playbook/guides/agentic-delivery.md). That guide is the human narrative; this is the gate. Four working parts: **anchors · JTBD docs · design loops · outcome UAT.** ("Four" is this method's anatomy, not a law for products — a product picks its own small number of vision outcomes and principles.)
+The terse, executable contract for the method narrated in [`guides/agentic-delivery.md`](guides/agentic-delivery.md). That guide is the human narrative; this is the gate. Four working parts: **anchors · Job Specs · design loops · outcome UAT.** ("Four" is this method's anatomy, not a law for products — a product picks its own small number of vision outcomes, principles, and invariants.)
+
+**Artifact hierarchy (top to bottom).** Three **anchors** — vision (why) · principles (built-well) · invariants (lines we won't cross by construction) — hold for the whole product. Beneath them, a **Product Spec** (one per product) names the product's outcomes, says how the product functions, and owns the list of jobs. Beneath that, **Job Specs** (one per job) are the durable, outcome-focused, UAT-verifiable contracts. **RFCs / PRs** are the ship-coupled, per-initiative delivery layer that references a Job Spec — NOT a named spec tier of their own.
 
 **Verdict rule (the gate).** A change ships only when ALL hold:
 
 1. it advances a named vision outcome (it's in scope at all);
-2. it satisfies its JTBD doc (does the user's job) — proven by its outcome UAT;
+2. it satisfies its Job Spec (does the user's job) — proven by its outcome UAT;
 3. it passes every principle check — product AND engineering standards (a "no" is a redesign, not a follow-up);
-4. it violates no non-negotiable constraint (the lines you won't cross by construction).
+4. it crosses no invariant (the lines you won't cross by construction).
 
 Else: out of scope, however clever.
 
 **Triggers — what to do when.**
 
 - **Scoping / designing →** read the vision; name which outcome the work serves. If none, stop.
-- **Writing or changing a JTBD doc →** use [`playbook/templates/jtbd-doc.md`](playbook/templates/jtbd-doc.md); keep `job` / `outcome` / `stakes` stable, narrate retired approaches rather than rewriting the job; the `## UAT prompts` section must be non-empty. Doc-class by frontmatter key: `job:` = durable JTBD doc; `artifact:` (or `artefact:`) / `serves:` = churny artifact that points up to a job.
+- **Writing or changing a Job Spec →** use [`templates/job-spec.md`](templates/job-spec.md); keep `job` / `outcome` / `stakes` stable, narrate retired approaches rather than rewriting the job; the `## UAT prompts` section must be non-empty. Doc-class by frontmatter key: `job:` = durable Job Spec; `artifact:` (or `artefact:`) / `serves:` = churny artifact (e.g. an RFC) that points up to a job.
 - **Reviewing →** dispatch a SEPARATE fresh-process reviewer (never the author — it rubber-stamps). It returns APPROVE / REQUEST_CHANGES / BLOCK citing file:line; iterate to APPROVE. Do NOT let an automated merge fire before APPROVE.
 - **Shipping →** run the outcome UAT (job × surface, real path, independent of unit tests) AND the production-readiness check. Unit-green ≠ outcome-validated ≠ production-ready — three gates, none implies the others.
 
 **Fresh-process reviewer checklist** (hand the reviewer these — an unscoped reviewer rubber-stamps):
 
-1. advances the named outcome and passes the verdict gate incl. the non-negotiable clause;
-2. satisfies the cited JTBD doc; does not silently rewrite the job;
+1. advances the named outcome and passes the verdict gate incl. the invariant clause;
+2. satisfies the cited Job Spec; does not silently rewrite the job;
 3. outcome UAT present and actually re-proves the job (not just unit-green);
 4. passes every principle check — product AND engineering standards;
 5. engineering acceptance / production-readiness met to the level the stakes demand (security, scale, availability, reliability);
 6. the reviewer is a separate process and cites a location for every blocker.
 
-**Ownership invariant** (extends "augmentation, not automation"; does not replace it). Agents own *delivery execution within the gates* — drafting JTBD docs, implementing, running loops and UATs. Humans own the *gates and the judgement* — the vision, the principles, the non-negotiables, ratifying the job statement, and engineering oversight. Agents consume the anchors; they never author them. This does NOT loosen the "Do NOT" rules below: changing the playbook's own policy (this contract, the AI stance, the anchors) is a human-ratified policy change, not routine agent delivery.
+**Ownership invariant** (extends "augmentation, not automation"; does not replace it). Agents own *delivery execution within the gates* — drafting Job Specs, implementing, running loops and UATs. Humans own the *gates and the judgement* — the vision, the principles, the invariants, ratifying the job statement, and engineering oversight. Agents consume the anchors; they never author them. This does NOT loosen the "Do NOT" rules below: changing the playbook's own policy (this contract, the AI stance, the anchors) is a human-ratified policy change, not routine agent delivery.
 
 ## Playbook Structure
 
 Three tiers: **Root docs (understand how the model works) → Guides (go deeper) → Templates (grab and go)**
 
 ```
-playbook/
+productos/
 ├── index.md                    # Playbook homepage + reading guide
 ├── product-vision.md           # How to write the product vision (guide + template)
 ├── product-playbook.md         # THE anchor doc (6-phase operating model)
@@ -62,14 +64,14 @@ playbook/
 ├── working-together.md         # Product triad collaboration
 ├── product-domains.md          # Pointer doc — domain map lives in your tool of choice
 ├── guides/                     # Go deeper when you need to
-│   ├── agentic-delivery.md     # The four-part method for agent-delivered work (anchors, JTBD docs, design loops, outcome UAT)
+│   ├── agentic-delivery.md     # The four-part method for agent-delivered work (anchors, Job Specs, design loops, outcome UAT)
 │   ├── headline-metric.md      # How to pick the single metric the playbook anchors on
 │   ├── personas.md             # Three personas pattern (Creator/Consumer/Sponsor)
 │   ├── product-principles.md   # How to write the standards your product is built to
 │   ├── decision-framework.md   # Signal → Standard → Speed (three paths)
 │   ├── lifecycle.md            # [ARCHIVED] Redirects to delivery-standards.md
-│   ├── product-specs.md       # Product Spec & Spec guide (lifecycle, approval, delivery)
-│   ├── discovery.md            # How to validate problems before writing a Product Spec
+│   ├── product-specs.md       # RFC guide (lifecycle, approval, delivery)
+│   ├── discovery.md            # How to validate problems before writing an RFC
 │   ├── customer-feedback.md    # Handling product feedback
 │   ├── rice.md                 # RICE scoring framework
 │   ├── jtbd-guide.md           # Jobs to be Done framework
@@ -77,8 +79,8 @@ playbook/
 │   ├── delivery-standards.md     # Operational workflow with gate checklists
 │   └── tools-we-use.md         # Reference toolchain
 └── templates/                  # Grab these when doing the work
-    ├── product-spec.md         # The single approval + delivery doc (JTBD-led)
-    ├── jtbd-doc.md              # The durable per-job outcome doc (job/outcome/stakes; outlives any spec)
+    ├── rfc.md                  # The ship-coupled, per-initiative delivery doc (JTBD-led)
+    ├── job-spec.md             # The durable per-job outcome doc (job/outcome/stakes; outlives any RFC)
     ├── post-launch-review.md   # 2wk/30d/90d review template
     ├── ritual-review.md        # Dogfooding, onboarding, competitor review
     ├── customer-call.md        # Research
@@ -87,12 +89,12 @@ playbook/
 
 ## Template Strategy
 
-**All copyable templates live in `playbook/templates/` only** — this is the single source of truth.
+**All copyable templates live in `templates/` only** — this is the single source of truth.
 
 | Template | File | Notes |
 | -------- | ---- | ----- |
-| Product Spec | `product-spec.md` | Single doc that does approval + delivery. JTBD-led; explicit user success/failure modes; guardrails; open solution space |
-| JTBD Doc | `jtbd-doc.md` | The durable, per-job outcome doc (job/outcome/stakes + signs / anti-patterns / UAT prompts). Outlives any single spec; a spec's "The Job" links to it. Distinct from the job-story *sentence* in the JTBD Guide |
+| RFC | `rfc.md` | Single ship-coupled doc that does approval + delivery. JTBD-led; explicit user success/failure modes; guardrails; open solution space. References a Job Spec; not a named spec tier of its own |
+| Job Spec | `job-spec.md` | The durable, per-job outcome doc (job/outcome/stakes + signs / anti-patterns / UAT prompts). Outlives any single RFC; an RFC's "The Job" links to it. Distinct from the job-story *sentence* in the JTBD Guide |
 | Customer Call | `customer-call.md` | Interview / call notes |
 | Research | `research.md` | Research synthesis |
 | Post-Launch Review | `post-launch-review.md` | Reviews at 2w/30d/90d |
@@ -100,14 +102,14 @@ playbook/
 
 **Key decisions:**
 
-- **No PRD vs Spec split**: there used to be a separate PRD (approval) and Product Spec (delivery). They were collapsed into a single living **Product Spec** because the split caused drift and required restating "the why" twice.
+- **No PRD vs Spec split**: there used to be a separate PRD (approval) and delivery spec. They were collapsed into a single living **RFC** because the split caused drift and required restating "the why" twice.
 - **JTBD-led**: every spec opens with the user's job, not the feature. If the job statement isn't crisp, drop down to discovery before writing.
 - **User success and failure modes are first-class sections**: success and failure are framed from the user's perspective (hard / soft / silent / adoption failure), each with detection signals and explicit pivot/stop triggers.
 - **Solution space, not blueprint**: the spec defines must-do / must-not-do / free-to-vary. *How* to build it is the team's (and the AI's) creative work.
 - **AI- and human-readable**: predictable section headers, structured fields where possible, anti-goals explicit, evidence linked out (not pasted in).
-- **No separate Design Spec or Tech Spec**: design coverage and technical approach are sections inside the Product Spec.
+- **No separate Design Spec or Tech Spec**: design coverage and technical approach are sections inside the RFC.
 - **No Project Template**: Projects are operational entities in your tracker, not copyable templates.
-- **JTBD Guide in guides/**: located at `playbook/guides/jtbd-guide.md`.
+- **JTBD Guide in guides/**: located at `guides/jtbd-guide.md`.
 
 ## Notion Sync (Optional)
 
@@ -205,7 +207,7 @@ last_reviewed: YYYY-MM-DD
 - **Public Preview** — Opt-in, `[PREVIEW]` label, best-effort support
 - **General Availability** — Enabled by default, full SLA
 
-### Product Spec Status Values
+### RFC Status Values
 
 | Status | Meaning |
 | ------ | ------- |
@@ -241,7 +243,7 @@ last_reviewed: YYYY-MM-DD
 - Add automation without explicit request
 - Bake in any single company's product as an example (this playbook is meant to be reusable)
 
-> The "Agentic Delivery — operating contract" above does not loosen these rules. Agents own *delivery within the gates*; the vision, principles, non-negotiables, and this policy itself stay human-ratified. Changing the playbook's own policy is a human-directed policy change, not routine agent work.
+> The "Agentic Delivery — operating contract" above does not loosen these rules. Agents own *delivery within the gates*; the vision, principles, invariants, and this policy itself stay human-ratified. Changing the playbook's own policy is a human-directed policy change, not routine agent work.
 
 ## Inspiration
 

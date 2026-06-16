@@ -9,7 +9,7 @@ icon: "🗺️"
 
 Organise product strategy around how customers actually experience the product — not around your org chart. The six phases below are a generic framework; **rename, split, or collapse them to fit your product**. The shape is what matters: a customer goes from "never heard of you" to "tells other people about you," and your strategy should know where each phase's friction lives.
 
-**How this is used:** Strategic levers in the Product Spec map to journey phases — Acquisition ≈ Phases 1–2, Retention ≈ Phases 3–4, Expansion ≈ Phase 5. See [Writing Product Specs — Strategic Alignment](product-specs.md#strategic-alignment) for details.
+**How this is used:** Strategic levers in the RFC map to journey phases — Acquisition ≈ Phases 1–2, Retention ≈ Phases 3–4, Expansion ≈ Phase 5. See [RFC guide — Strategic Alignment](product-specs.md#strategic-alignment) for details.
 
 ![Customer Journey](images/customer-journey.png)
 
@@ -34,7 +34,7 @@ When is it done?
 1. **Start at the end.** Phase 6 is *Advocacy* in this template — what does winning look like in your product? Word-of-mouth? Renewal? Community contribution? Pick one.
 2. **Walk backwards.** What has to be true before a customer advocates? That's Phase 5. Before that? Phase 4. Continue until you reach "never heard of us" — that's Phase 1.
 3. **Find the breakage.** Walk the journey with a customer success rep and a sales rep. Each will point at a different phase as "where we lose people." Both are right; pick the one your team is most accountable for and put it on the roadmap.
-4. **Tie to strategic levers.** Each phase should map to one or more strategic levers (Acquisition, Activation, Retention, Expansion, Advocacy — pick the framing your strategy uses). Product Specs cite the lever they're advancing.
+4. **Tie to strategic levers.** Each phase should map to one or more strategic levers (Acquisition, Activation, Retention, Expansion, Advocacy — pick the framing your strategy uses). RFCs cite the lever they're advancing.
 
 ---
 

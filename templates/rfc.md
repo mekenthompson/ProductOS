@@ -1,13 +1,13 @@
 ---
-title: Product Spec
-description: A JTBD-led, AI-readable spec that defines the user's job, how they fail today, what success and failure look like, and the guardrails — leaving the solution open
+title: RFC
+description: A JTBD-led, AI-readable RFC for a ship-coupled delivery — defines the user's job, how they fail today, what success and failure look like, and the guardrails — leaving the solution open
 last_reviewed: 2026-05-12
 icon: "📄"
 ---
 
-# Product Spec: [Name]
+# RFC: [Name]
 
-> One living document. It does the work that used to be split between a PRD (the decision and the why) and a delivery spec (the constraints), but it frames everything around the **user's job**, not our internal launch. It leaves *how* open — solutions are the team's (and the AI's) creative work, not the spec author's prescription.
+> **RFC — ship-coupled delivery (optional shape, not a named tier; use your existing RFC/PR process).** One living document for a single ship-coupled effort. It does the work that used to be split between a PRD (the decision and the why) and a delivery spec (the constraints), but it frames everything around the **user's job**, not our internal launch. It leaves *how* open — solutions are the team's (and the AI's) creative work, not the RFC author's prescription. The durable home of the job is its [Job Spec](job-spec.md); this RFC is one ship-coupled effort against it.
 
 ---
 
@@ -40,7 +40,7 @@ Lead with the customer's job. Not our feature. Not our roadmap. The job they're 
 
 > **When** `[situation]`, **`[persona]` wants to** `[motivation]`, **so they can** `[outcome they care about]`.
 
-> 🔗 If this job has a standing [JTBD doc](jtbd-doc.md), link it here instead of restating it. The JTBD doc is the durable home of the job — it outlives this spec; this spec is one ship-coupled effort against it.
+> 🔗 If this job has a standing [Job Spec](job-spec.md), link it here instead of restating it. The Job Spec is the durable home of the job — it outlives this RFC; this RFC is one ship-coupled effort against it.
 
 **Primary persona:** `[Creator / Consumer / Sponsor — or your persona name]`
 **Secondary persona(s) affected (if any):** `[…]`
@@ -78,7 +78,7 @@ For each struggling moment: *the situation, what the user is trying, what goes w
 3. **Struggling moment 3 — [short name]**
    - …
 
-> Three is usually enough. If you can name fewer than two struggling moments with evidence, do more discovery before writing the spec.
+> Three is usually enough. If you can name fewer than two struggling moments with evidence, do more discovery before writing the RFC.
 
 ---
 
@@ -176,10 +176,10 @@ Three bullets max. Link out — don't restate.
 
 ## Bets & Risks
 
-What we're assuming, and what would invalidate the spec.
+What we're assuming, and what would invalidate the RFC.
 
 **We're betting that:**
-1. `[Assumption 1]` — if wrong, this spec is wrong.
+1. `[Assumption 1]` — if wrong, this RFC is wrong.
 2. `[Assumption 2]` — …
 3. `[Assumption 3]` — …
 
@@ -221,8 +221,8 @@ Things we genuinely don't know yet, and how we'll resolve them.
 
 ## Related
 
-- [Product Specs guide](../guides/product-specs.md) — how to write this document
-- [Product Vision](../product-vision.md) — the anchor every spec ties back to
+- [RFC guide](../guides/product-specs.md) — how to write this document
+- [Product Vision](../product-vision.md) — the anchor every RFC ties back to
 - [Three Personas](../guides/personas.md) — persona definitions
 - [Headline Metric](../guides/headline-metric.md) — what success is measured against
 - [Product Principles](../guides/product-principles.md) — the standards the solution must meet

@@ -16,14 +16,14 @@ icon: "📋"
 > 💡 **New to the process? Here's the 5-step version.** Each step maps to a phase below.
 
 1. **Validate the problem (Learn)** — Talk to 3+ customers. Find evidence. Check with your SVP of Product.
-2. **Build the business case (Decide)** — Write a Product Spec. Score with RICE. Get Product Spec approved.
-3. **Shape the solution (Shape)** — Approved Product Spec lives. Align Product, Engineering, Design & GTM on scope, success/failure modes, and guardrails.
+2. **Build the business case (Decide)** — Write a RFC. Score with RICE. Get RFC approved.
+3. **Shape the solution (Shape)** — Approved RFC lives. Align Product, Engineering, Design & GTM on scope, success/failure modes, and guardrails.
 4. **Ship the feature (Build → Launch)** — Build behind a flag. Preview with trusted customers. Launch to everyone.
 5. **Measure and learn (Sell)** — Track adoption. Review at 2 weeks, 30 days, 60-90 days. Decide next steps.
 
 **Quick lookup:**
-- Need to write a Product Spec? → [Product Specs](product-specs.md)
-- Need a template? → [Product Spec Template](../templates/product-spec.md)
+- Need to write an RFC? → [RFC guide](product-specs.md)
+- Need a template? → [RFC Template](../templates/rfc.md)
 - Want the decision framework? → [Signal → Standard → Speed](decision-framework.md)
 
 ---
@@ -47,7 +47,7 @@ Four levels, regardless of tracker. Most modern trackers (Linear, Jira, Shortcut
 ### Projects
 
 - **Definition:** Standalone units of work with a clear, shippable outcome and a planned completion date. Every project rolls up to an initiative or sub-initiative.
-- **Examples:** Any deliverable that gets its own Product Spec.
+- **Examples:** Any deliverable that gets its own RFC.
 - **Owners:** Product + Engineering leadership, named Project Lead.
 
 ### Issues (and Sub-Issues)
@@ -77,7 +77,7 @@ Implement these as statuses (or workflow states) in your tracker — the names a
 | Status | Phase Group | Who Moves Project Here | What's Happening |
 |--------|------------|----------------------|------------------|
 | **Backlog** | Shape | — | Triaging ideas, evaluating priority |
-| **Shaping** | Shape | Product Manager | Writing Product Spec, technical feasibility |
+| **Shaping** | Shape | Product Manager | Writing RFC, technical feasibility |
 | **Readying for Build** | Build | Engineering Manager / Project Lead | Specs written, engineering scopes effort |
 | **Building** | Build | Engineering Manager / Project Lead | Active development, deployed behind flag |
 | **In Preview** | Build | Engineering Manager / Project Lead | Soft-launch with trusted customers |
@@ -111,7 +111,7 @@ Every product decision traces to evidence. The discipline is choosing the highes
 - Collect usage data and feedback patterns
 
 **Shaping:**
-- Write the [Product Spec](product-specs.md) — [Product Spec Template](../templates/product-spec.md)
+- Write the [RFC](product-specs.md) — [RFC Template](../templates/rfc.md)
 - Score with [RICE](rice.md)
 - Get technical feasibility from engineering
 - Determine launch tier (T1/T2/T3/T4) — see [Launch Tiers](#launch-tiers)
@@ -119,7 +119,7 @@ Every product decision traces to evidence. The discipline is choosing the highes
 
 ### Deliverables
 
-- [Product Spec](../templates/product-spec.md)
+- [RFC](../templates/rfc.md)
 - RICE score with transparent reasoning
 - Evidence base — [Research Template](../templates/research.md), [Customer Call Template](../templates/customer-call.md)
 
@@ -133,14 +133,14 @@ The product is one thing. Our three product principles are engineering standards
 
 ### Behaviour
 
-- The Product Spec is the single living document — approved at the end of Shape, updated through delivery as decisions land
+- The RFC is the single living document — approved at the end of Shape, updated through delivery as decisions land
 - [Product principles](product-principles.md) applied as design and engineering standards, not post-hoc review criteria
 - Instrumentation wired up before preview — events defined, dashboards built, guardrail metrics identified
 
 ### What You Do
 
 **Readying for Build:**
-- Update the Product Spec with the agreed approach as design and engineering land decisions
+- Update the RFC with the agreed approach as design and engineering land decisions
 - Hold project kick-off
 - Set up the project in your tracker with milestones
 - Engineering creates build tickets and estimates
@@ -164,8 +164,8 @@ The product is one thing. Our three product principles are engineering standards
 
 ### Deliverables
 
-- [Product Spec](../templates/product-spec.md) (delivery document)
-- Instrumentation — events + dashboards covering all Product Spec success metrics
+- [RFC](../templates/rfc.md) (delivery document)
+- Instrumentation — events + dashboards covering all RFC success metrics
 - Architecture Decision Records (ADRs) for irreversible decisions
 - Changelog Draft
 
@@ -221,7 +221,7 @@ Shipping is the beginning. A feature nobody uses isn't a success — it's an una
 
 | Requirement | T1/T2 | T3 | T4 |
 |-------------|-------|-----|-----|
-| Product Spec written and reviewed | ✅ | ✅ | Lightweight / optional |
+| RFC written and reviewed | ✅ | ✅ | Lightweight / optional |
 | Customer evidence (3+ examples) | ✅ | ✅ | Nice to have |
 | RICE scored | ✅ | ✅ | — |
 | Technical feasibility confirmed | ✅ | ✅ | ✅ |
@@ -268,7 +268,7 @@ Shipping is the beginning. A feature nobody uses isn't a success — it's an una
 
 After launch, track whether the bet paid off with structured post-launch reviews:
 
-- [ ] **Product performance** — Actual metrics compared to Product Spec predictions
+- [ ] **Product performance** — Actual metrics compared to RFC predictions
 - [ ] **Vision check** — Did this move the headline metric?
 - [ ] **Persona adoption** — Are the target personas using it?
 - [ ] **Decision made:** Accelerate · Iterate · Pivot · Investigate · Stop
@@ -340,7 +340,7 @@ See your Launch Tier definitions (T1–T4) — maintained alongside your GTM tea
 
 Project Leads will need to provide a brief Project update at the end of each week letting the team know if a Project is On Track, At Risk or Off Track. They should also ensure Project status and issues are up to date.
 
-- **On Track:** The work is progressing as planned and is expected to be completed on time and within the scope described in the Product Spec
+- **On Track:** The work is progressing as planned and is expected to be completed on time and within the scope described in the RFC
 - **At Risk:** The work is currently behind plan or facing issues that *could* prevent on-time or in-scope completion unless mitigating action is taken.
 - **Off Track:** The work is unlikely to be completed on time or within scope without major changes. A change in timing or scope is required.
 
@@ -387,8 +387,8 @@ After launch, track whether the bet paid off.
 ### Review Cadence
 
 - **2 weeks** — Early signal. Is it being used? Any red flags?
-- **30 days** — Trends. On track vs Product Spec metrics? Feedback patterns emerging?
-- **60-90 days** — Full review vs Product Spec success metrics. Compare actual vs predicted. Explicit recommendation.
+- **30 days** — Trends. On track vs RFC metrics? Feedback patterns emerging?
+- **60-90 days** — Full review vs RFC success metrics. Compare actual vs predicted. Explicit recommendation.
 
 ### Recommendation Matrix
 
@@ -408,11 +408,11 @@ Use the [Post-Launch Review Template](../templates/post-launch-review.md) at eac
 
 ## Specs: Rules and Hierarchy
 
-A spec translates the Product Spec into buildable requirements. It answers: What do we build? How does it work? How do we know it's done?
+A spec translates the RFC into buildable requirements. It answers: What do we build? How does it work? How do we know it's done?
 
-**One Product Spec per project. It does the work that used to be split between a PRD and a delivery spec — framed around the user's job, with explicit success/failure modes, guardrails, and an open solution space.**
+**One RFC per project. It does the work that used to be split between a PRD and a delivery spec — framed around the user's job, with explicit success/failure modes, guardrails, and an open solution space.**
 
-### Product Spec
+### RFC
 
 **Owner:** PM (with Design + Engineering collaboration) — **Answers:** What can users do? How does it work? How do we build it?
 
@@ -424,13 +424,13 @@ A spec translates the Product Spec into buildable requirements. It answers: What
 - Technical approach (architecture, API changes, performance considerations)
 - Acceptance criteria (how to validate completion)
 
-→ [Product Spec Template](../templates/product-spec.md)
+→ [RFC Template](../templates/rfc.md)
 
 ### Spec Rules
 
-- One Product Spec per project. The spec is a living document — it evolves through delivery.
+- One RFC per project. The spec is a living document — it evolves through delivery.
 - Specs are approved in Draft → In Review → Approved. Changes that affect scope require re-approval.
-- See [Product Specs](product-specs.md) for the full lifecycle.
+- See the [RFC guide](product-specs.md) for the full lifecycle.
 - Specs are living documents during Build — update when you learn something. Archive after ship.
 
 ---
@@ -444,7 +444,7 @@ Tiers define **marketing investment**, not product maturity.
 | **T1 — Major Release** | New product line, game changer | Executive steering, board consideration | Full GTM campaign, press, customer events, exec briefings |
 | **T2 — Product Evolution** | Significant new capability | SVP of Product + VP Engineering | Coordinated launch, blog post, targeted outreach, sales enablement |
 | **T3 — Feature Enhancement** | Meaningful improvement | PM + Tech Lead + Design | Standard docs & announcement, release notes, changelog |
-| **T4 — Usability Fix** | Small improvement, obvious fix | No formal Product Spec required | Changelog only |
+| **T4 — Usability Fix** | Small improvement, obvious fix | No formal RFC required | Changelog only |
 
 See your Launch Tier definitions (T1–T4) — maintained alongside your GTM team for full tier criteria.
 
@@ -484,8 +484,8 @@ Gate requirements scale with launch tier — T4 doesn't need SVP sign-off. See t
 
 ## Related
 
-- [Product Specs](product-specs.md) — How Product Specs are written and approved
-- [Discovery](discovery.md) — How to validate problems before writing a Product Spec
+- [RFC guide](product-specs.md) — How RFCs are written and approved
+- [Discovery](discovery.md) — How to validate problems before writing a RFC
 - [Handling Product Feedback](customer-feedback.md) — Processing and routing customer feedback
 - [Decision Framework](decision-framework.md) — Signal → Standard → Speed
 - [Product Playbook](../product-playbook.md) — The 6-phase operating model

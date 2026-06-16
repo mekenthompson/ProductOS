@@ -7,7 +7,7 @@ icon: "\U0001F4CB"
 
 # Post-Launch Review: [Feature/Project Name]
 
-**Product Spec:** [PRJ-XXX Project Name](link)
+**RFC:** [PRJ-XXX Project Name](link)
 **Shipped:** [Date]
 **Review type:** 2-week / 30-day / 90-day
 **Reviewer:** [PM name]
@@ -24,7 +24,7 @@ icon: "\U0001F4CB"
 
 ## What We Predicted vs What Happened
 
-_Pull metrics from the Product Spec Success section. Fill in actuals._
+_Pull metrics from the RFC Success section. Fill in actuals._
 
 | Metric | Predicted | Actual | Delta |
 |--------|-----------|--------|-------|
