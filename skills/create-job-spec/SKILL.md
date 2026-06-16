@@ -7,7 +7,7 @@ description: >
   or pinning down what "done" means for a user outcome BEFORE any design or
   build. The rule: interview one question at a time until shared clarity —
   do NOT write the spec until every part is agreed. Triggers on natural
-  phrasings including: "write a job spec", "create a job/product spec",
+  phrasings including: "write a job spec", "create a job spec",
   "let's define the job", "what's the job here", "interview me on this job",
   "we need a spec for X", "turn this feature request into a job spec", "help
   me scope this outcome". Part of ProductOS (KEN-56); authors KEN-57 (the
@@ -111,8 +111,10 @@ Fill the template. Keep it to **one screen** — the frontmatter carries ~80%.
 
 ## Output
 
-1. The Job Spec file, written to the design-contract directory, named for
-   the job.
+1. The Job Spec file, written to the design-contract directory (confirm the
+   path with the user if it isn't obvious from Step 0), named with a
+   kebab-case slug matching the neighbouring job specs (e.g.
+   `know-what-my-agent-is-doing.md`).
 2. The up-anchor confirmed: which outcome it serves, which invariants it
    must not cross.
 3. Any coverage gaps surfaced, listed plainly as a backlog.
