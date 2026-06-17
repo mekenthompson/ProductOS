@@ -222,12 +222,12 @@ Things we genuinely don't know yet, and how we'll resolve them.
 
 - [RFC guide](../guides/product-specs.md) — how to write this document
 - [Product Vision](../anchors/product-vision.md) — the anchor every RFC ties back to
-- [Three Personas](../playbook/personas.md) — persona definitions
-- [Headline Metric](../playbook/headline-metric.md) — what success is measured against
+- [Three Personas](../pm-playbook/personas.md) — persona definitions
+- [Headline Metric](../pm-playbook/headline-metric.md) — what success is measured against
 - [Product Principles](../anchors/product-principles.md) — the standards the solution must meet
-- [Decision Framework](../playbook/decision-framework.md) — Signal → Standard → Speed
+- [Decision Framework](../pm-playbook/decision-framework.md) — Signal → Standard → Speed
 - [JTBD Guide](../guides/jtbd-guide.md) — framing the job
-- [Post-Launch Review](../playbook/templates/post-launch-review.md) — the measurement loop after this ships
+- [Post-Launch Review](../pm-playbook/templates/post-launch-review.md) — the measurement loop after this ships
 
 ---
 

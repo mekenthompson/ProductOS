@@ -7,7 +7,7 @@ icon: "📖"
 
 # Product Principles
 
-Product principles are the engineering and design standards that turn the [product vision](./product-vision.md) into day-to-day quality gates. They are applied in every PR, every design review, every release. They are the "Standard" in [Signal → Standard → Speed](../playbook/decision-framework.md).
+Product principles are the engineering and design standards that turn the [product vision](./product-vision.md) into day-to-day quality gates. They are applied in every PR, every design review, every release. They are the "Standard" in [Signal → Standard → Speed](../pm-playbook/decision-framework.md).
 
 > 🧭 Principles are the **second of three anchors** — **[Vision](./product-vision.md)** (why), **Principles** (built well), and **[Invariants](./invariants.md)** (lines we won't cross by construction). Together they fuse into the [verdict rule](../guides/agentic-delivery.md).
 
@@ -29,11 +29,11 @@ Principles fix this by making "good" *teachable*. A new engineer should be able 
 
 | Where they show up | How they're used |
 |---|---|
-| [Decision Framework](../playbook/decision-framework.md) | "Standard" is *literally* the principle check. No principle conformance, no shipping. |
+| [Decision Framework](../pm-playbook/decision-framework.md) | "Standard" is *literally* the principle check. No principle conformance, no shipping. |
 | [RFC Template](../templates/rfc.md) | Strategic Alignment section confirms the ship-coupled initiative meets each principle, with reasoning. |
 | [RFC](../templates/rfc.md) | Solution sections reference the principles they uphold and any tensions. |
 | Code review / design review | Each principle has check questions reviewers can paste into a comment. |
-| [Post-Launch Review](../playbook/templates/post-launch-review.md) | If the launch underperformed, ask: which principle did we compromise on? |
+| [Post-Launch Review](../pm-playbook/templates/post-launch-review.md) | If the launch underperformed, ask: which principle did we compromise on? |
 
 The principle check is the second-most-cited document in the playbook (after the vision). If yours aren't getting cited, they aren't doing their job.
 
@@ -184,5 +184,5 @@ If you can't answer all three, you're not done. Redesign, don't ship and patch l
 
 - [Product Vision](./product-vision.md) — Principles are derived from the vision (the first anchor).
 - [Invariants](./invariants.md) — The third anchor; the lines you won't cross by construction.
-- [Decision Framework](../playbook/decision-framework.md) — How "Standard" uses the principles to filter work.
+- [Decision Framework](../pm-playbook/decision-framework.md) — How "Standard" uses the principles to filter work.
 - [RFC Guide](../guides/product-specs.md) — How to apply principles when writing a ship-coupled RFC.

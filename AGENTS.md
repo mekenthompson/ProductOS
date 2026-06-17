@@ -45,7 +45,7 @@ Else: out of scope, however clever.
 
 The top level reads as the OS — anchors, the OS method guides, the OS
 templates, skills, and the series. The human PM craft (the playbook a
-person reads) lives under `playbook/`.
+person reads) lives under `pm-playbook/`.
 
 ```
 productos/
@@ -67,12 +67,11 @@ productos/
 │   └── uat-ux-debug/SKILL.md
 ├── writeups/                       # the series
 │   └── uat-ux-debug-klanker.md
-└── playbook/                       # the human PM craft
+└── pm-playbook/                       # the human PM craft
     ├── index.md                    # Playbook homepage + reading guide
     ├── product-playbook.md         # THE anchor doc (6-phase operating model)
     ├── pm-handbook.md              # PM role, onboarding, rituals, collaboration
     ├── working-together.md         # Product triad collaboration
-    ├── product-domains.md          # Pointer doc — domain map lives in your tool of choice
     ├── decision-framework.md       # Signal → Standard → Speed (three paths)
     ├── delivery-standards.md       # Operational workflow with gate checklists
     ├── discovery.md                # How to validate problems before writing an RFC
@@ -92,7 +91,7 @@ productos/
 ## Template Strategy
 
 **OS templates live in `templates/` (`job-spec.md`, `rfc.md`); the human PM
-templates live in `playbook/templates/`.** Within each location that's the
+templates live in `pm-playbook/templates/`.** Within each location that's the
 single source of truth — don't duplicate a template across both.
 
 | Template | File | Notes |
