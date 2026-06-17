@@ -47,7 +47,7 @@ invariant.
 
 - **Run the method (agent):** [`AGENTS.md`](./AGENTS.md) — the gate, the triggers, the reviewer checklist.
 - **Write a spec:** [`templates/job-spec.md`](./templates/job-spec.md) + the [`create-job-spec`](./skills/create-job-spec/SKILL.md) skill (it interviews you, then writes it).
-- **Set the why / good / lines:** [`anchors/`](./anchors/).
+- **Set the why / good / lines:** the anchors — [vision](./anchors/product-vision.md), [principles](./anchors/product-principles.md), [invariants](./anchors/invariants.md).
 - **Run product day to day (human):** [`pm-playbook/index.md`](./pm-playbook/index.md).
 
 ---
