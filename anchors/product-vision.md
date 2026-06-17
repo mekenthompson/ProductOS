@@ -1,17 +1,17 @@
 ---
 title: Product Vision
-description: How to write the product vision that anchors every decision in this playbook
+description: How to write the product vision that anchors every decision in the system
 last_reviewed: 2026-05-12
 icon: "🎯"
 ---
 
 # Product Vision
 
-> The product vision is the single source of truth that every other artifact in this playbook ties back to. Strategy, the Product Spec, RICE scores, post-launch reviews — they all reference the vision either to justify a "yes" or explain a "not now." If the vision is vague, everything downstream gets vague too.
+> The product vision is the single source of truth that every other artifact ties back to. Strategy, the Product Spec, every Job Spec, every RFC — they all reference the vision either to justify a "yes" or explain a "not now." If the vision is vague, everything downstream gets vague too.
 
 > 🧭 The vision is the first of **three anchors** that hold for the whole product: **Vision** (why we build), **[Principles](./product-principles.md)** (what "built well" means), and **[Invariants](./invariants.md)** (the lines we won't cross by construction). The vision *names* the invariants that matter; the Invariants doc *owns* them. Beneath the anchors sit the **Product Spec** (one per product — outcomes, how the product functions, and the job list) and the **Job Specs** (one per job). See [Agentic Delivery](../guides/agentic-delivery.md) for how the anchors fuse into the verdict rule.
 
-This page explains how to write a product vision that's actually load-bearing for the rest of the playbook. It is intentionally a **guide**, not a vision statement — the actual vision belongs to your product and your company. Replace the example section at the end with yours.
+This page explains how to write a product vision that's actually load-bearing for every downstream artifact. It is intentionally a **guide**, not a vision statement — the actual vision belongs to your product and your company. Replace the example section at the end with yours.
 
 ---
 
@@ -21,24 +21,21 @@ The product vision answers three questions in one short document:
 
 1. **Where do we play?** — The territory we own and the territory we don't.
 2. **What do we measure?** — One headline metric that captures whether the vision is being realised. Every shipped feature should move this number or be challenged.
-3. **Who do we build for?** — The personas whose lives we're trying to change. See [Three Personas](../pm-playbook/personas.md) for how to define yours.
+3. **Who do we build for?** — The personas whose lives we're trying to change. Name 2–4, each with a motivation, not a job title.
 
-If those three questions aren't answered crisply, the playbook can't help you prioritise — every idea will sound reasonable, because nothing is being excluded.
+If those three questions aren't answered crisply, nothing downstream can help you prioritise — every idea will sound reasonable, because nothing is being excluded.
 
 ---
 
-## How it ties into the rest of the playbook
+## How it ties into the rest of the system
 
-| Playbook artifact | How it uses the vision |
+| Artifact | How it uses the vision |
 |---|---|
-| [Decision Framework](../pm-playbook/decision-framework.md) (Signal → Standard → Speed) | "Signal" tests whether an idea aligns with the vision. No alignment = no signal, regardless of how good the idea sounds. |
 | [Product Principles](./product-principles.md) | Principles are how the vision becomes engineering and design standards. They are the vision applied at the level of individual decisions. |
 | [Invariants](./invariants.md) | The third anchor. The vision *names* the lines you won't cross; the Invariants doc *owns* and enforces them. They are the kill-clause in the verdict rule. |
 | Product Spec | The product-level container (one per product) ties its outcomes and job list directly back to the vision and its headline metric. |
+| [Job Specs](../templates/job-spec.md) | Each durable per-job outcome doc traces to a vision outcome and the headline metric it moves. |
 | [RFC Template](../templates/rfc.md) | A ship-coupled RFC's "Strategic Alignment" check confirms the initiative serves the vision and its headline metric. |
-| [RICE](../pm-playbook/rice.md) | Reach and Impact are scored relative to the personas and metric the vision identifies. |
-| [Post-Launch Review](../pm-playbook/templates/post-launch-review.md) | The headline metric from the vision is the long-arc number reviewed at 60–90 days. |
-| [Roadmap](../pm-playbook/product-playbook.md#phase-3-shape) | Three-band roadmap is organised around the vision's themes, not features. |
 | [Agentic Delivery](../guides/agentic-delivery.md) | The vision's outcomes, the Job Specs, the principles, and the invariants fuse into the **verdict rule** — the all-must-pass gate every change clears. The invariants are its kill-clause. |
 
 If you change the vision, expect everything above to need re-anchoring. That's a feature, not a bug — vision changes are rare and consequential.
@@ -63,14 +60,14 @@ A weak product vision usually fails on one of those four — most commonly #3 (n
 
 ## When is the vision "done"?
 
-The vision is ready to anchor the playbook when **every one of these is true**:
+The vision is ready to anchor the system when **every one of these is true**:
 
 - [ ] **One-sentence headline** — Under 40 words. Names the territory, the change, and who benefits.
 - [ ] **Headline metric named** — A single number that goes up (or down) when the vision is being realised. Defined precisely enough that an engineer could instrument it.
 - [ ] **Personas listed** — 2–4 personas, each with a motivation and a one-line "vision lens" describing how they experience the metric.
 - [ ] **Out of scope listed** — At least three things you are *not* doing. Specific, not aspirational ("we don't do X" not "we focus on Y"). The strongest of these — the lines you won't cross *by construction* — graduate to named [invariants](./invariants.md).
 - [ ] **Industry-metric tie-in** — How does your headline metric connect to metrics the rest of the industry uses (DORA, SPACE, NPS, retention cohorts, etc.)? If it doesn't, you'll struggle to benchmark.
-- [ ] **Applied to a real decision** — Take an in-flight initiative and run it through Signal → Standard → Speed using only this vision. If the vision didn't disambiguate, it isn't done.
+- [ ] **Applied to a real decision** — Take an in-flight initiative and test it against this vision alone. If the vision didn't disambiguate the "yes" from the "not now," it isn't done.
 - [ ] **PMs can recite it** — Without reading. If they can't, it isn't the operating document — it's wallpaper.
 
 > 💡 The seventh check is the most often-skipped and the most important. A vision that nobody remembers is identical to no vision.
@@ -85,7 +82,7 @@ The structure below is what works regardless of product. The *contents* obviousl
 
 Most teams start with a vision sentence and try to back-fit a metric. Do it the other way. Ask: **what is the one number we'd publish to the company every month, and what would the leadership team interrogate us on?** That's your headline. Then write the sentence around it.
 
-For developer tools, time-based metrics (time-to-X) tend to win because they capture both speed and clarity. For consumer products, retention or DAU/MAU ratios. For marketplaces, GMV-per-cohort or take-rate-with-NPS. Pick the one your business actually runs on. See [Headline Metric](../pm-playbook/headline-metric.md) for a deeper guide.
+For developer tools, time-based metrics (time-to-X) tend to win because they capture both speed and clarity. For consumer products, retention or DAU/MAU ratios. For marketplaces, GMV-per-cohort or take-rate-with-NPS. Pick the one your business actually runs on.
 
 ### Step 2 — Write the sentence
 
@@ -97,7 +94,7 @@ If it takes more than one of those clauses to differentiate you, the differentia
 
 ### Step 3 — Define 2–4 personas
 
-Most products have a *creator* persona, a *consumer* persona, and a *sponsor* persona — the person who *configures* the product, the person who *uses it day to day*, and the person who *pays for it or is accountable for the outcome*. The names change; the structure rarely does. See [Three Personas](../pm-playbook/personas.md) for the canonical structure.
+Most products have a *creator* persona, a *consumer* persona, and a *sponsor* persona — the person who *configures* the product, the person who *uses it day to day*, and the person who *pays for it or is accountable for the outcome*. The names change; the structure rarely does.
 
 ### Step 4 — Write down what you are not
 
@@ -111,15 +108,13 @@ Pick three in-flight projects. For each, write one sentence on how the vision ju
 
 ## Where to put the vision
 
-The vision lives at `product-vision.md` (this file). It is the only document in the playbook that is allowed to be opinionated about *what* you're building. Every other document is opinionated about *how* you build it.
+The vision lives at `product-vision.md` (this file). It is the only anchor that is allowed to be opinionated about *what* you're building. Every other artifact is opinionated about *how* you build it.
 
 When the vision changes, update this file first, then propagate downstream in this order:
-1. your invariants doc (`anchors/invariants.md`, if the lines you won't cross changed)
-2. `pm-playbook/personas.md` (if personas changed)
-3. `anchors/product-principles.md` (if "what good looks like" changed)
-4. The product-level **Product Spec** (if outcomes or the job list changed) and any affected **[Job Specs](../templates/job-spec.md)**
-5. `templates/rfc.md` (the Strategic Alignment prompts in the ship-coupled RFC shape)
-6. `pm-playbook/product-playbook.md` (the anchor doc's framing)
+1. `anchors/invariants.md` (if the lines you won't cross changed)
+2. `anchors/product-principles.md` (if "what good looks like" changed)
+3. The product-level **Product Spec** (if outcomes or the job list changed) and any affected **[Job Specs](../templates/job-spec.md)**
+4. `templates/rfc.md` (the Strategic Alignment prompts in the ship-coupled RFC shape)
 
 ---
 
@@ -160,8 +155,7 @@ TTD is the inverse of MTTR for our category. As TTD drops, customer-side through
 
 ## What's next
 
-- **[Product Playbook](../pm-playbook/product-playbook.md)** — How the six phases use this vision as the spine of every decision.
-- **[Decision Framework](../pm-playbook/decision-framework.md)** — Signal → Standard → Speed; the operational check against the vision.
-- **[Three Personas](../pm-playbook/personas.md)** — Canonical structure for the persona section above.
 - **[Product Principles](./product-principles.md)** — Turning the vision into engineering standards (the second anchor).
 - **[Invariants](./invariants.md)** — The lines you won't cross by construction (the third anchor); the vision names them, this doc owns them.
+- **[Job Spec Template](../templates/job-spec.md)** — Where each vision outcome becomes a durable, UAT-verifiable job.
+- **[Agentic Delivery](../guides/agentic-delivery.md)** — How the anchors fuse into the verdict rule every change must clear.

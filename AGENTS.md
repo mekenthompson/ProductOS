@@ -1,6 +1,8 @@
 # ProductOS — Agent Guidance
 
-This repository is a **reusable, product-agnostic operating system for running product organisations**. The framework (six phases, RICE, decision framework, RFC/spec templates) is product-agnostic. Anything specific to a real product (vision, personas, principles, invariants, headline metric) is documented as a *guide* — what good looks like, when it's "done," and how to write your own.
+This repository is **ProductOS** — a reusable, product-agnostic **agentic-delivery operating system**: the anchors, Job Specs, templates, and agent-executable skills that make delivery *run*. Anything specific to a real product (vision, principles, invariants) is documented as a *guide* — what good looks like, when it's "done," and how to write your own.
+
+The human PM craft (the six-phase loop, discovery, RICE, the decision framework, personas) lives in a **separate `pm-playbook` repo**. ProductOS is independent of it: pm-playbook may reference ProductOS; ProductOS never references pm-playbook.
 
 ## Scope
 
@@ -39,13 +41,13 @@ Else: out of scope, however clever.
 5. engineering acceptance / production-readiness met to the level the stakes demand (security, scale, availability, reliability);
 6. the reviewer is a separate process and cites a location for every blocker.
 
-**Ownership invariant** (extends "augmentation, not automation"; does not replace it). Agents own *delivery execution within the gates* — drafting Job Specs, implementing, running loops and UATs. Humans own the *gates and the judgement* — the vision, the principles, the invariants, ratifying the job statement, and engineering oversight. Agents consume the anchors; they never author them. This does NOT loosen the "Do NOT" rules below: changing the playbook's own policy (this contract, the AI stance, the anchors) is a human-ratified policy change, not routine agent delivery.
+**Ownership invariant** (extends "augmentation, not automation"; does not replace it). Agents own *delivery execution within the gates* — drafting Job Specs, implementing, running loops and UATs. Humans own the *gates and the judgement* — the vision, the principles, the invariants, ratifying the job statement, and engineering oversight. Agents consume the anchors; they never author them. This does NOT loosen the "Do NOT" rules below: changing the method's own policy (this contract, the AI stance, the anchors) is a human-ratified policy change, not routine agent delivery.
 
 ## Repo structure
 
-The top level reads as the OS — anchors, the OS method guides, the OS
-templates, and skills. The human PM craft (the playbook a person reads)
-lives under `pm-playbook/`.
+The whole repo reads as the OS — anchors, the OS method guides, the OS
+templates, and skills. The human PM craft lives in the separate `pm-playbook`
+repo, not here.
 
 ```
 productos/
@@ -57,49 +59,26 @@ productos/
 ├── guides/                         # the OS method
 │   ├── agentic-delivery.md         # The four-part method (anchors, Job Specs, design loops, outcome UAT)
 │   ├── jtbd-guide.md               # Jobs to be Done framework
-│   ├── release-phases.md           # Private/Public Preview → GA
 │   └── product-specs.md            # RFC how-to (lifecycle, approval, delivery)
 ├── templates/                      # the OS blank shapes
 │   ├── job-spec.md                 # The durable per-job outcome doc (job/outcome/stakes; outlives any RFC)
 │   └── rfc.md                      # The ship-coupled, per-initiative delivery doc (JTBD-led)
-├── skills/                         # agent-executable skills
-│   ├── create-job-spec/SKILL.md
-│   └── uat-ux-debug/SKILL.md
-└── pm-playbook/                       # the human PM craft
-    ├── index.md                    # Playbook homepage + reading guide
-    ├── product-playbook.md         # THE anchor doc (6-phase operating model)
-    ├── pm-handbook.md              # PM role, onboarding, rituals, collaboration
-    ├── working-together.md         # Product triad collaboration
-    ├── decision-framework.md       # Signal → Standard → Speed (three paths)
-    ├── delivery-standards.md       # Operational workflow with gate checklists
-    ├── discovery.md                # How to validate problems before writing an RFC
-    ├── customer-feedback.md        # Handling product feedback
-    ├── rice.md                     # RICE scoring framework
-    ├── personas.md                 # Three personas pattern (Creator/Consumer/Sponsor)
-    ├── headline-metric.md          # How to pick the single metric the playbook anchors on
-    ├── lifecycle.md                # [ARCHIVED] Redirects to delivery-standards.md
-    ├── tools-we-use.md             # Reference toolchain
-    └── templates/                  # the human templates
-        ├── post-launch-review.md   # 2wk/30d/90d review template
-        ├── research.md             # Research synthesis
-        ├── customer-call.md        # Interview / call notes
-        └── ritual-review.md        # Dogfooding, onboarding, competitor review
+└── skills/                         # agent-executable skills
+    ├── create-job-spec/SKILL.md
+    └── uat-ux-debug/SKILL.md
 ```
 
 ## Template Strategy
 
-**OS templates live in `templates/` (`job-spec.md`, `rfc.md`); the human PM
-templates live in `pm-playbook/templates/`.** Within each location that's the
-single source of truth — don't duplicate a template across both.
+**The OS templates live in `templates/` (`job-spec.md`, `rfc.md`)** — the
+single source of truth for each. (The human PM templates — customer call,
+research, post-launch review, ritual review — live in the separate
+`pm-playbook` repo, not here.)
 
 | Template | File | Notes |
 | -------- | ---- | ----- |
 | RFC | `rfc.md` | Single ship-coupled doc that does approval + delivery. JTBD-led; explicit user success/failure modes; guardrails; open solution space. References a Job Spec; not a named spec tier of its own |
 | Job Spec | `job-spec.md` | The durable, per-job outcome doc (job/outcome/stakes + signs / anti-patterns / UAT prompts). Outlives any single RFC; an RFC's "The Job" links to it. Distinct from the job-story *sentence* in the JTBD Guide |
-| Customer Call | `customer-call.md` | Interview / call notes |
-| Research | `research.md` | Research synthesis |
-| Post-Launch Review | `post-launch-review.md` | Reviews at 2w/30d/90d |
-| Ritual Review | `ritual-review.md` | Dogfooding + competitor reviews |
 
 **Key decisions:**
 
@@ -150,7 +129,7 @@ last_reviewed: YYYY-MM-DD
 - Active voice
 - Short paragraphs (walls of text display poorly)
 - Scannable headings every 2-4 paragraphs
-- Link to related playbook pages
+- Link to related pages
 
 ### Visual Formatting
 
@@ -160,13 +139,7 @@ last_reviewed: YYYY-MM-DD
 - **Numbered lists** — Sequential steps
 - **Bullet lists** — Non-sequential collections
 
-## Key Concepts (templates teach these in detail)
-
-### Release Phases (Product)
-
-- **Private Preview** — Feature-flagged, no SLA, no public announcement
-- **Public Preview** — Opt-in, `[PREVIEW]` label, best-effort support
-- **General Availability** — Enabled by default, full SLA
+## Key Concepts (the templates teach these in detail)
 
 ### RFC Status Values
 
@@ -201,9 +174,9 @@ last_reviewed: YYYY-MM-DD
 - Add content outside product management scope
 - Create complex directory structures
 - Add automation without explicit request
-- Bake in any single company's product as an example (this playbook is meant to be reusable)
+- Bake in any single company's product as an example (this method is meant to be reusable)
 
-> The "Agentic Delivery — operating contract" above does not loosen these rules. Agents own *delivery within the gates*; the vision, principles, invariants, and this policy itself stay human-ratified. Changing the playbook's own policy is a human-directed policy change, not routine agent work.
+> The "Agentic Delivery — operating contract" above does not loosen these rules. Agents own *delivery within the gates*; the vision, principles, invariants, and this policy itself stay human-ratified. Changing the method's own policy is a human-directed policy change, not routine agent work.
 
 ## Inspiration
 

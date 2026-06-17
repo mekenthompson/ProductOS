@@ -7,11 +7,11 @@ icon: "🤖"
 
 # Agentic Delivery
 
-The six-phase [Product Loop](../pm-playbook/product-playbook.md) says how work *enters* and how you *learn* from what shipped. This guide covers the middle when **an agentic workforce does much of the building**: how the same handful of artifacts keep humans in control of the *outcome* while agents move fast on the *implementation*.
+This guide is the heart of the method: how delivery runs when **an agentic workforce does much of the building** — how a handful of artifacts keep humans in control of the *outcome* while agents move fast on the *implementation*.
 
 It is written for the whole triad — **product, design, and engineering**. Engineering is not a footnote here: when agents write the code, the scarce thing is no longer engineering hours, it's **judgement and oversight**, and engineers are the ones who set the technical bar the agents build to.
 
-> 📖 Read this alongside [Product Vision](../anchors/product-vision.md), [Product Principles](../anchors/product-principles.md), and your invariants (the three anchors), [JTBD Guide](./jtbd-guide.md) (the job-story sentence and the Job Specs that carry it), and [Working Together](../pm-playbook/working-together.md) (who owns what). The terse, agent-executable version of everything below lives in **[AGENTS.md](../AGENTS.md)** under "Agentic Delivery — operating contract."
+> 📖 Read this alongside [Product Vision](../anchors/product-vision.md), [Product Principles](../anchors/product-principles.md), and your [Invariants](../anchors/invariants.md) (the three anchors), and the [JTBD Guide](./jtbd-guide.md) (the job-story sentence and the Job Specs that carry it). The terse, agent-executable version of everything below lives in **[AGENTS.md](../AGENTS.md)** under "Agentic Delivery — operating contract."
 
 ---
 
@@ -113,7 +113,7 @@ Anything else is out of scope, **however clever it seems.** The four clauses are
 - **Design** owns the experience inside the solution space and is in the room when the job is framed — not brought in to polish afterward. Design's consistency concerns are principle checks, not opinions.
 - **Engineering** owns the *how*: architecture, the non-functional bar, and the technical unknowns the loop must research. Engineering runs the fresh-process review, **directs and oversees the agentic workforce**, and decides *production-ready*. Engineering's standards are anchors too.
 
-Nobody dictates another's domain. Product doesn't pick the data store; engineering doesn't wave away a real customer problem as "too complex" without proposing an alternative. See [Working Together](../pm-playbook/working-together.md).
+Nobody dictates another's domain. Product doesn't pick the data store; engineering doesn't wave away a real customer problem as "too complex" without proposing an alternative.
 
 ---
 
@@ -125,7 +125,7 @@ The shift from a human team to an agent-assisted one does **not** move ownership
 - **Humans own the gates and the judgement** — the vision, the principles, the invariants, the ratification of the job statement, and the engineering oversight. Agents *consume* the anchors; they never author them.
 - **The adversarial reviewer is always a separate process.** An agent reviewing its own change is not a review.
 
-This *extends* the playbook's existing "augmentation, not automation" stance rather than replacing it (see [PM Handbook → Using AI](../pm-playbook/pm-handbook.md)): **augment the judgement, automate the delivery, and keep the four parts as the safety rail.** (Of the anchors, the invariants are the firmest line — agents never relax an invariant to land a change.) The full ownership table — including engineering's rows — is in [Working Together](../pm-playbook/working-together.md#roles-when-agents-do-much-of-the-delivery).
+The stance is **"augmentation, not automation"**: **augment the judgement, automate the delivery, and keep the four parts as the safety rail.** (Of the anchors, the invariants are the firmest line — agents never relax an invariant to land a change.)
 
 ---
 
@@ -144,13 +144,13 @@ Don't run a payments system the way you'd run a weekend project. But run both wi
 
 This guide has done its job only if someone — or some agent — can *execute* the method from it alone. Use this as a repeatable check whenever the guide changes:
 
-> Give a fresh agent **only this playbook** (no other context) and a sample job, e.g. *"a new user gets their first useful result without reading documentation."* Ask it to run one full design loop. **Do not tell it there are "four parts."** It passes if it, using only the playbook's own templates and triggers:
+> Give a fresh agent **only ProductOS** (no other context) and a sample job, e.g. *"a new user gets their first useful result without reading documentation."* Ask it to run one full design loop. **Do not tell it there are "four parts."** It passes if it, using only the method's own templates and triggers:
 > 1. names which vision outcome the job serves and applies the verdict rule as an all-must-pass gate (including the invariant clause);
 > 2. writes a Job Spec from the [template](../templates/job-spec.md), with a non-empty acceptance-scenario section (and engineering acceptance criteria where the stakes warrant);
 > 3. describes the design loop and correctly identifies the reviewer as a *separate process that cannot grade its own work*, and how an engineer directs and oversees a delivery agent;
 > 4. writes an outcome UAT named by *job × surface, independent of unit tests*, and distinguishes it from the production-readiness gate.
 
-If the agent has to invent structure or reach outside the playbook, the guide failed its own **docs test** — fix the guide and re-run, don't paper over it. (This is the method applied to the method.)
+If the agent has to invent structure or reach outside the method, the guide failed its own **docs test** — fix the guide and re-run, don't paper over it. (This is the method applied to the method.)
 
 ---
 
@@ -180,6 +180,5 @@ The terse, executable version of this method — the verdict rule as a gate, the
 - [Product Vision](../anchors/product-vision.md) — the anchor that says *should we build this* (and carries the invariants)
 - [Product Principles](../anchors/product-principles.md) — the anchor that says *did we build it well*
 - [JTBD Guide](./jtbd-guide.md) — the job-story sentence; [Job Spec template](../templates/job-spec.md) — the standing outcome doc
-- [Working Together](../pm-playbook/working-together.md) — who owns what, including when agents deliver
-- [Delivery Standards](../pm-playbook/delivery-standards.md) — where the outcome UAT and production-readiness gates sit in the lifecycle
+- [Invariants](../anchors/invariants.md) — the third anchor; the kill-clause in the verdict rule
 - [Product Specs / RFC guide](./product-specs.md) — how an RFC references a Job Spec and gets an adversarial review
