@@ -21,7 +21,7 @@ Not everything needs an RFC. Not everything is a quick win. The path should matc
 |---|---|---|---|
 | **Size** | ≤ half a day of engineering | Half a day – 2 weeks | > 2 weeks |
 | **Process** | Flag with EM/PM, then ship | 1-page brief | Full RFC |
-| **Approval** | EM/PM alignment | PM + Tech Lead | SVP Product (T1/T2), PM Lead (T3/T4) |
+| **Approval** | EM/PM alignment | PM + Tech Lead | Senior product sign-off (SVP Product) |
 | **Documentation** | Changelog if UX. Support notification always. | Problem, Solution, Acceptance Criteria, Metrics, Persona | RFC ([template](../templates/rfc.md)), RICE score |
 | **Feature flag** | Optional | Yes | Yes |
 | **Post-launch review** | No | 2-week check-in | 2wk / 30d / 90d reviews |
@@ -59,7 +59,7 @@ Flag it with your EM or PM. If it aligns with the team's current priorities, get
 Write a 1-page brief (see template below). Get PM + Tech Lead sign-off. Ship behind a feature flag. Do a 2-week check-in after launch.
 
 **> 2 weeks → Full Spec**
-Write a full [RFC](../templates/rfc.md) with RICE score. Get approval (SVP for T1/T2, PM Lead for T3/T4). Follow the full delivery process. (The RFC references the relevant [Job Spec](../templates/job-spec.md) — the durable outcome contract that outlives this initiative.)
+Write a full [RFC](../templates/rfc.md) with RICE score. Get senior product sign-off (SVP Product). Follow the full delivery process. (The RFC references the relevant [Job Spec](../templates/job-spec.md) — the durable outcome contract that outlives this initiative.)
 
 ---
 
@@ -117,7 +117,7 @@ How does this move the headline metric from the [product vision](../product-visi
 **Signal:** Top-3 deal blocker. 15 deal opportunities waiting on the native capability. Strategy lever: Expansion. RICE Grade B.
 **Standard:** Must feel like part of the core product, not a bolted-on module.
 **Speed:** ~2 months of engineering. New data flow, UI surfaces, API endpoints.
-**Path:** Full Spec. RICE scored. Senior product approval (T2). RFC. Full delivery process.
+**Path:** Full Spec. RICE scored. Senior product approval. RFC. Full delivery process.
 
 ---
 

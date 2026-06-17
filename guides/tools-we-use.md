@@ -49,7 +49,6 @@ You only need **one tool per category**. More than that creates copy-paste tax a
 - Keep project status synced with RFC status (Draft → In Progress → Shipped)
 
 ### Labels
-- Use tier labels (T1/T2/T3/T4) for customer impact
 - Use product area labels matching your domains
 - Don't over-label — 2–3 labels max per issue
 

@@ -114,7 +114,6 @@ Every product decision traces to evidence. The discipline is choosing the highes
 - Write the [RFC](product-specs.md) — [RFC Template](../templates/rfc.md)
 - Score with [RICE](rice.md)
 - Get technical feasibility from engineering
-- Determine launch tier (T1/T2/T3/T4) — see [Launch Tiers](#launch-tiers)
 - Review with Sales, Marketing, Product, Engineering
 
 ### Deliverables
@@ -191,9 +190,9 @@ Shipping is the beginning. A feature nobody uses isn't a success — it's an una
 **Ready for GTM → GTM Launch Planning:**
 - Write customer documentation
 - Write release notes and changelog
-- Train Sales team (positioning, value) — T1/T2
+- Train Sales team (positioning, value) — for higher-stakes launches
 - Train Support team (functionality)
-- Prepare launch materials (blog, email, social) — T1/T2
+- Prepare launch materials (blog, email, social) — for higher-stakes launches
 - Execute launch activities
 - Get final GA approval
 
@@ -207,7 +206,7 @@ Shipping is the beginning. A feature nobody uses isn't a success — it's an una
 
 ### Deliverables
 
-- Launch materials (tier-dependent) — see your Launch Tier definitions (T1–T4) — maintained alongside your GTM team
+- Launch materials (scaled to the stakes of the launch)
 - [Post-Launch Review](../templates/post-launch-review.md) at 2wk/30d/60-90d intervals
 - Changelog updates
 
@@ -219,21 +218,22 @@ Shipping is the beginning. A feature nobody uses isn't a success — it's an una
 
 > ✅ **Green light to spec.** This confirms the problem is real, the approach is sound, and it's worth investing in.
 
-| Requirement | T1/T2 | T3 | T4 |
-|-------------|-------|-----|-----|
-| RFC written and reviewed | ✅ | ✅ | Lightweight / optional |
-| Customer evidence (3+ examples) | ✅ | ✅ | Nice to have |
-| RICE scored | ✅ | ✅ | — |
-| Technical feasibility confirmed | ✅ | ✅ | ✅ |
-| Launch tier assigned | ✅ | ✅ | ✅ |
-| SVP of Product approval | ✅ | ✅ | — |
-| **Vision check** | Does this move the headline metric? | | |
-| **Persona identified** | Which [persona](../product-vision.md) has this problem? | | |
-| **Evidence supports the bet** | Not just a good idea, but validated need with research | | |
+Every requirement below applies — scale its depth to the stakes (lighter for a Quick Win / Lightweight path, fuller for Full Spec work).
 
-**Who approves:** PM + Tech Lead + SVP of Product (T1/T2/T3). PM + Tech Lead (T4).
+| Requirement | Notes |
+|-------------|-------|
+| RFC written and reviewed | Lightweight or optional for small/obvious fixes |
+| Customer evidence (3+ examples) | Scale to the stakes |
+| RICE scored | For Lightweight and Full Spec work |
+| Technical feasibility confirmed | Always |
+| SVP of Product approval | Senior product sign-off for substantial work |
+| **Vision check** | Does this move the headline metric? |
+| **Persona identified** | Which [persona](../product-vision.md) has this problem? |
+| **Evidence supports the bet** | Not just a good idea, but validated need with research |
 
-**Outcome:** Product, Engineering & broader stakeholder group are aligned on Project Scope, Success Criteria, Product GTM Tier and Priority.
+**Who approves:** Senior product sign-off (SVP of Product) for substantial work; PM + Tech Lead for small / quick-win work.
+
+**Outcome:** Product, Engineering & broader stakeholder group are aligned on Project Scope, Success Criteria and Priority.
 
 ---
 
@@ -241,26 +241,28 @@ Shipping is the beginning. A feature nobody uses isn't a success — it's an una
 
 > ✅ **Green light to ship behind flag to customers.** Private preview is successful, critical issues resolved, ready for wider audience.
 
-| Requirement | T1/T2 | T3 | T4 |
-|-------------|-------|-----|-----|
-| Deployed to production behind flag | ✅ | ✅ | ✅ |
-| Architecture documented | ✅ | ✅ | — |
-| Metrics and monitoring in place | ✅ | ✅ | ✅ |
-| Outcome UAT complete (user's job validated end-to-end, job × surface, independent of unit tests) | ✅ | ✅ | ✅ |
-| Production-readiness validated (security / reliability / scale / availability, to the stakes) | ✅ | ✅ | scaled |
-| Demo artifacts created | ✅ | Nice to have | — |
-| Support team trained | ✅ | ✅ | — |
-| Private preview feedback summarised | ✅ | ✅ | — |
-| Critical preview tickets resolved | ✅ | ✅ | ✅ |
-| **Product principles check** | "If they need the docs, we've failed" / "Batteries included, assembly optional" / "One mind built this" | | |
-| **Success metrics instrumented** | Events defined in code, dashboard or query exists, guardrails identified | | |
-| **Guardrail metrics identified** | What must NOT degrade | | |
+Every requirement below applies — scale its depth to the stakes (lighter for a Quick Win / Lightweight path, fuller for Full Spec work).
 
-**Who approves:** PM + SVP of Product (T1/T2/T3). PM + Tech Lead (T4).
+| Requirement | Notes |
+|-------------|-------|
+| Deployed to production behind flag | Always |
+| Architecture documented | Scale to the stakes |
+| Metrics and monitoring in place | Always |
+| Outcome UAT complete (user's job validated end-to-end, job × surface, independent of unit tests) | Always |
+| Production-readiness validated (security / reliability / scale / availability, to the stakes) | Depth scaled to the stakes |
+| Demo artifacts created | Scale to the stakes |
+| Support team trained | Scale to the stakes |
+| Private preview feedback summarised | Scale to the stakes |
+| Critical preview tickets resolved | Always |
+| **Product principles check** | "If they need the docs, we've failed" / "Batteries included, assembly optional" / "One mind built this" |
+| **Success metrics instrumented** | Events defined in code, dashboard or query exists, guardrails identified |
+| **Guardrail metrics identified** | What must NOT degrade |
+
+**Who approves:** Senior product sign-off (SVP of Product) for substantial work; PM + Tech Lead for small / quick-win work.
 
 **Outcome:** Change has gone through initial customer testing with any necessary updates made to enable it to move to Public Preview and then General Availability following agreed Go to Market steps.
 
-> 💡 Two distinct gates here, not one. The **outcome UAT** proves the user's job is done (customer-ready, Product); **production-readiness** proves it's secure / reliable / scalable / available to the level the stakes demand (production-ready, Engineering). Unit-green ≠ outcome-validated ≠ production-ready — none implies the others. (In the table above, "scaled" = depth set to the launch tier's stakes.) See [Agentic Delivery](agentic-delivery.md).
+> 💡 Two distinct gates here, not one. The **outcome UAT** proves the user's job is done (customer-ready, Product); **production-readiness** proves it's secure / reliable / scalable / available to the level the stakes demand (production-ready, Engineering). Unit-green ≠ outcome-validated ≠ production-ready — none implies the others. (In the table above, depth is set to the stakes.) See [Agentic Delivery](agentic-delivery.md).
 
 ---
 
@@ -287,9 +289,7 @@ See [Post-Ship Reviews](#post-ship-reviews) for detailed guidance.
 
 ### Product & Engineering Default Project Template
 
-For all new Product & Engineering projects, use the Product & Engineering Default Project Template:
-
-![Project Template](https://prod-files-secure.s3.us-west-2.amazonaws.com/318b9acb-3315-4210-b900-ba18807fabb7/0c0dfc6b-637d-43ae-852d-f7cb6eb4105f/image.png)
+For all new Product & Engineering projects, use a consistent default project template in your tracker.
 
 ### Project Information Standards - our minimum defaults
 
@@ -311,17 +311,6 @@ For all new Product & Engineering projects, use the Product & Engineering Defaul
 
 **Owner:** Product (at start of Project)
 
-![Product Lever Labels](https://prod-files-secure.s3.us-west-2.amazonaws.com/318b9acb-3315-4210-b900-ba18807fabb7/b75f2d83-a5ec-4bf5-be47-acfc04505a7b/image.png)
-
-#### Label - Product GTM Tier
-
-**Definition:** Determine which product changes get what level of GTM awareness and attention
-
-**Owner:** Product, GTM and Sales (at start of Project)
-
-![Product GTM Tier Labels](https://prod-files-secure.s3.us-west-2.amazonaws.com/318b9acb-3315-4210-b900-ba18807fabb7/068b0043-6c22-4ea6-a2ad-21b3ae6a6a72/image.png)
-
-See your Launch Tier definitions (T1–T4) — maintained alongside your GTM team for full tier criteria.
 
 #### Priority
 
@@ -376,7 +365,6 @@ The Fast Path exists to accelerate the delivery of small pieces of work that wil
 - High value customer feedback
 - High value PoC request from prospect
 
-![Fast Path Diagram](https://prod-files-secure.s3.us-west-2.amazonaws.com/318b9acb-3315-4210-b900-ba18807fabb7/957304cc-9c68-4284-a754-a59e9ca263dd/image.png)
 
 ---
 
@@ -435,21 +423,6 @@ A spec translates the RFC into buildable requirements. It answers: What do we bu
 
 ---
 
-## Launch Tiers
-
-Tiers define **marketing investment**, not product maturity.
-
-| Tier | What It Means | Approval Depth | GTM Activities |
-|------|---------------|---------------|----------------|
-| **T1 — Major Release** | New product line, game changer | Executive steering, board consideration | Full GTM campaign, press, customer events, exec briefings |
-| **T2 — Product Evolution** | Significant new capability | SVP of Product + VP Engineering | Coordinated launch, blog post, targeted outreach, sales enablement |
-| **T3 — Feature Enhancement** | Meaningful improvement | PM + Tech Lead + Design | Standard docs & announcement, release notes, changelog |
-| **T4 — Usability Fix** | Small improvement, obvious fix | No formal RFC required | Changelog only |
-
-See your Launch Tier definitions (T1–T4) — maintained alongside your GTM team for full tier criteria.
-
----
-
 ## Recommended Team Planning Standards
 
 **Fortnightly engineering team outcome planning, prioritisation and estimation**
@@ -478,7 +451,7 @@ See your Launch Tier definitions (T1–T4) — maintained alongside your GTM tea
 | **Launch Readiness Check** | Ship behind flag to customers | PM + SVP of Product |
 | **Launch Retro Check** | Did the bet pay off? | PM (performance review) |
 
-Gate requirements scale with launch tier — T4 doesn't need SVP sign-off. See tier-specific tables above.
+Gate requirements scale with the stakes — small / quick-win work doesn't need SVP sign-off. See the requirement tables above.
 
 ---
 

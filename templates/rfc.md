@@ -20,7 +20,6 @@ icon: "📄"
 | **Approver** | [Name, role] |
 | **Approval date** | YYYY-MM-DD |
 | **Strategic lever** | [Acquisition / Retention / Expansion / Efficiency — from your strategy] |
-| **Launch tier** | T1 / T2 / T3 / T4 |
 | **Tracker** | [Link to project in your issue tracker] |
 
 ---

@@ -1,22 +1,12 @@
-# Product Playbook — Agent Guidance
+# ProductOS — Agent Guidance
 
-This repository is a **reusable, product-agnostic operating system for running product organisations**. The playbook framework (six phases, RICE, decision framework, RFC/spec templates) is product-agnostic. Anything specific to a real product (vision, personas, principles, invariants, headline metric) is documented as a *guide* — what good looks like, when it's "done," and how to write your own.
-
-## ⚠️ Important: Notion Page Handling
-
-**ALWAYS prompt the user before deleting or archiving any Notion pages.**
-
-- **Default behavior**: Prefer NOT to delete Notion pages unless absolutely necessary
-- **When deletion is needed**: ALWAYS ask for explicit user confirmation first
-- **Rationale**: Notion pages may have links from other places, be referenced by teammates, or contain important context that isn't immediately visible
-
-When in doubt, leave the page and ask the user.
+This repository is a **reusable, product-agnostic operating system for running product organisations**. The framework (six phases, RICE, decision framework, RFC/spec templates) is product-agnostic. Anything specific to a real product (vision, personas, principles, invariants, headline metric) is documented as a *guide* — what good looks like, when it's "done," and how to write your own.
 
 ## Scope
 
 - **Purpose**: Product management practices, processes, and principles
-- **Audience**: Product leaders adopting or adapting this playbook for their team
-- **Format**: Markdown, optionally synced to Notion via the included sync CLI
+- **Audience**: Product leaders adopting or adapting this for their team
+- **Format**: Markdown. Humans read it via the Starlight site; agents read the raw markdown.
 
 ## Agentic Delivery — operating contract
 
@@ -75,7 +65,6 @@ productos/
 │   ├── customer-feedback.md    # Handling product feedback
 │   ├── rice.md                 # RICE scoring framework
 │   ├── jtbd-guide.md           # Jobs to be Done framework
-│   ├── customer-journey.md     # 6-phase customer journey
 │   ├── delivery-standards.md     # Operational workflow with gate checklists
 │   └── tools-we-use.md         # Reference toolchain
 └── templates/                  # Grab these when doing the work
@@ -111,38 +100,6 @@ productos/
 - **No Project Template**: Projects are operational entities in your tracker, not copyable templates.
 - **JTBD Guide in guides/**: located at `guides/jtbd-guide.md`.
 
-## Notion Sync (Optional)
-
-The repo includes a Notion sync CLI under `scripts/notion-sync/`. It is **opt-in**: it does nothing unless you configure a `.notion/pages.yaml` mapping file (not committed) and a `NOTION_TOKEN` env var.
-
-When configured, each markdown file declares its Notion target via a `notion_page_id` value in `.notion/pages.yaml` (and optionally in the file's frontmatter). The sync CLI reads from local markdown as the source of truth and pushes to Notion.
-
-### ⚠️ Notion Update Safety — CRITICAL
-
-**NEVER update a Notion page without fetching it first.**
-
-Before any Notion update operation:
-
-1. **Fetch the page** to inspect current state.
-2. **Check for embedded content**: Look for `<page url=...>`, `<database ...>`, synced blocks.
-3. **Choose a safe method**:
-   - Has embedded content → Use a range-based update (`replace_content_range` or `insert_content_after`).
-   - Plain text only → A full-content replace is OK.
-
-**Why:** A full-content replace deletes ALL blocks, orphaning child pages and embedded content. Child pages become inaccessible and are sent to the recycle bin.
-
-### Syncing Content
-
-1. Make changes in Git (source of truth)
-2. Run the sync CLI (or let CI do it)
-3. Keep structure aligned between folders and Notion sub-pages
-
-### Emoji Conventions
-
-- **Section pages**: Navigation emojis (🧭 🔄 👤 📋)
-- **Templates**: Document emojis (📄 📖 📝)
-- **Guides**: Book emojis (📖 📚)
-
 ## Markdown Standards
 
 ### Supported Formatting
@@ -154,10 +111,9 @@ Before any Notion update operation:
 - Blockquotes, horizontal rules
 - Simple tables, checkboxes
 
-**Avoid:**
-- Nested lists beyond 2 levels
-- Complex tables, HTML tags
-- Reference-style links, footnotes
+**Keep it readable:** standard Markdown and MDX render fine in the Starlight
+site — favour clarity over cleverness; deep nesting and giant tables read
+poorly regardless of the tool.
 
 ### File Naming
 
@@ -193,13 +149,6 @@ last_reviewed: YYYY-MM-DD
 - **Bullet lists** — Non-sequential collections
 
 ## Key Concepts (templates teach these in detail)
-
-### Launch Tiers (Marketing)
-
-- **T1** — New offering. Full GTM, press release. 1-2/year.
-- **T2** — Product line evolution. Partial GTM. 3-4/year.
-- **T3** — Feature enhancement. Changelog, in-app. 12-20/year.
-- **T4** — Usability improvement. Changelog only. Many.
 
 ### Release Phases (Product)
 
@@ -238,7 +187,6 @@ last_reviewed: YYYY-MM-DD
 
 - Make policy changes without human direction
 - Add content outside product management scope
-- Use markdown that breaks Notion
 - Create complex directory structures
 - Add automation without explicit request
 - Bake in any single company's product as an example (this playbook is meant to be reusable)

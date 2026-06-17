@@ -61,10 +61,10 @@ Every idea passes three checks: **Signal** (strategy-aligned with real need?), *
 - [Agentic Delivery](guides/agentic-delivery.md) — run an agentic workforce against these artifacts: the four gates, fresh-process review, outcome UAT, and production-readiness
 
 ### Marketing and GTM
-- [Delivery Standards](guides/delivery-standards.md) — Launch tiers and release phases
+- [Delivery Standards](guides/delivery-standards.md) — Release phases and the delivery lifecycle
 - [Working Together](working-together.md) — When GTM enters the process
 
 ### Reference
 - **Core Concepts:** [Three Personas](guides/personas.md) | [Product Principles](guides/product-principles.md) | [Headline Metric](guides/headline-metric.md)
-- **Frameworks:** [Agentic Delivery](guides/agentic-delivery.md) | [RICE Scoring](guides/rice.md) | [JTBD Guide](guides/jtbd-guide.md) | [Customer Journey](guides/customer-journey.md) | [Tools We Use](guides/tools-we-use.md)
+- **Frameworks:** [Agentic Delivery](guides/agentic-delivery.md) | [RICE Scoring](guides/rice.md) | [JTBD Guide](guides/jtbd-guide.md) | [Tools We Use](guides/tools-we-use.md)
 - **Templates:** [RFC](templates/rfc.md) | [Job Spec](templates/job-spec.md) | [Customer Call](templates/customer-call.md) | [Research](templates/research.md) | [Post-Launch Review](templates/post-launch-review.md) | [Ritual Review](templates/ritual-review.md)
