@@ -44,8 +44,8 @@ Else: out of scope, however clever.
 ## Repo structure
 
 The top level reads as the OS — anchors, the OS method guides, the OS
-templates, skills, and the series. The human PM craft (the playbook a
-person reads) lives under `pm-playbook/`.
+templates, and skills. The human PM craft (the playbook a person reads)
+lives under `pm-playbook/`.
 
 ```
 productos/
@@ -65,8 +65,6 @@ productos/
 ├── skills/                         # agent-executable skills
 │   ├── create-job-spec/SKILL.md
 │   └── uat-ux-debug/SKILL.md
-├── writeups/                       # the series
-│   └── uat-ux-debug-klanker.md
 └── pm-playbook/                       # the human PM craft
     ├── index.md                    # Playbook homepage + reading guide
     ├── product-playbook.md         # THE anchor doc (6-phase operating model)

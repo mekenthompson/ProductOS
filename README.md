@@ -1,88 +1,60 @@
 # ProductOS
 
-ProductOS is a product operating system: a playbook for running product —
-anchored on the customer's job and its outcome — plus the **automation and
-agent-executable guidance** (skills, templates, the operating contract) that
-make it *run*, not just advise. That's what makes it an OS and not just PM
-guidance.
+**A product operating system.** Not just a playbook you read — the playbook
+*plus* the automation and agent-executable guidance (skills, templates, an
+operating contract) that make it *run*.
 
-ProductOS is the method, not an instance of itself. The **working example in
-action is [switchroom](https://github.com/mekenthompson/switchroom)** — when
-a guide here needs a worked example, it points there.
+ProductOS is the method. The working example in action is
+**[switchroom](https://github.com/mekenthompson/switchroom)**.
 
-> Augment the judgment, automate the delivery. Canonical and private for now;
-> a public "lite" kit is a later export. See [`PLAN.md`](./PLAN.md).
+> Augment the judgment, automate the delivery. Private for now; a public
+> "lite" kit is a later export.
+
+---
 
 ## The hierarchy
 
 ```
-Vision / Principles / Invariants   (three anchors)
-        → Product Spec             (per product, owns the job list)
-        → Job Specs                (per job, durable, UAT-verifiable)
-        → RFCs / PRs               (ship-coupled delivery, not a named tier)
+Vision · Principles · Invariants        three anchors (the why / built-well / never-cross)
+        ↓
+Product Spec                            per product — owns the job list
+        ↓
+Job Specs                               per job — durable, outcome-focused, UAT-verifiable
+        ↓
+RFCs / PRs                              ship-coupled delivery (not a named tier)
 ```
 
-Verdict rule (4 clauses): a change ships only when it advances a vision
-outcome ∧ satisfies its Job Spec ∧ passes every principle ∧ crosses no
+**Verdict rule.** A change ships only when it advances a vision outcome **and**
+satisfies its Job Spec **and** passes every principle **and** crosses no
 invariant.
 
-## Repo layout
+---
 
-The top level reads as the OS. The human PM craft — the playbook a person
-reads — lives under [`pm-playbook/`](./pm-playbook/).
+## What's here
 
-- [`anchors/`](./anchors/) — the three anchors and their how-to guides:
-  [`product-vision.md`](./anchors/product-vision.md),
-  [`product-principles.md`](./anchors/product-principles.md),
-  [`invariants.md`](./anchors/invariants.md).
-- [`guides/`](./guides/) — the OS method:
-  [agentic-delivery](./guides/agentic-delivery.md) (the verdict rule + four
-  parts), [jtbd-guide](./guides/jtbd-guide.md),
-  [release-phases](./guides/release-phases.md). (The RFC how-to,
-  [product-specs](./guides/product-specs.md), lives here too.)
-- [`templates/`](./templates/) — the OS blank shapes:
-  [`job-spec.md`](./templates/job-spec.md) (canonical) and
-  [`rfc.md`](./templates/rfc.md).
-- [`skills/`](./skills/) — agent-executable skills (see below).
-- [`writeups/`](./writeups/) — the series (see below).
-- [`pm-playbook/`](./pm-playbook/) — the human PM craft: the six-phase loop, the
-  handbook, and the discipline guides + their templates. Start at
-  [`pm-playbook/index.md`](./pm-playbook/index.md).
-- [`AGENTS.md`](./AGENTS.md) — the terse, agent-executable operating contract.
-  Read this to *execute* the method.
+| Folder | What it is |
+|---|---|
+| **`anchors/`** | The three anchors — `product-vision`, `product-principles`, `invariants` — and how to write each. |
+| **`guides/`** | The OS method: `agentic-delivery` (the verdict rule + four parts), `jtbd-guide`, `release-phases`, `product-specs` (the RFC how-to). |
+| **`templates/`** | The blank shapes: `job-spec.md`, `rfc.md`. |
+| **`skills/`** | Agent-executable skills: `create-job-spec`, `uat-ux-debug`. |
+| **`pm-playbook/`** | The human PM craft: the six-phase loop, the handbook, the discipline guides, and their templates. Start at [`pm-playbook/index.md`](./pm-playbook/index.md). |
+| **`AGENTS.md`** | The terse operating contract — read this to *execute* the method. |
 
-## The playbook (human PM craft)
+---
 
-- [`pm-playbook/index.md`](./pm-playbook/index.md) — the reading guide; start here.
-- [`pm-playbook/product-playbook.md`](./pm-playbook/product-playbook.md) — the
-  six-phase loop (Learn → Decide → Shape → Build → Launch → Sell).
-- [`pm-playbook/pm-handbook.md`](./pm-playbook/pm-handbook.md) — the handbook.
-- The discipline guides — decision-framework, delivery-standards, discovery,
-  customer-feedback, rice, personas, headline-metric, lifecycle, tools-we-use —
-  and the human templates under
-  [`pm-playbook/templates/`](./pm-playbook/templates/) (post-launch-review, research,
-  customer-call, ritual-review).
+## Start here
 
-## Example skills (how to run product using ProductOS)
+- **Run the method (agent):** [`AGENTS.md`](./AGENTS.md) — the gate, the triggers, the reviewer checklist.
+- **Write a spec:** [`templates/job-spec.md`](./templates/job-spec.md) + the [`create-job-spec`](./skills/create-job-spec/SKILL.md) skill (it interviews you, then writes it).
+- **Set the why / good / lines:** [`anchors/`](./anchors/).
+- **Run product day to day (human):** [`pm-playbook/index.md`](./pm-playbook/index.md).
 
-- [`skills/create-job-spec`](./skills/create-job-spec/SKILL.md) — interview to
-  shared alignment on a job, then write a durable Job Spec. The entry point.
-- [`skills/uat-ux-debug`](./skills/uat-ux-debug/SKILL.md) — debug a UX failure
-  from the user outcome, not the point bug.
+---
 
-## The worked example in action
+## The worked example
 
-**[switchroom](https://github.com/mekenthompson/switchroom/tree/docs/job-spec-golden/reference)**
-is the canonical instantiation: real anchors, a product spec, and 19 Job
-Specs that show the method filled in and proven against a live UAT harness.
-When a guide here needs a worked example, it points there.
-
-## Writeups (the series)
-
-- [`writeups/uat-ux-debug-klanker.md`](./writeups/uat-ux-debug-klanker.md) — a
-  UX failure, debugged from the outcome (a switchroom worked example).
-
-## Tracking
-
-KEN-56 (ProductOS) · KEN-35 (series) · KEN-57 (Job Spec) · KEN-29
-(probabilistic UAT) · KEN-60 (UAT coverage).
+**[switchroom](https://github.com/mekenthompson/switchroom/tree/docs/job-spec-golden/reference)** —
+real anchors, a product spec, and 19 Job Specs: the method filled in and
+proven against a live UAT harness. When a guide here needs an example, it
+points there.
