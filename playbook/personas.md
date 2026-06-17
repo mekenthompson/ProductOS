@@ -23,7 +23,7 @@ This guide explains the three-persona pattern, how each persona connects to the 
 
 A *Creator* sets it up. A *Consumer* lives in it. A *Sponsor* pays for it and gets asked whether it worked.
 
-Each persona experiences the product (and the [headline metric](../product-vision.md#what-a-good-product-vision-looks-like)) differently. If a feature improves life for one persona while making it worse for another, that's a real trade-off — and the team should be able to articulate it.
+Each persona experiences the product (and the [headline metric](../anchors/product-vision.md#what-a-good-product-vision-looks-like)) differently. If a feature improves life for one persona while making it worse for another, that's a real trade-off — and the team should be able to articulate it.
 
 ---
 
@@ -31,11 +31,11 @@ Each persona experiences the product (and the [headline metric](../product-visio
 
 | Where it shows up | How personas are used |
 |---|---|
-| [Product Vision](../product-vision.md) | Each persona gets a one-line "vision lens" question. |
+| [Product Vision](../anchors/product-vision.md) | Each persona gets a one-line "vision lens" question. |
 | [RFC Template](../templates/rfc.md) | Every RFC names the primary persona served and (optionally) the secondary. Unclear persona = unclear value. |
-| [RICE](rice.md) | Reach is scored *per persona*, not as a single blended number. |
-| [Decision Framework](decision-framework.md) | "Signal" depends on whether a real persona has a real problem. |
-| [Post-Launch Review](../templates/post-launch-review.md) | Adoption is reviewed per persona — overall numbers hide persona-level failure. |
+| [RICE](./rice.md) | Reach is scored *per persona*, not as a single blended number. |
+| [Decision Framework](./decision-framework.md) | "Signal" depends on whether a real persona has a real problem. |
+| [Post-Launch Review](./templates/post-launch-review.md) | Adoption is reviewed per persona — overall numbers hide persona-level failure. |
 
 ---
 
@@ -47,7 +47,7 @@ Three properties:
 
 2. **One sentence on what they need from the product.** Not a list of features — a description of the *outcome*. If you can't say it in one sentence, you're describing more than one persona.
 
-3. **A vision-lens question.** A single question that asks "how fast / how clearly / how reliably does this persona get the outcome they need?" The question should be answerable from product data, and should map directly to the [headline metric](../product-vision.md).
+3. **A vision-lens question.** A single question that asks "how fast / how clearly / how reliably does this persona get the outcome they need?" The question should be answerable from product data, and should map directly to the [headline metric](../anchors/product-vision.md).
 
 > 💡 Optional but useful: a one-line *anti-pattern* per persona — the kind of thing that looks helpful but actually makes their job harder. E.g. "Adding configuration knobs that the Creator must explain to every Consumer."
 
@@ -84,7 +84,7 @@ If you have one end-user persona, that's fine — just don't pretend you have tw
 
 ### Step 3 — Write the vision-lens questions
 
-The vision lens converts the headline metric from the [Product Vision](../product-vision.md) into a persona-specific question. Each persona should have one.
+The vision lens converts the headline metric from the [Product Vision](../anchors/product-vision.md) into a persona-specific question. Each persona should have one.
 
 Template:
 
@@ -143,5 +143,5 @@ If you can't clearly answer which persona benefits and how, the feature may not 
 
 ## Related
 
-- [Product Vision](../product-vision.md) — Personas live alongside the vision and headline metric.
-- [JTBD Guide](jtbd-guide.md) — Jobs to be Done, which complements personas with motivation framing.
+- [Product Vision](../anchors/product-vision.md) — Personas live alongside the vision and headline metric.
+- [JTBD Guide](../guides/jtbd-guide.md) — Jobs to be Done, which complements personas with motivation framing.

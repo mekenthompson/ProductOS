@@ -7,7 +7,7 @@ icon: "📄"
 
 # RFC: [Name]
 
-> **RFC — ship-coupled delivery (optional shape, not a named tier; use your existing RFC/PR process).** One living document for a single ship-coupled effort. It does the work that used to be split between a PRD (the decision and the why) and a delivery spec (the constraints), but it frames everything around the **user's job**, not our internal launch. It leaves *how* open — solutions are the team's (and the AI's) creative work, not the RFC author's prescription. The durable home of the job is its [Job Spec](job-spec.md); this RFC is one ship-coupled effort against it.
+> **RFC — ship-coupled delivery (optional shape, not a named tier; use your existing RFC/PR process).** One living document for a single ship-coupled effort. It does the work that used to be split between a PRD (the decision and the why) and a delivery spec (the constraints), but it frames everything around the **user's job**, not our internal launch. It leaves *how* open — solutions are the team's (and the AI's) creative work, not the RFC author's prescription. The durable home of the job is its [Job Spec](./job-spec.md); this RFC is one ship-coupled effort against it.
 
 ---
 
@@ -39,7 +39,7 @@ Lead with the customer's job. Not our feature. Not our roadmap. The job they're 
 
 > **When** `[situation]`, **`[persona]` wants to** `[motivation]`, **so they can** `[outcome they care about]`.
 
-> 🔗 If this job has a standing [Job Spec](job-spec.md), link it here instead of restating it. The Job Spec is the durable home of the job — it outlives this RFC; this RFC is one ship-coupled effort against it.
+> 🔗 If this job has a standing [Job Spec](./job-spec.md), link it here instead of restating it. The Job Spec is the durable home of the job — it outlives this RFC; this RFC is one ship-coupled effort against it.
 
 **Primary persona:** `[Creator / Consumer / Sponsor — or your persona name]`
 **Secondary persona(s) affected (if any):** `[…]`
@@ -117,7 +117,7 @@ What "this didn't work" looks like **from the user's perspective**. This is the 
 
 What cannot break, regardless of how creative the solution is. These are the constraints the team and any AI agent must respect.
 
-**Quality / principle guardrails** (see [Product Principles](../guides/product-principles.md)):
+**Quality / principle guardrails** (see [Product Principles](../anchors/product-principles.md)):
 - `[Principle 1]` — must remain true after this ships. Check question: …
 - `[Principle 2]` — must remain true. Check question: …
 - `[Principle 3]` — must remain true. Check question: …
@@ -221,13 +221,13 @@ Things we genuinely don't know yet, and how we'll resolve them.
 ## Related
 
 - [RFC guide](../guides/product-specs.md) — how to write this document
-- [Product Vision](../product-vision.md) — the anchor every RFC ties back to
-- [Three Personas](../guides/personas.md) — persona definitions
-- [Headline Metric](../guides/headline-metric.md) — what success is measured against
-- [Product Principles](../guides/product-principles.md) — the standards the solution must meet
-- [Decision Framework](../guides/decision-framework.md) — Signal → Standard → Speed
+- [Product Vision](../anchors/product-vision.md) — the anchor every RFC ties back to
+- [Three Personas](../playbook/personas.md) — persona definitions
+- [Headline Metric](../playbook/headline-metric.md) — what success is measured against
+- [Product Principles](../anchors/product-principles.md) — the standards the solution must meet
+- [Decision Framework](../playbook/decision-framework.md) — Signal → Standard → Speed
 - [JTBD Guide](../guides/jtbd-guide.md) — framing the job
-- [Post-Launch Review](post-launch-review.md) — the measurement loop after this ships
+- [Post-Launch Review](../playbook/templates/post-launch-review.md) — the measurement loop after this ships
 
 ---
 

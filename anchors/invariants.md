@@ -7,11 +7,11 @@ icon: "🚧"
 
 # Invariants
 
-Invariants are the third anchor, beside the [Vision](../product-vision.md)
-(the *why*) and the [Principles](product-principles.md) (the *built-well*
+Invariants are the third anchor, beside the [Vision](./product-vision.md)
+(the *why*) and the [Principles](./product-principles.md) (the *built-well*
 standards). They are the lines your product **will not cross by
 construction** — the *"are we even allowed / is this still us"* gate in the
-[verdict rule](agentic-delivery.md).
+[verdict rule](../guides/agentic-delivery.md).
 
 This is a **guide**: it tells you what a good invariant looks like and how to
 write your own. The invariants themselves belong to your product. For a
@@ -51,7 +51,7 @@ you're breaking a law, a policy, or a promise).
 ## How to write yours
 
 1. **Start from the vision's non-scope.** The strongest "we do not do X"
-   lines in your [vision](../product-vision.md) are invariant candidates —
+   lines in your [vision](./product-vision.md) are invariant candidates —
    the ones that are boundaries by construction, not just current priorities.
 2. **Add the compliance / trust / identity boundaries.** What would put you
    outside a policy, a regulation, or your core promise to the user? Those
@@ -77,9 +77,9 @@ specs for the pattern.
 
 ## Related
 
-- [Product Vision](../product-vision.md) — the first anchor; it *names* the
+- [Product Vision](./product-vision.md) — the first anchor; it *names* the
   invariants that matter.
-- [Product Principles](product-principles.md) — the second anchor; standards
+- [Product Principles](./product-principles.md) — the second anchor; standards
   you check against (and trade off), distinct from invariants you don't.
-- [Agentic Delivery](agentic-delivery.md) — how the anchors fuse into the
+- [Agentic Delivery](../guides/agentic-delivery.md) — how the anchors fuse into the
   verdict rule (the invariant clause is the kill-clause).

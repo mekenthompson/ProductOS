@@ -44,7 +44,7 @@ If Signal is weak, park it. Capture the idea in your issue tracker with context,
 
 ### Step 2: Standard
 
-Does the proposed approach pass each of your [product principles](product-principles.md)? Run the check questions for each principle against the proposed solution.
+Does the proposed approach pass each of your [product principles](../anchors/product-principles.md)? Run the check questions for each principle against the proposed solution.
 
 If Standard fails, redesign the approach before investing engineering time. A fast solution that violates principles creates more work later.
 
@@ -89,7 +89,7 @@ Use this for work between half a day and 2 weeks. One page. No fluff.
 [How we'll know it worked. 1-2 metrics with baselines.]
 
 ### Vision Check
-How does this move the headline metric from the [product vision](../product-vision.md)?
+How does this move the headline metric from the [product vision](../anchors/product-vision.md)?
 ```
 
 ---
@@ -127,7 +127,7 @@ How does this move the headline metric from the [product vision](../product-visi
 Talk to your Tech Lead in the weekly scoping session (Monday). Sizing is a 5-minute conversation, not a week of analysis. If the Tech Lead says "I'm not sure," that usually means it's bigger than a lightweight — write the RFC.
 
 **What about urgent customer issues?**
-Urgent doesn't change the path — it changes the priority. A 3-day fix for a churning customer is still a Lightweight brief, but it goes to the top of the queue. The PM + Tech Lead approve same-day. Escalation to SVP if needed (see [PM Handbook escalation table](../pm-handbook.md#escalation)).
+Urgent doesn't change the path — it changes the priority. A 3-day fix for a churning customer is still a Lightweight brief, but it goes to the top of the queue. The PM + Tech Lead approve same-day. Escalation to SVP if needed (see [PM Handbook escalation table](./pm-handbook.md#escalation)).
 
 **What about platform/infrastructure work?**
 Same three paths. Tech debt, reliability improvements, and dependency upgrades use the same decision tree. The evidence is different (incidents, performance data, security advisories instead of customer interviews), but Signal → Standard → Speed still applies.
@@ -142,10 +142,10 @@ The PM, informed by the Tech Lead's sizing. If there's disagreement, the PM deci
 
 ## Related
 
-- [Product Playbook](../product-playbook.md) — The 6-phase operating model (this framework is Phase 2: DECIDE)
-- [Product Vision](../product-vision.md) — Vision and personas
-- [RFC Guide](product-specs.md) — Full Spec path guidance (writing a ship-coupled RFC)
-- [RICE Assessment](rice.md) — Scoring for Full Spec path
+- [Product Playbook](./product-playbook.md) — The 6-phase operating model (this framework is Phase 2: DECIDE)
+- [Product Vision](../anchors/product-vision.md) — Vision and personas
+- [RFC Guide](../guides/product-specs.md) — Full Spec path guidance (writing a ship-coupled RFC)
+- [RICE Assessment](./rice.md) — Scoring for Full Spec path
 
 ---
 
@@ -159,7 +159,7 @@ Each bucket gets a capacity allocation (e.g., 40% Growth, 30% Enterprise, 20% Pl
 
 ## RICE Scoring
 
-RICE = (Reach + Impact + Confidence) / Effort. Score 1–4 for value dimensions, 1–5 for effort. Grades A through D. See [RICE Assessment](rice.md) for scoring details.
+RICE = (Reach + Impact + Confidence) / Effort. Score 1–4 for value dimensions, 1–5 for effort. Grades A through D. See [RICE Assessment](./rice.md) for scoring details.
 
 **Key rules:**
 - **Update RICE after scoping** — effort estimates change. Re-score.
@@ -167,4 +167,4 @@ RICE = (Reach + Impact + Confidence) / Effort. Score 1–4 for value dimensions,
 - **Kill low-confidence work** — if Confidence is 1, do more discovery first.
 - **Revisit deferred items quarterly** — priorities shift.
 
-**Full guide:** [RICE Prioritisation](rice.md)
+**Full guide:** [RICE Prioritisation](./rice.md)

@@ -37,7 +37,7 @@ _Pull metrics from the RFC Success section. Fill in actuals._
 
 ## Vision Check
 
-**Did this move the headline metric from the [product vision](../product-vision.md)?**
+**Did this move the headline metric from the [product vision](../../anchors/product-vision.md)?**
 
 - [ ] **Direct movement?** [Evidence — the headline metric itself shifted, in the right direction, by a measurable amount]
 - [ ] **Leading indicator?** [Evidence — a known leading indicator of the headline moved]

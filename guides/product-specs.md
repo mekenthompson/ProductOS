@@ -9,7 +9,7 @@ icon: "📖"
 
 One document. Not two.
 
-> 🧭 **An RFC is not a named tier of its own** — it's the ship-coupled, per-initiative delivery layer that sits *beneath* the anchors ([Vision](../product-vision.md), [Principles](product-principles.md), [Invariants](invariants.md)), the product-level **Product Spec** (which owns the job list), and the **[Job Specs](../templates/job-spec.md)**. It's your existing RFC/PR process for one piece of work; this guide is a reference *shape* for it, not a new gate. Each RFC references the [Job Spec](../templates/job-spec.md) it serves.
+> 🧭 **An RFC is not a named tier of its own** — it's the ship-coupled, per-initiative delivery layer that sits *beneath* the anchors ([Vision](../anchors/product-vision.md), [Principles](../anchors/product-principles.md), [Invariants](../anchors/invariants.md)), the product-level **Product Spec** (which owns the job list), and the **[Job Specs](../templates/job-spec.md)**. It's your existing RFC/PR process for one piece of work; this guide is a reference *shape* for it, not a new gate. Each RFC references the [Job Spec](../templates/job-spec.md) it serves.
 
 An **RFC** does the work that used to be split between a PRD ("should we build this?") and a separate delivery spec ("how do we build it?"). The shift matters: by combining them and framing the document around the **user's job to be done**, the RFC becomes useful at every phase — approval, design, build, launch, and post-ship review — and it stays useful for both humans and AI agents.
 
@@ -39,7 +39,7 @@ The RFC is built on five principles. If a section of the template doesn't serve 
 
 ### 1. Job first, feature last
 
-The RFC opens with the user's job (in JTBD form), not the feature we want to build. If you can't write the job statement crisply, you don't yet understand the problem. Drop down to discovery before continuing. The job itself lives in a durable [Job Spec](../templates/job-spec.md); the RFC references it. See [JTBD Guide](jtbd-guide.md).
+The RFC opens with the user's job (in JTBD form), not the feature we want to build. If you can't write the job statement crisply, you don't yet understand the problem. Drop down to discovery before continuing. The job itself lives in a durable [Job Spec](../templates/job-spec.md); the RFC references it. See [JTBD Guide](./jtbd-guide.md).
 
 ### 2. Failure is a first-class concept
 
@@ -77,7 +77,7 @@ An RFC is approved in draft and stays alive through ship. Decisions made during 
 | **Lightweight** | Half a day – 2 weeks | 1-page brief (Problem, Solution, Acceptance Criteria, Metrics, Persona) | PM + Tech Lead |
 | **Full Spec** | > 2 weeks | Full RFC using the [template](../templates/rfc.md) | Senior product sign-off |
 
-Use the [Decision Framework](decision-framework.md) to pick the path.
+Use the [Decision Framework](../playbook/decision-framework.md) to pick the path.
 
 **Don't write a full RFC for:** bug fixes, internal tooling with no customer impact, prototypes (use research docs), or small/obvious fixes.
 
@@ -108,9 +108,9 @@ The RFC author owns shepherding it through approval. Anyone can be the author.
 | **Shape** | Approved | Team agrees scope and approach. Solution space narrows as design and engineering propose options. RFC updated as decisions land. | Shaping → Readying for Build |
 | **Build** | Approved (living) | Build behind a flag. RFC updated when decisions are made; re-approved only if scope changes >20%. | Building → In Preview |
 | **Launch** | Approved | GTM activities. The RFC is the source of truth for what we shipped. | GTM Launch Planning → Launched |
-| **Sell** | Archived | Document actual vs predicted in the [Post-Launch Review](../templates/post-launch-review.md). | Launched (Retro) |
+| **Sell** | Archived | Document actual vs predicted in the [Post-Launch Review](../playbook/templates/post-launch-review.md). | Launched (Retro) |
 
-See [Delivery Standards](delivery-standards.md) for full phase and gate details.
+See [Delivery Standards](../playbook/delivery-standards.md) for full phase and gate details.
 
 ---
 
@@ -151,14 +151,14 @@ Then map the **forces** around the job — what pushes the user toward a new sol
 
 The struggling moments. **Be specific.** Generic "users find this confusing" isn't a struggling moment; "users open the settings page, scroll for 20 seconds looking for the SSO option, give up, and email support" is. Each struggling moment should have linked evidence.
 
-If you have fewer than two struggling moments with real evidence, you need more discovery. See [Discovery](discovery.md).
+If you have fewer than two struggling moments with real evidence, you need more discovery. See [Discovery](../playbook/discovery.md).
 
 ### User Success Modes
 
 Three flavours of success, in order of weight:
 - **Behavioural** — observable in product analytics.
 - **Felt** — observable in qualitative signal (NPS, interviews, support sentiment).
-- **Headline-metric** — the specific movement on the [headline metric](headline-metric.md) that this RFC is responsible for.
+- **Headline-metric** — the specific movement on the [headline metric](../playbook/headline-metric.md) that this RFC is responsible for.
 
 Plus **leading indicators** — early signals (≤ 2 weeks post-launch) that tell you whether you're on track.
 
@@ -173,9 +173,9 @@ Then name your **pivot triggers** and **stop triggers**. Specific. "60d adoption
 ### Guardrails
 
 Four buckets:
-- **Quality / principle** — your [Product Principles](product-principles.md) applied as engineering standards.
+- **Quality / principle** — your [Product Principles](../anchors/product-principles.md) applied as engineering standards.
 - **Performance / reliability** — latency budgets, error budgets, API contracts that can't break.
-- **Trust / safety** — privacy, security, reversibility. Anything the initiative must not cross by construction belongs to a named [invariant](invariants.md), not just a guardrail.
+- **Trust / safety** — privacy, security, reversibility. Anything the initiative must not cross by construction belongs to a named [invariant](../anchors/invariants.md), not just a guardrail.
 - **Out of scope** — explicit non-goals, even when asked.
 
 Guardrails are the part of the RFC that says *no* to creativity in specific places. The rest of the RFC invites it.
@@ -215,7 +215,7 @@ What you genuinely don't know yet, and how you'll resolve each one (experiment, 
 - Customer interviews or feedback with quotes, sample size, and links
 - Usage data or analytics with baseline numbers
 - Support ticket analysis (volume, trends, sentiment)
-- Research documents using the [Research Template](../templates/research.md)
+- Research documents using the [Research Template](../playbook/templates/research.md)
 - Sales/CS win/loss insights
 - Competitive analysis
 
@@ -230,7 +230,7 @@ What you genuinely don't know yet, and how you'll resolve each one (experiment, 
 
 ## Approval
 
-Approval depth scales with the [path](decision-framework.md) and the stakes of the work.
+Approval depth scales with the [path](../playbook/decision-framework.md) and the stakes of the work.
 
 | Path | Approver | SLA |
 |---|---|---|
@@ -290,7 +290,7 @@ Useful prompts:
 
 ### When an agent authors or implements the RFC: review it adversarially
 
-When an agent drafts the RFC — or implements against it — the **author cannot grade its own work** (it rubber-stamps). A separate, **fresh-process reviewer** (a different agent with fresh context, or a human) must check it and return an explicit **APPROVE / REQUEST_CHANGES / BLOCK** verdict, citing the specific section or `file:line`. Iterate until APPROVE, and don't let an automated merge fire before then. This is the design-loop discipline from [Agentic Delivery](agentic-delivery.md) — it *extends* the [approval](#approval) gate above, it doesn't replace it.
+When an agent drafts the RFC — or implements against it — the **author cannot grade its own work** (it rubber-stamps). A separate, **fresh-process reviewer** (a different agent with fresh context, or a human) must check it and return an explicit **APPROVE / REQUEST_CHANGES / BLOCK** verdict, citing the specific section or `file:line`. Iterate until APPROVE, and don't let an automated merge fire before then. This is the design-loop discipline from [Agentic Delivery](./agentic-delivery.md) — it *extends* the [approval](#approval) gate above, it doesn't replace it.
 
 ---
 
@@ -298,11 +298,11 @@ When an agent drafts the RFC — or implements against it — the **author canno
 
 - **Template:** [RFC Template](../templates/rfc.md)
 - **Job Spec:** [Job Spec Template](../templates/job-spec.md) — the durable, per-job outcome contract an RFC references
-- **Discovery:** [Discovery guide](discovery.md) — validate problems before writing
-- **Research:** [Research Template](../templates/research.md) — document findings
-- **JTBD:** [JTBD Guide](jtbd-guide.md) — framing the job and forces
-- **Decisions:** [Decision Framework](decision-framework.md) — Signal → Standard → Speed (pick the right path)
-- **Lifecycle:** [Delivery Standards](delivery-standards.md) — full operational workflow and gate definitions
+- **Discovery:** [Discovery guide](../playbook/discovery.md) — validate problems before writing
+- **Research:** [Research Template](../playbook/templates/research.md) — document findings
+- **JTBD:** [JTBD Guide](./jtbd-guide.md) — framing the job and forces
+- **Decisions:** [Decision Framework](../playbook/decision-framework.md) — Signal → Standard → Speed (pick the right path)
+- **Lifecycle:** [Delivery Standards](../playbook/delivery-standards.md) — full operational workflow and gate definitions
 - **Strategy:** Your annual strategy doc — strategic context
-- **Vision:** [Product Vision](../product-vision.md) — the anchor every RFC ties back to
-- **Measurement:** [Post-Launch Review](../templates/post-launch-review.md) — closes the loop
+- **Vision:** [Product Vision](../anchors/product-vision.md) — the anchor every RFC ties back to
+- **Measurement:** [Post-Launch Review](../playbook/templates/post-launch-review.md) — closes the loop

@@ -7,7 +7,7 @@ icon: "📖"
 
 # The Headline Metric
 
-The headline metric is the **single number** named in the [product vision](../product-vision.md) that goes up (or down) when the vision is being realised. It's the question every RFC has to answer: *does this move the headline?*
+The headline metric is the **single number** named in the [product vision](../anchors/product-vision.md) that goes up (or down) when the vision is being realised. It's the question every RFC has to answer: *does this move the headline?*
 
 Most teams have several "important metrics." That's fine for dashboards. It's fatal for prioritisation. When everything is important, RICE becomes negotiation and roadmaps become wish lists. Picking *one* headline forces the team to make trade-offs in the open.
 
@@ -21,7 +21,7 @@ Three jobs:
 
 1. **It anchors prioritisation.** Every RFC's expected impact is expressed in headline-metric terms. RICE Impact uses it. If an RFC can't articulate impact on the headline, it should be sent back.
 
-2. **It defines "we succeeded."** The 60–90 day [post-launch review](../templates/post-launch-review.md) tests whether the shipped feature actually moved the headline (or moved a credible leading indicator of it). Without a headline, "success" is whatever the team feels good about.
+2. **It defines "we succeeded."** The 60–90 day [post-launch review](./templates/post-launch-review.md) tests whether the shipped feature actually moved the headline (or moved a credible leading indicator of it). Without a headline, "success" is whatever the team feels good about.
 
 3. **It tells the company what you're optimising for.** The company should be able to read the headline and predict your trade-offs. If they can't, the metric is too soft or too internal.
 
@@ -31,11 +31,11 @@ Three jobs:
 
 | Where it shows up | How it's used |
 |---|---|
-| [Product Vision](../product-vision.md) | One sentence after the vision: "We measure ourselves on `[metric]`." |
+| [Product Vision](../anchors/product-vision.md) | One sentence after the vision: "We measure ourselves on `[metric]`." |
 | [RFC Template](../templates/rfc.md) | Strategic Alignment names which headline lever the RFC pulls. |
-| [RICE](rice.md) | Impact is scored in headline-metric units. |
-| Personas | Each persona's [vision-lens question](personas.md) is a persona-specific version of the headline. |
-| [Post-Launch Review](../templates/post-launch-review.md) | The 60–90 day question is "did this move the headline?" |
+| [RICE](./rice.md) | Impact is scored in headline-metric units. |
+| Personas | Each persona's [vision-lens question](./personas.md) is a persona-specific version of the headline. |
+| [Post-Launch Review](./templates/post-launch-review.md) | The 60–90 day question is "did this move the headline?" |
 | Roadmap | Themes are organised around levers on the headline. |
 
 ---
@@ -64,7 +64,7 @@ Ready to use as the anchor when:
 
 - [ ] **It's one number, with a precise definition** an engineer could instrument.
 - [ ] **It decomposes into 2–4 levers.** Each lever has at least one team accountable for it.
-- [ ] **Each persona has a vision-lens version** of the metric. (See [Three Personas](personas.md).)
+- [ ] **Each persona has a vision-lens version** of the metric. (See [Three Personas](./personas.md).)
 - [ ] **It maps to an industry-standard metric** — you can explain the relationship in one sentence.
 - [ ] **You can describe a feature that moves it.** And a feature that *seems* to help but actually doesn't.
 - [ ] **At least one in-flight project can be re-scored against it.** And the re-scoring changes a priority — otherwise the metric is decorative.
@@ -149,7 +149,7 @@ None of these are "the right answer" — they're plausible *shapes* for the head
 
 ## Related
 
-- [Product Vision](../product-vision.md) — The vision names the headline.
-- [Three Personas](personas.md) — Each persona has a vision-lens question derived from the headline.
-- [Product Principles](product-principles.md) — Principles ensure each feature moves the headline.
-- [Decision Framework](decision-framework.md) — Signal-Standard-Speed uses the headline as the success measure.
+- [Product Vision](../anchors/product-vision.md) — The vision names the headline.
+- [Three Personas](./personas.md) — Each persona has a vision-lens question derived from the headline.
+- [Product Principles](../anchors/product-principles.md) — Principles ensure each feature moves the headline.
+- [Decision Framework](./decision-framework.md) — Signal-Standard-Speed uses the headline as the success measure.

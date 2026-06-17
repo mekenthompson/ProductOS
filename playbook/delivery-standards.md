@@ -22,9 +22,9 @@ icon: "📋"
 5. **Measure and learn (Sell)** — Track adoption. Review at 2 weeks, 30 days, 60-90 days. Decide next steps.
 
 **Quick lookup:**
-- Need to write an RFC? → [RFC guide](product-specs.md)
+- Need to write an RFC? → [RFC guide](../guides/product-specs.md)
 - Need a template? → [RFC Template](../templates/rfc.md)
-- Want the decision framework? → [Signal → Standard → Speed](decision-framework.md)
+- Want the decision framework? → [Signal → Standard → Speed](./decision-framework.md)
 
 ---
 
@@ -98,21 +98,21 @@ Every product decision traces to evidence. The discipline is choosing the highes
 ### Behaviour
 
 - Validate the problem before committing engineering time
-- Tag the [persona](../product-vision.md) — Creator, Consumer, or Sponsor
-- Apply [Signal → Standard → Speed](decision-framework.md) to pick the right path (Quick Win / Lightweight / Full Spec)
-- Vision check: does this move the [headline metric](../product-vision.md)?
+- Tag the [persona](../anchors/product-vision.md) — Creator, Consumer, or Sponsor
+- Apply [Signal → Standard → Speed](./decision-framework.md) to pick the right path (Quick Win / Lightweight / Full Spec)
+- Vision check: does this move the [headline metric](../anchors/product-vision.md)?
 
 ### What You Do
 
 **Backlog:**
-- Talk to customers (3+ minimum) — see [Discovery](discovery.md)
+- Talk to customers (3+ minimum) — see [Discovery](./discovery.md)
 - Gather evidence (pain points, workarounds, urgency)
 - Assess impact (how many customers, what magnitude?)
 - Collect usage data and feedback patterns
 
 **Shaping:**
-- Write the [RFC](product-specs.md) — [RFC Template](../templates/rfc.md)
-- Score with [RICE](rice.md)
+- Write the [RFC](../guides/product-specs.md) — [RFC Template](../templates/rfc.md)
+- Score with [RICE](./rice.md)
 - Get technical feasibility from engineering
 - Review with Sales, Marketing, Product, Engineering
 
@@ -120,7 +120,7 @@ Every product decision traces to evidence. The discipline is choosing the highes
 
 - [RFC](../templates/rfc.md)
 - RICE score with transparent reasoning
-- Evidence base — [Research Template](../templates/research.md), [Customer Call Template](../templates/customer-call.md)
+- Evidence base — [Research Template](./templates/research.md), [Customer Call Template](./templates/customer-call.md)
 
 ---
 
@@ -133,7 +133,7 @@ The product is one thing. Our three product principles are engineering standards
 ### Behaviour
 
 - The RFC is the single living document — approved at the end of Shape, updated through delivery as decisions land
-- [Product principles](product-principles.md) applied as design and engineering standards, not post-hoc review criteria
+- [Product principles](../anchors/product-principles.md) applied as design and engineering standards, not post-hoc review criteria
 - Instrumentation wired up before preview — events defined, dashboards built, guardrail metrics identified
 
 ### What You Do
@@ -152,7 +152,7 @@ The product is one thing. Our three product principles are engineering standards
 - Create demo artifacts (short recorded walkthroughs)
 - Train support team
 - Set up metrics and monitoring
-- Outcome UAT in a production-like environment — validate the user's job end-to-end (job × surface), independent of unit tests (see [Agentic Delivery](agentic-delivery.md))
+- Outcome UAT in a production-like environment — validate the user's job end-to-end (job × surface), independent of unit tests (see [Agentic Delivery](../guides/agentic-delivery.md))
 
 **In Preview:**
 - Enable flag for 5-10 trusted customer accounts
@@ -207,7 +207,7 @@ Shipping is the beginning. A feature nobody uses isn't a success — it's an una
 ### Deliverables
 
 - Launch materials (scaled to the stakes of the launch)
-- [Post-Launch Review](../templates/post-launch-review.md) at 2wk/30d/60-90d intervals
+- [Post-Launch Review](./templates/post-launch-review.md) at 2wk/30d/60-90d intervals
 - Changelog updates
 
 ---
@@ -228,7 +228,7 @@ Every requirement below applies — scale its depth to the stakes (lighter for a
 | Technical feasibility confirmed | Always |
 | SVP of Product approval | Senior product sign-off for substantial work |
 | **Vision check** | Does this move the headline metric? |
-| **Persona identified** | Which [persona](../product-vision.md) has this problem? |
+| **Persona identified** | Which [persona](../anchors/product-vision.md) has this problem? |
 | **Evidence supports the bet** | Not just a good idea, but validated need with research |
 
 **Who approves:** Senior product sign-off (SVP of Product) for substantial work; PM + Tech Lead for small / quick-win work.
@@ -262,7 +262,7 @@ Every requirement below applies — scale its depth to the stakes (lighter for a
 
 **Outcome:** Change has gone through initial customer testing with any necessary updates made to enable it to move to Public Preview and then General Availability following agreed Go to Market steps.
 
-> 💡 Two distinct gates here, not one. The **outcome UAT** proves the user's job is done (customer-ready, Product); **production-readiness** proves it's secure / reliable / scalable / available to the level the stakes demand (production-ready, Engineering). Unit-green ≠ outcome-validated ≠ production-ready — none implies the others. (In the table above, depth is set to the stakes.) See [Agentic Delivery](agentic-delivery.md).
+> 💡 Two distinct gates here, not one. The **outcome UAT** proves the user's job is done (customer-ready, Product); **production-readiness** proves it's secure / reliable / scalable / available to the level the stakes demand (production-ready, Engineering). Unit-green ≠ outcome-validated ≠ production-ready — none implies the others. (In the table above, depth is set to the stakes.) See [Agentic Delivery](../guides/agentic-delivery.md).
 
 ---
 
@@ -390,7 +390,7 @@ After launch, track whether the bet paid off.
 
 > 💡 **Stopping is not failure.** Continuing to invest in something the data says isn't working — that's failure.
 
-Use the [Post-Launch Review Template](../templates/post-launch-review.md) at each interval.
+Use the [Post-Launch Review Template](./templates/post-launch-review.md) at each interval.
 
 ---
 
@@ -418,7 +418,7 @@ A spec translates the RFC into buildable requirements. It answers: What do we bu
 
 - One RFC per project. The spec is a living document — it evolves through delivery.
 - Specs are approved in Draft → In Review → Approved. Changes that affect scope require re-approval.
-- See the [RFC guide](product-specs.md) for the full lifecycle.
+- See the [RFC guide](../guides/product-specs.md) for the full lifecycle.
 - Specs are living documents during Build — update when you learn something. Archive after ship.
 
 ---
@@ -457,10 +457,10 @@ Gate requirements scale with the stakes — small / quick-win work doesn't need 
 
 ## Related
 
-- [RFC guide](product-specs.md) — How RFCs are written and approved
-- [Discovery](discovery.md) — How to validate problems before writing an RFC
-- [Handling Product Feedback](customer-feedback.md) — Processing and routing customer feedback
-- [Decision Framework](decision-framework.md) — Signal → Standard → Speed
-- [Product Playbook](../product-playbook.md) — The 6-phase operating model
+- [RFC guide](../guides/product-specs.md) — How RFCs are written and approved
+- [Discovery](./discovery.md) — How to validate problems before writing an RFC
+- [Handling Product Feedback](./customer-feedback.md) — Processing and routing customer feedback
+- [Decision Framework](./decision-framework.md) — Signal → Standard → Speed
+- [Product Playbook](./product-playbook.md) — The 6-phase operating model
 
 For tool-specific guidance (how to set up custom statuses, automation rules, etc.) see your tracker's documentation.

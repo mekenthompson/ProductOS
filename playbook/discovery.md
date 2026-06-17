@@ -37,7 +37,7 @@ Discovery is how you replace assumptions with evidence. Do it before you write a
 **How many:** 3 minimum, 5-7 ideal, 10+ for big bets
 
 **How:**
-- Use the [Customer Call Template](../templates/customer-call.md)
+- Use the [Customer Call Template](./templates/customer-call.md)
 - Focus on their problem, not your solution ("Tell me about the last time you had to retry that flow" not "Would you use a retry button?")
 - Record it (with permission), take notes, synthesise afterwards
 
@@ -63,7 +63,7 @@ Discovery is how you replace assumptions with evidence. Do it before you write a
 - Use their free tier, try the relevant feature
 - Document: What do they do? What's good? What's missing?
 
-**Output:** Competitive summary table in research doc (see [Research Template](../templates/research.md))
+**Output:** Competitive summary table in research doc (see [Research Template](./templates/research.md))
 
 **Don't copy competitors. Learn from them.** They might be solving the wrong problem. Use their work as data, not direction.
 
@@ -73,8 +73,8 @@ Discovery is how you replace assumptions with evidence. Do it before you write a
 
 | Output | When to Use | Template |
 |--------|-------------|----------|
-| **Research doc** | Every discovery effort — link in your RFC Evidence section | [Research Template](../templates/research.md) |
-| **Job stories** | When you need to understand the customer job | [JTBD Guide](jtbd-guide.md) |
+| **Research doc** | Every discovery effort — link in your RFC Evidence section | [Research Template](./templates/research.md) |
+| **Job stories** | When you need to understand the customer job | [JTBD Guide](../guides/jtbd-guide.md) |
 | **Baseline metrics** | When you need to measure success (before/after) | Include in RFC Success section |
 | **Customer quotes** | When you need to make the problem real | Capture in research doc |
 
@@ -103,6 +103,6 @@ Discovery is how you replace assumptions with evidence. Do it before you write a
 
 ## Related
 
-- **[Handling Product Feedback](customer-feedback.md)** — How feedback enters the system
-- **[RFC guide](product-specs.md)** — Where discovery evidence lands
-- **[Delivery Standards](delivery-standards.md)** — Where discovery fits in the delivery process
+- **[Handling Product Feedback](./customer-feedback.md)** — How feedback enters the system
+- **[RFC guide](../guides/product-specs.md)** — Where discovery evidence lands
+- **[Delivery Standards](./delivery-standards.md)** — Where discovery fits in the delivery process

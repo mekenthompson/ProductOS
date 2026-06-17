@@ -14,7 +14,7 @@ phase is reversible: if something breaks, the flag goes off.
 
 This is tracker-agnostic — the phase names are what matter, not the tool.
 Release phase is *how widely it's on*; it's distinct from the work's
-**stakes / [path](decision-framework.md)**, which drive *how much GTM
+**stakes / [path](../playbook/decision-framework.md)**, which drive *how much GTM
 investment, approval depth, and gate rigour* the release gets.
 
 ---
@@ -30,7 +30,7 @@ investment, approval depth, and gate rigour* the release gets.
   metrics — *before* anyone outside sees it.
 - **Exit:** the outcome UAT passes (the user's job is validated end-to-end,
   job × surface, independent of unit tests) and production-readiness is met
-  to the stakes. See [Agentic Delivery](agentic-delivery.md).
+  to the stakes. See [Agentic Delivery](./agentic-delivery.md).
 
 ### 1. Private Preview
 
@@ -58,7 +58,7 @@ investment, approval depth, and gate rigour* the release gets.
 - **Flag:** ON for all (still disable-able).
 - **Purpose:** full rollout, announced. The feature is now the default.
 - **After GA:** maintain the flag for a stabilisation window; run the
-  [post-launch reviews](delivery-standards.md#post-ship-reviews) at 2 weeks /
+  [post-launch reviews](../playbook/delivery-standards.md#post-ship-reviews) at 2 weeks /
   30 days / 60–90 days and make the explicit call (accelerate / iterate /
   pivot / investigate / stop).
 
@@ -89,7 +89,7 @@ Check**. Don't widen the audience until:
 - private-preview feedback is summarised and critical tickets resolved.
 
 Gate depth scales with the stakes. Full gate detail: [Delivery Standards →
-Gates](delivery-standards.md#gates-and-approvals).
+Gates](../playbook/delivery-standards.md#gates-and-approvals).
 
 ---
 
@@ -103,12 +103,12 @@ prefer changes that are reversible within the phase.
 
 ## Related
 
-- [Delivery Standards](delivery-standards.md) — the full lifecycle and gates
+- [Delivery Standards](../playbook/delivery-standards.md) — the full lifecycle and gates
   these phases sit inside.
 - [RFC Template → Rollout](../templates/rfc.md) — the per-initiative rollout
   table where a team records the audience, exit criteria, and rollback for
   each phase of *this* release.
-- [Post-Launch Review](../templates/post-launch-review.md) — the reviews that
+- [Post-Launch Review](../playbook/templates/post-launch-review.md) — the reviews that
   run after GA.
-- [Agentic Delivery](agentic-delivery.md) — the outcome-UAT and
+- [Agentic Delivery](./agentic-delivery.md) — the outcome-UAT and
   production-readiness gates that guard the move past Private Preview.

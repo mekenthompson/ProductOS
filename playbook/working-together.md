@@ -9,9 +9,9 @@ icon: "🧩"
 
 Product, engineering, and design form the product triad. Three disciplines, one product. This doc covers how the triad works day to day: who owns what, how decisions get made, and what everyone on a product team can expect from each other.
 
-Everything connects back to the [headline metric](product-vision.md) named in the product vision — that's the number every PR, design review, and post-launch review tests against.
+Everything connects back to the [headline metric](../anchors/product-vision.md) named in the product vision — that's the number every PR, design review, and post-launch review tests against.
 
-> 📖 Read this alongside [Product Playbook](product-playbook.md) (the operating model) and [PM Handbook](pm-handbook.md) (for PMs specifically).
+> 📖 Read this alongside [Product Playbook](./product-playbook.md) (the operating model) and [PM Handbook](./pm-handbook.md) (for PMs specifically).
 
 ---
 
@@ -67,22 +67,22 @@ If someone hands you an implementation instead of a problem, push back. That app
 | What problem to solve | Product, with triad input |
 | Technical approach and architecture | Engineering |
 | Experience and interaction patterns | Design |
-| Effort estimates | Engineering (feeds [RICE scoring](guides/rice.md)) |
+| Effort estimates | Engineering (feeds [RICE scoring](./rice.md)) |
 | When code is production-ready | Tech Lead |
 | When to ship to customers | Product (coordinates docs, experience, GTM) |
 | Scope negotiation | Shared: product owns requirements, engineering owns feasibility, design owns experience quality |
 
 ### Your product principles are the quality bar
 
-Whatever set of [product principles](guides/product-principles.md) the team has agreed on, they are applied in PR reviews, design critiques, and scope discussions — by everyone on the triad, not just product or design. When you're reviewing a PR, ask whether the change meets each principle. When design raises a consistency concern grounded in a principle, that's the principle working as intended.
+Whatever set of [product principles](../anchors/product-principles.md) the team has agreed on, they are applied in PR reviews, design critiques, and scope discussions — by everyone on the triad, not just product or design. When you're reviewing a PR, ask whether the change meets each principle. When design raises a consistency concern grounded in a principle, that's the principle working as intended.
 
-See [Product Principles](guides/product-principles.md) for how to write and apply yours.
+See [Product Principles](../anchors/product-principles.md) for how to write and apply yours.
 
 ---
 
 ## Roles when agents do much of the delivery
 
-The triad above still owns the product when an **agentic workforce** does much of the building — what shifts is *execution*, not ownership. Agents own delivery *within the gates*; humans keep the anchors and the judgement. See [Agentic Delivery](guides/agentic-delivery.md) for the full method.
+The triad above still owns the product when an **agentic workforce** does much of the building — what shifts is *execution*, not ownership. Agents own delivery *within the gates*; humans keep the anchors and the judgement. See [Agentic Delivery](../guides/agentic-delivery.md) for the full method.
 
 | Responsibility | Human-triad default | When agents deliver |
 |---|---|---|
@@ -117,7 +117,7 @@ Quick Wins are worth calling out. If you see something that takes less than half
 
 RFCs aren't exclusive to PMs either. If an engineer or a Design Engineer identifies a problem worth solving, write the RFC. It still gets reviewed and prioritised through the normal process.
 
-> 🔗 See [Decision Framework](guides/decision-framework.md) for the full detail.
+> 🔗 See [Decision Framework](./decision-framework.md) for the full detail.
 
 ---
 
@@ -133,7 +133,7 @@ One document, not a separate PRD and tech spec. One ship-coupled RFC that captur
 
 All three review the whole thing before build starts. If you're an engineer on the team and the RFC doesn't make sense, raise it before you start building. RFCs should answer your questions, not create them.
 
-> 🔗 See [Writing an RFC](guides/product-specs.md) for the full guide and [RFC Template](templates/rfc.md) for the template.
+> 🔗 See [Writing an RFC](../guides/product-specs.md) for the full guide and [RFC Template](../templates/rfc.md) for the template.
 
 ---
 
@@ -150,7 +150,7 @@ Scope is a conversation, not a mandate.
 
 If the problem is real but the solution is too expensive or the experience can't be simplified enough, the answer is to find a simpler way to solve the same problem. Not "build it anyway." Not "drop it." Find a cheaper path to the same outcome.
 
-> ⚠️ Effort estimates feed [RICE scores](guides/rice.md), which feed prioritisation. A sandbagged estimate distorts that just as much as an optimistic one. Give your best guess, flag uncertainty, and update when you learn more.
+> ⚠️ Effort estimates feed [RICE scores](./rice.md), which feed prioritisation. A sandbagged estimate distorts that just as much as an optimistic one. Give your best guess, flag uncertainty, and update when you learn more.
 
 ---
 
@@ -244,9 +244,9 @@ If the triad can't resolve a disagreement, bring it to your leads with context a
 
 | If you want to... | Go to |
 |-------------------|-------|
-| Understand the full operating model | [Product Playbook](product-playbook.md) |
-| See the product vision and personas | [Product Vision](product-vision.md) |
-| Understand how we decide what to build | [Decision Framework](guides/decision-framework.md) |
-| See how RFCs work | [Writing an RFC](guides/product-specs.md) |
-| Understand the delivery workflow | [Delivery Standards](guides/delivery-standards.md) |
-| Grab an RFC template | [RFC](templates/rfc.md) |
+| Understand the full operating model | [Product Playbook](./product-playbook.md) |
+| See the product vision and personas | [Product Vision](../anchors/product-vision.md) |
+| Understand how we decide what to build | [Decision Framework](./decision-framework.md) |
+| See how RFCs work | [Writing an RFC](../guides/product-specs.md) |
+| Understand the delivery workflow | [Delivery Standards](./delivery-standards.md) |
+| Grab an RFC template | [RFC](../templates/rfc.md) |

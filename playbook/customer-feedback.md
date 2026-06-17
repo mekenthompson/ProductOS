@@ -121,6 +121,6 @@ Customer 6 months later: *"What has been done on this feedback since I gave it?"
 
 ## Related
 
-- **[Discovery](discovery.md)** — How to validate problems with customer research
-- **[Delivery Standards](delivery-standards.md)** — Where feedback enters the product loop
-- **[Decision Framework](decision-framework.md)** — Signal → Standard → Speed
+- **[Discovery](./discovery.md)** — How to validate problems with customer research
+- **[Delivery Standards](./delivery-standards.md)** — Where feedback enters the product loop
+- **[Decision Framework](./decision-framework.md)** — Signal → Standard → Speed

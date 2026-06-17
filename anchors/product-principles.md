@@ -7,9 +7,9 @@ icon: "📖"
 
 # Product Principles
 
-Product principles are the engineering and design standards that turn the [product vision](../product-vision.md) into day-to-day quality gates. They are applied in every PR, every design review, every release. They are the "Standard" in [Signal → Standard → Speed](decision-framework.md).
+Product principles are the engineering and design standards that turn the [product vision](./product-vision.md) into day-to-day quality gates. They are applied in every PR, every design review, every release. They are the "Standard" in [Signal → Standard → Speed](../playbook/decision-framework.md).
 
-> 🧭 Principles are the **second of three anchors** — **[Vision](../product-vision.md)** (why), **Principles** (built well), and **[Invariants](invariants.md)** (lines we won't cross by construction). Together they fuse into the [verdict rule](agentic-delivery.md).
+> 🧭 Principles are the **second of three anchors** — **[Vision](./product-vision.md)** (why), **Principles** (built well), and **[Invariants](./invariants.md)** (lines we won't cross by construction). Together they fuse into the [verdict rule](../guides/agentic-delivery.md).
 
 This guide explains the purpose of principles, what a good set looks like, how to write yours, and how to use them as a working tool — not wall art.
 
@@ -29,11 +29,11 @@ Principles fix this by making "good" *teachable*. A new engineer should be able 
 
 | Where they show up | How they're used |
 |---|---|
-| [Decision Framework](decision-framework.md) | "Standard" is *literally* the principle check. No principle conformance, no shipping. |
+| [Decision Framework](../playbook/decision-framework.md) | "Standard" is *literally* the principle check. No principle conformance, no shipping. |
 | [RFC Template](../templates/rfc.md) | Strategic Alignment section confirms the ship-coupled initiative meets each principle, with reasoning. |
 | [RFC](../templates/rfc.md) | Solution sections reference the principles they uphold and any tensions. |
 | Code review / design review | Each principle has check questions reviewers can paste into a comment. |
-| [Post-Launch Review](../templates/post-launch-review.md) | If the launch underperformed, ask: which principle did we compromise on? |
+| [Post-Launch Review](../playbook/templates/post-launch-review.md) | If the launch underperformed, ask: which principle did we compromise on? |
 
 The principle check is the second-most-cited document in the playbook (after the vision). If yours aren't getting cited, they aren't doing their job.
 
@@ -51,7 +51,7 @@ Four properties:
 
 4. **Each has check questions.** Two or three concrete questions a reviewer can ask. Without check questions, principles are interpretation contests.
 
-> **Include engineering standards where the stakes warrant.** Principles are *engineering and design* standards, not just UX ones. If your product carries real non-functional stakes — security, reliability, scalability, availability, performance — at least one principle should make that bar checkable. A feature can be a delight and still fail because it leaks data or falls over under load. This matters most when an agentic workforce does the building: the non-functional bar is what engineering oversight enforces (see [Agentic Delivery](agentic-delivery.md)).
+> **Include engineering standards where the stakes warrant.** Principles are *engineering and design* standards, not just UX ones. If your product carries real non-functional stakes — security, reliability, scalability, availability, performance — at least one principle should make that bar checkable. A feature can be a delight and still fail because it leaks data or falls over under load. This matters most when an agentic workforce does the building: the non-functional bar is what engineering oversight enforces (see [Agentic Delivery](../guides/agentic-delivery.md)).
 
 ---
 
@@ -72,7 +72,7 @@ The principles are ready to use as standards when **every one of these is true**
 
 ### Step 1 — Start from the headline metric
 
-Look at the [headline metric](../product-vision.md) in the vision. Now ask: **"What needs to be true about every shipped feature for that metric to move?"** Those answers are the seeds of your principles.
+Look at the [headline metric](./product-vision.md) in the vision. Now ask: **"What needs to be true about every shipped feature for that metric to move?"** Those answers are the seeds of your principles.
 
 If the metric is time-to-first-value, a candidate principle might be "First run succeeds." If the metric is retention, a candidate is "Every session ends with a clear next action." Tie principles to the metric — that's how they avoid becoming generic.
 
@@ -176,13 +176,13 @@ Before you ship, ask:
 
 If you can't answer all three, you're not done. Redesign, don't ship and patch later.
 
-> **Principles judge the Job Specs — they don't replace them.** A change can satisfy its [Job Spec](../templates/job-spec.md) (it does the user's job) and still fail a principle check (it was built badly). When that happens, the job is the goal; the principles are how you get there without making the product feel like a kit. Both must pass — that all-must-pass gate across the vision outcome, the Job Spec, the principles, and the invariants (no line crossed) is the **verdict rule**. See [Agentic Delivery](agentic-delivery.md).
+> **Principles judge the Job Specs — they don't replace them.** A change can satisfy its [Job Spec](../templates/job-spec.md) (it does the user's job) and still fail a principle check (it was built badly). When that happens, the job is the goal; the principles are how you get there without making the product feel like a kit. Both must pass — that all-must-pass gate across the vision outcome, the Job Spec, the principles, and the invariants (no line crossed) is the **verdict rule**. See [Agentic Delivery](../guides/agentic-delivery.md).
 
 ---
 
 ## Related
 
-- [Product Vision](../product-vision.md) — Principles are derived from the vision (the first anchor).
-- [Invariants](invariants.md) — The third anchor; the lines you won't cross by construction.
-- [Decision Framework](decision-framework.md) — How "Standard" uses the principles to filter work.
-- [RFC Guide](product-specs.md) — How to apply principles when writing a ship-coupled RFC.
+- [Product Vision](./product-vision.md) — Principles are derived from the vision (the first anchor).
+- [Invariants](./invariants.md) — The third anchor; the lines you won't cross by construction.
+- [Decision Framework](../playbook/decision-framework.md) — How "Standard" uses the principles to filter work.
+- [RFC Guide](../guides/product-specs.md) — How to apply principles when writing a ship-coupled RFC.

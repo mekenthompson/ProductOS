@@ -7,5 +7,5 @@ icon: "🚦"
 
 # Product Lifecycle
 
-> **This content has been consolidated into [Delivery Standards](delivery-standards.md).**
+> **This content has been consolidated into [Delivery Standards](./delivery-standards.md).**
 > All lifecycle phases, gates, and delivery workflow now live there.

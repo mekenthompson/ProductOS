@@ -15,7 +15,7 @@ Six phases, each feeding the next. The loop closes back to the start.
    Customer research, usage data, and post-launch measurement all feed the same pool. You can't build the right thing if you don't understand the problem.
 
 2. **Decide** — Every idea passes three checks.
-   **Signal** (strategy-aligned with real need?), **Standard** (meets our [product principles](guides/product-principles.md)?), **Speed** (half a day or less? flag it with your EM/PM and ship it if it aligns with priorities. More? Write an RFC, bring it to the prioritisation session). Not now ≠ bad idea — it means something else is higher leverage right now.
+   **Signal** (strategy-aligned with real need?), **Standard** (meets our [product principles](../anchors/product-principles.md)?), **Speed** (half a day or less? flag it with your EM/PM and ship it if it aligns with priorities. More? Write an RFC, bring it to the prioritisation session). Not now ≠ bad idea — it means something else is higher leverage right now.
 
 3. **Shape** — Define the solution and align the team.
    Write specs, align Product, Engineering, Design & GTM on scope. Roadmap with honest fidelity: this quarter is high confidence, next quarter is themes, beyond that is direction. Monthly updates, non-negotiable.
@@ -37,7 +37,7 @@ Six phases, each feeding the next. The loop closes back to the start.
 
 Customers are smart, impatient, and have options. Every hour of engineering time is an hour we can't spend elsewhere. The most important product discipline: spend those hours on the highest-leverage work, then know whether it paid off.
 
-The [Product Vision](product-vision.md) sets the direction and names the headline metric. This document describes the **Product Loop**: a six-phase closed loop for how ideas become outcomes. Not bureaucracy — a shared operating system for product decisions.
+The [Product Vision](../anchors/product-vision.md) sets the direction and names the headline metric. This document describes the **Product Loop**: a six-phase closed loop for how ideas become outcomes. Not bureaucracy — a shared operating system for product decisions.
 
 ![Product Loop: Learn → Decide → Shape → Build → Launch → Sell](images/product-loop.png)
 
@@ -79,15 +79,15 @@ If any of these sound familiar, this playbook is aimed at you. None of it is unu
 Every product decision should be traceable to evidence — customer research, usage data, or structured feedback. Assumptions are starting points, not conclusions.
 
 ### Behaviour
-- **Customer research and interviews** feed a shared evidence base, not individual intuition. Every problem is tagged to a [persona](guides/personas.md).
+- **Customer research and interviews** feed a shared evidence base, not individual intuition. Every problem is tagged to a [persona](./personas.md).
 - **Product analytics** are consulted before proposing work (what's used, what's ignored, where do users drop off?)
 - **Customer feedback** is processed systematically — patterns identified, not just loudest voices heard
 - **Post-launch measurement** (from Phase 5) flows back here, closing the loop
 
 ### Assets
-- Customer research repository — [Research Template](templates/research.md), [Customer Call Template](templates/customer-call.md)
+- Customer research repository — [Research Template](./templates/research.md), [Customer Call Template](./templates/customer-call.md)
 - Product analytics dashboards (adoption, engagement, drop-off)
-- [Customer feedback processing workflow](guides/customer-feedback.md)
+- [Customer feedback processing workflow](./customer-feedback.md)
 - Post-launch review data feeding back into evidence base
 
 ### Why It Matters
@@ -105,10 +105,10 @@ Not every good idea deserves engineering time right now. The discipline is choos
 ### Behaviour
 Three checks, every time — **Signal → Standard → Speed**:
 
-1. **Signal** — Does it align with current strategy and the [product vision](product-vision.md)?
-   Is there a real, validated customer need? Which [persona](guides/personas.md) has this problem? What happens if we don't?
+1. **Signal** — Does it align with current strategy and the [product vision](../anchors/product-vision.md)?
+   Is there a real, validated customer need? Which [persona](./personas.md) has this problem? What happens if we don't?
 
-2. **Standard** — Does the proposed solution meet our [product principles](guides/product-principles.md)?
+2. **Standard** — Does the proposed solution meet our [product principles](../anchors/product-principles.md)?
    Run the principle check questions against the proposed solution. If you can't answer "yes" to each, the standard isn't met yet.
 
 3. **Speed** — How big is it?
@@ -120,10 +120,10 @@ The prioritisation session is where RFCs compete for engineering time. RICE rank
 Every decision gets communicated back to the proposer with reasoning. **"Not now because X"** is a complete, respectful answer. Silence is not.
 
 ### Assets
-- [Signal → Standard → Speed decision framework](guides/decision-framework.md) — three paths: Quick Win, Lightweight, Full Spec
-- [Product principles](guides/product-principles.md) with check questions
+- [Signal → Standard → Speed decision framework](./decision-framework.md) — three paths: Quick Win, Lightweight, Full Spec
+- [Product principles](../anchors/product-principles.md) with check questions
 - Quick win path (≤ half a day, no RFC, EM/PM alignment)
-- RFC path — [Writing RFCs](guides/product-specs.md), [RFC Template](templates/rfc.md), [RICE scoring](guides/rice.md)
+- RFC path — [Writing RFCs](../guides/product-specs.md), [RFC Template](../templates/rfc.md), [RICE scoring](./rice.md)
 - Prioritisation session cadence (fortnightly or monthly, aligned to your sprint)
 
 ### Why It Matters
@@ -139,7 +139,7 @@ Speed comes from clarity, not skipping steps. When everyone knows the criteria, 
 Shaping is where alignment happens. The RFC got the "yes" — now the team needs to agree on scope, approach, and delivery plan. Roadmaps should make promises proportional to what we actually know. Pretending otherwise — vague when we should be specific, specific when we should be honest — destroys credibility.
 
 ### Behaviour
-- **Write the [RFC](templates/rfc.md)** — a single, living document framed around the user's job, with success and failure modes, guardrails, and a solution space (constraints, not prescriptions)
+- **Write the [RFC](../templates/rfc.md)** — a single, living document framed around the user's job, with success and failure modes, guardrails, and a solution space (constraints, not prescriptions)
 - **Align the team** — Product, Engineering, Design & GTM agree on scope, approach, and priority before build starts
 - **This quarter (0–3 months): HIGH fidelity.** Specific dates, named owners, hard commitments. Misses are explained, not quietly adjusted.
 - **Next quarter (3–6 months): MEDIUM fidelity.** Themes, initiatives, approximate timing. Refined monthly as decisions land.
@@ -148,7 +148,7 @@ Shaping is where alignment happens. The RFC got the "yes" — now the team needs
 - **Internal and external roadmaps tell the same story** at different detail levels. Internal: full picture, all bands, reasoning, trade-offs. External: commitments and themes. Never a different narrative.
 
 ### Assets
-- [RFC](templates/rfc.md) — delivery contract for build phase
+- [RFC](../templates/rfc.md) — delivery contract for build phase
 - Three-band roadmap (high / medium / low fidelity)
 - Monthly roadmap update cadence
 - Internal roadmap (full detail)
@@ -173,9 +173,9 @@ Product principles aren't aspirations for some future state. They're engineering
 
 ### Assets
 - Product principles as PR/design review checklist
-- Instrumentation requirements in [RFC Template](templates/rfc.md)
+- Instrumentation requirements in [RFC Template](../templates/rfc.md)
 - Success metrics defined before build starts
-- [Delivery Standards](guides/delivery-standards.md) — Operational workflow with gate checklists
+- [Delivery Standards](./delivery-standards.md) — Operational workflow with gate checklists
 
 ### Why It Matters
 Consistency makes a product feel trustworthy. Instrumentation makes the feedback loop possible. Without both, we're shipping blind into an inconsistent experience.
@@ -210,7 +210,7 @@ The real work starts after launch. Shipping is when we start learning whether ou
 Analytics tells you *what* (adoption is low). Customer feedback tells you *why* (onboarding is confusing). Together they tell you *what to do* (redesign onboarding, don't add features).
 
 ### Assets
-- [Post-Launch Review template](templates/post-launch-review.md) — structured review at 2 weeks / 30 days / 60–90 days
+- [Post-Launch Review template](./templates/post-launch-review.md) — structured review at 2 weeks / 30 days / 60–90 days
 - Accelerate-or-pivot decision matrix (above)
 - Product analytics dashboards per feature
 - Review recommendations feeding back to Learn
@@ -228,7 +228,7 @@ This closes the loop. Decisions → Commitment → Delivery → Measurement → 
 A shipped feature that customers can't find, don't understand, or can't adopt on their own is an incomplete investment. The path from "we built it" to "customers use it" requires deliberate effort.
 
 ### Behaviour
-- **Self-onboarding flows (PLG):** Can each [persona](guides/personas.md) discover and adopt new capabilities without talking to anyone? If any persona can't self-serve, that's a product gap, not a sales gap.
+- **Self-onboarding flows (PLG):** Can each [persona](./personas.md) discover and adopt new capabilities without talking to anyone? If any persona can't self-serve, that's a product gap, not a sales gap.
 - **Sales enablement:** Positioning, demos, and competitive differentiation materials ship alongside (or shortly after) the feature itself. Sales shouldn't reverse-engineer value propositions from changelogs.
 - **Structured PoC/PoV process:** Enterprise evaluation follows a repeatable playbook — scoped, time-boxed, with clear success criteria. Not ad-hoc, not different every time.
 - **Adoption tracking:** Discovery → trial → purchase (or activation), tracked end to end. Where in the funnel are we losing people?
@@ -295,16 +295,16 @@ Everything below is a reference asset produced by this framework. Read them when
 
 | When you need to... | Use this |
 |---------------------|----------|
-| Understand the vision and personas | [Product Vision](product-vision.md) |
-| Decide the right path for work | [Decision Framework](guides/decision-framework.md) |
-| Write an RFC | [RFC Guide](guides/product-specs.md) + [RFC Template](templates/rfc.md) |
-| Score a project | [RICE Guide](guides/rice.md) |
-| Process feedback | [Handling Product Feedback](guides/customer-feedback.md) |
-| Document research | [Research Template](templates/research.md) + [Customer Call Template](templates/customer-call.md) |
-| Understand delivery workflow | [Delivery Standards](guides/delivery-standards.md) |
-| Run a post-launch review | [Post-Launch Review](templates/post-launch-review.md) |
-| Write job stories | [JTBD Guide](guides/jtbd-guide.md) |
-| Write a durable per-job outcome doc | [Job Spec Template](templates/job-spec.md) |
-| Deliver with an agentic workforce | [Agentic Delivery](guides/agentic-delivery.md) |
-| Understand your role (PM) | [PM Handbook](pm-handbook.md) |
-| Understand how the triad works | [Working Together](working-together.md) |
+| Understand the vision and personas | [Product Vision](../anchors/product-vision.md) |
+| Decide the right path for work | [Decision Framework](./decision-framework.md) |
+| Write an RFC | [RFC Guide](../guides/product-specs.md) + [RFC Template](../templates/rfc.md) |
+| Score a project | [RICE Guide](./rice.md) |
+| Process feedback | [Handling Product Feedback](./customer-feedback.md) |
+| Document research | [Research Template](./templates/research.md) + [Customer Call Template](./templates/customer-call.md) |
+| Understand delivery workflow | [Delivery Standards](./delivery-standards.md) |
+| Run a post-launch review | [Post-Launch Review](./templates/post-launch-review.md) |
+| Write job stories | [JTBD Guide](../guides/jtbd-guide.md) |
+| Write a durable per-job outcome doc | [Job Spec Template](../templates/job-spec.md) |
+| Deliver with an agentic workforce | [Agentic Delivery](../guides/agentic-delivery.md) |
+| Understand your role (PM) | [PM Handbook](./pm-handbook.md) |
+| Understand how the triad works | [Working Together](./working-together.md) |
