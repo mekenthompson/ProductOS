@@ -11,6 +11,16 @@ ProductOS is the method. The working example in action is
 
 ---
 
+## Building got cheap. Judgement got scarce.
+
+An agent can draft the spec, write the code, and run the tests before you've booked the kickoff. The bottleneck moved. It's no longer capacity — it's knowing whether the thing is right, and catching it when it isn't.
+
+ProductOS keeps four things fixed while the implementation churns underneath: anchors, Job Specs, design loops, outcome UAT. Agents build fast inside the gates; humans own the gates.
+
+**→ Start with [Agentic Delivery](./guides/agentic-delivery.md) — the verdict rule and the four parts.**
+
+---
+
 ## The hierarchy
 
 ```
