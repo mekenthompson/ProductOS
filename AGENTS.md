@@ -73,7 +73,7 @@ productos/
 
 ## Template Strategy
 
-**The OS templates live in `templates/` (`job-spec.md`, `rfc.md`)** — the
+**The OS templates live in `templates/` (`job-spec.md`, `job-links.md`, `rfc.md`)** — the
 single source of truth for each. (The human PM templates — customer call,
 research, post-launch review, ritual review — live in the separate
 `pm-playbook` repo, not here.)
