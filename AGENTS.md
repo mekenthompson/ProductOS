@@ -14,7 +14,7 @@ The human PM craft (the six-phase loop, discovery, RICE, the decision framework,
 
 The terse, executable contract for the method narrated in [`guides/agentic-delivery.md`](./guides/agentic-delivery.md). That guide is the human narrative; this is the gate. Four working parts: **anchors · Job Specs · design loops · outcome UAT.** ("Four" is this method's anatomy, not a law for products — a product picks its own small number of vision outcomes, principles, and invariants.)
 
-**Artifact hierarchy (top to bottom).** Three **anchors** — vision (why) · principles (built-well) · invariants (lines we won't cross by construction) — hold for the whole product. Beneath them, a **Product Spec** (one per product) names the product's outcomes, says how the product functions, and owns the list of jobs. Beneath that, **Job Specs** (one per job) are the durable, outcome-focused, UAT-verifiable contracts. **RFCs / PRs** are the ship-coupled, per-initiative delivery layer that references a Job Spec — NOT a named spec tier of their own.
+**Artifact hierarchy (top to bottom).** Three **anchors** — vision (why) · principles (built-well) · invariants (lines we won't cross by construction) — hold for the whole product. Beside them as a sibling, **Strategy** (STRATEGY.md) is the 12+ month, market-driven layer: given finite capacity, which jobs are funded this period and which are explicitly deferred. It references the anchors and links down to the Job Specs that matter now; it changes as business needs, market dynamics, and competitors change while the anchors stay stable. Beneath the anchors, a **Product Spec** (one per product) names the product's outcomes, says how the product functions, and owns the list of jobs. Beneath that, **Job Specs** (one per job) are the durable, outcome-focused, UAT-verifiable contracts. **RFCs / PRs** are the ship-coupled, per-initiative delivery layer that references a Job Spec — NOT a named spec tier of their own.
 
 **Verdict rule (the gate).** A change ships only when ALL hold:
 
@@ -60,11 +60,19 @@ productos/
 │   ├── agentic-delivery.md         # The four-part method (anchors, Job Specs, design loops, outcome UAT)
 │   ├── jtbd-guide.md               # Jobs to be Done framework
 │   ├── org-as-an-api.md            # Sequence the roadmap by joining feedback/support/CRM/finance around the job
-│   └── product-specs.md            # RFC how-to (lifecycle, approval, delivery)
+│   ├── product-specs.md            # RFC how-to (lifecycle, approval, delivery)
+│   └── strategy-as-code.md         # Strategy as a versioned, diffable artefact with decision records
 ├── templates/                      # the OS blank shapes
 │   ├── job-spec.md                 # The durable per-job outcome doc (job/outcome/stakes; outlives any RFC)
 │   ├── job-links.md                # The churny per-job join (accounts/ARR/renewals); serves: a Job Spec
-│   └── rfc.md                      # The ship-coupled, per-initiative delivery doc (JTBD-led)
+│   ├── rfc.md                      # The ship-coupled, per-initiative delivery doc (JTBD-led)
+│   ├── strategy.md                 # The STRATEGY.md spine (situation/thesis/pillars/deferrals/data-gaps)
+│   └── decision-record.md          # Dated record of why a strategy change was made; links to its commit
+├── examples/                       # worked, filled examples
+│   └── strategy-example/           # Tempo — a fictional team-scheduling product
+│       ├── README.md               # 3-line orientation
+│       ├── STRATEGY.md             # fully filled strategy (FitClub/BrightSmile/CityCare)
+│       └── decisions/              # dated decision records showing evolution over the period
 └── skills/                         # agent-executable skills
     ├── create-job-spec/SKILL.md
     ├── feedback-to-jobs/SKILL.md
@@ -83,6 +91,8 @@ research, post-launch review, ritual review — live in the separate
 | RFC | `rfc.md` | Single ship-coupled doc that does approval + delivery. JTBD-led; explicit user success/failure modes; guardrails; open solution space. References a Job Spec; not a named spec tier of its own |
 | Job Spec | `job-spec.md` | The durable, per-job outcome doc (job/outcome/stakes + Good/bad / Prove it). Outlives any single RFC; an RFC's "The Job" links to it. Distinct from the job-story *sentence* in the JTBD Guide |
 | Job Links | `job-links.md` | The churny per-job join artefact: accounts, ARR, renewals, demand. `serves:` a Job Spec and carries the evidence that drifts, keeping the Job Spec clean. Not a named spec tier of its own |
+| Strategy | `strategy.md` | The STRATEGY.md spine: situation (evidenced/hypothesis/to-validate claims), thesis, investment allocation, pillars, explicit deferrals, data gaps, and the coherent-action argument. Sibling to the anchors; changes as market dynamics shift |
+| Decision Record | `decision-record.md` | Dated record of a material strategy change: context (what changed in the world), decision (what we now do differently), consequences (commits/gives up/blind spots). One per change; lives in `decisions/`; links to the STRATEGY.md commit it accompanies |
 
 **Key decisions:**
 
