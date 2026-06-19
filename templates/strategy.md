@@ -1,10 +1,7 @@
----
-product: <product name>
-period: <e.g. H1 2026 / FY2026 / "next 12+ months">
-last_reviewed: <YYYY-MM-DD>
----
-
 # Strategy: <Product Name>
+
+**Period:** <e.g. H1 2026>
+**Status:** <draft / active / superseded>
 
 > This is a STRATEGY.md file. It holds the current strategic view: which jobs are funded, which are deferred, and why. Its git history is the record of *what* changed; the `decisions/` folder holds the *why*. Read them together.
 >
@@ -77,8 +74,11 @@ An initiative is funded only if it:
 **Outcome / measure:** <How you will know this pillar is working. Observable, not internal. Link to a Job Spec's "Prove it" section where relevant.>
 
 **Job Specs funded:**
-- [`<job id>`](../templates/job-spec.md) — <one-line description>
-- [`<job id>`](../templates/job-spec.md) — <one-line description>
+
+> Link to the actual Job Spec file when it exists in the same repo; use a bare slug when it doesn't.
+
+- `<job-slug>` — <one-line description>
+- `<job-slug>` — <one-line description>
 
 ---
 
@@ -89,7 +89,10 @@ An initiative is funded only if it:
 **Outcome / measure:** <…>
 
 **Job Specs funded:**
-- [`<job id>`](../templates/job-spec.md) — <one-line description>
+
+> Link to the actual Job Spec file when it exists in the same repo; use a bare slug when it doesn't.
+
+- `<job-slug>` — <one-line description>
 
 ---
 

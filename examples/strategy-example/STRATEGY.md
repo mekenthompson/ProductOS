@@ -1,10 +1,7 @@
----
-product: Tempo
-period: H1 2026
-last_reviewed: 2026-04-22
----
-
 # Strategy: Tempo
+
+**Period:** H1 2026
+**Status:** active
 
 > This is a STRATEGY.md file. It holds the current strategic view for Tempo — the team-scheduling product whose customers include FitClub, BrightSmile, and CityCare. Its git history is the record of *what* changed; the `decisions/` folder holds the *why*. Read them together.
 >

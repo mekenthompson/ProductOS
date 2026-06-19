@@ -24,9 +24,9 @@ Strategy sits beside the anchors as a **sibling layer**. It is the market-driven
 Vision · Principles · Invariants        three anchors (durable: the why / built-well / never-cross)
 Strategy                                sibling layer (12+ months; market-driven; changes as dynamics shift)
         ↓
-Product Spec                            per product — owns the job list
-        ↓
 Job Specs                               per job — durable, outcome-focused, UAT-verifiable
+                                        ↑
+Product Spec                            per product — owns the job list
 ```
 
 The distinction matters. Anchors are stable by design — they define the kind of product you are building and the standards you hold. Strategy is explicitly expected to change as the market changes, as customers change, as competitors move. What stays constant is the anchors; what adapts is the strategy. A strategy that never changes is not a strategy — it is a mission statement that doesn't know what it is.
@@ -105,7 +105,7 @@ Each material change produces exactly one dated decision record. Not a log entry
 
 ## For agents
 
-When asked to update the strategy: read STRATEGY.md and the most recent decision record in `decisions/`. Update STRATEGY.md per the template sections. Draft a decision record in `decisions/YYYY-MM-DD-<slug>.md` with the context (what changed in the world), the decision (what we are now doing differently), and the consequences (commits, trade-offs, blind spots). The commit SHA goes in the decision record's `commit:` frontmatter field once committed. Flag any claim you are adding as evidenced, hypothesis, or to-validate — never unlabelled.
+When asked to update the strategy: read STRATEGY.md and the most recent decision record in `decisions/`. Update STRATEGY.md per the template sections. Draft a decision record in `decisions/YYYY-MM-DD-<slug>.md` with the context (what changed in the world), the decision (what we are now doing differently), and the consequences (commits, trade-offs, blind spots). The commit SHA goes in the decision record's `commit:` frontmatter field once committed. Flag any claim you are adding as evidenced, hypothesis, or to-validate — never unlabelled. Before committing, run an adversarial pass — find the load-bearing assumptions, what the strategy is blind to, and what competitor move would break it. Document the weak points in the decision record's Blind spots field.
 
 ---
 
@@ -115,4 +115,4 @@ When asked to update the strategy: read STRATEGY.md and the most recent decision
 - [Decision Record template](../templates/decision-record.md) — the why, archived
 - [Org as an API](org-as-an-api.md) — joining the evidence to form the view
 - [Agentic Delivery](agentic-delivery.md) — running the build once the order is set
-- [Product Vision](../anchors/product-vision.md) — the anchor that holds above strategy
+- [Product Vision](../anchors/product-vision.md) — one of the three anchors that strategy sits beside (not above or below)
