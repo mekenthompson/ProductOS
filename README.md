@@ -35,9 +35,9 @@ invariant.
 | Folder | What it is |
 |---|---|
 | **`anchors/`** | The three anchors — `product-vision`, `product-principles`, `invariants` — and how to write each. |
-| **`guides/`** | The OS method: `agentic-delivery` (the verdict rule + four parts), `jtbd-guide`, `product-specs` (the RFC how-to). |
-| **`templates/`** | The blank shapes: `job-spec.md`, `rfc.md`. |
-| **`skills/`** | Agent-executable skills: `create-job-spec`, `uat-ux-debug`. |
+| **`guides/`** | The OS method: `agentic-delivery` (the verdict rule + four parts), `jtbd-guide`, `org-as-an-api` (sequence the roadmap from joined evidence), `product-specs` (the RFC how-to). |
+| **`templates/`** | The blank shapes: `job-spec.md`, `job-links.md`, `rfc.md`. |
+| **`skills/`** | Agent-executable skills: `create-job-spec`, `feedback-to-jobs`, `uat-ux-debug`. |
 | **`AGENTS.md`** | The terse operating contract — read this to *execute* the method. |
 
 ---

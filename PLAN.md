@@ -42,11 +42,11 @@ the jobs; **Invariants** is the third anchor (was folded into the vision).
 
 - The method, reconciled to the hierarchy:
   the anchors (product-vision, product-principles, invariants), the method
-  guides (agentic-delivery, jtbd-guide, product-specs), the templates
-  (`job-spec.md` canonical, `rfc.md`), and `AGENTS.md`.
+  guides (agentic-delivery, jtbd-guide, org-as-an-api, product-specs), the templates
+  (`job-spec.md` canonical, `job-links.md`, `rfc.md`), and `AGENTS.md`.
 - The human PM craft split out into the standalone **`pm-playbook` repo**;
   ProductOS made independent of it (no references back).
-- Example skills: `create-job-spec` (author a Job Spec by interview) and
+- Example skills: `create-job-spec` (author a Job Spec by interview), `feedback-to-jobs` (cluster raw feedback into jobs), and
   `uat-ux-debug` (debug from the outcome).
 - The working example: **switchroom** — real anchors + product spec + 19 Job
   Specs, proven against a live UAT harness. (A job-portfolio audit added 4
@@ -59,7 +59,7 @@ Each phase is a cluster of human-PM work to turn into skills. Shipped marked;
 the rest is the backlog. We build a skill when the job is real and recurring,
 not to fill a slot.
 
-- **Learn** — discovery synthesis; feedback → jobs clustering.
+- **Learn** — discovery synthesis; `feedback-to-jobs` (**shipped**) — feedback → jobs clustering.
 - **Decide** — prioritise (RICE within strategy buckets); Signal/Standard/Speed.
 - **Shape** — `create-job-spec` (**shipped**); RFC authoring.
 - **Build** — design loop (research → build-with-tests → fresh-process review).

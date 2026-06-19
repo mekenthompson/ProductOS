@@ -28,7 +28,7 @@ Else: out of scope, however clever.
 **Triggers — what to do when.**
 
 - **Scoping / designing →** read the vision; name which outcome the work serves. If none, stop.
-- **Writing or changing a Job Spec →** use [`templates/job-spec.md`](./templates/job-spec.md); keep `job` / `outcome` / `stakes` stable, narrate retired approaches rather than rewriting the job; the `## UAT prompts` section must be non-empty. Doc-class by frontmatter key: `job:` = durable Job Spec; `artifact:` (or `artefact:`) / `serves:` = churny artifact (e.g. an RFC) that points up to a job.
+- **Writing or changing a Job Spec →** use [`templates/job-spec.md`](./templates/job-spec.md); keep `job` / `outcome` / `stakes` stable, narrate retired approaches rather than rewriting the job; the `## Prove it` section must be non-empty. Doc-class by frontmatter key: `job:` = durable Job Spec; `artifact:` (or `artefact:`) / `serves:` = churny artifact (e.g. an RFC) that points up to a job.
 - **Reviewing →** dispatch a SEPARATE fresh-process reviewer (never the author — it rubber-stamps). It returns APPROVE / REQUEST_CHANGES / BLOCK citing file:line; iterate to APPROVE. Do NOT let an automated merge fire before APPROVE.
 - **Shipping →** run the outcome UAT (job × surface, real path, independent of unit tests) AND the production-readiness check. Unit-green ≠ outcome-validated ≠ production-ready — three gates, none implies the others.
 
@@ -59,12 +59,15 @@ productos/
 ├── guides/                         # the OS method
 │   ├── agentic-delivery.md         # The four-part method (anchors, Job Specs, design loops, outcome UAT)
 │   ├── jtbd-guide.md               # Jobs to be Done framework
+│   ├── org-as-an-api.md            # Sequence the roadmap by joining feedback/support/CRM/finance around the job
 │   └── product-specs.md            # RFC how-to (lifecycle, approval, delivery)
 ├── templates/                      # the OS blank shapes
 │   ├── job-spec.md                 # The durable per-job outcome doc (job/outcome/stakes; outlives any RFC)
+│   ├── job-links.md                # The churny per-job join (accounts/ARR/renewals); serves: a Job Spec
 │   └── rfc.md                      # The ship-coupled, per-initiative delivery doc (JTBD-led)
 └── skills/                         # agent-executable skills
     ├── create-job-spec/SKILL.md
+    ├── feedback-to-jobs/SKILL.md
     └── uat-ux-debug/SKILL.md
 ```
 
@@ -78,7 +81,8 @@ research, post-launch review, ritual review — live in the separate
 | Template | File | Notes |
 | -------- | ---- | ----- |
 | RFC | `rfc.md` | Single ship-coupled doc that does approval + delivery. JTBD-led; explicit user success/failure modes; guardrails; open solution space. References a Job Spec; not a named spec tier of its own |
-| Job Spec | `job-spec.md` | The durable, per-job outcome doc (job/outcome/stakes + signs / anti-patterns / UAT prompts). Outlives any single RFC; an RFC's "The Job" links to it. Distinct from the job-story *sentence* in the JTBD Guide |
+| Job Spec | `job-spec.md` | The durable, per-job outcome doc (job/outcome/stakes + Good/bad / Prove it). Outlives any single RFC; an RFC's "The Job" links to it. Distinct from the job-story *sentence* in the JTBD Guide |
+| Job Links | `job-links.md` | The churny per-job join artefact: accounts, ARR, renewals, demand. `serves:` a Job Spec and carries the evidence that drifts, keeping the Job Spec clean. Not a named spec tier of its own |
 
 **Key decisions:**
 
