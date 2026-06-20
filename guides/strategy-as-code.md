@@ -43,14 +43,23 @@ Strategy lives in a `STRATEGY.md` file in the repository. That is the deliberate
 
 The spine follows a fixed structure — not because rigidity is a virtue, but because consistent structure is what makes diffs legible. When the Situation section changes, you see it. When the Pillars shift, you see it. When a deferral gets promoted to a funded pillar, you see it. The structure makes the change visible; the decision record explains it.
 
+The structure is not arbitrary. It is Richard Rumelt's *kernel of good strategy* — from *Good Strategy / Bad Strategy* (2011) — written to disk. Rumelt argues every real strategy has three parts: a **diagnosis** of the challenge, a **guiding policy** for dealing with it, and a set of **coherent actions** that carry the policy out. The spine maps onto the kernel directly:
+
+| Rumelt's kernel | STRATEGY.md section |
+|---|---|
+| Diagnosis — name the challenge, simplify the situation to its critical points | **Situation** |
+| Guiding policy — the overall approach chosen to cope with the diagnosis | **Strategy** (thesis + allocation) |
+| Coherent actions — coordinated steps that carry out the policy | **Pillars** (each funding its Job Specs) |
+| The argument — why these actions, given this diagnosis | **Why This Wins** |
+
 The sections, in order:
 
 - **Situation** — the diagnosis. What is true about the market, the customers, the competitive position. This is the foundation everything else stands on.
-- **Strategy** — the thesis and the investment allocation. Where the capacity goes, and the decision tests that gate it.
-- **Pillars** — the funded bets. Each names its thesis, its outcome measure, and the Job Specs it funds.
-- **Explicit Deferrals** — what we are not doing this period, and why. The absence of a decision is itself a decision.
+- **Strategy** — the guiding policy: the thesis and the investment allocation. Where the capacity goes, and the decision tests that gate it.
+- **Pillars** — the coherent actions: the funded bets. Each names its thesis, its outcome measure, and the Job Specs it funds.
+- **Explicit Deferrals** — what we are not doing this period, and why. The absence of a decision is itself a decision; Rumelt's point that "choice means setting aside some goals in favour of others" gets its own section here.
 - **Data Gaps** — the hypotheses we have not confirmed and what would confirm them.
-- **Why This Wins** — the coherent-action argument: why this particular allocation, given this situation, produces the outcome.
+- **Why This Wins** — the coherent-action argument: why this particular allocation, given this situation, produces the outcome. Rumelt's definition is the bar: strategy is "coherent action backed by an argument." This section is the argument.
 
 See the [Strategy template](../templates/strategy.md) for the blank form with section-level guidance.
 
@@ -89,6 +98,19 @@ The labels are not decoration. They tell the team what is load-bearing and what 
 
 ---
 
+## The bad-strategy smell test
+
+A strategy in a file you can diff is only worth having if what is in the file is actually a strategy. Rumelt's larger point in *Good Strategy / Bad Strategy* is that most "strategy" is **bad strategy** — not wrong bets, but the absence of strategy dressed up as one. He names four signatures of it. Each one is a lint you can run against a STRATEGY.md before it is committed.
+
+- **Fluff.** Buzzwords standing in for thought. Rumelt's test: strip the jargon and see what is left. If "customer-centric intermediation" reduces to "we are a bank," it was fluff. *Lint:* can every Situation and Strategy line survive a plain-language rewrite? Flag "world-class", "synergy", "best-in-class", "leverage our platform" where they carry no specific claim.
+- **Failure to face the challenge.** No named obstacle in the Situation. "If you fail to identify and analyse the obstacles, you don't have a strategy — you have a stretch goal or a budget or a list of things you wish would happen." *Lint:* the Situation must name a specific, hard challenge, not just describe the market. "Grow revenue" is not a challenge.
+- **Mistaking goals for strategy.** A metric or aspiration with no mechanism. "20% growth" is ambition, not strategy. *Lint:* the Strategy section must contain a guiding policy — a chosen *approach* — not just a target. A number with no point of leverage fails.
+- **Bad strategic objectives.** Two shapes. The *dog's dinner* — a sprawling, undifferentiated list of everything (Rumelt's example: a plan with 47 strategies and 178 action items). And the *blue-sky* objective — a restatement of the desired end state that skips how you get there. *Lint:* count the Pillars; if everything is a priority, nothing is. And check the Pillars are meaningfully easier than the original challenge — if an objective is as hard to hit as the problem it answers, it has added nothing.
+
+These map onto the spine cleanly: fluff and failure-to-face-the-challenge are caught in the **Situation**, goals-as-strategy in the **Strategy**, and bad objectives in the **Pillars** and **Why This Wins**. An agent or reviewer can run the four checks as a pre-commit pass — the same way the adversarial review (below) hunts for load-bearing assumptions.
+
+---
+
 ## Lifecycle: how the strategy stays honest
 
 A strategy that is only updated on a calendar is a strategy that rots between reviews. A strategy that is updated on every signal is a strategy that loses coherence. The lifecycle has three triggers:
@@ -105,7 +127,7 @@ Each material change produces exactly one dated decision record. Not a log entry
 
 ## For agents
 
-When asked to update the strategy: read STRATEGY.md and the most recent decision record in `decisions/`. Update STRATEGY.md per the template sections. Draft a decision record in `decisions/YYYY-MM-DD-<slug>.md` with the context (what changed in the world), the decision (what we are now doing differently), and the consequences (commits, trade-offs, blind spots). The commit SHA goes in the decision record's `commit:` frontmatter field once committed. Flag any claim you are adding as evidenced, hypothesis, or to-validate — never unlabelled. Before committing, run an adversarial pass — find the load-bearing assumptions, what the strategy is blind to, and what competitor move would break it. Document the weak points in the decision record's Blind spots field.
+When asked to update the strategy: read STRATEGY.md and the most recent decision record in `decisions/`. Update STRATEGY.md per the template sections. Draft a decision record in `decisions/YYYY-MM-DD-<slug>.md` with the context (what changed in the world), the decision (what we are now doing differently), and the consequences (commits, trade-offs, blind spots). The commit SHA goes in the decision record's `commit:` frontmatter field once committed. Flag any claim you are adding as evidenced, hypothesis, or to-validate — never unlabelled. Before committing, run two passes: the **bad-strategy smell test** (fluff, failure to face the challenge, goals mistaken for strategy, bad objectives — see the section above) and an **adversarial pass** — find the load-bearing assumptions, what the strategy is blind to, and what competitor move would break it. Document the weak points in the decision record's Blind spots field.
 
 ---
 
@@ -116,3 +138,7 @@ When asked to update the strategy: read STRATEGY.md and the most recent decision
 - [Org as an API](org-as-an-api.md) — joining the evidence to form the view
 - [Agentic Delivery](agentic-delivery.md) — running the build once the order is set
 - [Product Vision](../anchors/product-vision.md) — one of the three anchors that strategy sits beside (not above or below)
+
+## Further reading
+
+- Richard Rumelt, *Good Strategy / Bad Strategy* (2011). The source of the kernel (diagnosis, guiding policy, coherent action) the STRATEGY.md spine is built on, and of the four bad-strategy signatures the smell test runs against.
