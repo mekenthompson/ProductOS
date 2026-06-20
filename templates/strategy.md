@@ -6,6 +6,8 @@
 > This is a STRATEGY.md file. It holds the current strategic view: which jobs are funded, which are deferred, and why. Its git history is the record of *what* changed; the `decisions/` folder holds the *why*. Read them together.
 >
 > Each claim in the Situation is tagged **evidenced** / **hypothesis** / **to-validate**. Those labels are not decoration — they tell you what is load-bearing and what is provisional. See [guides/strategy-as-code.md](../guides/strategy-as-code.md) for the method.
+>
+> The spine is Rumelt's *kernel of good strategy* (diagnosis → guiding policy → coherent action) written to disk: **Situation** is the diagnosis, **Strategy** the guiding policy, **Pillars** the coherent actions, **Why This Wins** the argument. Before committing, run the bad-strategy smell test at the bottom of this file.
 
 ---
 
@@ -136,6 +138,17 @@ An initiative is funded only if it:
 > This is not a sales pitch. It is the reasoning that should survive an adversarial challenge. A reviewer (human or agent) should be able to read this and understand the logic, find the weak points, and name what would break it.
 
 <Two to four short paragraphs. Name the key dependencies the strategy rests on. Name what it is betting against. Name what has to be true for this to compound — and what would falsify it.>
+
+---
+
+## Bad-strategy smell test (run before committing)
+
+> Rumelt's four signatures of bad strategy, as a pre-commit checklist. If any line fails, the file is not yet a strategy. See [guides/strategy-as-code.md](../guides/strategy-as-code.md#the-bad-strategy-smell-test).
+
+- [ ] **No fluff** — every Situation and Strategy line survives a plain-language rewrite. No buzzword is carrying a claim it can't cash ("world-class", "synergy", "leverage the platform").
+- [ ] **Faces the challenge** — the Situation names a specific, hard obstacle, not just a description of the market. "Grow revenue" is not a challenge.
+- [ ] **Strategy, not a goal** — the Strategy section gives a chosen *approach* (a guiding policy), not just a target. A number with no point of leverage fails.
+- [ ] **Clean objectives** — the Pillars are a focused few, not a dog's dinner of everything; and each is meaningfully more achievable than the raw challenge, not a blue-sky restatement of it.
 
 ---
 
