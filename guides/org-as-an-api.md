@@ -1,3 +1,8 @@
+---
+title: The Org as an API
+description: How to query every system around the job (feedback, support, CRM, finance) and produce a grounded, evidence-backed roadmap order.
+---
+
 # The Org as an API
 
 Your roadmap is hiding in the systems that don't talk to each other. Feedback in one tool, support in another, the pipeline in the CRM, the money in finance. Each owns a corner of the truth, and for years the only integration was a person carrying numbers between tabs.
@@ -14,7 +19,9 @@ A system you can query is a system you can reason over. If it has an API, a CLI,
 
 So you stop waiting for the systems to be wired together and wire them yourself, around one unit they all share. Call it the org as an API: every function owns its system of record, and you make them answerable together.
 
-> 💡 This is a **sequencing** tool, not a strategy tool. It assumes you already know the capabilities you want and why. What it grounds is the *order*: what ships first when everything looks important from the inside.
+:::tip[Sequencing, not strategy]
+This is a sequencing tool, not a strategy tool. It assumes you already know the capabilities you want and why. What it grounds is the order: what ships first when everything looks important from the inside.
+:::
 
 ---
 
@@ -73,7 +80,9 @@ What floats a job to the top is the **weight of the problem**: how many accounts
 
 The view gives you a grounded starting order. It is not the finished roadmap. A human still allocates the weighted work across the engineering teams that can actually do it, against their real capacity. That mechanics lives in the capacity and allocation guide.
 
-> ⚠️ **The org-structure signal.** Sometimes the evidence shows your team structure doesn't match the opportunity. The highest-impact work sits across a seam no single team owns, or piles on a team with no room. That's a reorg signal, not a sequencing one. The join surfaces it early, while you can still move seats. (This is the territory of the future "org chart is an API" piece.)
+:::note[The org-structure signal]
+Sometimes the evidence shows your team structure doesn't match the opportunity. The highest-impact work sits across a seam no single team owns, or piles on a team with no room. That's a reorg signal, not a sequencing one. The join surfaces it early, while you can still move seats.
+:::
 
 ---
 

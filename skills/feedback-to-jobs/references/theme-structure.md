@@ -1,3 +1,8 @@
+---
+title: Theme Structure
+description: "The template for a feedback theme: one customer job, evidenced, with severity, trend, workarounds, switching triggers, and a clear definition of done."
+---
+
 # Theme Structure
 
 A theme is one customer job, evidenced. Not a folder of feature requests grouped by product area — an analysis of what customers are trying to accomplish, why they can't today, what they do instead, and what made it urgent.
