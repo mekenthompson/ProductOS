@@ -1,12 +1,19 @@
+---
+title: Job Links Template
+description: The per-job join artefact that ties a Job Spec to contributing accounts, ARR, renewal dates, and demand signal, allowed to churn while the spec stays stable.
+---
+
 # Job Links: [the job, in plain words]
 
 > A **per-job join artefact** for B2B SaaS. It ties one [Job Spec](job-spec.md) to the accounts that have the job, the revenue riding on them, and where that revenue sits in the calendar. The Job Spec stays durable; this file is allowed to churn. Re-run it and it answers with current data.
 
-> **Why this is a separate file.** The Job Spec is the durable outcome contract — `job` / `outcome` / `stakes` that outlive any implementation. The moment you write account names, ARR, and renewal dates next to a job, you've coupled a stable thing to a moving one. So the moving half lives here, pointing *up* to the job via `serves:`. The Job Spec never gets polluted with numbers that are stale by next quarter.
+:::tip[Why this is a separate file]
+The Job Spec is the durable outcome contract: `job` / `outcome` / `stakes` that outlive any implementation. The moment you write account names, ARR, and renewal dates next to a job, you've coupled a stable thing to a moving one. So the moving half lives here, pointing up to the job via `serves:`. The Job Spec never gets polluted with numbers that are stale by next quarter.
+:::
 
-> **Doc-class discriminator (decide from the frontmatter key alone):**
-> - `job:` frontmatter ⇒ a durable [Job Spec](job-spec.md). Keep it stable.
-> - `serves:` frontmatter ⇒ this file: a churny join artefact that points up to a Job Spec and carries the evidence that drifts.
+:::note[Doc-class discriminator]
+Decide from the frontmatter key alone: `job:` means a durable [Job Spec](job-spec.md), keep it stable. `serves:` means this file: a churny join artefact that points up to a Job Spec and carries the evidence that drifts.
+:::
 
 ---
 

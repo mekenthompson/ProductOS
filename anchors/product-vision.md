@@ -9,7 +9,9 @@ icon: "🎯"
 
 > The product vision is the single source of truth that every other artifact ties back to. Strategy, the Product Spec, every Job Spec, every RFC — they all reference the vision either to justify a "yes" or explain a "not now." If the vision is vague, everything downstream gets vague too.
 
-> 🧭 The vision is the first of **three anchors** that hold for the whole product: **Vision** (why we build), **[Principles](./product-principles.md)** (what "built well" means), and **[Invariants](./invariants.md)** (the lines we won't cross by construction). The vision *names* the invariants that matter; the Invariants doc *owns* them. Beneath the anchors sit the **Product Spec** (one per product — outcomes, how the product functions, and the job list) and the **Job Specs** (one per job). See [Agentic Delivery](../guides/agentic-delivery.md) for how the anchors fuse into the verdict rule.
+:::note[The three anchors]
+The vision is the first of three anchors that hold for the whole product: **Vision** (why we build), **[Principles](./product-principles.md)** (what "built well" means), and **[Invariants](./invariants.md)** (the lines we won't cross by construction). The vision names the invariants that matter; the Invariants doc owns them. Beneath the anchors sit the **Product Spec** (one per product) and the **Job Specs** (one per job). See [Agentic Delivery](../guides/agentic-delivery.md) for how the anchors fuse into the verdict rule.
+:::
 
 This page explains how to write a product vision that's actually load-bearing for every downstream artifact. It is intentionally a **guide**, not a vision statement — the actual vision belongs to your product and your company. Replace the example section at the end with yours.
 
@@ -70,7 +72,9 @@ The vision is ready to anchor the system when **every one of these is true**:
 - [ ] **Applied to a real decision** — Take an in-flight initiative and test it against this vision alone. If the vision didn't disambiguate the "yes" from the "not now," it isn't done.
 - [ ] **PMs can recite it** — Without reading. If they can't, it isn't the operating document — it's wallpaper.
 
-> 💡 The seventh check is the most often-skipped and the most important. A vision that nobody remembers is identical to no vision.
+:::tip
+The seventh check is the most often-skipped and the most important. A vision that nobody remembers is identical to no vision.
+:::
 
 ---
 

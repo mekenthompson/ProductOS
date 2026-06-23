@@ -1,3 +1,8 @@
+---
+title: Agent Guidance
+description: "The operating contract for agents working in ProductOS: the artifact hierarchy, verdict rule, triggers, and reviewer checklist."
+---
+
 # ProductOS — Agent Guidance
 
 This repository is **ProductOS** — a reusable, product-agnostic **agentic-delivery operating system**: the anchors, Job Specs, templates, and agent-executable skills that make delivery *run*. Anything specific to a real product (vision, principles, invariants) is documented as a *guide* — what good looks like, when it's "done," and how to write your own.
@@ -190,7 +195,9 @@ last_reviewed: YYYY-MM-DD
 - Add automation without explicit request
 - Bake in any single company's product as an example (this method is meant to be reusable)
 
-> The "Agentic Delivery — operating contract" above does not loosen these rules. Agents own *delivery within the gates*; the vision, principles, invariants, and this policy itself stay human-ratified. Changing the method's own policy is a human-directed policy change, not routine agent work.
+:::caution[Policy boundary]
+The "Agentic Delivery — operating contract" above does not loosen these rules. Agents own *delivery within the gates*; the vision, principles, invariants, and this policy itself stay human-ratified. Changing the method's own policy is a human-directed policy change, not routine agent work.
+:::
 
 ## Inspiration
 

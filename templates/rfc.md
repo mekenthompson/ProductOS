@@ -7,7 +7,9 @@ icon: "📄"
 
 # RFC: [Name]
 
-> **RFC — ship-coupled delivery (optional shape, not a named tier; use your existing RFC/PR process).** One living document for a single ship-coupled effort. It does the work that used to be split between a PRD (the decision and the why) and a delivery spec (the constraints), but it frames everything around the **user's job**, not our internal launch. It leaves *how* open — solutions are the team's (and the AI's) creative work, not the RFC author's prescription. The durable home of the job is its [Job Spec](./job-spec.md); this RFC is one ship-coupled effort against it.
+:::note[RFC: optional shape, not a new gate]
+One living document for a single ship-coupled effort. It does the work that used to be split between a PRD (the decision and the why) and a delivery spec (the constraints), but frames everything around the **user's job**, not our internal launch. It leaves *how* open — solutions are the team's (and the AI's) creative work, not the RFC author's prescription. The durable home of the job is its [Job Spec](./job-spec.md); this RFC is one ship-coupled effort against it.
+:::
 
 ---
 
@@ -39,7 +41,9 @@ Lead with the customer's job. Not our feature. Not our roadmap. The job they're 
 
 > **When** `[situation]`, **`[persona]` wants to** `[motivation]`, **so they can** `[outcome they care about]`.
 
-> 🔗 If this job has a standing [Job Spec](./job-spec.md), link it here instead of restating it. The Job Spec is the durable home of the job — it outlives this RFC; this RFC is one ship-coupled effort against it.
+:::tip
+If this job has a standing [Job Spec](./job-spec.md), link it here instead of restating it. The Job Spec is the durable home of the job — it outlives this RFC; this RFC is one ship-coupled effort against it.
+:::
 
 **Primary persona:** `[Creator / Consumer / Sponsor — or your persona name]`
 **Secondary persona(s) affected (if any):** `[…]`
