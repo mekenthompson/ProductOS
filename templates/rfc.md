@@ -1,7 +1,7 @@
 ---
 title: RFC
 description: A JTBD-led, AI-readable RFC for a ship-coupled delivery — defines the user's job, how they fail today, what success and failure look like, and the guardrails — leaving the solution open
-last_reviewed: 2026-05-12
+last_reviewed: 2026-06-24
 icon: "📄"
 ---
 
