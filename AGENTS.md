@@ -167,6 +167,8 @@ last_reviewed: YYYY-MM-DD
 | **Draft** | Work in progress |
 | **In Review** | Awaiting approval |
 | **Approved** | Ready to proceed |
+| **Building** | Approved and under active delivery |
+| **Shipped** | Delivered and live |
 | **Archived** | No longer active |
 
 ## Agent Guidelines
