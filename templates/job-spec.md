@@ -1,10 +1,14 @@
 ---
+# title: optional — omit freely; the job: field is the primary identifier
 title: Job Spec Template
 description: The durable, per-job outcome contract. One per job, outcome-oriented, UAT-verifiable, and stable across any number of implementation changes.
 job: <imperative, user-voiced; a job, not a feature>
 outcome: <the user-observable end state, present tense>
 stakes: <what breaks, and why it matters, if you get this wrong>
-serves: <the Product Spec outcome this job ladders up to>
+# serves: points at a named outcome SLUG from the Product Spec, not prose.
+# Format: serves: <outcome-slug>   e.g.  serves: standing-team
+# The named outcome's Signal: line is what this job ultimately moves.
+serves: <outcome-slug from Product Spec>
 invariants: [<named lines this job must never cross, by construction>]
 ---
 
@@ -28,9 +32,12 @@ The Job Spec never carries account names, ARR, renewal dates, or anything that d
 >
 > **Doc-class rule (decide from the frontmatter key alone):** `job:`
 > frontmatter ⇒ this is a Job Spec, keep `job` / `outcome` / `stakes`
-> stable. `serves:` / `artifact:` frontmatter ⇒ this is a churny design
-> artifact that points *up* at a Job Spec and carries the implementation
-> that changes. The how lives there, not here.
+> stable. `serves:` / `artifact:` / `backs:` frontmatter ⇒ this is a
+> design artifact that points *up*: `serves: <outcome-slug>` on a Job Spec
+> names the Product Spec outcome it ladders to; `serves:` / `artifact:` on
+> a ship-coupled RFC points at a Job Spec slug; `backs: <invariant-slug>`
+> on a design record points at the invariant it elaborates. The how lives
+> in those artifacts, not here.
 >
 > **Length discipline:** aim for one screen. The frontmatter carries ~80%.
 > If the body runs long, implementation has leaked in: move it to the
