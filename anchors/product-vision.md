@@ -50,7 +50,7 @@ A strong product vision has four properties:
 
 1. **One sentence you can say out loud.** If the headline takes a paragraph, it isn't a vision — it's a strategy memo. The sentence should name the territory, the change you're making, and who benefits. Aim for under 40 words.
 
-2. **A measurable headline.** Pick one metric, not three. The metric should be the *thing that gets better when you are succeeding*, not a proxy. Examples: time-to-first-value, weekly active builders, recovery time, retention at 90 days. Whatever it is, every PM should be able to recite it.
+2. **A measurable anchor.** The default is one metric, not three — the *thing that gets better when you are succeeding*, not a proxy. Examples: time-to-first-value, weekly active builders, recovery time, retention at 90 days. Whatever it is, every PM should be able to recite it. Some products don't reduce to a single funnel number: a personal or subscription-shaped product may instead name **a small set of outcomes (max four), each with its own readable signal** — a number or a CI-enforced invariant an engineer can check. That's a valid anchor too, as long as every outcome carries a signal and none is left as a slogan. What's not allowed is *no* measurable anchor, or a vanity metric bolted on just to fill this box.
 
 3. **Explicit scope — and explicit non-scope.** Saying what you *don't* do is harder and more useful than saying what you do. "We don't compete on storage cost" or "We don't ship a mobile app" forces alignment in a way "we do AI" never will. Some non-scope items are stronger than priorities: they are **invariants** — compliance, identity, or trust boundaries you won't cross *by construction*, however useful a feature seems. The vision *names* these; they graduate into the separate **[Invariants](./invariants.md)** anchor, which owns and enforces them. They become the kill-clause in the [verdict rule](../guides/agentic-delivery.md).
 
@@ -65,7 +65,7 @@ A weak product vision usually fails on one of those four — most commonly #3 (n
 The vision is ready to anchor the system when **every one of these is true**:
 
 - [ ] **One-sentence headline** — Under 40 words. Names the territory, the change, and who benefits.
-- [ ] **Headline metric named** — A single number that goes up (or down) when the vision is being realised. Defined precisely enough that an engineer could instrument it.
+- [ ] **Measurable anchor named** — Either a single headline number that moves when the vision is being realised, *or* a small set of named outcomes (max four), each with its own readable signal. Defined precisely enough that an engineer could instrument it (a metric or a CI-enforced check).
 - [ ] **Personas listed** — 2–4 personas, each with a motivation and a one-line "vision lens" describing how they experience the metric.
 - [ ] **Out of scope listed** — At least three things you are *not* doing. Specific, not aspirational ("we don't do X" not "we focus on Y"). The strongest of these — the lines you won't cross *by construction* — graduate to named [invariants](./invariants.md).
 - [ ] **Industry-metric tie-in** — How does your headline metric connect to metrics the rest of the industry uses (DORA, SPACE, NPS, retention cohorts, etc.)? If it doesn't, you'll struggle to benchmark.

@@ -68,7 +68,8 @@ you're breaking a law, a policy, or a promise).
 ProductOS does not hold its own invariants — it's the method. The worked
 example is **switchroom** (the canonical instantiation), whose invariants
 are a good model of the shape: `claude-native`, `no-self-escalation`,
-`on-leash`, `single-tenant`, `telegram-only`. Each is a by-construction line
+`on-leash`, `single-tenant`, `telegram-only`,
+`chat-is-the-single-source-of-truth`. Each is a by-construction line
 with a one-question test, and each switchroom Job Spec names the invariants
 it must never cross. See switchroom's `reference/invariants.md` and its job
 specs for the pattern.
