@@ -22,7 +22,7 @@ This page explains how to write a product vision that's actually load-bearing fo
 The product vision answers three questions in one short document:
 
 1. **Where do we play?** — The territory we own and the territory we don't.
-2. **What do we measure?** — One headline metric that captures whether the vision is being realised. Every shipped feature should move this number or be challenged.
+2. **What do we measure?** — A small set of named outcomes (max four), each with its own readable signal. Every shipped feature should advance one of these outcomes or be challenged.
 3. **Who do we build for?** — The personas whose lives we're trying to change. Name 2–4, each with a motivation, not a job title.
 
 If those three questions aren't answered crisply, nothing downstream can help you prioritise — every idea will sound reasonable, because nothing is being excluded.
@@ -35,9 +35,9 @@ If those three questions aren't answered crisply, nothing downstream can help yo
 |---|---|
 | [Product Principles](./product-principles.md) | Principles are how the vision becomes engineering and design standards. They are the vision applied at the level of individual decisions. |
 | [Invariants](./invariants.md) | The third anchor. The vision *names* the lines you won't cross; the Invariants doc *owns* and enforces them. They are the kill-clause in the verdict rule. |
-| Product Spec | The product-level container (one per product) ties its outcomes and job list directly back to the vision and its headline metric. |
-| [Job Specs](../templates/job-spec.md) | Each durable per-job outcome doc traces to a vision outcome and the headline metric it moves. |
-| [RFC Template](../templates/rfc.md) | A ship-coupled RFC's "Strategic Alignment" check confirms the initiative serves the vision and its headline metric. |
+| Product Spec | The product-level container (one per product) ties its outcomes and job list directly back to the vision's named outcomes and their signals. |
+| [Job Specs](../templates/job-spec.md) | Each durable per-job outcome doc traces to one named vision outcome and the signal it advances. |
+| [RFC Template](../templates/rfc.md) | A ship-coupled RFC names which vision outcome it advances and which Job Spec it serves — confirmed in the Status table. |
 | [Agentic Delivery](../guides/agentic-delivery.md) | The vision's outcomes, the Job Specs, the principles, and the invariants fuse into the **verdict rule** — the all-must-pass gate every change clears. The invariants are its kill-clause. |
 
 If you change the vision, expect everything above to need re-anchoring. That's a feature, not a bug — vision changes are rare and consequential.
@@ -50,7 +50,7 @@ A strong product vision has four properties:
 
 1. **One sentence you can say out loud.** If the headline takes a paragraph, it isn't a vision — it's a strategy memo. The sentence should name the territory, the change you're making, and who benefits. Aim for under 40 words.
 
-2. **A measurable anchor.** The default is one metric, not three — the *thing that gets better when you are succeeding*, not a proxy. Examples: time-to-first-value, weekly active builders, recovery time, retention at 90 days. Whatever it is, every PM should be able to recite it. Some products don't reduce to a single funnel number: a personal or subscription-shaped product may instead name **a small set of outcomes (max four), each with its own readable signal** — a number or a CI-enforced invariant an engineer can check. That's a valid anchor too, as long as every outcome carries a signal and none is left as a slogan. What's not allowed is *no* measurable anchor, or a vanity metric bolted on just to fill this box.
+2. **A measurable anchor — named outcomes with signals.** The recommended form is **a small set of named outcomes (max four), each with its own readable signal** — a number or a CI-enforced invariant an engineer can check. Name the outcome, then on its own line write `Signal:` and give the specific metric or check. What's not allowed is an outcome without a signal, or a signal that's just a slogan. For funnel-shaped products where a single number captures everything (time-to-first-value, retention at 90 days, GMV-per-cohort), a single headline metric is fine — but even then, treat it as one outcome with one signal. Whatever the form, every PM should be able to recite both the outcome and its signal.
 
 3. **Explicit scope — and explicit non-scope.** Saying what you *don't* do is harder and more useful than saying what you do. "We don't compete on storage cost" or "We don't ship a mobile app" forces alignment in a way "we do AI" never will. Some non-scope items are stronger than priorities: they are **invariants** — compliance, identity, or trust boundaries you won't cross *by construction*, however useful a feature seems. The vision *names* these; they graduate into the separate **[Invariants](./invariants.md)** anchor, which owns and enforces them. They become the kill-clause in the [verdict rule](../guides/agentic-delivery.md).
 
@@ -65,10 +65,9 @@ A weak product vision usually fails on one of those four — most commonly #3 (n
 The vision is ready to anchor the system when **every one of these is true**:
 
 - [ ] **One-sentence headline** — Under 40 words. Names the territory, the change, and who benefits.
-- [ ] **Measurable anchor named** — Either a single headline number that moves when the vision is being realised, *or* a small set of named outcomes (max four), each with its own readable signal. Defined precisely enough that an engineer could instrument it (a metric or a CI-enforced check).
+- [ ] **Named outcomes with signals** — A small set of named outcomes (max four), each with its own readable signal. Defined precisely enough that an engineer could instrument it (a metric or a CI-enforced check). A single headline metric is acceptable for funnel-shaped products, but treat it as one outcome + one signal, not a substitute for naming outcomes at all.
 - [ ] **Personas listed** — 2–4 personas, each with a motivation and a one-line "vision lens" describing how they experience the metric.
 - [ ] **Out of scope listed** — At least three things you are *not* doing. Specific, not aspirational ("we don't do X" not "we focus on Y"). The strongest of these — the lines you won't cross *by construction* — graduate to named [invariants](./invariants.md).
-- [ ] **Industry-metric tie-in** — How does your headline metric connect to metrics the rest of the industry uses (DORA, SPACE, NPS, retention cohorts, etc.)? If it doesn't, you'll struggle to benchmark.
 - [ ] **Applied to a real decision** — Take an in-flight initiative and test it against this vision alone. If the vision didn't disambiguate the "yes" from the "not now," it isn't done.
 - [ ] **PMs can recite it** — Without reading. If they can't, it isn't the operating document — it's wallpaper.
 
@@ -82,11 +81,11 @@ The seventh check is the most often-skipped and the most important. A vision tha
 
 The structure below is what works regardless of product. The *contents* obviously change.
 
-### Step 1 — Pick the headline metric first
+### Step 1 — Name the outcomes and their signals first
 
-Most teams start with a vision sentence and try to back-fit a metric. Do it the other way. Ask: **what is the one number we'd publish to the company every month, and what would the leadership team interrogate us on?** That's your headline. Then write the sentence around it.
+Most teams start with a vision sentence and try to back-fit a metric. Do it the other way. Ask: **what are the two to four outcomes a user experiences when the product is working well, and how would an engineer know each one is holding?** Write those down as outcome + signal pairs. Then write the vision sentence around them.
 
-For developer tools, time-based metrics (time-to-X) tend to win because they capture both speed and clarity. For consumer products, retention or DAU/MAU ratios. For marketplaces, GMV-per-cohort or take-rate-with-NPS. Pick the one your business actually runs on.
+For developer tools, time-based signals (time-to-X) tend to win because they capture both speed and clarity. For consumer products, retention or DAU/MAU ratios. For marketplaces, GMV-per-cohort or take-rate-with-NPS. Pick the signals your business actually runs on.
 
 ### Step 2 — Write the sentence
 
@@ -135,9 +134,12 @@ Acme is the system of record for `[domain]`, where every `[event]` produces a tr
 - We own: the moment data enters the system through to the decision it informs.
 - We don't own: long-term storage, advanced analytics, downstream notification routing.
 
-### Headline Metric
+### Outcomes
 
-**Time to Trusted Decision (TTD)** — the median time, in minutes, from a new event arriving to a user marking it actioned. Measured per persona, reported monthly.
+- **Trusted decision** — a user marks an event actioned without chasing it down.
+  Signal: **Time to Trusted Decision (TTD)** — median minutes from event arrival to actioned, measured per persona, reported monthly.
+- **Zero reconciliation backlog** — operators start each shift with an empty outstanding queue.
+  Signal: outstanding queue depth ≤ 0 at shift start, measured daily.
 
 ### Personas
 
@@ -150,10 +152,6 @@ Acme is the system of record for `[domain]`, where every `[event]` produces a tr
 - We do not build BI dashboards.
 - We do not own customer notifications (email/SMS).
 - We do not optimise for batch / overnight workloads.
-
-### Industry tie-in
-
-TTD is the inverse of MTTR for our category. As TTD drops, customer-side throughput rises and error rates fall, both of which are tracked in standard operations KPIs.
 
 ---
 
