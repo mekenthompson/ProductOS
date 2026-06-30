@@ -1,8 +1,8 @@
 # ProductOS
 
 **A product operating system.** The method *plus* the automation and
-agent-executable guidance — anchors, Job Specs, templates, skills, and an
-operating contract — that make delivery *run*, not just advise.
+agent-executable guidance (anchors, Job Specs, templates, skills, and an
+operating contract) that make delivery *run*, not just advise.
 
 ProductOS is the method. The working example in action is
 **[switchroom](https://github.com/switchroom/switchroom)**.
@@ -13,7 +13,7 @@ ProductOS is the method. The working example in action is
 
 ## Building got cheap. Judgement got scarce.
 
-An agent can draft the spec, write the code, and run the tests before you've booked the kickoff. The bottleneck moved. It's no longer capacity — it's knowing whether the thing is right, and catching it when it isn't.
+An agent can draft the spec, write the code, and run the tests before you've booked the kickoff. The bottleneck moved. It's no longer capacity: it's knowing whether the thing is right, and catching it when it isn't.
 
 ProductOS keeps four things fixed while the implementation churns underneath: anchors, Job Specs, design loops, outcome UAT. Agents build fast inside the gates; humans own the gates.
 

@@ -1,11 +1,11 @@
 ---
 name: feedback-to-jobs
-description: Turn a folder of raw customer feedback into a small set of customer jobs — clustered, rated, and split when they get too big — then draft a Job Spec for each. Use when you have a pile of feedback (support tickets, sales notes, call snippets, survey lines) and need to know what jobs it's really about, not what features it's asking for.
+description: Turn a folder of raw customer feedback into a small set of customer jobs, clustered, rated, and split when they get too big, then draft a Job Spec for each. Use when you have a pile of feedback (support tickets, sales notes, call snippets, survey lines) and need to know what jobs it's really about, not what features it's asking for.
 ---
 
 # Feedback to Jobs
 
-Raw feedback is a list of feature requests in disguise. This skill reads the pile, finds the **jobs** underneath it, and hands you a drafted [Job Spec](../../templates/job-spec.md) per job — the durable artefact the rest of the system runs on.
+Raw feedback is a list of feature requests in disguise. This skill reads the pile, finds the **jobs** underneath it, and hands you a drafted [Job Spec](../../templates/job-spec.md) per job: the durable artefact the rest of the system runs on.
 
 It does the thinking with judgement, not a parser. There are no scripts: you read the feedback, cluster by job, rate, and draft. The references hold the structure so the output is consistent run to run.
 
@@ -23,7 +23,7 @@ A request says *what* the customer asked for. A job says *what they were trying 
 
 ## Input
 
-Point the skill at a folder of feedback. Each item is short — a sentence or a paragraph. Sources don't matter and aren't kept: a support line, a sales note, a survey row, a call snippet all reduce to the same thing once you read for the job. Strip names and identifiers as you go; the output is about jobs, not accounts.
+Point the skill at a folder of feedback. Each item is short: a sentence or a paragraph. Sources don't matter and aren't kept: a support line, a sales note, a survey row, a call snippet all reduce to the same thing once you read for the job. Strip names and identifiers as you go; the output is about jobs, not accounts.
 
 ```
 feedback/
@@ -37,11 +37,11 @@ feedback/
 
 ### 1. Read every item for the job, not the ask
 
-Go through the pile once. For each item, write down — in your head or a scratch list — the job it implies: *when I [situation], I want to [motivation], so I can [outcome].* Ignore the feature named. If an item is too thin to imply a job, set it aside; don't invent one.
+Go through the pile once. For each item, write down, in your head or a scratch list, the job it implies: *when I [situation], I want to [motivation], so I can [outcome].* Ignore the feature named. If an item is too thin to imply a job, set it aside; don't invent one.
 
 ### 2. Cluster by job
 
-Group items that serve the same job, even when the words differ. "One screen for everyone's slots" and "combined availability view" are the same job; "export the roster" is a different one. Aim for **a handful of jobs, not dozens** — if you have twenty clusters, you're still clustering on features. Each cluster becomes one theme.
+Group items that serve the same job, even when the words differ. "One screen for everyone's slots" and "combined availability view" are the same job; "export the roster" is a different one. Aim for **a handful of jobs, not dozens**: if you have twenty clusters, you're still clustering on features. Each cluster becomes one theme.
 
 ### 3. Write a theme file per cluster
 
@@ -56,11 +56,11 @@ Rate each with [references/rating-criteria.md](references/rating-criteria.md). T
 
 ### 4. Split themes that got too big
 
-A theme past **~20 items** is usually two jobs hiding in one. When `feedback_count` crosses the threshold, look for the seam: distinct jobs, distinct situations, things that would ship independently. Split into focused sub-themes and redistribute the items. A theme that's just "lots of feedback about area X" isn't a job — it's a folder.
+A theme past **~20 items** is usually two jobs hiding in one. When `feedback_count` crosses the threshold, look for the seam: distinct jobs, distinct situations, things that would ship independently. Split into focused sub-themes and redistribute the items. A theme that's just "lots of feedback about area X" isn't a job. It's a folder.
 
 ### 5. Draft a Job Spec per theme
 
-For each theme, draft a [Job Spec](../../templates/job-spec.md): the standing `job` / `outcome` / `stakes` contract, the observable good / bad, and the "Prove it" outcome scenarios. This is the artefact that outlives the theme — the theme captures demand, the Job Spec defines done.
+For each theme, draft a [Job Spec](../../templates/job-spec.md): the standing `job` / `outcome` / `stakes` contract, the observable good / bad, and the "Prove it" outcome scenarios. This is the artefact that outlives the theme: the theme captures demand, the Job Spec defines done.
 
 Keep account and revenue evidence **out** of the Job Spec. That join is a separate concern (see [Job Links](../../templates/job-links.md)); the Job Spec stays clean and durable.
 
@@ -83,7 +83,7 @@ clusters.md                         ← which raw items rolled into which job (t
 ## What this skill is not
 
 - **Not a sentiment counter.** It doesn't tally thumbs-up; it reframes requests into jobs.
-- **Not a prioritiser.** It tells you what the jobs *are* and how loud each is. Sequencing the roadmap is a later step — see [The Org as an API](../../guides/org-as-an-api.md).
+- **Not a prioritiser.** It tells you what the jobs *are* and how loud each is. Sequencing the roadmap is a later step; see [The Org as an API](../../guides/org-as-an-api.md).
 - **Not automated.** The clustering is judgement. A parser can count items; only a reader can tell that "CSV button" and "send me the data" are the same job.
 
 ## Related

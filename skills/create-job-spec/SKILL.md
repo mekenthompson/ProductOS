@@ -5,8 +5,8 @@ description: >
   durable Job Spec against the ratified template and the product's anchors.
   Use when starting a new job spec, turning a feature request into a job,
   or pinning down what "done" means for a user outcome BEFORE any design or
-  build. The rule: interview one question at a time until shared clarity —
-  do NOT write the spec until every part is agreed. Triggers on natural
+  build. The rule: interview one question at a time until shared clarity.
+  Do NOT write the spec until every part is agreed. Triggers on natural
   phrasings including: "write a job spec", "create a job spec",
   "let's define the job", "what's the job here", "interview me on this job",
   "we need a spec for X", "turn this feature request into a job spec", "help
@@ -41,7 +41,7 @@ your questions are sharp:
 
 In switchroom this is the `reference/` directory; in another product it's
 wherever the design contract lives. The Job Spec **template** is your output
-shape — read it now.
+shape; read it now.
 
 ## Step 1 — Interview to shared clarity (one question at a time)
 
@@ -58,7 +58,7 @@ not generic.
 - **The situation and the progress wanted.** Who is hiring this, when, to
   make what progress? Specific situation beats abstract persona.
 - **Which outcome does it serve?** Name the product-spec outcome it ladders
-  up to (`serves:`). If it ladders to none, it may be out of scope — say so.
+  up to (`serves:`). If it ladders to none, it may be out of scope; say so.
 - **The durable outcome vs the current build.** What is the user-observable
   end state that must stay true even if you rebuild it three times? That is
   the `outcome:`. Anything tied to today's feature is implementation, not the
@@ -79,7 +79,7 @@ the serves/invariants up-anchor. When in doubt, ask; never assume.
 
 ## Step 2 — Write the Job Spec from the template
 
-Fill the template. Keep it to **one screen** — the frontmatter carries ~80%.
+Fill the template. Keep it to **one screen**; the frontmatter carries ~80%.
 
 - Frontmatter: `job` / `outcome` / `stakes` (user-voiced, durable) +
   `serves:` + `invariants:`.
@@ -88,7 +88,7 @@ Fill the template. Keep it to **one screen** — the frontmatter carries ~80%.
 - `## Good / bad`: the merged, observable, dual-audience decision aid.
 - `## Prove it`: named by job × surface, each line pointing at a **real**
   scenario and the invariant it protects, plus a fuzz-corpus seed. Mark any
-  missing scenario `*(coverage gap: no runnable scenario yet)*` — honest
+  missing scenario `*(coverage gap: no runnable scenario yet)*`; honest
   gaps are a finding, not a failure.
 - `## Verdict`: one line, "Done when:".
 - `## Production-readiness`: only if the stakes warrant it; omit for soft
@@ -100,7 +100,7 @@ Fill the template. Keep it to **one screen** — the frontmatter carries ~80%.
 ## Step 3 — Self-check before handing it over
 
 - **Outcome-oriented?** Re-read every line. If any names a flag, a file, a
-  PR, or a feature, it's implementation — move it to the design artifact.
+  PR, or a feature, it's implementation; move it to the design artifact.
 - **Durable?** Would this survive a full rewrite of the feature? If not,
   you've described the build, not the job.
 - **Dual-readable?** Can an agent mid-task act on the good/bad, and can a
@@ -128,4 +128,4 @@ raw user ask. It passes if it interviews to alignment one question at a time
 (without writing prematurely), digs a feature request down to its job,
 produces a one-screen template-faithful spec with a valid serves/invariants
 up-anchor, and flags coverage gaps instead of fabricating scenarios. If it
-has to invent structure, the skill failed its own docs test — fix the skill.
+has to invent structure, the skill failed its own docs test. Fix the skill.

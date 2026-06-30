@@ -7,13 +7,13 @@ icon: "📖"
 
 # Product Principles
 
-Product principles are the engineering and design standards that turn the [product vision](./product-vision.md) into day-to-day quality gates. They are applied in every PR, every design review, every release. They are the "built-well" clause in the [verdict rule](../guides/agentic-delivery.md) — a "no" on any principle is a redesign, not a follow-up.
+Product principles are the engineering and design standards that turn the [product vision](./product-vision.md) into day-to-day quality gates. They are applied in every PR, every design review, every release. They are the "built-well" clause in the [verdict rule](../guides/agentic-delivery.md): a "no" on any principle is a redesign, not a follow-up.
 
 :::note[The three anchors]
 Principles are the second of three anchors: **[Vision](./product-vision.md)** (why), **Principles** (built well), and **[Invariants](./invariants.md)** (lines we won't cross by construction). Together they fuse into the [verdict rule](../guides/agentic-delivery.md).
 :::
 
-This guide explains the purpose of principles, what a good set looks like, how to write yours, and how to use them as a working tool — not wall art.
+This guide explains the purpose of principles, what a good set looks like, how to write yours, and how to use them as a working tool, not wall art.
 
 ---
 
@@ -21,7 +21,7 @@ This guide explains the purpose of principles, what a good set looks like, how t
 
 Principles answer a specific question: **"What does 'good enough to ship' look like, regardless of which team built it?"**
 
-Without principles, teams make independent quality trade-offs. One team ships terse error messages; the next team ships chatty ones. One team builds a wizard; the next ships a blank form. The customer feels the inconsistency — even if no individual decision was wrong.
+Without principles, teams make independent quality trade-offs. One team ships terse error messages; the next team ships chatty ones. One team builds a wizard; the next ships a blank form. The customer feels the inconsistency, even if no individual decision was wrong.
 
 Principles fix this by making "good" *teachable*. A new engineer should be able to look at a PR and tell whether it meets the bar, using the principles as a checklist.
 
@@ -44,16 +44,16 @@ The principle check is the second-most-cited anchor (after the vision). If yours
 
 Four properties:
 
-1. **Three to five total, no more.** Six is forgettable; two is too coarse. Principles you can't remember aren't standards — they're trivia.
+1. **Three to five total, no more.** Six is forgettable; two is too coarse. Principles you can't remember aren't standards. They're trivia.
 
-2. **Phrased as standards, not aspirations.** "We are user-obsessed" is a value, not a principle. "If they need the docs, we've failed" is a standard — it gives a reviewer a thing to test. Good principles are *checkable*.
+2. **Phrased as standards, not aspirations.** "We are user-obsessed" is a value, not a principle. "If they need the docs, we've failed" is a standard: it gives a reviewer a thing to test. Good principles are *checkable*.
 
-3. **Tension-revealing.** A good principle creates discomfort sometimes. "Batteries included" forces you to choose a default — which means picking a winner. If every principle is always trivially true, they're too soft.
+3. **Tension-revealing.** A good principle creates discomfort sometimes. "Batteries included" forces you to choose a default, which means picking a winner. If every principle is always trivially true, they're too soft.
 
 4. **Each has check questions.** Two or three concrete questions a reviewer can ask. Without check questions, principles are interpretation contests.
 
 :::note[Include engineering standards]
-Principles are *engineering and design* standards, not just UX ones. If your product carries real non-functional stakes — security, reliability, scalability, availability, performance — at least one principle should make that bar checkable. A feature can be a delight and still fail because it leaks data or falls over under load. This matters most when an agentic workforce does the building: the non-functional bar is what engineering oversight enforces (see [Agentic Delivery](../guides/agentic-delivery.md)).
+Principles are *engineering and design* standards, not just UX ones. If your product carries real non-functional stakes (security, reliability, scalability, availability, performance), at least one principle should make that bar checkable. A feature can be a delight and still fail because it leaks data or falls over under load. This matters most when an agentic workforce does the building: the non-functional bar is what engineering oversight enforces (see [Agentic Delivery](../guides/agentic-delivery.md)).
 :::
 
 ---
@@ -77,11 +77,11 @@ The principles are ready to use as standards when **every one of these is true**
 
 Look at the [headline metric](./product-vision.md) in the vision. Now ask: **"What needs to be true about every shipped feature for that metric to move?"** Those answers are the seeds of your principles.
 
-If the metric is time-to-first-value, a candidate principle might be "First run succeeds." If the metric is retention, a candidate is "Every session ends with a clear next action." Tie principles to the metric — that's how they avoid becoming generic.
+If the metric is time-to-first-value, a candidate principle might be "First run succeeds." If the metric is retention, a candidate is "Every session ends with a clear next action." Tie principles to the metric: that's how they avoid becoming generic.
 
 ### Step 2 — Capture the gripes
 
-Walk through the product with a customer (or a recording). Note every moment where you wince. The wincing is unwritten principles — quality bars you already believe in but haven't named. Cluster the wincing into 3–5 themes; those are your candidate principles.
+Walk through the product with a customer (or a recording). Note every moment where you wince. The wincing is unwritten principles: quality bars you already believe in but haven't named. Cluster the wincing into 3–5 themes; those are your candidate principles.
 
 ### Step 3 — Phrase each principle as a punchy standard
 
@@ -90,7 +90,7 @@ Better: "If they need the docs, we've failed."
 
 The punchy phrasing matters. A principle that gets quoted gets applied. A principle written like a corporate value statement gets ignored.
 
-Aim for principles that sound a little extreme. The extremity is what makes them load-bearing — moderate principles don't change behaviour.
+Aim for principles that sound a little extreme. The extremity is what makes them load-bearing: moderate principles don't change behaviour.
 
 ### Step 4 — Write check questions
 
@@ -102,7 +102,7 @@ Two of each, drawn from your real product. The examples teach the principle fast
 
 ### Step 6 — Stress-test for tension
 
-Take three real PRs and run them through your principles. If every PR sails through all principles, your bar is too low — rewrite. If one principle forces you to delay a PR, that's the principle earning its keep. Keep it.
+Take three real PRs and run them through your principles. If every PR sails through all principles, your bar is too low. Rewrite. If one principle forces you to delay a PR, that's the principle earning its keep. Keep it.
 
 ---
 
@@ -118,7 +118,7 @@ Take three real PRs and run them through your principles. If every PR sails thro
 
 ## Example principles (illustrative)
 
-> The examples below are *one possible* set of three principles for a developer tool. They are intentionally opinionated to demonstrate what punchy principles look like — they are not the principles you should adopt. Write your own using the steps above.
+> The examples below are *one possible* set of three principles for a developer tool. They are intentionally opinionated to demonstrate what punchy principles look like; they are not the principles you should adopt. Write your own using the steps above.
 
 ### 1. "If they need the docs, we've failed"
 
@@ -180,7 +180,7 @@ Before you ship, ask:
 If you can't answer all three, you're not done. Redesign, don't ship and patch later.
 
 :::tip[Principles judge Job Specs, they don't replace them]
-A change can satisfy its [Job Spec](../templates/job-spec.md) (it does the user's job) and still fail a principle check (it was built badly). When that happens, the job is the goal; the principles are how you get there without making the product feel like a kit. Both must pass — the all-must-pass gate across the vision outcome, the Job Spec, the principles, and the invariants is the **verdict rule**. See [Agentic Delivery](../guides/agentic-delivery.md).
+A change can satisfy its [Job Spec](../templates/job-spec.md) (it does the user's job) and still fail a principle check (it was built badly). When that happens, the job is the goal; the principles are how you get there without making the product feel like a kit. Both must pass: the all-must-pass gate across the vision outcome, the Job Spec, the principles, and the invariants is the **verdict rule**. See [Agentic Delivery](../guides/agentic-delivery.md).
 :::
 
 ---

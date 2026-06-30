@@ -2,7 +2,7 @@
 name: uat-ux-debug
 description: >
   Debug a UAT failure or production UX miss from the USER OUTCOME, not the
-  single bug — the user-outcome counterpart to engineering debugging. Use when
+  single bug. It is the user-outcome counterpart to engineering debugging. Use when
   a feature technically "works" but the user's job didn't get done, when a UAT
   scenario fails, or when something shipped broken because nobody exercised it.
   Runs the loop: failure → which job/UX goal it breached → is the spec
@@ -43,7 +43,7 @@ from the trace finds the bug and misses the breach.
   shell commands by their own agent")
 - Which job/outcome does that violate? Quote the clause.
 - If the project has an explicit spec system, use it. (In switchroom: the
-  `reference/` dir — vision pillars + JTBDs + the three principle checks:
+  `reference/` dir, with vision pillars + JTBDs + the three principle checks:
   Docs / Defaults / Consistency. A "no" on any check is a redesign, not a
   follow-up.)
 
@@ -52,24 +52,24 @@ from the trace finds the bug and misses the breach.
 The test: **does the spec permit the observed behaviour?**
 
 - **Permitted / silent on it** → the spec is **under-specified** → the result is
-  a proposed spec clause. *Absence of a clause is a first-class finding* — it's
+  a proposed spec clause. *Absence of a clause is a first-class finding*: it's
   the most common case and the dangerous one (silence is exactly what let the
   failure ship). Don't treat "there's no clause" as a dead end; it's the output.
 - **Forbidden but done anyway** → the implementation **diverged** → code fix.
 
 A single failure is often **both** (a missing clause AND a code bug). Classify
-each finding separately — they get different fixes (spec edit vs code change).
+each finding separately; they get different fixes (spec edit vs code change).
 
 ## Step 3 — UAT coverage + corpus seed (KEN-60 / KEN-29)
 
 - Is there a UAT scenario for this **outcome**? If not, the feature shipped
-  unexercised — propose one (assert the outcome, not just "no error").
+  unexercised. Propose one (assert the outcome, not just "no error").
 - **Seed the fuzz corpus from the failure CLASS, not the instance.** Identify
   the dimensions that vary (latency, retries, double-fire, ordering, partial
   failure) and the invariants that must always hold (exactly-once, always
   reaches a terminal state, never silently degrades). Encode them as a property
   test over the corpus so the class can't silently recur.
-- If you bound coverage (top-N, sampling, no-retry), **say so** — silent
+- If you bound coverage (top-N, sampling, no-retry), **say so**. Silent
   truncation reads as "covered everything."
 
 ## Step 4 — Solve from the outcome, not the point bug
@@ -80,7 +80,7 @@ arbiter:
 > **The fuzz corpus is the arbiter of "outcome-fixed" vs "bug-patched."**
 > A change is outcome-true only if the UAT-for-the-outcome passes ACROSS the
 > corpus, not just the happy path. If your patch is green on the happy path but
-> the corpus still breaks an invariant, you patched the bug — you didn't solve
+> the corpus still breaks an invariant, you patched the bug. You didn't solve
 > the outcome.
 
 Common tell: the one-line fix (bump a timeout, add a retry) clears the reported
@@ -90,7 +90,7 @@ unprotected. Add what the corpus demands.
 ## Output
 
 Report, in this order:
-1. **The breached job promise** (one line — the UX, not the bug).
+1. **The breached job promise** (one line: the UX, not the bug).
 2. **Root cause(s)**, each tagged `spec-gap` or `code-divergence`, with
    `file:line`.
 3. **Coverage**: the missing UAT scenario + the corpus seed (dimensions +
@@ -105,7 +105,7 @@ Report, in this order:
 **Breached promise:** "change config from Telegram, operator just taps Approve,
 no host CLI." Observed end-state: the agent hand-fed the operator
 `sed … && switchroom apply`. The promise inverted into nothing-but-SSH.
-Classification: **silent** (metrics green — hostd logged nothing, gateway logged
+Classification: **silent** (metrics green: hostd logged nothing, gateway logged
 `status=ok`; the only signal was the agent's confused narration) + **adoption**
 (burn the operator once and they go back to SSH forever). → full pipeline.
 
@@ -115,11 +115,11 @@ Docs + Defaults principle checks (needed to know the yaml path and `sed`).
 **Step 2 — both:**
 - *spec-gap*: nothing specified the agent-side contract while an approval is
   pending (must get a "card posted" ack it can see; must not re-fire; proposals
-  must be idempotent; on infra failure say "I can't, here's why" — never
+  must be idempotent; on infra failure say "I can't, here's why," never
   silently downgrade to SSH). The silence WAS the failure mode.
 - *code-divergence*: the agent MCP wire used a flat 10s for an op that blocks
-  server-side up to 10 min awaiting the tap (`src/mcp/hostd/server.ts`) — timed
-  out by construction; the web path used 11 min and masked it.
+  server-side up to 10 min awaiting the tap (`src/mcp/hostd/server.ts`); timed
+  out by construction, while the web path used 11 min and masked it.
 
 **Step 3:** no UAT for the outcome (it was deferred as "needs the approval
 card"). Corpus seed = {approval verdict × re-fire burst size × operator tap
