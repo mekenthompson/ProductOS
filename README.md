@@ -64,6 +64,6 @@ invariant.
 ## The worked example
 
 **[switchroom](https://github.com/switchroom/switchroom/tree/main/reference)** —
-real anchors, a product spec, and 19 Job Specs: the method filled in and
+real anchors, a product spec, and 21 Job Specs: the method filled in and
 proven against a live UAT harness. When a guide here needs an example, it
 points there.

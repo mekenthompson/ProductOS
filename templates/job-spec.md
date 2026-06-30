@@ -105,3 +105,12 @@ just the happy path.
 
 > **Implementation:** the how lives in `<design-artifact.md>` (frontmatter
 > `serves:` this job). That artifact churns; this Job Spec outlives it.
+
+---
+
+## Related
+
+- [JTBD Guide](../guides/jtbd-guide.md) — how to frame the job story this spec is built around
+- [Job Links Template](./job-links.md) — the churny join that carries accounts and revenue, kept out of this spec
+- [Agentic Delivery](../guides/agentic-delivery.md) — how this spec sits in the verdict rule and the gates
+- [Writing an RFC](../guides/product-specs.md) — the ship-coupled doc that references this spec
