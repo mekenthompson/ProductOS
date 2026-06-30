@@ -7,13 +7,13 @@ icon: "🎯"
 
 # Product Vision
 
-> The product vision is the single source of truth that every other artifact ties back to. Strategy, the Product Spec, every Job Spec, every RFC — they all reference the vision either to justify a "yes" or explain a "not now." If the vision is vague, everything downstream gets vague too.
+> The product vision is the single source of truth that every other artifact ties back to. Strategy, the Product Spec, every Job Spec, every RFC: they all reference the vision either to justify a "yes" or explain a "not now." If the vision is vague, everything downstream gets vague too.
 
 :::note[The three anchors]
 The vision is the first of three anchors that hold for the whole product: **Vision** (why we build), **[Principles](./product-principles.md)** (what "built well" means), and **[Invariants](./invariants.md)** (the lines we won't cross by construction). The vision names the invariants that matter; the Invariants doc owns them. Beneath the anchors sit the **Product Spec** (one per product) and the **Job Specs** (one per job). See [Agentic Delivery](../guides/agentic-delivery.md) for how the anchors fuse into the verdict rule.
 :::
 
-This page explains how to write a product vision that's actually load-bearing for every downstream artifact. It is intentionally a **guide**, not a vision statement — the actual vision belongs to your product and your company. Replace the example section at the end with yours.
+This page explains how to write a product vision that's actually load-bearing for every downstream artifact. It is intentionally a **guide**, not a vision statement: the actual vision belongs to your product and your company. Replace the example section at the end with yours.
 
 ---
 
@@ -25,7 +25,7 @@ The product vision answers three questions in one short document:
 2. **What do we measure?** — A small set of named outcomes (max four), each with its own readable signal. Every shipped feature should advance one of these outcomes or be challenged.
 3. **Who do we build for?** — The personas whose lives we're trying to change. Name 2–4, each with a motivation, not a job title.
 
-If those three questions aren't answered crisply, nothing downstream can help you prioritise — every idea will sound reasonable, because nothing is being excluded.
+If those three questions aren't answered crisply, nothing downstream can help you prioritise: every idea will sound reasonable, because nothing is being excluded.
 
 ---
 
@@ -40,7 +40,7 @@ If those three questions aren't answered crisply, nothing downstream can help yo
 | [RFC Template](../templates/rfc.md) | A ship-coupled RFC names which vision outcome it advances and which Job Spec it serves — confirmed in the Status table. |
 | [Agentic Delivery](../guides/agentic-delivery.md) | The vision's outcomes, the Job Specs, the principles, and the invariants fuse into the **verdict rule** — the all-must-pass gate every change clears. The invariants are its kill-clause. |
 
-If you change the vision, expect everything above to need re-anchoring. That's a feature, not a bug — vision changes are rare and consequential.
+If you change the vision, expect everything above to need re-anchoring. That's a feature, not a bug. Vision changes are rare and consequential.
 
 ---
 
@@ -48,15 +48,15 @@ If you change the vision, expect everything above to need re-anchoring. That's a
 
 A strong product vision has four properties:
 
-1. **One sentence you can say out loud.** If the headline takes a paragraph, it isn't a vision — it's a strategy memo. The sentence should name the territory, the change you're making, and who benefits. Aim for under 40 words.
+1. **One sentence you can say out loud.** If the headline takes a paragraph, it isn't a vision. It's a strategy memo. The sentence should name the territory, the change you're making, and who benefits. Aim for under 40 words.
 
-2. **A measurable anchor — named outcomes with signals.** The recommended form is **a small set of named outcomes (max four), each with its own readable signal** — a number or a CI-enforced invariant an engineer can check. Name the outcome, then on its own line write `Signal:` and give the specific metric or check. What's not allowed is an outcome without a signal, or a signal that's just a slogan. For funnel-shaped products where a single number captures everything (time-to-first-value, retention at 90 days, GMV-per-cohort), a single headline metric is fine — but even then, treat it as one outcome with one signal. Whatever the form, every PM should be able to recite both the outcome and its signal.
+2. **A measurable anchor — named outcomes with signals.** The recommended form is **a small set of named outcomes (max four), each with its own readable signal**: a number or a CI-enforced invariant an engineer can check. Name the outcome, then on its own line write `Signal:` and give the specific metric or check. What's not allowed is an outcome without a signal, or a signal that's just a slogan. For funnel-shaped products where a single number captures everything (time-to-first-value, retention at 90 days, GMV-per-cohort), a single headline metric is fine, but even then, treat it as one outcome with one signal. Whatever the form, every PM should be able to recite both the outcome and its signal.
 
-3. **Explicit scope — and explicit non-scope.** Saying what you *don't* do is harder and more useful than saying what you do. "We don't compete on storage cost" or "We don't ship a mobile app" forces alignment in a way "we do AI" never will. Some non-scope items are stronger than priorities: they are **invariants** — compliance, identity, or trust boundaries you won't cross *by construction*, however useful a feature seems. The vision *names* these; they graduate into the separate **[Invariants](./invariants.md)** anchor, which owns and enforces them. They become the kill-clause in the [verdict rule](../guides/agentic-delivery.md).
+3. **Explicit scope — and explicit non-scope.** Saying what you *don't* do is harder and more useful than saying what you do. "We don't compete on storage cost" or "We don't ship a mobile app" forces alignment in a way "we do AI" never will. Some non-scope items are stronger than priorities: they are **invariants**: compliance, identity, or trust boundaries you won't cross *by construction*, however useful a feature seems. The vision *names* these; they graduate into the separate **[Invariants](./invariants.md)** anchor, which owns and enforces them. They become the kill-clause in the [verdict rule](../guides/agentic-delivery.md).
 
-4. **Personas with motivations, not job titles.** "Operations managers" is a category. "Operations managers accountable for throughput across a multi-team org, judged monthly on error rate" is a persona. The vision should make it obvious which jobs-to-be-done you serve — each becomes a [Job Spec](../templates/job-spec.md). See [JTBD Guide](../guides/jtbd-guide.md).
+4. **Personas with motivations, not job titles.** "Operations managers" is a category. "Operations managers accountable for throughput across a multi-team org, judged monthly on error rate" is a persona. The vision should make it obvious which jobs-to-be-done you serve, each becoming a [Job Spec](../templates/job-spec.md). See [JTBD Guide](../guides/jtbd-guide.md).
 
-A weak product vision usually fails on one of those four — most commonly #3 (no boundaries) or #2 (no headline metric).
+A weak product vision usually fails on one of those four, most commonly #3 (no boundaries) or #2 (no headline metric).
 
 ---
 
@@ -67,9 +67,9 @@ The vision is ready to anchor the system when **every one of these is true**:
 - [ ] **One-sentence headline** — Under 40 words. Names the territory, the change, and who benefits.
 - [ ] **Named outcomes with signals** — A small set of named outcomes (max four), each with its own readable signal. Defined precisely enough that an engineer could instrument it (a metric or a CI-enforced check). A single headline metric is acceptable for funnel-shaped products, but treat it as one outcome + one signal, not a substitute for naming outcomes at all.
 - [ ] **Personas listed** — 2–4 personas, each with a motivation and a one-line "vision lens" describing how they experience the metric.
-- [ ] **Out of scope listed** — At least three things you are *not* doing. Specific, not aspirational ("we don't do X" not "we focus on Y"). The strongest of these — the lines you won't cross *by construction* — graduate to named [invariants](./invariants.md).
+- [ ] **Out of scope listed** — At least three things you are *not* doing. Specific, not aspirational ("we don't do X" not "we focus on Y"). The strongest of these, the lines you won't cross *by construction*, graduate to named [invariants](./invariants.md).
 - [ ] **Applied to a real decision** — Take an in-flight initiative and test it against this vision alone. If the vision didn't disambiguate the "yes" from the "not now," it isn't done.
-- [ ] **PMs can recite it** — Without reading. If they can't, it isn't the operating document — it's wallpaper.
+- [ ] **PMs can recite it** — Without reading. If they can't, it isn't the operating document. It's wallpaper.
 
 :::tip
 The seventh check is the most often-skipped and the most important. A vision that nobody remembers is identical to no vision.
@@ -97,7 +97,7 @@ If it takes more than one of those clauses to differentiate you, the differentia
 
 ### Step 3 — Define 2–4 personas
 
-Most products have a *creator* persona, a *consumer* persona, and a *sponsor* persona — the person who *configures* the product, the person who *uses it day to day*, and the person who *pays for it or is accountable for the outcome*. The names change; the structure rarely does.
+Most products have a *creator* persona, a *consumer* persona, and a *sponsor* persona: the person who *configures* the product, the person who *uses it day to day*, and the person who *pays for it or is accountable for the outcome*. The names change; the structure rarely does.
 
 ### Step 4 — Write down what you are not
 
@@ -105,7 +105,7 @@ Three to five bullets. Be brutal. "We are not building X" is the highest-leverag
 
 ### Step 5 — Stress-test against current work
 
-Pick three in-flight projects. For each, write one sentence on how the vision justifies (or doesn't justify) the work. If two of the three feel forced, your vision is misaligned with reality. Either change the vision or stop the work — both are valid; doing neither is the dangerous path.
+Pick three in-flight projects. For each, write one sentence on how the vision justifies (or doesn't justify) the work. If two of the three feel forced, your vision is misaligned with reality. Either change the vision or stop the work. Both are valid; doing neither is the dangerous path.
 
 ---
 

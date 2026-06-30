@@ -10,7 +10,7 @@ icon: "🚧"
 Invariants are the third anchor, beside the [Vision](./product-vision.md)
 (the *why*) and the [Principles](./product-principles.md) (the *built-well*
 standards). They are the lines your product **will not cross by
-construction** — the *"are we even allowed / is this still us"* gate in the
+construction**: the *"are we even allowed / is this still us"* gate in the
 [verdict rule](../guides/agentic-delivery.md).
 
 This is a **guide**: it tells you what a good invariant looks like and how to
@@ -27,7 +27,7 @@ different: it is a hard line you don't trade, however useful a feature seems.
 A change that breaks a principle is a redesign; a change that breaks an
 invariant is **out of scope, full stop**.
 
-Most invariants are compliance, identity, trust, or safety boundaries —
+Most invariants are compliance, identity, trust, or safety boundaries:
 things that, if crossed, mean you're no longer building the same product (or
 you're breaking a law, a policy, or a promise).
 
@@ -51,7 +51,7 @@ you're breaking a law, a policy, or a promise).
 ## How to write yours
 
 1. **Start from the vision's non-scope.** The strongest "we do not do X"
-   lines in your [vision](./product-vision.md) are invariant candidates —
+   lines in your [vision](./product-vision.md) are invariant candidates:
    the ones that are boundaries by construction, not just current priorities.
 2. **Add the compliance / trust / identity boundaries.** What would put you
    outside a policy, a regulation, or your core promise to the user? Those
@@ -65,7 +65,7 @@ you're breaking a law, a policy, or a promise).
 
 ## The example in action
 
-ProductOS does not hold its own invariants — it's the method. The worked
+ProductOS does not hold its own invariants. It's the method. The worked
 example is **switchroom** (the canonical instantiation), whose invariants
 are a good model of the shape: `claude-native`, `no-self-escalation`,
 `on-leash`, `single-tenant`, `telegram-only`,

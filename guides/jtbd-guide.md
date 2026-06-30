@@ -5,7 +5,7 @@ last_reviewed: 2026-05-12
 icon: "📖"
 ---
 
-# Jobs to be Done (JTBD) Guide
+# Jobs to be Done (JTBD) guide
 
 ## What is JTBD?
 
@@ -24,7 +24,7 @@ This guide teaches the job *story* — a single sentence (`When… [persona] wan
 
 ---
 
-## The Job Story Format
+## The job story format
 
 Instead of User Stories:
 
@@ -34,7 +34,7 @@ Use Job Stories:
 
 > **When** [situation/context], **I want to** [motivation], **so I can** [expected outcome]
 
-### Why Job Stories are Better
+### Why job stories are better
 
 | User Stories | Job Stories |
 |--------------|-------------|
@@ -45,9 +45,9 @@ Use Job Stories:
 
 ---
 
-## Writing Good Job Stories
+## Writing good job stories
 
-### 1. Add Rich Context to Situations
+### 1. Add rich context to situations
 
 The more specific the "When...", the better you can design solutions.
 
@@ -57,7 +57,7 @@ The more specific the "When...", the better you can design solutions.
 **Strong:**
 > When something fails unexpectedly and I'm under pressure to ship, and I need to understand what went wrong before standup...
 
-### 2. Derive from Real Interviews, Not Personas
+### 2. Derive from real interviews, not personas
 
 Job stories must come from actual customer conversations. You can't ask a persona about their anxieties.
 
@@ -67,7 +67,7 @@ Job stories must come from actual customer conversations. You can't ask a person
 - What other solutions did you consider?
 - What made you hesitate?
 
-### 3. Keep Jobs Separate from Solutions
+### 3. Keep jobs separate from solutions
 
 Don't embed implementation in the job. Multiple solutions may address one job.
 
@@ -77,7 +77,7 @@ Don't embed implementation in the job. Multiple solutions may address one job.
 **Good:**
 > When I need to investigate a problem, I want to quickly understand what failed and why...
 
-### 4. Include Forces (Anxieties, Pushes, Pulls)
+### 4. Include forces (anxieties, pushes, pulls)
 
 Forces are what push customers toward or away from a solution.
 
@@ -88,13 +88,13 @@ Forces are what push customers toward or away from a solution.
 | **Push (away)** | Anxiety about switching | "Migration seems risky and complex" |
 | **Habit** | Comfort with status quo | "We've always used the incumbent" |
 
-### 5. Focus on Situation, Not User Type
+### 5. Focus on situation, not user type
 
 The same person can have different jobs in different situations. Focus on the situation.
 
 ---
 
-## Job Story Examples
+## Job story examples
 
 > Generic examples — replace with stories drawn from interviews with your own customers.
 
@@ -112,7 +112,7 @@ The same person can have different jobs in different situations. Focus on the si
 
 ---
 
-## Identifying Jobs in Specs
+## Identifying jobs in specs
 
 For each spec, identify:
 
@@ -128,7 +128,7 @@ For each spec, identify:
 
 ---
 
-## Capturing Jobs in Research
+## Capturing jobs in research
 
 When conducting customer interviews:
 
@@ -137,7 +137,7 @@ When conducting customer interviews:
 3. **Note the forces** — What pushed them to act? What made them hesitate?
 4. **Record actual quotes** — Use their words, not your interpretation
 
-### Interview Questions for JTBD
+### Interview questions for JTBD
 
 - "Walk me through the last time you had to [do the thing]..."
 - "What was going on that made you look for a solution?"
@@ -147,7 +147,7 @@ When conducting customer interviews:
 
 ---
 
-## Common Mistakes
+## Common mistakes
 
 | Mistake | Why It's Wrong | Fix |
 |---------|---------------|-----|
@@ -159,7 +159,7 @@ When conducting customer interviews:
 
 ---
 
-## Further Reading
+## Further reading
 
 - [Replacing the User Story with the Job Story](https://jtbd.info/replacing-the-user-story-with-the-job-story-af7cdee10c27) — Alan Klement
 - [5 Tips for Writing a Job Story](https://jtbd.info/5-tips-for-writing-a-job-story-7c9092911fc9) — Alan Klement

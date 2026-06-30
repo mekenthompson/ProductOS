@@ -12,10 +12,10 @@ One document. Not two.
 :::note[An RFC is not a named tier of its own]
 It's the ship-coupled, per-initiative delivery layer that sits beneath the anchors ([Vision](../anchors/product-vision.md), [Principles](../anchors/product-principles.md), [Invariants](../anchors/invariants.md)), the product-level **Product Spec** (which owns the job list), and the **[Job Specs](../templates/job-spec.md)**. It's your existing RFC/PR process for one piece of work; this guide is a reference shape for it, not a new gate.
 
-**Two doc-class variants live under the RFC shape.** An artifact ladders via `serves: <job-spec-slug>` (a ship-coupled RFC delivering a job — it archives when shipped) or via `backs: <invariant-slug>` (a design record that elaborates or defends a named invariant rather than delivering a job — it stays current and does not archive). The doc-class is declared in frontmatter. Use the `serves:` path for normal delivery work; use `backs:` for standing architectural and security rationale that underpins an invariant.
+**Two doc-class variants live under the RFC shape.** An artifact ladders via `serves: <job-spec-slug>` (a ship-coupled RFC delivering a job; it archives when shipped) or via `backs: <invariant-slug>` (a design record that elaborates or defends a named invariant rather than delivering a job; it stays current and does not archive). The doc-class is declared in frontmatter. Use the `serves:` path for normal delivery work; use `backs:` for standing architectural and security rationale that underpins an invariant.
 :::
 
-An **RFC** does the work that used to be split between a PRD ("should we build this?") and a separate delivery spec ("how do we build it?"). The shift matters: by combining them and framing the document around the **user's job to be done**, the RFC becomes useful at every phase — approval, design, build, launch, and post-ship review — and it stays useful for both humans and AI agents.
+An **RFC** does the work that used to be split between a PRD ("should we build this?") and a separate delivery spec ("how do we build it?"). The shift matters: by combining them and framing the document around the **user's job to be done**, the RFC becomes useful at every phase (approval, design, build, launch, and post-ship review), and it stays useful for both humans and AI agents.
 
 > If you're looking for the document itself, the template is here: [RFC Template](../templates/rfc.md).
 
@@ -33,7 +33,7 @@ That separation produced three problems:
 2. Authors kept restating the PRD's "why" because the delivery spec was the doc people actually read during build.
 3. The PRD's "how" sections (Solution, Acceptance Criteria, Non-goals) overlapped with the delivery spec, and the two drifted.
 
-The RFC collapses both. It's a living document from approval through ship. It's framed around the **user's job**, not our launch. And it leaves the **how** open — solutions are the team's (and the AI's) creative work, not the RFC author's prescription.
+The RFC collapses both. It's a living document from approval through ship. It's framed around the **user's job**, not our launch. And it leaves the **how** open: solutions are the team's (and the AI's) creative work, not the RFC author's prescription.
 
 ---
 
@@ -47,7 +47,7 @@ The RFC opens with the user's job (in JTBD form), not the feature we want to bui
 
 ### 2. Failure is a first-class concept
 
-Every RFC must name how the **user** would fail at the job — not just how our launch would fail.
+Every RFC must name how the **user** would fail at the job, not just how our launch would fail.
 - **Hard failure** — user can't complete the job.
 - **Soft failure** — user completes it but is worse off than before.
 - **Silent failure** — user appears to succeed but didn't get the outcome they wanted (often the most damaging because it looks fine in analytics).
@@ -69,7 +69,7 @@ The same RFC gets read by a coding agent drafting a first cut, by an engineer re
 
 ### 5. Living document
 
-An RFC is approved in draft and stays alive through ship. Decisions made during delivery update the RFC. When the team learns the job is shaped differently than expected, the RFC changes (or it gets re-approved if the change is large) — and if the *job itself* shifted, the durable [Job Spec](../templates/job-spec.md) it references is updated too.
+An RFC is approved in draft and stays alive through ship. Decisions made during delivery update the RFC. When the team learns the job is shaped differently than expected, the RFC changes (or it gets re-approved if the change is large), and if the *job itself* shifted, the durable [Job Spec](../templates/job-spec.md) it references is updated too.
 
 ---
 
@@ -118,7 +118,7 @@ The RFC author owns shepherding it through approval. Anyone can be the author.
 
 ## RFC structure
 
-The [template](../templates/rfc.md) has these sections. The order matters — it's the order a reader (human or agent) needs them.
+The [template](../templates/rfc.md) has these sections. The order matters: it's the order a reader (human or agent) needs them.
 
 1. **Status** — Header block with owner, approver, named outcome advanced, Job Spec link, tracker.
 2. **TL;DR** — Three sentences: the job, what success looks like, the biggest constraint.
@@ -146,7 +146,7 @@ Use the JTBD form:
 
 > **When** `[situation]`, **`[persona]` wants to** `[motivation]`, **so they can** `[outcome]`.
 
-Map the forces around the job in the JTBD sense — what pushes the user toward a new solution, what pulls them, what habit they're fighting. See [JTBD Guide](./jtbd-guide.md). Forces tell you whether the job is *active* (people are looking for solutions) or *latent* (people have settled for the current state). Record them in your discovery notes; a brief summary can go in the RFC body, but the full table is not required in the template.
+Map the forces around the job in the JTBD sense: what pushes the user toward a new solution, what pulls them, what habit they're fighting. See [JTBD Guide](./jtbd-guide.md). Forces tell you whether the job is *active* (people are looking for solutions) or *latent* (people have settled for the current state). Record them in your discovery notes; a brief summary can go in the RFC body, but the full table is not required in the template.
 
 ### How Users Fail Today
 
@@ -167,7 +167,7 @@ Plus **leading indicators** — early signals (≤ 2 weeks post-launch) that tel
 
 This is the section most teams skip. **Don't.** If you can't name how the user would fail, you don't understand the job well enough.
 
-For each failure mode, name the **detection signal** — how would you know in production that this is happening? Without detection signals, failure modes are theoretical.
+For each failure mode, name the **detection signal**: how would you know in production that this is happening? Without detection signals, failure modes are theoretical.
 
 Then name your **pivot triggers** and **stop triggers**. Specific. "60d adoption < 20% of target persona" is a trigger. "If things go badly" is not.
 
@@ -189,7 +189,7 @@ The hard part. Describe the shape of an acceptable solution **without prescribin
 - **Must not do** — excluded behaviours.
 - **Free to vary** — dimensions design and engineering choose.
 
-It's okay (and helpful) to include 2–3 *illustrative* approaches as one-line sketches. Label them clearly as illustrative — the goal is to show the shape of the envelope, not to pre-pick a winner.
+It's okay (and helpful) to include 2–3 *illustrative* approaches as one-line sketches. Label them clearly as illustrative: the goal is to show the shape of the envelope, not to pre-pick a winner.
 
 ### Evidence
 
@@ -240,8 +240,8 @@ Approval depth scales with the path and the stakes of the work.
 A change ships only when all four hold:
 
 1. it advances a named vision outcome (it's in scope at all);
-2. it satisfies its Job Spec (does the user's job) — proven by its outcome UAT;
-3. it passes every principle check — product AND engineering standards (a "no" is a redesign, not a follow-up);
+2. it satisfies its Job Spec (does the user's job), proven by its outcome UAT;
+3. it passes every principle check: product AND engineering standards (a "no" is a redesign, not a follow-up);
 4. it crosses no invariant (the lines you won't cross by construction).
 
 ### Pre-review checklist
@@ -293,11 +293,11 @@ Useful prompts:
 
 - *"Draft an RFC for `[job]`. Use the template at `templates/rfc.md`. Lead with the JTBD. Generate 3 plausible user-failure modes, each with a detection signal."*
 - *"Review this RFC against the approval checklist. Flag missing sections and ungrounded claims. Don't invent evidence."*
-- *"Propose 3 illustrative solution-space sketches that respect the guardrails. Label each as illustrative — do not commit to one."*
+- *"Propose 3 illustrative solution-space sketches that respect the guardrails. Label each as illustrative. Do not commit to one."*
 
 ### When an agent authors or implements the RFC: review it adversarially
 
-When an agent drafts the RFC — or implements against it — the **author cannot grade its own work** (it rubber-stamps). A separate, **fresh-process reviewer** (a different agent with fresh context, or a human) must check it and return an explicit **APPROVE / REQUEST_CHANGES / BLOCK** verdict, citing the specific section or `file:line`. Iterate until APPROVE, and don't let an automated merge fire before then. This is the design-loop discipline from [Agentic Delivery](./agentic-delivery.md) — it *extends* the [approval](#approval) gate above, it doesn't replace it.
+When an agent drafts the RFC, or implements against it, the **author cannot grade its own work** (it rubber-stamps). A separate, **fresh-process reviewer** (a different agent with fresh context, or a human) must check it and return an explicit **APPROVE / REQUEST_CHANGES / BLOCK** verdict, citing the specific section or `file:line`. Iterate until APPROVE, and don't let an automated merge fire before then. This is the design-loop discipline from [Agentic Delivery](./agentic-delivery.md): it *extends* the [approval](#approval) gate above, it doesn't replace it.
 
 ---
 
