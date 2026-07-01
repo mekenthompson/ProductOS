@@ -39,7 +39,7 @@ This is the *judgment* layer — how a person runs product day to day.
 | [discovery.md](./discovery.md) | Validating problems before writing an RFC. |
 | [customer-feedback.md](./customer-feedback.md) | Handling and triaging product feedback. |
 | [rice.md](./rice.md) | RICE scoring framework. |
-| [personas.md](./personas.md) | The three-persona pattern (Creator / Consumer / Sponsor). |
+| [personas.md](./personas.md) | How to write personas that are load-bearing — who hires the job, what good and bad look like. |
 | [headline-metric.md](./headline-metric.md) | Picking the single number the work anchors on. |
 | [tools-we-use.md](./tools-we-use.md) | Reference toolchain. |
 

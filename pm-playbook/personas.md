@@ -1,147 +1,84 @@
 ---
-title: Three Personas
-description: How to define the three personas every product needs — Creator, Consumer, Sponsor
-last_reviewed: 2026-05-12
+title: Personas
+description: How to write personas that are load-bearing — who hires the job, what good and bad look like, and how they tie back to the Job Spec
+last_reviewed: 2026-07-02
 icon: "📖"
 ---
 
-# Three Personas
+# Personas
 
-Almost every product has three audiences, even when the team only talks about one. Naming all three keeps the team honest about who they're building for and which trade-offs are showing up unintentionally.
+A persona names *who* is hiring a job. It's the human on the other side of the [Job Spec](../templates/job-spec.md): the person in a situation, trying to make progress. Get the persona sharp and the job writes itself. The outcome, the stakes, and the good/bad lines all fall out of "who is this for and what are they really trying to do?" Get it vague and every downstream artifact inherits the fog.
 
-This guide explains the three-persona pattern, how each persona connects to the rest of the playbook, what a strong persona description contains, and how to adapt the model when your product doesn't obviously have all three.
+This guide is about how to *write* a persona, not a fixed set to copy. There's no canonical list. What matters is that each persona you write is specific enough to be load-bearing: it predicts behaviour, it disambiguates an RFC, and it makes a trade-off visible instead of hiding it.
 
----
-
-## The pattern
-
-| Persona | What they do | Who pays |
-|---|---|---|
-| **Creator** | Configures and operates the product on behalf of others | Usually a budget holder or platform owner |
-| **Consumer** | Uses the product day-to-day; doesn't choose it | Usually not a buyer |
-| **Sponsor** | Funds the product; accountable for the outcome it produces | Always the buyer or budget owner |
-
-A *Creator* sets it up. A *Consumer* lives in it. A *Sponsor* pays for it and gets asked whether it worked.
-
-Each persona experiences the product (and the [headline metric](../anchors/product-vision.md)) differently. If a feature improves life for one persona while making it worse for another, that's a real trade-off — and the team should be able to articulate it.
+> [!IMPORTANT]
+> A persona only earns its place when it changes a decision. If it never gets cited in a real Job Spec, RFC, or trade-off, it's decoration — cut it.
 
 ---
 
-## How personas connect to the rest of the playbook
+## What a persona is for
 
-| Where it shows up | How personas are used |
-|---|---|
-| [Product Vision](../anchors/product-vision.md) | Each persona gets a one-line "vision lens" question. |
-| [RFC Template](../templates/rfc.md) | Every RFC names the primary persona served and (optionally) the secondary. Unclear persona = unclear value. |
-| [RICE](./rice.md) | Reach is scored *per persona*, not as a single blended number. |
-| [Decision Framework](./decision-framework.md) | "Signal" depends on whether a real persona has a real problem. |
-| [Post-Launch Review](./templates/post-launch-review.md) | Adoption is reviewed per persona — overall numbers hide persona-level failure. |
+A persona earns its place when it changes a decision. Concretely, a good persona:
 
----
+- **Feeds the Job Spec.** The "who is hiring this, in what situation" line in a [Job Spec](../templates/job-spec.md) *is* the persona. If you can't name the persona, the job story is guessing.
+- **Disambiguates an RFC.** Every RFC names its primary persona. If two personas look equally plausible, the persona descriptions aren't sharp enough yet.
+- **Surfaces trade-offs.** When a change helps one persona at another's expense, naming both is what turns an accident into a decision.
 
-## What a good persona description looks like
-
-Three properties:
-
-1. **A motivation, not a job title.** "Operations manager" is a category; "Operations manager accountable for throughput across the team, judged monthly on error rate" is a persona. The motivation is what predicts behaviour.
-
-2. **One sentence on what they need from the product.** Not a list of features — a description of the *outcome*. If you can't say it in one sentence, you're describing more than one persona.
-
-3. **A vision-lens question.** A single question that asks "how fast / how clearly / how reliably does this persona get the outcome they need?" The question should be answerable from product data, and should map directly to the [headline metric](../anchors/product-vision.md).
-
-> 💡 Optional but useful: a one-line *anti-pattern* per persona — the kind of thing that looks helpful but actually makes their job harder. E.g. "Adding configuration knobs that the Creator must explain to every Consumer."
+If a persona does none of these, it's just a demographic sketch that never gets cited in a real decision. That's the decoration to cut.
 
 ---
 
-## When are personas "done"?
+## What good and bad look like
 
-The personas are ready to anchor the playbook when **every one of these is true**:
+Personas follow the same discipline as the Job Spec's [Good / bad](../templates/job-spec.md) section: paired, observable, specific. A persona is written well when it reads like a motivation you could predict behaviour from, badly when it reads like a job title with a headshot.
 
-- [ ] **2–4 personas, no more.** Five is too many to remember; one is too few to surface trade-offs.
-- [ ] **Each persona has a one-sentence outcome statement.**
-- [ ] **Each persona has a vision-lens question** that maps to the headline metric.
-- [ ] **Buying / not-buying split is explicit.** It is clear which persona pays.
-- [ ] **A real RFC can name its primary persona** without ambiguity. Try one. If two personas look equally plausible, your descriptions aren't sharp enough.
-- [ ] **Trade-offs surface.** Look at the last three things you shipped. Can you say which persona each one served *at the expense of* another? If every feature serves all personas equally, the personas are too vague.
+**Good looks like**
 
----
+- **A motivation, not a title.** "Ops manager accountable for throughput, judged monthly on error rate" — the accountability predicts what they'll click, ignore, and complain about.
+- **One sentence on the outcome they need** — the progress they're making, not a feature list. If it takes more than a sentence, you've merged two personas.
+- **An explicit buy / don't-buy position.** It's clear whether this persona chooses the product, is handed it, or signs the cheque. That single fact reshapes the whole job.
+- **A stated situation or trigger.** *When* they reach for the product — the moment that starts the job — not a static description of their role.
+- **Testable against a real named customer.** You can point at three actual people and say "that's this persona."
 
-## How to adapt the three-persona pattern
+> [!CAUTION]
+> **Bad looks like — never ship these.**
 
-### Step 1 — Identify the Sponsor first
-
-The Sponsor is the easiest one to identify: it's the person who signed the contract or approved the budget. If you can't name them, you have a sales problem, not a product problem. Document what they care about — usually trend lines, ROI, and the boardroom question "is this working?"
-
-### Step 2 — Decide whether you have one or two end-user personas
-
-The Creator/Consumer split exists when the person who *sets up* the product is different from the person who *uses* it. Examples:
-
-- **Two-persona products:** Admin-heavy SaaS where one role configures the system and another role uses it day-to-day; internal tools used by frontline staff under a platform owner; B2B platforms where IT/ops sets up and end-users transact.
-- **One-persona products (no Creator):** Most consumer products and prosumer SaaS, where the user installs and uses the product themselves.
-- **Creator is the Sponsor:** Solo founders / small-team tools, where the buyer is also the configurator.
-
-If you have one end-user persona, that's fine — just don't pretend you have two. Conversely, if you have a Creator and a Consumer but only talk about the Consumer, you'll quietly ship features that make Creators miserable.
-
-### Step 3 — Write the vision-lens questions
-
-The vision lens converts the headline metric from the [Product Vision](../anchors/product-vision.md) into a persona-specific question. Each persona should have one.
-
-Template:
-
-> How fast / how clearly / how reliably does `[persona]` go from `[trigger event]` to `[outcome that moves the headline metric]`?
-
-If the headline metric is *time-to-X*, every persona's lens should be a time question. If it's *retention*, every lens is about why they'd come back. The lenses should be consistent in shape — that's what lets the team compare across personas.
-
-### Step 4 — Stress-test against real customers
-
-Pick three real customers (named, not hypothetical). Map each individual contact to a persona. If three customers' contacts all map cleanly, you're done. If one contact maps to "none of the above," either you missed a persona or the customer is outside your ICP. Both are useful answers.
-
-### Step 5 — Use them
-
-Personas only earn their keep when they're load-bearing. Add a *primary persona* field to your RFC template. Score Reach per persona in RICE. Slice adoption dashboards by persona. When a PR review surfaces a trade-off, name the persona on each side.
+- **A demographic card.** "Sarah, 34, marketing manager, likes efficiency." Nothing here predicts a single decision.
+- **A role with no accountability.** "Developer" or "admin" is a category, not a persona — it doesn't tell you what they're judged on.
+- **A features wishlist dressed as a person.** If the "needs" section is a backlog, you've described the product, not the human.
+- **A persona nobody can find.** If you can't map it to a real customer contact, it's a hypothesis — label it as one or drop it.
+- **One persona per feature.** Personas multiply to justify scope. Two-to-four that recur beat a dozen that appear once.
 
 ---
 
-## Example personas (generic)
+## Writing one
 
-> The example below shows the *shape* of finished personas for a hypothetical operations tool. Replace with your own.
+**1 — Start from the job, not the org chart.** Ask who is trying to make progress, and in what situation. The persona is the answer to "who is hiring this job." A role ("procurement lead") becomes a persona when you add the accountability and the trigger ("procurement lead who has to justify spend at quarter-end and gets audited on it").
 
-### Configurators
-Operations leaders who define how events route through the system, what counts as "actioned," and which routing rules apply. They're accountable for the overall throughput of the system, not for individual events.
+**2 — Name what they're judged on.** The single sharpest thing you can add. What predicts a persona's behaviour is rarely their title — it's the metric or the boss they answer to. This is also what tells you which good/bad lines matter to them.
 
-**What they need:** Powerful configuration that doesn't require code, sensible defaults, and the confidence that a small change won't break things downstream.
+**3 — Write the outcome in one sentence.** The progress they get, present tense, no features. If you need a list, you're describing two personas or a product tour.
 
-**Vision lens:** How fast can a Configurator go from "we need a new routing rule" to "operators are using it correctly"?
+**4 — Fix their relationship to the money.** Do they choose the product, get handed it, or fund it? A user who didn't choose the tool judges it differently from the person who signed the contract. Make this explicit — it's the fact most often left implicit and most often load-bearing.
 
-### Operators
-Frontline staff who see events arrive and decide what to do next. They didn't choose this tool; their org did. They interact with the system hundreds of times a day and judge it on one thing: did it tell them what they needed to know, fast?
+**5 — Stress-test against three real customers.** Named people, not hypotheticals. Map each contact to a persona. Clean mapping = done. A contact that maps to "none of the above" means either a missing persona or a customer outside your ICP — both useful answers.
 
-**What they need:** Speed, clarity, zero friction. Events that explain themselves. A UI that never makes them dig for the answer.
-
-**Vision lens:** How fast does an Operator go from "new event arrived" to "I know what to do next"?
-
-### Sponsors
-VPs and directors accountable for throughput, error rate, and overall team output. They care about trends, not individual events: how reliable is the system over time, are we getting better, is the platform investment paying off?
-
-**What they need:** Aggregate insight they can trust. Dashboards that answer "are we getting better?" without a data engineer building them. Evidence that justifies continued investment.
-
-**Vision lens:** How fast does a Sponsor go from "how is the team doing?" to an answer they can act on?
+**6 — Make it load-bearing.** A persona only earns its keep when it's cited. Put a primary-persona field on the RFC template. Slice adoption by persona. When a review surfaces a trade-off, name the persona on each side. A persona that never gets referenced quietly rots.
 
 ---
 
-## Using Personas in Product Decisions
+## How many, and the trade-off test
 
-When evaluating a feature or RFC, ask:
+Two to four. One is too few to surface a trade-off; five is too many to hold in your head during a decision.
 
-1. **Which persona does this serve?** (You should be able to name at least one)
-2. **Does it meet their needs as defined above?**
-3. **Does it move the vision-lens question in the right direction?**
+The test for whether your personas are real: look at the last three things you shipped. Can you say which persona each one served, *at the expense of* which other? If every feature appears to serve everyone equally, the personas are too vague to be doing any work — sharpen them until the trade-offs show.
 
-If you can't clearly answer which persona benefits and how, the feature may not be aligned with your vision.
+A common and legitimate shape is a split between the person who *sets up* a product, the person who *uses* it day-to-day, and the person who *funds* it — three different humans with three different definitions of "working." But that's one useful pattern, not a required template. Some products have one persona; some have four. Write the ones your product actually has, and only the ones that change a decision.
 
 ---
 
 ## Related
 
-- [Product Vision](../anchors/product-vision.md) — Personas live alongside the vision and headline metric.
-- [JTBD Guide](../guides/jtbd-guide.md) — Jobs to be Done, which complements personas with motivation framing.
+- **[Job Spec](../templates/job-spec.md)** — the persona is the "who is hiring this" line; the Job Spec is where a sharp persona pays off.
+- **[RFC Template](../templates/rfc.md)** — every RFC names its primary persona.
+- **[JTBD Guide](../guides/jtbd-guide.md)** — Jobs to be Done, the motivation framing personas hang on.
