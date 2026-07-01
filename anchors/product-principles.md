@@ -9,9 +9,10 @@ icon: "📖"
 
 Product principles are the engineering and design standards that turn the [product vision](./product-vision.md) into day-to-day quality gates. They are applied in every PR, every design review, every release. They are the "built-well" clause in the [verdict rule](../guides/agentic-delivery.md): a "no" on any principle is a redesign, not a follow-up.
 
-:::note[The three anchors]
-Principles are the second of three anchors: **[Vision](./product-vision.md)** (why), **Principles** (built well), and **[Invariants](./invariants.md)** (lines we won't cross by construction). Together they fuse into the [verdict rule](../guides/agentic-delivery.md).
-:::
+> [!NOTE]
+> **The three anchors**
+>
+> Principles are the second of three anchors: **[Vision](./product-vision.md)** (why), **Principles** (built well), and **[Invariants](./invariants.md)** (lines we won't cross by construction). Together they fuse into the [verdict rule](../guides/agentic-delivery.md).
 
 This guide explains the purpose of principles, what a good set looks like, how to write yours, and how to use them as a working tool, not wall art.
 
@@ -52,9 +53,10 @@ Four properties:
 
 4. **Each has check questions.** Two or three concrete questions a reviewer can ask. Without check questions, principles are interpretation contests.
 
-:::note[Include engineering standards]
-Principles are *engineering and design* standards, not just UX ones. If your product carries real non-functional stakes (security, reliability, scalability, availability, performance), at least one principle should make that bar checkable. A feature can be a delight and still fail because it leaks data or falls over under load. This matters most when an agentic workforce does the building: the non-functional bar is what engineering oversight enforces (see [Agentic Delivery](../guides/agentic-delivery.md)).
-:::
+> [!NOTE]
+> **Include engineering standards**
+>
+> Principles are *engineering and design* standards, not just UX ones. If your product carries real non-functional stakes (security, reliability, scalability, availability, performance), at least one principle should make that bar checkable. A feature can be a delight and still fail because it leaks data or falls over under load. This matters most when an agentic workforce does the building: the non-functional bar is what engineering oversight enforces (see [Agentic Delivery](../guides/agentic-delivery.md)).
 
 ---
 
@@ -181,9 +183,10 @@ Before you ship, ask:
 >
 > If you can't answer all three, you're not done. Redesign, don't ship and patch later.
 
-:::tip[Principles judge Job Specs, they don't replace them]
-A change can satisfy its [Job Spec](../templates/job-spec.md) (it does the user's job) and still fail a principle check (it was built badly). When that happens, the job is the goal; the principles are how you get there without making the product feel like a kit. Both must pass: the all-must-pass gate across the vision outcome, the Job Spec, the principles, and the invariants is the **verdict rule**. See [Agentic Delivery](../guides/agentic-delivery.md).
-:::
+> [!TIP]
+> **Principles judge Job Specs, they don't replace them**
+>
+> A change can satisfy its [Job Spec](../templates/job-spec.md) (it does the user's job) and still fail a principle check (it was built badly). When that happens, the job is the goal; the principles are how you get there without making the product feel like a kit. Both must pass: the all-must-pass gate across the vision outcome, the Job Spec, the principles, and the invariants is the **verdict rule**. See [Agentic Delivery](../guides/agentic-delivery.md).
 
 ---
 
