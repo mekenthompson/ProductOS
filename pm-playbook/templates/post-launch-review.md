@@ -108,4 +108,4 @@ _Schedule all three reviews when you ship, not after. Add calendar invites at la
 
 ---
 
-**Stopping is not failure.** Continuing to invest in something the data says isn't working: that's failure.
+**Stopping is not failure.** Failure is continuing to invest in something the data says isn't working.

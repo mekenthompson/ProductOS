@@ -7,7 +7,7 @@ icon: "📞"
 
 # Customer Call: [Company], [Topic] ([Date])
 
-> Capture what you learned: the problem underneath the request, not the feature they asked for.
+> Capture what you learned. The problem underneath the request, not the feature they asked for.
 
 ## Context
 

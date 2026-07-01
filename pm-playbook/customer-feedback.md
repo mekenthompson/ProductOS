@@ -7,9 +7,9 @@ icon: "👂"
 
 # Handling Product Feedback
 
-Product Feedback is one of the most important inputs into product strategy. It's a unique perspective that can help shape the product direction, qualify opportunities, and delight customers when it turns into a feature request that gets delivered.
+Product Feedback is one of the most important inputs into product strategy. It's a perspective you get nowhere else. It shapes product direction, qualifies opportunities, and delights customers when it turns into a feature request that gets delivered.
 
-Not all Product Feedback will end up as a feature, but it is still important to continue to log and track feedback to help us find patterns and opportunities.
+Not all Product Feedback ends up as a feature. Log and track it anyway. That's how we find patterns and opportunities.
 
 ---
 
@@ -46,7 +46,7 @@ Escalations should be submitted into your Support team's triage queue, in whiche
 
 ## So... what's the process!
 
-All Product Feedback should be routed to a dedicated Product Feedback queue in whichever issue tracker your team uses. The exact routing is product-team-specific, but **the principle is the same: feedback enters one queue with one triage owner**. There are typically 2–3 paths to create a feedback item, e.g.:
+Route all Product Feedback to a dedicated Product Feedback queue in whichever issue tracker your team uses. The exact routing is product-team-specific, but the principle holds: feedback enters one queue with one triage owner. There are usually 2–3 ways to create a feedback item:
 
 ### Option 1: Directly in the issue tracker
 
@@ -70,15 +70,15 @@ All Product Feedback should be routed to a dedicated Product Feedback queue in w
 
 ## What happens next
 
-- The Product Feedback will enter Triage and a member of the Product team will assess the request
-- You'll be able to track Product Feedback as it moves through its review by the Product team. It's here where the Product team will assess value, link it to any existing feedback and/or initiatives already planned and in our roadmap
-- Once Product Feedback has been reviewed it moves to an 'Assessed' state. It will remain here until it is prioritised against all other work in the roadmap and allocated to a team for delivery
+- The Product Feedback enters Triage and a member of the Product team assesses the request
+- You can track Product Feedback as the Product team reviews it. Here the team assesses value and links it to any existing feedback or initiatives already planned and in our roadmap
+- Once reviewed, Product Feedback moves to an 'Assessed' state. It stays there until it's prioritised against all other work in the roadmap and allocated to a team for delivery
 
 ---
 
 ## How to manage customers when they raise Product Feedback
 
-It's important we manage customer expectations with their Product Feedback, showing that we value their input, but not committing to product changes or timelines.
+Manage customer expectations on their Product Feedback. Show that we value their input. Don't commit to product changes or timelines.
 
 ### Suggested Language
 
@@ -99,16 +99,16 @@ It's important we manage customer expectations with their Product Feedback, show
 
 ### Why Avoid These Phrases?
 
-Avoid statements that lack clarity or create unrealistic expectations about immediate action. Instead, focus on communicating confidence that the customer's problem is well understood and will inform potential solutions, without overpromising.
+These phrases are vague or set up expectations of immediate action that we can't meet. Instead, communicate confidence that the customer's problem is well understood and will inform potential solutions, without overpromising.
 
 ### Key Tips
 
-- **Show Empathy:** Acknowledge the customer's situation and validate their experience. Work to deeply understand what the outcome or challenge is that they are facing, why the product currently does not help them with this and the impact on their organisation
-- **Communicate Understanding:** Emphasize that their problem has been clearly documented, including its impact
-- **Manage Expectations:** Avoid implying specific follow-up or timing unless explicitly planned
-- **Offer Workarounds:** Provide actionable advice for addressing their immediate needs while feedback is evaluated
+- **Show Empathy:** Acknowledge the customer's situation and validate their experience. Understand the outcome or challenge they're facing, why the product doesn't help them with it, and the impact on their organisation
+- **Communicate Understanding:** Make clear their problem is documented, including its impact
+- **Manage Expectations:** Don't imply specific follow-up or timing unless it's planned
+- **Offer Workarounds:** Give actionable advice for their immediate needs while feedback is evaluated
 
-This approach ensures customers feel understood and confident in how their feedback is being handled.
+Do this and customers feel understood and confident in how their feedback is being handled.
 
 ### What happens when the customer follows up?
 

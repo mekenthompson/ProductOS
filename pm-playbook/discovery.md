@@ -7,7 +7,7 @@ icon: "🔍"
 
 # Discovery
 
-Discovery is how you replace assumptions with evidence. Do it before you write an RFC.
+Discovery replaces assumptions with evidence. Do it before you write an RFC.
 
 ---
 
@@ -16,7 +16,7 @@ Discovery is how you replace assumptions with evidence. Do it before you write a
 **Do discovery when:**
 - You're writing an RFC and need evidence (3+ customer conversations minimum)
 - Customer feedback is contradictory ("Some want X, others want Y" → understand the job)
-- You're guessing ("I think users would..." → stop thinking, go ask)
+- You're guessing ("I think users would..." → stop guessing, go ask)
 - Data shows a problem but you don't know why (drop-off, low adoption, support tickets spiking)
 
 **Skip discovery when:**
@@ -41,7 +41,7 @@ Discovery is how you replace assumptions with evidence. Do it before you write a
 - Focus on their problem, not your solution ("Tell me about the last time you had to retry that flow" not "Would you use a retry button?")
 - Record it (with permission), take notes, synthesise afterwards
 
-**Output:** Research doc with job stories, direct quotes, problem patterns
+**Output:** a research doc with job stories, direct quotes, and problem patterns
 
 ### 2. Data Analysis
 
@@ -65,7 +65,7 @@ Discovery is how you replace assumptions with evidence. Do it before you write a
 
 **Output:** Competitive summary table in research doc (see [Research Template](./templates/research.md))
 
-**Don't copy competitors. Learn from them.** They might be solving the wrong problem. Use their work as data, not direction.
+**Don't copy competitors. Learn from them.** They might be solving the wrong problem. Their work is data, not direction.
 
 ---
 
@@ -88,7 +88,7 @@ Discovery is how you replace assumptions with evidence. Do it before you write a
 
 **Too much:** You've talked to 20 people, spent a month researching, and still haven't written the RFC.
 
-**The balance:** Discovery should take **days, not weeks**. If it's taking longer, you're overthinking it. Ship the research doc, write the RFC, learn more as you build.
+**The balance:** Discovery takes **days, not weeks**. If it's taking longer, you're overthinking it. Ship the research doc, write the RFC, learn more as you build.
 
 ---
 
@@ -97,7 +97,7 @@ Discovery is how you replace assumptions with evidence. Do it before you write a
 - **Don't lead the witness:** "Do you have trouble with retries?" (bad) vs "Tell me about the last time something failed unexpectedly" (good)
 - **Record everything:** You'll miss things in the moment. Review recordings, pull better quotes.
 - **Synthesise quickly:** Turn notes into insights within 48 hours while it's fresh.
-- **Share as you go:** Drop interesting findings in #product, don't wait for the polished doc.
+- **Share as you go:** Drop findings in #product as you get them. Don't wait for the polished doc.
 
 ---
 

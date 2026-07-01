@@ -9,7 +9,7 @@ icon: "🧩"
 
 Product, engineering, and design form the product triad. Three disciplines, one product. This doc covers how the triad works day to day: who owns what, how decisions get made, and what everyone on a product team can expect from each other.
 
-Everything connects back to the [named outcomes and their signals](../anchors/product-vision.md) in the product vision; those are what every PR, design review, and post-launch review tests against.
+Everything connects back to the [named outcomes and their signals](../anchors/product-vision.md) in the product vision. Those are what every PR, design review, and post-launch review tests against.
 
 > 📖 Read this alongside [Product Playbook](./product-playbook.md) (the operating model) and [PM Handbook](./pm-handbook.md) (for PMs specifically).
 
@@ -22,7 +22,7 @@ Product owns the problem. Engineering owns the solution. Design owns the experie
 **Product** decides *what* to build and *why*, backed by customer evidence.
 
 - PMs bring the research, usage data, and support patterns that prove a problem is real.
-- They set success criteria and decide when something is ready for customers, a broader call than "is the code done" because it includes docs, experience, and GTM readiness.
+- They set success criteria and decide when something is ready for customers. That's a broader call than "is the code done", because it includes docs, experience, and GTM readiness.
 
 **Engineering** decides *how* to build it.
 
@@ -41,9 +41,9 @@ Nobody dictates another's domain. Product doesn't tell engineering which databas
 
 The triad sets direction. Engineers on the team build it. That doesn't make you passive in the process.
 
-**You can identify problems and propose solutions.** If you spot a customer pain point, a UX problem, or a pattern in support tickets, say something. File a bug, raise it in standup, bring it to your EM or PM, or write an RFC yourself. You don't need permission. The bar for a good RFC is evidence of a real problem and a clear solution, regardless of who writes it.
+**You can identify problems and propose solutions.** If you spot a customer pain point, a UX problem, or a pattern in support tickets, say something. File a bug, raise it in standup, bring it to your EM or PM, or write an RFC yourself. You don't need permission. The bar for a good RFC is evidence of a real problem and a clear solution. Who writes it doesn't matter.
 
-**You should know why you're building something.** If you're handed an implementation without context on the problem it solves, ask. "What problem does this solve?" is always a fair question. If the answer isn't clear, that's a signal the work isn't ready.
+**You should know why you're building something.** If you're handed an implementation without context on the problem it solves, ask. "What problem does this solve?" is always a fair question. If the answer isn't clear, the work isn't ready.
 
 **You can expect clarity from the triad.** Clear specs before build starts, honest scope conversations when trade-offs come up, and post-launch reviews that measure whether the thing you built actually worked.
 
@@ -58,7 +58,7 @@ The triad sets direction. Engineers on the team build it. That doesn't make you 
 
 Product describes the problem and success criteria. Design describes what the experience should feel like. Engineering decides how to get there.
 
-If someone hands you an implementation instead of a problem, push back. That applies in both directions. A PM telling engineering what technology to use is just as wrong as engineering telling product which problems matter.
+If someone hands you an implementation instead of a problem, push back. This runs in both directions. A PM telling engineering what technology to use is just as wrong as engineering telling product which problems matter.
 
 ### Decision authority
 
@@ -74,7 +74,7 @@ If someone hands you an implementation instead of a problem, push back. That app
 
 ### Your product principles are the quality bar
 
-Whatever set of [product principles](../anchors/product-principles.md) the team has agreed on, they are applied in PR reviews, design critiques, and scope discussions, by everyone on the triad, not just product or design. When you're reviewing a PR, ask whether the change meets each principle. When design raises a consistency concern grounded in a principle, that's the principle working as intended.
+Whatever set of [product principles](../anchors/product-principles.md) the team has agreed on, everyone on the triad applies them in PR reviews, design critiques, and scope discussions, not just product or design. When you're reviewing a PR, ask whether the change meets each principle. When design raises a consistency concern grounded in a principle, that's the principle working as intended.
 
 See [Product Principles](../anchors/product-principles.md) for how to write and apply yours.
 
@@ -82,7 +82,7 @@ See [Product Principles](../anchors/product-principles.md) for how to write and 
 
 ## Roles when agents do much of the delivery
 
-The triad above still owns the product when an **agentic workforce** does much of the building; what shifts is *execution*, not ownership. Agents own delivery *within the gates*; humans keep the anchors and the judgement. See [Agentic Delivery](../guides/agentic-delivery.md) for the full method.
+The triad above still owns the product when an **agentic workforce** does much of the building. What shifts is *execution*, not ownership. Agents own delivery *within the gates*. Humans keep the anchors and the judgement. See [Agentic Delivery](../guides/agentic-delivery.md) for the full method.
 
 | Responsibility | Human-triad default | When agents deliver |
 |---|---|---|
@@ -95,7 +95,7 @@ The triad above still owns the product when an **agentic workforce** does much o
 | Outcome UAT (customer-ready) | PM defines, Eng runs | Agent runs it; a human spot-checks ≥ 1 real round-trip |
 | Production-readiness (engineering acceptance) | Tech Lead | **Engineering signs off**: depth scales with the stakes |
 
-The load-bearing invariant: **the anchors stay human, and the reviewer is always a fresh process.** Engineers bring expertise and oversight; the agents bring throughput. Higher stakes mean deeper oversight and a higher non-functional bar: same roles, more rigour.
+The load-bearing invariant: **the anchors stay human, and the reviewer is always a fresh process.** Engineers bring expertise and oversight. The agents bring throughput. Higher stakes mean deeper oversight and a higher non-functional bar: same roles, more rigour.
 
 ---
 
@@ -113,7 +113,7 @@ Ideas enter through customer feedback, research, analytics, or internal discover
 | **Lightweight** | Half a day to 2 weeks | 1-page brief (Problem, Solution, Acceptance Criteria, Metrics) | Engineering confirms sizing. Build behind flag. |
 | **Full Spec** | More than 2 weeks | RFC | Engineering confirms feasibility. Full triad alignment before build. |
 
-Quick Wins are worth calling out. If you see something that takes less than half a day and passes Signal and Standard, you don't need an RFC or a meeting. Just do it. This is true for anyone on the team, not just the triad.
+Quick Wins are worth calling out. If you see something that takes less than half a day and passes Signal and Standard, you don't need an RFC or a meeting. Just do it. This holds for anyone on the team, not just the triad.
 
 RFCs aren't exclusive to PMs either. If an engineer or a Design Engineer identifies a problem worth solving, write the RFC. It still gets reviewed and prioritised through the normal process.
 
@@ -131,7 +131,7 @@ One document, not a separate PRD and tech spec. One ship-coupled RFC that captur
 | Technical approach | Engineering |
 | Experience | Design |
 
-All three review the whole thing before build starts. If you're an engineer on the team and the RFC doesn't make sense, raise it before you start building. RFCs should answer your questions, not create them.
+All three review the whole thing before build starts. If you're an engineer on the team and the RFC doesn't make sense, raise it before you start building. An RFC should answer your questions, not create them.
 
 > 🔗 See [Writing an RFC](../guides/product-specs.md) for the full guide and [RFC Template](../templates/rfc.md) for the template.
 
@@ -148,7 +148,7 @@ Scope is a conversation, not a mandate.
 - Design simplifies flows.
 - The triad lands on something shippable that solves the actual problem.
 
-If the problem is real but the solution is too expensive or the experience can't be simplified enough, the answer is to find a simpler way to solve the same problem. Not "build it anyway." Not "drop it." Find a cheaper path to the same outcome.
+If the problem is real but the solution is too expensive or the experience can't be simplified enough, find a simpler way to solve the same problem. Not "build it anyway." Not "drop it." Find a cheaper path to the same outcome.
 
 > ⚠️ Effort estimates feed [RICE scores](./rice.md), which feed prioritisation. A sandbagged estimate distorts that just as much as an optimistic one. Give your best guess, flag uncertainty, and update when you learn more.
 
@@ -162,7 +162,7 @@ If you can't measure it, don't ship it.
 - Wire up analytics before launch.
 - Post-launch reviews depend on this data, and the feedback loop breaks without it.
 
-PMs define the criteria, but engineers wire up the instrumentation and Design Engineers validate that the experience works as intended. If you don't know what "success" looks like for the thing you're building, ask before you start.
+PMs define the criteria. Engineers wire up the instrumentation and Design Engineers validate that the experience works as intended. If you don't know what "success" looks like for the thing you're building, ask before you start.
 
 ---
 
@@ -170,7 +170,7 @@ PMs define the criteria, but engineers wire up the instrumentation and Design En
 
 Shipping is the beginning. Shipped work gets measured, not to judge, but to learn.
 
-Post-launch reviews happen at **2 weeks**, **30 days**, and **60-90 days**. PM runs them, but the data comes from the instrumentation the team wired up. The outcome is one of:
+Post-launch reviews happen at **2 weeks**, **30 days**, and **60-90 days**. PM runs them. The data comes from the instrumentation the team wired up. The outcome is one of:
 
 | Outcome | What it means |
 |---------|--------------|
@@ -188,7 +188,7 @@ Stopping is not failure. Continuing to invest in something the data says isn't w
 
 If a technical approach involves trade-offs that future engineers will wonder about, write it down. ADRs (Architecture Decision Records) capture the context, options considered, and rationale. Link them from the RFC so the reasoning is discoverable.
 
-Tech debt, infrastructure work, refactors, and reliability improvements don't need an RFC. But they need visibility.
+Tech debt, infrastructure work, refactors, and reliability improvements don't need an RFC. They do need visibility.
 
 > ⚠️ EMs and Tech Leads: drop a note in the issue tracker so the rest of the team knows where capacity is going. If nobody knew a refactor was eating two weeks of capacity, that's a problem regardless of whether the refactor was worth it.
 
@@ -217,7 +217,7 @@ Two decisions, two owners:
 - Both need to be true before GA.
 
 **Design and engineering disagree on implementation.**
-Start with the principle: does the proposed approach pass "one mind built this"? If it creates inconsistency with adjacent features, design's concern is valid. If the consistent approach has serious technical cost, engineering's concern is valid. Talk it through.
+Start with the principle: does the proposed approach pass "one mind built this"? If it creates inconsistency with adjacent features, design's concern is valid. If the consistent approach carries serious technical cost, engineering's concern is valid. Talk it through.
 
 **Design wants to rethink the approach mid-build.**
 If usability testing found a real problem, that's the system working. Better to adjust now than ship something users struggle with. If it's a preference change, weigh it against delivery cost. Design explains the why, engineering scopes the impact, product decides if the trade-off is worth it.

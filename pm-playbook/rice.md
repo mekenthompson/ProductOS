@@ -7,7 +7,7 @@ icon: "📊"
 
 # RICE Assessment
 
-RICE is a framework for **comparing projects** on the same basis. Three value dimensions divided by effort to produce an ROI-based grade.
+RICE compares projects on the same basis. Three value dimensions divided by effort gives you an ROI-based grade.
 
 **What RICE does:**
 
@@ -19,7 +19,7 @@ RICE is a framework for **comparing projects** on the same basis. Three value di
 
 - Automatically approve or reject projects
 - Determine when work gets scheduled
-- Override business judgment or strategic considerations
+- Override business judgement or strategic considerations
 
 **Applies to:** initiatives scored in an RFC
 **When to score:** During Decide, include in the RFC
@@ -44,7 +44,7 @@ Round to one decimal place.
 | **1.5–2.9** | C | Moderate ROI: uncertain value or higher effort |
 | **<1.5** | D | Low ROI: limited value or expensive to deliver |
 
-Grades describe ROI relative to other projects, not what to do with them. A C-grade project with high strategic importance may still be the right thing to build. Strategy determines what to work on. RICE helps you sequence within a strategic bucket.
+Grades describe ROI relative to other projects, not what to do with them. A C-grade project with high strategic importance may still be the right thing to build. Strategy decides what to work on. RICE sequences within a strategic bucket.
 
 ---
 
@@ -69,7 +69,7 @@ _How broad is the audience?_
 
 _How much does this change the outcome for each affected account?_
 
-This is about **depth**, not breadth. Reach covers how many accounts are touched. Impact covers how much it matters to each one.
+This is depth, not breadth. Reach covers how many accounts are touched. Impact covers how much it matters to each one.
 
 | Score | Definition | Signal | Example |
 |-------|------------|--------|---------|
@@ -142,7 +142,7 @@ If any dimension is unknown, mark as **TBD**. Grade cannot be calculated until a
 
 ### Strategic Bucket Allocation
 
-RICE ranks projects **within** strategic buckets, not across them. Your annual strategy document defines this year's strategic levers and capacity allocations.
+RICE ranks projects within strategic buckets, not across them. Your annual strategy document sets this year's strategic levers and capacity allocations.
 
 **Strategic levers:**
 - **Acquisition:** Land and convert new customers
@@ -154,7 +154,7 @@ A B-grade retention project may beat an A-grade acquisition project if the reten
 
 ### High Effort, High Value
 
-A project can score C on RICE despite having high absolute value, because RICE measures ROI (value per unit of effort). A 6-month platform project with universal reach and high impact will still have moderate ROI per sprint. That doesn't mean it's wrong to build. Strategy and investment buckets handle those decisions. RICE helps you sequence the work within a bucket so you ship the highest-ROI items first.
+A project can score C on RICE and still have high absolute value, because RICE measures ROI (value per unit of effort). A 6-month platform project with universal reach and high impact still has moderate ROI per sprint. That doesn't mean it's wrong to build. Strategy and investment buckets handle those calls. RICE sequences the work within a bucket so you ship the highest-ROI items first.
 
 ### Low Confidence
 
@@ -164,7 +164,7 @@ If Confidence is 1 or 2, the grade carries more uncertainty:
 - **Low confidence + low grade (C/D):** May not be worth the effort to validate further
 - **High confidence + any grade:** Scoring is well-grounded
 
-Low confidence doesn't automatically mean "don't proceed"; it means "here's the risk profile." Some strategic bets are worth taking despite uncertainty.
+Low confidence doesn't automatically mean "don't proceed." It tells you the risk profile. Some strategic bets are worth taking despite uncertainty.
 
 ---
 
@@ -199,7 +199,7 @@ Every project must include a RICE Explanation that:
 | **Build** | Reference: update if scope changes significantly |
 | **Launch** | Retrospective: compare predicted vs actual |
 
-Score before RFC approval when possible. The score is input to the decision, not a gate.
+Score before RFC approval when you can. The score is input to the decision, not a gate.
 
 **Re-score triggers:**
 

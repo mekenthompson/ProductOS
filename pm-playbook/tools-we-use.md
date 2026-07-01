@@ -7,7 +7,7 @@ icon: "🛠️"
 
 # Tools We Use
 
-This guide is about the **categories** of tooling a product team needs and the conventions that matter inside each. The specific tools (Linear vs Jira vs Shortcut, Notion vs Confluence vs Coda, Claude vs ChatGPT vs Cursor) are implementation details; pick what your company already runs on. The conventions below apply regardless.
+This guide covers the categories of tooling a product team needs and the conventions that matter inside each. The specific tools (Linear vs Jira vs Shortcut, Notion vs Confluence vs Coda, Claude vs ChatGPT vs Cursor) are implementation details. Pick what your company already runs on. The conventions below apply regardless.
 
 ## The categories
 
@@ -22,7 +22,7 @@ This guide is about the **categories** of tooling a product team needs and the c
 | **AI assistant** | Feedback synthesis, draft assist, research summarisation | Claude, ChatGPT, Cursor, Amp, Gemini |
 | **Recording** | Async demos, walkthroughs, customer call recordings | Loom, Tella, Vidyard, Granola |
 
-You only need **one tool per category**. More than that creates copy-paste tax and split-brain documentation.
+You only need one tool per category. More than that creates copy-paste tax and split-brain documentation.
 
 ---
 
@@ -65,7 +65,6 @@ You only need **one tool per category**. More than that creates copy-paste tax a
 **Conventions:**
 
 ### File Naming
-- RFCs: `[Project Name] RFC`
 - RFCs: `[Project Name] RFC`
 - Research: `[Project Name] — [Research Type]` (e.g., "Retry Logic — Customer Research")
 
@@ -113,7 +112,7 @@ Whatever your team has approved enterprise access to: Claude (Claude Code, claud
 
 **When NOT to use:**
 - Strategic decisions (the assistant doesn't know your strategy)
-- RICE scoring (needs human judgment)
+- RICE scoring (needs human judgement)
 - Customer conversations (don't outsource the relationship)
 
 > 💡 Always use your company's approved enterprise account, not a personal one. Personal accounts may not have the right data-handling guarantees for customer information.

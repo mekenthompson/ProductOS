@@ -9,7 +9,7 @@ icon: "👤"
 
 PMs own a simple question: **are we spending engineering time on the highest-leverage work?**
 
-We validate problems through our [personas](./personas.md), build the case for the right bets, and measure whether shipped work moved the [headline metric](../anchors/product-vision.md). The metric is the contract. Everything else is operational.
+We validate problems through our [personas](./personas.md), build the case for the right bets, and measure whether shipped work moved the [headline metric](../anchors/product-vision.md). The metric is the contract. Everything else is operational detail.
 
 Companion to the [Product Playbook](./product-playbook.md) (how we build product as a company). This one is how PMs operate day to day.
 
@@ -21,7 +21,7 @@ Companion to the [Product Playbook](./product-playbook.md) (how we build product
    Ground decisions in evidence, not assumptions. Every RFC should link to real customer conversations, not sales hearsay or internal hunches.
 
 2. **Write clear RFCs with evidence**
-   Get approval before building; link to research. An RFC without evidence is an untested opinion; it doesn't earn engineering time.
+   Get approval before building, link to research. An RFC without evidence is an untested opinion. It doesn't earn engineering time.
 
 3. **Complete monthly rituals**
    Dogfood, onboarding review, competitor review. If you don't use your own product (and theirs), you don't understand the problem space.
@@ -32,7 +32,7 @@ Companion to the [Product Playbook](./product-playbook.md) (how we build product
 5. **Measure actual vs predicted outcomes**
    Track metrics for 3–6 months post-launch. Shipping without measurement is guessing. Post-launch reviews close the loop and make the next bet smarter.
 
-Everything else in this doc supports these 5.
+Everything else in this doc supports these five.
 
 ---
 
@@ -62,7 +62,7 @@ Everything else in this doc supports these 5.
 
 ## PM Operating Rhythm
 
-Outcomes matter more than calendar slots. Here's what needs to happen and roughly how often.
+Outcomes matter more than calendar slots. Here's what needs to happen, and roughly how often.
 
 | Outcome | Cadence | How |
 |---------|---------|-----|
@@ -129,11 +129,11 @@ Understand the customer's problem before proposing solutions.
 
 ## Using AI
 
-We use AI for **augmentation, not automation**. AI tools make you more effective; they don't replace your judgement.
+We use AI for **augmentation, not automation**. AI tools make you more effective. They don't replace your judgement.
 
 **The rules:**
 
-1. **You own the inputs and outputs.** AI is a resource, not a co-author. You must know what good looks like before you ask an agent to help produce it. You're not outsourcing thinking or strategy decisions.
+1. **You own the inputs and outputs.** AI is a resource, not a co-author. You have to know what good looks like before you ask an agent to help produce it. You're not outsourcing thinking or strategy decisions.
 2. **Use approved enterprise accounts only.** Whichever AI tools your company has approved, use them through enterprise accounts, not personal accounts for work.
 3. **Learn from each other.** Have a shared channel where the team posts what's working: share what works, flag what doesn't.
 4. **Follow the AI policy.** Whatever your company's AI usage policy is, follow it. If it doesn't exist yet, write one.
@@ -150,7 +150,7 @@ We use AI for **augmentation, not automation**. AI tools make you more effective
 - Replacing customer conversations
 - Judging product quality (you need to use the product yourself)
 
-**When agents do much of the delivery.** "Augmentation, not automation" governs *judgement*: the vision, the headline metric, which jobs matter, strategy. That stays yours. But agents can *own delivery* (drafting [Job Specs](../templates/job-spec.md), implementing, running design loops, running outcome UATs) **inside the four parts** of [Agentic Delivery](../guides/agentic-delivery.md). The rule: augment the judgement, automate the delivery, keep the gates as the safety rail. Two gates are load-bearing: the **fresh-process reviewer** (an agent can't grade its own work) and the **outcome UAT** (the job is proven, not assumed). The anchors stay human-owned; agents consume them, never author them.
+**When agents do much of the delivery.** "Augmentation, not automation" governs *judgement*: the vision, the headline metric, which jobs matter, strategy. That stays yours. But agents can *own delivery* (drafting [Job Specs](../templates/job-spec.md), implementing, running design loops, running outcome UATs) **inside the four parts** of [Agentic Delivery](../guides/agentic-delivery.md). The rule: augment the judgement, automate the delivery, keep the gates as the safety rail. Two gates are load-bearing: the **fresh-process reviewer** (an agent can't grade its own work) and the **outcome UAT** (the job is proven, not assumed). The anchors stay human-owned. Agents consume them, never author them.
 
 ---
 
@@ -158,7 +158,7 @@ We use AI for **augmentation, not automation**. AI tools make you more effective
 
 **"If you don't use your own product, you don't understand your own product."**
 
-All PMs complete all 3 rituals monthly. Non-negotiable. ~6–8 hours/month total.
+All PMs complete all three rituals monthly. Non-negotiable. ~6–8 hours/month total.
 
 ### Dogfooding
 

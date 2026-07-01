@@ -10,10 +10,10 @@ icon: "🚦"
 A feature doesn't go from "built" to "everyone" in one step. It moves through
 named **release phases**, each with a defined **audience**, **flag state**,
 and **entry / exit criteria**. Every feature ships behind a flag, so every
-phase is reversible: if something breaks, the flag goes off.
+phase is reversible: if something breaks, turn the flag off.
 
 This is tracker-agnostic: the phase names are what matter, not the tool.
-Release phase is *how widely it's on*; it's distinct from the work's
+Release phase is *how widely it's on*. That's a separate thing from the work's
 **stakes / [path](./decision-framework.md)**, which drive *how much GTM
 investment, approval depth, and gate rigour* the release gets.
 
@@ -27,7 +27,7 @@ investment, approval depth, and gate rigour* the release gets.
 - **Flag:** OFF.
 - **Purpose:** build and test in a production environment without exposing
   anything. Wire up instrumentation here (events, dashboards, guardrail
-  metrics) *before* anyone outside sees it.
+  metrics) *before* anyone outside the team sees it.
 - **Exit:** the outcome UAT passes (the user's job is validated end-to-end,
   job × surface, independent of unit tests) and production-readiness is met
   to the stakes. See [Agentic Delivery](../guides/agentic-delivery.md).
@@ -37,8 +37,8 @@ investment, approval depth, and gate rigour* the release gets.
 - **Audience:** 5–10 trusted customer accounts (hand-picked, friendly).
 - **Flag:** ON for those specific accounts.
 - **Purpose:** real feedback from real users on the real path, with low blast
-  radius. Fix critical bugs, watch production stability, confirm the outcome
-  holds outside the building.
+  radius. Fix critical bugs, watch production stability, and confirm the
+  outcome holds outside the building.
 - **Exit:** private-preview feedback summarised, critical tickets resolved,
   stability holding, then the **Launch Readiness Check** gate (below).
 
@@ -48,7 +48,7 @@ investment, approval depth, and gate rigour* the release gets.
 - **Flag:** ON for the preview cohort.
 - **Purpose:** test at scale before committing to everyone: load, edge
   cases, adoption signal, support volume. This is where you learn whether it
-  works for a broad base, not just friendly accounts.
+  works for a broad base, not just the friendly accounts.
 - **Exit:** adoption and stability thresholds met, no critical issues, GA
   sign-off.
 
@@ -78,7 +78,7 @@ investment, approval depth, and gate rigour* the release gets.
 ## The gate between private and wider release
 
 Moving past Private Preview is a real checkpoint: the **Launch Readiness
-Check**. Don't widen the audience until:
+Check**. Don't widen the audience until all of this is true:
 
 - the feature is deployed behind a flag in production,
 - the **outcome UAT** is complete (the user's job is proven end-to-end), and
@@ -96,8 +96,8 @@ Gates](./delivery-standards.md#gates-and-approvals).
 ## Rollback
 
 Every phase is behind a flag, so the rollback is always the same: **turn the
-flag off.** No data should be left in a broken state by a phase transition;
-prefer changes that are reversible within the phase.
+flag off.** A phase transition must never leave data in a broken state. Prefer
+changes that are reversible within the phase.
 
 ---
 

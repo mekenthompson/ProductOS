@@ -11,7 +11,7 @@ icon: "📖"
 
 Every idea, request, or problem that reaches a PM needs an answer to one question: **what's the right path for this work?**
 
-Not everything needs an RFC. Not everything is a quick win. The path should match the size and risk, not force everything through the same process.
+Not everything needs an RFC. Not everything is a quick win. Match the path to the size and risk. Don't force everything through the same process.
 
 ---
 
@@ -40,26 +40,26 @@ Does this work have a reason to exist right now?
 - **Validated need?** Is there evidence beyond one person's opinion? (Customer feedback, usage data, support tickets, competitive gap)
 - **What happens if we don't?** If the answer is "nothing," question whether this is the right use of engineering time.
 
-If Signal is weak, park it. Capture the idea in your issue tracker with context, but don't invest further until evidence strengthens.
+If Signal is weak, park it. Capture the idea in your issue tracker with context. Don't invest further until the evidence strengthens.
 
 ### Step 2: Standard
 
 Does the proposed approach pass each of your [product principles](../anchors/product-principles.md)? Run the check questions for each principle against the proposed solution.
 
-If Standard fails, redesign the approach before investing engineering time. A fast solution that violates principles creates more work later.
+If Standard fails, redesign the approach before you spend engineering time. A fast solution that breaks the principles just creates more work later.
 
 ### Step 3: Speed
 
 How big is the work? This determines the path.
 
 **≤ half a day → Quick Win**
-Flag it with your EM or PM. If it aligns with the team's current priorities, get on with it. No RFC needed, but use good judgment: each team has a limited budget for Quick Wins per sprint so we stay focused on strategic work. Changelog if it changes UX. Notify support always. Tag it `quick-win` in your tracker.
+Flag it with your EM or PM. If it aligns with the team's current priorities, get on with it. No RFC needed, but use judgement: each team has a limited budget for Quick Wins per sprint so we stay focused on strategic work. Changelog if it changes UX. Always notify support. Tag it `quick-win` in your tracker.
 
 **Half a day – 2 weeks → Lightweight**
 Write a 1-page brief (see template below). Get PM + Tech Lead sign-off. Ship behind a feature flag. Do a 2-week check-in after launch.
 
 **> 2 weeks → Full Spec**
-Write a full [RFC](../templates/rfc.md) with RICE score. Get Head of Product sign-off. Follow the full delivery process. (The RFC references the relevant [Job Spec](../templates/job-spec.md), the durable outcome contract that outlives this initiative.)
+Write a full [RFC](../templates/rfc.md) with a RICE score. Get Head of Product sign-off. Follow the full delivery process. The RFC references the relevant [Job Spec](../templates/job-spec.md), the durable outcome contract that outlives this initiative.
 
 ---
 
@@ -124,19 +124,19 @@ How does this move a named outcome (and its signal) from the [product vision](..
 ## Common Questions
 
 **What if I'm not sure about the size?**
-Talk to your Tech Lead in the weekly scoping session. Sizing is a 5-minute conversation, not a week of analysis. If the Tech Lead says "I'm not sure," that usually means it's bigger than a lightweight, so write the RFC.
+Talk to your Tech Lead in the weekly scoping session. Sizing is a 5-minute conversation, not a week of analysis. If the Tech Lead says "I'm not sure," it's usually bigger than a lightweight, so write the RFC.
 
 **What about urgent customer issues?**
-Urgent doesn't change the path, it changes the priority. A 3-day fix for a churning customer is still a Lightweight brief, but it goes to the top of the queue. The PM + Tech Lead approve same-day. Escalation to the Head of Product if needed.
+Urgent doesn't change the path, it changes the priority. A 3-day fix for a churning customer is still a Lightweight brief, it just goes to the top of the queue. The PM + Tech Lead approve same-day. Escalate to the Head of Product if needed.
 
 **What about platform/infrastructure work?**
-Same three paths. Tech debt, reliability improvements, and dependency upgrades use the same decision tree. The evidence is different (incidents, performance data, security advisories instead of customer interviews), but Signal → Standard → Speed still applies.
+Same three paths. Tech debt, reliability improvements, and dependency upgrades run through the same decision tree. The evidence is different (incidents, performance data, security advisories instead of customer interviews), but Signal → Standard → Speed still applies.
 
 **Can a Quick Win grow into a Lightweight?**
 Yes. If you start a Quick Win and realise it's bigger than expected, stop and write the brief. Don't scope-creep a Quick Win into an undocumented 5-day project.
 
 **Who decides which path?**
-The PM, informed by the Tech Lead's sizing. If there's disagreement, the PM decides the path (it's a process decision, not a technical one). If the Tech Lead thinks the PM is under-sizing, that's a conversation worth having before committing.
+The PM, informed by the Tech Lead's sizing. If there's disagreement, the PM decides the path. It's a process decision, not a technical one. If the Tech Lead thinks the PM is under-sizing, have that conversation before committing.
 
 ---
 
@@ -151,9 +151,9 @@ The PM, informed by the Tech Lead's sizing. If there's disagreement, the PM deci
 
 ## Strategic Buckets
 
-Strategy determines which buckets get capacity. RICE determines priority **within** those buckets. This keeps strategy driving allocation, not RICE gaming.
+Strategy decides which buckets get capacity. RICE decides priority **within** those buckets. Strategy drives allocation, not RICE gaming.
 
-Each bucket gets a capacity allocation (e.g., 40% Growth, 30% Enterprise, 20% Platform, 10% DX). Buckets and allocations come from your annual strategy document and are revisited at least yearly.
+Each bucket gets a capacity allocation (e.g., 40% Growth, 30% Enterprise, 20% Platform, 10% DX). Buckets and allocations come from your annual strategy document, revisited at least yearly.
 
 ---
 
@@ -165,6 +165,6 @@ RICE = (Reach + Impact + Confidence) / Effort. Score 1–4 for value dimensions,
 - **Update RICE after scoping**: effort estimates change. Re-score.
 - **Don't optimise for RICE**: optimise for strategy, then let RICE rank within it.
 - **Kill low-confidence work**: if Confidence is 1, do more discovery first.
-- **Revisit deferred items quarterly**: priorities shift.
+- **Revisit deferred items quarterly**: priorities move.
 
 **Full guide:** [RICE Prioritisation](./rice.md)

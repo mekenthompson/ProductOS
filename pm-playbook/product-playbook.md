@@ -15,16 +15,16 @@ Six phases, each feeding the next. The loop closes back to the start.
    Customer research, usage data, and post-launch measurement all feed the same pool. You can't build the right thing if you don't understand the problem.
 
 2. **Decide.** Every idea passes three checks.
-   **Signal** (strategy-aligned with real need?), **Standard** (meets our [product principles](../anchors/product-principles.md)?), **Speed** (half a day or less? flag it with your EM/PM and ship it if it aligns with priorities. More? Write an RFC, bring it to the prioritisation session). Not now ≠ bad idea; it means something else is higher leverage right now.
+   **Signal** (strategy-aligned with real need?), **Standard** (meets our [product principles](../anchors/product-principles.md)?), **Speed** (half a day or less? flag it with your EM/PM and ship it if it aligns with priorities. More? Write an RFC, bring it to the prioritisation session). Not now ≠ bad idea. It means something else is higher leverage right now.
 
 3. **Shape.** Define the solution and align the team.
    Write specs, align Product, Engineering, Design & GTM on scope. Roadmap with honest fidelity: this quarter is high confidence, next quarter is themes, beyond that is direction. Monthly updates, non-negotiable.
 
 4. **Build.** Build to standard.
-   Product principles aren't aspirations; they're engineering standards. Instrument before shipping. Don't ship what you can't measure.
+   Product principles aren't aspirations. They're engineering standards. Instrument before shipping. Don't ship what you can't measure.
 
 5. **Launch.** Shipping is the beginning, not the end.
-   Structured reviews at 2 weeks, 30 days, and 60–90 days with an explicit recommendation: accelerate, iterate, pivot, investigate, or stop. Stopping is not failure.
+   Structured reviews at 2 weeks, 30 days, and 60–90 days, each with an explicit recommendation: accelerate, iterate, pivot, investigate, or stop. Stopping is not failure.
 
 6. **Sell.** Built isn't sold.
    Self-onboarding for PLG, sales enablement for enterprise, a structured PoC process, and adoption tracking from discovery to purchase. What we learn here feeds straight back to Learn.
@@ -35,9 +35,9 @@ Six phases, each feeding the next. The loop closes back to the start.
 
 **Good ideas are abundant. Engineering time is scarce.**
 
-Customers are smart, impatient, and have options. Every hour of engineering time is an hour we can't spend elsewhere. The most important product discipline: spend those hours on the highest-leverage work, then know whether it paid off.
+Customers are smart, impatient, and have options. Every hour of engineering time is an hour we can't spend elsewhere. The most important product discipline: spend those hours on the highest-leverage work, then know whether it paid off. That's the whole game.
 
-The [Product Vision](../anchors/product-vision.md) sets the direction and names the headline metric. This document describes the **Product Loop**: a six-phase closed loop for how ideas become outcomes. Not bureaucracy, but a shared operating system for product decisions.
+The [Product Vision](../anchors/product-vision.md) sets the direction and names the headline metric. This document describes the **Product Loop**: a six-phase closed loop for how ideas become outcomes. It isn't bureaucracy. It's a shared operating system for product decisions.
 
 ![Product Loop: Learn → Decide → Shape → Build → Launch → Sell](images/product-loop.png)
 
@@ -49,13 +49,13 @@ The loop starts with learning and ends with learning. Everything we ship generat
 
 **Mental Model + Behaviour = Assets**
 
-Assets (frameworks, dashboards, templates, cadences) are outputs, not starting points. Without the right mental models and behaviours, assets become shelfware. Every section below makes this explicit: *what we believe → what we do differently → what we produce → why it matters*.
+Assets (frameworks, dashboards, templates, cadences) are outputs, not starting points. Get the mental models and behaviours wrong and the assets become shelfware. Every section below makes this explicit: *what we believe → what we do differently → what we produce → why it matters*.
 
 ---
 
 ## Where Most Teams Start
 
-If any of these sound familiar, this playbook is aimed at you. None of it is unusual; all of it is fixable.
+If any of these sound familiar, this playbook is aimed at you. None of it is unusual. All of it is fixable.
 
 **Work starts without clear vetting.** Without a shared framework, effort scatters across too many fronts.
 
@@ -65,7 +65,7 @@ If any of these sound familiar, this playbook is aimed at you. None of it is unu
 
 **Prioritisation is a black box.** Ideas go in. Silence comes out. Trust erodes.
 
-**Ship and move on.** Nobody systematically measures whether shipped work achieved its goals. A feature driving adoption looks the same as one nobody uses.
+**Ship and move on.** Nobody measures whether shipped work achieved its goals. A feature driving adoption looks the same as one nobody uses.
 
 **Built isn't always sold.** Features ship but don't always reach the customers who need them. Self-serve discovery is inconsistent, enterprise enablement is ad-hoc.
 
@@ -91,7 +91,7 @@ Every product decision should be traceable to evidence: customer research, usage
 - Post-launch review data feeding back into evidence base
 
 ### Why It Matters
-Without learning, we're guessing. With it, we're placing informed bets. That advantage builds over time.
+Without learning, we're guessing. With it, we're placing informed bets. That advantage compounds over time.
 
 ---
 
@@ -100,7 +100,7 @@ Without learning, we're guessing. With it, we're placing informed bets. That adv
 > *"Good ideas are abundant. Engineering time is scarce."*
 
 ### Belief
-Not every good idea deserves engineering time right now. The discipline is choosing the highest-leverage work for the current strategy, not just filtering out bad ideas.
+Not every good idea deserves engineering time right now. The discipline is choosing the highest-leverage work for the current strategy. Filtering out bad ideas is the easy part.
 
 ### Behaviour
 Three checks, every time, **Signal → Standard → Speed**:
@@ -127,7 +127,7 @@ Every decision gets communicated back to the proposer with reasoning. **"Not now
 - Prioritisation session cadence (fortnightly or monthly, aligned to your sprint)
 
 ### Why It Matters
-Speed comes from clarity, not skipping steps. When everyone knows the criteria, decisions get faster *and* better. Transparent decisions build trust.
+Speed comes from clarity, not skipping steps. When everyone knows the criteria, decisions get faster and better. Transparent decisions build trust.
 
 ---
 
@@ -136,7 +136,7 @@ Speed comes from clarity, not skipping steps. When everyone knows the criteria, 
 > *"Shape the solution before committing the team."*
 
 ### Belief
-Shaping is where alignment happens. The RFC got the "yes"; now the team needs to agree on scope, approach, and delivery plan. Roadmaps should make promises proportional to what we actually know. Pretending otherwise (vague when we should be specific, specific when we should be honest) destroys credibility.
+Shaping is where alignment happens. The RFC got the "yes". Now the team needs to agree on scope, approach, and delivery plan. Roadmaps should make promises proportional to what we actually know. Pretending otherwise (vague when we should be specific, specific when we should be honest) destroys credibility.
 
 ### Behaviour
 - **Write the [RFC](../templates/rfc.md):** a single, living document framed around the user's job, with success and failure modes, guardrails, and a solution space (constraints, not prescriptions)
@@ -155,7 +155,7 @@ Shaping is where alignment happens. The RFC got the "yes"; now the team needs to
 - External roadmap (commitments + themes subset)
 
 ### Why It Matters
-Shaping up front prevents rework. When Product, Engineering, Design & GTM align before build starts, you get fewer mid-build surprises, better estimates, and stronger launch readiness. Sales can make promises because product is making, and keeping, promises.
+Shaping up front prevents rework. When Product, Engineering, Design & GTM align before build starts, you get fewer mid-build surprises, better estimates, and stronger launch readiness. Sales can make promises because product is making promises and keeping them.
 
 ---
 
@@ -164,7 +164,7 @@ Shaping up front prevents rework. When Product, Engineering, Design & GTM align 
 > *"The product is one thing, not a collection of features."*
 
 ### Belief
-Product principles aren't aspirations for some future state. They're engineering standards. Every PR, every design review, every release should meet them. The product should feel like one person built the whole thing.
+Product principles aren't aspirations for some future state. They're engineering standards. Every PR, every design review, every release meets them. The product should feel like one person built the whole thing.
 
 ### Behaviour
 - Product principles applied as **design and engineering standards**, not post-hoc review criteria
@@ -187,7 +187,7 @@ Consistency makes a product feel trustworthy. Instrumentation makes the feedback
 > *"Shipping is the beginning, not the end."*
 
 ### Belief
-The real work starts after launch. Shipping is when we start learning whether our bet paid off. A feature that shipped but nobody uses isn't a success; it's an unanswered question.
+The real work starts after launch. Shipping is when we start learning whether our bet paid off. A feature that shipped but nobody uses isn't a success. It's an unanswered question.
 
 ### Behaviour
 - **Changelog entry for UX changes.** Support notification for everything.
@@ -205,7 +205,7 @@ The real work starts after launch. Shipping is when we start learning whether ou
 | **Investigate** | Below targets + unclear why | Dig deeper before deciding |
 | **Stop** | Flat adoption + no pull | Wind down. Redirect engineering time. |
 
-**Stopping is not failure.** Continuing to invest in something the data says isn't working: that's failure.
+**Stopping is not failure.** Continuing to invest in something the data says isn't working, that's failure.
 
 Analytics tells you *what* (adoption is low). Customer feedback tells you *why* (onboarding is confusing). Together they tell you *what to do* (redesign onboarding, don't add features).
 
@@ -216,7 +216,7 @@ Analytics tells you *what* (adoption is low). Customer feedback tells you *why* 
 - Review recommendations feeding back to Learn
 
 ### Why It Matters
-This closes the loop. Decisions → Commitment → Delivery → Measurement → Learning → Decisions. Without measurement, the loop is open and we're guessing again.
+This closes the loop. Decisions → Commitment → Delivery → Measurement → Learning → Decisions. Without measurement, the loop stays open and we're guessing again.
 
 ---
 
@@ -225,7 +225,7 @@ This closes the loop. Decisions → Commitment → Delivery → Measurement → 
 > *"Built isn't sold. Customers need a clear path from discovery to adoption."*
 
 ### Belief
-A shipped feature that customers can't find, don't understand, or can't adopt on their own is an incomplete investment. The path from "we built it" to "customers use it" requires deliberate effort.
+A shipped feature that customers can't find, don't understand, or can't adopt on their own is an incomplete investment. Getting from "we built it" to "customers use it" takes deliberate effort.
 
 ### Behaviour
 - **Self-onboarding flows (PLG):** Can each [persona](./personas.md) discover and adopt new capabilities without talking to anyone? If any persona can't self-serve, that's a product gap, not a sales gap.
@@ -242,23 +242,23 @@ A shipped feature that customers can't find, don't understand, or can't adopt on
 - Sell-to-Learn feedback loop
 
 ### Why It Matters
-A big signup-to-first-value drop-off tells you something important. You can build the best product in your category and still waste engineering time if customers can't get from signup to value. Sell isn't an afterthought; it's how the investment pays off.
+A big signup-to-first-value drop-off tells you something important. You can build the best product in your category and still waste engineering time if customers can't get from signup to value. Sell isn't an afterthought. It's how the investment pays off.
 
 ---
 
 ## What This Means for the Business
 
 ### Engineering
-Your time is protected. The framework vets work before it reaches you: no more "why are we building this?" halfway through a sprint. Post-ship measurement means we stop investing in things that aren't working and double down on things that are. Less context-switching. More leverage.
+Your time is protected. The framework vets work before it reaches you: no more "why are we building this?" halfway through a sprint. Post-ship measurement means we stop investing in things that aren't working and double down on things that are. Less context-switching, more leverage.
 
 ### Sales
-Reliable roadmap dates this quarter, with monthly refresh. Evidence from post-ship measurement gives you credibility in customer conversations. PoC process is repeatable, not improvised. You can make promises because product is making, and keeping, promises.
+Reliable roadmap dates this quarter, with monthly refresh. Evidence from post-ship measurement gives you credibility in customer conversations. PoC process is repeatable, not improvised. You can make promises because product is making promises and keeping them.
 
 ### Support
 Advance notice of all changes via changelog and direct notification. Roadmap gives you prep time for what's coming. Analytics catches low adoption early, before it becomes a wave of support tickets.
 
 ### Marketing
-Product principles aren't just internal language; they're credible positioning because they're real. Predictable roadmap means confident launch planning. Post-ship data provides proof points for case studies and content.
+Product principles aren't just internal language. They're credible positioning because they're real. Predictable roadmap means confident launch planning. Post-ship data provides proof points for case studies and content.
 
 ### Leadership
 Full decision-to-outcome transparency. Trace from strategy → roadmap → shipped feature → measured outcome → next decision. Monthly checkpoints without ad-hoc status requests. Misses are visible and explained, not hidden.
@@ -273,7 +273,7 @@ Full decision-to-outcome transparency. Trace from strategy → roadmap → shipp
 
 **Not process for process' sake.** The quick-win path (≤ half day) is lightweight: flag it with your EM/PM and go. The RFC path has *clearer* process. The measurement loop is new, and it's the part that makes everything else worthwhile.
 
-**Not something you build all at once.** Mental models and behaviours come first. Assets follow. You don't need a dashboard to start asking "how will we measure this?" You don't need a template to start writing an RFC. Start with the thinking. The tools catch up.
+**Not something you build all at once.** Mental models and behaviours come first. Assets follow. You don't need a dashboard to start asking "how will we measure this?" You don't need a template to start writing an RFC. Start with the thinking. The tools catch up later.
 
 ---
 
@@ -281,7 +281,7 @@ Full decision-to-outcome transparency. Trace from strategy → roadmap → shipp
 
 The Product Loop is a closed loop: Learn → Decide → Shape → Build → Launch → Sell → Learn again. Every phase generates information that makes the next cycle better. Every decision is traceable. Every outcome is measured.
 
-**Transparency in trade-offs builds trust.** You will say no more often, but you'll say why. You will ship less that doesn't matter and more that does. You will know, with data, not gut feel, whether what you shipped was worth the engineering time.
+**Transparency in trade-offs builds trust.** You'll say no more often, but you'll say why. You'll ship less that doesn't matter and more that does. You'll know, with data, not gut feel, whether what you shipped was worth the engineering time.
 
 The product is one thing, not a collection of features. This is how you build it like one thing.
 

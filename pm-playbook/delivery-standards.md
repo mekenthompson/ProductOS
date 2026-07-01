@@ -7,7 +7,7 @@ icon: "📋"
 
 # Delivery Standards
 
-**From idea to shipped feature.** How to break down work, move through phases, and track delivery. This guide describes the *workflow*; the statuses and tracker fields below are conventions you implement in whichever issue tracker your team uses (Linear, Jira, Shortcut, GitHub Projects, Asana, etc.).
+**From idea to shipped feature.** How to break down work, move through phases, and track delivery. This guide describes the *workflow*. The statuses and tracker fields below are conventions you implement in whichever issue tracker your team uses (Linear, Jira, Shortcut, GitHub Projects, Asana, etc.).
 
 ---
 
@@ -30,7 +30,7 @@ icon: "📋"
 
 ## How We Break Down Work
 
-Four levels, regardless of tracker. Most modern trackers (Linear, Jira, Shortcut, etc.) map cleanly to these: the labels differ, the shape doesn't.
+Four levels, regardless of tracker. Most modern trackers (Linear, Jira, Shortcut, etc.) map cleanly to these. The labels differ, the shape doesn't.
 
 ### Initiatives
 
@@ -72,7 +72,7 @@ Projects can also be **Cancelled**, moved by PM or GTM Lead via agreement with P
 
 ## Delivery Statuses
 
-Implement these as statuses (or workflow states) in your tracker: the names are what matters, not the tool.
+Implement these as statuses (or workflow states) in your tracker. The names are what matter, not the tool.
 
 | Status | Phase Group | Who Moves Project Here | What's Happening |
 |--------|------------|----------------------|------------------|
@@ -93,7 +93,7 @@ Implement these as statuses (or workflow states) in your tracker: the names are 
 
 ### Mental Model: Learn + Decide
 
-Every product decision traces to evidence. The discipline is choosing the highest-leverage work for the current strategy.
+Every product decision traces back to evidence. The discipline is picking the highest-leverage work for the current strategy.
 
 ### Behaviour
 
@@ -174,7 +174,7 @@ The product is one thing. Our three product principles are engineering standards
 
 ### Mental Model: Launch + Sell
 
-Shipping is the beginning. A feature nobody uses isn't a success; it's an unanswered question. The path from "we built it" to "customers use it" requires deliberate effort.
+Shipping is the beginning, not the end. A feature nobody uses isn't a success, it's an unanswered question. Getting from "we built it" to "customers use it" takes deliberate effort.
 
 ### Behaviour
 
@@ -216,9 +216,9 @@ Shipping is the beginning. A feature nobody uses isn't a success; it's an unansw
 
 ### Gate 1: Shaping Checkpoint ✅
 
-> ✅ **Green light to spec.** This confirms the problem is real, the approach is sound, and it's worth investing in.
+> ✅ **Green light to spec.** The problem is real, the approach is sound, and it's worth investing in.
 
-Every requirement below applies; scale its depth to the stakes (lighter for a Quick Win / Lightweight path, fuller for Full Spec work).
+Every requirement below applies. Scale its depth to the stakes: lighter for a Quick Win / Lightweight path, fuller for Full Spec work.
 
 | Requirement | Notes |
 |-------------|-------|
@@ -241,7 +241,7 @@ Every requirement below applies; scale its depth to the stakes (lighter for a Qu
 
 > ✅ **Green light to ship behind flag to customers.** Private preview is successful, critical issues resolved, ready for wider audience.
 
-Every requirement below applies; scale its depth to the stakes (lighter for a Quick Win / Lightweight path, fuller for Full Spec work).
+Every requirement below applies. Scale its depth to the stakes: lighter for a Quick Win / Lightweight path, fuller for Full Spec work.
 
 | Requirement | Notes |
 |-------------|-------|
@@ -262,7 +262,7 @@ Every requirement below applies; scale its depth to the stakes (lighter for a Qu
 
 **Outcome:** Change has gone through initial customer testing with any necessary updates made to enable it to move to Public Preview and then General Availability following agreed Go to Market steps.
 
-> 💡 Two distinct gates here, not one. The **outcome UAT** proves the user's job is done (customer-ready, Product); **production-readiness** proves it's secure / reliable / scalable / available to the level the stakes demand (production-ready, Engineering). Unit-green ≠ outcome-validated ≠ production-ready; none implies the others. (In the table above, depth is set to the stakes.) See [Agentic Delivery](../guides/agentic-delivery.md).
+> 💡 Two distinct gates here, not one. The **outcome UAT** proves the user's job is done (customer-ready, Product). **Production-readiness** proves it's secure / reliable / scalable / available to the level the stakes demand (production-ready, Engineering). Unit-green ≠ outcome-validated ≠ production-ready. None implies the others. (In the table above, depth is set to the stakes.) See [Agentic Delivery](../guides/agentic-delivery.md).
 
 ---
 
@@ -318,8 +318,8 @@ For all new Product & Engineering projects, use a consistent default project tem
 
 - **Urgent:** Critical work that has immediate cost of delay considerations or protects a critical growth opportunity (e.g. required to land a prospect) and must be worked on ASAP
 - **High:** Work that significantly contributes to strategic objective outcomes
-- **Medium:** Work that incrementally contributes to strategic objective outcomes - it supports or enables strategic objective outcomes but does not, on its own, materially move the metric.
-- **Low:** Work with limited or speculative growth impact that improves quality or maintainability without materially accelerating strategic objective outcomes
+- **Medium:** Work that incrementally contributes to strategic objective outcomes. It supports or enables them but doesn't, on its own, materially move the metric.
+- **Low:** Work with limited or speculative growth impact. It improves quality or maintainability without materially accelerating strategic objective outcomes.
 
 **Owner:** Product and Engineering Manager
 
@@ -327,7 +327,7 @@ For all new Product & Engineering projects, use a consistent default project tem
 
 ## Project Update Standards
 
-Project Leads will need to provide a brief Project update at the end of each week letting the team know if a Project is On Track, At Risk or Off Track. They should also ensure Project status and issues are up to date.
+Project Leads give a brief Project update at the end of each week, telling the team whether a Project is On Track, At Risk or Off Track. Keep Project status and issues up to date too.
 
 - **On Track:** The work is progressing as planned and is expected to be completed on time and within the scope described in the RFC
 - **At Risk:** The work is currently behind plan or facing issues that *could* prevent on-time or in-scope completion unless mitigating action is taken.
@@ -350,7 +350,7 @@ Project Leads will need to provide a brief Project update at the end of each wee
 
 ## Fast Path
 
-The Fast Path exists to accelerate the delivery of small pieces of work that will have significant customer or commercial upside.
+The Fast Path exists to speed up small pieces of work with significant customer or commercial upside.
 
 **Criteria:**
 
@@ -388,7 +388,7 @@ After launch, track whether the bet paid off.
 | **Investigate** | Below targets + unclear why | Dig deeper before deciding |
 | **Stop** | Flat adoption + no pull | Wind down, redirect engineering time |
 
-> 💡 **Stopping is not failure.** Continuing to invest in something the data says isn't working: that's failure.
+> 💡 **Stopping is not failure.** Continuing to invest in something the data says isn't working, that's failure.
 
 Use the [Post-Launch Review Template](./templates/post-launch-review.md) at each interval.
 
@@ -396,7 +396,7 @@ Use the [Post-Launch Review Template](./templates/post-launch-review.md) at each
 
 ## Specs: Rules and Hierarchy
 
-A spec translates the RFC into buildable requirements. It answers: What do we build? How does it work? How do we know it's done?
+A spec turns the RFC into buildable requirements. It answers: What do we build? How does it work? How do we know it's done?
 
 **One RFC per project. It does the work that used to be split between a PRD and a delivery spec, framed around the user's job, with explicit success/failure modes, guardrails, and an open solution space.**
 
@@ -427,9 +427,9 @@ A spec translates the RFC into buildable requirements. It answers: What do we bu
 
 **Fortnightly engineering team outcome planning, prioritisation and estimation**
 
-- Product and Engineering teams operate to a fortnightly planning cycle
-- Product and Engineering Leadership and the delivery teams align on the outcomes they are targeting for a given cycle
-- Estimation of tickets within the Projects can then be used to help align on work being committed to and enable ongoing improvements to planning accuracy
+- Product and Engineering teams run a fortnightly planning cycle
+- Product and Engineering Leadership and the delivery teams align on the outcomes they're targeting for a given cycle
+- Estimating tickets within the Projects then aligns everyone on what's being committed to, and improves planning accuracy over time
 
 ---
 
@@ -451,7 +451,7 @@ A spec translates the RFC into buildable requirements. It answers: What do we bu
 | **Launch Readiness Check** | Ship behind flag to customers | PM + SVP of Product |
 | **Launch Retro Check** | Did the bet pay off? | PM (performance review) |
 
-Gate requirements scale with the stakes; small / quick-win work doesn't need SVP sign-off. See the requirement tables above.
+Gate requirements scale with the stakes. Small / quick-win work doesn't need SVP sign-off. See the requirement tables above.
 
 ---
 
@@ -463,4 +463,4 @@ Gate requirements scale with the stakes; small / quick-win work doesn't need SVP
 - [Decision Framework](./decision-framework.md): Signal → Standard → Speed
 - [Product Playbook](./product-playbook.md): The 6-phase operating model
 
-For tool-specific guidance (how to set up custom statuses, automation rules, etc.) see your tracker's documentation.
+For tool-specific guidance (how to set up custom statuses, automation rules, etc.) see your tracker's docs.

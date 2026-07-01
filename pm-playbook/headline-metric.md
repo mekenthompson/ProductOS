@@ -7,7 +7,7 @@ icon: "📖"
 
 # Headline Metric → moved to core
 
-Choosing the number that anchors an outcome is **method-level**, not PM craft, so it now lives in the ProductOS core:
+Choosing the number that anchors an outcome is method-level, not PM craft, so it now lives in the ProductOS core:
 
 > [!IMPORTANT]
 > **[The Anchor Signal](../guides/headline-metric.md)**: how to pick a signal that actually anchors a named outcome, and when to collapse to a single headline metric.
