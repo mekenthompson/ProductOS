@@ -24,8 +24,11 @@ can change underneath it while the job stays still.
 
 The one rule of this skill: **interview the user one question at a time
 until shared clarity, and do not write the spec until everything is agreed.**
-A spec written from assumptions is worse than no spec, because the whole
-fleet will anchor to it.
+
+> [!IMPORTANT]
+>
+> A spec written from assumptions is worse than no spec, because the whole
+> fleet will anchor to it.
 
 ## Step 0 — Ground yourself before asking anything
 
@@ -129,3 +132,9 @@ raw user ask. It passes if it interviews to alignment one question at a time
 produces a one-screen template-faithful spec with a valid serves/invariants
 up-anchor, and flags coverage gaps instead of fabricating scenarios. If it
 has to invent structure, the skill failed its own docs test. Fix the skill.
+
+## Related
+
+- [Job Spec template](../../templates/job-spec.md) — the output shape this skill writes to
+- [uat-ux-debug](../uat-ux-debug/SKILL.md) — debug a change against a job spec
+- [feedback-to-jobs](../feedback-to-jobs/SKILL.md) — turn a pile of feedback into jobs before speccing them

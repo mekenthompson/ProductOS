@@ -134,7 +134,9 @@ The 50% allocation to cross-location visibility is large because it has to be. T
 
 The account expansion pillar is the compounding bet. CityCare is the archetype of a customer who will grow into significant ARR if onboarding is not the reason they stall. The investment is modest (15%) because the job is scoped — location addition, not a full re-architecture — and the return is concentrated in accounts already in motion.
 
-This strategy is wrong if: the pricing hypothesis does not hold (lower expected revenue dilutes the logic for heavy availability investment), or Gridline ships integration depth faster than we expect (compresses the differentiation window). Those are the signals to watch. They are both in the Data Gaps section.
+> [!CAUTION]
+>
+> This strategy is wrong if: the pricing hypothesis does not hold (lower expected revenue dilutes the logic for heavy availability investment), or Gridline ships integration depth faster than we expect (compresses the differentiation window). Those are the signals to watch. They are both in the Data Gaps section.
 
 ---
 

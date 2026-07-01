@@ -165,7 +165,9 @@ Plus **leading indicators** — early signals (≤ 2 weeks post-launch) that tel
 
 ### User Failure Modes
 
-This is the section most teams skip. **Don't.** If you can't name how the user would fail, you don't understand the job well enough.
+> [!WARNING]
+>
+> This is the section most teams skip. **Don't.** If you can't name how the user would fail, you don't understand the job well enough.
 
 For each failure mode, name the **detection signal**: how would you know in production that this is happening? Without detection signals, failure modes are theoretical.
 

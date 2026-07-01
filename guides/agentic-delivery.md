@@ -11,9 +11,9 @@ This guide is the heart of the method: how delivery runs when **an agentic workf
 
 It is written for the whole triad: **product, design, and engineering**. Engineering is not a footnote here: when agents write the code, the scarce thing is no longer engineering hours, it's **judgement and oversight**, and engineers are the ones who set the technical bar the agents build to.
 
-:::note[Read alongside]
-Read this guide alongside [Product Vision](../anchors/product-vision.md), [Product Principles](../anchors/product-principles.md), and your [Invariants](../anchors/invariants.md) (the three anchors), and the [JTBD Guide](./jtbd-guide.md) (the job-story sentence and the Job Specs that carry it). The terse, agent-executable version of everything below lives in **[AGENTS.md](../AGENTS.md)** under "Agentic Delivery — operating contract."
-:::
+> [!NOTE]
+>
+> Read this guide alongside [Product Vision](../anchors/product-vision.md), [Product Principles](../anchors/product-principles.md), and your [Invariants](../anchors/invariants.md) (the three anchors), and the [JTBD Guide](./jtbd-guide.md) (the job-story sentence and the Job Specs that carry it). The terse, agent-executable version of everything below lives in **[AGENTS.md](../AGENTS.md)** under "Agentic Delivery — operating contract."
 
 ---
 
@@ -28,13 +28,13 @@ So the method keeps four artifacts as the constants that **don't move while the 
 3. **Design loops** — research the unknowns, never assume; review adversarially.
 4. **Outcome UAT** — validate the job end-to-end, independent of unit tests.
 
-:::tip
-"Four" describes this method's anatomy, not a law for your product. A product picks its own small number of vision outcomes, principles, and invariants (see [Product Vision](../anchors/product-vision.md) and [Product Principles](../anchors/product-principles.md)). Keep those sets small; keep these four parts.
-:::
+> [!TIP]
+>
+> "Four" describes this method's anatomy, not a law for your product. A product picks its own small number of vision outcomes, principles, and invariants (see [Product Vision](../anchors/product-vision.md) and [Product Principles](../anchors/product-principles.md)). Keep those sets small; keep these four parts.
 
-:::note[Artifact hierarchy, top to bottom]
-The three **anchors** (vision, principles, invariants) hold for the whole product. Beneath them, a **Product Spec**, one per product, names the product's outcomes, says how the product functions, and owns the list of jobs. Beneath that sit the **Job Specs**, one per job, durable and outcome-focused. RFCs / PRs are the ship-coupled, per-initiative delivery layer that references a Job Spec; they are not a named spec tier of their own.
-:::
+> [!NOTE]
+>
+> The three **anchors** (vision, principles, invariants) hold for the whole product. Beneath them, a **Product Spec**, one per product, names the product's outcomes, says how the product functions, and owns the list of jobs. Beneath that sit the **Job Specs**, one per job, durable and outcome-focused. RFCs / PRs are the ship-coupled, per-initiative delivery layer that references a Job Spec; they are not a named spec tier of their own.
 
 ---
 
@@ -72,9 +72,9 @@ Work starts from a Job Spec, not a blank page. The loop:
 2. **Build it, with tests that pin the behaviour.** A change lands with a test that fails before and passes after. Pick the test shape to the work: example tests for ordinary modules, property/fuzz tests for state machines and pure functions.
 3. **Review adversarially, with a fresh process.** This is the part most teams skip and the part that matters most when an agent wrote the code.
 
-:::caution[The author cannot grade its own work]
-The reviewer must be a **separate process** (a different agent with fresh context, or a human) that did not write the change. It returns an explicit verdict: APPROVE / REQUEST_CHANGES / BLOCK, and cites a specific location for every blocker. Iterate until APPROVE. Do not let an automated merge fire before the reviewer has approved. A green test suite is necessary, not sufficient.
-:::
+> [!CAUTION]
+>
+> The reviewer must be a **separate process** (a different agent with fresh context, or a human) that did not write the change. It returns an explicit verdict: APPROVE / REQUEST_CHANGES / BLOCK, and cites a specific location for every blocker. Iterate until APPROVE. Do not let an automated merge fire before the reviewer has approved. A green test suite is necessary, not sufficient.
 
 **Engineering leads the loop for implementation.** Engineers *direct and oversee* the agentic workforce: they frame the task, set the technical bar, and own the fresh-process review as quality control, especially for agent-written code, where plausible-but-wrong is the failure mode to hunt. The agents do the typing; the engineering judgement stays human.
 
