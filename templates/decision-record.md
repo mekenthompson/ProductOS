@@ -39,3 +39,10 @@ title: <short slug — what changed, in plain words>
 ---
 
 > **Convention:** name this file `YYYY-MM-DD-<slug>.md` and place it in `decisions/`. The `commit:` frontmatter field links it to the STRATEGY.md commit it accompanies. If you write the record before committing, fill in the SHA after.
+
+---
+
+## Related
+
+- [Strategy Template](./strategy.md) — the STRATEGY.md this record accompanies; the diff shows *what*, this record shows *why*
+- [Strategy as Code](../guides/strategy-as-code.md) — the method these records are part of

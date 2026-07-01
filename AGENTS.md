@@ -201,9 +201,9 @@ last_reviewed: YYYY-MM-DD
 - Add automation without explicit request
 - Bake in any single company's product as an example (this method is meant to be reusable)
 
-:::caution[Policy boundary]
-The "Agentic Delivery — operating contract" above does not loosen these rules. Agents own *delivery within the gates*; the vision, principles, invariants, and this policy itself stay human-ratified. Changing the method's own policy is a human-directed policy change, not routine agent work.
-:::
+> [!CAUTION]
+>
+> The "Agentic Delivery — operating contract" above does not loosen these rules. Agents own *delivery within the gates*; the vision, principles, invariants, and this policy itself stay human-ratified. Changing the method's own policy is a human-directed policy change, not routine agent work.
 
 ## Inspiration
 

@@ -35,6 +35,11 @@ Alignment is about the product's direction, not the job's loudness. A high-sever
 
 ## The honest-rating rule
 
-:::note
-Don't let one rating bleed into the others. A loud job is not automatically high-severity, and a high-severity job is not automatically aligned. Rate each axis on its own evidence; the value of three separate ratings is that they can disagree.
-:::
+> [!NOTE]
+>
+> Don't let one rating bleed into the others. A loud job is not automatically high-severity, and a high-severity job is not automatically aligned. Rate each axis on its own evidence; the value of three separate ratings is that they can disagree.
+
+## Related
+
+- [Theme Structure](theme-structure.md) — where these three ratings live in the frontmatter
+- [Feedback to Jobs](../SKILL.md) — the skill that produces the themes you rate

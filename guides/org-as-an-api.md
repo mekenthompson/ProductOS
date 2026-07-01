@@ -102,7 +102,9 @@ The trap is to read all this as "optimise the roadmap for revenue." It isn't, an
 
 The org-as-an-API gets you to a defensible ordering with the evidence attached. It does **not** decide whether to protect a strategic account, chase a new logo, or fund a bet the data can't yet see. A deliberate slice of capacity can and should go to jobs the revenue signal alone would under-weight: problems customers will have soon, or already have and can't yet name. Write those up as Job Specs too, and map them to the accounts you believe hit the problem first.
 
-So the machine makes the trade-off legible, and then you make the call. That's the line. It makes the question answerable. You still answer it.
+> [!IMPORTANT]
+>
+> So the machine makes the trade-off legible, and then you make the call. That's the line. It makes the question answerable. You still answer it.
 
 ---
 

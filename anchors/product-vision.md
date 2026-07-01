@@ -40,7 +40,9 @@ If those three questions aren't answered crisply, nothing downstream can help yo
 | [RFC Template](../templates/rfc.md) | A ship-coupled RFC names which vision outcome it advances and which Job Spec it serves — confirmed in the Status table. |
 | [Agentic Delivery](../guides/agentic-delivery.md) | The vision's outcomes, the Job Specs, the principles, and the invariants fuse into the **verdict rule** — the all-must-pass gate every change clears. The invariants are its kill-clause. |
 
-If you change the vision, expect everything above to need re-anchoring. That's a feature, not a bug. Vision changes are rare and consequential.
+> [!IMPORTANT]
+>
+> If you change the vision, expect everything above to need re-anchoring. That's a feature, not a bug. Vision changes are rare and consequential.
 
 ---
 
