@@ -31,7 +31,9 @@ Product Spec                            per product — owns the job list
 
 The distinction matters. Anchors are stable by design: they define the kind of product you are building and the standards you hold. Strategy is explicitly expected to change as the market changes, as customers change, as competitors move. What stays constant is the anchors; what adapts is the strategy. A strategy that never changes is not a strategy. It is a mission statement that doesn't know what it is.
 
-**What strategy is not doing:** it is not re-examining the anchors. It is not asking whether the vision is right or whether the principles should be different. Those are the anchors' job. Strategy takes the anchors as given and asks: *given who we are and what we will not compromise, where do we put the capacity?*
+> [!IMPORTANT]
+>
+> **What strategy is not doing:** it is not re-examining the anchors. It is not asking whether the vision is right or whether the principles should be different. Those are the anchors' job. Strategy takes the anchors as given and asks: *given who we are and what we will not compromise, where do we put the capacity?*
 
 **What strategy is doing:** naming which jobs to fund, which to explicitly defer, and what evidence and reasoning drove that allocation. It links down to the Job Specs that matter now and names the ones that don't, so the team is not guessing what is in scope.
 

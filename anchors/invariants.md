@@ -27,9 +27,9 @@ different: it is a hard line you don't trade, however useful a feature seems.
 A change that breaks a principle is a redesign; a change that breaks an
 invariant is **out of scope, full stop**.
 
-:::caution[The kill-clause]
-A change that crosses an invariant is out of scope however useful it seems. This is the one anchor you never trade, and an agent never relaxes an invariant to land a change.
-:::
+> [!CAUTION]
+>
+> A change that crosses an invariant is out of scope however useful it seems. This is the one anchor you never trade, and an agent never relaxes an invariant to land a change.
 
 Most invariants are compliance, identity, trust, or safety boundaries:
 things that, if crossed, mean you're no longer building the same product (or

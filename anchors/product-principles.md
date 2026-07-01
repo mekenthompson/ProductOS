@@ -177,7 +177,9 @@ Before you ship, ask:
 2. **Trade-off test:** Where principles are in tension, which one did you prioritise and why?
 3. **Consistency test:** Would a reviewer who doesn't know your team make the same call?
 
-If you can't answer all three, you're not done. Redesign, don't ship and patch later.
+> [!CAUTION]
+>
+> If you can't answer all three, you're not done. Redesign, don't ship and patch later.
 
 :::tip[Principles judge Job Specs, they don't replace them]
 A change can satisfy its [Job Spec](../templates/job-spec.md) (it does the user's job) and still fail a principle check (it was built badly). When that happens, the job is the goal; the principles are how you get there without making the product feel like a kit. Both must pass: the all-must-pass gate across the vision outcome, the Job Spec, the principles, and the invariants is the **verdict rule**. See [Agentic Delivery](../guides/agentic-delivery.md).

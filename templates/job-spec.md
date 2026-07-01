@@ -14,9 +14,9 @@ invariants: [<named lines this job must never cross, by construction>]
 
 # Job Spec: <the job, in plain words>
 
-:::caution[Keep this file clean]
-The Job Spec never carries account names, ARR, renewal dates, or anything that drifts. That join lives in a separate [Job Links](./job-links.md) file that points up to this spec via `serves:`. Couple a durable thing to a moving one and you get a spec that's stale by next quarter.
-:::
+> [!CAUTION]
+>
+> The Job Spec never carries account names, ARR, renewal dates, or anything that drifts. That join lives in a separate [Job Links](./job-links.md) file that points up to this spec via `serves:`. Couple a durable thing to a moving one and you get a spec that's stale by next quarter.
 
 > A **Job Spec** is the durable, per-job outcome contract. One per job. It
 > is read by both a human (judging a change) and an agent (deciding what to
