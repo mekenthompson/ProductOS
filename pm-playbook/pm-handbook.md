@@ -21,7 +21,7 @@ Companion to the [Product Playbook](./product-playbook.md) (how we build product
    Ground decisions in evidence, not assumptions. Every RFC should link to real customer conversations, not sales hearsay or internal hunches.
 
 2. **Write clear RFCs with evidence**
-   Get approval before building; link to research. An RFC without evidence is an untested opinion — it doesn't earn engineering time.
+   Get approval before building; link to research. An RFC without evidence is an untested opinion; it doesn't earn engineering time.
 
 3. **Complete monthly rituals**
    Dogfood, onboarding review, competitor review. If you don't use your own product (and theirs), you don't understand the problem space.
@@ -82,9 +82,9 @@ Outcomes matter more than calendar slots. Here's what needs to happen and roughl
 | Timeline | Goal | Key Activities |
 |----------|------|----------------|
 | **Day 1–2** | Get set up | Accounts: product, issue tracker, docs, source control, comms, AI tooling. Follow your engineering onboarding doc for access. |
-| **Week 1** | Learn the product and meet your team | Complete your product's internal training. Play with the product — build, break things, use AI agents to explore and ask questions. Meet your product and engineering teammates through informal 1:1s. Attend product meetings. Listen, learn, ask questions. |
+| **Week 1** | Learn the product and meet your team | Complete your product's internal training. Play with the product: build, break things, use AI agents to explore and ask questions. Meet your product and engineering teammates through informal 1:1s. Attend product meetings. Listen, learn, ask questions. |
 | **Week 2** | Broaden context and start contributing | Connect with Design and other leadership through informal 1:1s. Process and triage your first customer feedback. Attend team meetings across your area. Find a quick-delight problem (≤ 3 hours) you can help shape with engineering and get scheduled. |
-| **Week 3** | Write your first RFC stub | Pick a problem from the discovery backlog. Talk to 3+ customers using the [Customer Call Template](./templates/customer-call.md). Fill Problem + Evidence + Impact in the [RFC Template](../templates/rfc.md). Review in product team meetings — get feedback, iterate. |
+| **Week 3** | Write your first RFC stub | Pick a problem from the discovery backlog. Talk to 3+ customers using the [Customer Call Template](./templates/customer-call.md). Fill Problem + Evidence + Impact in the [RFC Template](../templates/rfc.md). Review in product team meetings to get feedback and iterate. |
 | **Week 4** | Complete all monthly rituals | Dogfooding + onboarding review + competitor review. See Monthly Rituals below. |
 | **Month 2** | Get first RFC approved | Finish the RFC (Solution, Scope, Success Metrics). RICE score. Submit for approval. See [Writing an RFC](../guides/product-specs.md). |
 | **Month 3** | Coordinate delivery | Maintain the living RFC. Collaborate with Design + Engineering. Enter Building status. |
@@ -129,20 +129,20 @@ Understand the customer's problem before proposing solutions.
 
 ## Using AI
 
-We use AI for **augmentation, not automation**. AI tools make you more effective — they don't replace your judgement.
+We use AI for **augmentation, not automation**. AI tools make you more effective; they don't replace your judgement.
 
 **The rules:**
 
 1. **You own the inputs and outputs.** AI is a resource, not a co-author. You must know what good looks like before you ask an agent to help produce it. You're not outsourcing thinking or strategy decisions.
-2. **Use approved enterprise accounts only.** Whichever AI tools your company has approved, use them through enterprise accounts — not personal accounts for work.
-3. **Learn from each other.** Have a shared channel where the team posts what's working — share what works, flag what doesn't.
+2. **Use approved enterprise accounts only.** Whichever AI tools your company has approved, use them through enterprise accounts, not personal accounts for work.
+3. **Learn from each other.** Have a shared channel where the team posts what's working: share what works, flag what doesn't.
 4. **Follow the AI policy.** Whatever your company's AI usage policy is, follow it. If it doesn't exist yet, write one.
 
 **Where AI helps PMs:**
 - Analysing customer research and feedback patterns
 - Drafting RFCs (you refine and own the output)
 - Competitive analysis and market research
-- Exploring the product — use agents to ask questions, try new things, understand features
+- Exploring the product: use agents to ask questions, try new things, understand features
 - Writing customer communications and summaries
 
 **Where AI doesn't help:**
@@ -150,7 +150,7 @@ We use AI for **augmentation, not automation**. AI tools make you more effective
 - Replacing customer conversations
 - Judging product quality (you need to use the product yourself)
 
-**When agents do much of the delivery.** "Augmentation, not automation" governs *judgement* — the vision, the headline metric, which jobs matter, strategy. That stays yours. But agents can *own delivery* — drafting [Job Specs](../templates/job-spec.md), implementing, running design loops, running outcome UATs — **inside the four parts** of [Agentic Delivery](../guides/agentic-delivery.md). The rule: augment the judgement, automate the delivery, keep the gates as the safety rail. Two gates are load-bearing — the **fresh-process reviewer** (an agent can't grade its own work) and the **outcome UAT** (the job is proven, not assumed). The anchors stay human-owned; agents consume them, never author them.
+**When agents do much of the delivery.** "Augmentation, not automation" governs *judgement*: the vision, the headline metric, which jobs matter, strategy. That stays yours. But agents can *own delivery* (drafting [Job Specs](../templates/job-spec.md), implementing, running design loops, running outcome UATs) **inside the four parts** of [Agentic Delivery](../guides/agentic-delivery.md). The rule: augment the judgement, automate the delivery, keep the gates as the safety rail. Two gates are load-bearing: the **fresh-process reviewer** (an agent can't grade its own work) and the **outcome UAT** (the job is proven, not assumed). The anchors stay human-owned; agents consume them, never author them.
 
 ---
 
@@ -186,9 +186,9 @@ Use [Ritual Review Template](./templates/ritual-review.md) for both dogfooding a
 
 ### Ticket Tags
 
-- `ritual:dogfood`, `ritual:onboarding`, `ritual:competitor` — tag all ritual tickets
-- `ai-assisted` — content created/edited with AI
-- `quick-win` — potential quick delights found during rituals
+- `ritual:dogfood`, `ritual:onboarding`, `ritual:competitor`: tag all ritual tickets
+- `ai-assisted`: content created/edited with AI
+- `quick-win`: potential quick delights found during rituals
 
 ---
 
@@ -215,22 +215,22 @@ Anti-pattern: PM says "Use PostgreSQL" → Instead say "We need sub-50ms queries
 **PMs own:** Validating patterns (not one-offs), RICE scoring, transparent expectations
 **Sales/CS own:** Surfacing customer needs, providing context, communicating roadmap
 
-Anti-pattern: "Sales needs this for a deal" → Instead: "Sales hears this from 5 customers — let's validate"
+Anti-pattern: "Sales needs this for a deal" → Instead: "Sales hears this from 5 customers, let's validate"
 
 ---
 
 ## Resources
 
 **Start here:**
-- [Product Vision](../anchors/product-vision.md) — Vision, personas, principles
-- [Product Playbook](./product-playbook.md) — The 6-phase operating system
-- [Working Together](./working-together.md) — How the product triad collaborates
+- [Product Vision](../anchors/product-vision.md): Vision, personas, principles
+- [Product Playbook](./product-playbook.md): The 6-phase operating system
+- [Working Together](./working-together.md): How the product triad collaborates
 
 **Guides:**
-- [Writing an RFC](../guides/product-specs.md) — How to write, approve, and deliver
-- [Handling Product Feedback](./customer-feedback.md) — Feedback processing
-- [RICE Guide](./rice.md) — Scoring framework
-- [Decision Framework](./decision-framework.md) — Signal → Standard → Speed
+- [Writing an RFC](../guides/product-specs.md): How to write, approve, and deliver
+- [Handling Product Feedback](./customer-feedback.md): Feedback processing
+- [RICE Guide](./rice.md): Scoring framework
+- [Decision Framework](./decision-framework.md): Signal → Standard → Speed
 
 **Templates:**
 - [RFC Template](../templates/rfc.md) · [Job Spec Template](../templates/job-spec.md) · [Post-Launch Review](./templates/post-launch-review.md) · [Research Template](./templates/research.md) · [Customer Call Template](./templates/customer-call.md)
@@ -239,4 +239,4 @@ Anti-pattern: "Sales needs this for a deal" → Instead: "Sales hears this from 
 - [JTBD Guide](../guides/jtbd-guide.md)
 
 **Operational:**
-- [Delivery Standards](./delivery-standards.md) — Your tracker's workflow with gates
+- [Delivery Standards](./delivery-standards.md): Your tracker's workflow with gates

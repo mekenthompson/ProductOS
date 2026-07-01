@@ -1,6 +1,6 @@
 ---
 title: Working Together
-description: How the product triad — product, engineering, and design — collaborates
+description: How the product triad (product, engineering, and design) collaborates
 last_reviewed: 2026-05-12
 icon: "🧩"
 ---
@@ -9,7 +9,7 @@ icon: "🧩"
 
 Product, engineering, and design form the product triad. Three disciplines, one product. This doc covers how the triad works day to day: who owns what, how decisions get made, and what everyone on a product team can expect from each other.
 
-Everything connects back to the [named outcomes and their signals](../anchors/product-vision.md) in the product vision — those are what every PR, design review, and post-launch review tests against.
+Everything connects back to the [named outcomes and their signals](../anchors/product-vision.md) in the product vision; those are what every PR, design review, and post-launch review tests against.
 
 > 📖 Read this alongside [Product Playbook](./product-playbook.md) (the operating model) and [PM Handbook](./pm-handbook.md) (for PMs specifically).
 
@@ -22,7 +22,7 @@ Product owns the problem. Engineering owns the solution. Design owns the experie
 **Product** decides *what* to build and *why*, backed by customer evidence.
 
 - PMs bring the research, usage data, and support patterns that prove a problem is real.
-- They set success criteria and decide when something is ready for customers — a broader call than "is the code done" because it includes docs, experience, and GTM readiness.
+- They set success criteria and decide when something is ready for customers, a broader call than "is the code done" because it includes docs, experience, and GTM readiness.
 
 **Engineering** decides *how* to build it.
 
@@ -74,7 +74,7 @@ If someone hands you an implementation instead of a problem, push back. That app
 
 ### Your product principles are the quality bar
 
-Whatever set of [product principles](../anchors/product-principles.md) the team has agreed on, they are applied in PR reviews, design critiques, and scope discussions — by everyone on the triad, not just product or design. When you're reviewing a PR, ask whether the change meets each principle. When design raises a consistency concern grounded in a principle, that's the principle working as intended.
+Whatever set of [product principles](../anchors/product-principles.md) the team has agreed on, they are applied in PR reviews, design critiques, and scope discussions, by everyone on the triad, not just product or design. When you're reviewing a PR, ask whether the change meets each principle. When design raises a consistency concern grounded in a principle, that's the principle working as intended.
 
 See [Product Principles](../anchors/product-principles.md) for how to write and apply yours.
 
@@ -82,20 +82,20 @@ See [Product Principles](../anchors/product-principles.md) for how to write and 
 
 ## Roles when agents do much of the delivery
 
-The triad above still owns the product when an **agentic workforce** does much of the building — what shifts is *execution*, not ownership. Agents own delivery *within the gates*; humans keep the anchors and the judgement. See [Agentic Delivery](../guides/agentic-delivery.md) for the full method.
+The triad above still owns the product when an **agentic workforce** does much of the building; what shifts is *execution*, not ownership. Agents own delivery *within the gates*; humans keep the anchors and the judgement. See [Agentic Delivery](../guides/agentic-delivery.md) for the full method.
 
 | Responsibility | Human-triad default | When agents deliver |
 |---|---|---|
-| Anchors — vision, principles, invariants | Product | **Stays human** — agents consume, never author |
+| Anchors (vision, principles, invariants) | Product | **Stays human**: agents consume, never author |
 | Principles (product + engineering standards) | Triad | Human-owned; agents *apply* them as a gate |
 | Job Specs | PM authors | Agent may *draft*; a human (or fresh-process reviewer) ratifies the job statement |
-| Technical approach / architecture / NFRs | Engineering | **Engineering owns** — sets the non-functional bar the agents build to |
+| Technical approach / architecture / NFRs | Engineering | **Engineering owns**: sets the non-functional bar the agents build to |
 | Design loops (implement, research unknowns) | Engineering | Delivery agents run it **under engineering oversight** |
-| Adversarial review | Tech Lead / peer | **Fresh-process reviewer** — a separate process, never the author |
+| Adversarial review | Tech Lead / peer | **Fresh-process reviewer**: a separate process, never the author |
 | Outcome UAT (customer-ready) | PM defines, Eng runs | Agent runs it; a human spot-checks ≥ 1 real round-trip |
-| Production-readiness (engineering acceptance) | Tech Lead | **Engineering signs off** — depth scales with the stakes |
+| Production-readiness (engineering acceptance) | Tech Lead | **Engineering signs off**: depth scales with the stakes |
 
-The load-bearing invariant: **the anchors stay human, and the reviewer is always a fresh process.** Engineers bring expertise and oversight; the agents bring throughput. Higher stakes mean deeper oversight and a higher non-functional bar — same roles, more rigour.
+The load-bearing invariant: **the anchors stay human, and the reviewer is always a fresh process.** Engineers bring expertise and oversight; the agents bring throughput. Higher stakes mean deeper oversight and a higher non-functional bar: same roles, more rigour.
 
 ---
 
@@ -103,9 +103,9 @@ The load-bearing invariant: **the anchors stay human, and the reviewer is always
 
 Ideas enter through customer feedback, research, analytics, or internal discovery. Anyone can bring an idea, but every idea passes through **Signal → Standard → Speed** before it becomes work:
 
-1. **Signal** — Is it strategy-aligned? Is there evidence of a real need?
-2. **Standard** — Does it meet our three product principles?
-3. **Speed** — How big is it? This determines the path:
+1. **Signal.** Is it strategy-aligned? Is there evidence of a real need?
+2. **Standard.** Does it meet our three product principles?
+3. **Speed.** How big is it? This determines the path:
 
 | Path | Size | What the team gets | What happens |
 |------|------|---------------------|--------------|

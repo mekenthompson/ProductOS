@@ -22,7 +22,7 @@ RICE is a framework for **comparing projects** on the same basis. Three value di
 - Override business judgment or strategic considerations
 
 **Applies to:** initiatives scored in an RFC
-**When to score:** During Decide — include in the RFC
+**When to score:** During Decide, include in the RFC
 **Owner:** PM assigned to project
 
 ---
@@ -39,10 +39,10 @@ Round to one decimal place.
 
 | Score | Grade | What it means |
 |-------|-------|---------------|
-| **5.0+** | A | High ROI — strong value relative to effort |
-| **3.0–4.9** | B | Good ROI — solid opportunity |
-| **1.5–2.9** | C | Moderate ROI — uncertain value or higher effort |
-| **<1.5** | D | Low ROI — limited value or expensive to deliver |
+| **5.0+** | A | High ROI: strong value relative to effort |
+| **3.0–4.9** | B | Good ROI: solid opportunity |
+| **1.5–2.9** | C | Moderate ROI: uncertain value or higher effort |
+| **<1.5** | D | Low ROI: limited value or expensive to deliver |
 
 Grades describe ROI relative to other projects, not what to do with them. A C-grade project with high strategic importance may still be the right thing to build. Strategy determines what to work on. RICE helps you sequence within a strategic bucket.
 
@@ -56,10 +56,10 @@ _How broad is the audience?_
 
 | Score | Definition | Example |
 |-------|------------|---------|
-| **1** | Niche — a handful of accounts with a specific need | Specific compliance requirement |
-| **2** | Segment — a defined customer segment | Enterprise-only feature |
-| **3** | Broad — most accounts or a core workflow | Core day-to-day workflow |
-| **4** | Universal — all accounts or all prospects | Onboarding, trial experience |
+| **1** | Niche: a handful of accounts with a specific need | Specific compliance requirement |
+| **2** | Segment: a defined customer segment | Enterprise-only feature |
+| **3** | Broad: most accounts or a core workflow | Core day-to-day workflow |
+| **4** | Universal: all accounts or all prospects | Onboarding, trial experience |
 
 > 💡 Ask yourself: is this a niche need, a segment need, a common need, or a universal need?
 
@@ -73,10 +73,10 @@ This is about **depth**, not breadth. Reach covers how many accounts are touched
 
 | Score | Definition | Signal | Example |
 |-------|------------|--------|---------|
-| **1** | Nice-to-have — minor convenience | Small friction reduction, no measurable metric movement | Clearer error formatting, UI polish |
-| **2** | Meaningful — measurably better workflow | Efficiency gain, improved satisfaction | Faster page loads, better in-context guidance |
-| **3** | Significant — removes a blocker, prevents churn, or unlocks a new capability | Blocker removal, churn prevention, revenue impact per account | Removes top deal-blocker, prevents at-risk churn |
-| **4** | Step-change — transforms the account's relationship with the product | New revenue stream, 10x improvement, market-creating | A new capability that replaces a category of third-party tools; a foundational AI workflow |
+| **1** | Nice-to-have: minor convenience | Small friction reduction, no measurable metric movement | Clearer error formatting, UI polish |
+| **2** | Meaningful: measurably better workflow | Efficiency gain, improved satisfaction | Faster page loads, better in-context guidance |
+| **3** | Significant: removes a blocker, prevents churn, or unlocks a new capability | Blocker removal, churn prevention, revenue impact per account | Removes top deal-blocker, prevents at-risk churn |
+| **4** | Step-change: transforms the account's relationship with the product | New revenue stream, 10x improvement, market-creating | A new capability that replaces a category of third-party tools; a foundational AI workflow |
 
 > 💡 Would the customer say "that's nice" (1), "that helps" (2), "that changes things for us" (3), or "that changes everything" (4)?
 
@@ -97,10 +97,10 @@ _How strong is the evidence?_
 
 | Score | Definition | Evidence looks like | Example |
 |-------|------------|-------------------|---------|
-| **1** | Hypothesis — team intuition, no external validation | Gut feel, analogies | "We think customers want this" |
-| **2** | Directional — some signal, small sample | A few customer mentions, competitor has it | 3 support tickets, 1 customer interview |
-| **3** | Strong — multiple data points converging | Multiple customer requests, pipeline data, support patterns | 10+ requests, 5 deals blocked |
-| **4** | Validated — quantitative data with meaningful sample | Usage analytics, A/B results, survey with n>30 | Funnel data, NPS regression analysis |
+| **1** | Hypothesis: team intuition, no external validation | Gut feel, analogies | "We think customers want this" |
+| **2** | Directional: some signal, small sample | A few customer mentions, competitor has it | 3 support tickets, 1 customer interview |
+| **3** | Strong: multiple data points converging | Multiple customer requests, pipeline data, support patterns | 10+ requests, 5 deals blocked |
+| **4** | Validated: quantitative data with meaningful sample | Usage analytics, A/B results, survey with n>30 | Funnel data, NPS regression analysis |
 
 > 💡 Could you convince a skeptic with the evidence you have?
 
@@ -112,11 +112,11 @@ _How much work to deliver? Bigger effort = lower RICE score._
 
 | Score | Team commitment | Example |
 |-------|----------------|---------|
-| **1** | ~1 week — small change | UI tweak, config update |
-| **2** | ~2 weeks — focused feature | New webhook event type |
-| **3** | ~1 month — significant feature | Analytics MVP |
-| **4** | ~3 months — major initiative | Auth system overhaul |
-| **5** | ~6 months — platform-level change | New compute backend |
+| **1** | ~1 week, small change | UI tweak, config update |
+| **2** | ~2 weeks, focused feature | New webhook event type |
+| **3** | ~1 month, significant feature | Analytics MVP |
+| **4** | ~3 months, major initiative | Auth system overhaul |
+| **5** | ~6 months, platform-level change | New compute backend |
 
 > 💡 How many sprints does this realistically tie up a squad?
 
@@ -145,16 +145,16 @@ If any dimension is unknown, mark as **TBD**. Grade cannot be calculated until a
 RICE ranks projects **within** strategic buckets, not across them. Your annual strategy document defines this year's strategic levers and capacity allocations.
 
 **Strategic levers:**
-- **Acquisition** — Land and convert new customers
-- **Retention** — Keep customers, reduce churn
-- **Expansion** — Grow revenue from existing customers
-- **Efficiency** — Reduce costs, improve velocity
+- **Acquisition:** Land and convert new customers
+- **Retention:** Keep customers, reduce churn
+- **Expansion:** Grow revenue from existing customers
+- **Efficiency:** Reduce costs, improve velocity
 
 A B-grade retention project may beat an A-grade acquisition project if the retention bucket is under-invested. Strategy drives allocation. RICE drives sequencing within each bucket.
 
 ### High Effort, High Value
 
-A project can score C on RICE despite having high absolute value — because RICE measures ROI (value per unit of effort). A 6-month platform project with universal reach and high impact will still have moderate ROI per sprint. That doesn't mean it's wrong to build. Strategy and investment buckets handle those decisions. RICE helps you sequence the work within a bucket so you ship the highest-ROI items first.
+A project can score C on RICE despite having high absolute value, because RICE measures ROI (value per unit of effort). A 6-month platform project with universal reach and high impact will still have moderate ROI per sprint. That doesn't mean it's wrong to build. Strategy and investment buckets handle those decisions. RICE helps you sequence the work within a bucket so you ship the highest-ROI items first.
 
 ### Low Confidence
 
@@ -164,7 +164,7 @@ If Confidence is 1 or 2, the grade carries more uncertainty:
 - **Low confidence + low grade (C/D):** May not be worth the effort to validate further
 - **High confidence + any grade:** Scoring is well-grounded
 
-Low confidence doesn't automatically mean "don't proceed" — it means "here's the risk profile." Some strategic bets are worth taking despite uncertainty.
+Low confidence doesn't automatically mean "don't proceed"; it means "here's the risk profile." Some strategic bets are worth taking despite uncertainty.
 
 ---
 
@@ -172,13 +172,13 @@ Low confidence doesn't automatically mean "don't proceed" — it means "here's t
 
 Every project must include a RICE Explanation that:
 
-1. **Justifies Impact** — Which strategic lever? What's the magnitude of effect per account? What's the evidence?
-2. **Explains Confidence** — What data supports this? What's missing?
-3. **Notes assumptions** — What must be true for this score to hold?
+1. **Justifies Impact:** Which strategic lever? What's the magnitude of effect per account? What's the evidence?
+2. **Explains Confidence:** What data supports this? What's missing?
+3. **Notes assumptions:** What must be true for this score to hold?
 
 **Example (acquisition):**
 
-> Impact 3 (significant): Removes a top-3 deal blocker cited by Sales. Accounts blocked by this can't complete evaluation — it's binary, they buy or they don't. 15 active opportunities in pipeline waiting on this. Lever: Acquisition → Paid Conversion.
+> Impact 3 (significant): Removes a top-3 deal blocker cited by Sales. Accounts blocked by this can't complete evaluation; it's binary, they buy or they don't. 15 active opportunities in pipeline waiting on this. Lever: Acquisition → Paid Conversion.
 >
 > Confidence 3: Multiple customer requests + pipeline data. Would be 4 if we had quantitative trial drop-off data.
 
@@ -194,10 +194,10 @@ Every project must include a RICE Explanation that:
 
 | Phase | RICE Status |
 |-------|-------------|
-| **Learn** | Optional — rough estimate helps early comparison |
-| **Decide** | Recommended — all dimensions scored for the RFC |
-| **Build** | Reference — update if scope changes significantly |
-| **Launch** | Retrospective — compare predicted vs actual |
+| **Learn** | Optional: rough estimate helps early comparison |
+| **Decide** | Recommended: all dimensions scored for the RFC |
+| **Build** | Reference: update if scope changes significantly |
+| **Launch** | Retrospective: compare predicted vs actual |
 
 Score before RFC approval when possible. The score is input to the decision, not a gate.
 

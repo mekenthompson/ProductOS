@@ -1,13 +1,13 @@
 ---
 title: Tools We Use
-description: Reference toolchain and conventions for a product team — tool-agnostic, with examples
+description: Reference toolchain and conventions for a product team, tool-agnostic, with examples
 last_reviewed: 2026-05-12
 icon: "🛠️"
 ---
 
 # Tools We Use
 
-This guide is about the **categories** of tooling a product team needs and the conventions that matter inside each. The specific tools (Linear vs Jira vs Shortcut, Notion vs Confluence vs Coda, Claude vs ChatGPT vs Cursor) are implementation details — pick what your company already runs on. The conventions below apply regardless.
+This guide is about the **categories** of tooling a product team needs and the conventions that matter inside each. The specific tools (Linear vs Jira vs Shortcut, Notion vs Confluence vs Coda, Claude vs ChatGPT vs Cursor) are implementation details; pick what your company already runs on. The conventions below apply regardless.
 
 ## The categories
 
@@ -50,7 +50,7 @@ You only need **one tool per category**. More than that creates copy-paste tax a
 
 ### Labels
 - Use product area labels matching your domains
-- Don't over-label — 2–3 labels max per issue
+- Don't over-label; 2–3 labels max per issue
 
 ---
 
@@ -76,7 +76,7 @@ You only need **one tool per category**. More than that creates copy-paste tax a
 
 ### Status
 - Keep RFC status in sync with tracker project status
-- Archive old specs after launch (don't delete — keep for reference)
+- Archive old specs after launch (don't delete, keep for reference)
 
 ---
 
@@ -98,7 +98,7 @@ You only need **one tool per category**. More than that creates copy-paste tax a
 
 ## AI assistant (e.g. Claude / ChatGPT / Cursor)
 
-Whatever your team has approved enterprise access to — Claude (Claude Code, claude.ai), ChatGPT, Cursor, Amp, Gemini. The capabilities matter more than the brand.
+Whatever your team has approved enterprise access to: Claude (Claude Code, claude.ai), ChatGPT, Cursor, Amp, Gemini. The capabilities matter more than the brand.
 
 **What to use it for:**
 - Synthesising customer feedback from support tickets, calls, and channel threads
@@ -122,10 +122,10 @@ Whatever your team has approved enterprise access to — Claude (Claude Code, cl
 
 ## Access (template)
 
-**New to product?** Get access to one tool per category above. Specific tools and invite paths will be company-specific — keep an internal copy of this section with the current names and onboarding owners filled in.
+**New to product?** Get access to one tool per category above. Specific tools and invite paths will be company-specific; keep an internal copy of this section with the current names and onboarding owners filled in.
 
-- **Issue tracker:** [your tool] — [how to request access]
-- **Long-form docs:** [your tool] — [how to request access]
-- **Source control:** [your tool] — [how to request access]
-- **AI assistant:** [your approved tool(s)] — [account/access process]
-- **Comms:** [your tool] — [channels to join on day 1]
+- **Issue tracker:** [your tool], [how to request access]
+- **Long-form docs:** [your tool], [how to request access]
+- **Source control:** [your tool], [how to request access]
+- **AI assistant:** [your approved tool(s)], [account/access process]
+- **Comms:** [your tool], [channels to join on day 1]

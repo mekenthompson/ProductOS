@@ -11,7 +11,7 @@ icon: "📖"
 
 Every idea, request, or problem that reaches a PM needs an answer to one question: **what's the right path for this work?**
 
-Not everything needs an RFC. Not everything is a quick win. The path should match the size and risk — not force everything through the same process.
+Not everything needs an RFC. Not everything is a quick win. The path should match the size and risk, not force everything through the same process.
 
 ---
 
@@ -30,7 +30,7 @@ Not everything needs an RFC. Not everything is a quick win. The path should matc
 
 ## The Decision Tree
 
-Start here when any work arrives — from customer feedback, an engineer's idea, a sales request, or your own discovery.
+Start here when any work arrives, whether from customer feedback, an engineer's idea, a sales request, or your own discovery.
 
 ### Step 1: Signal
 
@@ -53,13 +53,13 @@ If Standard fails, redesign the approach before investing engineering time. A fa
 How big is the work? This determines the path.
 
 **≤ half a day → Quick Win**
-Flag it with your EM or PM. If it aligns with the team's current priorities, get on with it. No RFC needed, but use good judgment — each team has a limited budget for Quick Wins per sprint so we stay focused on strategic work. Changelog if it changes UX. Notify support always. Tag it `quick-win` in your tracker.
+Flag it with your EM or PM. If it aligns with the team's current priorities, get on with it. No RFC needed, but use good judgment: each team has a limited budget for Quick Wins per sprint so we stay focused on strategic work. Changelog if it changes UX. Notify support always. Tag it `quick-win` in your tracker.
 
 **Half a day – 2 weeks → Lightweight**
 Write a 1-page brief (see template below). Get PM + Tech Lead sign-off. Ship behind a feature flag. Do a 2-week check-in after launch.
 
 **> 2 weeks → Full Spec**
-Write a full [RFC](../templates/rfc.md) with RICE score. Get Head of Product sign-off. Follow the full delivery process. (The RFC references the relevant [Job Spec](../templates/job-spec.md) — the durable outcome contract that outlives this initiative.)
+Write a full [RFC](../templates/rfc.md) with RICE score. Get Head of Product sign-off. Follow the full delivery process. (The RFC references the relevant [Job Spec](../templates/job-spec.md), the durable outcome contract that outlives this initiative.)
 
 ---
 
@@ -96,19 +96,19 @@ How does this move a named outcome (and its signal) from the [product vision](..
 
 ## Examples
 
-> Generic illustrations — the shape of each path, not a specification of yours.
+> Generic illustrations: the shape of each path, not a specification of yours.
 
 ### Quick Win: Clearer error message on a common failure
 
 **Signal:** 12 support tickets in the last month. Customers see a generic failure message with no actionable explanation.
-**Standard:** Passes all principles — the current error message violates the "self-teaching" standard.
+**Standard:** Passes all principles. The current error message violates the "self-teaching" standard.
 **Speed:** 3 hours of engineering. One error string and a link to a relevant settings page.
 **Path:** Quick Win. Ship it. Changelog entry. Support notified.
 
 ### Lightweight: Template gallery for a common setup
 
 **Signal:** Creators spend 2–3 hours setting up patterns every team needs. 5 customer interviews confirm this. Strategy lever: Acquisition / faster time-to-first-value.
-**Standard:** Batteries included — templates should give Creators a running start.
+**Standard:** Batteries included: templates should give Creators a running start.
 **Speed:** ~1 week of engineering. New UI surface with 5–10 curated templates.
 **Path:** Lightweight brief. PM + Tech Lead approve. Ship behind flag. 2-week check-in.
 
@@ -124,10 +124,10 @@ How does this move a named outcome (and its signal) from the [product vision](..
 ## Common Questions
 
 **What if I'm not sure about the size?**
-Talk to your Tech Lead in the weekly scoping session. Sizing is a 5-minute conversation, not a week of analysis. If the Tech Lead says "I'm not sure," that usually means it's bigger than a lightweight — write the RFC.
+Talk to your Tech Lead in the weekly scoping session. Sizing is a 5-minute conversation, not a week of analysis. If the Tech Lead says "I'm not sure," that usually means it's bigger than a lightweight, so write the RFC.
 
 **What about urgent customer issues?**
-Urgent doesn't change the path — it changes the priority. A 3-day fix for a churning customer is still a Lightweight brief, but it goes to the top of the queue. The PM + Tech Lead approve same-day. Escalation to the Head of Product if needed.
+Urgent doesn't change the path, it changes the priority. A 3-day fix for a churning customer is still a Lightweight brief, but it goes to the top of the queue. The PM + Tech Lead approve same-day. Escalation to the Head of Product if needed.
 
 **What about platform/infrastructure work?**
 Same three paths. Tech debt, reliability improvements, and dependency upgrades use the same decision tree. The evidence is different (incidents, performance data, security advisories instead of customer interviews), but Signal → Standard → Speed still applies.
@@ -142,10 +142,10 @@ The PM, informed by the Tech Lead's sizing. If there's disagreement, the PM deci
 
 ## Related
 
-- [Product Playbook](./product-playbook.md) — The 6-phase operating model (this framework is Phase 2: DECIDE)
-- [Product Vision](../anchors/product-vision.md) — Vision and personas
-- [RFC Guide](../guides/product-specs.md) — Full Spec path guidance (writing a ship-coupled RFC)
-- [RICE Assessment](./rice.md) — Scoring for Full Spec path
+- [Product Playbook](./product-playbook.md): The 6-phase operating model (this framework is Phase 2: DECIDE)
+- [Product Vision](../anchors/product-vision.md): Vision and personas
+- [RFC Guide](../guides/product-specs.md): Full Spec path guidance (writing a ship-coupled RFC)
+- [RICE Assessment](./rice.md): Scoring for Full Spec path
 
 ---
 
@@ -162,9 +162,9 @@ Each bucket gets a capacity allocation (e.g., 40% Growth, 30% Enterprise, 20% Pl
 RICE = (Reach + Impact + Confidence) / Effort. Score 1–4 for value dimensions, 1–5 for effort. Grades A through D. See [RICE Assessment](./rice.md) for scoring details.
 
 **Key rules:**
-- **Update RICE after scoping** — effort estimates change. Re-score.
-- **Don't optimise for RICE** — optimise for strategy, then let RICE rank within it.
-- **Kill low-confidence work** — if Confidence is 1, do more discovery first.
-- **Revisit deferred items quarterly** — priorities shift.
+- **Update RICE after scoping**: effort estimates change. Re-score.
+- **Don't optimise for RICE**: optimise for strategy, then let RICE rank within it.
+- **Kill low-confidence work**: if Confidence is 1, do more discovery first.
+- **Revisit deferred items quarterly**: priorities shift.
 
 **Full guide:** [RICE Prioritisation](./rice.md)

@@ -39,8 +39,8 @@ _Pull metrics from the RFC Success section. Fill in actuals._
 
 **Did this move the headline metric from the [product vision](../../anchors/product-vision.md)?**
 
-- [ ] **Direct movement?** [Evidence — the headline metric itself shifted, in the right direction, by a measurable amount]
-- [ ] **Leading indicator?** [Evidence — a known leading indicator of the headline moved]
+- [ ] **Direct movement?** [Evidence: the headline metric itself shifted, in the right direction, by a measurable amount]
+- [ ] **Leading indicator?** [Evidence: a known leading indicator of the headline moved]
 - [ ] **Persona-specific check?** [Each affected persona's vision-lens question improved?]
 
 If none of these improved, why not? What would need to change?
@@ -52,7 +52,7 @@ If none of these improved, why not? What would need to change?
 **Who is using it?**
 
 - Number of accounts / users actively using the feature
-- Adoption curve — growing, flat, or declining?
+- Adoption curve: growing, flat, or declining?
 - Which persona(s) adopted? Which didn't?
 
 **Who isn't using it, and why?**
@@ -79,10 +79,10 @@ _Customer feedback, support tickets, sales conversations since launch._
 
 | Option | Criteria | When to choose |
 |--------|----------|----------------|
-| **Accelerate** | Exceeding targets + positive feedback | Double down — more investment, broader rollout |
+| **Accelerate** | Exceeding targets + positive feedback | Double down: more investment, broader rollout |
 | **Iterate** | On track + minor friction | Continue with targeted adjustments |
 | **Pivot** | Below targets + feedback explains why | Change approach based on what we learned |
-| **Investigate** | Below targets + unclear why | Dig deeper before deciding — more data needed |
+| **Investigate** | Below targets + unclear why | Dig deeper before deciding; more data needed |
 | **Stop** | Flat adoption + no pull | Wind down. Redirect engineering time. |
 
 **Our recommendation:** [Accelerate / Iterate / Pivot / Investigate / Stop]
@@ -108,4 +108,4 @@ _Schedule all three reviews when you ship, not after. Add calendar invites at la
 
 ---
 
-**Stopping is not failure.** Continuing to invest in something the data says isn't working — that's failure.
+**Stopping is not failure.** Continuing to invest in something the data says isn't working: that's failure.

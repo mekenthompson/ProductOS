@@ -48,9 +48,9 @@ Discovery is how you replace assumptions with evidence. Do it before you write a
 **Best for:** Sizing the problem, finding drop-offs, measuring baselines
 
 **What to look at:**
-- **Usage data** — How many people hit this flow? Where do they drop off?
-- **Support tickets** — How often does this come up? What's the impact?
-- **Adoption metrics** — If we built this, would anyone use it?
+- **Usage data:** How many people hit this flow? Where do they drop off?
+- **Support tickets:** How often does this come up? What's the impact?
+- **Adoption metrics:** If we built this, would anyone use it?
 
 **Output:** Baseline metrics for RFC Success section ("Currently 15% of users hit this, goal is 50%")
 
@@ -73,7 +73,7 @@ Discovery is how you replace assumptions with evidence. Do it before you write a
 
 | Output | When to Use | Template |
 |--------|-------------|----------|
-| **Research doc** | Every discovery effort — link in your RFC Evidence section | [Research Template](./templates/research.md) |
+| **Research doc** | Every discovery effort; link in your RFC Evidence section | [Research Template](./templates/research.md) |
 | **Job stories** | When you need to understand the customer job | [JTBD Guide](../guides/jtbd-guide.md) |
 | **Baseline metrics** | When you need to measure success (before/after) | Include in RFC Success section |
 | **Customer quotes** | When you need to make the problem real | Capture in research doc |
@@ -94,15 +94,15 @@ Discovery is how you replace assumptions with evidence. Do it before you write a
 
 ## Tips
 
-- **Don't lead the witness** — "Do you have trouble with retries?" (bad) vs "Tell me about the last time something failed unexpectedly" (good)
-- **Record everything** — You'll miss things in the moment. Review recordings, pull better quotes.
-- **Synthesise quickly** — Turn notes into insights within 48 hours while it's fresh.
-- **Share as you go** — Drop interesting findings in #product, don't wait for the polished doc.
+- **Don't lead the witness:** "Do you have trouble with retries?" (bad) vs "Tell me about the last time something failed unexpectedly" (good)
+- **Record everything:** You'll miss things in the moment. Review recordings, pull better quotes.
+- **Synthesise quickly:** Turn notes into insights within 48 hours while it's fresh.
+- **Share as you go:** Drop interesting findings in #product, don't wait for the polished doc.
 
 ---
 
 ## Related
 
-- **[Handling Product Feedback](./customer-feedback.md)** — How feedback enters the system
-- **[RFC guide](../guides/product-specs.md)** — Where discovery evidence lands
-- **[Delivery Standards](./delivery-standards.md)** — Where discovery fits in the delivery process
+- **[Handling Product Feedback](./customer-feedback.md)**: How feedback enters the system
+- **[RFC guide](../guides/product-specs.md)**: Where discovery evidence lands
+- **[Delivery Standards](./delivery-standards.md)**: Where discovery fits in the delivery process

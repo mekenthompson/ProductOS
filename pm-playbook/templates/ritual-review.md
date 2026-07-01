@@ -5,14 +5,14 @@ last_reviewed: 2026-05-12
 icon: "📋"
 ---
 
-# Ritual Review: [Product Name] — [Date]
+# Ritual Review: [Product Name] ([Date])
 
 **Reviewer:** [PM name]
 **Review type:** Dogfooding (your product) / Competitor Analysis
 **Product area:** [e.g., onboarding, core flow, billing]
 **Persona lens:** Creator / Consumer / Sponsor (for dogfooding)
-**Rotation:** [Your competitor list — rotate one per month] (for competitor reviews)
-**Recording:** [Link to a short walkthrough, ≤10 mins — Loom / Tella / equivalent] (for dogfooding)
+**Rotation:** [Your competitor list; rotate one per month] (for competitor reviews)
+**Recording:** [Link to a short walkthrough, ≤10 mins, Loom / Tella / equivalent] (for dogfooding)
 
 ---
 
@@ -47,9 +47,9 @@ Where did you get stuck, confused, or frustrated?
 
 What do they do well? What surprised you? What felt smooth, clear, or delightful?
 
-1. **[Feature/pattern]** — [Why it's notable / Why it worked]
-2. **[Feature/pattern]** — [Why it's notable / Why it worked]
-3. **[Feature/pattern]** — [Why it's notable / Why it worked]
+1. **[Feature/pattern]:** [Why it's notable / Why it worked]
+2. **[Feature/pattern]:** [Why it's notable / Why it worked]
+3. **[Feature/pattern]:** [Why it's notable / Why it worked]
 
 ---
 
@@ -57,8 +57,8 @@ What do they do well? What surprised you? What felt smooth, clear, or delightful
 
 Where do they fall short? What was confusing, broken, or missing?
 
-1. **[Gap]** — [What was confusing, broken, or missing]
-2. **[Gap]** — [What was confusing, broken, or missing]
+1. **[Gap]:** [What was confusing, broken, or missing]
+2. **[Gap]:** [What was confusing, broken, or missing]
 
 ---
 
@@ -77,9 +77,9 @@ Where do they fall short? What was confusing, broken, or missing?
 
 Top 3 things to fix or improve.
 
-1. **[Opportunity/Improvement]** — [What you could do differently / What would be better and why]
-2. **[Opportunity/Improvement]** — [What you could do differently / What would be better and why]
-3. **[Opportunity/Improvement]** — [What you could do differently / What would be better and why]
+1. **[Opportunity/Improvement]:** [What you could do differently / What would be better and why]
+2. **[Opportunity/Improvement]:** [What you could do differently / What would be better and why]
+3. **[Opportunity/Improvement]:** [What you could do differently / What would be better and why]
 
 **Remember:** You must always find something to improve (for dogfooding reviews).
 

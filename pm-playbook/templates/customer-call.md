@@ -5,9 +5,9 @@ last_reviewed: 2025-01-25T00:00:00.000Z
 icon: "📞"
 ---
 
-# Customer Call: [Company] — [Topic] ([Date])
+# Customer Call: [Company], [Topic] ([Date])
 
-> Capture what you learned — the problem underneath the request, not the feature they asked for.
+> Capture what you learned: the problem underneath the request, not the feature they asked for.
 
 ## Context
 
@@ -17,7 +17,7 @@ icon: "📞"
 - **Role:** [Title/role]
 - **Company:** [Company name]
 - **Segment:** [Enterprise / Startup / etc.]
-- **Persona:** Creator / Consumer / Sponsor — _Which [persona](../../anchors/product-vision.md) does this contact map to?_
+- **Persona:** Creator / Consumer / Sponsor. _Which [persona](../../anchors/product-vision.md) does this contact map to?_
 
 ### What We Were Trying to Learn
 
@@ -25,7 +25,7 @@ icon: "📞"
 
 ### Background
 
-[Brief context about the customer — how long they've been using the product, what they use it for, etc.]
+[Brief context about the customer: how long they've been using the product, what they use it for, etc.]
 
 ---
 
@@ -56,9 +56,9 @@ What triggered them to look for a solution?
 
 Top 3-5 insights from this call:
 
-1. **[Takeaway 1]** — [Brief explanation]
-2. **[Takeaway 2]** — [Brief explanation]
-3. **[Takeaway 3]** — [Brief explanation]
+1. **[Takeaway 1]:** [Brief explanation]
+2. **[Takeaway 2]:** [Brief explanation]
+3. **[Takeaway 3]:** [Brief explanation]
 
 ---
 
@@ -67,10 +67,10 @@ Top 3-5 insights from this call:
 Verbatim quotes that capture important insights:
 
 > "[Quote 1]"
-> — on [topic]
+> (on [topic])
 
 > "[Quote 2]"
-> — on [topic]
+> (on [topic])
 
 ---
 
@@ -90,7 +90,7 @@ What should we do with this information?
 
 ### Follow-up Actions
 
-**Loop closed:** [ ] Yes — customer informed of outcome / [ ] Pending — follow-up by [date]
+**Loop closed:** [ ] Yes, customer informed of outcome / [ ] Pending, follow-up by [date]
 
 - [ ] [Action 1]
 - [ ] [Action 2]

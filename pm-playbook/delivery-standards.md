@@ -1,13 +1,13 @@
 ---
 title: Delivery Standards
-description: How to break down work, track projects, and manage delivery — tracker-agnostic
+description: How to break down work, track projects, and manage delivery, tracker-agnostic
 last_reviewed: 2026-05-12
 icon: "📋"
 ---
 
 # Delivery Standards
 
-**From idea to shipped feature** — how to break down work, move through phases, and track delivery. This guide describes the *workflow*; the statuses and tracker fields below are conventions you implement in whichever issue tracker your team uses (Linear, Jira, Shortcut, GitHub Projects, Asana, etc.).
+**From idea to shipped feature.** How to break down work, move through phases, and track delivery. This guide describes the *workflow*; the statuses and tracker fields below are conventions you implement in whichever issue tracker your team uses (Linear, Jira, Shortcut, GitHub Projects, Asana, etc.).
 
 ---
 
@@ -15,11 +15,11 @@ icon: "📋"
 
 > 💡 **New to the process? Here's the 5-step version.** Each step maps to a phase below.
 
-1. **Validate the problem (Learn)** — Talk to 3+ customers. Find evidence. Check with your SVP of Product.
-2. **Build the business case (Decide)** — Write an RFC. Score with RICE. Get RFC approved.
-3. **Shape the solution (Shape)** — Approved RFC lives. Align Product, Engineering, Design & GTM on scope, success/failure modes, and guardrails.
-4. **Ship the feature (Build → Launch)** — Build behind a flag. Preview with trusted customers. Launch to everyone.
-5. **Measure and learn (Sell)** — Track adoption. Review at 2 weeks, 30 days, 60-90 days. Decide next steps.
+1. **Validate the problem (Learn):** Talk to 3+ customers. Find evidence. Check with your SVP of Product.
+2. **Build the business case (Decide):** Write an RFC. Score with RICE. Get RFC approved.
+3. **Shape the solution (Shape):** Approved RFC lives. Align Product, Engineering, Design & GTM on scope, success/failure modes, and guardrails.
+4. **Ship the feature (Build → Launch):** Build behind a flag. Preview with trusted customers. Launch to everyone.
+5. **Measure and learn (Sell):** Track adoption. Review at 2 weeks, 30 days, 60-90 days. Decide next steps.
 
 **Quick lookup:**
 - Need to write an RFC? → [RFC guide](../guides/product-specs.md)
@@ -30,7 +30,7 @@ icon: "📋"
 
 ## How We Break Down Work
 
-Four levels, regardless of tracker. Most modern trackers (Linear, Jira, Shortcut, etc.) map cleanly to these — the labels differ, the shape doesn't.
+Four levels, regardless of tracker. Most modern trackers (Linear, Jira, Shortcut, etc.) map cleanly to these: the labels differ, the shape doesn't.
 
 ### Initiatives
 
@@ -66,13 +66,13 @@ Product delivery flows through **3 phase groups** with **3 gates**:
 
 **Shape** (Backlog → Shaping) → *Shaping Checkpoint* → **Build** (Readying for Build → Building → In Preview) → *Launch Readiness Check* → **Go to Market** (Ready for GTM → GTM Launch Planning → Ready for Launch → Launched) → *Launch Retro Check*
 
-Projects can also be **Cancelled** — moved by PM or GTM Lead via agreement with Product.
+Projects can also be **Cancelled**, moved by PM or GTM Lead via agreement with Product.
 
 ---
 
 ## Delivery Statuses
 
-Implement these as statuses (or workflow states) in your tracker — the names are what matters, not the tool.
+Implement these as statuses (or workflow states) in your tracker: the names are what matters, not the tool.
 
 | Status | Phase Group | Who Moves Project Here | What's Happening |
 |--------|------------|----------------------|------------------|
@@ -98,20 +98,20 @@ Every product decision traces to evidence. The discipline is choosing the highes
 ### Behaviour
 
 - Validate the problem before committing engineering time
-- Tag the [persona](../anchors/product-vision.md) — Creator, Consumer, or Sponsor
+- Tag the [persona](../anchors/product-vision.md): Creator, Consumer, or Sponsor
 - Apply [Signal → Standard → Speed](./decision-framework.md) to pick the right path (Quick Win / Lightweight / Full Spec)
 - Vision check: does this move the [headline metric](../anchors/product-vision.md)?
 
 ### What You Do
 
 **Backlog:**
-- Talk to customers (3+ minimum) — see [Discovery](./discovery.md)
+- Talk to customers (3+ minimum); see [Discovery](./discovery.md)
 - Gather evidence (pain points, workarounds, urgency)
 - Assess impact (how many customers, what magnitude?)
 - Collect usage data and feedback patterns
 
 **Shaping:**
-- Write the [RFC](../guides/product-specs.md) — [RFC Template](../templates/rfc.md)
+- Write the [RFC](../guides/product-specs.md); use the [RFC Template](../templates/rfc.md)
 - Score with [RICE](./rice.md)
 - Get technical feasibility from engineering
 - Review with Sales, Marketing, Product, Engineering
@@ -120,7 +120,7 @@ Every product decision traces to evidence. The discipline is choosing the highes
 
 - [RFC](../templates/rfc.md)
 - RICE score with transparent reasoning
-- Evidence base — [Research Template](./templates/research.md), [Customer Call Template](./templates/customer-call.md)
+- Evidence base: [Research Template](./templates/research.md), [Customer Call Template](./templates/customer-call.md)
 
 ---
 
@@ -132,9 +132,9 @@ The product is one thing. Our three product principles are engineering standards
 
 ### Behaviour
 
-- The RFC is the single living document — approved at the end of Shape, updated through delivery as decisions land
+- The RFC is the single living document: approved at the end of Shape, updated through delivery as decisions land
 - [Product principles](../anchors/product-principles.md) applied as design and engineering standards, not post-hoc review criteria
-- Instrumentation wired up before preview — events defined, dashboards built, guardrail metrics identified
+- Instrumentation wired up before preview: events defined, dashboards built, guardrail metrics identified
 
 ### What You Do
 
@@ -144,15 +144,15 @@ The product is one thing. Our three product principles are engineering standards
 - Set up the project in your tracker with milestones
 - Engineering creates build tickets and estimates
 
-> **"Ready to Build" is a conversation, not a formal gate.** PM and Tech Lead confirm specs are clear and engineering is ready to start. No sign-off ceremony needed — just mutual confidence.
+> **"Ready to Build" is a conversation, not a formal gate.** PM and Tech Lead confirm specs are clear and engineering is ready to start. No sign-off ceremony needed, just mutual confidence.
 
 **Building:**
-- Engineering builds feature behind flag (flag OFF) — see [Feature Flag Rollout](#feature-flag-rollout)
+- Engineering builds feature behind flag (flag OFF); see [Feature Flag Rollout](#feature-flag-rollout)
 - Weekly progress check-ins
 - Create demo artifacts (short recorded walkthroughs)
 - Train support team
 - Set up metrics and monitoring
-- Outcome UAT in a production-like environment — validate the user's job end-to-end (job × surface), independent of unit tests (see [Agentic Delivery](../guides/agentic-delivery.md))
+- Outcome UAT in a production-like environment: validate the user's job end-to-end (job × surface), independent of unit tests (see [Agentic Delivery](../guides/agentic-delivery.md))
 
 **In Preview:**
 - Enable flag for 5-10 trusted customer accounts
@@ -164,7 +164,7 @@ The product is one thing. Our three product principles are engineering standards
 ### Deliverables
 
 - [RFC](../templates/rfc.md) (delivery document)
-- Instrumentation — events + dashboards covering all RFC success metrics
+- Instrumentation: events + dashboards covering all RFC success metrics
 - Architecture Decision Records (ADRs) for irreversible decisions
 - Changelog Draft
 
@@ -174,25 +174,25 @@ The product is one thing. Our three product principles are engineering standards
 
 ### Mental Model: Launch + Sell
 
-Shipping is the beginning. A feature nobody uses isn't a success — it's an unanswered question. The path from "we built it" to "customers use it" requires deliberate effort.
+Shipping is the beginning. A feature nobody uses isn't a success; it's an unanswered question. The path from "we built it" to "customers use it" requires deliberate effort.
 
 ### Behaviour
 
 - Changelog entry for UX changes, support notification for everything
 - GTM Lead owns transitions from Ready for GTM onward
 - Structured post-launch reviews at three intervals:
-  - **2 weeks:** Early signal — is it being used? Any red flags?
-  - **30 days:** Trend check — on track? Feedback patterns?
-  - **60–90 days:** Full review — data meets decision
+  - **2 weeks:** Early signal. Is it being used? Any red flags?
+  - **30 days:** Trend check. On track? Feedback patterns?
+  - **60–90 days:** Full review. Data meets decision
 
 ### What You Do
 
 **Ready for GTM → GTM Launch Planning:**
 - Write customer documentation
 - Write release notes and changelog
-- Train Sales team (positioning, value) — for higher-stakes launches
+- Train Sales team (positioning, value), for higher-stakes launches
 - Train Support team (functionality)
-- Prepare launch materials (blog, email, social) — for higher-stakes launches
+- Prepare launch materials (blog, email, social), for higher-stakes launches
 - Execute launch activities
 - Get final GA approval
 
@@ -218,7 +218,7 @@ Shipping is the beginning. A feature nobody uses isn't a success — it's an una
 
 > ✅ **Green light to spec.** This confirms the problem is real, the approach is sound, and it's worth investing in.
 
-Every requirement below applies — scale its depth to the stakes (lighter for a Quick Win / Lightweight path, fuller for Full Spec work).
+Every requirement below applies; scale its depth to the stakes (lighter for a Quick Win / Lightweight path, fuller for Full Spec work).
 
 | Requirement | Notes |
 |-------------|-------|
@@ -241,7 +241,7 @@ Every requirement below applies — scale its depth to the stakes (lighter for a
 
 > ✅ **Green light to ship behind flag to customers.** Private preview is successful, critical issues resolved, ready for wider audience.
 
-Every requirement below applies — scale its depth to the stakes (lighter for a Quick Win / Lightweight path, fuller for Full Spec work).
+Every requirement below applies; scale its depth to the stakes (lighter for a Quick Win / Lightweight path, fuller for Full Spec work).
 
 | Requirement | Notes |
 |-------------|-------|
@@ -262,7 +262,7 @@ Every requirement below applies — scale its depth to the stakes (lighter for a
 
 **Outcome:** Change has gone through initial customer testing with any necessary updates made to enable it to move to Public Preview and then General Availability following agreed Go to Market steps.
 
-> 💡 Two distinct gates here, not one. The **outcome UAT** proves the user's job is done (customer-ready, Product); **production-readiness** proves it's secure / reliable / scalable / available to the level the stakes demand (production-ready, Engineering). Unit-green ≠ outcome-validated ≠ production-ready — none implies the others. (In the table above, depth is set to the stakes.) See [Agentic Delivery](../guides/agentic-delivery.md).
+> 💡 Two distinct gates here, not one. The **outcome UAT** proves the user's job is done (customer-ready, Product); **production-readiness** proves it's secure / reliable / scalable / available to the level the stakes demand (production-ready, Engineering). Unit-green ≠ outcome-validated ≠ production-ready; none implies the others. (In the table above, depth is set to the stakes.) See [Agentic Delivery](../guides/agentic-delivery.md).
 
 ---
 
@@ -270,9 +270,9 @@ Every requirement below applies — scale its depth to the stakes (lighter for a
 
 After launch, track whether the bet paid off with structured post-launch reviews:
 
-- [ ] **Product performance** — Actual metrics compared to RFC predictions
-- [ ] **Vision check** — Did this move the headline metric?
-- [ ] **Persona adoption** — Are the target personas using it?
+- [ ] **Product performance:** Actual metrics compared to RFC predictions
+- [ ] **Vision check:** Did this move the headline metric?
+- [ ] **Persona adoption:** Are the target personas using it?
 - [ ] **Decision made:** Accelerate · Iterate · Pivot · Investigate · Stop
 
 See [Post-Ship Reviews](#post-ship-reviews) for detailed guidance.
@@ -316,10 +316,10 @@ For all new Product & Engineering projects, use a consistent default project tem
 
 **Definition:** Priority within the delivery roadmap that is used to inform sequencing and resourcing decisions
 
-- **Urgent** — Critical work that has immediate cost of delay considerations or protects a critical growth opportunity (e.g. required to land a prospect) and must be worked on ASAP
-- **High** — Work that significantly contributes to strategic objective outcomes
-- **Medium** — Work that incrementally contributes to strategic objective outcomes - it supports or enables strategic objective outcomes but does not, on its own, materially move the metric.
-- **Low** — Work with limited or speculative growth impact that improves quality or maintainability without materially accelerating strategic objective outcomes
+- **Urgent:** Critical work that has immediate cost of delay considerations or protects a critical growth opportunity (e.g. required to land a prospect) and must be worked on ASAP
+- **High:** Work that significantly contributes to strategic objective outcomes
+- **Medium:** Work that incrementally contributes to strategic objective outcomes - it supports or enables strategic objective outcomes but does not, on its own, materially move the metric.
+- **Low:** Work with limited or speculative growth impact that improves quality or maintainability without materially accelerating strategic objective outcomes
 
 **Owner:** Product and Engineering Manager
 
@@ -374,21 +374,21 @@ After launch, track whether the bet paid off.
 
 ### Review Cadence
 
-- **2 weeks** — Early signal. Is it being used? Any red flags?
-- **30 days** — Trends. On track vs RFC metrics? Feedback patterns emerging?
-- **60-90 days** — Full review vs RFC success metrics. Compare actual vs predicted. Explicit recommendation.
+- **2 weeks:** Early signal. Is it being used? Any red flags?
+- **30 days:** Trends. On track vs RFC metrics? Feedback patterns emerging?
+- **60-90 days:** Full review vs RFC success metrics. Compare actual vs predicted. Explicit recommendation.
 
 ### Recommendation Matrix
 
 | Recommendation | Criteria | Action |
 |---|---|---|
-| **Accelerate** | Exceeding targets + positive feedback | Double down — more investment, broader rollout |
+| **Accelerate** | Exceeding targets + positive feedback | Double down: more investment, broader rollout |
 | **Iterate** | On track + minor friction | Continue with adjustments |
 | **Pivot** | Below targets + feedback explains why | Change approach based on learning |
 | **Investigate** | Below targets + unclear why | Dig deeper before deciding |
 | **Stop** | Flat adoption + no pull | Wind down, redirect engineering time |
 
-> 💡 **Stopping is not failure.** Continuing to invest in something the data says isn't working — that's failure.
+> 💡 **Stopping is not failure.** Continuing to invest in something the data says isn't working: that's failure.
 
 Use the [Post-Launch Review Template](./templates/post-launch-review.md) at each interval.
 
@@ -398,11 +398,11 @@ Use the [Post-Launch Review Template](./templates/post-launch-review.md) at each
 
 A spec translates the RFC into buildable requirements. It answers: What do we build? How does it work? How do we know it's done?
 
-**One RFC per project. It does the work that used to be split between a PRD and a delivery spec — framed around the user's job, with explicit success/failure modes, guardrails, and an open solution space.**
+**One RFC per project. It does the work that used to be split between a PRD and a delivery spec, framed around the user's job, with explicit success/failure modes, guardrails, and an open solution space.**
 
 ### RFC
 
-**Owner:** PM (with Design + Engineering collaboration) — **Answers:** What can users do? How does it work? How do we build it?
+**Owner:** PM (with Design + Engineering collaboration). **Answers:** What can users do? How does it work? How do we build it?
 
 - JTBD (Job to Be Done)
 - User flows and affected personas
@@ -416,10 +416,10 @@ A spec translates the RFC into buildable requirements. It answers: What do we bu
 
 ### Spec Rules
 
-- One RFC per project. The spec is a living document — it evolves through delivery.
+- One RFC per project. The spec is a living document; it evolves through delivery.
 - Specs are approved in Draft → In Review → Approved. Changes that affect scope require re-approval.
 - See the [RFC guide](../guides/product-specs.md) for the full lifecycle.
-- Specs are living documents during Build — update when you learn something. Archive after ship.
+- Specs are living documents during Build: update when you learn something. Archive after ship.
 
 ---
 
@@ -451,16 +451,16 @@ A spec translates the RFC into buildable requirements. It answers: What do we bu
 | **Launch Readiness Check** | Ship behind flag to customers | PM + SVP of Product |
 | **Launch Retro Check** | Did the bet pay off? | PM (performance review) |
 
-Gate requirements scale with the stakes — small / quick-win work doesn't need SVP sign-off. See the requirement tables above.
+Gate requirements scale with the stakes; small / quick-win work doesn't need SVP sign-off. See the requirement tables above.
 
 ---
 
 ## Related
 
-- [RFC guide](../guides/product-specs.md) — How RFCs are written and approved
-- [Discovery](./discovery.md) — How to validate problems before writing an RFC
-- [Handling Product Feedback](./customer-feedback.md) — Processing and routing customer feedback
-- [Decision Framework](./decision-framework.md) — Signal → Standard → Speed
-- [Product Playbook](./product-playbook.md) — The 6-phase operating model
+- [RFC guide](../guides/product-specs.md): How RFCs are written and approved
+- [Discovery](./discovery.md): How to validate problems before writing an RFC
+- [Handling Product Feedback](./customer-feedback.md): Processing and routing customer feedback
+- [Decision Framework](./decision-framework.md): Signal → Standard → Speed
+- [Product Playbook](./product-playbook.md): The 6-phase operating model
 
 For tool-specific guidance (how to set up custom statuses, automation rules, etc.) see your tracker's documentation.
