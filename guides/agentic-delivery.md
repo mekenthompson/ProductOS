@@ -55,7 +55,7 @@ Three documents, judged together, produce a verdict on any change:
 Three things sit on the "what" side, and keeping them straight is load-bearing here:
 
 - A **job story** is a *sentence* — `When [situation], [persona] wants to [motivation], so they can [outcome]`. It lives inside a spec and is the framing tool taught in the [JTBD Guide](./jtbd-guide.md). ("JTBD," Jobs To Be Done, is the framework; the job story is how it shows up in a doc.)
-- A **Job Spec** is a *standing document*, one per job, that captures the outcome (`job` / `outcome` / `stakes`), the signs it's working, the anti-patterns, and the acceptance scenarios. It is **durable**: it outlives any single RFC, feature, or implementation. Use the [Job Spec template](../templates/job-spec.md).
+- A **Job Spec** is a *standing document*, one per job, that captures the outcome (`job` / `outcome` / `stakes`), how the job contributes to the outcome it serves, what the product must be able to do to serve it, the signs it's working, the anti-patterns, and the acceptance scenarios. It is **durable**: it outlives any single RFC, feature, or implementation. Use the [Job Spec template](../templates/job-spec.md).
 - A **Product Spec** is the *per-product* layer above the jobs: it names the product's outcomes, says how the product functions, and **owns the list of jobs**. Each Job Spec ladders up to one of the Product Spec's outcomes, and each outcome carries a measurable **Signal** that drives the product's **North Star**: the metric ladder runs job metric → outcome Signal → North Star. (Don't confuse this with an **RFC**, the ship-coupled, per-initiative delivery doc below it.) Use the [Product Spec template](../templates/product-spec.md); for a worked example, see [switchroom's `reference/product-spec.md`](https://github.com/switchroom/switchroom/blob/main/reference/product-spec.md).
 
 The whole point of the standing Job Spec is that **the feature and the tech are free to evolve underneath while the job stays still.** When the implementation changes, you do not silently rewrite the job. You **narrate the retired approach** ("we used to do X; we changed it because Y; the job underneath is unchanged") and keep the `job` / `outcome` / `stakes` stable. That narration is what lets the next agent (or person) trust the doc.
@@ -173,7 +173,7 @@ If the agent has to invent structure or reach outside the method, the guide fail
 
 ## Glossary
 
-- **Job Spec** — the canonical term for a standing, per-job outcome document. *(Older synonyms "JTBD doc" and "red doc" are retired; don't use them.)*
+- **Job Spec** — the canonical term for a standing, per-job outcome document: the job, its contribution to the outcome it serves, what the product must be able to do to serve it, the good/bad signs, and the acceptance scenarios. *(Older synonyms "JTBD doc" and "red doc" are retired; don't use them.)*
 - **Product Spec** — the per-product doc above the jobs: names the product's outcomes, says how the product functions, and owns the list of jobs. *(Not to be confused with an RFC, the ship-coupled delivery doc.)*
 - **RFC** — the ship-coupled, per-initiative delivery doc (RFC / PR), which references a Job Spec. Not a named spec tier of its own. See [Product Specs / RFC guide](./product-specs.md).
 - **Anchor** — the vision, principles, and invariants, judged together to produce a verdict.

@@ -82,6 +82,18 @@ For each struggling moment: *the situation, what the user is trying, what goes w
 
 ---
 
+## Competing Solutions
+
+What the user hires *today* to get this job done. List the alternatives — competitors **and** the status-quo / "do nothing" option — and for each, why it fails the job. If nothing here beats "do nothing," you don't have a case yet.
+
+| Solution | Limitation (why it fails the job) |
+|---|---|
+| `[Competitor / tool]` | … |
+| `[Manual workaround / status quo]` | … |
+| **Do nothing** | … |
+
+---
+
 ## User Success Modes
 
 What success looks like **from the user's perspective**. Not "we shipped on time" — what the user is now able to do, feel, or decide.
@@ -207,6 +219,18 @@ How we ship this safely.
 - [ ] Event: `[event name]` — measures `[which success signal]`
 - [ ] Dashboard: `[link]` — covers headline + guardrails
 - [ ] Guardrail alert: `[metric]` triggers if it crosses `[threshold]`
+
+---
+
+## Open Questions
+
+Known unknowns that resolve on delivery. Tag each with who resolves it. These are ship-coupled — they belong here in the RFC, not in the durable [Job Spec](./job-spec.md).
+
+- `[question]` — `[Eng spike]`
+- `[question]` — `[Leadership decision]`
+- `[question]` — `[Data pull]`
+- `[question]` — `[Customer validation]`
+- `[question]` — `[Team confirmation]`
 
 ---
 

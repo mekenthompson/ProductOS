@@ -226,6 +226,19 @@ Phases with **exit criteria** (specific signals) and a **rollback** path (specif
 - "Customers are asking for this" without specifics
 - Cherry-picked quotes without frequency context
 
+### Tag every load-bearing claim's confidence
+
+Strong-vs-weak is about the *source*; the reader still needs to know how far
+you'd bet on the *claim*. Tag each load-bearing evidence line inline:
+
+- **(Validated)** — backed by strong evidence above; you'd stake the plan on it.
+- **(Directional — needs `[named data pull]`)** — you believe it, but it isn't
+  proven yet. Name the specific pull, interview, or spike that would confirm it.
+
+A spec with no `Directional` tags is either fully validated (rare) or hiding
+its assumptions. Being honest about what you *don't* yet know is what makes the
+rest of the evidence trustworthy — an untagged guess reads as fact.
+
 ---
 
 ## Approval
@@ -254,6 +267,7 @@ Before marking "In Review":
 - [ ] Job statement crisp; persona named
 - [ ] Named vision outcome and Job Spec linked in the Status table
 - [ ] At least 2 struggling moments with linked evidence
+- [ ] Every load-bearing claim tagged (Validated) or (Directional — needs X)
 - [ ] User success modes include a behavioural + outcome-signal check
 - [ ] At least 3 user-failure modes named, each with a detection signal
 - [ ] Pivot and stop triggers are specific (not "if things go badly")

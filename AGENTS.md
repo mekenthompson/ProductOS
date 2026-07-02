@@ -98,7 +98,7 @@ human-craft layer, out of scope here.)
 | Template | File | Notes |
 | -------- | ---- | ----- |
 | RFC | `rfc.md` | Single ship-coupled doc that does approval + delivery. JTBD-led; explicit user success/failure modes; guardrails; open solution space. References a Job Spec; not a named spec tier of its own |
-| Job Spec | `job-spec.md` | The durable, per-job outcome doc (job/outcome/stakes + Good/bad / Prove it). Outlives any single RFC; an RFC's "The Job" links to it. Distinct from the job-story *sentence* in the JTBD Guide |
+| Job Spec | `job-spec.md` | The durable, per-job outcome doc (job/outcome/stakes + Contribution / What the job requires / Good/bad / Prove it). Outlives any single RFC; an RFC's "The Job" links to it. Distinct from the job-story *sentence* in the JTBD Guide |
 | Job Links | `job-links.md` | The churny per-job join artefact: accounts, ARR, renewals, demand. `serves:` a Job Spec and carries the evidence that drifts, keeping the Job Spec clean. Not a named spec tier of its own |
 | Strategy | `strategy.md` | The STRATEGY.md spine: situation (evidenced/hypothesis/to-validate claims), thesis, investment allocation, pillars, explicit deferrals, data gaps, and the coherent-action argument. Sibling to the anchors; changes as market dynamics shift |
 | Decision Record | `decision-record.md` | Dated record of a material strategy change: context (what changed in the world), decision (what we now do differently), consequences (commits/gives up/blind spots). One per change; lives in `decisions/`; links to the STRATEGY.md commit it accompanies |
