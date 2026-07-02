@@ -1,3 +1,10 @@
+---
+title: Strategy as Code
+description: "Strategy as a versioned, diffable artefact, with decision records that capture why it changed."
+last_reviewed: 2026-07-02
+icon: "🧭"
+---
+
 # Strategy as Code
 
 Most product strategies fail quietly. Not because the team lacked conviction when they wrote it, but because the document lived somewhere no one could inspect, and by the time the market moved, no one remembered what they had originally believed or why.
@@ -10,7 +17,7 @@ Two failure modes drive this:
 
 A third problem compounds both: **strategy drifting from execution.** The strategy names the jobs that matter; the roadmap funds different ones; nobody notices for two quarters. The strategy-as-code approach addresses all three together.
 
-> 📖 This is the method guide. Read it alongside the [Strategy template](../templates/strategy.md) (the blank spine), [Decision Record template](../templates/decision-record.md) (the why, archived), [Org as an API](org-as-an-api.md) (gathering the evidence to form the view), and [Agentic Delivery](agentic-delivery.md) (running the build once the order is set). The worked example lives in [`examples/strategy-example/`](../examples/strategy-example/).
+> 📖 This is the method guide. Read it alongside the [Strategy template](../templates/strategy.md) (the blank spine), [Decision Record template](../templates/decision-record.md) (the why, archived), [Org as an API](org-as-an-api.md) (gathering the evidence to form the view), and [Agentic Delivery](agentic-delivery.md) (running the build once the order is set). The worked example lives in [`examples/strategy-example/`](../examples/strategy-example/README.md).
 
 ---
 

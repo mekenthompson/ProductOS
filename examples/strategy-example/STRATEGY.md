@@ -1,3 +1,10 @@
+---
+title: "Tempo Strategy (worked example)"
+description: "The filled STRATEGY.md for Tempo: funded jobs, deferrals, and the coherent-action argument, tagged by evidence level."
+sidebar:
+  order: 2
+---
+
 # Strategy: Tempo
 
 **Period:** H1 2026
