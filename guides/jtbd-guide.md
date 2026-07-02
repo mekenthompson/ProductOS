@@ -95,6 +95,19 @@ Forces are what push customers toward or away from a solution.
 
 The same person can have different jobs in different situations. Focus on the situation.
 
+### 6. The "user" can be another system
+
+The persona framing above assumes a human in a moment. Sometimes the one hiring
+the job is an integrating system: another service calling your API at scale, not
+a person at a screen. That is a recognised persona shape, not an exception to
+JTBD. The struggling moment is still real; it is just expressed in integration
+terms. The machine consumer is stuck when a call is too slow for its own latency
+budget, returns nulls for a rare input it must handle, or fails to degrade
+gracefully under load instead of erroring the whole request. Write the job story
+the same way, with the calling system as the persona and its integration
+constraint as the situation, so API-shaped products have a home in JTBD rather
+than being forced into a human frame that doesn't fit.
+
 ---
 
 ## Job story examples

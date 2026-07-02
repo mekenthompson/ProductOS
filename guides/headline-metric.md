@@ -48,7 +48,12 @@ Six properties. Apply them to each Signal the vision names.
 
 1. **One number per outcome.** Not three, not a composite index. If a Signal is a composite, name the *one* component you actually run on.
 
-2. **Time-based or rate-based.** "Time to X" and "X per Y" both work because they have an obvious direction. Raw counts (total users) lie about scale changes.
+2. **A defined shape, not a raw count.** A Signal needs an obvious direction and a definition that survives scale changes. Raw counts (total users) lie about scale. Three shapes carry that direction well, and none is lesser than the others:
+   - *Time-based or rate-based:* "time to X" and "X per Y" both have a built-in direction.
+   - *Accuracy / quality / error:* error rate, precision and recall, % within tolerance, match quality, calibration. A product whose job is to be *right* (an ML model, a ranking, a fraud check, a data-quality gate) has an accuracy-shaped Signal, and that is its core Signal, not a consolation for lacking a time metric.
+   - *Ratio / composition:* take-rate, share of a set, conversion between two named states.
+
+   Pick the shape that matches what the customer actually hires the product for. Don't force a time metric onto a product whose outcome is accuracy.
 
 3. **Customer-experienced.** The number should describe something the customer *feels*, not something internal. "System throughput" is internal. "Time from request to result" is felt.
 
@@ -57,6 +62,9 @@ Six properties. Apply them to each Signal the vision names.
 5. **Tied to an industry metric.** When customers and analysts ask how you measure, you can point to an industry standard (DORA, SPACE, NPS, retention cohorts, etc.) and explain the connection. Otherwise you'll struggle to benchmark.
 
 6. **Resistant to gaming.** A team that wants to "win" on the Signal should have to actually improve customer outcomes to do it. If there's a way to move the number that wouldn't help a customer, fix the Signal.
+
+> [!IMPORTANT]
+> **A Signal must be attributable.** Don't manufacture a Signal you can't tie back to the work. When many jobs move one number, or external cycles and seasonality swamp it, you can't read a change as evidence your feature worked. Name the confounder, then prefer a leading indicator you *can* attribute over a headline number you can't. "An outcome without a Signal is a slogan" is a rule against vagueness, not a licence for false precision.
 
 ---
 

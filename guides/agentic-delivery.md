@@ -60,6 +60,8 @@ Three things sit on the "what" side, and keeping them straight is load-bearing h
 
 The whole point of the standing Job Spec is that **the feature and the tech are free to evolve underneath while the job stays still.** When the implementation changes, you do not silently rewrite the job. You **narrate the retired approach** ("we used to do X; we changed it because Y; the job underneath is unchanged") and keep the `job` / `outcome` / `stakes` stable. That narration is what lets the next agent (or person) trust the doc.
 
+**Outcome-drift backstop.** The `job` / `outcome` / `stakes` lines are diff-protected. Narrating a retired *implementation approach* is normal and encouraged; that is the doc working as intended. Changing the *outcome itself* is a different act. It is not a silent edit and never rides along in a delivery commit: it is a ratified event that needs a recorded decision and re-ratification, the same discipline STRATEGY.md already demands of a strategy change. Without that rule a "durable" Job Spec quietly decays into a description of whatever shipped, which is the exact failure the standing doc exists to prevent. Make it mechanical: a change to those three lines fails review unless it cites its decision record.
+
 **Engineering reads the Job Spec as the brief**, the *what* and *why*, and owns the *how* (architecture, data model, non-functional approach), which it works out in the ship-coupled [RFC](./product-specs.md). Where a job has real engineering stakes, the Job Spec carries an optional engineering acceptance section, the **Production-readiness** section: the non-functional targets the build must hit, beside the customer-facing signs.
 
 ---
@@ -121,6 +123,16 @@ runs every gate at full depth. The gates never disappear, their *depth* tracks
 the stakes. This is what stops the method reading as a speed tax. An internal
 decision-framework layer tiers the paths (Quick Win / Lightweight / Full Spec)
 by size and stakes.
+
+**Minimum gate depth.** Scaling depth to the stakes never drops a clause to
+zero. Lightening a Quick Win means lighter *evidence depth*, a Tech Lead's nod
+instead of a load test, not a skipped clause. The invariant clause is the
+exception that stays fixed: it is always binary and fully checked, at every
+tier. There is no "light" invariant check, because an invariant either holds or
+it doesn't, and a partial answer is a fail. So the floor is: at every tier, all
+four clauses are answered, and the invariant answer is a real check against the
+by-construction test, not "someone eyeballed it." A "pass" that skipped a clause
+is not a pass, it is an unrun gate.
 
 ---
 
