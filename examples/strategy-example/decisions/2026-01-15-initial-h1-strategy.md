@@ -1,7 +1,10 @@
 ---
+title: "Decision: Initial H1 2026 strategy"
+description: "The founding H1 2026 allocation for Tempo and the reasoning behind it."
+sidebar:
+  order: 3
 date: 2026-01-15
 commit: a3f9c12e7b44d88f2109c65a0ee3b7d4a1f82c90
-title: initial-h1-strategy
 ---
 
 # Decision Record: Initial H1 2026 strategy

@@ -1,3 +1,10 @@
+---
+title: "Strategy Example: Tempo"
+description: "A worked STRATEGY.md for a fictional team-scheduling product, with two decision records showing how the strategy evolved over a period."
+sidebar:
+  order: 1
+---
+
 # Strategy Example: Tempo
 
 This is a worked example of the [Strategy template](../../templates/strategy.md) for a fictional team-scheduling product called **Tempo**. The customers — FitClub, BrightSmile, CityCare — are fictional. The jobs, market pressures, and competitive moves are illustrative.
