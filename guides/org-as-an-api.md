@@ -34,11 +34,11 @@ This is B2B SaaS shaped: the customer is an **account**, and the account is the 
 
 The five categories, and what you join from each:
 
-- **Feedback tool** — who asked, and how often. The demand signal.
-- **Support tool** — the same problem from the complaint side. Sentiment the feedback count misses.
-- **CRM** — the account, its value, the live opportunity, the renewal date.
-- **Warehouse / analytics** — how the job is actually used.
-- **Finance** — the dollars behind the renewal or expansion.
+- **Feedback tool** -- who asked, and how often. The demand signal.
+- **Support tool** -- the same problem from the complaint side. Sentiment the feedback count misses.
+- **CRM** -- the account, its value, the live opportunity, the renewal date.
+- **Warehouse / analytics** -- how the job is actually used.
+- **Finance** -- the dollars behind the renewal or expansion.
 
 ---
 
@@ -67,7 +67,7 @@ Each answer lives in a different system. The job is the key that joins them. You
 
 ## 4. Roll up into one view
 
-Run every job through the same join. What comes back is a single view: impact and revenue over time, per job, with the contributing accounts attached. A flow reads it well — accounts and what they're worth on the left, the jobs sized by demand in the middle, the strategic buckets on the right.
+Run every job through the same join. What comes back is a single view: impact and revenue over time, per job, with the contributing accounts attached. A flow reads it well, accounts and what they're worth on the left, the jobs sized by demand in the middle, the strategic buckets on the right.
 
 > 📊 The ProductOS article renders this as a revenue-to-roadmap Sankey. The shape is the point: which account pulls which job, and which jobs carry the most weight.
 
@@ -122,10 +122,10 @@ If any answer is "no," the join isn't wired yet. That's the work.
 
 ## Glossary
 
-- **The join** — querying every system around one job to assemble a single evidence picture.
-- **Join key** — the identifier that ties a record to an account. Primary: account name. Fallback: email domain.
-- **Grounded order** — the impact-and-revenue-weighted starting order the view produces, before team allocation.
-- **Job Links** — the per-job artefact that carries the churny join (accounts, ARR, renewals, demand). Points up to a Job Spec.
+- **The join** -- querying every system around one job to assemble a single evidence picture.
+- **Join key** -- the identifier that ties a record to an account. Primary: account name. Fallback: email domain.
+- **Grounded order** -- the impact-and-revenue-weighted starting order the view produces, before team allocation.
+- **Job Links** -- the per-job artefact that carries the churny join (accounts, ARR, renewals, demand). Points up to a Job Spec.
 
 ---
 
@@ -137,7 +137,7 @@ When asked to "join the org" for a job: locate the Job Spec, read its identifier
 
 ## Related
 
-- [Job Spec](../templates/job-spec.md) — the durable unit you join around
-- [Job Links](../templates/job-links.md) — the join artefact
-- [JTBD Guide](jtbd-guide.md) — decomposing requests into jobs
-- [Agentic Delivery](agentic-delivery.md) — running the build once the order is set
+- [Job Spec](../templates/job-spec.md) -- the durable unit you join around
+- [Job Links](../templates/job-links.md) -- the join artefact
+- [JTBD Guide](jtbd-guide.md) -- decomposing requests into jobs
+- [Agentic Delivery](agentic-delivery.md) -- running the build once the order is set

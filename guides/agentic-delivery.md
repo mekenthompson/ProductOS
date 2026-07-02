@@ -1,6 +1,6 @@
 ---
 title: Agentic Delivery
-description: How to run delivery with an agentic workforce — the four working parts (anchors, Job Specs, design loops, outcome UAT) and who owns what when agents do much of the building
+description: How to run delivery with an agentic workforce: the four working parts (anchors, Job Specs, design loops, outcome UAT) and who owns what when agents do much of the building
 last_reviewed: 2026-06-13
 icon: "🤖"
 ---
@@ -13,7 +13,7 @@ It is written for the whole triad: **product, design, and engineering**. Enginee
 
 > [!NOTE]
 >
-> Read this guide alongside [Product Vision](../anchors/product-vision.md), [Product Principles](../anchors/product-principles.md), and your [Invariants](../anchors/invariants.md) (the three anchors), and the [JTBD Guide](./jtbd-guide.md) (the job-story sentence and the Job Specs that carry it). The terse, agent-executable version of everything below lives in **[AGENTS.md](../AGENTS.md)** under "Agentic Delivery — operating contract."
+> Read this guide alongside [Product Vision](../anchors/product-vision.md), [Product Principles](../anchors/product-principles.md), and your [Invariants](../anchors/invariants.md) (the three anchors), and the [JTBD Guide](./jtbd-guide.md) (the job-story sentence and the Job Specs that carry it). The terse, agent-executable version of everything below lives in **[AGENTS.md](../AGENTS.md)** under "Agentic Delivery, operating contract."
 
 ---
 
@@ -23,10 +23,10 @@ It is written for the whole triad: **product, design, and engineering**. Enginee
 
 So the method keeps four artifacts as the constants that **don't move while the implementation churns underneath them**. Agents build fast *inside* these gates; humans own the gates.
 
-1. **Anchors** — the durable *why*, *good*, and *forbidden*. (Vision + principles + invariants → a verdict.)
-2. **Job Specs** — the stable outcome contract. (The job, decoupled from the build.)
-3. **Design loops** — research the unknowns, never assume; review adversarially.
-4. **Outcome UAT** — validate the job end-to-end, independent of unit tests.
+1. **Anchors** -- the durable *why*, *good*, and *forbidden*. (Vision + principles + invariants → a verdict.)
+2. **Job Specs** -- the stable outcome contract. (The job, decoupled from the build.)
+3. **Design loops** -- research the unknowns, never assume; review adversarially.
+4. **Outcome UAT** -- validate the job end-to-end, independent of unit tests.
 
 > [!TIP]
 >
@@ -38,7 +38,7 @@ So the method keeps four artifacts as the constants that **don't move while the 
 
 ---
 
-## 1. Anchors — the durable "why," "good," and "forbidden"
+## 1. Anchors: the durable "why," "good," and "forbidden"
 
 Three documents, judged together, produce a verdict on any change:
 
@@ -50,21 +50,21 @@ Three documents, judged together, produce a verdict on any change:
 
 ---
 
-## 2. Job Specs — the stable outcome contract
+## 2. Job Specs: the stable outcome contract
 
 Three things sit on the "what" side, and keeping them straight is load-bearing here:
 
-- A **job story** is a *sentence* — `When [situation], [persona] wants to [motivation], so they can [outcome]`. It lives inside a spec and is the framing tool taught in the [JTBD Guide](./jtbd-guide.md). ("JTBD," Jobs To Be Done, is the framework; the job story is how it shows up in a doc.)
-- A **Job Spec** is a *standing document*, one per job, that captures the outcome (`job` / `outcome` / `stakes`), how the job contributes to the outcome it serves, what the product must be able to do to serve it, the signs it's working, the anti-patterns, and the acceptance scenarios. It is **durable**: it outlives any single RFC, feature, or implementation. Use the [Job Spec template](../templates/job-spec.md).
-- A **Product Spec** is the *per-product* layer above the jobs: it names the product's outcomes, says how the product functions, and **owns the list of jobs**. Each Job Spec ladders up to one of the Product Spec's outcomes, and each outcome carries a measurable **Signal** that drives the product's **North Star**: the metric ladder runs job metric → outcome Signal → North Star. (Don't confuse this with an **RFC**, the ship-coupled, per-initiative delivery doc below it.) Use the [Product Spec template](../templates/product-spec.md); for a worked example, see [switchroom's `reference/product-spec.md`](https://github.com/switchroom/switchroom/blob/main/reference/product-spec.md).
+- A **job story** is a *sentence* -- `When [situation], [persona] wants to [motivation], so they can [outcome]`. It lives inside a spec and is the framing tool taught in the [JTBD Guide](./jtbd-guide.md). ("JTBD," Jobs To Be Done, is the framework; the job story is how it shows up in a doc.)
+- A **Job Spec** is a *standing document*, one per job, that captures the job / outcome / stakes (laddering up via `serves:`), the required **struggling moment**, its **Contribution** to the outcome it serves (mechanism plus the named leading indicator), **What the job requires** (the Must / Won't capabilities), the good / bad signs, the **Prove it** acceptance scenarios, and a one-line **Verdict**. It is **durable**: it outlives any single RFC, feature, or implementation. Use the [Job Spec template](../templates/job-spec.md).
+- A **Product Spec** is the *per-product* layer above the jobs: it names the product's outcomes, says how the product functions, and **owns the list of jobs**. Each Job Spec ladders up to one of the Product Spec's outcomes, and each outcome carries a measurable **Signal**. One rung, two forms: the Job Spec names the outcome's **leading indicator** in words; the Product Spec's job index carries its quantified form, the **job metric**; that rolls up into the outcome **Signal**; the Signals drive the **North Star** (the product's single headline metric). The ladder runs leading indicator (named) → job metric (quantified) → outcome Signal → North Star. (Don't confuse this with an **RFC**, the ship-coupled, per-initiative delivery doc below it.) Use the [Product Spec template](../templates/product-spec.md); for a worked example, see [switchroom's `reference/product-spec.md`](https://github.com/switchroom/switchroom/blob/main/reference/product-spec.md).
 
 The whole point of the standing Job Spec is that **the feature and the tech are free to evolve underneath while the job stays still.** When the implementation changes, you do not silently rewrite the job. You **narrate the retired approach** ("we used to do X; we changed it because Y; the job underneath is unchanged") and keep the `job` / `outcome` / `stakes` stable. That narration is what lets the next agent (or person) trust the doc.
 
-**Engineering reads the Job Spec as the brief**, the *what* and *why*, and owns the *how* (architecture, data model, non-functional approach), which it works out in the ship-coupled [RFC](./product-specs.md). Where a job has real engineering stakes, the Job Spec carries an optional **engineering acceptance criteria** section: the non-functional targets the build must hit, beside the customer-facing signs.
+**Engineering reads the Job Spec as the brief**, the *what* and *why*, and owns the *how* (architecture, data model, non-functional approach), which it works out in the ship-coupled [RFC](./product-specs.md). Where a job has real engineering stakes, the Job Spec carries an optional engineering acceptance section, the **Production-readiness** section: the non-functional targets the build must hit, beside the customer-facing signs.
 
 ---
 
-## 3. Design loops — research, never assume; review adversarially
+## 3. Design loops: research, never assume; review adversarially
 
 Work starts from a Job Spec, not a blank page. The loop:
 
@@ -80,11 +80,11 @@ Work starts from a Job Spec, not a blank page. The loop:
 
 ---
 
-## 4. Outcome UAT — validate the job, not the diff
+## 4. Outcome UAT: validate the job, not the diff
 
 Unit and feature tests prove the code does what the author *intended*. They do not prove the **user's job got done**. That is a separate, binding, pre-ship gate:
 
-- **Named by job × surface**, not by implementation — so the scenario survives any number of internal rewrites. The scenario *is* the constant you keep re-proving against as models, features, and code change underneath.
+- **Named by job × surface**, not by implementation -- so the scenario survives any number of internal rewrites. The scenario *is* the constant you keep re-proving against as models, features, and code change underneath.
 - **Exercises the real end-to-end path** and asserts the *user-observable outcome* (and timing), not internal state.
 - **Proven on every surface the job can reach.** A single-surface proof hides surface-specific bugs.
 
@@ -96,7 +96,7 @@ Three distinct gates, and **none implies the others**:
 |---|---|---|
 | Unit / feature tests | Does the code do what the author intended? | Whoever wrote it (agent or human) |
 | **Outcome UAT** (customer-ready) | Did the user's job actually get done, well, on the real path? | Product defines; the delivery agent runs it |
-| **Production-readiness** (engineering acceptance) | Is it secure, reliable, scalable, available, operable — to the level the stakes demand? | Engineering signs off |
+| **Production-readiness** (engineering acceptance) | Is it secure, reliable, scalable, available, operable, to the level the stakes demand? | Engineering signs off |
 
 The loop is **build → validate the outcome → improve**. Not "ship when unit tests pass."
 
@@ -117,10 +117,10 @@ Anything else is out of scope, **however clever it seems.** The four clauses are
 
 The verdict rule is all-must-pass, but "pass" is proportional. A Quick Win
 passes with a Tech Lead's nod and an outcome sanity check. A payments change
-runs every gate at full depth. The gates never disappear — their *depth* tracks
-the stakes. This is what stops the method reading as a speed tax. The
-[Decision Framework](../pm-playbook/decision-framework.md) sets the paths
-(Quick Win / Lightweight / Full Spec).
+runs every gate at full depth. The gates never disappear, their *depth* tracks
+the stakes. This is what stops the method reading as a speed tax. An internal
+decision-framework layer tiers the paths (Quick Win / Lightweight / Full Spec)
+by size and stakes.
 
 ---
 
@@ -134,12 +134,12 @@ Nobody dictates another's domain. Product doesn't pick the data store; engineeri
 
 ---
 
-## When agents do the delivery — who owns what
+## When agents do the delivery: who owns what
 
 The shift from a human team to an agent-assisted one does **not** move ownership of the anchors. It moves ownership of *execution*.
 
-- **Agents own delivery execution within the gates** — drafting Job Specs, implementing, running the design loop, running the outcome UAT.
-- **Humans own the gates and the judgement** — the vision, the principles, the invariants, the ratification of the job statement, and the engineering oversight. Agents *consume* the anchors; they never author them.
+- **Agents own delivery execution within the gates** -- drafting Job Specs, implementing, running the design loop, running the outcome UAT.
+- **Humans own the gates and the judgement** -- the vision, the principles, the invariants, the ratification of the job statement, and the engineering oversight. Agents *consume* the anchors; they never author them.
 - **The adversarial reviewer is always a separate process.** An agent reviewing its own change is not a review.
 
 The stance is **"augmentation, not automation"**: **augment the judgement, automate the delivery, and keep the four parts as the safety rail.** (Of the anchors, the invariants are the firmest line; agents never relax an invariant to land a change.)
@@ -173,29 +173,29 @@ If the agent has to invent structure or reach outside the method, the guide fail
 
 ## Glossary
 
-- **Job Spec** — the canonical term for a standing, per-job outcome document: the job, its contribution to the outcome it serves, what the product must be able to do to serve it, the good/bad signs, and the acceptance scenarios. *(Older synonyms "JTBD doc" and "red doc" are retired; don't use them.)*
-- **Product Spec** — the per-product doc above the jobs: names the product's outcomes, says how the product functions, and owns the list of jobs. *(Not to be confused with an RFC, the ship-coupled delivery doc.)*
-- **RFC** — the ship-coupled, per-initiative delivery doc (RFC / PR), which references a Job Spec. Not a named spec tier of its own. See [Product Specs / RFC guide](./product-specs.md).
-- **Anchor** — the vision, principles, and invariants, judged together to produce a verdict.
-- **Invariant** — a line the product won't cross by construction; the firmest anchor.
-- **Verdict rule** — the all-must-pass gate above (outcome ∧ Job Spec ∧ principles ∧ no invariant crossed).
-- **Design loop** — research-the-unknowns → build-with-tests → fresh-process adversarial review → iterate to APPROVE.
-- **Fresh-process review** — review by a separate process that did not author the change; never the author.
-- **Outcome UAT** — a pre-ship gate that validates the user's job end-to-end on the real path, independent of unit tests.
-- **Production-readiness** — engineering's acceptance gate: secure, reliable, scalable, available, operable to the level the stakes demand.
+- **Job Spec** -- the canonical term for a standing, per-job outcome document, in template order: the job / outcome / stakes (laddering up via `serves:`), the required struggling moment, its **Contribution** to the outcome it serves (mechanism plus named leading indicator), **What the job requires** (Must / Won't capabilities), the good / bad signs, the **Prove it** acceptance scenarios, and a one-line **Verdict**. *(Older synonyms "JTBD doc" and "red doc" are retired; don't use them.)*
+- **Product Spec** -- the per-product doc above the jobs: names the product's outcomes, says how the product functions, and owns the list of jobs. *(Not to be confused with an RFC, the ship-coupled delivery doc.)*
+- **RFC** -- the ship-coupled, per-initiative delivery doc (RFC / PR), which references a Job Spec. Not a named spec tier of its own. See [Product Specs / RFC guide](./product-specs.md).
+- **Anchor** -- the vision, principles, and invariants, judged together to produce a verdict.
+- **Invariant** -- a line the product won't cross by construction; the firmest anchor.
+- **Verdict rule** -- the all-must-pass gate above (outcome ∧ Job Spec ∧ principles ∧ no invariant crossed).
+- **Design loop** -- research-the-unknowns → build-with-tests → fresh-process adversarial review → iterate to APPROVE.
+- **Fresh-process review** -- review by a separate process that did not author the change; never the author.
+- **Outcome UAT** -- a pre-ship gate that validates the user's job end-to-end on the real path, independent of unit tests.
+- **Production-readiness** -- engineering's acceptance gate: secure, reliable, scalable, available, operable to the level the stakes demand.
 
 ---
 
 ## For agents
 
-The terse, executable version of this method, the verdict rule as a gate, the per-activity triggers, and the reviewer checklist, is in **[AGENTS.md](../AGENTS.md)** under "Agentic Delivery — operating contract." Read *that* to execute the method; read *this* to understand it.
+The terse, executable version of this method, the verdict rule as a gate, the per-activity triggers, and the reviewer checklist, is in **[AGENTS.md](../AGENTS.md)** under "Agentic Delivery, operating contract." Read *that* to execute the method; read *this* to understand it.
 
 ---
 
 ## Related
 
-- [Product Vision](../anchors/product-vision.md) — the anchor that says *should we build this* (and carries the invariants)
-- [Product Principles](../anchors/product-principles.md) — the anchor that says *did we build it well*
-- [JTBD Guide](./jtbd-guide.md) — the job-story sentence; [Job Spec template](../templates/job-spec.md) — the standing outcome doc
-- [Invariants](../anchors/invariants.md) — the third anchor; the kill-clause in the verdict rule
-- [Product Specs / RFC guide](./product-specs.md) — how an RFC references a Job Spec and gets an adversarial review
+- [Product Vision](../anchors/product-vision.md) -- the anchor that says *should we build this* (and carries the invariants)
+- [Product Principles](../anchors/product-principles.md) -- the anchor that says *did we build it well*
+- [JTBD Guide](./jtbd-guide.md) -- the job-story sentence; [Job Spec template](../templates/job-spec.md) -- the standing outcome doc
+- [Invariants](../anchors/invariants.md) -- the third anchor; the kill-clause in the verdict rule
+- [Product Specs / RFC guide](./product-specs.md) -- how an RFC references a Job Spec and gets an adversarial review

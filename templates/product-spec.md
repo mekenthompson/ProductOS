@@ -1,7 +1,7 @@
 ---
 title: Product Spec Template
 description: The product-level layer between the anchors and the job specs. Names the product, its North Star, the outcomes it delivers, and the jobs it serves. Job specs serve the outcomes named here.
-status: active — the product-level layer; owns the job index
+status: active; the product-level layer; owns the job index
 anchors: [vision.md, principles.md, invariants.md]
 ---
 
@@ -13,13 +13,12 @@ anchors: [vision.md, principles.md, invariants.md]
 > **functions** at a high level, and it **owns the list of jobs** the product
 > serves. Job specs `serves:` one of the outcome slugs named here.
 >
-> Measurement ladders in three quantified rungs, each a number rolling up to
-> the rung above: **job metric → outcome Signal → North Star.** Each job
-> metric quantifies the durable *leading indicator* its
-> [Job Spec](./job-spec.md) names: the Job Spec states the signal in words
-> (named, not quantified); the job index below turns it into the number. A job
-> that can't name a metric rolling into its outcome's Signal is a job you can't
-> tell is working.
+> One rung, two forms: the Job Spec names the outcome's *leading indicator* in
+> words; the job index below carries its quantified form, the *job metric*;
+> that rolls up into the outcome *Signal*; the Signals drive the *North Star*.
+> Ladder: **leading indicator (named) → job metric (quantified) → outcome
+> Signal → North Star.** A job that can't name a metric rolling into its
+> outcome's Signal is a job you can't tell is working.
 
 ## The product, in one line
 
@@ -29,15 +28,15 @@ anchors: [vision.md, principles.md, invariants.md]
 
 > The single measurable metric the whole product is judged on. If it moves,
 > the product is winning; if it stalls, nothing else matters. Derive it from
-> the vision — the North Star is the vision made countable, not a number
+> the vision: the North Star is the vision made countable, not a number
 > bolted on afterwards. It should decompose into the outcome Signals below:
 > they are its drivers. Where an industry-standard metric fits (DORA, SPACE,
 > retention, activation, NPS), anchor to it so the number reads as credible
 > rather than invented.
 
 - **Metric:** [one crisply named number]
-- **Definition:** [what is counted, over what window, for whom — tight enough
-  that two people compute the same figure]
+- **Definition:** [what is counted, over what window, for whom (tight enough
+  that two people compute the same figure)]
 - **Now → Target:** [baseline] → [target] by [date]
 - **Why this one:** [the line from the vision to this number]
 
@@ -49,37 +48,37 @@ that advances none of them is out of scope. Each outcome carries one
 
 > [!CAUTION]
 >
-> Keep outcomes to four or fewer — more than four means the product hasn't
+> Keep outcomes to four or fewer: more than four means the product hasn't
 > made hard choices yet. Each outcome must carry a Signal; an outcome without
 > a measurable signal is a slogan.
 
-### `[outcome-slug]` — [short outcome name]
+### `[outcome-slug]` -- [short outcome name]
 
 [2–4 sentences: what this outcome is, who it matters to, and why it's worth
-pursuing. Write from the user's perspective — what does their world look like
+pursuing. Write from the user's perspective: what does their world look like
 when this outcome is realised?]
 
-**Signal:** [a hard number with a direction and a target — the measurable
+**Signal:** [a hard number with a direction and a target, the measurable
 driver this outcome contributes to the North Star: "[metric], [now] →
 [target] by [date]." Name it precisely enough that an engineer could
 instrument it. A CI-enforced invariant ("zero X, enforced in CI") is a valid
 Signal where the bar is binary.]
-**Guardrail:** [optional — the counter-metric this outcome must not regress
+**Guardrail:** [optional; the counter-metric this outcome must not regress
 while it chases its Signal.]
 
-### `[outcome-slug]` — [short outcome name]
+### `[outcome-slug]` -- [short outcome name]
 
 [Description.]
 
 **Signal:** [measurable driver, now → target.]
 
-### `[outcome-slug]` — [short outcome name]
+### `[outcome-slug]` -- [short outcome name]
 
 [Description.]
 
 **Signal:** [measurable driver, now → target.]
 
-### `[outcome-slug]` — [short outcome name]
+### `[outcome-slug]` -- [short outcome name]
 
 [Description.]
 
@@ -88,40 +87,40 @@ while it chases its Signal.]
 ## How it functions, at a high level
 
 [3–6 sentences describing how the product works at the level a new team
-member needs to understand scope — not a feature list, not architecture.
+member needs to understand scope, not a feature list, not architecture.
 What are the main moving parts and how do they relate? Runtime and
 implementation detail lives in docs/; this section stays at outcome altitude.]
 
 ## The job index
 
 The jobs this product serves, grouped by the outcome they ladder up to.
-Each links its job spec and names the metric it moves: the job-level number
-that **quantifies the leading indicator named in that Job Spec** and rolls up
-to its outcome's Signal.
+Each links its job spec and names the metric it moves: the job metric, the
+quantified form of the **leading indicator named in that Job Spec**, which
+rolls up to its outcome's Signal.
 
 ### [outcome-slug]
 
-- [`[job-slug].md`]([path/to/job-slug.md]) — [the metric this job moves]
-- [`[job-slug].md`]([path/to/job-slug.md]) — [the metric this job moves]
+- [`[job-slug].md`]([path/to/job-slug.md]) -- [the metric this job moves]
+- [`[job-slug].md`]([path/to/job-slug.md]) -- [the metric this job moves]
 
 ### [outcome-slug]
 
-- [`[job-slug].md`]([path/to/job-slug.md]) — [the metric this job moves]
-- [`[job-slug].md`]([path/to/job-slug.md]) — [the metric this job moves]
+- [`[job-slug].md`]([path/to/job-slug.md]) -- [the metric this job moves]
+- [`[job-slug].md`]([path/to/job-slug.md]) -- [the metric this job moves]
 
 ### [outcome-slug]
 
-- [`[job-slug].md`]([path/to/job-slug.md]) — [the metric this job moves]
+- [`[job-slug].md`]([path/to/job-slug.md]) -- [the metric this job moves]
 
 ### [outcome-slug]
 
-- [`[job-slug].md`]([path/to/job-slug.md]) — [the metric this job moves]
+- [`[job-slug].md`]([path/to/job-slug.md]) -- [the metric this job moves]
 
 ---
 
 ## Related
 
-- [Product Vision](../anchors/product-vision.md) — the anchor this spec elaborates
-- [Product Principles](../anchors/product-principles.md) — the standards each job is built to
-- [Invariants](../anchors/invariants.md) — the by-construction lines no job may cross
-- [Job Spec Template](./job-spec.md) — the durable per-job outcome contract whose `serves:` points back at an outcome here
+- [Product Vision](../anchors/product-vision.md) -- the anchor this spec elaborates
+- [Product Principles](../anchors/product-principles.md) -- the standards each job is built to
+- [Invariants](../anchors/invariants.md) -- the by-construction lines no job may cross
+- [Job Spec Template](./job-spec.md) -- the durable per-job outcome contract whose `serves:` points back at an outcome here

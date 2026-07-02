@@ -16,13 +16,13 @@ description: >
   spec), KEN-29 (probabilistic UAT), KEN-60 (UAT coverage).
 ---
 
-# UAT-UX debug — solve from the user outcome
+# UAT-UX debug: solve from the user outcome
 
 A failure is a **broken job promise**, and the bug is just its mechanism. If you
 anchor on the bug you ship a point-patch and the failure class recurs. Anchor on
 the outcome and the fix converges on the UX the job actually promised.
 
-## Step 0 — Severity gate (decide how much pipeline to run)
+## Step 0: Severity gate (decide how much pipeline to run)
 
 Classify the failure: **hard** (visible breakage), **soft** (degraded but
 works), **silent** (metrics look fine; the real failure is invisible), or
@@ -33,7 +33,7 @@ works), **silent** (metrics look fine; the real failure is invisible), or
 - **cosmetic hard with an obvious cause** → patch it + seed the corpus (Step 3)
   and stop. Don't ritualize.
 
-## Step 1 — Map the failure to a job-spec clause + UX goal (KEN-57)
+## Step 1: Map the failure to a job-spec clause + UX goal (KEN-57)
 
 Start from the **user-visible end-state**, not the stack trace. Name the job the
 behaviour betrays, find the clause, then descend to mechanism *last*. Starting
@@ -47,7 +47,7 @@ from the trace finds the bug and misses the breach.
   Docs / Defaults / Consistency. A "no" on any check is a redesign, not a
   follow-up.)
 
-## Step 2 — Gap detection: under-specified vs diverged
+## Step 2: Gap detection: under-specified vs diverged
 
 The test: **does the spec permit the observed behaviour?**
 
@@ -60,7 +60,7 @@ The test: **does the spec permit the observed behaviour?**
 A single failure is often **both** (a missing clause AND a code bug). Classify
 each finding separately; they get different fixes (spec edit vs code change).
 
-## Step 3 — UAT coverage + corpus seed (KEN-60 / KEN-29)
+## Step 3: UAT coverage + corpus seed (KEN-60 / KEN-29)
 
 - Is there a UAT scenario for this **outcome**? If not, the feature shipped
   unexercised. Propose one (assert the outcome, not just "no error").
@@ -72,7 +72,7 @@ each finding separately; they get different fixes (spec edit vs code change).
 - If you bound coverage (top-N, sampling, no-retry), **say so**. Silent
   truncation reads as "covered everything."
 
-## Step 4 — Solve from the outcome, not the point bug
+## Step 4: Solve from the outcome, not the point bug
 
 Propose the change that makes the **outcome** deterministic. Then apply the
 arbiter:
@@ -102,7 +102,7 @@ Report, in this order:
 
 ---
 
-## Worked example — klanker `config_propose_edit` (switchroom, 2026-06-15)
+## Worked example: klanker `config_propose_edit` (switchroom, 2026-06-15)
 
 **Breached promise:** "change config from Telegram, operator just taps Approve,
 no host CLI." Observed end-state: the agent hand-fed the operator
@@ -114,7 +114,7 @@ Classification: **silent** (metrics green: hostd logged nothing, gateway logged
 **Step 1:** violates "you hold the leash" (control from Telegram) and fails the
 Docs + Defaults principle checks (needed to know the yaml path and `sed`).
 
-**Step 2 — both:**
+**Step 2, both:**
 - *spec-gap*: nothing specified the agent-side contract while an approval is
   pending (must get a "card posted" ack it can see; must not re-fire; proposals
   must be idempotent; on infra failure say "I can't, here's why," never
@@ -137,5 +137,5 @@ apply) on top of the per-op timeout. Shipped as switchroom PR #2381.
 
 ## Related
 
-- [Agentic Delivery](../../guides/agentic-delivery.md) — the outcome-UAT gate this skill debugs against
-- [Job Spec Template](../../templates/job-spec.md) — the job-spec clauses Step 1 maps failures to
+- [Agentic Delivery](../../guides/agentic-delivery.md) -- the outcome-UAT gate this skill debugs against
+- [Job Spec Template](../../templates/job-spec.md) -- the job-spec clauses Step 1 maps failures to
