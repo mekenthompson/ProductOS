@@ -3,11 +3,11 @@ title: Agent Guidance
 description: "The operating contract for agents working in ProductOS: the artifact hierarchy, verdict rule, triggers, and reviewer checklist."
 ---
 
-# ProductOS — Agent Guidance
+# ProductOS: Agent Guidance
 
 This repository is **ProductOS**, a reusable, product-agnostic **agentic-delivery operating system**: the anchors, Job Specs, templates, and agent-executable skills that make delivery *run*. Anything specific to a real product (vision, principles, invariants) is documented as a *guide*: what good looks like, when it's "done," and how to write your own.
 
-The human PM craft (the six-phase loop, discovery, RICE, personas) is a **separate, human-owned layer**, documented in [`pm-playbook/`](./pm-playbook/). ProductOS stays independent of the day-to-day craft, with one deliberate bridge: the craft's **path-tiering** (Quick Win / Lightweight / Full Spec) sets *how* the verdict rule scales. The gates never disappear; their depth tracks the stakes.
+The human PM craft (the six-phase loop, discovery, RICE, personas) is a **separate, human-owned layer**, kept in an internal-only `pm-playbook/` layer that is not published to the live site. ProductOS stays independent of the day-to-day craft, with one deliberate bridge: the craft's **path-tiering** (Quick Win / Lightweight / Full Spec) sets *how* the verdict rule scales. The gates never disappear; their depth tracks the stakes.
 
 ## Scope
 
@@ -15,7 +15,7 @@ The human PM craft (the six-phase loop, discovery, RICE, personas) is a **separa
 - **Audience**: Product leaders adopting or adapting this for their team
 - **Format**: Markdown. Humans read it via the Starlight site; agents read the raw markdown.
 
-## Agentic Delivery — operating contract
+## Agentic Delivery: operating contract
 
 The terse, executable contract for the method narrated in [`guides/agentic-delivery.md`](./guides/agentic-delivery.md). That guide is the human narrative; this is the gate. Four working parts: **anchors · Job Specs · design loops · outcome UAT.** ("Four" is this method's anatomy, not a law for products; a product picks its own small number of vision outcomes, principles, and invariants.)
 
@@ -34,10 +34,10 @@ Beneath the anchors, a **Product Spec** (one per product) names the product's ou
 
 Else: out of scope, however clever.
 
-**Triggers — what to do when.**
+**Triggers: what to do when.**
 
 - **Scoping / designing →** read the vision; name which outcome the work serves. If none, stop.
-- **Writing or changing a Job Spec →** use [`templates/job-spec.md`](./templates/job-spec.md); keep `job` / `outcome` / `stakes` stable, narrate retired approaches rather than rewriting the job; the `## Prove it` section must be non-empty. Doc-class by frontmatter key: `job:` = durable Job Spec; `artifact:` (or `artefact:`) / `serves:` = churny artifact (e.g. an RFC) that points up to a job.
+- **Writing or changing a Job Spec →** use [`templates/job-spec.md`](./templates/job-spec.md); keep `job` / `outcome` / `stakes` stable, narrate retired approaches rather than rewriting the job. The body carries Contribution, What the job requires, Good/bad, and Prove it; the `## Prove it` section must be non-empty. Doc-class by frontmatter key: `job:` = durable Job Spec; `artifact:` (or `artefact:`) / `serves:` = churny artifact (e.g. an RFC) that points up to a job.
 - **Reviewing →** dispatch a SEPARATE fresh-process reviewer (never the author; it rubber-stamps). It returns APPROVE / REQUEST_CHANGES / BLOCK citing file:line; iterate to APPROVE. Do NOT let an automated merge fire before APPROVE.
 - **Shipping →** run the outcome UAT (job × surface, real path, independent of unit tests) AND the production-readiness check. Unit-green ≠ outcome-validated ≠ production-ready: three gates, none implies the others.
 
@@ -47,7 +47,7 @@ Else: out of scope, however clever.
 2. satisfies the cited Job Spec; does not silently rewrite the job;
 3. outcome UAT present and actually re-proves the job (not just unit-green);
 4. passes every principle check: product AND engineering standards;
-5. engineering acceptance / production-readiness met to the level the stakes demand (security, scale, availability, reliability);
+5. Production-readiness met to the level the stakes demand (security, scale, availability, reliability);
 6. the reviewer is a separate process and cites a location for every blocker.
 
 **Ownership invariant** (extends "augmentation, not automation"; does not replace it). Agents own *delivery execution within the gates*: drafting Job Specs, implementing, running loops and UATs. Humans own the *gates and the judgement*: the vision, the principles, the invariants, ratifying the job statement, and engineering oversight. Agents consume the anchors; they never author them. This does NOT loosen the "Do NOT" rules below: changing the method's own policy (this contract, the AI stance, the anchors) is a human-ratified policy change, not routine agent delivery.
@@ -72,13 +72,13 @@ productos/
 │   ├── product-specs.md            # RFC how-to (lifecycle, approval, delivery)
 │   └── strategy-as-code.md         # Strategy as a versioned, diffable artefact with decision records
 ├── templates/                      # the OS blank shapes
-│   ├── job-spec.md                 # The durable per-job outcome doc (job/outcome/stakes; outlives any RFC)
+│   ├── job-spec.md                 # The durable per-job outcome doc (job/outcome/stakes + Contribution / What the job requires / Good/bad / Prove it; outlives any RFC)
 │   ├── job-links.md                # The churny per-job join (accounts/ARR/renewals); serves: a Job Spec
 │   ├── rfc.md                      # The ship-coupled, per-initiative delivery doc (JTBD-led)
 │   ├── strategy.md                 # The STRATEGY.md spine (situation/thesis/pillars/deferrals/data-gaps)
 │   └── decision-record.md          # Dated record of why a strategy change was made; links to its commit
 ├── examples/                       # worked, filled examples
-│   └── strategy-example/           # Tempo — a fictional team-scheduling product
+│   └── strategy-example/           # Tempo, a fictional team-scheduling product
 │       ├── README.md               # 3-line orientation
 │       ├── STRATEGY.md             # fully filled strategy (FitClub/BrightSmile/CityCare)
 │       └── decisions/              # dated decision records showing evolution over the period
@@ -156,11 +156,11 @@ last_reviewed: YYYY-MM-DD
 
 ### Visual Formatting
 
-- **Callouts** (`> ⚠️`, `> 💡`) — Warnings, tips, important context
-- **Checklists** — Actionable items, review gates
-- **Tables** — Comparisons, reference data
-- **Numbered lists** — Sequential steps
-- **Bullet lists** — Non-sequential collections
+- **Callouts** (`> ⚠️`, `> 💡`) -- Warnings, tips, important context
+- **Checklists** -- Actionable items, review gates
+- **Tables** -- Comparisons, reference data
+- **Numbered lists** -- Sequential steps
+- **Bullet lists** -- Non-sequential collections
 
 ## Key Concepts (the templates teach these in detail)
 
@@ -203,9 +203,9 @@ last_reviewed: YYYY-MM-DD
 
 > [!CAUTION]
 >
-> The "Agentic Delivery — operating contract" above does not loosen these rules. Agents own *delivery within the gates*; the vision, principles, invariants, and this policy itself stay human-ratified. Changing the method's own policy is a human-directed policy change, not routine agent work.
+> The "Agentic Delivery: operating contract" above does not loosen these rules. Agents own *delivery within the gates*; the vision, principles, invariants, and this policy itself stay human-ratified. Changing the method's own policy is a human-directed policy change, not routine agent work.
 
 ## Inspiration
 
-- **GitLab Handbook** — Thorough, process-oriented
-- **PostHog Handbook** — Clear, opinionated, practical
+- **GitLab Handbook** -- Thorough, process-oriented
+- **PostHog Handbook** -- Clear, opinionated, practical
