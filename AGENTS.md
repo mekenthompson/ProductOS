@@ -7,7 +7,7 @@ description: "The operating contract for agents working in ProductOS: the artifa
 
 This repository is **ProductOS**, a reusable, product-agnostic **agentic-delivery operating system**: the anchors, Job Specs, templates, and agent-executable skills that make delivery *run*. Anything specific to a real product (vision, principles, invariants) is documented as a *guide*: what good looks like, when it's "done," and how to write your own.
 
-The human PM craft (the six-phase loop, discovery, RICE, the decision framework, personas) lives in a **separate `pm-playbook` repo**. ProductOS is independent of it: pm-playbook may reference ProductOS; ProductOS never references pm-playbook.
+The human PM craft (the six-phase loop, discovery, RICE, the decision framework, personas) is a **separate, human-owned layer**, out of scope for the OS. ProductOS is independent of it: the craft may reference ProductOS; ProductOS never references the craft.
 
 ## Scope
 
@@ -55,8 +55,8 @@ Else: out of scope, however clever.
 ## Repo structure
 
 The whole repo reads as the OS: anchors, the OS method guides, the OS
-templates, and skills. The human PM craft lives in the separate `pm-playbook`
-repo, not here.
+templates, and skills. The human PM craft is a separate, human-owned layer,
+out of scope here.
 
 ```
 productos/
@@ -92,8 +92,8 @@ productos/
 
 **The OS templates live in `templates/` (`job-spec.md`, `job-links.md`, `rfc.md`)**: the
 single source of truth for each. (The human PM templates, customer call,
-research, post-launch review, ritual review, live in the separate
-`pm-playbook` repo, not here.)
+research, post-launch review, ritual review, belong to the separate
+human-craft layer, out of scope here.)
 
 | Template | File | Notes |
 | -------- | ---- | ----- |

@@ -1,7 +1,8 @@
 ---
+title: Decision Record Template
+description: "Dated record of a material strategy change: context, decision, consequences. One per change; lives in decisions/."
 date: <YYYY-MM-DD>
 commit: <git SHA of the STRATEGY.md change this record accompanies>
-title: <short slug — what changed, in plain words>
 ---
 
 # Decision Record: <title>
