@@ -47,10 +47,10 @@ Group items that serve the same job, even when the words differ. "One screen for
 
 For each cluster, write a theme using the structure in [references/theme-structure.md](references/theme-structure.md). The theme frontmatter carries the signal at a glance:
 
-- `feedback_count` — how many items rolled in
-- `severity` — how badly the job is blocked (`high` / `medium` / `low`)
-- `trend` — `growing` / `stable` / `declining`
-- `strategic_alignment` — `aligned` / `neutral` / `misaligned`
+- `feedback_count` -- how many items rolled in
+- `severity` -- how badly the job is blocked (`high` / `medium` / `low`)
+- `trend` -- `growing` / `stable` / `declining`
+- `strategic_alignment` -- `aligned` / `neutral` / `misaligned`
 
 Rate each with [references/rating-criteria.md](references/rating-criteria.md). The body names the jobs, why they're hard today, what people do instead (workarounds reveal real severity), and what made it urgent now (switching triggers).
 
@@ -60,7 +60,7 @@ A theme past **~20 items** is usually two jobs hiding in one. When `feedback_cou
 
 ### 5. Draft a Job Spec per theme
 
-For each theme, draft a [Job Spec](../../templates/job-spec.md): the standing `job` / `outcome` / `stakes` contract, the observable good / bad, and the "Prove it" outcome scenarios. This is the artefact that outlives the theme: the theme captures demand, the Job Spec defines done.
+For each theme, draft a [Job Spec](../../templates/job-spec.md): the standing `job` / `outcome` / `stakes` contract, its Contribution to the outcome it serves, what the product must be able to do, the observable good / bad, and the "Prove it" scenarios. This is the artefact that outlives the theme: the theme captures demand, the Job Spec defines done.
 
 Keep account and revenue evidence **out** of the Job Spec. That join is a separate concern (see [Job Links](../../templates/job-links.md)); the Job Spec stays clean and durable.
 
@@ -88,6 +88,6 @@ clusters.md                         ← which raw items rolled into which job (t
 
 ## Related
 
-- [Job Spec](../../templates/job-spec.md) — the artefact this skill drafts
-- [JTBD Guide](../../guides/jtbd-guide.md) — how to frame a job well
-- [The Org as an API](../../guides/org-as-an-api.md) — what to do with the jobs once you have them
+- [Job Spec](../../templates/job-spec.md) -- the artefact this skill drafts
+- [JTBD Guide](../../guides/jtbd-guide.md) -- how to frame a job well
+- [The Org as an API](../../guides/org-as-an-api.md) -- what to do with the jobs once you have them

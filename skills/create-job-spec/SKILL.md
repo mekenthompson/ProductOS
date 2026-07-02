@@ -15,7 +15,7 @@ description: >
   Job Spec template.
 ---
 
-# create-job-spec — interview to alignment, then write the job
+# create-job-spec: interview to alignment, then write the job
 
 A **Job Spec** is the durable, per-job outcome contract, read by both a
 human (judging a change) and an agent (deciding what to do mid-task). It is
@@ -30,7 +30,7 @@ until shared clarity, and do not write the spec until everything is agreed.**
 > A spec written from assumptions is worse than no spec, because the whole
 > fleet will anchor to it.
 
-## Step 0 — Ground yourself before asking anything
+## Step 0: Ground yourself before asking anything
 
 Naive questions waste the user's time. First read what already exists, so
 your questions are sharp:
@@ -46,7 +46,7 @@ In switchroom this is the `reference/` directory; in another product it's
 wherever the design contract lives. The Job Spec **template** is your output
 shape; read it now.
 
-## Step 1 — Interview to shared clarity (one question at a time)
+## Step 1: Interview to shared clarity (one question at a time)
 
 Ask **one** question, wait, then ask the next. Reflect back what you heard
 before moving on. Stop only when every item below is settled and the user
@@ -60,20 +60,20 @@ not generic.
   usually a better way to meet it than the literal request.
 - **The situation and the progress wanted.** Who is hiring this, when, to
   make what progress? Specific situation beats abstract persona. Pin the
-  **struggling moment** — one concrete, present-tense trigger, *"When X
-  happens, the user is stuck because…"* — and the **job story(ies)**: one if
+  **struggling moment**, one concrete, present-tense trigger, *"When X
+  happens, the user is stuck because…"*, and the **job story(ies)**: one if
   a single persona hires it, more only when the job genuinely differs by
   persona (see the [JTBD Guide](../../guides/jtbd-guide.md)).
 - **Which outcome does it serve, and how does this job move it?** Name the
   product-spec outcome it ladders up to (`serves:`). If it ladders to none,
   it may be out of scope; say so. Then name the **contribution**: the causal
   *mechanism* (how doing this job changes user behaviour toward the outcome)
-  and the *leading indicator* (the earliest observable sign it's working) —
+  and the *leading indicator* (the earliest observable sign it's working) , 
   named, never quantified.
 - **What must the product be able to do to serve the job?** Verb-first
   capabilities with no named infrastructure, protocol, or data-type
   (**Must**), and the durable non-goals the product refuses by design
-  (**Won't**). No "Should" — that's a prioritisation call that drifts. If you
+  (**Won't**). No "Should", that's a prioritisation call that drifts. If you
   can't strip the proper noun, it's an RFC Solution-Space line, not a
   requirement.
 - **The durable outcome vs the current build.** What is the user-observable
@@ -94,7 +94,7 @@ not generic.
 Do not move to Step 2 until the user has confirmed the job, the outcome, and
 the serves/invariants up-anchor. When in doubt, ask; never assume.
 
-## Step 2 — Write the Job Spec from the template
+## Step 2: Write the Job Spec from the template
 
 Fill the template. Keep it to **one screen**; the frontmatter carries ~80%.
 
@@ -105,11 +105,11 @@ Fill the template. Keep it to **one screen**; the frontmatter carries ~80%.
   **job story(ies)** (`When… I want to… so I can…`; one, or more only when
   the job genuinely differs by persona). If an approach was retired, narrate
   it in one line; never silently rewrite the job.
-- `## Contribution`: *mechanism* + *leading indicator* only — how this job
+- `## Contribution`: *mechanism* + *leading indicator* only -- how this job
   moves the Signal of the `serves:` outcome. No numbers, dates, or targets;
   those drift to the RFC and Job Links.
 - `## What the job requires`: **Must** (verb-first capabilities, no proper
-  nouns) and **Won't** (durable non-goals) only — no "Should". ~3–5 bullets
+  nouns) and **Won't** (durable non-goals) only, no "Should". ~3–5 bullets
   each. Distinct from Good / bad and from the RFC's Solution Space.
 - `## Good / bad`: the merged, observable, dual-audience decision aid.
 - `## Prove it`: named by job × surface, each line pointing at a **real**
@@ -123,7 +123,7 @@ Fill the template. Keep it to **one screen**; the frontmatter carries ~80%.
   `serves:` frontmatter), if one exists. Implementation never goes in the
   Job Spec body.
 
-## Step 3 — Self-check before handing it over
+## Step 3: Self-check before handing it over
 
 - **Outcome-oriented?** Re-read every line. If any names a flag, a file, a
   PR, or a feature, it's implementation; move it to the design artifact.
@@ -158,6 +158,6 @@ has to invent structure, the skill failed its own docs test. Fix the skill.
 
 ## Related
 
-- [Job Spec template](../../templates/job-spec.md) — the output shape this skill writes to
-- [uat-ux-debug](../uat-ux-debug/SKILL.md) — debug a change against a job spec
-- [feedback-to-jobs](../feedback-to-jobs/SKILL.md) — turn a pile of feedback into jobs before speccing them
+- [Job Spec template](../../templates/job-spec.md) -- the output shape this skill writes to
+- [uat-ux-debug](../uat-ux-debug/SKILL.md) -- debug a change against a job spec
+- [feedback-to-jobs](../feedback-to-jobs/SKILL.md) -- turn a pile of feedback into jobs before speccing them

@@ -13,7 +13,7 @@ commit: <git SHA of the STRATEGY.md change this record accompanies>
 
 ## Context
 
-> What changed in the world that triggered this strategy update. A market event, a customer signal, a competitor move, a data point that came in — the external reality that made the previous view insufficient or wrong.
+> What changed in the world that triggered this strategy update. A market event, a customer signal, a competitor move, a data point that came in: the external reality that made the previous view insufficient or wrong.
 
 <Short paragraphs. Be specific. Name the signal, name when it arrived, name what it changed about your understanding. This is the evidence or observation that forced the decision.>
 
@@ -31,11 +31,11 @@ commit: <git SHA of the STRATEGY.md change this record accompanies>
 
 > What this commits us to, what we give up, and what we are now blind to. The honest accounting.
 
-**Commits us to:** <what we are now doing that we cannot easily un-do — the capacity allocated, the direction set, the bets placed>
+**Commits us to:** <what we are now doing that we cannot easily un-do: the capacity allocated, the direction set, the bets placed>
 
-**Gives up:** <what we are no longer funding or pursuing that we previously were — or what we are deferring that someone will notice>
+**Gives up:** <what we are no longer funding or pursuing that we previously were, or what we are deferring that someone will notice>
 
-**Blind spots:** <what we are now less likely to see because of this direction — what would prove us wrong that we should still watch for>
+**Blind spots:** <what we are now less likely to see because of this direction: what would prove us wrong that we should still watch for>
 
 ---
 
@@ -45,5 +45,5 @@ commit: <git SHA of the STRATEGY.md change this record accompanies>
 
 ## Related
 
-- [Strategy Template](./strategy.md) — the STRATEGY.md this record accompanies; the diff shows *what*, this record shows *why*
-- [Strategy as Code](../guides/strategy-as-code.md) — the method these records are part of
+- [Strategy Template](./strategy.md) -- the STRATEGY.md this record accompanies; the diff shows *what*, this record shows *why*
+- [Strategy as Code](../guides/strategy-as-code.md) -- the method these records are part of

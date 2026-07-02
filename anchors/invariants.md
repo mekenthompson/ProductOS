@@ -1,6 +1,6 @@
 ---
 title: Invariants
-description: How to define your invariants — the third anchor; the lines you won't cross by construction
+description: How to define your invariants: the third anchor; the lines you won't cross by construction
 last_reviewed: 2026-06-17
 icon: "🚧"
 ---
@@ -82,9 +82,9 @@ specs for the pattern.
 
 ## Related
 
-- [Product Vision](./product-vision.md) — the first anchor; it *names* the
+- [Product Vision](./product-vision.md) -- the first anchor; it *names* the
   invariants that matter.
-- [Product Principles](./product-principles.md) — the second anchor; standards
+- [Product Principles](./product-principles.md) -- the second anchor; standards
   you check against (and trade off), distinct from invariants you don't.
-- [Agentic Delivery](../guides/agentic-delivery.md) — how the anchors fuse into the
+- [Agentic Delivery](../guides/agentic-delivery.md) -- how the anchors fuse into the
   verdict rule (the invariant clause is the kill-clause).

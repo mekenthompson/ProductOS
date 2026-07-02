@@ -42,7 +42,7 @@ invariant.
 ## Match the effort to the size
 
 One path for everything is no path at all. The verdict rule is the *bar*, not
-the *paperwork* — scale the gates to the stakes.
+the *paperwork*, scale the gates to the stakes.
 
 | | Quick Win | Lightweight | Full Spec |
 |---|---|---|---|
@@ -52,7 +52,8 @@ the *paperwork* — scale the gates to the stakes.
 | **Gates** | Outcome sanity check | Outcome UAT + 2-wk review | Full verdict, 2wk/30d/90d |
 
 A **Fast Path** exists for small work with outsized upside (< 1 day, ≤ 2 per
-team per cycle). See the [Decision Framework](./pm-playbook/decision-framework.md).
+team per cycle). An internal decision-framework layer tiers the paths by size
+and stakes.
 
 ---
 

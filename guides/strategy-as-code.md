@@ -31,9 +31,9 @@ Strategy sits beside the anchors as a **sibling layer**. It is the market-driven
 Vision · Principles · Invariants        three anchors (durable: the why / built-well / never-cross)
 Strategy                                sibling layer (12+ months; market-driven; changes as dynamics shift)
         ↓
-Job Specs                               per job — durable, outcome-focused, UAT-verifiable
+Job Specs                               per job, durable, outcome-focused, UAT-verifiable
                                         ↑
-Product Spec                            per product — owns the job list
+Product Spec                            per product, owns the job list
 ```
 
 The distinction matters. Anchors are stable by design: they define the kind of product you are building and the standards you hold. Strategy is explicitly expected to change as the market changes, as customers change, as competitors move. What stays constant is the anchors; what adapts is the strategy. A strategy that never changes is not a strategy. It is a mission statement that doesn't know what it is.
@@ -56,19 +56,19 @@ The structure is not arbitrary. It is Richard Rumelt's *kernel of good strategy*
 
 | Rumelt's kernel | STRATEGY.md section |
 |---|---|
-| Diagnosis — name the challenge, simplify the situation to its critical points | **Situation** |
-| Guiding policy — the overall approach chosen to cope with the diagnosis | **Strategy** (thesis + allocation) |
-| Coherent actions — coordinated steps that carry out the policy | **Pillars** (each funding its Job Specs) |
-| The argument — why these actions, given this diagnosis | **Why This Wins** |
+| Diagnosis, name the challenge, simplify the situation to its critical points | **Situation** |
+| Guiding policy, the overall approach chosen to cope with the diagnosis | **Strategy** (thesis + allocation) |
+| Coherent actions, coordinated steps that carry out the policy | **Pillars** (each funding its Job Specs) |
+| The argument, why these actions, given this diagnosis | **Why This Wins** |
 
 The sections, in order:
 
-- **Situation** — the diagnosis. What is true about the market, the customers, the competitive position. This is the foundation everything else stands on.
-- **Strategy** — the guiding policy: the thesis and the investment allocation. Where the capacity goes, and the decision tests that gate it.
-- **Pillars** — the coherent actions: the funded bets. Each names its thesis, its outcome measure, and the Job Specs it funds.
-- **Explicit Deferrals** — what we are not doing this period, and why. The absence of a decision is itself a decision; Rumelt's point that "choice means setting aside some goals in favour of others" gets its own section here.
-- **Data Gaps** — the hypotheses we have not confirmed and what would confirm them.
-- **Why This Wins** — the coherent-action argument: why this particular allocation, given this situation, produces the outcome. Rumelt's definition is the bar: strategy is "coherent action backed by an argument." This section is the argument.
+- **Situation** -- the diagnosis. What is true about the market, the customers, the competitive position. This is the foundation everything else stands on.
+- **Strategy** -- the guiding policy: the thesis and the investment allocation. Where the capacity goes, and the decision tests that gate it.
+- **Pillars** -- the coherent actions: the funded bets. Each names its thesis, its outcome measure, and the Job Specs it funds.
+- **Explicit Deferrals** -- what we are not doing this period, and why. The absence of a decision is itself a decision; Rumelt's point that "choice means setting aside some goals in favour of others" gets its own section here.
+- **Data Gaps** -- the hypotheses we have not confirmed and what would confirm them.
+- **Why This Wins** -- the coherent-action argument: why this particular allocation, given this situation, produces the outcome. Rumelt's definition is the bar: strategy is "coherent action backed by an argument." This section is the argument.
 
 See the [Strategy template](../templates/strategy.md) for the blank form with section-level guidance.
 
@@ -95,9 +95,9 @@ Not every claim in the Situation section has the same standing. Treating them al
 
 Every claim in the Situation is labelled one of three things:
 
-- **evidenced** — supported by data you can point to: customer interviews, usage numbers, churn signals, ARR movement, win/loss data. The evidence exists and the claim follows from it.
-- **hypothesis** — a reasoned belief you hold, not yet confirmed. You have grounds for it, but the data is not there yet.
-- **to-validate** — an open question you know you need to answer before you can act on this safely.
+- **evidenced** -- supported by data you can point to: customer interviews, usage numbers, churn signals, ARR movement, win/loss data. The evidence exists and the claim follows from it.
+- **hypothesis** -- a reasoned belief you hold, not yet confirmed. You have grounds for it, but the data is not there yet.
+- **to-validate** -- an open question you know you need to answer before you can act on this safely.
 
 The labels are not decoration. They tell the team what is load-bearing and what is provisional. An investment allocation that rests on three hypotheses and two to-validates is a different kind of bet than one that rests on evidenced claims. The team should know which kind they are making.
 
@@ -142,11 +142,11 @@ When asked to update the strategy: read STRATEGY.md and the most recent decision
 
 ## Related
 
-- [Strategy template](../templates/strategy.md) — the blank spine
-- [Decision Record template](../templates/decision-record.md) — the why, archived
-- [Org as an API](org-as-an-api.md) — joining the evidence to form the view
-- [Agentic Delivery](agentic-delivery.md) — running the build once the order is set
-- [Product Vision](../anchors/product-vision.md) — one of the three anchors that strategy sits beside (not above or below)
+- [Strategy template](../templates/strategy.md) -- the blank spine
+- [Decision Record template](../templates/decision-record.md) -- the why, archived
+- [Org as an API](org-as-an-api.md) -- joining the evidence to form the view
+- [Agentic Delivery](agentic-delivery.md) -- running the build once the order is set
+- [Product Vision](../anchors/product-vision.md) -- one of the three anchors that strategy sits beside (not above or below)
 
 ## Further reading
 

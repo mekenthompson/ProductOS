@@ -1,5 +1,5 @@
 ---
-# title: optional — omit freely; the job: field is the primary identifier
+# title: optional (omit freely); the job: field is the primary identifier
 title: Job Spec Template
 description: The durable, per-job outcome contract. One per job, outcome-oriented, UAT-verifiable, and stable across any number of implementation changes.
 job: <imperative, user-voiced; a job, not a feature>
@@ -50,17 +50,17 @@ invariants: [<named lines this job must never cross, by construction>]
 > not the feature they asked for. If the implementation has changed, add one
 > line: "We used to do X; we changed to Y; the job underneath is unchanged."
 >
-> **Required — the struggling moment.** State one concrete, present-tense
+> **Required: the struggling moment.** State one concrete, present-tense
 > trigger: *"When X happens, the user is stuck because…"* This is the durable
 > narrative of the moment the current approach fails; keep it a story, not a
-> stat — no evidence links, account names, or numbers (those drift to
+> stat, with no evidence links, account names, or numbers (those drift to
 > [Job Links](./job-links.md) and the RFC).
 >
 > **Per-persona job stories.** Frame the job as a
 > `When… I want to… so I can…` story (see the [JTBD Guide](../guides/jtbd-guide.md)
 > for the format and the forces around it). Write **one** story if a single
 > persona hires this job; add more **only** when the job genuinely differs by
-> persona — not one per persona out of habit.
+> persona, not one per persona out of habit.
 
 **Struggling moment:** When <trigger happens>, the user is stuck because
 <why the current approach fails them>.
@@ -70,12 +70,12 @@ invariants: [<named lines this job must never cross, by construction>]
 ## Contribution
 
 > How this job moves the **Signal** of the outcome named in `serves:`.
-> Content is **mechanism + leading indicator only**. No numbers, dates, or
-> targets — those live in the RFC and [Job Links](./job-links.md); this
-> section states the causal mechanism and the earliest observable signal,
-> both durable. (See the `[!CAUTION]` no-drift block at the top.) The
-> [Product Spec](./product-spec.md) job index quantifies this leading
-> indicator as the job metric that rolls up into the outcome's Signal.
+> Content is **mechanism + leading indicator only** (no numbers or targets;
+> see the caution above). This section states the causal mechanism and the
+> earliest observable signal, both durable. The
+> [Product Spec](./product-spec.md) job index carries the quantified form of
+> this leading indicator (the job metric), which rolls up into the outcome's
+> Signal.
 
 - *Mechanism:* <how doing this job changes user behaviour toward the outcome>.
 - *Leading indicator:* <the earliest observable sign it's working, named not
@@ -84,7 +84,7 @@ invariants: [<named lines this job must never cross, by construction>]
 ## What the job requires
 
 > What the product must be *able to do* to serve the job. **Must / Won't
-> only** — no "Should"; that's a prioritisation call that drifts. State what
+> only** (no "Should"; that's a prioritisation call that drifts). State what
 > the product must be able to do, verb-first, with zero named infrastructure,
 > protocol, or data-type. If you can't strip the proper noun, it's an RFC
 > Solution-Space line, not a requirement. Distinct from **Good / bad**
@@ -116,7 +116,7 @@ invariants: [<named lines this job must never cross, by construction>]
 - <observable success the user can see or feel>
 - ...
 
-**Bad looks like — never ship this**
+**Bad looks like (never ship this)**
 
 - <the tempting-but-wrong behaviour that betrays the job>
 - ...
@@ -130,7 +130,7 @@ invariants: [<named lines this job must never cross, by construction>]
 > state. End with the **fuzz corpus** dimensions so the failure *class*
 > (not just one instance) is covered.
 
-- **<job × surface>** — `<path/to/real/scenario>`. *Watch:* <user-observable
+- **<job × surface>**: `<path/to/real/scenario>`. *Watch:* <user-observable
   outcome>. *Invariant:* <the property that must always hold>.
 - ...
 
@@ -163,7 +163,7 @@ just the happy path.
 
 ## Related
 
-- [JTBD Guide](../guides/jtbd-guide.md) — how to frame the job story this spec is built around
-- [Job Links Template](./job-links.md) — the churny join that carries accounts and revenue, kept out of this spec
-- [Agentic Delivery](../guides/agentic-delivery.md) — how this spec sits in the verdict rule and the gates
-- [Writing an RFC](../guides/product-specs.md) — the ship-coupled doc that references this spec
+- [JTBD Guide](../guides/jtbd-guide.md) -- how to frame the job story this spec is built around
+- [Job Links Template](./job-links.md) -- the churny join that carries accounts and revenue, kept out of this spec
+- [Agentic Delivery](../guides/agentic-delivery.md) -- how this spec sits in the verdict rule and the gates
+- [Writing an RFC](../guides/product-specs.md) -- how to write the ship-coupled RFC that references this spec

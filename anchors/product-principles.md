@@ -33,7 +33,7 @@ Principles fix this by making "good" *teachable*. A new engineer should be able 
 | Where they show up | How they're used |
 |---|---|
 | [Verdict rule](../guides/agentic-delivery.md) | The principle check is the "built-well" clause. No principle conformance, no shipping. |
-| [RFC Template](../templates/rfc.md) | Strategic Alignment section confirms the ship-coupled initiative meets each principle, with reasoning; Solution sections name the principles they uphold and any tensions. |
+| [RFC Template](../templates/rfc.md) | The Guardrails section (Quality / principle guardrails) confirms the ship-coupled initiative meets each principle, with reasoning; Solution sections name the principles they uphold and any tensions. |
 | [Job Specs](../templates/job-spec.md) | The "good / bad looks like" of each job is the principles made concrete for that outcome. |
 | Code review / design review | Each principle has check questions reviewers can paste into a comment. The fresh-process reviewer runs them. |
 
@@ -75,17 +75,17 @@ The principles are ready to use as standards when **every one of these is true**
 
 ## How to write your own principles
 
-### Step 1 — Start from the headline metric
+### Step 1: Start from the headline metric
 
 Look at the [headline metric](./product-vision.md) in the vision. Now ask: **"What needs to be true about every shipped feature for that metric to move?"** Those answers are the seeds of your principles.
 
 If the metric is time-to-first-value, a candidate principle might be "First run succeeds." If the metric is retention, a candidate is "Every session ends with a clear next action." Tie principles to the metric: that's how they avoid becoming generic.
 
-### Step 2 — Capture the gripes
+### Step 2: Capture the gripes
 
 Walk through the product with a customer (or a recording). Note every moment where you wince. The wincing is unwritten principles: quality bars you already believe in but haven't named. Cluster the wincing into 3–5 themes; those are your candidate principles.
 
-### Step 3 — Phrase each principle as a punchy standard
+### Step 3: Phrase each principle as a punchy standard
 
 Bad: "We should make the product easy to use."
 Better: "If they need the docs, we've failed."
@@ -94,15 +94,15 @@ The punchy phrasing matters. A principle that gets quoted gets applied. A princi
 
 Aim for principles that sound a little extreme. The extremity is what makes them load-bearing: moderate principles don't change behaviour.
 
-### Step 4 — Write check questions
+### Step 4: Write check questions
 
 For each principle, write 2–3 questions a reviewer could ask. Test them: can someone answer your check questions about a specific PR in 30 seconds? If they need a meeting, the questions are too abstract.
 
-### Step 5 — Collect ✅ Good / ❌ Bad examples
+### Step 5: Collect ✅ Good / ❌ Bad examples
 
 Two of each, drawn from your real product. The examples teach the principle faster than the principle itself does. Update them as the product evolves.
 
-### Step 6 — Stress-test for tension
+### Step 6: Stress-test for tension
 
 Take three real PRs and run them through your principles. If every PR sails through all principles, your bar is too low. Rewrite. If one principle forces you to delay a PR, that's the principle earning its keep. Keep it.
 
@@ -110,7 +110,7 @@ Take three real PRs and run them through your principles. If every PR sails thro
 
 ## How to use principles operationally
 
-- **In RFCs:** The Strategic Alignment section calls out which principles the ship-coupled initiative serves and any tensions it creates.
+- **In RFCs:** The Guardrails section (Quality / principle guardrails) calls out which principles the ship-coupled initiative serves and any tensions it creates.
 - **In design reviews:** Reviewer pastes the check questions for the relevant principle and asks for specific evidence.
 - **In code reviews:** "Does this meet principle [N]? If not, what's the plan?"
 - **In post-launch reviews:** If adoption is below target, the first question is "did we compromise a principle?"
@@ -192,7 +192,7 @@ Before you ship, ask:
 
 ## Related
 
-- [Product Vision](./product-vision.md) — Principles are derived from the vision (the first anchor).
-- [Invariants](./invariants.md) — The third anchor; the lines you won't cross by construction.
-- [Agentic Delivery](../guides/agentic-delivery.md) — How the principle check sits in the verdict rule.
-- [RFC Guide](../guides/product-specs.md) — How to apply principles when writing a ship-coupled RFC.
+- [Product Vision](./product-vision.md) -- Principles are derived from the vision (the first anchor).
+- [Invariants](./invariants.md) -- The third anchor; the lines you won't cross by construction.
+- [Agentic Delivery](../guides/agentic-delivery.md) -- How the principle check sits in the verdict rule.
+- [RFC Guide](../guides/product-specs.md) -- How to apply principles when writing a ship-coupled RFC.
