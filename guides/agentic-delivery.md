@@ -124,15 +124,10 @@ the stakes. This is what stops the method reading as a speed tax. An internal
 decision-framework layer tiers the paths (Quick Win / Lightweight / Full Spec)
 by size and stakes.
 
-**Minimum gate depth.** Scaling depth to the stakes never drops a clause to
-zero. Lightening a Quick Win means lighter *evidence depth*, a Tech Lead's nod
-instead of a load test, not a skipped clause. The invariant clause is the
-exception that stays fixed: it is always binary and fully checked, at every
-tier. There is no "light" invariant check, because an invariant either holds or
-it doesn't, and a partial answer is a fail. So the floor is: at every tier, all
-four clauses are answered, and the invariant answer is a real check against the
-by-construction test, not "someone eyeballed it." A "pass" that skipped a clause
-is not a pass, it is an unrun gate.
+**Minimum gate depth.** Lightening a tier lightens *evidence depth* (a Tech
+Lead's nod instead of a load test), never the clause count. The invariant clause
+is always binary and fully checked at every tier: there is no light invariant
+check, because an invariant either holds or it doesn't.
 
 ---
 
@@ -210,4 +205,5 @@ The terse, executable version of this method, the verdict rule as a gate, the pe
 - [Product Principles](../anchors/product-principles.md) -- the anchor that says *did we build it well*
 - [JTBD Guide](./jtbd-guide.md) -- the job-story sentence; [Job Spec template](../templates/job-spec.md) -- the standing outcome doc
 - [Invariants](../anchors/invariants.md) -- the third anchor; the kill-clause in the verdict rule
+- [Worked Example](./worked-example.md) -- one job carried through this exact loop, watch the verdict rule turn an agent back and then let it through
 - [Product Specs / RFC guide](./product-specs.md) -- how an RFC references a Job Spec and gets an adversarial review
