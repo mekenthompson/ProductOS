@@ -1,7 +1,7 @@
 ---
 title: RFC
-description: A JTBD-led, AI-readable RFC for a ship-coupled delivery — defines the user's job, how they fail today, what success and failure look like, and the guardrails — leaving the solution open
-# Doc-class keys — use exactly one:
+description: A JTBD-led, AI-readable RFC for a ship-coupled delivery: defines the user's job, how they fail today, what success and failure look like, and the guardrails, leaving the solution open
+# Doc-class keys (use exactly one):
 #   serves: <job-spec-slug>     # ship-coupled RFC delivering a job; archives when shipped
 #   backs: <invariant-slug>     # design record elaborating/defending an invariant; stays current
 last_reviewed: 2026-06-24
@@ -12,9 +12,9 @@ icon: "📄"
 
 > [!NOTE]
 >
-> One living document for a single ship-coupled effort. It does the work that used to be split between a PRD (the decision and the why) and a delivery spec (the constraints), but frames everything around the **user's job**, not our internal launch. It leaves *how* open — solutions are the team's (and the AI's) creative work, not the RFC author's prescription. The durable home of the job is its [Job Spec](./job-spec.md); this RFC is one ship-coupled effort against it.
+> One living document for a single ship-coupled effort. It does the work that used to be split between a PRD (the decision and the why) and a delivery spec (the constraints), but frames everything around the **user's job**, not our internal launch. It leaves *how* open: solutions are the team's (and the AI's) creative work, not the RFC author's prescription. The durable home of the job is its [Job Spec](./job-spec.md); this RFC is one ship-coupled effort against it.
 >
-> **Two doc-class variants:** a `serves:` RFC delivers a job and archives when shipped. A `backs:` design record elaborates or defends a named invariant and stays current — it is not ship-coupled and does not archive.
+> **Two doc-class variants:** a `serves:` RFC delivers a job and archives when shipped. A `backs:` design record elaborates or defends a named invariant and stays current: it is not ship-coupled and does not archive.
 
 ---
 
@@ -49,9 +49,9 @@ Lead with the customer's job. Not our feature. Not our roadmap. The job they're 
 
 > [!TIP]
 >
-> If this job has a standing [Job Spec](./job-spec.md), link it here instead of restating it. The Job Spec is the durable home of the job — it outlives this RFC; this RFC is one ship-coupled effort against it.
+> If this job has a standing [Job Spec](./job-spec.md), link it here instead of restating it. The Job Spec is the durable home of the job: it outlives this RFC; this RFC is one ship-coupled effort against it.
 
-**Primary persona:** `[Creator / Consumer / Sponsor — or your persona name]`
+**Primary persona:** `[Creator / Consumer / Sponsor, or your persona name]`
 **Secondary persona(s) affected (if any):** `[…]`
 
 See [JTBD Guide](../guides/jtbd-guide.md) for framing the job and the forces around it.
@@ -64,18 +64,18 @@ The struggling moments. Specific scenarios where the user can't get the job done
 
 For each struggling moment: *the situation, what the user is trying, what goes wrong, what they do instead, and the evidence we have that this happens.*
 
-1. **Struggling moment 1 — [short name]**
+1. **Struggling moment 1 -- [short name]**
    - *Situation:* …
    - *What the user is trying to do:* …
    - *Where it breaks:* …
    - *Current workaround:* …
    - *Evidence:* `[link to research, customer quote, support ticket pattern, analytics]`
 
-2. **Struggling moment 2 — [short name]**
+2. **Struggling moment 2 -- [short name]**
    - *Situation:* …
    - …
 
-3. **Struggling moment 3 — [short name]**
+3. **Struggling moment 3 -- [short name]**
    - …
 
 > Three is usually enough. If you can name fewer than two struggling moments with evidence, do more discovery before writing the RFC.
@@ -84,7 +84,7 @@ For each struggling moment: *the situation, what the user is trying, what goes w
 
 ## Competing Solutions
 
-What the user hires *today* to get this job done. List the alternatives — competitors **and** the status-quo / "do nothing" option — and for each, why it fails the job. If nothing here beats "do nothing," you don't have a case yet.
+What the user hires *today* to get this job done. List the alternatives (competitors **and** the status-quo / "do nothing" option) and for each, why it fails the job. If nothing here beats "do nothing," you don't have a case yet.
 
 | Solution | Limitation (why it fails the job) |
 |---|---|
@@ -96,12 +96,12 @@ What the user hires *today* to get this job done. List the alternatives — comp
 
 ## User Success Modes
 
-What success looks like **from the user's perspective**. Not "we shipped on time" — what the user is now able to do, feel, or decide.
+What success looks like **from the user's perspective**. Not "we shipped on time": what the user is now able to do, feel, or decide.
 
-- **Behavioural signal** — User now does X without help / Without errors / Within Y seconds. Observable in product analytics.
-- **Felt experience** — When asked, the user describes the experience as `[adjective]`. Observable in NPS verbatims, interviews, or support ticket sentiment.
-- **Headline-metric movement** — Specifically, this should move `[headline metric]` by `[amount]` for `[persona]`. Measured at `[interval]`.
-- **Leading indicators (≤ 2 weeks post-launch)** — `[signal 1]`, `[signal 2]` — early reads on whether success is on track.
+- **Behavioural signal** -- User now does X without help / Without errors / Within Y seconds. Observable in product analytics.
+- **Felt experience** -- When asked, the user describes the experience as `[adjective]`. Observable in NPS verbatims, interviews, or support ticket sentiment.
+- **Headline-metric movement** -- Specifically, this should move `[headline metric]` by `[amount]` for `[persona]`. Measured at `[interval]`.
+- **Leading indicators (≤ 2 weeks post-launch)** -- `[signal 1]`, `[signal 2]`; early reads on whether success is on track.
 
 ---
 
@@ -113,7 +113,7 @@ What "this didn't work" looks like **from the user's perspective**. This is the 
 |---|---|---|---|
 | **Hard failure** | User can't complete the job at all. | … | … |
 | **Soft failure** | User completes the job but is worse off than before (slower, less confident, more steps). | … | … |
-| **Silent failure** | User appears to succeed but didn't actually get the outcome they wanted. (Often the most damaging — looks fine in analytics.) | … | … |
+| **Silent failure** | User appears to succeed but didn't actually get the outcome they wanted. (Often the most damaging: looks fine in analytics.) | … | … |
 | **Adoption failure** | The right persona never finds or tries the feature. | … | … |
 
 **Anti-patterns to watch:**
@@ -131,9 +131,9 @@ What "this didn't work" looks like **from the user's perspective**. This is the 
 What cannot break, regardless of how creative the solution is. These are the constraints the team and any AI agent must respect.
 
 **Quality / principle guardrails** (see [Product Principles](../anchors/product-principles.md)):
-- `[Principle 1]` — must remain true after this ships. Check question: …
-- `[Principle 2]` — must remain true. Check question: …
-- `[Principle 3]` — must remain true. Check question: …
+- `[Principle 1]` -- must remain true after this ships. Check question: …
+- `[Principle 2]` -- must remain true. Check question: …
+- `[Principle 3]` -- must remain true. Check question: …
 
 **Performance / reliability guardrails:**
 - `[e.g., "Page load p95 must stay under 800ms"]`
@@ -144,9 +144,9 @@ What cannot break, regardless of how creative the solution is. These are the con
 - `[e.g., "Action must be reversible within 24h"]`
 
 **Invariant guardrails** (see [Invariants](../anchors/invariants.md)):
-- `[invariant-slug]` — this work must not cross it. One-question test: …
-- `[invariant-slug]` — this work must not cross it. One-question test: …
-- `[invariant-slug]` — this work must not cross it. One-question test: …
+- `[invariant-slug]` -- this work must not cross it. One-question test: …
+- `[invariant-slug]` -- this work must not cross it. One-question test: …
+- `[invariant-slug]` -- this work must not cross it. One-question test: …
 
 **Out of scope (we will not do this, even if asked):**
 - …
@@ -160,15 +160,15 @@ What cannot break, regardless of how creative the solution is. These are the con
 This is the freedom-and-constraint envelope. **Describe the shape of an acceptable solution; do not prescribe the solution itself.** A coding agent or a human team should be able to invent multiple valid solutions inside this envelope.
 
 **The solution MUST:**
-- [Required behaviour 1 — phrased as an outcome, not an implementation]
+- [Required behaviour 1, phrased as an outcome, not an implementation]
 - [Required behaviour 2]
 - [Required behaviour 3]
 
 **The solution MUST NOT:**
-- [Excluded behaviour 1 — why this is off-limits]
+- [Excluded behaviour 1, why this is off-limits]
 - [Excluded behaviour 2]
 
-**Free to vary — design and engineering choose:**
+**Free to vary (design and engineering choose):**
 - UI patterns, component composition, page layouts
 - Storage, query patterns, internal data model
 - Whether to add a new surface or modify an existing one
@@ -178,11 +178,11 @@ This is the freedom-and-constraint envelope. **Describe the shape of an acceptab
 
 ## Evidence
 
-Three bullets max. Link out — don't restate.
+Three bullets max. Link out, don't restate.
 
-- `[Research doc title]` — n=X interviews, key insight
-- `[Analytics dashboard / query]` — current baseline number
-- `[Customer quote source]` — representative quote
+- `[Research doc title]` -- n=X interviews, key insight
+- `[Analytics dashboard / query]` -- current baseline number
+- `[Customer quote source]` -- representative quote
 
 ---
 
@@ -191,9 +191,9 @@ Three bullets max. Link out — don't restate.
 What we're assuming, and what would invalidate the RFC.
 
 **We're betting that:**
-1. `[Assumption 1]` — if wrong, this RFC is wrong.
-2. `[Assumption 2]` — …
-3. `[Assumption 3]` — …
+1. `[Assumption 1]` -- if wrong, this RFC is wrong.
+2. `[Assumption 2]` -- …
+3. `[Assumption 3]` -- …
 
 **Top risks:**
 
@@ -216,33 +216,33 @@ How we ship this safely.
 | GA | All customers | ON by default | Maintained for 30 days post-GA | Flag OFF, post-mortem |
 
 **Instrumentation required before private preview:**
-- [ ] Event: `[event name]` — measures `[which success signal]`
-- [ ] Dashboard: `[link]` — covers headline + guardrails
+- [ ] Event: `[event name]` -- measures `[which success signal]`
+- [ ] Dashboard: `[link]` -- covers headline + guardrails
 - [ ] Guardrail alert: `[metric]` triggers if it crosses `[threshold]`
 
 ---
 
 ## Open Questions
 
-Known unknowns that resolve on delivery. Tag each with who resolves it. These are ship-coupled — they belong here in the RFC, not in the durable [Job Spec](./job-spec.md).
+Known unknowns that resolve on delivery. Tag each with who resolves it. These are ship-coupled: they belong here in the RFC, not in the durable [Job Spec](./job-spec.md).
 
-- `[question]` — `[Eng spike]`
-- `[question]` — `[Leadership decision]`
-- `[question]` — `[Data pull]`
-- `[question]` — `[Customer validation]`
-- `[question]` — `[Team confirmation]`
+- `[question]` -- `[Eng spike]`
+- `[question]` -- `[Leadership decision]`
+- `[question]` -- `[Data pull]`
+- `[question]` -- `[Customer validation]`
+- `[question]` -- `[Team confirmation]`
 
 ---
 
 ## Related
 
-- [RFC guide](../guides/product-specs.md) — how to write this document
-- [Product Vision](../anchors/product-vision.md) — the anchor every RFC ties back to
-- [Product Principles](../anchors/product-principles.md) — the standards the solution must meet
-- [Invariants](../anchors/invariants.md) — the by-construction lines this work must not cross
-- [Job Spec Template](./job-spec.md) — the durable per-job outcome doc an RFC references
-- [JTBD Guide](../guides/jtbd-guide.md) — framing the job
-- [Agentic Delivery](../guides/agentic-delivery.md) — the verdict rule and the gates this RFC clears
+- [RFC guide](../guides/product-specs.md) -- how to write this document
+- [Product Vision](../anchors/product-vision.md) -- the anchor every RFC ties back to
+- [Product Principles](../anchors/product-principles.md) -- the standards the solution must meet
+- [Invariants](../anchors/invariants.md) -- the by-construction lines this work must not cross
+- [Job Spec Template](./job-spec.md) -- the durable per-job outcome doc an RFC references
+- [JTBD Guide](../guides/jtbd-guide.md) -- framing the job
+- [Agentic Delivery](../guides/agentic-delivery.md) -- the verdict rule and the gates this RFC clears
 
 ---
 

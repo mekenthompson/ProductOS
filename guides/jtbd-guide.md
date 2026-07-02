@@ -21,9 +21,9 @@ JTBD shifts focus from *what we're building* to *why customers need it*. Instead
 > [!NOTE]
 > **Job story vs Job Spec**
 >
-> This guide teaches the job *story* — a single sentence (`When… [persona] wants to… so they can…`) used inside a [Job Spec](../templates/job-spec.md) or an [RFC](../templates/rfc.md). A **Job Spec** is the standing document built around that job: one per job, with `job` / `outcome` / `stakes` frontmatter, that outlives any single RFC or implementation. Write the sentence here; promote durable, cross-cutting jobs into a standing doc with the [Job Spec template](../templates/job-spec.md). See [Agentic Delivery](./agentic-delivery.md) for how the standing doc anchors agent-delivered work.
+> This guide teaches the job *story*, a single sentence (`When… [persona] wants to… so they can…`) used inside a [Job Spec](../templates/job-spec.md) or an [RFC](../templates/rfc.md). A **Job Spec** is the standing document built around that job: one per job, with `job` / `outcome` / `stakes` frontmatter, that outlives any single RFC or implementation. Write the sentence here; promote durable, cross-cutting jobs into a standing doc with the [Job Spec template](../templates/job-spec.md). See [Agentic Delivery](./agentic-delivery.md) for how the standing doc anchors agent-delivered work.
 >
-> **The rule the Job Spec references:** a Job Spec carries a **struggling moment (required)** — one concrete, present-tense trigger, *"When X happens, the user is stuck because…"* — and a **per-persona job story**: write **one** story if a single persona hires the job, and add more **only** when the job genuinely differs by persona, not one per persona out of habit.
+> **The rule the Job Spec references:** a Job Spec carries a **struggling moment (required)**, one concrete, present-tense trigger, *"When X happens, the user is stuck because…"*, and a **per-persona job story**: write **one** story if a single persona hires the job, and add more **only** when the job genuinely differs by persona, not one per persona out of habit.
 
 ---
 
@@ -99,7 +99,7 @@ The same person can have different jobs in different situations. Focus on the si
 
 ## Job story examples
 
-> Generic examples — replace with stories drawn from interviews with your own customers.
+> Generic examples, replace with stories drawn from interviews with your own customers.
 
 **Onboarding:**
 > When I'm onboarding a new team onto the product and they're skeptical of switching tools, I want to demonstrate value quickly with minimal setup friction, so I can build internal champions before renewal decisions.
@@ -135,10 +135,10 @@ For each spec, identify:
 
 When conducting customer interviews:
 
-1. **Listen for struggling moments** — When did they realize they needed something?
-2. **Capture the situation** — What was happening around them?
-3. **Note the forces** — What pushed them to act? What made them hesitate?
-4. **Record actual quotes** — Use their words, not your interpretation
+1. **Listen for struggling moments** -- When did they realize they needed something?
+2. **Capture the situation** -- What was happening around them?
+3. **Note the forces** -- What pushed them to act? What made them hesitate?
+4. **Record actual quotes** -- Use their words, not your interpretation
 
 ### Interview questions for JTBD
 
@@ -164,15 +164,15 @@ When conducting customer interviews:
 
 ## Further reading
 
-- [Replacing the User Story with the Job Story](https://jtbd.info/replacing-the-user-story-with-the-job-story-af7cdee10c27) — Alan Klement
-- [5 Tips for Writing a Job Story](https://jtbd.info/5-tips-for-writing-a-job-story-7c9092911fc9) — Alan Klement
-- [When Coffee and Kale Compete](http://www.whencoffeeandkalecompete.com/) — Free book on JTBD
-- [Know Your Customers' Jobs to Be Done](https://hbr.org/2016/09/know-your-customers-jobs-to-be-done) — HBR article by Clayton Christensen
+- [Replacing the User Story with the Job Story](https://jtbd.info/replacing-the-user-story-with-the-job-story-af7cdee10c27) -- Alan Klement
+- [5 Tips for Writing a Job Story](https://jtbd.info/5-tips-for-writing-a-job-story-7c9092911fc9) -- Alan Klement
+- [When Coffee and Kale Compete](http://www.whencoffeeandkalecompete.com/) -- Free book on JTBD
+- [Know Your Customers' Jobs to Be Done](https://hbr.org/2016/09/know-your-customers-jobs-to-be-done) -- HBR article by Clayton Christensen
 
 ---
 
 ## Related
 
-- [Job Spec template](../templates/job-spec.md) — the standing per-job doc the job story lives inside
-- [Writing an RFC](./product-specs.md) — the ship-coupled delivery doc that opens with the job
-- [Agentic Delivery](./agentic-delivery.md) — how the standing Job Spec anchors agent-delivered work
+- [Job Spec template](../templates/job-spec.md) -- the standing per-job doc the job story lives inside
+- [Writing an RFC](./product-specs.md) -- the ship-coupled delivery doc that opens with the job
+- [Agentic Delivery](./agentic-delivery.md) -- how the standing Job Spec anchors agent-delivered work
