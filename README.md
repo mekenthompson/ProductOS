@@ -39,6 +39,21 @@ RFCs / PRs                        ship-coupled delivery (not a named tier)
 satisfies its Job Spec **and** passes every principle **and** crosses no
 invariant.
 
+## Match the effort to the size
+
+One path for everything is no path at all. The verdict rule is the *bar*, not
+the *paperwork* — scale the gates to the stakes.
+
+| | Quick Win | Lightweight | Full Spec |
+|---|---|---|---|
+| **Size** | ≤ half a day | ½ day–2 wks | > 2 wks |
+| **Process** | Flag Tech Lead/PM, ship | 1-page brief | Full RFC + RICE |
+| **Approval** | Tech Lead/PM | PM + Tech Lead | Head of Product |
+| **Gates** | Outcome sanity check | Outcome UAT + 2-wk review | Full verdict, 2wk/30d/90d |
+
+A **Fast Path** exists for small work with outsized upside (< 1 day, ≤ 2 per
+team per cycle). See the [Decision Framework](./pm-playbook/decision-framework.md).
+
 ---
 
 ## What's here

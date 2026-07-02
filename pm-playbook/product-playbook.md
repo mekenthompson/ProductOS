@@ -15,7 +15,7 @@ Six phases, each feeding the next. The loop closes back to the start.
    Customer research, usage data, and post-launch measurement all feed the same pool. You can't build the right thing if you don't understand the problem.
 
 2. **Decide.** Every idea passes three checks.
-   **Signal** (strategy-aligned with real need?), **Standard** (meets our [product principles](../anchors/product-principles.md)?), **Speed** (half a day or less? flag it with your EM/PM and ship it if it aligns with priorities. More? Write an RFC, bring it to the prioritisation session). Not now ≠ bad idea. It means something else is higher leverage right now.
+   **Signal** (strategy-aligned with real need?), **Standard** (meets our [product principles](../anchors/product-principles.md)?), **Speed** (half a day or less? flag it with your Tech Lead/PM and ship it if it aligns with priorities. More? Write an RFC, bring it to the prioritisation session). Not now ≠ bad idea. It means something else is higher leverage right now.
 
 3. **Shape.** Define the solution and align the team.
    Write specs, align Product, Engineering, Design & GTM on scope. Roadmap with honest fidelity: this quarter is high confidence, next quarter is themes, beyond that is direction. Monthly updates, non-negotiable.
@@ -112,7 +112,7 @@ Three checks, every time, **Signal → Standard → Speed**:
    Run the principle check questions against the proposed solution. If you can't answer "yes" to each, the standard isn't met yet.
 
 3. **Speed.** How big is it?
-   - **≤ half a day:** Flag it with your EM or PM. If it aligns with current priorities, ship it. No RFC needed, but each team has a limited Quick Win budget per sprint. Changelog if UX, notify support always.
+   - **≤ half a day:** Flag it with your Tech Lead or PM. If it aligns with current priorities, ship it. No RFC needed, but each team has a limited Quick Win budget per sprint. Changelog if UX, notify support always.
    - **> half a day:** Write an RFC with RICE score. Bring it to the prioritisation session.
 
 The prioritisation session is where RFCs compete for engineering time. RICE ranks items *within* strategic investment buckets, not across them: a B-grade bet in a high-priority bucket may beat an A-grade item in a lower-priority one. This keeps strategy driving allocation, not RICE gaming.
@@ -122,7 +122,7 @@ Every decision gets communicated back to the proposer with reasoning. **"Not now
 ### Assets
 - [Signal → Standard → Speed decision framework](./decision-framework.md): three paths: Quick Win, Lightweight, Full Spec
 - [Product principles](../anchors/product-principles.md) with check questions
-- Quick win path (≤ half a day, no RFC, EM/PM alignment)
+- Quick win path (≤ half a day, no RFC, Tech Lead/PM alignment)
 - RFC path: [Writing RFCs](../guides/product-specs.md), [RFC Template](../templates/rfc.md), [RICE scoring](./rice.md)
 - Prioritisation session cadence (fortnightly or monthly, aligned to your sprint)
 
@@ -271,7 +271,7 @@ Full decision-to-outcome transparency. Trace from strategy → roadmap → shipp
 
 **Not a substitute for strategy.** Strategy tells you which bets matter *this year*. This framework tells you how to evaluate and execute *always*. Strategy changes yearly. The loop is durable.
 
-**Not process for process' sake.** The quick-win path (≤ half day) is lightweight: flag it with your EM/PM and go. The RFC path has *clearer* process. The measurement loop is new, and it's the part that makes everything else worthwhile.
+**Not process for process' sake.** The quick-win path (≤ half day) is lightweight: flag it with your Tech Lead/PM and go. The RFC path has *clearer* process. The measurement loop is new, and it's the part that makes everything else worthwhile.
 
 **Not something you build all at once.** Mental models and behaviours come first. Assets follow. You don't need a dashboard to start asking "how will we measure this?" You don't need a template to start writing an RFC. Start with the thinking. The tools catch up later.
 

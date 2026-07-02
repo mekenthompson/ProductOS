@@ -20,8 +20,8 @@ Not everything needs an RFC. Not everything is a quick win. Match the path to th
 | | Quick Win | Lightweight | Full Spec |
 |---|---|---|---|
 | **Size** | ≤ half a day of engineering | Half a day – 2 weeks | > 2 weeks |
-| **Process** | Flag with EM/PM, then ship | 1-page brief | Full RFC |
-| **Approval** | EM/PM alignment | PM + Tech Lead | Head of Product sign-off |
+| **Process** | Flag with Tech Lead/PM, then ship | 1-page brief | Full RFC |
+| **Approval** | Tech Lead/PM alignment | PM + Tech Lead | Head of Product sign-off |
 | **Documentation** | Changelog if UX. Support notification always. | Problem, Solution, Acceptance Criteria, Metrics, Persona | RFC ([template](../templates/rfc.md)), RICE score |
 | **Feature flag** | Optional | Yes | Yes |
 | **Post-launch review** | No | 2-week check-in | 2wk / 30d / 90d reviews |
@@ -53,7 +53,7 @@ If Standard fails, redesign the approach before you spend engineering time. A fa
 How big is the work? This determines the path.
 
 **≤ half a day → Quick Win**
-Flag it with your EM or PM. If it aligns with the team's current priorities, get on with it. No RFC needed, but use judgement: each team has a limited budget for Quick Wins per sprint so we stay focused on strategic work. Changelog if it changes UX. Always notify support. Tag it `quick-win` in your tracker.
+Flag it with your Tech Lead or PM. If it aligns with the team's current priorities, get on with it. No RFC needed, but use judgement: each team has a limited budget for Quick Wins per sprint so we stay focused on strategic work. Changelog if it changes UX. Always notify support. Tag it `quick-win` in your tracker.
 
 **Half a day – 2 weeks → Lightweight**
 Write a 1-page brief (see template below). Get PM + Tech Lead sign-off. Ship behind a feature flag. Do a 2-week check-in after launch.

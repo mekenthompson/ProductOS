@@ -78,9 +78,9 @@ Implement these as statuses (or workflow states) in your tracker. The names are 
 |--------|------------|----------------------|------------------|
 | **Backlog** | Shape | — | Triaging ideas, evaluating priority |
 | **Shaping** | Shape | Product Manager | Writing RFC, technical feasibility |
-| **Readying for Build** | Build | Engineering Manager / Project Lead | Specs written, engineering scopes effort |
-| **Building** | Build | Engineering Manager / Project Lead | Active development, deployed behind flag |
-| **In Preview** | Build | Engineering Manager / Project Lead | Soft-launch with trusted customers |
+| **Readying for Build** | Build | Tech Lead / Project Lead | Specs written, engineering scopes effort |
+| **Building** | Build | Tech Lead / Project Lead | Active development, deployed behind flag |
+| **In Preview** | Build | Tech Lead / Project Lead | Soft-launch with trusted customers |
 | **Ready for GTM** | Go to Market | GTM Lead | Preview successful, ready for launch planning |
 | **GTM Launch Planning** | Go to Market | GTM Lead | Docs, training, launch materials in progress |
 | **Ready for Launch** | Go to Market | GTM Lead | All launch assets complete, awaiting release date |
@@ -321,7 +321,7 @@ For all new Product & Engineering projects, use a consistent default project tem
 - **Medium:** Work that incrementally contributes to strategic objective outcomes. It supports or enables them but doesn't, on its own, materially move the metric.
 - **Low:** Work with limited or speculative growth impact. It improves quality or maintainability without materially accelerating strategic objective outcomes.
 
-**Owner:** Product and Engineering Manager
+**Owner:** Product and Tech Lead
 
 ---
 
@@ -358,7 +358,7 @@ The Fast Path exists to speed up small pieces of work with significant customer 
 - <2 Fast Path efforts per team per cycle
 - No GTM coordination required
 - Strongly aligns with product strategy & roadmap
-- Engineering Manager & Product Manager alignment on priority of Fast Path work
+- Tech Lead & Product Manager alignment on priority of Fast Path work
 
 **Examples:**
 
