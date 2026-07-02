@@ -73,7 +73,9 @@ invariants: [<named lines this job must never cross, by construction>]
 > Content is **mechanism + leading indicator only**. No numbers, dates, or
 > targets — those live in the RFC and [Job Links](./job-links.md); this
 > section states the causal mechanism and the earliest observable signal,
-> both durable. (See the `[!CAUTION]` no-drift block at the top.)
+> both durable. (See the `[!CAUTION]` no-drift block at the top.) The
+> [Product Spec](./product-spec.md) job index quantifies this leading
+> indicator as the job metric that rolls up into the outcome's Signal.
 
 - *Mechanism:* <how doing this job changes user behaviour toward the outcome>.
 - *Leading indicator:* <the earliest observable sign it's working, named not

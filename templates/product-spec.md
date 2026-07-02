@@ -13,9 +13,12 @@ anchors: [vision.md, principles.md, invariants.md]
 > **functions** at a high level, and it **owns the list of jobs** the product
 > serves. Job specs `serves:` one of the outcome slugs named here.
 >
-> Measurement ladders in three rungs, each one a number, each rolling up to
-> the rung above: **job metric → outcome Signal → North Star.** A job that
-> can't name a metric rolling into its outcome's Signal is a job you can't
+> Measurement ladders in three quantified rungs, each a number rolling up to
+> the rung above: **job metric → outcome Signal → North Star.** Each job
+> metric quantifies the durable *leading indicator* its
+> [Job Spec](./job-spec.md) names: the Job Spec states the signal in words
+> (named, not quantified); the job index below turns it into the number. A job
+> that can't name a metric rolling into its outcome's Signal is a job you can't
 > tell is working.
 
 ## The product, in one line
@@ -92,8 +95,9 @@ implementation detail lives in docs/; this section stays at outcome altitude.]
 ## The job index
 
 The jobs this product serves, grouped by the outcome they ladder up to.
-Each links its job spec and names the metric it moves — the detailed,
-job-level number that rolls up to its outcome's Signal.
+Each links its job spec and names the metric it moves: the job-level number
+that **quantifies the leading indicator named in that Job Spec** and rolls up
+to its outcome's Signal.
 
 ### [outcome-slug]
 
