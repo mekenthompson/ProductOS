@@ -206,6 +206,14 @@ Name what you're betting on. "If the user genuinely doesn't have this struggling
 
 Phases with **exit criteria** (specific signals) and a **rollback** path (specific actions). Instrumentation that must exist before private preview.
 
+Feature-flag on/off is one release shape, not the only one. Pick the shape that matches the change:
+
+- **Staged / percentage rollout** -- ramp to 1%, 10%, 50%, 100% with an exit gate at each step. Use when risk scales with traffic and you want to read the Signal before widening.
+- **Shadow (parallel) run** -- the new path runs alongside the old one and its output is logged but not served. Use to compare a model or algorithm against the incumbent on live traffic with zero user-facing risk.
+- **Champion-challenger** -- the incumbent serves while one or more challengers run on a slice, and you promote a challenger only when it beats the champion on the Signal. Use for ranking, models, and any change where "better" is a measured verdict, not a guess.
+- **Artifact rollback** -- for a model or data change there is often no flag: rollback means redeploying the prior artifact (the previous model version, the prior dataset). Name the artifact you'd roll back to and confirm it's still deployable.
+- **Backfill considerations** -- a data write can't be "flagged off, no data left behind." If the change writes or transforms data, name how you'd correct or reprocess what was already written, and whether the backfill itself is reversible.
+
 ---
 
 ## Evidence standards
@@ -238,6 +246,18 @@ you'd bet on the *claim*. Tag each load-bearing evidence line inline:
 A spec with no `Directional` tags is either fully validated (rare) or hiding
 its assumptions. Being honest about what you *don't* yet know is what makes the
 rest of the evidence trustworthy, an untagged guess reads as fact.
+
+### Probabilistic acceptance
+
+Sometimes the outcome is a *distribution*, not a boolean. A model, a ranking, or a data-quality gate doesn't pass or fail on one case: it's right often enough, within tolerance often enough. A green boolean is not the only shape of "proven".
+
+When the outcome is probabilistic:
+
+- **Express success as a threshold on a metric distribution.** An error band, a precision floor, a recall floor, % within tolerance. Say what the number must clear, not just that "it works."
+- **Validate it with a backtest against real outcomes.** Run the change against a labelled or historical set and show the metric clears the threshold on data you didn't tune it on. A threshold no one measured against reality is a wish.
+- **Treat drift or regression past the threshold as a named failure mode.** It belongs in User Failure Modes with a detection signal, the same as any hard failure. A model that silently decays below its precision floor has failed the job even though nothing threw an error.
+
+This feeds the Verdict gate: "does the user's job" is measured against the threshold and its backtest, not a single passing scenario.
 
 ---
 
