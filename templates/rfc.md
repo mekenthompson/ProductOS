@@ -1,6 +1,6 @@
 ---
 title: RFC
-description: A JTBD-led, AI-readable RFC for a ship-coupled delivery: defines the user's job, how they fail today, what success and failure look like, and the guardrails, leaving the solution open
+description: "A JTBD-led, AI-readable RFC for a ship-coupled delivery: defines the user's job, how they fail today, what success and failure look like, and the guardrails, leaving the solution open"
 # Doc-class keys (use exactly one):
 #   serves: <job-spec-slug>     # ship-coupled RFC delivering a job; archives when shipped
 #   backs: <invariant-slug>     # design record elaborating/defending an invariant; stays current
