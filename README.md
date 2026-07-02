@@ -44,7 +44,7 @@ invariant.
 | Folder | What it is |
 |---|---|
 | **`anchors/`** | The three anchors — `product-vision`, `product-principles`, `invariants` — and how to write each. |
-| **`guides/`** | The OS method: `agentic-delivery` (the verdict rule + four parts), `jtbd-guide`, `org-as-an-api` (sequence the roadmap from joined evidence), `product-specs` (the RFC how-to), `strategy-as-code` (strategy as a versioned, diffable artefact with decision records). |
+| **`guides/`** | The OS method: `agentic-delivery` (the verdict rule + four parts), `jtbd-guide`, `org-as-an-api` (sequence the roadmap from joined evidence), `product-specs` (the RFC how-to), `strategy-as-code` (strategy as a versioned, diffable artefact with decision records), `headline-metric` (how to pick a signal that anchors a named outcome). |
 | **`templates/`** | The blank shapes: `job-spec.md`, `job-links.md`, `rfc.md`, `strategy.md`, `decision-record.md`. |
 | **`examples/`** | Worked, filled examples: `strategy-example/` (Tempo — a fictional team-scheduling product). |
 | **`skills/`** | Agent-executable skills: `create-job-spec`, `feedback-to-jobs`, `uat-ux-debug`. |

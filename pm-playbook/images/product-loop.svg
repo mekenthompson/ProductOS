@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1724" height="488" viewBox="0 0 1724 488">
+<rect x="0" y="0" width="1724" height="488" fill="#0B1120"/>
+<defs><marker id="arw" markerWidth="8" markerHeight="8" refX="6" refY="3.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L7,3.5 L0,7 Z" fill="#38BDF8"/></marker><marker id="arwG" markerWidth="8" markerHeight="8" refX="6" refY="3.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L7,3.5 L0,7 Z" fill="#F8C674"/></marker></defs>
+<text x="54" y="46" font-family="'Segoe UI', Inter, system-ui, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="3" fill="#64748B">THE OPERATING SYSTEM</text>
+<text x="54" y="88" font-family="Georgia, 'Liberation Serif', 'Times New Roman', serif" font-size="38" font-weight="800" fill="#F8FAFC">The Product Loop</text>
+<rect x="54" y="118" width="236" height="220" rx="14" ry="14" fill="#0F172A" stroke="#334155" stroke-width="1.2"/>
+<rect x="54" y="132" width="5" height="192" rx="2.5" ry="2.5" fill="#38BDF8"/>
+<text x="74" y="164" font-family="Georgia, 'Liberation Serif', 'Times New Roman', serif" font-size="23" font-weight="800" fill="#F8FAFC"><tspan fill="#38BDF8">1.</tspan> Learn</text>
+<circle cx="77" cy="193.5" r="2.4" fill="#38BDF8"/>
+<text x="87" y="198" font-family="'Segoe UI', Inter, system-ui, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#94A3B8">Evidence, not</text>
+<text x="87" y="220" font-family="'Segoe UI', Inter, system-ui, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#94A3B8">assumptions</text>
+<circle cx="77" cy="237.5" r="2.4" fill="#38BDF8"/>
+<text x="87" y="242" font-family="'Segoe UI', Inter, system-ui, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#94A3B8">Research, usage data,</text>
+<text x="87" y="264" font-family="'Segoe UI', Inter, system-ui, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#94A3B8">feedback</text>
+<circle cx="77" cy="281.5" r="2.4" fill="#38BDF8"/>
+<text x="87" y="286" font-family="'Segoe UI', Inter, system-ui, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#94A3B8">One shared evidence</text>
+<text x="87" y="308" font-family="'Segoe UI', Inter, system-ui, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#94A3B8">pool</text>
+<line x1="292" y1="228.0" x2="328" y2="228.0" stroke="#38BDF8" stroke-width="2.4" marker-end="url(#arw)"/>
+<rect x="330" y="118" width="236" height="220" rx="14" ry="14" fill="#0F172A" stroke="#334155" stroke-width="1.2"/>
+<rect x="330" y="132" width="5" height="192" rx="2.5" ry="2.5" fill="#38BDF8"/>
+<text x="350" y="164" font-family="Georgia, 'Liberation Serif', 'Times New Roman', serif" font-size="23" font-weight="800" fill="#F8FAFC"><tspan fill="#38BDF8">2.</tspan> Decide</text>
+<circle cx="353" cy="193.5" r="2.4" fill="#38BDF8"/>
+<text x="363" y="198" font-family="'Segoe UI', Inter, system-ui, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#94A3B8">Signal / Standard /</text>
+<text x="363" y="220" font-family="'Segoe UI', Inter, system-ui, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#94A3B8">Speed</text>
+<circle cx="353" cy="237.5" r="2.4" fill="#38BDF8"/>
+<text x="363" y="242" font-family="'Segoe UI', Inter, system-ui, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#94A3B8">≤ half a day: ship it</text>
+<circle cx="353" cy="259.5" r="2.4" fill="#38BDF8"/>
+<text x="363" y="264" font-family="'Segoe UI', Inter, system-ui, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#94A3B8">Else: RFC + RICE,</text>
+<text x="363" y="286" font-family="'Segoe UI', Inter, system-ui, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#94A3B8">prioritise</text>
+<line x1="568" y1="228.0" x2="604" y2="228.0" stroke="#38BDF8" stroke-width="2.4" marker-end="url(#arw)"/>
+<rect x="606" y="118" width="236" height="220" rx="14" ry="14" fill="#0F172A" stroke="#334155" stroke-width="1.2"/>
+<rect x="606" y="132" width="5" height="192" rx="2.5" ry="2.5" fill="#38BDF8"/>
+<text x="626" y="164" font-family="Georgia, 'Liberation Serif', 'Times New Roman', serif" font-size="23" font-weight="800" fill="#F8FAFC"><tspan fill="#38BDF8">3.</tspan> Shape</text>
+<circle cx="629" cy="193.5" r="2.4" fill="#38BDF8"/>
+<text x="639" y="198" font-family="'Segoe UI', Inter, system-ui, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#94A3B8">Write the living RFC</text>
+<circle cx="629" cy="215.5" r="2.4" fill="#38BDF8"/>
+<text x="639" y="220" font-family="'Segoe UI', Inter, system-ui, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#94A3B8">Align Product, Eng,</text>
+<text x="639" y="242" font-family="'Segoe UI', Inter, system-ui, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#94A3B8">Design, GTM</text>
+<circle cx="629" cy="259.5" r="2.4" fill="#38BDF8"/>
+<text x="639" y="264" font-family="'Segoe UI', Inter, system-ui, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#94A3B8">Three-band roadmap,</text>
+<text x="639" y="286" font-family="'Segoe UI', Inter, system-ui, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#94A3B8">monthly</text>
+<line x1="844" y1="228.0" x2="880" y2="228.0" stroke="#38BDF8" stroke-width="2.4" marker-end="url(#arw)"/>
+<rect x="882" y="118" width="236" height="220" rx="14" ry="14" fill="#0F172A" stroke="#334155" stroke-width="1.2"/>
+<rect x="882" y="132" width="5" height="192" rx="2.5" ry="2.5" fill="#38BDF8"/>
+<text x="902" y="164" font-family="Georgia, 'Liberation Serif', 'Times New Roman', serif" font-size="23" font-weight="800" fill="#F8FAFC"><tspan fill="#38BDF8">4.</tspan> Build</text>
+<circle cx="905" cy="193.5" r="2.4" fill="#38BDF8"/>
+<text x="915" y="198" font-family="'Segoe UI', Inter, system-ui, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#94A3B8">Principles as eng</text>
+<text x="915" y="220" font-family="'Segoe UI', Inter, system-ui, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#94A3B8">standards</text>
+<circle cx="905" cy="237.5" r="2.4" fill="#38BDF8"/>
+<text x="915" y="242" font-family="'Segoe UI', Inter, system-ui, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#94A3B8">Instrument before</text>
+<text x="915" y="264" font-family="'Segoe UI', Inter, system-ui, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#94A3B8">shipping</text>
+<line x1="1120" y1="228.0" x2="1156" y2="228.0" stroke="#38BDF8" stroke-width="2.4" marker-end="url(#arw)"/>
+<rect x="1158" y="118" width="236" height="220" rx="14" ry="14" fill="#0F172A" stroke="#334155" stroke-width="1.2"/>
+<rect x="1158" y="132" width="5" height="192" rx="2.5" ry="2.5" fill="#38BDF8"/>
+<text x="1178" y="164" font-family="Georgia, 'Liberation Serif', 'Times New Roman', serif" font-size="23" font-weight="800" fill="#F8FAFC"><tspan fill="#38BDF8">5.</tspan> Launch</text>
+<circle cx="1181" cy="193.5" r="2.4" fill="#38BDF8"/>
+<text x="1191" y="198" font-family="'Segoe UI', Inter, system-ui, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#94A3B8">Reviews: 2 wks / 30 /</text>
+<text x="1191" y="220" font-family="'Segoe UI', Inter, system-ui, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#94A3B8">60–90d</text>
+<circle cx="1181" cy="237.5" r="2.4" fill="#38BDF8"/>
+<text x="1191" y="242" font-family="'Segoe UI', Inter, system-ui, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#94A3B8">Accelerate, iterate,</text>
+<text x="1191" y="264" font-family="'Segoe UI', Inter, system-ui, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#94A3B8">pivot, stop</text>
+<line x1="1396" y1="228.0" x2="1432" y2="228.0" stroke="#38BDF8" stroke-width="2.4" marker-end="url(#arw)"/>
+<rect x="1434" y="118" width="236" height="220" rx="14" ry="14" fill="#0F172A" stroke="#334155" stroke-width="1.2"/>
+<rect x="1434" y="132" width="5" height="192" rx="2.5" ry="2.5" fill="#38BDF8"/>
+<text x="1454" y="164" font-family="Georgia, 'Liberation Serif', 'Times New Roman', serif" font-size="23" font-weight="800" fill="#F8FAFC"><tspan fill="#38BDF8">6.</tspan> Sell</text>
+<circle cx="1457" cy="193.5" r="2.4" fill="#38BDF8"/>
+<text x="1467" y="198" font-family="'Segoe UI', Inter, system-ui, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#94A3B8">Self-onboarding (PLG)</text>
+<circle cx="1457" cy="215.5" r="2.4" fill="#38BDF8"/>
+<text x="1467" y="220" font-family="'Segoe UI', Inter, system-ui, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#94A3B8">Sales enablement, PoC</text>
+<text x="1467" y="242" font-family="'Segoe UI', Inter, system-ui, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#94A3B8">process</text>
+<circle cx="1457" cy="259.5" r="2.4" fill="#38BDF8"/>
+<text x="1467" y="264" font-family="'Segoe UI', Inter, system-ui, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#94A3B8">Adoption tracking</text>
+<line x1="1276.0" y1="338" x2="1276.0" y2="418" stroke="#F8C674" stroke-width="2.4"/>
+<line x1="1552.0" y1="338" x2="1552.0" y2="418" stroke="#F8C674" stroke-width="2.4"/>
+<line x1="1552.0" y1="418" x2="172.0" y2="418" stroke="#F8C674" stroke-width="2.4"/>
+<circle cx="1276.0" cy="418" r="3.4" fill="#F8C674"/>
+<line x1="172.0" y1="418" x2="172.0" y2="340" stroke="#F8C674" stroke-width="2.4" marker-end="url(#arwG)"/>
+<text x="862.0" y="446" text-anchor="middle" font-family="Georgia, 'Liberation Serif', 'Times New Roman', serif" font-size="15" font-style="italic" fill="#F8C674">What we learn at Launch and Sell feeds back to Learn</text>
+</svg>
