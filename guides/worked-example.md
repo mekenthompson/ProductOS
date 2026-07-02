@@ -72,7 +72,7 @@ The change reaches the gate. Four clauses, each independent, each yes or no:
 | Principles | Did we build it well, product and engineering? | **Yes.** Review is clean, tests pin the behaviour. |
 | Invariants | Does it cross a line we won't cross? | **No, it crosses one.** |
 
-The invariant clause fails. The product carries an invariant: **least-surprise recipients** -- no message reaches anyone the sender did not clearly address. The first build resolved "their team" to the workspace default channel, which for many workspaces is `#general`. A private export firing a notice into a company-wide channel crosses that line.
+The invariant clause fails. The product carries an invariant: **least-surprise recipients** -- no message reaches anyone the sender did not clearly address. The first build resolved "their team" to the workspace default channel (here, a chat workspace; your product's equivalent is whatever shared surface has a broadcast-default), which for many workspaces is `#general`. A private export firing a notice into a company-wide channel crosses that line.
 
 The reviewer blocks with the specific reason, not a vague note:
 
