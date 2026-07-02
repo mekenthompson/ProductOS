@@ -49,6 +49,57 @@ invariants: [<named lines this job must never cross, by construction>]
 > situation, to make what progress. Name what they are really trying to do,
 > not the feature they asked for. If the implementation has changed, add one
 > line: "We used to do X; we changed to Y; the job underneath is unchanged."
+>
+> **Required — the struggling moment.** State one concrete, present-tense
+> trigger: *"When X happens, the user is stuck because…"* This is the durable
+> narrative of the moment the current approach fails; keep it a story, not a
+> stat — no evidence links, account names, or numbers (those drift to
+> [Job Links](./job-links.md) and the RFC).
+>
+> **Per-persona job stories.** Frame the job as a
+> `When… I want to… so I can…` story (see the [JTBD Guide](../guides/jtbd-guide.md)
+> for the format and the forces around it). Write **one** story if a single
+> persona hires this job; add more **only** when the job genuinely differs by
+> persona — not one per persona out of habit.
+
+**Struggling moment:** When <trigger happens>, the user is stuck because
+<why the current approach fails them>.
+
+**Job story:** When <situation>, I want to <motivation>, so I can <outcome>.
+
+## Contribution
+
+> How this job moves the **Signal** of the outcome named in `serves:`.
+> Content is **mechanism + leading indicator only**. No numbers, dates, or
+> targets — those live in the RFC and [Job Links](./job-links.md); this
+> section states the causal mechanism and the earliest observable signal,
+> both durable. (See the `[!CAUTION]` no-drift block at the top.)
+
+- *Mechanism:* <how doing this job changes user behaviour toward the outcome>.
+- *Leading indicator:* <the earliest observable sign it's working, named not
+  quantified>.
+
+## What the job requires
+
+> What the product must be *able to do* to serve the job. **Must / Won't
+> only** — no "Should"; that's a prioritisation call that drifts. State what
+> the product must be able to do, verb-first, with zero named infrastructure,
+> protocol, or data-type. If you can't strip the proper noun, it's an RFC
+> Solution-Space line, not a requirement. Distinct from **Good / bad**
+> (user-observable behaviour) and from the RFC's **Solution Space** (this is
+> durable and outcome-level; that is the ship-coupled behavioural contract).
+> Durable product non-goals ("we're the visibility layer, not the
+> controller") belong here under **Won't**. Keep each list to ~3–5 bullets.
+
+**Must be able to**
+
+- <verb-first capability, no proper nouns>
+- ...
+
+**Won't**
+
+- <the durable non-goal this product refuses by design>
+- ...
 
 ## Good / bad
 
@@ -56,7 +107,7 @@ invariants: [<named lines this job must never cross, by construction>]
 > what a human sees when it is working and what an agent should steer
 > toward. The right list is the anti-pattern and the agent's "never do
 > this." Phrase every line as user-observable behaviour, not implementation.
-> Keep each list to roughly five to seven bullets.
+> Keep each list to roughly five bullets.
 
 **Good looks like**
 
