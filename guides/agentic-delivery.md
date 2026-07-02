@@ -113,6 +113,15 @@ The anchors, the Job Spec, and the gates fuse into one decision. A change ships 
 
 Anything else is out of scope, **however clever it seems.** The four clauses are orthogonal: the vision says *is it ours to build*, the Job Spec says *did it do the job*, the principles say *did we build it well*, the invariants say *are we even allowed*. All must pass independently.
 
+### Scale the gates to the path
+
+The verdict rule is all-must-pass, but "pass" is proportional. A Quick Win
+passes with a Tech Lead's nod and an outcome sanity check. A payments change
+runs every gate at full depth. The gates never disappear — their *depth* tracks
+the stakes. This is what stops the method reading as a speed tax. The
+[Decision Framework](../pm-playbook/decision-framework.md) sets the paths
+(Quick Win / Lightweight / Full Spec).
+
 ---
 
 ## How each discipline uses this

@@ -41,7 +41,7 @@ Nobody dictates another's domain. Product doesn't tell engineering which databas
 
 The triad sets direction. Engineers on the team build it. That doesn't make you passive in the process.
 
-**You can identify problems and propose solutions.** If you spot a customer pain point, a UX problem, or a pattern in support tickets, say something. File a bug, raise it in standup, bring it to your EM or PM, or write an RFC yourself. You don't need permission. The bar for a good RFC is evidence of a real problem and a clear solution. Who writes it doesn't matter.
+**You can identify problems and propose solutions.** If you spot a customer pain point, a UX problem, or a pattern in support tickets, say something. File a bug, raise it in standup, bring it to your Tech Lead or PM, or write an RFC yourself. You don't need permission. The bar for a good RFC is evidence of a real problem and a clear solution. Who writes it doesn't matter.
 
 **You should know why you're building something.** If you're handed an implementation without context on the problem it solves, ask. "What problem does this solve?" is always a fair question. If the answer isn't clear, the work isn't ready.
 
@@ -109,7 +109,7 @@ Ideas enter through customer feedback, research, analytics, or internal discover
 
 | Path | Size | What the team gets | What happens |
 |------|------|---------------------|--------------|
-| **Quick Win** | Half a day or less | Verbal scope | Flag with EM/PM, then ship. Limited budget per sprint. |
+| **Quick Win** | Half a day or less | Verbal scope | Flag with Tech Lead/PM, then ship. Limited budget per sprint. |
 | **Lightweight** | Half a day to 2 weeks | 1-page brief (Problem, Solution, Acceptance Criteria, Metrics) | Engineering confirms sizing. Build behind flag. |
 | **Full Spec** | More than 2 weeks | RFC | Engineering confirms feasibility. Full triad alignment before build. |
 
