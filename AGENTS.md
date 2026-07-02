@@ -38,6 +38,7 @@ Else: out of scope, however clever.
 
 - **Scoping / designing →** read the vision; name which outcome the work serves. If none, stop.
 - **Writing or changing a Job Spec →** use [`templates/job-spec.md`](./templates/job-spec.md); keep `job` / `outcome` / `stakes` stable, narrate retired approaches rather than rewriting the job. The body carries Contribution, What the job requires, Good/bad, and Prove it; the `## Prove it` section must be non-empty. Doc-class by frontmatter key: `job:` = durable Job Spec; `artifact:` (or `artefact:`) / `serves:` = churny artifact (e.g. an RFC) that points up to a job.
+  - **Outcome-drift backstop:** the `job` / `outcome` / `stakes` lines are diff-protected. Narrating a retired *implementation approach* is normal; changing the *outcome itself* is not a silent edit. It is a ratified event needing a recorded decision and re-ratification, the same discipline STRATEGY.md demands. A change to those three lines fails review unless it cites its decision record. Otherwise a "durable" Job Spec decays into a description of whatever shipped.
 - **Reviewing →** dispatch a SEPARATE fresh-process reviewer (never the author; it rubber-stamps). It returns APPROVE / REQUEST_CHANGES / BLOCK citing file:line; iterate to APPROVE. Do NOT let an automated merge fire before APPROVE.
 - **Shipping →** run the outcome UAT (job × surface, real path, independent of unit tests) AND the production-readiness check. Unit-green ≠ outcome-validated ≠ production-ready: three gates, none implies the others.
 
