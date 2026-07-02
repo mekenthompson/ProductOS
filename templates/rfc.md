@@ -209,13 +209,7 @@ What we're assuming, and what would invalidate the RFC.
 
 How we ship this safely.
 
-Pick the release shape that fits the change. Feature-flag on/off is one option, not the only one:
-
-- **Staged / percentage rollout** -- ramp 1% → 10% → 50% → 100% with a gate at each step.
-- **Shadow (parallel) run** -- new path runs alongside the old one, output logged not served. Compares a model or algorithm on live traffic at zero user risk.
-- **Champion-challenger** -- incumbent serves while challengers run on a slice; promote only when a challenger beats the champion on the Signal.
-- **Artifact rollback** -- for a model or data change, rollback means redeploying the prior artifact (previous model version, prior dataset), not toggling a flag. Name the artifact to roll back to.
-- **Backfill** -- a data write can't be "flagged off, no data left behind." Name how you'd correct or reprocess data already written, and whether that backfill is reversible.
+Release shapes (staged rollout, shadow run, champion-challenger, artifact rollback, backfill): see [Writing an RFC](../guides/product-specs.md#rollout). Pick the shape that fits the change; feature-flag on/off is one option, not the only one.
 
 Fill the table below with the shape you chose (the flag column is illustrative; replace it with ramp %, shadow, or artifact version as fits):
 

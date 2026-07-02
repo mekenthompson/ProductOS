@@ -35,9 +35,8 @@ An invariant is never relaxed by authority or a launch-date judgement call. Not
 by whoever is most senior in the room, not because the date is close, not
 because the demo is tomorrow. Relaxing or retiring an invariant is a ratified
 change with a recorded decision, made deliberately and ahead of time, not on the
-day under pressure. Humans own the gate, but the gate is not bent by whoever is
-loudest or most senior; it moves only through the same recorded, ratified path
-any anchor change takes.
+day under pressure: it moves only through the same recorded, ratified path any
+anchor change takes.
 
 Most invariants are compliance, identity, trust, or safety boundaries:
 things that, if crossed, mean you're no longer building the same product (or
