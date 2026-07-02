@@ -59,9 +59,23 @@ not generic.
   feature request is a problem statement, not a spec. Find the job; there is
   usually a better way to meet it than the literal request.
 - **The situation and the progress wanted.** Who is hiring this, when, to
-  make what progress? Specific situation beats abstract persona.
-- **Which outcome does it serve?** Name the product-spec outcome it ladders
-  up to (`serves:`). If it ladders to none, it may be out of scope; say so.
+  make what progress? Specific situation beats abstract persona. Pin the
+  **struggling moment** — one concrete, present-tense trigger, *"When X
+  happens, the user is stuck because…"* — and the **job story(ies)**: one if
+  a single persona hires it, more only when the job genuinely differs by
+  persona (see the [JTBD Guide](../../guides/jtbd-guide.md)).
+- **Which outcome does it serve, and how does this job move it?** Name the
+  product-spec outcome it ladders up to (`serves:`). If it ladders to none,
+  it may be out of scope; say so. Then name the **contribution**: the causal
+  *mechanism* (how doing this job changes user behaviour toward the outcome)
+  and the *leading indicator* (the earliest observable sign it's working) —
+  named, never quantified.
+- **What must the product be able to do to serve the job?** Verb-first
+  capabilities with no named infrastructure, protocol, or data-type
+  (**Must**), and the durable non-goals the product refuses by design
+  (**Won't**). No "Should" — that's a prioritisation call that drifts. If you
+  can't strip the proper noun, it's an RFC Solution-Space line, not a
+  requirement.
 - **The durable outcome vs the current build.** What is the user-observable
   end state that must stay true even if you rebuild it three times? That is
   the `outcome:`. Anything tied to today's feature is implementation, not the
@@ -86,8 +100,17 @@ Fill the template. Keep it to **one screen**; the frontmatter carries ~80%.
 
 - Frontmatter: `job` / `outcome` / `stakes` (user-voiced, durable) +
   `serves:` + `invariants:`.
-- `## The job`: one short paragraph. If an approach was retired, narrate it
-  in one line; never silently rewrite the job.
+- `## The job`: one short paragraph, plus the required **struggling moment**
+  (one present-tense trigger, no numbers or account names) and the
+  **job story(ies)** (`When… I want to… so I can…`; one, or more only when
+  the job genuinely differs by persona). If an approach was retired, narrate
+  it in one line; never silently rewrite the job.
+- `## Contribution`: *mechanism* + *leading indicator* only — how this job
+  moves the Signal of the `serves:` outcome. No numbers, dates, or targets;
+  those drift to the RFC and Job Links.
+- `## What the job requires`: **Must** (verb-first capabilities, no proper
+  nouns) and **Won't** (durable non-goals) only — no "Should". ~3–5 bullets
+  each. Distinct from Good / bad and from the RFC's Solution Space.
 - `## Good / bad`: the merged, observable, dual-audience decision aid.
 - `## Prove it`: named by job × surface, each line pointing at a **real**
   scenario and the invariant it protects, plus a fuzz-corpus seed. Mark any
