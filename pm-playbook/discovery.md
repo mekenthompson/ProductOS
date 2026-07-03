@@ -39,6 +39,7 @@ Discovery replaces assumptions with evidence. Do it before you write an RFC.
 **How:**
 - Use the [Customer Call Template](./templates/customer-call.md)
 - Focus on their problem, not your solution ("Tell me about the last time you had to retry that flow" not "Would you use a retry button?")
+- Listen for the [four forces](../guides/jtbd-guide.md#the-four-forces-decide-whether-the-job-is-worth-serving) (push, pull, anxiety, habit): they tell you whether the job is worth serving, and the interview is where you hear them
 - Record it (with permission), take notes, synthesise afterwards
 
 **Output:** a research doc with job stories, direct quotes, and problem patterns

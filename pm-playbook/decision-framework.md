@@ -34,6 +34,8 @@ Start here when any work arrives, whether from customer feedback, an engineer's 
 
 ### Step 1: Signal
 
+> This "Signal" (a reason to build) is distinct from an outcome's **Signal** in the [Product Vision](../anchors/product-vision.md) and [Product Spec](../templates/product-spec.md), which is the metric that tells you a named outcome is holding. Here it means demand and evidence; there it means the measurable driver of the North Star.
+
 Does this work have a reason to exist right now?
 
 - **Strategy-aligned?** Does it connect to a current strategic lever?
@@ -144,6 +146,7 @@ The PM, informed by the Tech Lead's sizing. If there's disagreement, the PM deci
 
 - [Product Playbook](./product-playbook.md): The 6-phase operating model (this framework is Phase 2: DECIDE)
 - [Product Vision](../anchors/product-vision.md): Vision and personas
+- [Product Spec](../templates/product-spec.md): Where the outcomes and their Signals live, the success measures a Vision Check reads against
 - [RFC Guide](../guides/product-specs.md): Full Spec path guidance (writing a ship-coupled RFC)
 - [RICE Assessment](./rice.md): Scoring for Full Spec path
 

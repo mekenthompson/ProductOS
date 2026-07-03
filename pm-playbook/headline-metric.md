@@ -17,5 +17,6 @@ The vision names a small set of outcomes (max four), each with its own signal. T
 ## Related
 
 - **[Product Vision](../anchors/product-vision.md)**: Names the outcomes and their signals.
+- **[Product Spec](../templates/product-spec.md)**: Where the product's outcomes, their Signals, and the North Star are recorded, with the job index that rolls up to them.
 - **[RICE Assessment](./rice.md)**: Impact is scored in the terms of a named signal.
 - **[Decision Framework](./decision-framework.md)**: Signal → Standard → Speed uses the signal as the success measure.

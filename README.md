@@ -67,7 +67,7 @@ and stakes.
 | **`examples/`** | Worked, filled examples: `strategy-example/` (Tempo, a fictional team-scheduling product). |
 | **`skills/`** | Agent-executable skills: `create-job-spec`, `feedback-to-jobs`, `uat-ux-debug`. |
 | **`AGENTS.md`** | The terse operating contract: read this to *execute* the method. |
-| **`pm-playbook/`** | Separate human-craft layer: the six-phase PM loop, discovery, RICE, personas. It references the OS; the OS never references it. Not part of the published method. |
+| **`pm-playbook/`** | Separate human-craft layer: the six-phase PM loop, discovery, RICE, personas. It references the OS; the OS never references it. Published as a top-level site section, a distinct layer alongside the agentic method. |
 
 ---
 

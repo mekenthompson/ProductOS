@@ -1,6 +1,6 @@
 ---
 title: PM Playbook
-description: The human product-management craft: the six-phase operating loop, the discipline guides, and the templates that go with them.
+description: "The human product-management craft: the six-phase operating loop, the discipline guides, and the templates that go with them."
 ---
 
 # PM Playbook
@@ -40,7 +40,7 @@ This is the judgement layer: how a person runs product day to day.
 | [customer-feedback.md](./customer-feedback.md) | Handling and triaging product feedback. |
 | [rice.md](./rice.md) | RICE scoring framework. |
 | [personas.md](./personas.md) | How to write personas that are load-bearing: who hires the job, what good and bad look like. |
-| [headline-metric.md](./headline-metric.md) | Picking the single number the work anchors on. |
+| [The Anchor Signal](../guides/headline-metric.md) | Picking the signal that anchors a named outcome (and when it collapses to a single headline metric). |
 | [tools-we-use.md](./tools-we-use.md) | Reference toolchain. |
 
 ## Templates

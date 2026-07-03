@@ -7,7 +7,7 @@ description: "The operating contract for agents working in ProductOS: the artifa
 
 This repository is **ProductOS**, a reusable, product-agnostic **agentic-delivery operating system**: the anchors, Job Specs, templates, and agent-executable skills that make delivery *run*. Anything specific to a real product (vision, principles, invariants) is documented as a *guide*: what good looks like, when it's "done," and how to write your own.
 
-The human PM craft (the six-phase loop, discovery, RICE, personas) is a **separate, human-owned layer**, kept in an internal-only `pm-playbook/` layer that is not published to the live site. ProductOS stays independent of the day-to-day craft, with one deliberate bridge: the craft's **path-tiering** (Quick Win / Lightweight / Full Spec) sets *how* the verdict rule scales. The gates never disappear; their depth tracks the stakes.
+The human PM craft (the six-phase loop, discovery, RICE, personas) is a **separate, human-owned layer**, kept in `pm-playbook/`. It is now **published as a top-level section of the live site**, the human-craft layer alongside the agentic method, but it stays a distinct layer with a one-way dependency: pm-playbook may reference the core (anchors, guides, templates); the core never references pm-playbook. ProductOS stays independent of the day-to-day craft, with one deliberate bridge: the craft's **path-tiering** (Quick Win / Lightweight / Full Spec) sets *how* the verdict rule scales. The gates never disappear; their depth tracks the stakes.
 
 ## Scope
 
