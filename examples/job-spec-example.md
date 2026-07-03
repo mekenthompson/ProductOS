@@ -2,7 +2,7 @@
 title: "Job Spec Example: Tempo"
 description: "A worked Job Spec on the current template, filled in at full-stakes depth for a real job from the Tempo strategy example: see everyone's free time at once. Shows the four-forces reading feeding the bar, the bet, and the abandon signal."
 sidebar:
-  order: 3
+  order: 4
 ---
 
 # Job Spec Example: Tempo
