@@ -1,7 +1,7 @@
 ---
 title: Research Template
 description: 'Competitive, analytics, surveys, usability testing'
-last_reviewed: 2025-01-25T00:00:00.000Z
+last_reviewed: 2025-01-25
 icon: "🔬"
 ---
 

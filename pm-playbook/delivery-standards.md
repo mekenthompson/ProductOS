@@ -15,7 +15,7 @@ icon: "📋"
 
 > 💡 **New to the process? Here's the 5-step version.** Each step maps to a phase below.
 
-1. **Validate the problem (Learn):** Talk to 3+ customers. Find evidence. Check with your SVP of Product.
+1. **Validate the problem (Learn):** Talk to 3+ customers. Find evidence. Check with your Head of Product.
 2. **Build the business case (Decide):** Write an RFC. Score with RICE. Get RFC approved.
 3. **Shape the solution (Shape):** Approved RFC lives. Align Product, Engineering, Design & GTM on scope, success/failure modes, and guardrails.
 4. **Ship the feature (Build → Launch):** Build behind a flag. Preview with trusted customers. Launch to everyone.
@@ -76,7 +76,7 @@ Implement these as statuses (or workflow states) in your tracker. The names are 
 
 | Status | Phase Group | Who Moves Project Here | What's Happening |
 |--------|------------|----------------------|------------------|
-| **Backlog** | Shape | — | Triaging ideas, evaluating priority |
+| **Backlog** | Shape | | Triaging ideas, evaluating priority |
 | **Shaping** | Shape | Product Manager | Writing RFC, technical feasibility |
 | **Readying for Build** | Build | Tech Lead / Project Lead | Specs written, engineering scopes effort |
 | **Building** | Build | Tech Lead / Project Lead | Active development, deployed behind flag |
@@ -85,7 +85,7 @@ Implement these as statuses (or workflow states) in your tracker. The names are 
 | **GTM Launch Planning** | Go to Market | GTM Lead | Docs, training, launch materials in progress |
 | **Ready for Launch** | Go to Market | GTM Lead | All launch assets complete, awaiting release date |
 | **Launched** | Go to Market | GTM Lead | Live to all customers, tracking adoption |
-| **Cancelled** | — | Product Manager / GTM Lead | Stopped, won't be completed |
+| **Cancelled** | | Product Manager / GTM Lead | Stopped, won't be completed |
 
 ---
 
@@ -100,7 +100,7 @@ Every product decision traces back to evidence. The discipline is picking the hi
 - Validate the problem before committing engineering time
 - Tag the [persona](../anchors/product-vision.md): Creator, Consumer, or Sponsor
 - Apply [Signal → Standard → Speed](./decision-framework.md) to pick the right path (Quick Win / Lightweight / Full Spec)
-- Vision check: does this move the [headline metric](../anchors/product-vision.md)?
+- Vision check: does this move a named [outcome and its Signal](../anchors/product-vision.md)? (Where one number captures the whole product, that Signal is the single headline metric.)
 
 ### What You Do
 
@@ -226,12 +226,12 @@ Every requirement below applies. Scale its depth to the stakes: lighter for a Qu
 | Customer evidence (3+ examples) | Scale to the stakes |
 | RICE scored | For Lightweight and Full Spec work |
 | Technical feasibility confirmed | Always |
-| SVP of Product approval | Senior product sign-off for substantial work |
-| **Vision check** | Does this move the headline metric? |
+| Head of Product approval | Senior product sign-off for substantial work |
+| **Vision check** | Does this move a named outcome and its Signal? (One number for the whole product collapses to a single headline metric.) |
 | **Persona identified** | Which [persona](../anchors/product-vision.md) has this problem? |
 | **Evidence supports the bet** | Not just a good idea, but validated need with research |
 
-**Who approves:** Senior product sign-off (SVP of Product) for substantial work; PM + Tech Lead for small / quick-win work.
+**Who approves:** Senior product sign-off (Head of Product) for substantial work; PM + Tech Lead for small / quick-win work.
 
 **Outcome:** Product, Engineering & broader stakeholder group are aligned on Project Scope, Success Criteria and Priority.
 
@@ -258,7 +258,7 @@ Every requirement below applies. Scale its depth to the stakes: lighter for a Qu
 | **Success metrics instrumented** | Events defined in code, dashboard or query exists, guardrails identified |
 | **Guardrail metrics identified** | What must NOT degrade |
 
-**Who approves:** Senior product sign-off (SVP of Product) for substantial work; PM + Tech Lead for small / quick-win work.
+**Who approves:** Senior product sign-off (Head of Product) for substantial work; PM + Tech Lead for small / quick-win work.
 
 **Outcome:** Change has gone through initial customer testing with any necessary updates made to enable it to move to Public Preview and then General Availability following agreed Go to Market steps.
 
@@ -271,7 +271,7 @@ Every requirement below applies. Scale its depth to the stakes: lighter for a Qu
 After launch, track whether the bet paid off with structured post-launch reviews:
 
 - [ ] **Product performance:** Actual metrics compared to RFC predictions
-- [ ] **Vision check:** Did this move the headline metric?
+- [ ] **Vision check:** Did this move a named outcome and its Signal? (One number for the whole product collapses to a single headline metric.)
 - [ ] **Persona adoption:** Are the target personas using it?
 - [ ] **Decision made:** Accelerate · Iterate · Pivot · Investigate · Stop
 
@@ -438,8 +438,8 @@ A spec turns the RFC into buildable requirements. It answers: What do we build? 
 **If there's disagreement:**
 
 1. **First:** Involve the two disagreeing parties (usually director level)
-2. **Second:** SVP of Product decides on scope/timeline
-3. **Third:** CPO involvement only if strategic direction affected
+2. **Second:** Head of Product decides on scope/timeline
+3. **Third:** Executive leadership involved only if strategic direction is affected
 
 ---
 
@@ -447,11 +447,11 @@ A spec turns the RFC into buildable requirements. It answers: What do we build? 
 
 | Gate | What It Means | Who Approves |
 |------|---------------|--------------|
-| **Shaping Checkpoint** | Green light to spec | PM + Tech Lead + SVP of Product |
-| **Launch Readiness Check** | Ship behind flag to customers | PM + SVP of Product |
+| **Shaping Checkpoint** | Green light to spec | PM + Tech Lead + Head of Product |
+| **Launch Readiness Check** | Ship behind flag to customers | PM + Head of Product |
 | **Launch Retro Check** | Did the bet pay off? | PM (performance review) |
 
-Gate requirements scale with the stakes. Small / quick-win work doesn't need SVP sign-off. See the requirement tables above.
+Gate requirements scale with the stakes. Small / quick-win work doesn't need Head of Product sign-off. See the requirement tables above.
 
 ---
 

@@ -8,7 +8,7 @@ sidebar:
 # Job Spec Example: Tempo
 
 This is a worked [Job Spec](../templates/job-spec.md), filled in at full-stakes
-depth, for one of the jobs funded in the [Tempo strategy example](./tempo-strategy.md):
+depth, for one of the jobs funded in the [Tempo strategy example](./strategy-example/STRATEGY.md):
 `see-everyones-free-time-at-once`. Tempo is a fictional team-scheduling product;
 its customers (FitClub, BrightSmile, CityCare) and its competitor (Gridline) are
 illustrative. Read it alongside the blank [template](../templates/job-spec.md) to
@@ -204,5 +204,5 @@ the corpus, not just the single-site happy path.
 ## Related
 
 - [Job Spec Template](../templates/job-spec.md) -- the blank shape this fills in
-- [Tempo Strategy (worked example)](./tempo-strategy.md) -- the strategy that funds this job
+- [Tempo Strategy (worked example)](./strategy-example/STRATEGY.md) -- the strategy that funds this job
 - [JTBD Guide](../guides/jtbd-guide.md) -- the job-story and four-forces framing behind the job

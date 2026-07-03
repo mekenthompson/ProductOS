@@ -37,10 +37,10 @@ _Pull metrics from the RFC Success section. Fill in actuals._
 
 ## Vision Check
 
-**Did this move the headline metric from the [product vision](../../anchors/product-vision.md)?**
+**Did this move a named outcome and its Signal from the [product vision](../../anchors/product-vision.md)?** (Where one number captures the whole product, that Signal is the single headline metric.)
 
-- [ ] **Direct movement?** [Evidence: the headline metric itself shifted, in the right direction, by a measurable amount]
-- [ ] **Leading indicator?** [Evidence: a known leading indicator of the headline moved]
+- [ ] **Direct movement?** [Evidence: the outcome's Signal itself shifted, in the right direction, by a measurable amount]
+- [ ] **Leading indicator?** [Evidence: a known leading indicator of the Signal moved]
 - [ ] **Persona-specific check?** [Each affected persona's vision-lens question improved?]
 
 If none of these improved, why not? What would need to change?
