@@ -1,191 +1,207 @@
 ---
-title: Jobs to be Done Guide
-description: How to use the JTBD framework in specs and research
-last_reviewed: 2026-05-12
+title: Jobs to be Done in ProductOS
+description: How ProductOS applies Christensen and Moesta's Jobs to be Done to frame a job a Job Spec can carry, one that is durable, testable, and actionable by a human or an agent.
+last_reviewed: 2026-07-03
 icon: "📖"
 ---
 
-# Jobs to be Done (JTBD) guide
+# Jobs to be Done in ProductOS
 
-## What is JTBD?
-
-> People don't buy products — they **hire** them to get a **job** done.
-> — Clayton Christensen, Harvard Business School
-
-JTBD shifts focus from *what we're building* to *why customers need it*. Instead of defining features by user type, we focus on the **situation**, **motivation**, and **desired outcome**.
-
-**Where this is used:** Job stories go inside a [Job Spec](../templates/job-spec.md) (the durable per-job doc) and inside an [RFC](../templates/rfc.md) when scoping a delivery. They're also useful in research documents and RFC problem statements.
-
-**Key insight:** Products come and go. The underlying job stays. Understanding the job creates better, more durable solutions.
-
-> [!NOTE]
-> **Job story vs Job Spec**
+> People don't buy products. They hire them to get a job done.
 >
-> This guide teaches the job *story*, a single sentence (`When… [persona] wants to… so they can…`) used inside a [Job Spec](../templates/job-spec.md) or an [RFC](../templates/rfc.md). A **Job Spec** is the standing document built around that job: one per job, with `job` / `outcome` / `stakes` frontmatter, that outlives any single RFC or implementation. Write the sentence here; promote durable, cross-cutting jobs into a standing doc with the [Job Spec template](../templates/job-spec.md). See [Agentic Delivery](./agentic-delivery.md) for how the standing doc anchors agent-delivered work.
->
-> **The rule the Job Spec references:** a Job Spec carries a **struggling moment (required)**, one concrete, present-tense trigger, *"When X happens, the user is stuck because…"*, and a **per-persona job story**: write **one** story if a single persona hires the job, and add more **only** when the job genuinely differs by persona, not one per persona out of habit.
+> Clayton Christensen, Harvard Business School
 
----
+Jobs to be Done is not ours. The theory is Clayton Christensen's, the demand-side
+interview and the forces that drive a switch are Bob Moesta's, and the job-story
+sentence is Alan Klement's. We did not invent any of it, and this guide points you
+to the originals.
 
-## The job story format
+What ProductOS adds is the **application**: we make a job into an executable
+artifact rather than a research insight. The same job a marketer positions against
+and an analyst instruments is the one an agent reads mid-task to decide what to
+build, and the one a gate checks a change against. That is the claim of this page,
+and the rest of it is about how to frame a job so it survives that translation into
+a [Job Spec](../templates/job-spec.md).
 
-Instead of User Stories:
+## What we take, and from whom
+
+Credit where it is due, because the sources are worth reading in full.
+
+- **The job, and the hiring metaphor: Christensen.** A customer hires a product to
+  make progress in a situation. The job is stable; the products they hire and fire
+  to do it come and go. See *Competing Against Luck* and the HBR article below.
+- **The four forces, and the interview: Moesta** (with the Re-Wired Group). Demand
+  for a new solution is a tug-of-war between forces that push toward change and
+  forces that hold people in place. You surface them by interviewing for the
+  timeline of an actual switch, not by asking a persona what they want.
+- **The job story: Klement.** The `When… I want to… so I can…` sentence that keeps
+  the job separate from the solution.
+
+Where ProductOS departs is what happens *next*. Standard JTBD ends at insight: a
+readout, a deck, a shared understanding. We do not stop there. We force the job
+into a Job Spec, because a job that only lives in someone's head cannot be handed
+to an agent, checked by a gate, or validated before a line of code is written.
+
+## The job story keeps the job separate from the solution
+
+Use Klement's job story, not a user story:
 
 > ~~As a [persona], I want [feature] so that [benefit]~~
+>
+> **When** [situation], **I want to** [motivation], **so I can** [outcome].
 
-Use Job Stories:
+The user story starts with a persona (an assumption) and names a feature (a
+solution). The job story starts with a **situation** (observable) and a
+**motivation** (the real problem), and it leaves the solution open. That is what
+lets one job outlive many implementations, which is the whole point of a Job Spec
+that stays still while the build changes underneath it.
 
-> **When** [situation/context], **I want to** [motivation], **so I can** [expected outcome]
+**Make the situation specific.** The richer the "When", the more the design is
+already constrained in useful ways.
 
-### Why job stories are better
+- *Weak:* When I want to see what's happening.
+- *Strong:* When something fails right before a deadline and I need to know whether
+  it was my change or the system, before standup.
 
-| User Stories | Job Stories |
-|--------------|-------------|
-| Start with persona (assumption) | Start with situation (observable) |
-| Focus on feature (implementation) | Focus on motivation (problem) |
-| Limited context | Rich context |
-| Hard to validate | Derived from real interviews |
+**Keep the solution out of it.** "When I need to investigate, I want to open the
+logs tab" has baked in the answer. "When I need to investigate, I want to understand
+what failed and why" has not. Multiple solutions can serve the second; only one
+serves the first.
 
----
+The three parts map straight into the Job Spec frontmatter: the situation and
+motivation become the `job`, the outcome becomes the `outcome`.
 
-## Writing good job stories
+## The struggling moment is the durable core
 
-### 1. Add rich context to situations
+Every Job Spec requires one concrete, present-tense trigger: *"When X happens, the
+user is stuck because…"* This is the moment the current approach fails, told as a
+story, not a statistic. It is the most durable thing in the spec, because the
+situation that creates the job changes far more slowly than any product that serves
+it. Numbers, accounts, and evidence for how often it happens drift, so they live in
+[Job Links](../templates/job-links.md) and the RFC, never in the moment itself.
 
-The more specific the "When...", the better you can design solutions.
+## The four forces decide whether the job is worth serving
 
-**Weak:**
-> When I want to see what's happening...
+This is the part standard summaries treat as a footnote and ProductOS treats as
+load-bearing. Moesta's four forces are the tug-of-war behind any switch:
 
-**Strong:**
-> When something fails unexpectedly and I'm under pressure to ship, and I need to understand what went wrong before standup...
+- **Push** of the situation: the pain with how things are now.
+- **Pull** of the new way: the attraction of a better outcome.
+- **Anxiety** about the new way: the fear of switching, the unknowns.
+- **Habit** of the present: the comfort and sunk cost of the current approach.
 
-### 2. Derive from real interviews, not personas
+Push and pull move the customer toward you. Anxiety and habit hold them where they
+are. The job is only worth serving if the first pair beats the second, and the gap
+between them **is the bar you have to clear**. A real job with weak push or sticky
+habit is a job customers will not switch for, however well you build it.
 
-Job stories must come from actual customer conversations. You can't ask a persona about their anxieties.
+That reading is not an aside; it becomes two sections of the Job Spec:
 
-**Before writing job stories, ask customers:**
-- What were you trying to do when you first looked for a solution?
-- What else was going on at that moment?
-- What other solutions did you consider?
-- What made you hesitate?
+- The net of the forces is the **bar to beat** in *Today's alternatives*: you are
+  competing with the current way of doing the job *plus* the anxiety and habit that
+  keep the customer in it.
+- The force you are most betting on is **The bet**: the falsifying assumption you
+  validate before building. "We are betting the push is strong enough, and the
+  habit weak enough, that they will switch." If that is false, stop.
 
-### 3. Keep jobs separate from solutions
+## What they hire today: name the real competition
 
-Don't embed implementation in the job. Multiple solutions may address one job.
+Ask what the customer hires *now* to make this progress, and be honest that it is
+usually not the obvious rival. JTBD names three, and all three belong in the Job
+Spec's *Today's alternatives*:
 
-**Bad:**
-> When I need to investigate a problem, I want to click on the logs tab...
+- **Non-consumption.** They do nothing, tolerate the pain, or keep the problem
+  small enough to ignore. Often your biggest competitor.
+- **A manual workaround.** A spreadsheet, a process, a chain of messages. It works,
+  which is exactly why it is hard to beat.
+- **A rival product.** The named competitor, which is the alternative teams
+  overweight because it is the one they can see.
 
-**Good:**
-> When I need to investigate a problem, I want to quickly understand what failed and why...
+Your solution has to beat whichever of these the customer actually uses, including
+the switching cost of leaving it. This is also where product marketing starts: you
+position against the alternative, and sales objection-handling ("why not just keep
+using the spreadsheet?") comes straight off it.
 
-### 4. Include forces (anxieties, pushes, pulls)
+## From the forces to the bet, and to the abandon signal
 
-Forces are what push customers toward or away from a solution.
+Framing the job this way gives the Job Spec its validation spine for free.
 
-| Force Type | Description | Example |
-|------------|-------------|---------|
-| **Push (toward)** | Pain with current situation | "Our current tool is slow and unreliable" |
-| **Pull (toward)** | Attraction to new solution | "This new tool looks modern and fast" |
-| **Push (away)** | Anxiety about switching | "Migration seems risky and complex" |
-| **Habit** | Comfort with status quo | "We've always used the incumbent" |
+- **The bet** is the forces reading stated so it can be killed: the assumption about
+  push, pull, anxiety, or habit that the job depends on. You validate it first,
+  before any design, by watching whether real people in the situation actually
+  switch.
+- **The abandon signal** is that same reading proven wrong by reality: if the
+  customer reaches the outcome and still goes back to the old way, the forces were
+  not what you thought, and the job you named was not the job they have.
 
-### 5. Focus on situation, not user type
+A job you can frame but cannot falsify is a job you have not understood yet.
 
-The same person can have different jobs in different situations. Focus on the situation.
+## The one hiring the job is not always a person
 
-### 6. The "user" can be another system
+The persona framing assumes a human in a moment. Sometimes the one hiring the job
+is an integrating system: another service calling your API at scale, not a person
+at a screen. That is a recognised persona shape, not an exception. The struggling
+moment is still real, just expressed in integration terms. The machine consumer is
+stuck when a call is too slow for its own latency budget, returns nulls for a rare
+input it must handle, or fails to degrade under load instead of erroring the whole
+request. Write the job story the same way, with the calling system as the persona
+and its integration constraint as the situation, so API-shaped products have a home
+here rather than being forced into a human frame that does not fit.
 
-The persona framing above assumes a human in a moment. Sometimes the one hiring
-the job is an integrating system: another service calling your API at scale, not
-a person at a screen. That is a recognised persona shape, not an exception to
-JTBD. The struggling moment is still real; it is just expressed in integration
-terms. The machine consumer is stuck when a call is too slow for its own latency
-budget, returns nulls for a rare input it must handle, or fails to degrade
-gracefully under load instead of erroring the whole request. Write the job story
-the same way, with the calling system as the persona and its integration
-constraint as the situation, so API-shaped products have a home in JTBD rather
-than being forced into a human frame that doesn't fit.
+## How a framed job flows into the Job Spec
 
----
+This mapping is the ProductOS-specific part, and the reason the framing effort pays
+off. Each JTBD concept lands in a named Job Spec section:
 
-## Job story examples
+| JTBD concept | Job Spec section |
+|---|---|
+| Job story (situation, motivation, outcome) | `job` and `outcome` frontmatter |
+| The struggling moment | The job (struggling moment) |
+| Four forces, net gap | Today's alternatives (the bar to beat) |
+| Competing solutions (non-consumption, manual, rival) | Today's alternatives |
+| The force you bet on | The bet |
+| Forces proven wrong by reality | Abandon signal |
+| Functional, emotional, social dimensions | Good / bad, and the outcome |
 
-> Generic examples, replace with stories drawn from interviews with your own customers.
+## Capture jobs by interviewing for the switch
 
-**Onboarding:**
-> When I'm onboarding a new team onto the product and they're skeptical of switching tools, I want to demonstrate value quickly with minimal setup friction, so I can build internal champions before renewal decisions.
+Moesta's method is to interview for the timeline of a real decision, not to ask a
+persona what it wants. You cannot ask a persona about its anxieties.
 
-**Reliability:**
-> When the product behaves inconsistently and the team is losing trust in the signal it gives, I want to identify the root cause and address it, so I can restore confidence in the tool.
+Listen for the struggling moment, the situation around it, and the forces that
+pushed the person to act or held them back. Record their actual words, not your
+interpretation. Useful prompts:
 
-**Evaluation:**
-> When I'm evaluating the product against competitors and need to justify the cost to leadership, I want clear evidence of time saved and reliability gains, so I can make a compelling business case.
-
-**Debugging:**
-> When something fails unexpectedly right before a deadline and I'm under pressure from my manager, I want to quickly understand what went wrong and whether it's something I changed or a system issue, so I can either fix it fast or escalate appropriately.
-
----
-
-## Identifying jobs in specs
-
-For each spec, identify:
-
-| Element | Question to Answer |
-|---------|-------------------|
-| **Main Job** | What is the customer ultimately trying to accomplish? *(Format: verb + object + context + success condition)* |
-| **Struggling Moment** | What triggers the need for a solution? When do they realize the current approach isn't working? |
-| **Related Jobs** | What smaller jobs ladder up to the main job? |
-| **Functional dimension** | What task needs to get done? |
-| **Emotional dimension** | How do they want to feel? |
-| **Social dimension** | How do they want to be perceived? |
-| **Competing solutions** | What do they "hire" today? (including workarounds, manual processes, competitors) |
-
----
-
-## Capturing jobs in research
-
-When conducting customer interviews:
-
-1. **Listen for struggling moments** -- When did they realize they needed something?
-2. **Capture the situation** -- What was happening around them?
-3. **Note the forces** -- What pushed them to act? What made them hesitate?
-4. **Record actual quotes** -- Use their words, not your interpretation
-
-### Interview questions for JTBD
-
-- "Walk me through the last time you had to [do the thing]..."
+- "Walk me through the last time you had to do this."
 - "What was going on that made you look for a solution?"
-- "What did you try before this?"
+- "What did you try before this, and what did you do instead?"
 - "What almost stopped you from switching?"
-- "What would you do if this didn't exist?"
-
----
+- "What would you do if this did not exist?"
 
 ## Common mistakes
 
-| Mistake | Why It's Wrong | Fix |
-|---------|---------------|-----|
-| Starting with the solution | Skips understanding the real job | Start with "When..." not "I want a feature that..." |
-| Using personas | Assumes behaviours from demographics | Focus on situations anyone might be in |
-| Vague situations | Can't design specific solutions | Add context: time pressure, emotions, constraints |
-| Missing forces | Ignores why people hesitate | Explicitly capture anxieties and competing habits |
-| One job per feature | Features often serve multiple jobs | Map jobs independently, then connect to solutions |
+- **Starting from the solution.** "I want a feature that…" skips the job. Start with
+  "When…".
+- **Framing by persona instead of situation.** The same person has different jobs in
+  different moments. Situations are observable; demographics are not.
+- **Vague situations.** Without time pressure, emotion, and constraint, you cannot
+  design anything specific.
+- **Ignoring the forces.** If you never name the anxiety and the habit, you will
+  ship something better than nothing and lose to something good enough.
+- **One job per feature.** Features serve several jobs. Map the jobs first, then
+  connect them to solutions.
 
----
+## Sources
 
-## Further reading
-
+- [Know Your Customers' Jobs to Be Done](https://hbr.org/2016/09/know-your-customers-jobs-to-be-done) -- Clayton Christensen, HBR
+- *Competing Against Luck* -- Christensen, Hall, Dillon, Duncan (the theory in full)
+- *Demand-Side Sales 101* -- Bob Moesta (the interview and the four forces)
 - [Replacing the User Story with the Job Story](https://jtbd.info/replacing-the-user-story-with-the-job-story-af7cdee10c27) -- Alan Klement
-- [5 Tips for Writing a Job Story](https://jtbd.info/5-tips-for-writing-a-job-story-7c9092911fc9) -- Alan Klement
-- [When Coffee and Kale Compete](http://www.whencoffeeandkalecompete.com/) -- Free book on JTBD
-- [Know Your Customers' Jobs to Be Done](https://hbr.org/2016/09/know-your-customers-jobs-to-be-done) -- HBR article by Clayton Christensen
-
----
+- [When Coffee and Kale Compete](http://www.whencoffeeandkalecompete.com/) -- Alan Klement (free book)
 
 ## Related
 
-- [Job Spec template](../templates/job-spec.md) -- the standing per-job doc the job story lives inside
+- [Job Spec template](../templates/job-spec.md) -- the standing per-job doc the framed job flows into
+- [Job Spec example](../examples/job-spec-example.md) -- a job carried from story to full spec
 - [Writing an RFC](./product-specs.md) -- the ship-coupled delivery doc that opens with the job
 - [Agentic Delivery](./agentic-delivery.md) -- how the standing Job Spec anchors agent-delivered work
