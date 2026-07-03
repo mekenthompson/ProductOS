@@ -1,6 +1,6 @@
 ---
 title: "Job Spec Example: Tempo"
-description: "A worked Job Spec on the current template, filled in at full-stakes depth for a real job from the Tempo strategy example: see everyone's free time at once."
+description: "A worked Job Spec on the current template, filled in at full-stakes depth for a real job from the Tempo strategy example: see everyone's free time at once. Shows the four-forces reading feeding the bar, the bet, and the abandon signal."
 sidebar:
   order: 3
 ---
@@ -12,9 +12,12 @@ depth, for one of the jobs funded in the [Tempo strategy example](./tempo-strate
 `see-everyones-free-time-at-once`. Tempo is a fictional team-scheduling product;
 its customers (FitClub, BrightSmile, CityCare) and its competitor (Gridline) are
 illustrative. Read it alongside the blank [template](../templates/job-spec.md) to
-see what each section looks like when it is actually answered.
+see what each section looks like when it is actually answered, and alongside the
+[JTBD guide](../guides/jtbd-guide.md) to see the four forces do real work: they
+set the bar in *Today's alternatives*, they name *The bet*, and their inverse is
+the *Abandon signal*.
 
-The template scales: a Quick Win answers most sections in a line. This is a
+The template scales. A Quick Win answers most sections in a line. This is a
 high-stakes, competitively-contested job, so every section is expanded.
 
 ---
@@ -59,21 +62,34 @@ The job is already getting done, three ways, and each sets part of the bar.
   each site siloed and accept the double-bookings and gaps, because coordinating
   across sites feels like more effort than it is worth.
 
+**The four forces on this switch** (from the [JTBD guide](../guides/jtbd-guide.md)):
+
+- *Push:* the phone-and-spreadsheet routine is slow and gets things wrong past
+  three sites, and the pain grows with every location added.
+- *Pull:* one trusted view that lets the scheduler book without chasing anyone.
+- *Anxiety:* "can I trust a view I did not build myself?" The first stale slot
+  destroys that trust for good.
+- *Habit:* the phone call is control. It also lets the scheduler confirm and
+  negotiate in the same breath, so it is stickier than it looks.
+
 **The bar:** you are not competing with nothing. You are competing with a habit
 that already works (the phone calls) plus a competitor at rough parity on the
-core capability (Gridline). Beating the manual path means the in-product view has
-to be trusted enough that the scheduler stops picking up the phone "just to be
+core capability (Gridline). Push and pull have to beat anxiety and habit, and
+the deciding force is anxiety: beating the manual path means the in-product view
+is trusted enough that the scheduler stops picking up the phone "just to be
 sure." That trust, not the feature, is the switching cost.
 
 ## The bet
 
-- **This job assumes:** at three or more locations, cross-location availability
-  is frequent and painful enough that a scheduler will adopt a trusted in-product
-  view over the control of gathering it themselves by phone. If schedulers
-  actually prefer calling (because a call also lets them negotiate, or because
-  they do not trust any view they did not build), the job is not real and no
-  amount of UI polish will move them. Validate this before building: watch
-  whether schedulers who are shown a prototype view stop calling, or call anyway.
+- **This job assumes** the anxiety is beatable: that at three or more locations
+  cross-location availability is frequent and painful enough (strong push) that a
+  scheduler will trust a correct in-product view (pull over anxiety) rather than
+  keep the control of gathering it themselves by phone (habit). If schedulers
+  actually prefer calling, because a call also lets them negotiate, or because
+  they trust no view they did not build, then habit and anxiety win, the job is
+  not real, and no amount of UI polish will move them. Validate this before
+  building: show schedulers a prototype view and watch whether they stop calling,
+  or call anyway.
 
 ## Measures of success
 
@@ -110,7 +126,9 @@ sure." That trust, not the feature, is the switching cost.
   it was already taken at the source, because the view was stale. It looks like
   success (they used the view, the booking "went through") and the metrics look
   fine, but the outcome, reliable booking without a phone call, never landed. The
-  scheduler learns not to trust it and quietly goes back to calling.
+  scheduler learns not to trust it and quietly goes back to calling. This is the
+  anxiety force winning after launch: one stale slot confirms the fear that a
+  view they did not build cannot be trusted.
 
 ## What the job requires
 
@@ -159,10 +177,11 @@ the corpus, not just the single-site happy path.
 ## Abandon signal
 
 - **We named the wrong job if:** schedulers keep phoning sites to confirm
-  availability even with the unified view live and correct. If they will not
-  trust any view they did not assemble themselves, the job is not "show me
-  availability in one place," it is something about control or negotiation we have
-  not named, and this spec is aimed at the wrong target.
+  availability even with the unified view live and correct. That is the habit
+  force proven stronger than we bet: if they will not trust any view they did not
+  assemble themselves, the job is not "show me availability in one place," it is
+  something about control or negotiation we have not named, and this spec is aimed
+  at the wrong target.
 
 ## Production-readiness
 
@@ -186,4 +205,4 @@ the corpus, not just the single-site happy path.
 
 - [Job Spec Template](../templates/job-spec.md) -- the blank shape this fills in
 - [Tempo Strategy (worked example)](./tempo-strategy.md) -- the strategy that funds this job
-- [JTBD Guide](../guides/jtbd-guide.md) -- the job-story and forces framing behind the job
+- [JTBD Guide](../guides/jtbd-guide.md) -- the job-story and four-forces framing behind the job
