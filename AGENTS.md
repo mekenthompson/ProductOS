@@ -37,7 +37,7 @@ Else: out of scope, however clever.
 **Triggers: what to do when.**
 
 - **Scoping / designing →** read the vision; name which outcome the work serves. If none, stop.
-- **Writing or changing a Job Spec →** use [`templates/job-spec.md`](./templates/job-spec.md); keep `job` / `outcome` / `stakes` stable, narrate retired approaches rather than rewriting the job. The body carries Contribution, What the job requires, Good/bad, and Prove it; the `## Prove it` section must be non-empty. Doc-class by frontmatter key: `job:` = durable Job Spec; `artifact:` (or `artefact:`) / `serves:` = churny artifact (e.g. an RFC) that points up to a job.
+- **Writing or changing a Job Spec →** use [`templates/job-spec.md`](./templates/job-spec.md); keep `job` / `outcome` / `stakes` stable, narrate retired approaches rather than rewriting the job. Same spine every job, depth scales to the stakes: The job (with the struggling moment), Today's alternatives, The bet, Measures of success, Good / bad (with a named silent failure), What the job requires, Prove it, Verdict, Abandon signal, and an optional Production-readiness bar; the `## Prove it` section must be non-empty. Doc-class by frontmatter key: `job:` = durable Job Spec; `artifact:` (or `artefact:`) / `serves:` = churny artifact (e.g. an RFC) that points up to a job.
   - **Outcome-drift backstop:** the `job` / `outcome` / `stakes` lines are diff-protected. Narrating a retired *implementation approach* is normal; changing the *outcome itself* is not a silent edit. It is a ratified event needing a recorded decision and re-ratification, the same discipline STRATEGY.md demands. A change to those three lines fails review unless it cites its decision record. Otherwise a "durable" Job Spec decays into a description of whatever shipped.
 - **Reviewing →** dispatch a SEPARATE fresh-process reviewer (never the author; it rubber-stamps). It returns APPROVE / REQUEST_CHANGES / BLOCK citing file:line; iterate to APPROVE. Do NOT let an automated merge fire before APPROVE.
 - **Shipping →** run the outcome UAT (job × surface, real path, independent of unit tests) AND the production-readiness check. Unit-green ≠ outcome-validated ≠ production-ready: three gates, none implies the others.
@@ -68,19 +68,26 @@ productos/
 │   └── invariants.md               # The lines you won't cross by construction
 ├── guides/                         # the OS method
 │   ├── agentic-delivery.md         # The four-part method (anchors, Job Specs, design loops, outcome UAT)
-│   ├── jtbd-guide.md               # Jobs to be Done framework
+│   ├── jtbd-guide.md               # Jobs to be Done in ProductOS (Christensen/Moesta/Klement, applied)
+│   ├── worked-example.md           # One job run through the whole loop with a gate firing
+│   ├── headline-metric.md          # The Anchor Signal: what a Signal is and how it drives the North Star
 │   ├── org-as-an-api.md            # Sequence the roadmap by joining feedback/support/CRM/finance around the job
 │   ├── product-specs.md            # RFC how-to (lifecycle, approval, delivery)
 │   └── strategy-as-code.md         # Strategy as a versioned, diffable artefact with decision records
 ├── templates/                      # the OS blank shapes
-│   ├── job-spec.md                 # The durable per-job outcome doc (job/outcome/stakes + Contribution / What the job requires / Good/bad / Prove it; outlives any RFC)
+│   ├── product-spec.md             # The product-level layer: North Star, outcomes with Signals, the job index
+│   ├── job-spec.md                 # The durable per-job outcome doc (job/outcome/stakes; same spine, depth scales to stakes; outlives any RFC)
 │   ├── job-links.md                # The churny per-job join (accounts/ARR/renewals); serves: a Job Spec
 │   ├── rfc.md                      # The ship-coupled, per-initiative delivery doc (JTBD-led)
 │   ├── strategy.md                 # The STRATEGY.md spine (situation/thesis/pillars/deferrals/data-gaps)
 │   └── decision-record.md          # Dated record of why a strategy change was made; links to its commit
-├── examples/                       # worked, filled examples
+├── examples/                       # worked, filled examples: one fictional company (Tempo) in every layer
+│   ├── product-spec-example.md     # Tempo product spec (North Star, outcomes, job index)
+│   ├── job-spec-example.md         # Tempo Job Spec, full-stakes depth, gate fires on an invariant
+│   ├── job-links-example.md        # Tempo Job Links for the free-time job (accounts/ARR/renewals)
+│   ├── rfc-example.md              # Tempo RFC: the unified availability view, ship-coupled
 │   └── strategy-example/           # Tempo, a fictional team-scheduling product
-│       ├── README.md               # 3-line orientation
+│       ├── README.md               # the worked-example front door (what Tempo is + a doc-by-doc map)
 │       ├── STRATEGY.md             # fully filled strategy (FitClub/BrightSmile/CityCare)
 │       └── decisions/              # dated decision records showing evolution over the period
 └── skills/                         # agent-executable skills
@@ -91,15 +98,16 @@ productos/
 
 ## Template Strategy
 
-**The OS templates live in `templates/` (`job-spec.md`, `job-links.md`, `rfc.md`)**: the
+**The OS templates live in `templates/` (`product-spec.md`, `job-spec.md`, `job-links.md`, `rfc.md`, `strategy.md`, `decision-record.md`)**: the
 single source of truth for each. (The human PM templates, customer call,
 research, post-launch review, ritual review, belong to the separate
 human-craft layer, out of scope here.)
 
 | Template | File | Notes |
 | -------- | ---- | ----- |
+| Product Spec | `product-spec.md` | The product-level layer between the anchors and the Job Specs. Names the North Star, the outcomes (each with a Signal), how the product functions, and owns the job index. A Job Spec `serves:` one outcome slug named here |
 | RFC | `rfc.md` | Single ship-coupled doc that does approval + delivery. JTBD-led; explicit user success/failure modes; guardrails; open solution space. References a Job Spec; not a named spec tier of its own |
-| Job Spec | `job-spec.md` | The durable, per-job outcome doc (job/outcome/stakes + Contribution / What the job requires / Good/bad / Prove it). Outlives any single RFC; an RFC's "The Job" links to it. Distinct from the job-story *sentence* in the JTBD Guide |
+| Job Spec | `job-spec.md` | The durable, per-job outcome doc (job/outcome/stakes). Same spine every job (The job, Today's alternatives, The bet, Measures of success, Good/bad, What the job requires, Prove it, Verdict, Abandon signal), depth scaling to the stakes. Outlives any single RFC; an RFC's "The Job" links to it. Distinct from the job-story *sentence* in the JTBD Guide |
 | Job Links | `job-links.md` | The churny per-job join artefact: accounts, ARR, renewals, demand. `serves:` a Job Spec and carries the evidence that drifts, keeping the Job Spec clean. Not a named spec tier of its own |
 | Strategy | `strategy.md` | The STRATEGY.md spine: situation (evidenced/hypothesis/to-validate claims), thesis, investment allocation, pillars, explicit deferrals, data gaps, and the coherent-action argument. Sibling to the anchors; changes as market dynamics shift |
 | Decision Record | `decision-record.md` | Dated record of a material strategy change: context (what changed in the world), decision (what we now do differently), consequences (commits/gives up/blind spots). One per change; lives in `decisions/`; links to the STRATEGY.md commit it accompanies |
@@ -200,7 +208,7 @@ last_reviewed: YYYY-MM-DD
 - Add content outside product management scope
 - Create complex directory structures
 - Add automation without explicit request
-- Bake in any single company's product as an example (this method is meant to be reusable)
+- Bake a real or single company's product into the *method itself* (anchors, guides, templates): it must stay product-agnostic and reusable. The one sanctioned exception is the fictional **Tempo** worked example under `examples/`, clearly labelled illustrative and kept out of the normative content
 
 > [!CAUTION]
 >
