@@ -1,12 +1,12 @@
 ---
-title: "Tempo: the Worked Example"
+title: "Tempo: Company and Situation"
 slug: examples/tempo/strategy
 description: "What Tempo is, the situation it is in, and a map of every ProductOS doc filled in for it: strategy, product spec, job spec, job links, RFC, and decision records, one fictional company carried through the whole method."
 sidebar:
   order: 2
 ---
 
-# Tempo: the Worked Example
+# Tempo: Company and Situation
 
 ProductOS is easier to trust when you can see it filled in. **Tempo** is the
 fictional company we carry through every layer of the method, from a strategy down
