@@ -1,7 +1,7 @@
 ---
 title: Adopting ProductOS
 description: "Adopt ProductOS in an afternoon: read the method, copy the shapes into your own repo, write your anchors, and run the loop"
-last_reviewed: 2026-07-05
+last_reviewed: 2026-07-06
 icon: "🚪"
 ---
 

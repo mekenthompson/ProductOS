@@ -1,7 +1,7 @@
 ---
 title: Discovery
 description: How to learn what to build before writing an RFC
-last_reviewed: 2026-05-12
+last_reviewed: 2026-07-06
 icon: "🔍"
 ---
 

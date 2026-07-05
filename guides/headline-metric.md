@@ -1,7 +1,7 @@
 ---
 title: The Anchor Signal
 description: "How to pick a signal that actually anchors a named outcome, and when to collapse to a single headline metric"
-last_reviewed: 2026-07-01
+last_reviewed: 2026-07-06
 icon: "📖"
 ---
 

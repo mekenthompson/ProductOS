@@ -1,7 +1,7 @@
 ---
 title: Writing an RFC
 description: "How to write, approve, and deliver a JTBD-led RFC: the ship-coupled, per-initiative delivery document"
-last_reviewed: 2026-06-24
+last_reviewed: 2026-07-06
 icon: "📖"
 ---
 

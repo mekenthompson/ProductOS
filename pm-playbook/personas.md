@@ -1,7 +1,7 @@
 ---
 title: Personas
 description: "How to write personas that are load-bearing: who hires the job, what good and bad look like, and how they tie back to the Job Spec"
-last_reviewed: 2026-07-02
+last_reviewed: 2026-07-06
 icon: "📖"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Product Vision
 description: How to write the product vision that anchors every decision in the system
-last_reviewed: 2026-06-24
+last_reviewed: 2026-07-06
 icon: "🎯"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Strategy Template
 description: "The STRATEGY.md spine: which jobs are funded, which are deferred, and why. Sibling to the anchors; changes as the market shifts."
-last_reviewed: 2026-07-02
+last_reviewed: 2026-07-06
 icon: "🧭"
 ---
 

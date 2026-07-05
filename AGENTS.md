@@ -1,6 +1,7 @@
 ---
 title: Agent Guidance
 description: "The operating contract for agents working in ProductOS: the artefact hierarchy, verdict rule, triggers, and reviewer checklist."
+last_reviewed: 2026-07-06
 ---
 
 # ProductOS: Agent Guidance
@@ -44,7 +45,7 @@ Else: out of scope, however clever.
 **Triggers: what to do when.**
 
 - **Scoping / designing →** read the vision; name which outcome the work serves. If none, stop.
-- **Writing or changing a Job Spec →** use [`templates/job-spec.md`](./templates/job-spec.md); keep `job` / `outcome` / `stakes` stable, narrate retired approaches rather than rewriting the job. Same spine every job, depth scales to the stakes: The job (with the struggling moment), Today's alternatives, The bet, Measures of success, Good / bad (with a named silent failure), What the job requires, Prove it, Verdict, Abandon signal, and an optional Production-readiness bar; the `## Prove it` section must be non-empty. Doc-class by frontmatter key: `job:` = durable Job Spec; `artifact:` (or `artefact:`) / `serves:` = churny artefact (e.g. an RFC) that points up to a job.
+- **Writing or changing a Job Spec →** use [`templates/job-spec.md`](./templates/job-spec.md); keep `job` / `outcome` / `stakes` stable, narrate retired approaches rather than rewriting the job. Same spine every job, depth scales to the stakes: The job (with the struggling moment), Today's alternatives, The bet, Measures of success, Good / bad (with a named silent failure), What the job requires, Prove it, Verdict, Abandon signal, and an optional Production-readiness bar; the `## Prove it` section must be non-empty. Doc-class by frontmatter key: `job:` = durable Job Spec; `serves:` / `artifact:` = churny artefact (e.g. an RFC) that points up to a job; `backs:` = a design record that elaborates or defends an invariant (stays current, not ship-coupled).
   - **Outcome-drift backstop:** the `job` / `outcome` / `stakes` lines are diff-protected. Narrating a retired *implementation approach* is normal; changing the *outcome itself* is not a silent edit. It is a ratified event needing a recorded decision and re-ratification, the same discipline STRATEGY.md demands. A change to those three lines fails review unless it cites its decision record. Otherwise a "durable" Job Spec decays into a description of whatever shipped.
 - **Reviewing →** dispatch a SEPARATE fresh-process reviewer (never the author; it rubber-stamps). It returns APPROVE / REQUEST_CHANGES / BLOCK citing file:line; iterate to APPROVE. Do NOT let an automated merge fire before APPROVE.
 - **Shipping →** run the outcome UAT (job × surface, real path, independent of unit tests) AND the production-readiness check. Unit-green ≠ outcome-validated ≠ production-ready: three gates, none implies the others.

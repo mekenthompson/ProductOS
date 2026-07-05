@@ -1,6 +1,8 @@
 ---
 title: The Org as an API
 description: How to query every system around the job (feedback, support, CRM, finance) and produce a grounded, evidence-backed roadmap order.
+last_reviewed: 2026-07-06
+icon: "🔌"
 ---
 
 # The Org as an API

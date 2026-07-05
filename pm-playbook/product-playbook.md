@@ -1,7 +1,7 @@
 ---
 title: Product Playbook
 description: A six-phase operating model for product organisations
-last_reviewed: 2026-05-12
+last_reviewed: 2026-07-06
 icon: 🎚️
 ---
 

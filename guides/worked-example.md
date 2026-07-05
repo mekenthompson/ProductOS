@@ -1,7 +1,7 @@
 ---
 title: Worked Example
 description: "One job carried from raw request to shipped, so you can watch the verdict rule turn an agent back and then let it through"
-last_reviewed: 2026-07-02
+last_reviewed: 2026-07-06
 icon: "🧪"
 ---
 

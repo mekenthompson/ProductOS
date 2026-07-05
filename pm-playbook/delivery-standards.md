@@ -1,7 +1,7 @@
 ---
 title: Delivery Standards
 description: How to break down work, track projects, and manage delivery, tracker-agnostic
-last_reviewed: 2026-05-12
+last_reviewed: 2026-07-06
 icon: "📋"
 ---
 

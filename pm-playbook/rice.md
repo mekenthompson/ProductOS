@@ -1,7 +1,7 @@
 ---
 title: RICE Assessment
 description: Comparison framework for product projects
-last_reviewed: 2026-05-12
+last_reviewed: 2026-07-06
 icon: "📊"
 ---
 

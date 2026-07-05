@@ -1,7 +1,7 @@
 ---
 title: Agentic Delivery
 description: "How to run delivery with an agentic workforce: the four working parts (anchors, Job Specs, design loops, outcome UAT) and who owns what when agents do much of the building"
-last_reviewed: 2026-06-13
+last_reviewed: 2026-07-06
 icon: "🤖"
 ---
 

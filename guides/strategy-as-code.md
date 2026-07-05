@@ -1,7 +1,7 @@
 ---
 title: Strategy as Code
 description: "Strategy as a versioned, diffable artefact, with decision records that capture why it changed."
-last_reviewed: 2026-07-02
+last_reviewed: 2026-07-06
 icon: "🧭"
 ---
 

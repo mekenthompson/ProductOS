@@ -4,7 +4,7 @@ description: "A JTBD-led, AI-readable RFC for a ship-coupled delivery: defines t
 # Doc-class keys (use exactly one):
 #   serves: <job-spec-slug>     # ship-coupled RFC delivering a job; archives when shipped
 #   backs: <invariant-slug>     # design record elaborating/defending an invariant; stays current
-last_reviewed: 2026-06-24
+last_reviewed: 2026-07-06
 icon: "📄"
 ---
 

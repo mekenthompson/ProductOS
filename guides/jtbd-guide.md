@@ -1,7 +1,7 @@
 ---
 title: Jobs to be Done in ProductOS
 description: How ProductOS applies Christensen and Moesta's Jobs to be Done to frame a job a Job Spec can carry, one that is durable, testable, and actionable by a human or an agent.
-last_reviewed: 2026-07-03
+last_reviewed: 2026-07-06
 icon: "📖"
 ---
 

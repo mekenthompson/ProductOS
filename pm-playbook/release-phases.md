@@ -1,7 +1,7 @@
 ---
 title: Release Phases
 description: How a feature moves from behind a flag to everyone (Private Preview → Public Preview → GA), each with its audience, flag state, and entry/exit criteria
-last_reviewed: 2026-06-17
+last_reviewed: 2026-07-06
 icon: "🚦"
 ---
 

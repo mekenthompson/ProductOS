@@ -1,7 +1,7 @@
 ---
 title: Product Principles
 description: How to define the engineering and design standards your product is built to
-last_reviewed: 2026-06-24
+last_reviewed: 2026-07-06
 icon: "📖"
 ---
 

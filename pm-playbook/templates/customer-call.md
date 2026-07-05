@@ -1,7 +1,7 @@
 ---
 title: Customer Call Template
 description: Interview and call documentation
-last_reviewed: 2025-01-25
+last_reviewed: 2026-07-06
 icon: "📞"
 ---
 

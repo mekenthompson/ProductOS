@@ -1,7 +1,7 @@
 ---
 title: PM Handbook
 description: Everything a Product Manager needs to know on this team
-last_reviewed: 2026-05-12
+last_reviewed: 2026-07-06
 icon: "👤"
 ---
 

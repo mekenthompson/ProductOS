@@ -1,7 +1,7 @@
 ---
 title: Handling Product Feedback
 description: How to raise, route, and manage product feedback
-last_reviewed: 2026-05-12
+last_reviewed: 2026-07-06
 icon: "👂"
 ---
 

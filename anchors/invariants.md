@@ -1,7 +1,7 @@
 ---
 title: Invariants
 description: "How to define your invariants: the third anchor; the lines you won't cross by construction"
-last_reviewed: 2026-06-17
+last_reviewed: 2026-07-06
 icon: "🚧"
 ---
 

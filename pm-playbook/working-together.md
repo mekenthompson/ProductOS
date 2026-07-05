@@ -1,7 +1,7 @@
 ---
 title: Working Together
 description: How the product triad (product, engineering, and design) collaborates
-last_reviewed: 2026-05-12
+last_reviewed: 2026-07-06
 icon: "🧩"
 ---
 
