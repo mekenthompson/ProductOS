@@ -7,7 +7,7 @@ icon: "🔬"
 
 # [Research Title]
 
-> Turn raw data into structured findings that can feed RFC evidence and prioritisation decisions.
+> Turn raw data into structured findings that feed RFC evidence and prioritisation.
 
 ## Objective
 
@@ -39,7 +39,7 @@ What question were we trying to answer?
 
 ## Jobs Discovered / Validated
 
-_What jobs did this research reveal or validate? For customer-facing research (interviews, usability, feedback). For analytics-only studies, write "N/A" and move to Findings._
+_What jobs did this research reveal or validate? Fill this in for customer-facing research (interviews, usability, feedback). For analytics-only studies, write "N/A" and move to Findings._
 
 > **When** [situation], **customers want to** [motivation], **so they can** [outcome].
 

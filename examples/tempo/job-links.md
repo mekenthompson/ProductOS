@@ -99,12 +99,12 @@ largest, in-quarter renewal, and its sentiment turned green once the first
 cross-location milestone shipped, so the job is now protecting revenue rather than
 rescuing it. BrightSmile is the account to watch. Its expansion is open, but its
 "does your integration do anything Gridline's doesn't" question makes it at risk,
-and that is sentiment the demand count of 11 does not capture on its own. CityCare
-is new pipeline whose expansion has slipped to Q4 2026, so it carries the least
-urgency of the three this quarter.
+and the demand count of 11 does not capture that on its own. CityCare is new
+pipeline whose expansion has slipped to Q4 2026, so it carries the least urgency
+of the three this quarter.
 
-That is what you sequence against: not the loudest request, but the best-evidenced
-one with the stakes and the dates attached. Here the sequence writes itself:
+That is what you sequence against: the best-evidenced request, the one with the
+stakes and the dates attached. Not the loudest. Here the sequence writes itself:
 protect FitClub's renewal, answer BrightSmile before its Q4 conversation, keep
 CityCare warm.
 

@@ -126,7 +126,7 @@ A strategy that is only updated on a calendar is a strategy that rots between re
 
 **Event-driven updates.** A material change in the world (a significant competitor move, a large customer leaving or expanding, a market signal that invalidates a core assumption) triggers a strategy review. Not every signal warrants a review; the bar is whether the signal changes what we would fund or defer. When it does, update STRATEGY.md and write a decision record.
 
-**Cadence backstop.** A regular review cadence (quarterly is typical; adjust to the pace of your market) ensures the strategy does not silently rot in a slow-moving period. The cadence review either confirms the current view ("we looked, nothing material changed") or surfaces a drift that would have been caught later anyway. Either outcome is useful.
+**Cadence backstop.** A regular review cadence (quarterly is typical; adjust to the pace of your market) keeps the strategy from silently rotting in a slow-moving period. The cadence review either confirms the current view ("we looked, nothing material changed") or surfaces a drift that would have been caught later anyway. Either outcome is useful.
 
 **Adversarial review on material changes.** Every material strategy update gets a deliberate adversarial pass before it is committed. A person or agent whose job in that session is to find where the strategy is wrong: what assumption is load-bearing and unconfirmed, what the strategy is blind to, which competitor move would break it. The adversarial review is not about making the strategy unpublishable. It is about finding the weak points before the market does. Its conclusions go into the decision record's "what we are now blind to" section.
 

@@ -107,7 +107,7 @@ Three to five bullets. Be brutal. "We are not building X" is the highest-leverag
 
 ### Step 5: Stress-test against current work
 
-Pick three in-flight projects. For each, write one sentence on how the vision justifies (or doesn't justify) the work. If two of the three feel forced, your vision is misaligned with reality. Either change the vision or stop the work. Both are valid; doing neither is the dangerous path.
+Pick three in-flight projects. For each, write one sentence on how the vision justifies (or doesn't justify) the work. If two of the three feel forced, your vision is misaligned with reality. Either change the vision or stop the work. Both are valid. Doing neither is the dangerous path.
 
 ---
 

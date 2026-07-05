@@ -56,7 +56,7 @@ Everything else in this doc supports these five.
 | **Decide** | Write RFC, RICE score, get approval | Does the solution serve the vision for this persona? | [Writing an RFC](../guides/writing-an-rfc.md), [RICE](./rice.md), [Decision Framework](./decision-framework.md) |
 | **Shape + Build** | Maintain the living RFC, collaborate with Design + Engineering, validate in Preview | Does it meet all product principles? | [RFC Template](../templates/rfc.md) |
 | **Launch** | Coordinate GTM, plan rollout, monitor adoption, conduct post-launch review | Are the right personas adopting? | [Delivery Standards](./delivery-standards.md), [Post-Launch Review](./templates/post-launch-review.md) |
-| **Sell** | Ensure self-onboarding works, support sales enablement, track adoption | Can each persona find and adopt this without help? | |
+| **Sell** | Make self-onboarding work, support sales enablement, track adoption | Can each persona find and adopt this without help? | |
 
 ---
 

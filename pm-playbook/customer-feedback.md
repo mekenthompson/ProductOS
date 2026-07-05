@@ -63,16 +63,16 @@ Route all Product Feedback to a dedicated Product Feedback queue in whichever is
 ### Option 3: Via your Support tool
 
 1. From a customer ticket, create a linked Product Feedback issue.
-2. Ensure the customer is tagged on the new issue.
+2. Make sure the customer is tagged on the new issue.
 3. Keep the original support ticket open. Product Feedback is the *underlying* product gap; the ticket tracks the *customer's* unresolved situation.
 
 ---
 
 ## What happens next
 
-- The Product Feedback enters Triage and a member of the Product team assesses the request
-- You can track Product Feedback as the Product team reviews it. Here the team assesses value and links it to any existing feedback or initiatives already planned and in our roadmap
-- Once reviewed, Product Feedback moves to an 'Assessed' state. It stays there until it's prioritised against all other work in the roadmap and allocated to a team for delivery
+- Feedback enters triage. A member of the product team assesses it.
+- Track it as the team reviews. The team weighs value and links it to any existing feedback or initiatives already on the roadmap.
+- Once reviewed, feedback moves to an 'Assessed' state. It stays there until it's prioritised against all other work and allocated to a team to deliver.
 
 ---
 

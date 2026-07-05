@@ -33,7 +33,7 @@ Three jobs, whether you have one Signal or four:
 | Where it shows up | How it's used |
 |---|---|
 | [Product Vision](../anchors/product-vision.md) | Names the outcomes (max four) and gives each one a Signal. |
-| [Product Principles](../anchors/product-principles.md) | Principles ensure each feature moves a named Signal, not a vanity number. |
+| [Product Principles](../anchors/product-principles.md) | Principles keep each feature moving a named Signal, not a vanity number. |
 | [RFC Template](../templates/rfc.md) | The Guardrails section (Quality / principle guardrails) names which outcome the RFC advances and which Signal it moves. |
 | [Job Spec](../templates/job-spec.md) | Each durable per-job outcome traces to one named vision outcome and the Signal it advances. |
 | [Agentic Delivery](./agentic-delivery.md) | The outcomes and their Signals feed the verdict rule, the all-must-pass gate every change clears. |
@@ -165,6 +165,6 @@ None of these are "the right answer", they're plausible *shapes* for a Signal in
 ## Related
 
 - **[Product Vision](../anchors/product-vision.md)** -- Names the outcomes and their Signals; this guide is how you pick each one.
-- **[Product Principles](../anchors/product-principles.md)** -- Principles ensure each feature moves a named Signal.
+- **[Product Principles](../anchors/product-principles.md)** -- Principles keep each feature moving a named Signal.
 - **[RFC Template](../templates/rfc.md)** -- the Guardrails section (Quality / principle guardrails) names the outcome and Signal an RFC advances.
 - **[Agentic Delivery](./agentic-delivery.md)** -- How the outcomes and their Signals feed the verdict rule.

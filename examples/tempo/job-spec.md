@@ -58,9 +58,9 @@ The job is already getting done, three ways, and each sets part of the bar.
 - **A rival product.** Gridline shipped cross-location availability aggregation
   in late 2025. Their UI is rougher and their integrations are thinner, but the
   core aggregation is real and already appears by name in our renewal calls.
-- **Non-consumption.** Smaller or newer multi-location operators simply keep
-  each site siloed and accept the double-bookings and gaps, because coordinating
-  across sites feels like more effort than it is worth.
+- **Non-consumption.** Smaller or newer multi-location operators keep each site
+  siloed and accept the double-bookings and gaps, because coordinating across
+  sites feels like more effort than it is worth.
 
 **The four forces on this switch** (from the [JTBD guide](../../guides/jtbd-guide.md)):
 

@@ -45,7 +45,7 @@ The principle check is the second-most-cited anchor (after the vision). If yours
 
 Four properties:
 
-1. **Three to five total, no more.** Six is forgettable; two is too coarse. Principles you can't remember aren't standards. They're trivia.
+1. **Three to five total, no more.** Six is forgettable, two is too coarse. Principles you can't remember aren't standards. They're trivia.
 
 2. **Phrased as standards, not aspirations.** "We are user-obsessed" is a value, not a principle. "If they need the docs, we've failed" is a standard: it gives a reviewer a thing to test. Good principles are *checkable*.
 
