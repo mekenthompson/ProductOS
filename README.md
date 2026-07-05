@@ -76,3 +76,9 @@ Full detail on picking a path: [Decision Framework](./pm-playbook/decision-frame
 | **`AGENTS.md`** | The terse operating contract: read this to *execute* the method. |
 | **`pm-playbook/`** | Separate human-craft layer: the six-phase PM loop, discovery, RICE, personas. It references the OS; the OS never references it. |
 | **`astro.config.mjs`, `src/`, `public/`** | Site plumbing. The Starlight site builds straight from the same markdown files above, this is the machinery, not new content. |
+
+---
+
+## License
+
+MIT. Take the shapes, adapt them, ship your own. See [LICENSE](./LICENSE).
