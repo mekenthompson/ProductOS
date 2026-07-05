@@ -196,7 +196,7 @@ the corpus, not just the single-site happy path.
 ---
 
 > **Implementation:** the how (data model, sync mechanism, conflict handling)
-> lives in the RFC that `serves:` this job. That artifact churns; this Job Spec
+> lives in the RFC that `serves:` this job. That artefact churns; this Job Spec
 > outlives it.
 
 ---

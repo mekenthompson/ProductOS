@@ -17,7 +17,7 @@ sentence is Alan Klement's. We did not invent any of it, and this guide points y
 to the originals.
 
 What ProductOS adds is the **application**: we make a job into an executable
-artifact rather than a research insight. The same job a marketer positions against
+artefact rather than a research insight. The same job a marketer positions against
 and an analyst instruments is the one an agent reads mid-task to decide what to
 build, and the one a gate checks a change against. That is the claim of this page,
 and the rest of it is about how to frame a job so it survives that translation into

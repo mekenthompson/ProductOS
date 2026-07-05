@@ -149,7 +149,7 @@ The product is one thing. Our three product principles are engineering standards
 **Building:**
 - Engineering builds feature behind flag (flag OFF); see [Feature Flag Rollout](#feature-flag-rollout)
 - Weekly progress check-ins
-- Create demo artifacts (short recorded walkthroughs)
+- Create demo artefacts (short recorded walkthroughs)
 - Train support team
 - Set up metrics and monitoring
 - Outcome UAT in a production-like environment: validate the user's job end-to-end (job × surface), independent of unit tests (see [Agentic Delivery](../guides/agentic-delivery.md))
@@ -250,7 +250,7 @@ Every requirement below applies. Scale its depth to the stakes: lighter for a Qu
 | Metrics and monitoring in place | Always |
 | Outcome UAT complete (user's job validated end-to-end, job × surface, independent of unit tests) | Always |
 | Production-readiness validated (security / reliability / scale / availability, to the stakes) | Depth scaled to the stakes |
-| Demo artifacts created | Scale to the stakes |
+| Demo artefacts created | Scale to the stakes |
 | Support team trained | Scale to the stakes |
 | Private preview feedback summarised | Scale to the stakes |
 | Critical preview tickets resolved | Always |

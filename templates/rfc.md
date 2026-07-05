@@ -209,9 +209,9 @@ What we're assuming, and what would invalidate the RFC.
 
 How we ship this safely.
 
-Release shapes (staged rollout, shadow run, champion-challenger, artifact rollback, backfill): see [Writing an RFC](../guides/writing-an-rfc.md#rollout). Pick the shape that fits the change; feature-flag on/off is one option, not the only one.
+Release shapes (staged rollout, shadow run, champion-challenger, artefact rollback, backfill): see [Writing an RFC](../guides/writing-an-rfc.md#rollout). Pick the shape that fits the change; feature-flag on/off is one option, not the only one.
 
-Fill the table below with the shape you chose (the flag column is illustrative; replace it with ramp %, shadow, or artifact version as fits):
+Fill the table below with the shape you chose (the flag column is illustrative; replace it with ramp %, shadow, or artefact version as fits):
 
 | Phase | Audience | Flag state | Exit criteria | Rollback |
 |---|---|---|---|---|

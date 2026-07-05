@@ -7,7 +7,7 @@ icon: "🤖"
 
 # Agentic Delivery
 
-This guide is the heart of the method: how delivery runs when **an agentic workforce does much of the building**. A handful of artifacts keep humans in control of the *outcome* while agents move fast on the *implementation*.
+This guide is the heart of the method: how delivery runs when **an agentic workforce does much of the building**. A handful of artefacts keep humans in control of the *outcome* while agents move fast on the *implementation*.
 
 It is written for the whole triad: **product, design, and engineering**. Engineering is not a footnote here: when agents write the code, the scarce thing is no longer engineering hours, it's **judgement and oversight**, and engineers are the ones who set the technical bar the agents build to.
 
@@ -21,7 +21,7 @@ It is written for the whole triad: **product, design, and engineering**. Enginee
 
 **Good ideas are abundant; now building is cheap too.** An agent can draft a spec, write the code, and run the tests in the time it used to take to schedule a kickoff. That changes what's scarce. It is no longer *capacity*. It is *knowing whether the thing is right*, and catching it when it isn't.
 
-So the method keeps four artifacts as the constants that **don't move while the implementation churns underneath them**. Agents build fast *inside* these gates; humans own the gates.
+So the method keeps four artefacts as the constants that **don't move while the implementation churns underneath them**. Agents build fast *inside* these gates; humans own the gates.
 
 1. **Anchors** -- the durable *why*, *good*, and *forbidden*. (Vision + principles + invariants → a verdict.)
 2. **Job Specs** -- the stable outcome contract. (The job, decoupled from the build.)

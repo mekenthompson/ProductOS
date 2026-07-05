@@ -14,8 +14,8 @@ description: >
   fail", "debug this UAT miss", "this works but the user's job didn't get done",
   "understand the root of why this was a UX debacle", "did we actually fix the
   outcome or just patch the bug", "what's the durable fix here", "solve this
-  from the user outcome". Part of ProductOS (KEN-56); anchors KEN-57 (job
-  spec), KEN-29 (probabilistic UAT), KEN-60 (UAT coverage).
+  from the user outcome". Part of ProductOS; pairs with the Job Spec, and
+  the probabilistic-UAT and UAT-coverage practices.
 ---
 
 # UAT-UX debug: solve from the user outcome
@@ -35,7 +35,7 @@ works), **silent** (metrics look fine; the real failure is invisible), or
 - **cosmetic hard with an obvious cause** → patch it + seed the corpus (Step 3)
   and stop. Don't ritualize.
 
-## Step 1: Map the failure to a job-spec clause + UX goal (KEN-57)
+## Step 1: Map the failure to a job-spec clause + UX goal
 
 Start from the **user-visible end-state**, not the stack trace. Name the job the
 behaviour betrays, find the clause, then descend to mechanism *last*. Starting
@@ -62,7 +62,7 @@ The test: **does the spec permit the observed behaviour?**
 A single failure is often **both** (a missing clause AND a code bug). Classify
 each finding separately; they get different fixes (spec edit vs code change).
 
-## Step 3: UAT coverage + corpus seed (KEN-60 / KEN-29)
+## Step 3: UAT coverage + corpus seed
 
 - Is there a UAT scenario for this **outcome**? If not, the feature shipped
   unexercised. Propose one (assert the outcome, not just "no error").
@@ -104,36 +104,41 @@ Report, in this order:
 
 ---
 
-## Worked example: klanker `config_propose_edit` (switchroom, 2026-06-15)
+## Worked example: one-tap payout confirmation
 
-**Breached promise:** "change config from Telegram, operator just taps Approve,
-no host CLI." Observed end-state: the agent hand-fed the operator
-`sed … && switchroom apply`. The promise inverted into nothing-but-SSH.
-Classification: **silent** (metrics green: hostd logged nothing, gateway logged
-`status=ok`; the only signal was the agent's confused narration) + **adoption**
-(burn the operator once and they go back to SSH forever). → full pipeline.
+**Breached promise:** "request a payout in the app, tap Confirm once, the funds
+move exactly once." Observed end-state: the Confirm tap spun, appeared to fail,
+and the app told the user to retry, so they tapped again. The promise inverted
+into "confirm, doubt it worked, retry, hope it didn't double-send."
+Classification: **silent** (metrics green: the payment service logged
+`status=ok` on each call, the client logged a timeout; the only signal was the
+user's second tap) + **adoption** (make someone fear a double payout once and
+they stop trusting one-tap forever). → full pipeline.
 
-**Step 1:** violates "you hold the leash" (control from Telegram) and fails the
-Docs + Defaults principle checks (needed to know the yaml path and `sed`).
+**Step 1:** violates "you confirm once and trust it" and fails the Feedback +
+Consistency principle checks (the user got no durable "received, in flight"
+state they could see).
 
 **Step 2, both:**
-- *spec-gap*: nothing specified the agent-side contract while an approval is
-  pending (must get a "card posted" ack it can see; must not re-fire; proposals
-  must be idempotent; on infra failure say "I can't, here's why," never
-  silently downgrade to SSH). The silence WAS the failure mode.
-- *code-divergence*: the agent MCP wire used a flat 10s for an op that blocks
-  server-side up to 10 min awaiting the tap (`src/mcp/hostd/server.ts`); timed
-  out by construction, while the web path used 11 min and masked it.
+- *spec-gap*: nothing specified the client-side contract while a confirmation
+  is in flight (must show a "request received" state it can see; must not
+  silently re-submit; repeated confirms must be idempotent; on backend delay
+  say "still working," never present it as a failure). The silence WAS the
+  failure mode.
+- *code-divergence*: the client used a flat 10s timeout for an operation the
+  payment service can take minutes to settle; timed out by construction, while
+  the server-side path allowed far longer and masked it.
 
-**Step 3:** no UAT for the outcome (it was deferred as "needs the approval
-card"). Corpus seed = {approval verdict × re-fire burst size × operator tap
-latency}; invariants = exactly-once apply, every caller terminal, never
-double-write. Encoded as a 60-schedule property test.
+**Step 3:** no UAT for the outcome (it was deferred as "needs the live payment
+rail"). Corpus seed = {confirm result × retry burst size × settlement
+latency}; invariants = exactly-once payout, every request reaches a terminal
+state, never double-send. Encoded as a property test over the corpus.
 
-**Step 4:** point-patch (10s → 11 min) passes the happy path but the corpus
-double-fire still double-writes → not outcome-true. The outcome-true fix added
-**idempotent proposals** (collapse identical in-flight proposals → exactly-once
-apply) on top of the per-op timeout. Shipped as switchroom PR #2381.
+**Step 4:** point-patch (10s → several-minute timeout) passes the happy path
+but the corpus retry-burst still double-sends → not outcome-true. The
+outcome-true fix added **idempotent payout requests** (collapse identical
+in-flight confirms → exactly-once settlement) on top of the longer per-request
+timeout. Shipped behind a staged rollout.
 
 ---
 

@@ -11,7 +11,7 @@ sidebar:
 **Period:** H1 2026
 **Status:** active
 
-> This is a STRATEGY.md file. It holds the current strategic view for Tempo — the team-scheduling product whose customers include FitClub, BrightSmile, and CityCare. Its git history is the record of *what* changed; the `decisions/` folder holds the *why*. Read them together.
+> This is a STRATEGY.md file. It holds the current strategic view for Tempo, the team-scheduling product whose customers include FitClub, BrightSmile, and CityCare. Its git history is the record of *what* changed; the `decisions/` folder holds the *why*. Read them together.
 >
 > Tags: **[evidenced]** = data you can point to · **[hypothesis]** = reasoned belief, not yet confirmed · **[to-validate]** = open question
 
@@ -23,9 +23,9 @@ sidebar:
 
 FitClub (5 locations), BrightSmile (4 locations), and CityCare (3 locations and growing) all raised this directly in renewal conversations. The common failure mode: at two locations, a single calendar view was adequate. At three or more, the coordination overhead of seeing who is free across the whole team becomes the scheduler's primary daily friction. Support ticket volume for "can't see across locations" has grown 40% in the last two quarters.
 
-**Schedulers don't want a better calendar — they want to stop making phone calls.** [evidenced]
+**Schedulers don't want a better calendar. They want to stop making phone calls.** [evidenced]
 
-The core job — "see everyone's free time at once" — is not a visibility request. It is an interruption-reduction request. Five interviews across FitClub and BrightSmile in Q4 2025 converged on the same behaviour: schedulers are currently reconciling availability by calling or messaging staff directly, then manually building a free-slot view. The product's gap is not that it shows the wrong information; it is that it requires the scheduler to leave the product to gather it.
+The core job ("see everyone's free time at once") is not a visibility request. It is an interruption-reduction request. Five interviews across FitClub and BrightSmile in Q4 2025 converged on the same behaviour: schedulers are currently reconciling availability by calling or messaging staff directly, then manually building a free-slot view. The product's gap is not that it shows the wrong information; it is that it requires the scheduler to leave the product to gather it.
 
 **A new entrant, Gridline, is targeting our mid-market segment with a cross-location aggregation feature.** [evidenced]
 
@@ -37,7 +37,7 @@ Based on FitClub's expansion conversation and a pricing sensitivity question in 
 
 **Our integration footprint is a defensible moat, but only if we surface it in the scheduling workflow.** [hypothesis]
 
-We have deeper integrations than Gridline — payroll, HR, and practice management system connections that they do not have. We believe schedulers would value seeing availability enriched with those signals (e.g. contracted hours, leave status). We have not validated whether this is a differentiator in purchase decisions or just a nice-to-have.
+We have deeper integrations than Gridline: payroll, HR, and practice management system connections that they do not have. We believe schedulers would value seeing availability enriched with those signals (e.g. contracted hours, leave status). We have not validated whether this is a differentiator in purchase decisions or just a nice-to-have.
 
 **CityCare is on a growth trajectory that will make them a significant account within 12 months.** [to-validate]
 
@@ -47,7 +47,7 @@ CityCare is currently $35K ARR and in early expansion talks as they open a third
 
 ## Strategy
 
-Multi-location scheduling is the segment we are best positioned to own and the one our largest customers need most. Gridline's entry has compressed the window. The move for H1 2026 is to close the core product gap — genuine cross-location availability aggregation — while beginning to differentiate on integration depth, which Gridline cannot easily replicate. We are not trying to win every job this period; we are protecting and deepening the multi-location wedge.
+Multi-location scheduling is the segment we are best positioned to own and the one our largest customers need most. Gridline's entry has compressed the window. The move for H1 2026 is to close the core product gap (genuine cross-location availability aggregation) while beginning to differentiate on integration depth, which Gridline cannot easily replicate. We are not trying to win every job this period; we are protecting and deepening the multi-location wedge.
 
 ### Investment allocation
 
@@ -64,7 +64,7 @@ An initiative is funded only if it:
 
 - Directly advances one of the three named pillars above
 - Has a clear link to the customer friction described in the Situation (evidenced or strong hypothesis)
-- Can ship a meaningful customer-observable outcome within the period — not just internal scaffolding
+- Can ship a meaningful customer-observable outcome within the period, not just internal scaffolding
 - Does not require us to build a capability Gridline already has at parity before we have differentiated our own
 
 ---
@@ -78,30 +78,30 @@ An initiative is funded only if it:
 **Outcome / measure:** Schedulers at multi-location accounts can see a unified availability view across all locations without leaving the product. Measured by: reduction in "can't see across locations" support tickets; FitClub and BrightSmile renewal health; scheduler session length on the availability screen (proxy for manual workaround elimination).
 
 **Job Specs funded:**
-- `see-everyones-free-time-at-once` — unified cross-location availability view; the scheduler's core job at scale
+- `see-everyones-free-time-at-once`: unified cross-location availability view; the scheduler's core job at scale
 
 ---
 
 ### Pillar 2: Integration-enriched scheduling
 
-**Thesis:** Our integration depth into HR and payroll systems is an asset Gridline does not have. If we surface that data in the scheduling workflow — contracted hours, approved leave, role constraints — we become genuinely harder to replace. This is the differentiation play, not the catch-up play.
+**Thesis:** Our integration depth into HR and payroll systems is an asset Gridline does not have. If we surface that data in the scheduling workflow (contracted hours, approved leave, role constraints) we become genuinely harder to replace. This is the differentiation play, not the catch-up play.
 
 **Outcome / measure:** Schedulers can see availability enriched with leave status and contracted hours without switching to HR or payroll systems. Measured by: adoption of the enriched view at FitClub and BrightSmile (both have HR integrations active); mentions in sales conversations as a differentiator.
 
 **Job Specs funded:**
-- `schedule-within-contracted-hours` — respecting contracted hours as a hard constraint in availability
-- `see-approved-leave-in-availability` — surfacing approved leave as a first-class signal in the scheduler view
+- `schedule-within-contracted-hours`: respecting contracted hours as a hard constraint in availability
+- `see-approved-leave-in-availability`: surfacing approved leave as a first-class signal in the scheduler view
 
 ---
 
 ### Pillar 3: Account expansion support
 
-**Thesis:** CityCare and accounts like them are at the inflection point — growing into multi-location scheduling complexity, willing to expand, but at risk of churn if onboarding the new location is painful. Smooth location-addition is the job that keeps expansion revenue.
+**Thesis:** CityCare and accounts like them are at the inflection point: growing into multi-location scheduling complexity, willing to expand, but at risk of churn if onboarding the new location is painful. Smooth location-addition is the job that keeps expansion revenue.
 
 **Outcome / measure:** A customer adding a new location can have it fully operational in the scheduling product within one working day. Measured by: CityCare expansion health; time-to-operational for new locations across all expansion accounts.
 
 **Job Specs funded:**
-- `add-a-new-location-without-starting-over` — location addition flow that carries over existing configuration and staff
+- `add-a-new-location-without-starting-over`: location addition flow that carries over existing configuration and staff
 
 ---
 
@@ -136,11 +136,11 @@ An initiative is funded only if it:
 
 ## Why This Wins
 
-The allocation bets on the segment where we have the strongest relationships and the highest switching costs — multi-location operators who have invested in our HR and payroll integrations. Gridline's entry is a real threat on the core availability job, but they are entering from scratch on integrations. If we close the availability gap and then differentiate on integration depth, we move the competition to terrain where we have a two-year head start.
+The allocation bets on the segment where we have the strongest relationships and the highest switching costs: multi-location operators who have invested in our HR and payroll integrations. Gridline's entry is a real threat on the core availability job, but they are entering from scratch on integrations. If we close the availability gap and then differentiate on integration depth, we move the competition to terrain where we have a two-year head start.
 
 The 50% allocation to cross-location visibility is large because it has to be. The job is the one Gridline is directly targeting, and the customer interviews are unambiguous about its priority. A smaller allocation risks shipping a half-measure that satisfies neither the customers nor the competitive moment.
 
-The account expansion pillar is the compounding bet. CityCare is the archetype of a customer who will grow into significant ARR if onboarding is not the reason they stall. The investment is modest (15%) because the job is scoped — location addition, not a full re-architecture — and the return is concentrated in accounts already in motion.
+The account expansion pillar is the compounding bet. CityCare is the archetype of a customer who will grow into significant ARR if onboarding is not the reason they stall. The investment is modest (15%) because the job is scoped (location addition, not a full re-architecture) and the return is concentrated in accounts already in motion.
 
 > [!CAUTION]
 >

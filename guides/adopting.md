@@ -70,7 +70,7 @@ of this repo's.
 
 ## Step 3: Write your three anchors
 
-Every artifact downstream ties back to three documents, and they're yours to
+Every artefact downstream ties back to three documents, and they're yours to
 write, not to inherit:
 
 - **[Vision](../anchors/product-vision.md)**, the why: where you play, what you measure, who you build for.

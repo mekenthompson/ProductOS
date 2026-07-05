@@ -12,9 +12,8 @@ description: >
   phrasings including: "write a job spec", "create a job spec",
   "let's define the job", "what's the job here", "interview me on this job",
   "we need a spec for X", "turn this feature request into a job spec", "help
-  me scope this outcome". Part of ProductOS (KEN-56); authors KEN-57 (the
-  job spec). Pairs with uat-ux-debug (debug against a spec) and the
-  Job Spec template.
+  me scope this outcome". Part of ProductOS; authors the durable Job Spec.
+  Pairs with uat-ux-debug (debug against a spec) and the Job Spec template.
 ---
 
 # create-job-spec: interview to alignment, then write the job
@@ -41,7 +40,7 @@ your questions are sharp:
   standards), the invariants (the by-construction lines).
 - The **product spec**: the outcomes the product delivers, and the existing
   job index. The new job will `serves:` one of those outcomes.
-- The **neighbours**: any existing job spec or design artifact near this
+- The **neighbours**: any existing job spec or design artefact near this
   job, so you don't duplicate or contradict.
 
 In switchroom this is the `reference/` directory; in another product it's
@@ -107,8 +106,15 @@ Fill the template. Keep it to **one screen**; the frontmatter carries ~80%.
   **job story(ies)** (`When… I want to… so I can…`; one, or more only when
   the job genuinely differs by persona). If an approach was retired, narrate
   it in one line; never silently rewrite the job.
-- `## Contribution`: *mechanism* + *leading indicator* only -- how this job
-  moves the Signal of the `serves:` outcome. No numbers, dates, or targets;
+- `## Today's alternatives`: how the job gets done today (non-consumption,
+  manual workaround, or a rival) and the bar you must beat, including the
+  switching cost of leaving it. Durable and customer-side; one line for a
+  Quick Win.
+- `## The bet`: the one belief the job rests on, stated so it can be killed.
+  If it's false, don't build. Durable and falsifiable, never a quantified
+  target; one line, always.
+- `## Measures of success`: *mechanism* + *leading indicator* only -- how this
+  job moves the Signal of the `serves:` outcome. No numbers, dates, or targets;
   those drift to the RFC and Job Links.
 - `## What the job requires`: **Must** (verb-first capabilities, no proper
   nouns) and **Won't** (durable non-goals) only, no "Should". ~3–5 bullets
@@ -119,16 +125,19 @@ Fill the template. Keep it to **one screen**; the frontmatter carries ~80%.
   missing scenario `*(coverage gap: no runnable scenario yet)*`; honest
   gaps are a finding, not a failure.
 - `## Verdict`: one line, "Done when:".
+- `## Abandon signal`: the inverse of the verdict -- the durable *class* of
+  signal that says you named the wrong job (not that you built it wrong).
+  Stated as a shape, not a threshold; one line, always.
 - `## Production-readiness`: only if the stakes warrant it; omit for soft
   jobs.
-- Footer: point to the design artifact that carries the *how* (a doc with
+- Footer: point to the design artefact that carries the *how* (a doc with
   `serves:` frontmatter), if one exists. Implementation never goes in the
   Job Spec body.
 
 ## Step 3: Self-check before handing it over
 
 - **Outcome-oriented?** Re-read every line. If any names a flag, a file, a
-  PR, or a feature, it's implementation; move it to the design artifact.
+  PR, or a feature, it's implementation; move it to the design artefact.
 - **Durable?** Would this survive a full rewrite of the feature? If not,
   you've described the build, not the job.
 - **Dual-readable?** Can an agent mid-task act on the good/bad, and can a

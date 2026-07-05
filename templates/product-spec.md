@@ -1,17 +1,17 @@
 ---
 title: Product Spec Template
-description: The product-level layer between the anchors and the job specs. Names the product, its North Star, the outcomes it delivers, and the jobs it serves. Job specs serve the outcomes named here.
+description: The product-level layer between the anchors and the job specs. Names the product, its North Star, the outcomes it delivers, and the jobs it serves. Job Specs serve the outcomes named here.
 status: active; the product-level layer; owns the job index
-anchors: [vision.md, principles.md, invariants.md]
+anchors: [product-vision.md, product-principles.md, invariants.md]
 ---
 
 # [Product Name] product spec
 
 > The product-level layer between the anchors (vision / principles /
-> invariants) and the individual job specs. It says what the product is,
+> invariants) and the individual Job Specs. It says what the product is,
 > the **North Star** it is judged on, the **outcomes** it delivers, how it
 > **functions** at a high level, and it **owns the list of jobs** the product
-> serves. Job specs `serves:` one of the outcome slugs named here.
+> serves. Job Specs `serves:` one of the outcome slugs named here.
 >
 > One rung, two forms: the Job Spec names the outcome's *leading indicator* in
 > words; the job index below carries its quantified form, the *job metric*;

@@ -13,7 +13,7 @@ standards, release phases), and the templates that go with them.
 This is the judgement layer: how a person runs product day to day.
 
 > **Layering rule.** `pm-playbook` may reference ProductOS core (the anchors in
-> [`../anchors/`](../anchors/) and the method guides in [`../guides/`](../guides/));
+> [`../anchors/`](../anchors/product-vision.md) and the method guides in [`../guides/`](../guides/agentic-delivery.md));
 > **ProductOS core never references `pm-playbook`.** The dependency runs one
 > way. Craft cross-references stay relative within this directory; references up
 > into core point at the in-repo core docs.

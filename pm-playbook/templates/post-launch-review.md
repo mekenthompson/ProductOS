@@ -7,7 +7,7 @@ icon: "📋"
 
 # Post-Launch Review: [Feature/Project Name]
 
-**RFC:** [PRJ-XXX Project Name](link)
+**RFC:** [PRJ-XXX Project Name](<paste RFC link>)
 **Shipped:** [Date]
 **Review type:** 2-week / 30-day / 90-day
 **Reviewer:** [PM name]

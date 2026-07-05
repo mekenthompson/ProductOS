@@ -14,7 +14,7 @@ One document. Not two.
 >
 > It's the ship-coupled, per-initiative delivery layer that sits beneath the anchors ([Vision](../anchors/product-vision.md), [Principles](../anchors/product-principles.md), [Invariants](../anchors/invariants.md)), the product-level **Product Spec** (which owns the job list), and the **[Job Specs](../templates/job-spec.md)**. It's your existing RFC/PR process for one piece of work; this guide is a reference shape for it, not a new gate.
 >
-> **Two doc-class variants live under the RFC shape.** An artifact ladders via `serves: <job-spec-slug>` (a ship-coupled RFC delivering a job; it archives when shipped) or via `backs: <invariant-slug>` (a design record that elaborates or defends a named invariant rather than delivering a job; it stays current and does not archive). The doc-class is declared in frontmatter. Use the `serves:` path for normal delivery work; use `backs:` for standing architectural and security rationale that underpins an invariant.
+> **Two doc-class variants live under the RFC shape.** An artefact ladders via `serves: <job-spec-slug>` (a ship-coupled RFC delivering a job; it archives when shipped) or via `backs: <invariant-slug>` (a design record that elaborates or defends a named invariant rather than delivering a job; it stays current and does not archive). The doc-class is declared in frontmatter. Use the `serves:` path for normal delivery work; use `backs:` for standing architectural and security rationale that underpins an invariant.
 
 An **RFC** does the work that used to be split between a PRD ("should we build this?") and a separate delivery spec ("how do we build it?"). The shift matters: by combining them and framing the document around the **user's job to be done**, the RFC becomes useful at every phase (approval, design, build, launch, and post-ship review), and it stays useful for both humans and AI agents.
 
@@ -211,7 +211,7 @@ Feature-flag on/off is one release shape, not the only one. Pick the shape that 
 - **Staged / percentage rollout** -- ramp to 1%, 10%, 50%, 100% with an exit gate at each step. Use when risk scales with traffic and you want to read the Signal before widening.
 - **Shadow (parallel) run** -- the new path runs alongside the old one and its output is logged but not served. Use to compare a model or algorithm against the incumbent on live traffic with zero user-facing risk.
 - **Champion-challenger** -- the incumbent serves while one or more challengers run on a slice, and you promote a challenger only when it beats the champion on the Signal. Use for ranking, models, and any change where "better" is a measured verdict, not a guess.
-- **Artifact rollback** -- for a model or data change there is often no flag: rollback means redeploying the prior artifact (the previous model version, the prior dataset). Name the artifact you'd roll back to and confirm it's still deployable.
+- **Artefact rollback** -- for a model or data change there is often no flag: rollback means redeploying the prior artefact (the previous model version, the prior dataset). Name the artefact you'd roll back to and confirm it's still deployable.
 - **Backfill considerations** -- a data write can't be "flagged off, no data left behind." If the change writes or transforms data, name how you'd correct or reprocess what was already written, and whether the backfill itself is reversible.
 
 ---
@@ -270,8 +270,8 @@ Approval depth scales with the path and the stakes of the work.
 
 | Path | Approver | SLA |
 |---|---|---|
-| **Quick Win** (≤ half a day) | PM + Tech Lead | Same day |
-| **Lightweight** (half a day – 2 weeks) | PM Lead | 3 business days |
+| **Quick Win** (≤ half a day) | EM/PM alignment | Same day |
+| **Lightweight** (half a day – 2 weeks) | PM + Tech Lead | 3 business days |
 | **Full Spec** (> 2 weeks) | Senior product sign-off (SVP Product; + exec sign-off for the highest-stakes launches) | 5 business days |
 
 ### Verdict gate

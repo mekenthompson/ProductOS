@@ -158,7 +158,7 @@ None of these are "the right answer", they're plausible *shapes* for a Signal in
 
 - **Not a north-star metric on its own.** A north star is usually a business outcome (revenue, growth, retention). A Signal is the *product* number whose movement should drive the north star.
 - **Not a balanced scorecard.** You'll have many dashboards; the Signals are the handful of numbers the product org actually optimises -- at most one per named outcome.
-- **Not immutable.** Signals evolve as the product matures. Changing one is a big decision that requires re-anchoring downstream artifacts -- but it should happen when the product genuinely moves to a new stage.
+- **Not immutable.** Signals evolve as the product matures. Changing one is a big decision that requires re-anchoring downstream artefacts -- but it should happen when the product genuinely moves to a new stage.
 
 ---
 

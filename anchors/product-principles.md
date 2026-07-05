@@ -18,7 +18,7 @@ This guide explains the purpose of principles, what a good set looks like, how t
 
 ---
 
-## What this artifact is for
+## What this artefact is for
 
 Principles answer a specific question: **"What does 'good enough to ship' look like, regardless of which team built it?"**
 

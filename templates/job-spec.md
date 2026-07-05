@@ -51,16 +51,16 @@ invariants: [<named lines this job must never cross, by construction>]
 > The gates never disappear; their depth tracks the stakes (the same
 > Quick Win / Lightweight / Full path-tiering the verdict rule uses). If even
 > the expanded body runs past one screen, implementation has leaked in: move
-> it to the design artifact and link down.
+> it to the design artefact and link down.
 
 > **Doc-class rule (decide from the frontmatter key alone):** `job:`
 > frontmatter ⇒ this is a Job Spec, keep `job` / `outcome` / `stakes`
 > stable. `serves:` / `artifact:` / `backs:` frontmatter ⇒ this is a
-> design artifact that points *up*: `serves: <outcome-slug>` on a Job Spec
+> design artefact that points *up*: `serves: <outcome-slug>` on a Job Spec
 > names the Product Spec outcome it ladders to; `serves:` / `artifact:` on
 > a ship-coupled RFC points at a Job Spec slug; `backs: <invariant-slug>`
 > on a design record points at the invariant it elaborates. The how lives
-> in those artifacts, not here.
+> in those artefacts, not here.
 
 ## The job
 
@@ -264,7 +264,7 @@ just the happy path.
 ---
 
 > **Implementation:** the how lives in `<design-artifact.md>` (frontmatter
-> `serves:` this job). That artifact churns; this Job Spec outlives it.
+> `serves:` this job). That artefact churns; this Job Spec outlives it.
 
 ---
 

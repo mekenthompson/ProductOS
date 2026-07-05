@@ -7,7 +7,7 @@ icon: "📖"
 
 # Personas
 
-A persona names *who* is hiring a job. It's the human on the other side of the [Job Spec](../templates/job-spec.md): the person in a situation, trying to make progress. Get the persona sharp and the job writes itself. The outcome, the stakes, and the good/bad lines all fall out of "who is this for and what are they really trying to do?" Get it vague and every downstream artifact inherits the fog.
+A persona names *who* is hiring a job. It's the human on the other side of the [Job Spec](../templates/job-spec.md): the person in a situation, trying to make progress. Get the persona sharp and the job writes itself. The outcome, the stakes, and the good/bad lines all fall out of "who is this for and what are they really trying to do?" Get it vague and every downstream artefact inherits the fog.
 
 This guide is about how to *write* a persona, not a fixed set to copy. There's no canonical list. What matters is that each persona you write is specific enough to be load-bearing: it predicts behaviour, it disambiguates an RFC, and it makes a trade-off visible instead of hiding it.
 
