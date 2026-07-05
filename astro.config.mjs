@@ -12,20 +12,20 @@ export default defineConfig({
   markdown: {
     remarkPlugins: [remarkProductosDocs],
   },
-  // Old site slugs redirected to their new home. Astro applies `base`
-  // automatically to both sides of each entry, so these paths are written
-  // base-relative, matching the sidebar links below.
+  // Old site slugs redirected to their new home. Astro prefixes `base` on
+  // the SOURCE side only; destinations must be written with the /ProductOS/
+  // base included or the meta-refresh targets 404 on GitHub Pages.
   redirects: {
-    '/guides/product-specs/': '/guides/writing-an-rfc/',
-    '/pm-playbook/headline-metric/': '/guides/headline-metric/',
-    '/examples/tempo-overview/': '/examples/tempo/strategy/',
-    '/examples/tempo-strategy/': '/examples/tempo/strategy/plan/',
-    '/examples/tempo-product-spec/': '/examples/tempo/product-spec/',
-    '/examples/tempo-job-spec/': '/examples/tempo/job-spec/',
-    '/examples/tempo-job-links/': '/examples/tempo/job-links/',
-    '/examples/tempo-rfc/': '/examples/tempo/rfc/',
-    '/examples/tempo-decision-2026-01/': '/examples/tempo/strategy/decisions/2026-01-15-initial-h1-strategy/',
-    '/examples/tempo-decision-2026-04/': '/examples/tempo/strategy/decisions/2026-04-22-gridline-integration-move/',
+    '/guides/product-specs/': '/ProductOS/guides/writing-an-rfc/',
+    '/pm-playbook/headline-metric/': '/ProductOS/guides/headline-metric/',
+    '/examples/tempo-overview/': '/ProductOS/examples/tempo/strategy/',
+    '/examples/tempo-strategy/': '/ProductOS/examples/tempo/strategy/plan/',
+    '/examples/tempo-product-spec/': '/ProductOS/examples/tempo/product-spec/',
+    '/examples/tempo-job-spec/': '/ProductOS/examples/tempo/job-spec/',
+    '/examples/tempo-job-links/': '/ProductOS/examples/tempo/job-links/',
+    '/examples/tempo-rfc/': '/ProductOS/examples/tempo/rfc/',
+    '/examples/tempo-decision-2026-01/': '/ProductOS/examples/tempo/strategy/decisions/2026-01-15-initial-h1-strategy/',
+    '/examples/tempo-decision-2026-04/': '/ProductOS/examples/tempo/strategy/decisions/2026-04-22-gridline-integration-move/',
   },
   integrations: [
     sitemap(),

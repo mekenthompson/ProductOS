@@ -98,7 +98,7 @@ productos/
     └── uat-ux-debug/SKILL.md
 ```
 
-The site machinery (`astro.config.mjs`, `src/`, `public/`, `scripts/`) builds the live Starlight site from these same files; it adds no content of its own.
+The site machinery (`astro.config.mjs`, `src/`, `public/`) builds the live Starlight site from these same files; it adds no content of its own.
 
 ## Template Strategy
 
@@ -144,7 +144,7 @@ poorly regardless of the tool.
 
 ### File Naming
 
-- Lowercase with hyphens: `writing-product-specs.md`
+- Lowercase with hyphens: `writing-an-rfc.md`
 - Use `index.md` for directory landing pages
 
 ### Frontmatter

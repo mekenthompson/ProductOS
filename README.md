@@ -72,7 +72,7 @@ This is reference-only: there's no installer. You copy the shapes below and fill
 | **`skills/`** | Agent-executable skills: `create-job-spec`, `feedback-to-jobs`, `uat-ux-debug`. |
 | **`AGENTS.md`** | The terse operating contract: read this to *execute* the method. |
 | **`pm-playbook/`** | Separate human-craft layer: the six-phase PM loop, discovery, RICE, personas. It references the OS; the OS never references it. |
-| **`astro.config.mjs`, `src/`, `public/`, `scripts/`** | Site plumbing. The Starlight site builds straight from the same markdown files above, this is the machinery, not new content. |
+| **`astro.config.mjs`, `src/`, `public/`** | Site plumbing. The Starlight site builds straight from the same markdown files above, this is the machinery, not new content. |
 
 ---
 

@@ -9,9 +9,9 @@
  * - GitHub-style alert blockquotes (`> [!NOTE]` etc.) are converted to
  *   Starlight `:::note` aside directives (as real containerDirective mdast
  *   nodes, so Starlight's own aside renderer picks them up).
- * - A leading H1 that duplicates the frontmatter title is stripped so the
- *   page doesn't render the title twice (Starlight already renders the
- *   frontmatter title above the content).
+ * - The leading H1 is stripped unconditionally, whatever its text, because
+ *   Starlight already renders the frontmatter title as the page H1 (same
+ *   behaviour as the old sync script).
  *
  * Only applied to files that live under one of the directories symlinked
  * into src/content/docs/ (guides, anchors, templates, examples, skills,
