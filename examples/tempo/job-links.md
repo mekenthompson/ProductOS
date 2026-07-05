@@ -2,18 +2,18 @@
 title: "Job Links Example: Tempo"
 description: "A worked Job Links file for Tempo's see-everyones-free-time-at-once job: the accounts that have it, the ARR riding on them, and the renewal dates that money is tied to, all kept out of the durable Job Spec."
 sidebar:
-  order: 5
+  order: 6
 ---
 
 # Job Links Example: Tempo
 
-This is a worked [Job Links](../templates/job-links.md) file for the Tempo job
+This is a worked [Job Links](../../templates/job-links.md) file for the Tempo job
 `see-everyones-free-time-at-once`. It is the churny half of the pair: the durable
-outcome contract lives in the [Job Spec](./job-spec-example.md), and everything
+outcome contract lives in the [Job Spec](./job-spec.md), and everything
 that drifts (accounts, ARR, renewal dates, demand) lives here, pointing up to the
 spec via `serves:`.
 
-Read it alongside the blank [template](../templates/job-links.md). The accounts,
+Read it alongside the blank [template](../../templates/job-links.md). The accounts,
 numbers, and dates are illustrative; this snapshot is dated deliberately, because
 a Job Links file ages and is meant to be re-run.
 
@@ -123,7 +123,7 @@ CityCare warm.
 
 ---
 
-> **Wiring:** this file `serves:` exactly one [Job Spec](./job-spec-example.md).
+> **Wiring:** this file `serves:` exactly one [Job Spec](./job-spec.md).
 > Keep one Job Links file per job, named for the job, beside the spec it serves.
 > The Job Spec is the durable contract; this is the evidence that proves the job
 > is worth doing now.
@@ -132,7 +132,7 @@ CityCare warm.
 
 ## Related
 
-- [Job Links Template](../templates/job-links.md) -- the blank shape this fills in
-- [Job Spec Example: Tempo](./job-spec-example.md) -- the durable outcome contract this file points up to
-- [Product Spec Example: Tempo](./product-spec-example.md) -- the `cross-location-visibility` outcome this job ladders to
-- [Tempo Strategy (worked example)](./strategy-example/STRATEGY.md) -- the strategy that funds this job
+- [Job Links Template](../../templates/job-links.md) -- the blank shape this fills in
+- [Job Spec Example: Tempo](./job-spec.md) -- the durable outcome contract this file points up to
+- [Product Spec Example: Tempo](./product-spec.md) -- the `cross-location-visibility` outcome this job ladders to
+- [Tempo Strategy (worked example)](./strategy/STRATEGY.md) -- the strategy that funds this job

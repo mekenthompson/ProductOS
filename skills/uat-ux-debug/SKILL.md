@@ -1,4 +1,6 @@
 ---
+title: "UAT-UX debug: solve from the user outcome"
+slug: skills/uat-ux-debug
 name: uat-ux-debug
 description: >
   Debug a UAT failure or production UX miss from the USER OUTCOME, not the

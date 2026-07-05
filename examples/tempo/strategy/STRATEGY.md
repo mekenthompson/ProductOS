@@ -1,8 +1,9 @@
 ---
 title: "Tempo Strategy (worked example)"
+slug: examples/tempo/strategy/plan
 description: "The filled STRATEGY.md for Tempo: funded jobs, deferrals, and the coherent-action argument, tagged by evidence level."
 sidebar:
-  order: 2
+  order: 3
 ---
 
 # Strategy: Tempo
@@ -147,4 +148,4 @@ The account expansion pillar is the compounding bet. CityCare is the archetype o
 
 ---
 
-> **Changes to this file:** every material update goes with a dated decision record in `decisions/`. See [Decision Record template](../../templates/decision-record.md) for the format. The commit diff + the decision record together are the complete record of a strategic change.
+> **Changes to this file:** every material update goes with a dated decision record in `decisions/`. See [Decision Record template](../../../templates/decision-record.md) for the format. The commit diff + the decision record together are the complete record of a strategic change.

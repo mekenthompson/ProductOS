@@ -1,11 +1,12 @@
 ---
-title: "Tempo: the Worked Example"
+title: "Tempo: Company and Situation"
+slug: examples/tempo/strategy
 description: "What Tempo is, the situation it is in, and a map of every ProductOS doc filled in for it: strategy, product spec, job spec, job links, RFC, and decision records, one fictional company carried through the whole method."
 sidebar:
-  order: 1
+  order: 2
 ---
 
-# Tempo: the Worked Example
+# Tempo: Company and Situation
 
 ProductOS is easier to trust when you can see it filled in. **Tempo** is the
 fictional company we carry through every layer of the method, from a strategy down
@@ -54,15 +55,15 @@ just a nice-to-have.
 Read top to bottom and you follow one decision down the whole chain: from the bet
 the strategy makes, to the outcome it funds, to the durable job, to the accounts
 riding on it, to the effort that ships it. The layers are the [Agentic
-Delivery](../../guides/agentic-delivery.md) method; the table is Tempo in each one.
+Delivery](../../../guides/agentic-delivery.md) method; the table is Tempo in each one.
 
 | Layer | Tempo example | What it shows |
 |---|---|---|
 | **Strategy** | [Tempo strategy](./STRATEGY.md) | The funded pillars, explicit deferrals, and data gaps for H1 2026, tagged by evidence level |
-| **Product Spec** | [Tempo product spec](../product-spec-example.md) | The North Star, three outcomes each with a Signal, and the job index tying every job to a metric |
-| **Job Spec** | [see-everyones-free-time-at-once](../job-spec-example.md) | The durable free-time job at full-stakes depth, with the gate that turns a bad build back |
-| **Job Links** | [Tempo job links](../job-links-example.md) | The accounts, ARR, and renewal dates riding on that job, kept out of the durable spec |
-| **RFC** | [Unified availability view](../rfc-example.md) | One ship-coupled effort to deliver the job, solution left open, guardrails firm |
+| **Product Spec** | [Tempo product spec](../product-spec.md) | The North Star, three outcomes each with a Signal, and the job index tying every job to a metric |
+| **Job Spec** | [see-everyones-free-time-at-once](../job-spec.md) | The durable free-time job at full-stakes depth, with the gate that turns a bad build back |
+| **Job Links** | [Tempo job links](../job-links.md) | The accounts, ARR, and renewal dates riding on that job, kept out of the durable spec |
+| **RFC** | [Unified availability view](../rfc.md) | One ship-coupled effort to deliver the job, solution left open, guardrails firm |
 | **Decision Records** | [initial H1](./decisions/2026-01-15-initial-h1-strategy.md) · [Gridline move](./decisions/2026-04-22-gridline-integration-move.md) | Why the strategy changed mid-period, the reasoning the git diff alone does not carry |
 
 The two decision records are worth reading as a pair: the January one sets the H1
@@ -72,7 +73,7 @@ they show a strategy that moved for a reason, which is the point of keeping the
 
 ## Related
 
-- [Agentic Delivery](../../guides/agentic-delivery.md) -- the method these layers belong to
-- [Strategy as Code](../../guides/strategy-as-code.md) -- the thinking behind the strategy layer
-- [JTBD Guide](../../guides/jtbd-guide.md) -- the job framing behind the Job Spec and RFC
-- [Templates](../../templates/strategy.md) -- the blank shapes each example fills in
+- [Agentic Delivery](../../../guides/agentic-delivery.md) -- the method these layers belong to
+- [Strategy as Code](../../../guides/strategy-as-code.md) -- the thinking behind the strategy layer
+- [JTBD Guide](../../../guides/jtbd-guide.md) -- the job framing behind the Job Spec and RFC
+- [Templates](../../../templates/strategy.md) -- the blank shapes each example fills in

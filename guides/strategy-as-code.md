@@ -17,7 +17,7 @@ Two failure modes drive this:
 
 A third problem compounds both: **strategy drifting from execution.** The strategy names the jobs that matter; the roadmap funds different ones; nobody notices for two quarters. The strategy-as-code approach addresses all three together.
 
-> 📖 This is the method guide. Read it alongside the [Strategy template](../templates/strategy.md) (the blank spine), [Decision Record template](../templates/decision-record.md) (the why, archived), [Org as an API](org-as-an-api.md) (gathering the evidence to form the view), and [Agentic Delivery](agentic-delivery.md) (running the build once the order is set). The worked example lives in [`examples/strategy-example/`](../examples/strategy-example/README.md).
+> 📖 This is the method guide. Read it alongside the [Strategy template](../templates/strategy.md) (the blank spine), [Decision Record template](../templates/decision-record.md) (the why, archived), [Org as an API](org-as-an-api.md) (gathering the evidence to form the view), and [Agentic Delivery](agentic-delivery.md) (running the build once the order is set). The worked example lives in [`examples/tempo/strategy/`](../examples/tempo/strategy/README.md).
 
 ---
 

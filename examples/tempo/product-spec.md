@@ -2,18 +2,18 @@
 title: "Product Spec Example: Tempo"
 description: "A worked product spec for Tempo: the North Star, three outcomes with Signals, and the job index that ties each funded job to the metric it moves."
 sidebar:
-  order: 3
+  order: 4
 ---
 
 # Product Spec Example: Tempo
 
-This is a worked [Product Spec](../templates/product-spec.md) for **Tempo**, the
+This is a worked [Product Spec](../../templates/product-spec.md) for **Tempo**, the
 fictional team-scheduling product used across these examples. It sits one rung
-below the [Tempo strategy](./strategy-example/STRATEGY.md) and one rung above the
-[Job Spec](./job-spec-example.md): the strategy funds the pillars, this spec names
+below the [Tempo strategy](./strategy/STRATEGY.md) and one rung above the
+[Job Spec](./job-spec.md): the strategy funds the pillars, this spec names
 the outcomes and the jobs, and each Job Spec `serves:` one outcome named here.
 
-Read it alongside the blank [template](../templates/product-spec.md). Numbers are
+Read it alongside the blank [template](../../templates/product-spec.md). Numbers are
 illustrative; Tempo, its customers (FitClub, BrightSmile, CityCare) and its
 competitor (Gridline) are fictional.
 
@@ -97,7 +97,7 @@ rolls into that outcome's Signal.
 
 ### cross-location-visibility
 
-- [`see-everyones-free-time-at-once`](./job-spec-example.md) -- share of
+- [`see-everyones-free-time-at-once`](./job-spec.md) -- share of
   cross-location bookings that start in the unified view (the outcome Signal
   itself; this is the load-bearing job)
 
@@ -114,15 +114,15 @@ rolls into that outcome's Signal.
   new location
 
 > Only `see-everyones-free-time-at-once` has a published [Job Spec
-> example](./job-spec-example.md) in this repo. The other three are the jobs the
-> [Tempo strategy](./strategy-example/STRATEGY.md) funds; they are listed here to
+> example](./job-spec.md) in this repo. The other three are the jobs the
+> [Tempo strategy](./strategy/STRATEGY.md) funds; they are listed here to
 > show a complete job index, spanning all three outcomes.
 
 ---
 
 ## Related
 
-- [Product Spec Template](../templates/product-spec.md) -- the blank shape this fills in
-- [Tempo Strategy (worked example)](./strategy-example/STRATEGY.md) -- the strategy that funds these outcomes
-- [Job Spec Example: Tempo](./job-spec-example.md) -- a job that `serves:` the `cross-location-visibility` outcome named here
-- [Invariants](../anchors/invariants.md) -- the by-construction lines every Tempo job is built to respect
+- [Product Spec Template](../../templates/product-spec.md) -- the blank shape this fills in
+- [Tempo Strategy (worked example)](./strategy/STRATEGY.md) -- the strategy that funds these outcomes
+- [Job Spec Example: Tempo](./job-spec.md) -- a job that `serves:` the `cross-location-visibility` outcome named here
+- [Invariants](../../anchors/invariants.md) -- the by-construction lines every Tempo job is built to respect

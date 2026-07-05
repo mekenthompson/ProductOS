@@ -123,7 +123,7 @@ Every decision gets communicated back to the proposer with reasoning. **"Not now
 - [Signal → Standard → Speed decision framework](./decision-framework.md): three paths: Quick Win, Lightweight, Full Spec
 - [Product principles](../anchors/product-principles.md) with check questions
 - Quick win path (≤ half a day, no RFC, Tech Lead/PM alignment)
-- RFC path: [Writing RFCs](../guides/product-specs.md), [RFC Template](../templates/rfc.md), [RICE scoring](./rice.md)
+- RFC path: [Writing RFCs](../guides/writing-an-rfc.md), [RFC Template](../templates/rfc.md), [RICE scoring](./rice.md)
 - Prioritisation session cadence (fortnightly or monthly, aligned to your sprint)
 
 ### Why It Matters
@@ -298,7 +298,7 @@ Everything below is a reference asset produced by this framework. Read them when
 | Understand the vision and personas | [Product Vision](../anchors/product-vision.md) |
 | See the product's North Star, outcomes, and job index | [Product Spec](../templates/product-spec.md) |
 | Decide the right path for work | [Decision Framework](./decision-framework.md) |
-| Write an RFC | [RFC Guide](../guides/product-specs.md) + [RFC Template](../templates/rfc.md) |
+| Write an RFC | [RFC Guide](../guides/writing-an-rfc.md) + [RFC Template](../templates/rfc.md) |
 | Score a project | [RICE Guide](./rice.md) |
 | Process feedback | [Handling Product Feedback](./customer-feedback.md) |
 | Document research | [Research Template](./templates/research.md) + [Customer Call Template](./templates/customer-call.md) |

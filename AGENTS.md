@@ -72,7 +72,8 @@ productos/
 │   ├── worked-example.md           # One job run through the whole loop with a gate firing
 │   ├── headline-metric.md          # The Anchor Signal: what a Signal is and how it drives the North Star
 │   ├── org-as-an-api.md            # Sequence the roadmap by joining feedback/support/CRM/finance around the job
-│   ├── product-specs.md            # RFC how-to (lifecycle, approval, delivery)
+│   ├── adopting.md                 # How to bring ProductOS onto an existing product
+│   ├── writing-an-rfc.md           # RFC how-to (lifecycle, approval, delivery)
 │   └── strategy-as-code.md         # Strategy as a versioned, diffable artefact with decision records
 ├── templates/                      # the OS blank shapes
 │   ├── product-spec.md             # The product-level layer: North Star, outcomes with Signals, the job index
@@ -81,20 +82,23 @@ productos/
 │   ├── rfc.md                      # The ship-coupled, per-initiative delivery doc (JTBD-led)
 │   ├── strategy.md                 # The STRATEGY.md spine (situation/thesis/pillars/deferrals/data-gaps)
 │   └── decision-record.md          # Dated record of why a strategy change was made; links to its commit
-├── examples/                       # worked, filled examples: one fictional company (Tempo) in every layer
-│   ├── product-spec-example.md     # Tempo product spec (North Star, outcomes, job index)
-│   ├── job-spec-example.md         # Tempo Job Spec, full-stakes depth, gate fires on an invariant
-│   ├── job-links-example.md        # Tempo Job Links for the free-time job (accounts/ARR/renewals)
-│   ├── rfc-example.md              # Tempo RFC: the unified availability view, ship-coupled
-│   └── strategy-example/           # Tempo, a fictional team-scheduling product
-│       ├── README.md               # the worked-example front door (what Tempo is + a doc-by-doc map)
-│       ├── STRATEGY.md             # fully filled strategy (FitClub/BrightSmile/CityCare)
-│       └── decisions/              # dated decision records showing evolution over the period
+├── examples/tempo/                 # the single worked set: one fictional company (Tempo) in every layer
+│   ├── README.md                   # short overview: what Tempo is, the set in doc order
+│   ├── strategy/                   # Tempo strategy: README (front door), STRATEGY.md, decisions/
+│   ├── product-spec.md             # Tempo product spec (North Star, outcomes, job index)
+│   ├── job-spec.md                 # Tempo Job Spec, full-stakes depth, gate fires on an invariant
+│   ├── job-links.md                # Tempo Job Links for the free-time job (accounts/ARR/renewals)
+│   └── rfc.md                      # Tempo RFC: the unified availability view, ship-coupled
+├── pm-playbook/                    # the human PM craft layer, published as a top-level site section
+│   ├── README.md                   # section landing page
+│   └── ...                         # the six-phase loop, discovery, RICE, personas, templates
 └── skills/                         # agent-executable skills
     ├── create-job-spec/SKILL.md
     ├── feedback-to-jobs/SKILL.md
     └── uat-ux-debug/SKILL.md
 ```
+
+The site machinery (`astro.config.mjs`, `src/`, `public/`) builds the live Starlight site from these same files; it adds no content of its own.
 
 ## Template Strategy
 
@@ -140,7 +144,7 @@ poorly regardless of the tool.
 
 ### File Naming
 
-- Lowercase with hyphens: `writing-product-specs.md`
+- Lowercase with hyphens: `writing-an-rfc.md`
 - Use `index.md` for directory landing pages
 
 ### Frontmatter

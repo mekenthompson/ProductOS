@@ -202,6 +202,6 @@ interpretation. Useful prompts:
 ## Related
 
 - [Job Spec template](../templates/job-spec.md) -- the standing per-job doc the framed job flows into
-- [Job Spec example](../examples/job-spec-example.md) -- a job carried from story to full spec
-- [Writing an RFC](./product-specs.md) -- the ship-coupled delivery doc that opens with the job
+- [Job Spec example](../examples/tempo/job-spec.md) -- a job carried from story to full spec
+- [Writing an RFC](./writing-an-rfc.md) -- the ship-coupled delivery doc that opens with the job
 - [Agentic Delivery](./agentic-delivery.md) -- how the standing Job Spec anchors agent-delivered work

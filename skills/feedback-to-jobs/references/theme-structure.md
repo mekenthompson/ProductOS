@@ -1,5 +1,6 @@
 ---
 title: Theme Structure
+slug: skills/feedback-to-jobs/theme-structure
 description: "The template for a feedback theme: one customer job, evidenced, with severity, trend, workarounds, switching triggers, and a clear definition of done."
 ---
 

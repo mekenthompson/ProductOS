@@ -2,7 +2,7 @@
 title: "Decision: Gridline integration move"
 description: "Mid-period reprioritisation after a competitor shipped integration depth."
 sidebar:
-  order: 8
+  order: 9
 date: 2026-04-22
 commit: 7d1b84f3a09e2c56f71038b2e9d4c8aa503e614f
 ---

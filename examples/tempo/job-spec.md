@@ -2,18 +2,18 @@
 title: "Job Spec Example: Tempo"
 description: "A worked Job Spec on the current template, filled in at full-stakes depth for a real job from the Tempo strategy example: see everyone's free time at once. Shows the four-forces reading feeding the bar, the bet, and the abandon signal."
 sidebar:
-  order: 4
+  order: 5
 ---
 
 # Job Spec Example: Tempo
 
-This is a worked [Job Spec](../templates/job-spec.md), filled in at full-stakes
-depth, for one of the jobs funded in the [Tempo strategy example](./strategy-example/STRATEGY.md):
+This is a worked [Job Spec](../../templates/job-spec.md), filled in at full-stakes
+depth, for one of the jobs funded in the [Tempo strategy example](./strategy/STRATEGY.md):
 `see-everyones-free-time-at-once`. Tempo is a fictional team-scheduling product;
 its customers (FitClub, BrightSmile, CityCare) and its competitor (Gridline) are
-illustrative. Read it alongside the blank [template](../templates/job-spec.md) to
+illustrative. Read it alongside the blank [template](../../templates/job-spec.md) to
 see what each section looks like when it is actually answered, and alongside the
-[JTBD guide](../guides/jtbd-guide.md) to see the four forces do real work: they
+[JTBD guide](../../guides/jtbd-guide.md) to see the four forces do real work: they
 set the bar in *Today's alternatives*, they name *The bet*, and their inverse is
 the *Abandon signal*.
 
@@ -62,7 +62,7 @@ The job is already getting done, three ways, and each sets part of the bar.
   each site siloed and accept the double-bookings and gaps, because coordinating
   across sites feels like more effort than it is worth.
 
-**The four forces on this switch** (from the [JTBD guide](../guides/jtbd-guide.md)):
+**The four forces on this switch** (from the [JTBD guide](../../guides/jtbd-guide.md)):
 
 - *Push:* the phone-and-spreadsheet routine is slow and gets things wrong past
   three sites, and the pain grows with every location added.
@@ -203,6 +203,6 @@ the corpus, not just the single-site happy path.
 
 ## Related
 
-- [Job Spec Template](../templates/job-spec.md) -- the blank shape this fills in
-- [Tempo Strategy (worked example)](./strategy-example/STRATEGY.md) -- the strategy that funds this job
-- [JTBD Guide](../guides/jtbd-guide.md) -- the job-story and four-forces framing behind the job
+- [Job Spec Template](../../templates/job-spec.md) -- the blank shape this fills in
+- [Tempo Strategy (worked example)](./strategy/STRATEGY.md) -- the strategy that funds this job
+- [JTBD Guide](../../guides/jtbd-guide.md) -- the job-story and four-forces framing behind the job

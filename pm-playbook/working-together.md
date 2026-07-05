@@ -133,7 +133,7 @@ One document, not a separate PRD and tech spec. One ship-coupled RFC that captur
 
 All three review the whole thing before build starts. If you're an engineer on the team and the RFC doesn't make sense, raise it before you start building. An RFC should answer your questions, not create them.
 
-> 🔗 See [Writing an RFC](../guides/product-specs.md) for the full guide and [RFC Template](../templates/rfc.md) for the template.
+> 🔗 See [Writing an RFC](../guides/writing-an-rfc.md) for the full guide and [RFC Template](../templates/rfc.md) for the template.
 
 ---
 
@@ -247,6 +247,6 @@ If the triad can't resolve a disagreement, bring it to your leads with context a
 | Understand the full operating model | [Product Playbook](./product-playbook.md) |
 | See the product vision and personas | [Product Vision](../anchors/product-vision.md) |
 | Understand how we decide what to build | [Decision Framework](./decision-framework.md) |
-| See how RFCs work | [Writing an RFC](../guides/product-specs.md) |
+| See how RFCs work | [Writing an RFC](../guides/writing-an-rfc.md) |
 | Understand the delivery workflow | [Delivery Standards](./delivery-standards.md) |
 | Grab an RFC template | [RFC](../templates/rfc.md) |

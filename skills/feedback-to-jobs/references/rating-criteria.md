@@ -1,5 +1,6 @@
 ---
 title: Rating Criteria
+slug: skills/feedback-to-jobs/rating-criteria
 description: How to rate each feedback theme on severity, trend, and strategic alignment, independently, from evidence, so the three axes can disagree when they should.
 ---
 

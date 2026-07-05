@@ -147,7 +147,7 @@ The PM, informed by the Tech Lead's sizing. If there's disagreement, the PM deci
 - [Product Playbook](./product-playbook.md): The 6-phase operating model (this framework is Phase 2: DECIDE)
 - [Product Vision](../anchors/product-vision.md): Vision and personas
 - [Product Spec](../templates/product-spec.md): Where the outcomes and their Signals live, the success measures a Vision Check reads against
-- [RFC Guide](../guides/product-specs.md): Full Spec path guidance (writing a ship-coupled RFC)
+- [RFC Guide](../guides/writing-an-rfc.md): Full Spec path guidance (writing a ship-coupled RFC)
 - [RICE Assessment](./rice.md): Scoring for Full Spec path
 
 ---

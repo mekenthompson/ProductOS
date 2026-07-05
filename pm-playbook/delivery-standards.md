@@ -22,7 +22,7 @@ icon: "📋"
 5. **Measure and learn (Sell):** Track adoption. Review at 2 weeks, 30 days, 60-90 days. Decide next steps.
 
 **Quick lookup:**
-- Need to write an RFC? → [RFC guide](../guides/product-specs.md)
+- Need to write an RFC? → [RFC guide](../guides/writing-an-rfc.md)
 - Need a template? → [RFC Template](../templates/rfc.md)
 - Want the decision framework? → [Signal → Standard → Speed](./decision-framework.md)
 
@@ -111,7 +111,7 @@ Every product decision traces back to evidence. The discipline is picking the hi
 - Collect usage data and feedback patterns
 
 **Shaping:**
-- Write the [RFC](../guides/product-specs.md); use the [RFC Template](../templates/rfc.md)
+- Write the [RFC](../guides/writing-an-rfc.md); use the [RFC Template](../templates/rfc.md)
 - Score with [RICE](./rice.md)
 - Get technical feasibility from engineering
 - Review with Sales, Marketing, Product, Engineering
@@ -418,7 +418,7 @@ A spec turns the RFC into buildable requirements. It answers: What do we build? 
 
 - One RFC per project. The spec is a living document; it evolves through delivery.
 - Specs are approved in Draft → In Review → Approved. Changes that affect scope require re-approval.
-- See the [RFC guide](../guides/product-specs.md) for the full lifecycle.
+- See the [RFC guide](../guides/writing-an-rfc.md) for the full lifecycle.
 - Specs are living documents during Build: update when you learn something. Archive after ship.
 
 ---
@@ -457,7 +457,7 @@ Gate requirements scale with the stakes. Small / quick-win work doesn't need Hea
 
 ## Related
 
-- [RFC guide](../guides/product-specs.md): How RFCs are written and approved
+- [RFC guide](../guides/writing-an-rfc.md): How RFCs are written and approved
 - [Discovery](./discovery.md): How to validate problems before writing an RFC
 - [Handling Product Feedback](./customer-feedback.md): Processing and routing customer feedback
 - [Decision Framework](./decision-framework.md): Signal → Standard → Speed

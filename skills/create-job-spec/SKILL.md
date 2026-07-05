@@ -1,4 +1,6 @@
 ---
+title: "create-job-spec: interview to alignment, then write the job"
+slug: skills/create-job-spec
 name: create-job-spec
 description: >
   Interview the user to shared alignment on a job-to-be-done, then write a

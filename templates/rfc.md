@@ -209,7 +209,7 @@ What we're assuming, and what would invalidate the RFC.
 
 How we ship this safely.
 
-Release shapes (staged rollout, shadow run, champion-challenger, artifact rollback, backfill): see [Writing an RFC](../guides/product-specs.md#rollout). Pick the shape that fits the change; feature-flag on/off is one option, not the only one.
+Release shapes (staged rollout, shadow run, champion-challenger, artifact rollback, backfill): see [Writing an RFC](../guides/writing-an-rfc.md#rollout). Pick the shape that fits the change; feature-flag on/off is one option, not the only one.
 
 Fill the table below with the shape you chose (the flag column is illustrative; replace it with ramp %, shadow, or artifact version as fits):
 
@@ -240,7 +240,7 @@ Known unknowns that resolve on delivery. Tag each with who resolves it. These ar
 
 ## Related
 
-- [RFC guide](../guides/product-specs.md) -- how to write this document
+- [RFC guide](../guides/writing-an-rfc.md) -- how to write this document
 - [Product Vision](../anchors/product-vision.md) -- the anchor every RFC ties back to
 - [Product Principles](../anchors/product-principles.md) -- the standards the solution must meet
 - [Invariants](../anchors/invariants.md) -- the by-construction lines this work must not cross
