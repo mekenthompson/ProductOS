@@ -59,12 +59,12 @@ export default defineConfig({
             { label: 'ProductOS', link: '/' },
             { label: 'Adopt ProductOS', link: '/guides/adopting/' },
             { label: 'The method: Agentic Delivery', link: '/guides/agentic-delivery/' },
-            { label: 'Worked example: a job through the loop', link: '/guides/worked-example/' },
-            { label: 'Operating contract (AGENTS)', link: '/agents/' },
+            { label: 'Worked example', link: '/guides/worked-example/' },
+            { label: 'Operating contract (AGENTS.md)', link: '/agents/' },
           ],
         },
         {
-          label: 'Method (guides)',
+          label: 'Method',
           items: [
             { label: 'JTBD Guide', link: '/guides/jtbd-guide/' },
             { label: 'The Anchor Signal', link: '/guides/headline-metric/' },

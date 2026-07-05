@@ -4,6 +4,7 @@
 
 This is what I actually run product with. Every layer, from why we're building at all down to the single job in front of an agent, gets its own document, so whoever's touching the work, human or agent, has exactly the context that layer needs and makes the right call.
 
+- **[Adopt it →](./guides/adopting.md)** no installer; copy the shapes into your own repo in an afternoon.
 - **[Read it rendered →](https://mekenthompson.github.io/ProductOS/)** the published site, same content, easier to browse.
 - **[See it filled in on a real product →](https://github.com/switchroom/switchroom/tree/main/reference)** real anchors, a product spec, 21 Job Specs, held against a live UAT harness.
 
@@ -34,6 +35,20 @@ RFCs / PRs                        ship-coupled delivery (not a named tier)
 satisfies its Job Spec **and** passes every principle **and** crosses no
 invariant.
 
+---
+
+## Adopt it
+
+This is reference-only: there's no installer, no sync, nothing to run. You copy the shapes and fill them in for your product. The canonical walkthrough is [`guides/adopting.md`](./guides/adopting.md); the compressed version:
+
+1. Read the method ([`guides/agentic-delivery.md`](./guides/agentic-delivery.md)) and the [worked example](./guides/worked-example.md) of one job running the loop.
+2. Copy the shapes: `templates/` and the [`AGENTS.md`](./AGENTS.md) contract pattern.
+3. Write your three anchors: [vision](./anchors/product-vision.md), [principles](./anchors/product-principles.md), [invariants](./anchors/invariants.md).
+4. Write your product spec and first Job Spec, using the [`create-job-spec`](./skills/create-job-spec/SKILL.md) skill to interview you through it.
+5. Point your agent at your `AGENTS.md` and run the loop.
+
+---
+
 ## Match the effort to the size
 
 One path for everything is no path at all. The verdict rule is the *bar*, not the *paperwork*, scale the gates to the stakes.
@@ -49,18 +64,6 @@ Full detail on picking a path: [Decision Framework](./pm-playbook/decision-frame
 
 ---
 
-## Adopt it
-
-This is reference-only: there's no installer. You copy the shapes below and fill them in for your product. The canonical walkthrough is [`guides/adopting.md`](./guides/adopting.md); the compressed version:
-
-1. Read the method ([`guides/agentic-delivery.md`](./guides/agentic-delivery.md)) and the [worked example](./guides/worked-example.md) of one job running the loop.
-2. Copy the shapes: `templates/` and the [`AGENTS.md`](./AGENTS.md) contract pattern.
-3. Write your three anchors: [vision](./anchors/product-vision.md), [principles](./anchors/product-principles.md), [invariants](./anchors/invariants.md).
-4. Write your product spec and first Job Spec, using the [`create-job-spec`](./skills/create-job-spec/SKILL.md) skill to interview you through it.
-5. Point your agent at your `AGENTS.md` and run the loop.
-
----
-
 ## What's here
 
 | Folder | What it is |
@@ -73,9 +76,3 @@ This is reference-only: there's no installer. You copy the shapes below and fill
 | **`AGENTS.md`** | The terse operating contract: read this to *execute* the method. |
 | **`pm-playbook/`** | Separate human-craft layer: the six-phase PM loop, discovery, RICE, personas. It references the OS; the OS never references it. |
 | **`astro.config.mjs`, `src/`, `public/`** | Site plumbing. The Starlight site builds straight from the same markdown files above, this is the machinery, not new content. |
-
----
-
-## The working example
-
-**[switchroom](https://github.com/switchroom/switchroom)** runs the method live. The filled-in reference sits at [`switchroom/reference`](https://github.com/switchroom/switchroom/tree/main/reference): real anchors, a product spec, 21 Job Specs, all proven against a live UAT harness. When a guide here needs an example, it points there.
