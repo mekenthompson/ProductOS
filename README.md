@@ -66,9 +66,9 @@ This is reference-only: there's no installer. You copy the shapes below and fill
 | Folder | What it is |
 |---|---|
 | **`anchors/`** | The three anchors: `product-vision`, `product-principles`, `invariants`, and how to write each. |
-| **`guides/`** | The OS method: `agentic-delivery` (the verdict rule + four parts), `adopting`, `worked-example`, `strategy-as-code`, `jtbd-guide`, `org-as-an-api`, `product-specs`, `headline-metric`. |
+| **`guides/`** | The OS method: `agentic-delivery` (the verdict rule + four parts), `adopting`, `worked-example`, `strategy-as-code`, `jtbd-guide`, `org-as-an-api`, `writing-an-rfc`, `headline-metric`. |
 | **`templates/`** | The blank shapes: `strategy.md`, `product-spec.md`, `job-spec.md`, `job-links.md`, `rfc.md`, `decision-record.md`. |
-| **`examples/`** | Worked, filled examples: `strategy-example/` (Tempo, a fictional team-scheduling product). |
+| **`examples/`** | Worked, filled examples: `tempo/` (Tempo, a fictional team-scheduling product, one worked set). |
 | **`skills/`** | Agent-executable skills: `create-job-spec`, `feedback-to-jobs`, `uat-ux-debug`. |
 | **`AGENTS.md`** | The terse operating contract: read this to *execute* the method. |
 | **`pm-playbook/`** | Separate human-craft layer: the six-phase PM loop, discovery, RICE, personas. It references the OS; the OS never references it. |

@@ -195,4 +195,4 @@ Before you ship, ask:
 - [Product Vision](./product-vision.md) -- Principles are derived from the vision (the first anchor).
 - [Invariants](./invariants.md) -- The third anchor; the lines you won't cross by construction.
 - [Agentic Delivery](../guides/agentic-delivery.md) -- How the principle check sits in the verdict rule.
-- [RFC Guide](../guides/product-specs.md) -- How to apply principles when writing a ship-coupled RFC.
+- [RFC Guide](../guides/writing-an-rfc.md) -- How to apply principles when writing a ship-coupled RFC.

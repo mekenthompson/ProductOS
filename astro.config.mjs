@@ -8,6 +8,21 @@ export default defineConfig({
   site: 'https://mekenthompson.github.io',
   base: '/ProductOS/',
   prefetch: true,
+  // Old site slugs redirected to their new home. Astro applies `base`
+  // automatically to both sides of each entry, so these paths are written
+  // base-relative, matching the sidebar links below.
+  redirects: {
+    '/guides/product-specs/': '/guides/writing-an-rfc/',
+    '/pm-playbook/headline-metric/': '/guides/headline-metric/',
+    '/examples/tempo-overview/': '/examples/tempo/strategy/',
+    '/examples/tempo-strategy/': '/examples/tempo/strategy/plan/',
+    '/examples/tempo-product-spec/': '/examples/tempo/product-spec/',
+    '/examples/tempo-job-spec/': '/examples/tempo/job-spec/',
+    '/examples/tempo-job-links/': '/examples/tempo/job-links/',
+    '/examples/tempo-rfc/': '/examples/tempo/rfc/',
+    '/examples/tempo-decision-2026-01/': '/examples/tempo/strategy/decisions/2026-01-15-initial-h1-strategy/',
+    '/examples/tempo-decision-2026-04/': '/examples/tempo/strategy/decisions/2026-04-22-gridline-integration-move/',
+  },
   integrations: [
     sitemap(),
     starlight({

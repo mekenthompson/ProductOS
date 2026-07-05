@@ -272,4 +272,4 @@ just the happy path.
 - [JTBD Guide](../guides/jtbd-guide.md) -- how to frame the job story and the forces this spec is built around
 - [Job Links Template](./job-links.md) -- the churny join that carries accounts and revenue, kept out of this spec
 - [Agentic Delivery](../guides/agentic-delivery.md) -- how this spec sits in the verdict rule and the gates
-- [Writing an RFC](../guides/product-specs.md) -- how to write the ship-coupled RFC that references this spec
+- [Writing an RFC](../guides/writing-an-rfc.md) -- how to write the ship-coupled RFC that references this spec

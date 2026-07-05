@@ -36,19 +36,20 @@ const FILES = [
   ...['product-vision', 'product-principles', 'invariants']
     .map((n) => [`anchors/${n}.md`, `anchors/${n}.md`]),
   // guides — the OS method
-  ...['agentic-delivery', 'worked-example', 'strategy-as-code', 'jtbd-guide', 'headline-metric', 'org-as-an-api', 'product-specs']
+  ...['agentic-delivery', 'worked-example', 'strategy-as-code', 'jtbd-guide', 'headline-metric', 'org-as-an-api', 'writing-an-rfc', 'adopting']
     .map((n) => [`guides/${n}.md`, `guides/${n}.md`]),
   // templates — the OS blank shapes
   ...['strategy', 'product-spec', 'job-spec', 'job-links', 'rfc', 'decision-record'].map((n) => [`templates/${n}.md`, `templates/${n}.md`]),
-  // examples — the Tempo worked example
-  ['examples/strategy-example/README.md', 'examples/tempo-overview.md'],
-  ['examples/strategy-example/STRATEGY.md', 'examples/tempo-strategy.md'],
-  ['examples/product-spec-example.md', 'examples/tempo-product-spec.md'],
-  ['examples/job-spec-example.md', 'examples/tempo-job-spec.md'],
-  ['examples/job-links-example.md', 'examples/tempo-job-links.md'],
-  ['examples/rfc-example.md', 'examples/tempo-rfc.md'],
-  ['examples/strategy-example/decisions/2026-01-15-initial-h1-strategy.md', 'examples/tempo-decision-2026-01.md'],
-  ['examples/strategy-example/decisions/2026-04-22-gridline-integration-move.md', 'examples/tempo-decision-2026-04.md'],
+  // examples — the Tempo worked example, one set under examples/tempo/
+  ['examples/tempo/README.md', 'examples/tempo/index.md'],
+  ['examples/tempo/strategy/README.md', 'examples/tempo/strategy/index.md'],
+  ['examples/tempo/strategy/STRATEGY.md', 'examples/tempo/strategy/plan.md'],
+  ['examples/tempo/product-spec.md', 'examples/tempo/product-spec.md'],
+  ['examples/tempo/job-spec.md', 'examples/tempo/job-spec.md'],
+  ['examples/tempo/job-links.md', 'examples/tempo/job-links.md'],
+  ['examples/tempo/rfc.md', 'examples/tempo/rfc.md'],
+  ['examples/tempo/strategy/decisions/2026-01-15-initial-h1-strategy.md', 'examples/tempo/strategy/decisions/2026-01-15-initial-h1-strategy.md'],
+  ['examples/tempo/strategy/decisions/2026-04-22-gridline-integration-move.md', 'examples/tempo/strategy/decisions/2026-04-22-gridline-integration-move.md'],
   // skills: flatten <x>/SKILL.md -> skills/<x>.md
   ['skills/create-job-spec/SKILL.md', 'skills/create-job-spec.md'],
   ['skills/feedback-to-jobs/SKILL.md', 'skills/feedback-to-jobs.md'],
@@ -57,10 +58,9 @@ const FILES = [
   ['skills/uat-ux-debug/SKILL.md', 'skills/uat-ux-debug.md'],
   // pm-playbook: the human product-management craft layer (published as a
   // top-level site section). README.md is the section landing page.
-  // NOTE: headline-metric.md is a redirect stub and is intentionally NOT
-  // published; the core guides/headline-metric.md ("The Anchor Signal") owns
-  // that slug. Any pm-playbook link that pointed at the stub is rewritten to
-  // point at the core guide instead.
+  // NOTE: pm-playbook/headline-metric.md (a redirect stub) has been removed;
+  // the core guides/headline-metric.md ("The Anchor Signal") owns that slug,
+  // and an Astro redirect covers the old pm-playbook site route.
   ['pm-playbook/README.md', 'pm-playbook/index.md'],
   ...['product-playbook', 'pm-handbook', 'working-together', 'decision-framework', 'delivery-standards', 'release-phases', 'discovery', 'customer-feedback', 'rice', 'personas', 'tools-we-use']
     .map((n) => [`pm-playbook/${n}.md`, `pm-playbook/${n}.md`]),

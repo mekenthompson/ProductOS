@@ -53,7 +53,7 @@ Everything else in this doc supports these five.
 | Phase | What PMs Do | Persona Lens | Key Docs |
 |-------|-------------|--------------|----------|
 | **Learn** | Talk to 3+ customers, document evidence, estimate impact | Which persona has this problem? | [Handling Product Feedback](./customer-feedback.md), [Research Template](./templates/research.md) |
-| **Decide** | Write RFC, RICE score, get approval | Does the solution serve the vision for this persona? | [Writing an RFC](../guides/product-specs.md), [RICE](./rice.md), [Decision Framework](./decision-framework.md) |
+| **Decide** | Write RFC, RICE score, get approval | Does the solution serve the vision for this persona? | [Writing an RFC](../guides/writing-an-rfc.md), [RICE](./rice.md), [Decision Framework](./decision-framework.md) |
 | **Shape + Build** | Maintain the living RFC, collaborate with Design + Engineering, validate in Preview | Does it meet all product principles? | [RFC Template](../templates/rfc.md) |
 | **Launch** | Coordinate GTM, plan rollout, monitor adoption, conduct post-launch review | Are the right personas adopting? | [Delivery Standards](./delivery-standards.md), [Post-Launch Review](./templates/post-launch-review.md) |
 | **Sell** | Ensure self-onboarding works, support sales enablement, track adoption | Can each persona find and adopt this without help? | |
@@ -86,7 +86,7 @@ Outcomes matter more than calendar slots. Here's what needs to happen, and rough
 | **Week 2** | Broaden context and start contributing | Connect with Design and other leadership through informal 1:1s. Process and triage your first customer feedback. Attend team meetings across your area. Find a quick-delight problem (≤ 3 hours) you can help shape with engineering and get scheduled. |
 | **Week 3** | Write your first RFC stub | Pick a problem from the discovery backlog. Talk to 3+ customers using the [Customer Call Template](./templates/customer-call.md). Fill Problem + Evidence + Impact in the [RFC Template](../templates/rfc.md). Review in product team meetings to get feedback and iterate. |
 | **Week 4** | Complete all monthly rituals | Dogfooding + onboarding review + competitor review. See Monthly Rituals below. |
-| **Month 2** | Get first RFC approved | Finish the RFC (Solution, Scope, Success Metrics). RICE score. Submit for approval. See [Writing an RFC](../guides/product-specs.md). |
+| **Month 2** | Get first RFC approved | Finish the RFC (Solution, Scope, Success Metrics). RICE score. Submit for approval. See [Writing an RFC](../guides/writing-an-rfc.md). |
 | **Month 3** | Coordinate delivery | Maintain the living RFC. Collaborate with Design + Engineering. Enter Building status. |
 
 ---
@@ -227,7 +227,7 @@ Anti-pattern: "Sales needs this for a deal" → Instead: "Sales hears this from 
 - [Working Together](./working-together.md): How the product triad collaborates
 
 **Guides:**
-- [Writing an RFC](../guides/product-specs.md): How to write, approve, and deliver
+- [Writing an RFC](../guides/writing-an-rfc.md): How to write, approve, and deliver
 - [Handling Product Feedback](./customer-feedback.md): Feedback processing
 - [RICE Guide](./rice.md): Scoring framework
 - [Decision Framework](./decision-framework.md): Signal → Standard → Speed

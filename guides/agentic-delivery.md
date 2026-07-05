@@ -62,7 +62,7 @@ The whole point of the standing Job Spec is that **the feature and the tech are 
 
 **Outcome-drift backstop.** The `job` / `outcome` / `stakes` lines are diff-protected. Narrating a retired *implementation approach* is normal and encouraged; that is the doc working as intended. Changing the *outcome itself* is a different act. It is not a silent edit and never rides along in a delivery commit: it is a ratified event that needs a recorded decision and re-ratification, the same discipline STRATEGY.md already demands of a strategy change. Without that rule a "durable" Job Spec quietly decays into a description of whatever shipped, which is the exact failure the standing doc exists to prevent. Make it mechanical: a change to those three lines fails review unless it cites its decision record.
 
-**Engineering reads the Job Spec as the brief**, the *what* and *why*, and owns the *how* (architecture, data model, non-functional approach), which it works out in the ship-coupled [RFC](./product-specs.md). Where a job has real engineering stakes, the Job Spec carries an optional engineering acceptance section, the **Production-readiness** section: the non-functional targets the build must hit, beside the customer-facing signs.
+**Engineering reads the Job Spec as the brief**, the *what* and *why*, and owns the *how* (architecture, data model, non-functional approach), which it works out in the ship-coupled [RFC](./writing-an-rfc.md). Where a job has real engineering stakes, the Job Spec carries an optional engineering acceptance section, the **Production-readiness** section: the non-functional targets the build must hit, beside the customer-facing signs.
 
 ---
 
@@ -182,7 +182,7 @@ If the agent has to invent structure or reach outside the method, the guide fail
 
 - **Job Spec** -- the canonical term for a standing, per-job outcome document, in template order: the job / outcome / stakes (laddering up via `serves:`), the required struggling moment, its **Contribution** to the outcome it serves (mechanism plus named leading indicator), **What the job requires** (Must / Won't capabilities), the good / bad signs, the **Prove it** acceptance scenarios, and a one-line **Verdict**. *(Older synonyms "JTBD doc" and "red doc" are retired; don't use them.)*
 - **Product Spec** -- the per-product doc above the jobs: names the product's outcomes, says how the product functions, and owns the list of jobs. *(Not to be confused with an RFC, the ship-coupled delivery doc.)*
-- **RFC** -- the ship-coupled, per-initiative delivery doc (RFC / PR), which references a Job Spec. Not a named spec tier of its own. See [Product Specs / RFC guide](./product-specs.md).
+- **RFC** -- the ship-coupled, per-initiative delivery doc (RFC / PR), which references a Job Spec. Not a named spec tier of its own. See [Product Specs / RFC guide](./writing-an-rfc.md).
 - **Anchor** -- the vision, principles, and invariants, judged together to produce a verdict.
 - **Invariant** -- a line the product won't cross by construction; the firmest anchor.
 - **Verdict rule** -- the all-must-pass gate above (outcome ∧ Job Spec ∧ principles ∧ no invariant crossed).
@@ -206,4 +206,4 @@ The terse, executable version of this method, the verdict rule as a gate, the pe
 - [JTBD Guide](./jtbd-guide.md) -- the job-story sentence; [Job Spec template](../templates/job-spec.md) -- the standing outcome doc
 - [Invariants](../anchors/invariants.md) -- the third anchor; the kill-clause in the verdict rule
 - [Worked Example](./worked-example.md) -- one job carried through this exact loop, watch the verdict rule turn an agent back and then let it through
-- [Product Specs / RFC guide](./product-specs.md) -- how an RFC references a Job Spec and gets an adversarial review
+- [Product Specs / RFC guide](./writing-an-rfc.md) -- how an RFC references a Job Spec and gets an adversarial review

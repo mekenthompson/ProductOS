@@ -2,18 +2,18 @@
 title: "RFC Example: Tempo"
 description: "A worked, ship-coupled RFC for Tempo's unified cross-location availability view: the job, how schedulers fail today, success and failure modes, guardrails, and a staged rollout, with the solution left open."
 sidebar:
-  order: 6
+  order: 7
 ---
 
 # RFC Example: Tempo
 
-This is a worked [RFC](../templates/rfc.md) for a single ship-coupled effort at
+This is a worked [RFC](../../templates/rfc.md) for a single ship-coupled effort at
 Tempo: the unified cross-location availability view. It delivers against the
-standing [Job Spec](./job-spec-example.md) for `see-everyones-free-time-at-once`
+standing [Job Spec](./job-spec.md) for `see-everyones-free-time-at-once`
 and advances the `cross-location-visibility` outcome in the
-[Product Spec](./product-spec-example.md).
+[Product Spec](./product-spec.md).
 
-Read it alongside the blank [template](../templates/rfc.md). It leaves the *how*
+Read it alongside the blank [template](../../templates/rfc.md). It leaves the *how*
 open on purpose: the RFC sets the job, the success and failure modes, and the
 guardrails, and lets the team invent the solution inside them. Names, numbers, and
 dates are illustrative.
@@ -29,7 +29,7 @@ dates are illustrative.
 | **Approver** | Head of Product |
 | **Approval date** | 2026-02-12 |
 | **Advances outcome** | `cross-location-visibility` |
-| **Serves job spec** | [`see-everyones-free-time-at-once`](./job-spec-example.md) |
+| **Serves job spec** | [`see-everyones-free-time-at-once`](./job-spec.md) |
 | **Tracker** | `TEMPO-412` (issue tracker) |
 
 ---
@@ -53,14 +53,14 @@ dates are illustrative.
 > place, **so they can** book it without chasing people for their availability
 > first.
 
-This job has a standing [Job Spec](./job-spec-example.md); it is the durable home
+This job has a standing [Job Spec](./job-spec.md); it is the durable home
 of the job. This RFC is one ship-coupled effort against it.
 
 **Primary persona:** the scheduler at a multi-location operator.
 **Secondary persona(s) affected:** location managers whose local availability
 feeds the unified view.
 
-See the [JTBD Guide](../guides/jtbd-guide.md) for the job-story and four-forces
+See the [JTBD Guide](../../guides/jtbd-guide.md) for the job-story and four-forces
 framing behind this.
 
 ---
@@ -149,7 +149,7 @@ framing behind this.
 
 ## Guardrails
 
-**Quality / principle guardrails** (see [Product Principles](../anchors/product-principles.md)):
+**Quality / principle guardrails** (see [Product Principles](../../anchors/product-principles.md)):
 - The view must be trustworthy by default. Check question: would a scheduler book
   from it without a confirmation call?
 - The product removes coordination work, it does not relocate it. Check question:
@@ -165,7 +165,7 @@ framing behind this.
 - Availability is scoped to a single operator, enforced server-side, not by the
   client.
 
-**Invariant guardrails** (see [Invariants](../anchors/invariants.md)):
+**Invariant guardrails** (see [Invariants](../../anchors/invariants.md)):
 - `no-stale-free-slot` -- nothing shown as free may already be booked at the
   source. One-question test: can the view ever surface a slot that is taken?
 - `availability-never-leaks-across-operators` -- one operator's staff are never
@@ -236,7 +236,7 @@ framing behind this.
 
 Release shape: staged rollout on real data, because the risk is trust and the only
 honest test is whether schedulers stop phoning. See
-[Writing an RFC](../guides/product-specs.md#rollout) for the shapes.
+[Writing an RFC](../../guides/writing-an-rfc.md#rollout) for the shapes.
 
 | Phase | Audience | State | Exit criteria | Rollback |
 |---|---|---|---|---|
@@ -263,11 +263,11 @@ honest test is whether schedulers stop phoning. See
 
 ## Related
 
-- [RFC Template](../templates/rfc.md) -- the blank shape this fills in
-- [Job Spec Example: Tempo](./job-spec-example.md) -- the durable job this RFC delivers against
-- [Product Spec Example: Tempo](./product-spec-example.md) -- the outcome this RFC advances
-- [RFC guide](../guides/product-specs.md) -- how to write this document
-- [JTBD Guide](../guides/jtbd-guide.md) -- framing the job and the forces around it
+- [RFC Template](../../templates/rfc.md) -- the blank shape this fills in
+- [Job Spec Example: Tempo](./job-spec.md) -- the durable job this RFC delivers against
+- [Product Spec Example: Tempo](./product-spec.md) -- the outcome this RFC advances
+- [RFC guide](../../guides/writing-an-rfc.md) -- how to write this document
+- [JTBD Guide](../../guides/jtbd-guide.md) -- framing the job and the forces around it
 
 ---
 
