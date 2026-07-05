@@ -218,6 +218,9 @@ Feature-flag on/off is one release shape, not the only one. Pick the shape that 
 
 ## Evidence standards
 
+How to *gather* this evidence is the craft layer's job: see
+[Discovery](../pm-playbook/discovery.md).
+
 ### Strong evidence (prefer these)
 
 - Customer interviews or feedback with quotes, sample size, and links

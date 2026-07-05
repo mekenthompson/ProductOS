@@ -122,7 +122,8 @@ invariants: [<named lines this job must never cross, by construction>]
 > falsifiable: the *shape* of the belief, not a quantified target (the number
 > that would confirm or refute it drifts to [Job Links](./job-links.md) and
 > the RFC). One line, always: even a Quick Win names its bet, if only to show
-> it is safe.
+> it is safe. How to gather the evidence that kills or confirms the bet is
+> the craft layer's job: see [Discovery](../pm-playbook/discovery.md).
 
 - **This job assumes:** <the belief about the user or their world the job
   depends on, e.g. "the user hits this situation often enough, and the
@@ -273,3 +274,4 @@ just the happy path.
 - [Job Links Template](./job-links.md) -- the churny join that carries accounts and revenue, kept out of this spec
 - [Agentic Delivery](../guides/agentic-delivery.md) -- how this spec sits in the verdict rule and the gates
 - [Writing an RFC](../guides/writing-an-rfc.md) -- how to write the ship-coupled RFC that references this spec
+- [Discovery](../pm-playbook/discovery.md) -- the craft of gathering the evidence that validates the job and its bet

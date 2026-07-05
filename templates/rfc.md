@@ -247,6 +247,7 @@ Known unknowns that resolve on delivery. Tag each with who resolves it. These ar
 - [Job Spec Template](./job-spec.md) -- the durable per-job outcome doc an RFC references
 - [JTBD Guide](../guides/jtbd-guide.md) -- framing the job
 - [Agentic Delivery](../guides/agentic-delivery.md) -- the verdict rule and the gates this RFC clears
+- [Discovery](../pm-playbook/discovery.md) -- the craft of gathering the evidence this RFC links out to
 
 ---
 

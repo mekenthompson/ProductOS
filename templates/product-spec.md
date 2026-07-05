@@ -124,3 +124,4 @@ rolls up to its outcome's Signal.
 - [Product Principles](../anchors/product-principles.md) -- the standards each job is built to
 - [Invariants](../anchors/invariants.md) -- the by-construction lines no job may cross
 - [Job Spec Template](./job-spec.md) -- the durable per-job outcome contract whose `serves:` points back at an outcome here
+- [Discovery](../pm-playbook/discovery.md) -- the craft of grounding a job in evidence before it earns a place in the index
