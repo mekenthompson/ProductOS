@@ -1,2 +1,13 @@
+# ProductOS content repo
 node_modules/
 .DS_Store
+
+# Astro / Starlight site build
+dist/
+.astro/
+npm-debug.log*
+
+# Generated docs: sync-content.mjs regenerates src/content/docs/ from the
+# in-repo content on every build. Keep only the hand-written homepage tracked.
+src/content/docs/**
+!src/content/docs/index.mdx

@@ -1,0 +1,41 @@
+---
+import Default from '@astrojs/starlight/components/Head.astro';
+
+const { starlightRoute } = Astro.locals;
+const { entry } = starlightRoute;
+
+const siteUrl = 'https://mekenthompson.github.io';
+const base = '/ProductOS';
+
+const pageTitle = entry.data.title
+  ? `${entry.data.title} | ProductOS`
+  : 'ProductOS';
+const pageDescription =
+  entry.data.description ??
+  'ProductOS — a product operating system: anchors, Job Specs, guides, templates, and agent-executable skills.';
+
+// Build canonical URL for this page
+const rawSlug = entry.id.replace(/\.(md|mdx)$/, '').replace(/\/index$/, '');
+const slug = rawSlug || 'index';
+const pageUrl = `${siteUrl}${base}/${rawSlug ? rawSlug + '/' : ''}`;
+
+// OG image: use customSocialImage frontmatter if set, otherwise fall back to generated card
+const customSocialImage: string | undefined = (entry.data as Record<string, unknown>).customSocialImage as string | undefined;
+const ogImage = customSocialImage
+  ? (customSocialImage.startsWith('http') ? customSocialImage : `${siteUrl}${base}/${customSocialImage.replace(/^\//, '')}`)
+  : `${siteUrl}${base}/og/${slug}.png`;
+---
+
+<Default><slot /></Default>
+
+<!-- OG image — Starlight does not emit this -->
+<meta property="og:image" content={ogImage} />
+
+<!-- Supplement / override per-page title with formatted version -->
+<meta property="og:title" content={pageTitle} />
+<meta property="og:url" content={pageUrl} />
+
+<!-- Twitter Card (Starlight only sets twitter:card, not image/title/description) -->
+<meta name="twitter:title" content={pageTitle} />
+<meta name="twitter:description" content={pageDescription} />
+<meta name="twitter:image" content={ogImage} />

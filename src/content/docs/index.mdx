@@ -1,0 +1,121 @@
+---
+title: ProductOS
+description: "Product execution guidance for humans and agents. The right context, at every layer, for the right call."
+template: splash
+hero:
+  title: ProductOS
+  tagline: "A product operating system in markdown, kept next to your code."
+  text: >
+    A layered set of documents that carry each decision down the chain: three
+    anchors, a product spec, a Job Spec per job, an RFC per change. Human
+    judgement stays in the loop while agents do the building. Proven on a real
+    codebase: 21 Job Specs held against a live UAT harness.
+  actions:
+    - text: Start with the method
+      link: /ProductOS/guides/agentic-delivery/
+      icon: right-arrow
+      variant: primary
+    - text: See it in action
+      link: https://github.com/switchroom/switchroom/tree/main/reference
+      icon: external
+      variant: secondary
+---
+
+import { Card, CardGrid, LinkCard, Aside } from '@astrojs/starlight/components';
+
+<figure style="margin: 2rem 0; text-align: center;">
+  <img
+    src="/ProductOS/img/hero-org-as-an-api.png"
+    alt="The Org as an API: a before/after diagram showing how product, support, CRM and finance signals are sequenced around the Job to be Done"
+    style="width: 100%; max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 24px rgba(0,0,0,0.12);"
+  />
+  <figcaption style="margin-top: 0.75rem; font-size: 0.875rem; color: var(--sl-color-gray-3);">
+    The Org as an API: sequence the roadmap by joining feedback, support, CRM and finance around the job.
+  </figcaption>
+</figure>
+
+## Building got cheap. Judgement got scarce.
+
+An agent can draft the spec, write the code, and run the tests before you've
+booked the kickoff. The bottleneck moved. It isn't capacity any more. It's
+whether everyone touching the work, human or agent, has the context to make the
+right call, and whether someone catches it when they don't.
+
+ProductOS is that context. A layered set of documents that carry each decision
+down the chain, so judgement stays in the loop while the work runs at agent
+speed. In practice that's a handful of markdown files you keep beside your code:
+three anchors (vision, principles, invariants), a Product Spec, a Job Spec for
+each job, and an RFC for each change.
+
+## See it work
+
+<LinkCard
+  title="switchroom: the method, proven"
+  href="https://github.com/switchroom/switchroom/tree/main/reference"
+  description="ProductOS filled in on a real codebase. Real anchors, a product spec, 21 Job Specs, all held against a live UAT harness."
+/>
+
+## The right context, for whoever's deciding
+
+Product isn't one decision. It's a chain of them, at different altitudes.
+ProductOS gives each layer its own document, so whoever's working there, a PM,
+an engineer, a designer, PMM, or an agent, has exactly the context that layer
+needs and nothing it doesn't.
+
+<CardGrid>
+  <Card title="Strategy">
+    Given finite capacity, which jobs are funded now and which are deferred, and
+    why. The context leadership and PMM work from.
+
+    [Strategy as code](/ProductOS/guides/strategy-as-code/)
+  </Card>
+  <Card title="Product definition">
+    What the product is, the outcomes it drives, and the jobs it owns. The
+    anchors that hold and the product spec that lists the work.
+
+    [Anchors](/ProductOS/anchors/product-vision/) · [Product spec](/ProductOS/templates/product-spec/)
+  </Card>
+  <Card title="Job definition">
+    The durable, outcome-focused contract for a single job, proven by its UAT.
+    What engineering and design build against.
+
+    [Job spec](/ProductOS/templates/job-spec/)
+  </Card>
+</CardGrid>
+
+Humans read these to make the judgement calls. Agents read the same documents
+as executable guidance, with automation and skills layered on top to navigate
+the chain without losing the plot. One source of context, both audiences.
+
+## One rule decides what ships
+
+<Aside type="tip" title="The verdict rule">
+A change ships only when it advances a vision outcome, satisfies its Job Spec,
+passes every principle, and crosses no invariant.
+</Aside>
+
+Agents build fast inside those gates. Humans own the gates.
+
+The rule is the bar, not the paperwork. Scale the gates to the stakes: a quick
+win ships on a tech lead's nod, a payments change runs every gate at full depth.
+One path for everything is no path at all.
+
+| | Quick Win | Lightweight | Full Spec |
+|---|---|---|---|
+| **Size** | ≤ half a day | ½ day–2 wks | > 2 wks |
+| **Process** | Flag tech lead/PM, ship | 1-page brief | Full RFC + RICE |
+| **Gates** | Outcome sanity check | Outcome UAT + 2-wk review | Full verdict, 2wk/30d/90d |
+
+## Start here
+
+<CardGrid>
+  <Card title="1. Understand the method" icon="open-book">
+    [Agentic Delivery](/ProductOS/guides/agentic-delivery/): the four parts and the verdict rule.
+  </Card>
+  <Card title="2. Set your anchors" icon="seti:config">
+    [Vision](/ProductOS/anchors/product-vision/), [principles](/ProductOS/anchors/product-principles/), [invariants](/ProductOS/anchors/invariants/). The why, the built-well, the never-cross.
+  </Card>
+  <Card title="3. Write your first Job Spec" icon="pencil">
+    The [template](/ProductOS/templates/job-spec/), plus a [skill](/ProductOS/skills/create-job-spec/) that interviews you and writes it.
+  </Card>
+</CardGrid>
