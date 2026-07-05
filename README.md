@@ -6,7 +6,7 @@ This is what I actually run product with. Every layer, from why we're building a
 
 - **[Adopt it →](./guides/adopting.md)** no installer; copy the shapes into your own repo in an afternoon.
 - **[Read it rendered →](https://mekenthompson.github.io/ProductOS/)** the published site, same content, easier to browse.
-- **[See it filled in on a real product →](https://github.com/switchroom/switchroom/tree/main/reference)** real anchors, a product spec, 21 Job Specs, held against a live UAT harness.
+- **[See it filled in on a real product →](https://github.com/switchroom/switchroom/tree/main/reference)** real anchors, a product spec, 20+ Job Specs, held against a live UAT harness.
 
 ---
 

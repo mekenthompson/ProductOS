@@ -112,7 +112,7 @@ That's the whole loop, running on your product instead of this repo's.
 
 Two places to crib from once you're filling in your own copies:
 
-- **[switchroom's `reference/`](https://github.com/switchroom/switchroom/tree/main/reference)** is the filled-in example: real anchors, a real product spec, and 21 Job Specs, proven against a live UAT harness. When you're unsure what a filled section should look like, this is the source to read.
+- **[switchroom's `reference/`](https://github.com/switchroom/switchroom/tree/main/reference)** is the filled-in example: real anchors, a real product spec, and 20+ Job Specs, proven against a live UAT harness. When you're unsure what a filled section should look like, this is the source to read.
 - **`examples/tempo/`** in this repo carries the same shapes filled in for Tempo, a fictional team-scheduling product: a [product spec](../examples/tempo/product-spec.md), a [Job Spec](../examples/tempo/job-spec.md), [Job Links](../examples/tempo/job-links.md), an [RFC](../examples/tempo/rfc.md), and a full [strategy example](../examples/tempo/strategy/README.md). Fictional, so it's safe to read end to end without knowing switchroom's business.
 
 Between the two, you should have a filled version of every template to hold
