@@ -1,0 +1,24 @@
+{
+  "name": "productos-site",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "sync": "node scripts/sync-content.mjs",
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "npm run sync && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.3",
+    "@astrojs/starlight": "^0.34.0",
+    "astro": "^5.7.0",
+    "astro-og-canvas": "^0.11.1",
+    "sharp": "^0.34.0"
+  },
+  "devDependencies": {
+    "starlight-links-validator": "^0.16.0"
+  }
+}

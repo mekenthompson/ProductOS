@@ -9,7 +9,7 @@ icon: "👤"
 
 PMs own a simple question: **are we spending engineering time on the highest-leverage work?**
 
-We validate problems through our [personas](./personas.md), build the case for the right bets, and measure whether shipped work moved the [headline metric](../anchors/product-vision.md). The metric is the contract. Everything else is operational detail.
+We validate problems through our [personas](./personas.md), build the case for the right bets, and measure whether shipped work moved a named [outcome and its Signal](../anchors/product-vision.md) (where one number captures the whole product, that Signal is the single headline metric). The outcome and its Signal are the contract. Everything else is operational detail.
 
 Companion to the [Product Playbook](./product-playbook.md) (how we build product as a company). This one is how PMs operate day to day.
 
@@ -56,7 +56,7 @@ Everything else in this doc supports these five.
 | **Decide** | Write RFC, RICE score, get approval | Does the solution serve the vision for this persona? | [Writing an RFC](../guides/product-specs.md), [RICE](./rice.md), [Decision Framework](./decision-framework.md) |
 | **Shape + Build** | Maintain the living RFC, collaborate with Design + Engineering, validate in Preview | Does it meet all product principles? | [RFC Template](../templates/rfc.md) |
 | **Launch** | Coordinate GTM, plan rollout, monitor adoption, conduct post-launch review | Are the right personas adopting? | [Delivery Standards](./delivery-standards.md), [Post-Launch Review](./templates/post-launch-review.md) |
-| **Sell** | Ensure self-onboarding works, support sales enablement, track adoption | Can each persona find and adopt this without help? | — |
+| **Sell** | Ensure self-onboarding works, support sales enablement, track adoption | Can each persona find and adopt this without help? | |
 
 ---
 

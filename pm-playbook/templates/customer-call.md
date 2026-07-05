@@ -1,7 +1,7 @@
 ---
 title: Customer Call Template
 description: Interview and call documentation
-last_reviewed: 2025-01-25T00:00:00.000Z
+last_reviewed: 2025-01-25
 icon: "📞"
 ---
 
@@ -48,7 +48,7 @@ What triggered them to look for a solution?
 | [e.g., "Current setup is slow"] | Push toward | "We're spending 2 hours a day waiting" |
 | [e.g., "Migration is scary"] | Push away (anxiety) | "We've been burned by migrations before" |
 | [e.g., "Team wants modern tooling"] | Pull toward | "Engineers keep asking for better DX" |
-| [e.g., "Familiar with current tool"] | Habit | "We know Jenkins, even if it's painful" |
+| [e.g., "Familiar with current tool"] | Habit | "We know the current tool, even if it's painful" |
 
 ---
 

@@ -66,7 +66,7 @@ You only need one tool per category. More than that creates copy-paste tax and s
 
 ### File Naming
 - RFCs: `[Project Name] RFC`
-- Research: `[Project Name] — [Research Type]` (e.g., "Retry Logic — Customer Research")
+- Research: `[Project Name]: [Research Type]` (e.g., "Retry Logic: Customer Research")
 
 ### Linking
 - Always link RFC ↔ tracker project (bidirectional)

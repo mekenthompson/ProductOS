@@ -37,7 +37,7 @@ Six phases, each feeding the next. The loop closes back to the start.
 
 Customers are smart, impatient, and have options. Every hour of engineering time is an hour we can't spend elsewhere. The most important product discipline: spend those hours on the highest-leverage work, then know whether it paid off. That's the whole game.
 
-The [Product Vision](../anchors/product-vision.md) sets the direction and names the headline metric. This document describes the **Product Loop**: a six-phase closed loop for how ideas become outcomes. It isn't bureaucracy. It's a shared operating system for product decisions.
+The [Product Vision](../anchors/product-vision.md) sets the direction and names the outcomes (up to four), each carrying its own Signal, the readable metric that tells you the outcome is holding. (Where a single number captures the whole product, that collapses to one headline metric, but treat it as one outcome with one Signal.) This document describes the **Product Loop**: a six-phase closed loop for how ideas become outcomes. It isn't bureaucracy. It's a shared operating system for product decisions.
 
 ![Product Loop: Learn → Decide → Shape → Build → Launch → Sell](images/product-loop.png)
 
@@ -296,6 +296,7 @@ Everything below is a reference asset produced by this framework. Read them when
 | When you need to... | Use this |
 |---------------------|----------|
 | Understand the vision and personas | [Product Vision](../anchors/product-vision.md) |
+| See the product's North Star, outcomes, and job index | [Product Spec](../templates/product-spec.md) |
 | Decide the right path for work | [Decision Framework](./decision-framework.md) |
 | Write an RFC | [RFC Guide](../guides/product-specs.md) + [RFC Template](../templates/rfc.md) |
 | Score a project | [RICE Guide](./rice.md) |

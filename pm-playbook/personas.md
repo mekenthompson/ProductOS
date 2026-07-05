@@ -1,6 +1,6 @@
 ---
 title: Personas
-description: How to write personas that are load-bearing: who hires the job, what good and bad look like, and how they tie back to the Job Spec
+description: "How to write personas that are load-bearing: who hires the job, what good and bad look like, and how they tie back to the Job Spec"
 last_reviewed: 2026-07-02
 icon: "📖"
 ---
@@ -75,10 +75,12 @@ The test for whether your personas are real: look at the last three things you s
 
 A common and legitimate shape is a split between the person who *sets up* a product, the person who *uses* it day-to-day, and the person who *funds* it: three different humans with three different definitions of "working." But that's one useful pattern, not a required template. Some products have one persona; some have four. Write the ones your product actually has, and only the ones that change a decision.
 
+One persona shape isn't a person at all. For API-shaped products, the one hiring the job can be an integrating system: another service calling your API at scale, with its integration constraint (a latency budget, a rare input it must handle, graceful degradation under load) standing in for the human situation. This isn't a rival persona doctrine, just the same "who is hiring the job, in what situation" discipline applied when the customer is a machine. The core [JTBD Guide](../guides/jtbd-guide.md#the-one-hiring-the-job-is-not-always-a-person) owns this shape; write the job story the same way, with the calling system as the persona.
+
 ---
 
 ## Related
 
 - **[Job Spec](../templates/job-spec.md)**: the persona is the "who is hiring this" line; the Job Spec is where a sharp persona pays off.
 - **[RFC Template](../templates/rfc.md)**: every RFC names its primary persona.
-- **[JTBD Guide](../guides/jtbd-guide.md)**: Jobs to be Done, the motivation framing personas hang on.
+- **[JTBD Guide](../guides/jtbd-guide.md)**: Jobs to be Done, the motivation framing personas hang on. See the [four forces](../guides/jtbd-guide.md#the-four-forces-decide-whether-the-job-is-worth-serving) (push, pull, anxiety, habit) for what actually moves a persona to switch, and the [machine/API-consumer shape](../guides/jtbd-guide.md#the-one-hiring-the-job-is-not-always-a-person) for when the persona is a system.
