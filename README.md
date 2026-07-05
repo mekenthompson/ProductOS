@@ -4,8 +4,13 @@
 
 This is what I actually run product with. Every layer, from why we're building at all down to the single job in front of an agent, gets its own document, so whoever's touching the work, human or agent, has exactly the context that layer needs and makes the right call.
 
-- **[Adopt it →](./guides/adopting.md)** no installer; copy the shapes into your own repo in an afternoon.
-- **[Read it rendered →](https://mekenthompson.github.io/ProductOS/)** the published site, same content, easier to browse.
+### 👉 Read it on the web: **[mekenthompson.github.io/ProductOS](https://mekenthompson.github.io/ProductOS/)**
+
+That's the front door: the whole method, browsable, searchable, always current. This repo is the source the site builds from; if you just want to *read* ProductOS, start on the site.
+
+Once you're in:
+
+- **[Adopt it →](https://mekenthompson.github.io/ProductOS/guides/adopting/)** no installer; copy the shapes into your own repo in an afternoon.
 - **[See it filled in on a real product →](https://github.com/switchroom/switchroom/tree/main/reference)** real anchors, a product spec, 20+ Job Specs, held against a live UAT harness.
 
 ---
