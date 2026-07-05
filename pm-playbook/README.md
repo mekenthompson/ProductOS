@@ -1,5 +1,6 @@
 ---
 title: PM Playbook
+slug: pm-playbook
 description: "The human product-management craft: the six-phase operating loop, the discipline guides, and the templates that go with them."
 ---
 

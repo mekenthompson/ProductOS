@@ -1,4 +1,6 @@
 ---
+title: Feedback to Jobs
+slug: skills/feedback-to-jobs
 name: feedback-to-jobs
 description: Turn a folder of raw customer feedback into a small set of customer jobs, clustered, rated, and split when they get too big, then draft a Job Spec for each. Use when you have a pile of feedback (support tickets, sales notes, call snippets, survey lines) and need to know what jobs it's really about, not what features it's asking for.
 ---

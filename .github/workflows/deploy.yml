@@ -29,9 +29,10 @@ jobs:
           cache: npm
       - name: Install dependencies
         run: npm ci
-      # Content now lives in this repo. `npm run build` runs the sync
-      # (regenerating src/content/docs/ from the in-repo anchors/, guides/,
-      # etc.), then the Astro build and link validator.
+      # Content lives in this repo and is published directly: src/content/docs/
+      # holds symlinks into the repo root (anchors/, guides/, etc.), which git
+      # checkout restores as real symlinks. `npm run build` is a plain Astro
+      # build (content layer + link validator), no separate sync step.
       - name: Build
         run: npm run build
       - name: Upload Pages artifact

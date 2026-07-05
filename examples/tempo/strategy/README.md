@@ -1,5 +1,6 @@
 ---
 title: "Tempo: the Worked Example"
+slug: examples/tempo/strategy
 description: "What Tempo is, the situation it is in, and a map of every ProductOS doc filled in for it: strategy, product spec, job spec, job links, RFC, and decision records, one fictional company carried through the whole method."
 sidebar:
   order: 2

@@ -4,10 +4,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "sync": "node scripts/sync-content.mjs",
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "npm run sync && astro build",
+    "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
   },

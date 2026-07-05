@@ -1,5 +1,6 @@
 ---
 title: "Tempo: the Worked Example"
+slug: examples/tempo
 description: "A short introduction to Tempo, the fictional team-scheduling product, and a map of the worked set: strategy, product spec, job spec, job links, and RFC, in doc order."
 sidebar:
   order: 1

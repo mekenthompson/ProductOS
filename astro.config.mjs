@@ -3,11 +3,15 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import sitemap from '@astrojs/sitemap';
 import starlightLinksValidator from 'starlight-links-validator';
+import remarkProductosDocs from './src/plugins/remark-productos-docs.mjs';
 
 export default defineConfig({
   site: 'https://mekenthompson.github.io',
   base: '/ProductOS/',
   prefetch: true,
+  markdown: {
+    remarkPlugins: [remarkProductosDocs],
+  },
   // Old site slugs redirected to their new home. Astro applies `base`
   // automatically to both sides of each entry, so these paths are written
   // base-relative, matching the sidebar links below.

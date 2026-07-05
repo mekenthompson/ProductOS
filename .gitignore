@@ -7,7 +7,8 @@ dist/
 .astro/
 npm-debug.log*
 
-# Generated docs: sync-content.mjs regenerates src/content/docs/ from the
-# in-repo content on every build. Keep only the hand-written homepage tracked.
-src/content/docs/**
-!src/content/docs/index.mdx
+# src/content/docs/ publishes the repo's own markdown directly: the
+# top-level entries there are symlinks into the repo root (guides/, anchors/,
+# templates/, examples/, skills/, pm-playbook/, AGENTS.md) plus the
+# hand-written homepage (index.mdx). All of those are tracked; nothing under
+# src/content/docs/ is generated anymore.

@@ -1,5 +1,6 @@
 ---
 title: "Tempo Strategy (worked example)"
+slug: examples/tempo/strategy/plan
 description: "The filled STRATEGY.md for Tempo: funded jobs, deferrals, and the coherent-action argument, tagged by evidence level."
 sidebar:
   order: 3
