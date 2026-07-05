@@ -1,6 +1,6 @@
 ---
 title: ProductOS
-description: "Product execution guidance for humans and agents. The right context, at every layer, for the right call."
+description: "A product operating system in markdown, kept next to your code. Reference-only: adopt it by copying the shapes into your own repo, no installer."
 template: splash
 hero:
   title: ProductOS
@@ -8,14 +8,15 @@ hero:
   text: >
     A layered set of documents that carry each decision down the chain: three
     anchors, a product spec, a Job Spec per job, an RFC per change. Human
-    judgement stays in the loop while agents do the building. Proven on a real
-    codebase: 21 Job Specs held against a live UAT harness.
+    judgement stays in the loop while agents do the building. There's no
+    installer, you adopt it by copying the shapes into your own repo. Proven
+    on a real codebase: 21 Job Specs held against a live UAT harness.
   actions:
-    - text: Start with the method
-      link: /ProductOS/guides/agentic-delivery/
+    - text: Adopt it
+      link: /ProductOS/guides/adopting/
       icon: right-arrow
       variant: primary
-    - text: See it in action
+    - text: See it filled in
       link: https://github.com/switchroom/switchroom/tree/main/reference
       icon: external
       variant: secondary
@@ -23,16 +24,27 @@ hero:
 
 import { Card, CardGrid, LinkCard, Aside } from '@astrojs/starlight/components';
 
-<figure style="margin: 2rem 0; text-align: center;">
-  <img
-    src="/ProductOS/img/hero-org-as-an-api.png"
-    alt="The Org as an API: a before/after diagram showing how product, support, CRM and finance signals are sequenced around the Job to be Done"
-    style="width: 100%; max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 24px rgba(0,0,0,0.12);"
-  />
-  <figcaption style="margin-top: 0.75rem; font-size: 0.875rem; color: var(--sl-color-gray-3);">
-    The Org as an API: sequence the roadmap by joining feedback, support, CRM and finance around the job.
-  </figcaption>
-</figure>
+<div style="margin: 2rem 0;">
+
+```
+your-repo/
+├── STRATEGY.md            which jobs are funded now, which are deferred
+├── anchors/
+│   ├── product-vision.md      the why
+│   ├── product-principles.md  the built-well
+│   └── invariants.md          the never-cross
+├── product-spec.md        names the outcomes, owns the job list
+├── jobs/
+│   └── <job>/
+│       └── job-spec.md    durable, outcome-focused, UAT-verifiable
+└── rfcs/
+    └── <change>.md        ship-coupled delivery, references a Job Spec
+```
+
+</div>
+
+This is the hierarchy you write into your own repo. Nothing to install, no
+service to run, just markdown files that sit next to your code.
 
 ## Building got cheap. Judgement got scarce.
 
@@ -47,13 +59,53 @@ speed. In practice that's a handful of markdown files you keep beside your code:
 three anchors (vision, principles, invariants), a Product Spec, a Job Spec for
 each job, and an RFC for each change.
 
-## See it work
+## Two layers, one direction
 
-<LinkCard
-  title="switchroom: the method, proven"
-  href="https://github.com/switchroom/switchroom/tree/main/reference"
-  description="ProductOS filled in on a real codebase. Real anchors, a product spec, 21 Job Specs, all held against a live UAT harness."
-/>
+ProductOS is two layers, both live now, not a roadmap.
+
+<CardGrid>
+  <Card title="The delivery OS">
+    Anchors, Job Specs, the verdict rule, design loops, outcome UAT, and the
+    agent-executable skills that carry the method end to end.
+
+    [Agentic Delivery](/ProductOS/guides/agentic-delivery/)
+  </Card>
+  <Card title="The PM Playbook">
+    The human product-management craft: the six-phase operating loop,
+    discovery, the decision framework, RICE, personas.
+
+    [PM Playbook](/ProductOS/pm-playbook/)
+  </Card>
+</CardGrid>
+
+The dependency runs one way: the craft layer may reference the OS, the OS never
+references the craft.
+
+## Built by a PM who runs product with it
+
+I'm Ken Thompson. I built ProductOS because I needed a way to keep judgement in
+the loop while an agentic workforce does most of the building, and this is the
+system I actually run product with day to day. [switchroom](https://github.com/switchroom/switchroom)
+is it running for real, on a real codebase. ([github.com/mekenthompson](https://github.com/mekenthompson))
+
+## One rule decides what ships
+
+<Aside type="tip" title="The verdict rule">
+A change ships only when it advances a vision outcome, satisfies its Job Spec,
+passes every principle, and crosses no invariant.
+</Aside>
+
+Agents build fast inside those gates. Humans own the gates.
+
+The rule is the bar, not the paperwork. Scale the gates to the stakes: a quick
+win ships on a tech lead's nod, a payments change runs every gate at full depth.
+One path for everything is no path at all.
+
+| | Quick Win | Lightweight | Full Spec |
+|---|---|---|---|
+| **Size** | ≤ half a day | ½ day-2 wks | > 2 wks |
+| **Process** | Flag tech lead/PM, ship | 1-page brief | Full RFC + RICE |
+| **Gates** | Outcome sanity check | Outcome UAT + 2-wk review | Full verdict, 2wk/30d/90d |
 
 ## The right context, for whoever's deciding
 
@@ -87,35 +139,19 @@ Humans read these to make the judgement calls. Agents read the same documents
 as executable guidance, with automation and skills layered on top to navigate
 the chain without losing the plot. One source of context, both audiences.
 
-## One rule decides what ships
+## Adopt it
 
-<Aside type="tip" title="The verdict rule">
-A change ships only when it advances a vision outcome, satisfies its Job Spec,
-passes every principle, and crosses no invariant.
-</Aside>
+There's no installer. You adopt ProductOS by writing these five things into
+your own repo.
 
-Agents build fast inside those gates. Humans own the gates.
+1. **Read the method**, [Agentic Delivery](/ProductOS/guides/agentic-delivery/): the four parts and the verdict rule.
+2. **Copy the shapes**: the templates for [anchors](/ProductOS/anchors/product-vision/), [product spec](/ProductOS/templates/product-spec/), and [Job Spec](/ProductOS/templates/job-spec/).
+3. **Write your anchors**: [vision](/ProductOS/anchors/product-vision/), [principles](/ProductOS/anchors/product-principles/), [invariants](/ProductOS/anchors/invariants/). The why, the built-well, the never-cross.
+4. **Write your product spec and first Job Spec**, using the [create-job-spec](/ProductOS/skills/create-job-spec/) skill to interview you and write it.
+5. **Point your agent at your AGENTS.md** so it reads the same documents as executable guidance.
 
-The rule is the bar, not the paperwork. Scale the gates to the stakes: a quick
-win ships on a tech lead's nod, a payments change runs every gate at full depth.
-One path for everything is no path at all.
-
-| | Quick Win | Lightweight | Full Spec |
-|---|---|---|---|
-| **Size** | ≤ half a day | ½ day–2 wks | > 2 wks |
-| **Process** | Flag tech lead/PM, ship | 1-page brief | Full RFC + RICE |
-| **Gates** | Outcome sanity check | Outcome UAT + 2-wk review | Full verdict, 2wk/30d/90d |
-
-## Start here
-
-<CardGrid>
-  <Card title="1. Understand the method" icon="open-book">
-    [Agentic Delivery](/ProductOS/guides/agentic-delivery/): the four parts and the verdict rule.
-  </Card>
-  <Card title="2. Set your anchors" icon="seti:config">
-    [Vision](/ProductOS/anchors/product-vision/), [principles](/ProductOS/anchors/product-principles/), [invariants](/ProductOS/anchors/invariants/). The why, the built-well, the never-cross.
-  </Card>
-  <Card title="3. Write your first Job Spec" icon="pencil">
-    The [template](/ProductOS/templates/job-spec/), plus a [skill](/ProductOS/skills/create-job-spec/) that interviews you and writes it.
-  </Card>
-</CardGrid>
+<LinkCard
+  title="The adopting guide"
+  href="/ProductOS/guides/adopting/"
+  description="The full walkthrough: read the method, copy the shapes, write your anchors and first Job Spec, wire up your agent."
+/>
