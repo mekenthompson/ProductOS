@@ -72,41 +72,6 @@ export default defineConfig({
           ],
         },
         {
-          label: 'The shapes',
-          items: [
-            {
-              label: 'Anchors',
-              collapsed: true,
-              items: [
-                { label: 'Anchors: Product Vision', link: '/anchors/product-vision/' },
-                { label: 'Anchors: Product Principles', link: '/anchors/product-principles/' },
-                { label: 'Anchors: Invariants', link: '/anchors/invariants/' },
-              ],
-            },
-            {
-              label: 'Templates',
-              collapsed: true,
-              items: [
-                { label: 'Product Spec', link: '/templates/product-spec/' },
-                { label: 'Job Spec', link: '/templates/job-spec/' },
-                { label: 'Job Links', link: '/templates/job-links/' },
-                { label: 'RFC', link: '/templates/rfc/' },
-                { label: 'Strategy', link: '/templates/strategy/' },
-                { label: 'Decision Record', link: '/templates/decision-record/' },
-              ],
-            },
-          ],
-        },
-        {
-          label: 'Adopt it',
-          items: [
-            { label: 'Adopting guide', link: '/guides/adopting/' },
-            { label: 'Skills', autogenerate: { directory: 'skills' } },
-            { label: 'Operating contract (AGENTS.md)', link: '/agents/' },
-          ],
-        },
-        { label: 'Examples', autogenerate: { directory: 'examples' } },
-        {
           label: 'PM Playbook',
           collapsed: false,
           items: [
@@ -144,6 +109,41 @@ export default defineConfig({
                 { label: 'Template: Post-Launch Review', link: '/pm-playbook/templates/post-launch-review/' },
               ],
             },
+          ],
+        },
+        {
+          label: 'The shapes',
+          items: [
+            {
+              label: 'Anchors',
+              collapsed: true,
+              items: [
+                { label: 'Anchors: Product Vision', link: '/anchors/product-vision/' },
+                { label: 'Anchors: Product Principles', link: '/anchors/product-principles/' },
+                { label: 'Anchors: Invariants', link: '/anchors/invariants/' },
+              ],
+            },
+            {
+              label: 'Templates',
+              collapsed: true,
+              items: [
+                { label: 'Product Spec', link: '/templates/product-spec/' },
+                { label: 'Job Spec', link: '/templates/job-spec/' },
+                { label: 'Job Links', link: '/templates/job-links/' },
+                { label: 'RFC', link: '/templates/rfc/' },
+                { label: 'Strategy', link: '/templates/strategy/' },
+                { label: 'Decision Record', link: '/templates/decision-record/' },
+              ],
+            },
+          ],
+        },
+        { label: 'Examples', autogenerate: { directory: 'examples' } },
+        {
+          label: 'Adopt it',
+          items: [
+            { label: 'Adopting guide', link: '/guides/adopting/' },
+            { label: 'Skills', autogenerate: { directory: 'skills' } },
+            { label: 'Operating contract (AGENTS.md)', link: '/agents/' },
           ],
         },
       ],
