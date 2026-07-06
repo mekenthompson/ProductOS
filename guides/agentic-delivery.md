@@ -211,3 +211,4 @@ The terse, executable version of this method, the verdict rule as a gate, the pe
 - [Invariants](../anchors/invariants.md) -- the third anchor; the kill-clause in the verdict rule
 - [Worked Example](./worked-example.md) -- one job carried through this exact loop, watch the verdict rule turn an agent back and then let it through
 - [Product Specs / RFC guide](./writing-an-rfc.md) -- how an RFC references a Job Spec and gets an adversarial review
+- [Product Analytics](./product-analytics.md) -- how a moved Signal becomes the evidence the verdict rule checks

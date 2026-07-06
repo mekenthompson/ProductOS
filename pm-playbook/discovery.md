@@ -107,3 +107,4 @@ Discovery replaces assumptions with evidence. Do it before you write an RFC.
 - **[Handling Product Feedback](./customer-feedback.md)**: How feedback enters the system
 - **[RFC guide](../guides/writing-an-rfc.md)**: Where discovery evidence lands
 - **[Delivery Standards](./delivery-standards.md)**: Where discovery fits in the delivery process
+- **[Product Analytics](./product-analytics.md)**: turning what-to-measure into instrumented Signals

@@ -43,6 +43,16 @@ Where did you get stuck, confused, or frustrated?
 
 ---
 
+## Signal Health Check
+
+Step back from the walkthrough and read the product at Signal altitude. Once a month, check that each named [Signal](../../guides/product-analytics.md) (see [The Anchor Signal](../../guides/headline-metric.md) for what the Signal is) is still telling the truth about the outcome.
+
+- [ ] **Holding and trending?** For each named Signal, is it at or moving toward target, or drifting away?
+- [ ] **Guardrails intact?** Is any guardrail metric breaching, or creeping toward its limit?
+- [ ] **One decision from the trend.** What single decision does this month's trend point to (double down, dig in, or leave it)?
+
+---
+
 ## Standout Features
 
 What do they do well? What surprised you? What felt smooth, clear, or delightful?
@@ -96,4 +106,5 @@ Top 3 things to fix or improve.
 ## Related
 
 - **PM Handbook:** [Monthly Rituals](../pm-handbook.md#monthly-rituals)
+- **Product Analytics:** [the measurement discipline](../product-analytics.md) behind the monthly Signal read
 - **Projects:** [Link to related projects]

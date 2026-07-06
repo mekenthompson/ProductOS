@@ -134,7 +134,7 @@ The product is one thing. Our three product principles are engineering standards
 
 - The RFC is the single living document: approved at the end of Shape, updated through delivery as decisions land
 - [Product principles](../anchors/product-principles.md) applied as design and engineering standards, not post-hoc review criteria
-- Instrumentation wired up before preview: events defined, dashboards built, guardrail metrics identified
+- Instrumentation wired up before preview: [events defined, dashboards built](../guides/product-analytics.md), guardrail metrics identified
 
 ### What You Do
 
@@ -462,5 +462,6 @@ Gate requirements scale with the stakes. Small / quick-win work doesn't need Hea
 - [Handling Product Feedback](./customer-feedback.md): Processing and routing customer feedback
 - [Decision Framework](./decision-framework.md): Signal → Standard → Speed
 - [Product Playbook](./product-playbook.md): The 6-phase operating model
+- [Product Analytics](./product-analytics.md): the measurement discipline behind these gates
 
 For tool-specific guidance (how to set up custom statuses, automation rules, etc.) see your tracker's docs.

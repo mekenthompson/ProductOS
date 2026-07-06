@@ -149,6 +149,7 @@ The PM, informed by the Tech Lead's sizing. If there's disagreement, the PM deci
 - [Product Spec](../templates/product-spec.md): Where the outcomes and their Signals live, the success measures a Vision Check reads against
 - [RFC Guide](../guides/writing-an-rfc.md): Full Spec path guidance (writing a ship-coupled RFC)
 - [RICE Assessment](./rice.md): Scoring for Full Spec path
+- [Product Analytics](./product-analytics.md): expressing impact in Signal terms
 
 ---
 

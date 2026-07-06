@@ -173,7 +173,7 @@ Product principles aren't aspirations for some future state. They're engineering
 
 ### Assets
 - Product principles as PR/design review checklist
-- Instrumentation requirements in [RFC Template](../templates/rfc.md)
+- Instrumentation requirements in [RFC Template](../templates/rfc.md); the measurement discipline is [Product Analytics](./product-analytics.md)
 - Success metrics defined before build starts
 - [Delivery Standards](./delivery-standards.md): Operational workflow with gate checklists
 

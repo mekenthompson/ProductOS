@@ -37,6 +37,7 @@ Three jobs, whether you have one Signal or four:
 | [RFC Template](../templates/rfc.md) | The Guardrails section (Quality / principle guardrails) names which outcome the RFC advances and which Signal it moves. |
 | [Job Spec](../templates/job-spec.md) | Each durable per-job outcome traces to one named vision outcome and the Signal it advances. |
 | [Agentic Delivery](./agentic-delivery.md) | The outcomes and their Signals feed the verdict rule, the all-must-pass gate every change clears. |
+| [Product Analytics](./product-analytics.md) | Instrumenting the Signal so its movement is readable, and reading it on a cadence. |
 | Personas | Each persona's vision-lens question (see the [vision's persona section](../anchors/product-vision.md)) is a persona-specific reading of a Signal. |
 | Roadmap | Themes are organised around the levers that move each Signal. |
 
@@ -168,3 +169,4 @@ None of these are "the right answer", they're plausible *shapes* for a Signal in
 - **[Product Principles](../anchors/product-principles.md)** -- Principles keep each feature moving a named Signal.
 - **[RFC Template](../templates/rfc.md)** -- the Guardrails section (Quality / principle guardrails) names the outcome and Signal an RFC advances.
 - **[Agentic Delivery](./agentic-delivery.md)** -- How the outcomes and their Signals feed the verdict rule.
+- **[Product Analytics](./product-analytics.md)** -- how to instrument and read the Signal you just picked.

@@ -26,8 +26,9 @@ investment, approval depth, and gate rigour* the release gets.
 - **Audience:** the dev team only (internal override).
 - **Flag:** OFF.
 - **Purpose:** build and test in a production environment without exposing
-  anything. Wire up instrumentation here (events, dashboards, guardrail
-  metrics) *before* anyone outside the team sees it.
+  anything. Wire up [instrumentation](../guides/product-analytics.md) here
+  (events, dashboards, guardrail metrics) *before* anyone outside the team
+  sees it.
 - **Exit:** the outcome UAT passes (the user's job is validated end-to-end,
   job × surface, independent of unit tests) and production-readiness is met
   to the stakes. See [Agentic Delivery](../guides/agentic-delivery.md).
@@ -112,3 +113,5 @@ changes that are reversible within the phase.
   run after GA.
 - [Agentic Delivery](../guides/agentic-delivery.md): the outcome-UAT and
   production-readiness gates that guard the move past Private Preview.
+- [Product Analytics](./product-analytics.md): the measurement discipline
+  behind wiring up instrumentation before you widen the audience.

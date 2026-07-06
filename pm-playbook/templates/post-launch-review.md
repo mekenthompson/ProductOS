@@ -39,6 +39,8 @@ _Pull metrics from the RFC Success section. Fill in actuals._
 
 **Did this move a named outcome and its Signal from the [product vision](../../anchors/product-vision.md)?** (Where one number captures the whole product, that Signal is the single headline metric.)
 
+> How the reading is built: see the [Product Analytics guide](../../guides/product-analytics.md).
+
 - [ ] **Direct movement?** [Evidence: the outcome's Signal itself shifted, in the right direction, by a measurable amount]
 - [ ] **Leading indicator?** [Evidence: a known leading indicator of the Signal moved]
 - [ ] **Persona-specific check?** [Each affected persona's vision-lens question improved?]
