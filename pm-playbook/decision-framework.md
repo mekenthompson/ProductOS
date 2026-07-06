@@ -72,7 +72,7 @@ Use this for work between half a day and 2 weeks. One page. No fluff.
 ```
 ## [Title]
 
-**Persona:** Creator / Consumer / Sponsor
+**Persona:** User / Admin / Sponsor
 **Size:** [estimated days]
 **Approved by:** [PM name] + [Tech Lead name]
 
@@ -109,8 +109,8 @@ How does this move a named outcome (and its signal) from the [product vision](..
 
 ### Lightweight: Template gallery for a common setup
 
-**Signal:** Creators spend 2–3 hours setting up patterns every team needs. 5 customer interviews confirm this. Strategy lever: Acquisition / faster time-to-first-value.
-**Standard:** Batteries included: templates should give Creators a running start.
+**Signal:** Admins spend 2–3 hours setting up patterns every team needs. 5 customer interviews confirm this. Strategy lever: Acquisition / faster time-to-first-value.
+**Standard:** Batteries included: templates should give admins a running start.
 **Speed:** ~1 week of engineering. New UI surface with 5–10 curated templates.
 **Path:** Lightweight brief. PM + Tech Lead approve. Ship behind flag. 2-week check-in.
 

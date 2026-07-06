@@ -132,8 +132,8 @@ For each finalist, write one sentence describing how it relates to DORA, SPACE, 
 - Stop adding configuration knobs by default.
 
 **Persona lenses:**
-- Creators: time from "we need this" to "people are using it."
-- Consumers: time from "something happened" to "I know what to do."
+- Admins: time from "we need this" to "people are using it."
+- Users: time from "something happened" to "I know what to do."
 - Sponsors: time from "how is the team doing?" to an answer they trust.
 
 This same pattern, one Signal, two levers, three persona lenses, adapts to most outcomes. The label changes; the structure rarely does.

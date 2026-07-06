@@ -7,11 +7,31 @@ icon: "👤"
 
 # PM Handbook
 
-PMs own a simple question: **are we spending engineering time on the highest-leverage work?**
+Product is two things: domain expertise and product discipline. Domain expertise is being an expert in your customers' jobs to be done. Product discipline is the mechanics of shipping the right stuff, properly. The two are not equal: domain expertise matters more, and it matters more every year, because agents now do the mechanics cheaply.
+
+PMs own a simple question: **are we spending engineering time on the highest-leverage work?** Answering it well takes both legs: the expertise to know what is highest-leverage, and the discipline to prove it and ship it.
 
 We validate problems through our [personas](./personas.md), build the case for the right bets, and measure whether shipped work moved a named [outcome and its Signal](../anchors/product-vision.md) (where one number captures the whole product, that Signal is the single headline metric). The outcome and its Signal are the contract. Everything else is operational detail.
 
 Companion to the [Product Playbook](./product-playbook.md) (how we build product as a company). This one is how PMs operate day to day.
+
+---
+
+## What product is: expertise and discipline
+
+Two legs, and they are not equal.
+
+**Domain expertise** is being an expert in your customers' jobs to be done. You understand them intimately. You spend time with customers. You know every alternative they could hire instead: the competitor, the manual workaround, the spreadsheet they fall back to. You know what works and what doesn't, what is good and what is bad. This is how you build taste, the earned sense of what is worth building.
+
+**Product discipline** is the mechanics of shipping the right stuff, properly: RFCs backed by evidence, RICE, the verdict rule, measuring what shipped against what you predicted. Most of this handbook is discipline, because discipline is teachable in a way taste is not.
+
+Domain expertise is the more valuable leg, and agents are the reason. When an agent can draft the spec, write the code, and run the tests, the mechanics stop being the scarce thing. What stays scarce is knowing what is worth building at all. Acceleration does not replace expertise, it raises its value.
+
+### Taste, and where it lives
+
+Taste is what domain expertise buys you. In ProductOS you encode that taste into the [anchors](../anchors/product-vision.md) and the [specs](../templates/job-spec.md), so your agents inherit your judgement and build with it instead of generic defaults. That is the bridge from the craft in this handbook to the [documents the agents read](../guides/agentic-delivery.md).
+
+But taste is complex and nuanced, and it never fully transfers to a document. So you stay accountable for both the inputs and the outputs: what you ask an agent to build, and what it hands back. The test of real expertise is not a feeling. You can say why something is good or bad. If you cannot articulate why, you don't have taste yet, you have an opinion.
 
 ---
 
@@ -158,23 +178,23 @@ We use AI for **augmentation, not automation**. AI tools make you more effective
 
 **"If you don't use your own product, you don't understand your own product."**
 
-All PMs complete all three rituals monthly. Non-negotiable. ~6–8 hours/month total.
+The rituals are how you build and keep domain expertise: time in your product, time in the alternatives, seeing what is good and bad first-hand. All PMs complete all three monthly. Non-negotiable. ~6-8 hours/month total.
 
 ### Dogfooding
 
-Experience the product as each persona does. Map each persona's vision-lens question to a real activity:
+Experience the product as each persona does. The lenses below are generic starters: replace them with your product's real [personas](./personas.md). Map each persona's vision-lens question to a real activity:
 
 | Persona Lens | Activity |
 |------|----------|
-| **Consumer** | Use the core day-to-day flow as a Consumer would. Note where the signal is unclear or slow. |
-| **Creator** | Set up the product from scratch as a Creator would. Note where setup friction is highest. |
-| **Sponsor** | Review the dashboards available to Sponsors. Can you answer "are we getting better?" without help? |
+| **User** | Use the core day-to-day flow as a user would. Note where the signal is unclear or slow. |
+| **Admin** | Set up the product from scratch as an admin would. Note where setup friction is highest. |
+| **Sponsor** | Review the dashboards available to sponsors. Can you answer "are we getting better?" without help? |
 
 Maintain an example application/account. Raise ≥1 ticket tagged `ritual:dogfood`.
 
 ### Onboarding Review
 
-Experience onboarding as a new **Creator** would. Go through end-to-end onboarding monthly. Record a short walkthrough (Loom/Tella/equivalent, ≤10 mins). Raise ≥1 ticket tagged `ritual:onboarding`. **You must always find something to improve.**
+Experience onboarding as a new **Admin** would. Go through end-to-end onboarding monthly. Record a short walkthrough (Loom/Tella/equivalent, ≤10 mins). Raise ≥1 ticket tagged `ritual:onboarding`. **You must always find something to improve.**
 
 ### Competitor Onboarding Review
 

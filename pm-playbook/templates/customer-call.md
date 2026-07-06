@@ -17,7 +17,7 @@ icon: "📞"
 - **Role:** [Title/role]
 - **Company:** [Company name]
 - **Segment:** [Enterprise / Startup / etc.]
-- **Persona:** Creator / Consumer / Sponsor. _Which [persona](../../anchors/product-vision.md) does this contact map to?_
+- **Persona:** User / Admin / Sponsor. _Which [persona](../../anchors/product-vision.md) does this contact map to?_
 
 ### What We Were Trying to Learn
 

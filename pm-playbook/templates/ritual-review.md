@@ -10,7 +10,7 @@ icon: "📋"
 **Reviewer:** [PM name]
 **Review type:** Dogfooding (your product) / Competitor Analysis
 **Product area:** [e.g., onboarding, core flow, billing]
-**Persona lens:** Creator / Consumer / Sponsor (for dogfooding)
+**Persona lens:** User / Admin / Sponsor (for dogfooding)
 **Rotation:** [Your competitor list; rotate one per month] (for competitor reviews)
 **Recording:** [Link to a short walkthrough, ≤10 mins, Loom / Tella / equivalent] (for dogfooding)
 

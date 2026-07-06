@@ -18,7 +18,7 @@ icon: "📋"
 
 [1-2 sentences. What went live? Link to changelog, announcement, or PR.]
 
-**Persona(s) served:** Creator / Consumer / Sponsor
+**Persona(s) served:** User / Admin / Sponsor
 
 ---
 

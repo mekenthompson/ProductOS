@@ -98,7 +98,7 @@ Every product decision traces back to evidence. The discipline is picking the hi
 ### Behaviour
 
 - Validate the problem before committing engineering time
-- Tag the [persona](../anchors/product-vision.md): Creator, Consumer, or Sponsor
+- Tag the [persona](../anchors/product-vision.md): User, Admin, or Sponsor
 - Apply [Signal → Standard → Speed](./decision-framework.md) to pick the right path (Quick Win / Lightweight / Full Spec)
 - Vision check: does this move a named [outcome and its Signal](../anchors/product-vision.md)? (Where one number captures the whole product, that Signal is the single headline metric.)
 

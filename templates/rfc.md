@@ -51,7 +51,7 @@ Lead with the customer's job. Not our feature. Not our roadmap. The job they're 
 >
 > If this job has a standing [Job Spec](./job-spec.md), link it here instead of restating it. The Job Spec is the durable home of the job: it outlives this RFC; this RFC is one ship-coupled effort against it.
 
-**Primary persona:** `[Creator / Consumer / Sponsor, or your persona name]`
+**Primary persona:** `[User / Admin / Sponsor, or your persona name]`
 **Secondary persona(s) affected (if any):** `[…]`
 
 See [JTBD Guide](../guides/jtbd-guide.md) for framing the job and the forces around it.
