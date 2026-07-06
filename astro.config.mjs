@@ -66,6 +66,7 @@ export default defineConfig({
           items: [
             { label: 'Jobs to be Done', link: '/guides/jtbd-guide/' },
             { label: 'The Anchor Signal', link: '/guides/headline-metric/' },
+            { label: 'Product Analytics', link: '/guides/product-analytics/' },
             { label: 'Org as an API', link: '/guides/org-as-an-api/' },
             { label: 'Strategy as Code', link: '/guides/strategy-as-code/' },
             { label: 'Writing an RFC', link: '/guides/writing-an-rfc/' },
@@ -120,6 +121,7 @@ export default defineConfig({
                 { label: 'Delivery Standards', link: '/pm-playbook/delivery-standards/' },
                 { label: 'Release Phases', link: '/pm-playbook/release-phases/' },
                 { label: 'Discovery', link: '/pm-playbook/discovery/' },
+                { label: 'Product Analytics', link: '/pm-playbook/product-analytics/' },
                 { label: 'Handling Product Feedback', link: '/pm-playbook/customer-feedback/' },
                 { label: 'RICE', link: '/pm-playbook/rice/' },
                 { label: 'Personas', link: '/pm-playbook/personas/' },

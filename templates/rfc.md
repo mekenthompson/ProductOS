@@ -98,7 +98,7 @@ What the user hires *today* to get this job done. List the alternatives (competi
 
 What success looks like **from the user's perspective**. Not "we shipped on time": what the user is now able to do, feel, or decide.
 
-- **Behavioural signal** -- User now does X without help / Without errors / Within Y seconds. Observable in product analytics.
+- **Behavioural signal** -- User now does X without help / Without errors / Within Y seconds. Observable in [product analytics](../guides/product-analytics.md).
 - **Felt experience** -- When asked, the user describes the experience as `[adjective]`. Observable in NPS verbatims, interviews, or support ticket sentiment.
 - **Headline-metric movement** -- Specifically, this should move `[headline metric]` by `[amount]` for `[persona]`. Measured at `[interval]`.
 - **Leading indicators (≤ 2 weeks post-launch)** -- `[signal 1]`, `[signal 2]`; early reads on whether success is on track.

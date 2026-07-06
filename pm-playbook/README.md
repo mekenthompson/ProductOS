@@ -38,6 +38,7 @@ This is the judgement layer: how a person runs product day to day.
 | [delivery-standards.md](./delivery-standards.md) | Operational workflow with gate checklists. |
 | [release-phases.md](./release-phases.md) | Private Preview → Public Preview → GA. |
 | [discovery.md](./discovery.md) | Validating problems before writing an RFC. |
+| [product-analytics.md](./product-analytics.md) | The measurement discipline: what a PM owes, and how a Signal gets stood up and read. |
 | [customer-feedback.md](./customer-feedback.md) | Handling and triaging product feedback. |
 | [rice.md](./rice.md) | RICE scoring framework. |
 | [personas.md](./personas.md) | How to write personas that are load-bearing: who hires the job, what good and bad look like. |

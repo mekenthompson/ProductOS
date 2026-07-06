@@ -158,7 +158,7 @@ If you have fewer than two struggling moments with real evidence, you need more 
 ### User Success Modes
 
 Three flavours of success, in order of weight:
-- **Behavioural** -- observable in product analytics.
+- **Behavioural** -- observable in [product analytics](./product-analytics.md).
 - **Felt** -- observable in qualitative signal (NPS, interviews, support sentiment).
 - **Outcome Signal** -- the specific movement on the named vision outcome's **Signal** (the outcome-level named metric) that this RFC is responsible for.
 

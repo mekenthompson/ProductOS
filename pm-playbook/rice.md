@@ -191,7 +191,7 @@ Every project must include a RICE Explanation that:
 
 > Impact 2 (meaningful): Improves a frequently-used page's performance at scale. Affected accounts save 5–10 minutes per user per day during triage. Two accounts are evaluating alternatives partly because of this. Lever: Retention.
 >
-> Confidence 3: Customer interviews + support ticket volume. Would be 4 with usage analytics on page load times.
+> Confidence 3: Customer interviews + support ticket volume. Would be 4 with usage analytics (see [Product Analytics](./product-analytics.md)) on page load times.
 
 ---
 
