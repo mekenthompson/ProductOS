@@ -38,7 +38,7 @@ invariants: [<named lines this job must never cross, by construction>]
 >
 > So it drives four things downstream: the delivery verdict (human judging a
 > change, agent deciding mid-task), the [**product-analytics**](../guides/product-analytics.md) strategy (what
-> to measure and detect), the **positioning and sales** story (the job, the
+> to measure and detect), the [**positioning and sales**](../guides/positioning-and-messaging.md) story (the job, the
 > alternative you beat, the outcome you promise), and the validation call on
 > whether to build at all.
 

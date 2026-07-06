@@ -44,7 +44,8 @@ anchors: [product-vision.md, product-principles.md, invariants.md]
 
 Every job the product serves ladders up to exactly one of these. A change
 that advances none of them is out of scope. Each outcome carries one
-**Signal**: a measurable driver of the North Star.
+**Signal**: a measurable driver of the North Star. These outcomes also feed
+the messaging pillars: see [Positioning and Messaging](../guides/positioning-and-messaging.md).
 
 > [!CAUTION]
 >
