@@ -56,31 +56,56 @@ export default defineConfig({
         {
           label: 'Start here',
           items: [
-            { label: 'ProductOS', link: '/' },
-            { label: 'Adopt ProductOS', link: '/guides/adopting/' },
+            { label: 'What is ProductOS', link: '/guides/what-is-productos/' },
             { label: 'The method: Agentic Delivery', link: '/guides/agentic-delivery/' },
             { label: 'Worked example', link: '/guides/worked-example/' },
+          ],
+        },
+        {
+          label: 'Go deeper',
+          items: [
+            { label: 'Jobs to be Done', link: '/guides/jtbd-guide/' },
+            { label: 'The Anchor Signal', link: '/guides/headline-metric/' },
+            { label: 'Org as an API', link: '/guides/org-as-an-api/' },
+            { label: 'Strategy as Code', link: '/guides/strategy-as-code/' },
+            { label: 'Writing an RFC', link: '/guides/writing-an-rfc/' },
+          ],
+        },
+        {
+          label: 'The shapes',
+          items: [
+            {
+              label: 'Anchors',
+              collapsed: true,
+              items: [
+                { label: 'Anchors: Product Vision', link: '/anchors/product-vision/' },
+                { label: 'Anchors: Product Principles', link: '/anchors/product-principles/' },
+                { label: 'Anchors: Invariants', link: '/anchors/invariants/' },
+              ],
+            },
+            {
+              label: 'Templates',
+              collapsed: true,
+              items: [
+                { label: 'Product Spec', link: '/templates/product-spec/' },
+                { label: 'Job Spec', link: '/templates/job-spec/' },
+                { label: 'Job Links', link: '/templates/job-links/' },
+                { label: 'RFC', link: '/templates/rfc/' },
+                { label: 'Strategy', link: '/templates/strategy/' },
+                { label: 'Decision Record', link: '/templates/decision-record/' },
+              ],
+            },
+          ],
+        },
+        {
+          label: 'Adopt it',
+          items: [
+            { label: 'Adopting guide', link: '/guides/adopting/' },
+            { label: 'Skills', autogenerate: { directory: 'skills' } },
             { label: 'Operating contract (AGENTS.md)', link: '/agents/' },
           ],
         },
-        {
-          label: 'Method',
-          items: [
-            { label: 'JTBD Guide', link: '/guides/jtbd-guide/' },
-            { label: 'The Anchor Signal', link: '/guides/headline-metric/' },
-            { label: 'Writing an RFC', link: '/guides/writing-an-rfc/' },
-            { label: 'Org as an API', link: '/guides/org-as-an-api/' },
-            { label: 'Strategy as Code', link: '/guides/strategy-as-code/' },
-          ],
-        },
-        {
-          label: 'Anchors',
-          items: [
-            { label: 'Product Vision', link: '/anchors/product-vision/' },
-            { label: 'Product Principles', link: '/anchors/product-principles/' },
-            { label: 'Invariants', link: '/anchors/invariants/' },
-          ],
-        },
+        { label: 'Examples', autogenerate: { directory: 'examples' } },
         {
           label: 'PM Playbook',
           collapsed: false,
@@ -121,19 +146,6 @@ export default defineConfig({
             },
           ],
         },
-        {
-          label: 'Templates',
-          items: [
-            { label: 'Product Spec', link: '/templates/product-spec/' },
-            { label: 'Job Spec', link: '/templates/job-spec/' },
-            { label: 'Job Links', link: '/templates/job-links/' },
-            { label: 'RFC', link: '/templates/rfc/' },
-            { label: 'Strategy', link: '/templates/strategy/' },
-            { label: 'Decision Record', link: '/templates/decision-record/' },
-          ],
-        },
-        { label: 'Examples', autogenerate: { directory: 'examples' } },
-        { label: 'Skills', autogenerate: { directory: 'skills' } },
       ],
     }),
   ],

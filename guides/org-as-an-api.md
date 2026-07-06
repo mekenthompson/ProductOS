@@ -5,6 +5,8 @@ last_reviewed: 2026-07-06
 icon: "🔌"
 ---
 
+![The Org as an API: a wide dark schematic joining feedback, support, CRM, and finance systems around a single shared job.](/ProductOS/img/hero-org-as-an-api.png)
+
 # The Org as an API
 
 Your roadmap is hiding in the systems that don't talk to each other. Feedback in one tool, support in another, the pipeline in the CRM, the money in finance. Each owns a corner of the truth, and for years the only integration was a person carrying numbers between tabs.
