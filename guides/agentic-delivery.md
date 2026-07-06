@@ -15,6 +15,8 @@ It is written for the whole triad: **product, design, and engineering**. Enginee
 >
 > Read this guide alongside [Product Vision](../anchors/product-vision.md), [Product Principles](../anchors/product-principles.md), and your [Invariants](../anchors/invariants.md) (the three anchors), and the [JTBD Guide](./jtbd-guide.md) (the job-story sentence and the Job Specs that carry it). The terse, agent-executable version of everything below lives in **[AGENTS.md](../AGENTS.md)** under "Agentic Delivery, operating contract."
 
+![Agentic Delivery: the four disciplines (anchors, Job Specs, design loops, outcome UAT) converging on the verdict rule, which ships the change or sends it back for redesign.](/ProductOS/img/hero-agentic-delivery.png)
+
 ---
 
 ## The core idea
@@ -123,6 +125,8 @@ runs every gate at full depth. The gates never disappear, their *depth* tracks
 the stakes. This is what stops the method reading as a speed tax. An internal
 decision-framework layer tiers the paths (Quick Win / Lightweight / Full Spec)
 by size and stakes.
+
+![One rule, gates that scale: the verdict rule runs on every path, but its depth tracks the stakes across Quick Win, Lightweight, and Full Spec.](/ProductOS/img/verdict-gates-scale.png)
 
 **Minimum gate depth.** Lightening a tier lightens *evidence depth* (a Tech
 Lead's nod instead of a load test), never the clause count. The invariant clause
