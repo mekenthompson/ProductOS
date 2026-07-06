@@ -72,6 +72,33 @@ export default defineConfig({
           ],
         },
         {
+          label: 'The shapes',
+          items: [
+            {
+              label: 'Anchors',
+              collapsed: true,
+              items: [
+                { label: 'Anchors: Product Vision', link: '/anchors/product-vision/' },
+                { label: 'Anchors: Product Principles', link: '/anchors/product-principles/' },
+                { label: 'Anchors: Invariants', link: '/anchors/invariants/' },
+              ],
+            },
+            {
+              label: 'Templates',
+              collapsed: true,
+              items: [
+                { label: 'Product Spec', link: '/templates/product-spec/' },
+                { label: 'Job Spec', link: '/templates/job-spec/' },
+                { label: 'Job Links', link: '/templates/job-links/' },
+                { label: 'RFC', link: '/templates/rfc/' },
+                { label: 'Strategy', link: '/templates/strategy/' },
+                { label: 'Decision Record', link: '/templates/decision-record/' },
+              ],
+            },
+          ],
+        },
+        { label: 'Examples', autogenerate: { directory: 'examples' } },
+        {
           label: 'PM Playbook',
           collapsed: false,
           items: [
@@ -111,33 +138,6 @@ export default defineConfig({
             },
           ],
         },
-        {
-          label: 'The shapes',
-          items: [
-            {
-              label: 'Anchors',
-              collapsed: true,
-              items: [
-                { label: 'Anchors: Product Vision', link: '/anchors/product-vision/' },
-                { label: 'Anchors: Product Principles', link: '/anchors/product-principles/' },
-                { label: 'Anchors: Invariants', link: '/anchors/invariants/' },
-              ],
-            },
-            {
-              label: 'Templates',
-              collapsed: true,
-              items: [
-                { label: 'Product Spec', link: '/templates/product-spec/' },
-                { label: 'Job Spec', link: '/templates/job-spec/' },
-                { label: 'Job Links', link: '/templates/job-links/' },
-                { label: 'RFC', link: '/templates/rfc/' },
-                { label: 'Strategy', link: '/templates/strategy/' },
-                { label: 'Decision Record', link: '/templates/decision-record/' },
-              ],
-            },
-          ],
-        },
-        { label: 'Examples', autogenerate: { directory: 'examples' } },
         {
           label: 'Adopt it',
           items: [
