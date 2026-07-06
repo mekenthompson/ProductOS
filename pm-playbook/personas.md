@@ -84,3 +84,4 @@ One persona shape isn't a person at all. For API-shaped products, the one hiring
 - **[Job Spec](../templates/job-spec.md)**: the persona is the "who is hiring this" line; the Job Spec is where a sharp persona pays off.
 - **[RFC Template](../templates/rfc.md)**: every RFC names its primary persona.
 - **[JTBD Guide](../guides/jtbd-guide.md)**: Jobs to be Done, the motivation framing personas hang on. See the [four forces](../guides/jtbd-guide.md#the-four-forces-decide-whether-the-job-is-worth-serving) (push, pull, anxiety, habit) for what actually moves a persona to switch, and the [machine/API-consumer shape](../guides/jtbd-guide.md#the-one-hiring-the-job-is-not-always-a-person) for when the persona is a system.
+- **[Positioning and Messaging](../guides/positioning-and-messaging.md)**: the voice of customer lifts straight from the persona's own words.

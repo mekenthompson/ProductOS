@@ -119,7 +119,7 @@ Spec's *Today's alternatives*:
 
 Your solution has to beat whichever of these the customer actually uses, including
 the switching cost of leaving it. This is also where product marketing starts: you
-position against the alternative, and sales objection-handling ("why not just keep
+[position against the alternative](./positioning-and-messaging.md), and sales objection-handling ("why not just keep
 using the spreadsheet?") comes straight off it.
 
 ## From the forces to the bet, and to the abandon signal
@@ -205,3 +205,4 @@ interpretation. Useful prompts:
 - [Job Spec example](../examples/tempo/job-spec.md) -- a job carried from story to full spec
 - [Writing an RFC](./writing-an-rfc.md) -- the ship-coupled delivery doc that opens with the job
 - [Agentic Delivery](./agentic-delivery.md) -- how the standing Job Spec anchors agent-delivered work
+- [Positioning and Messaging](./positioning-and-messaging.md) -- how the job story and the alternative you beat become the copy a buyer hears.

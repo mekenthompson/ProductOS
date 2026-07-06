@@ -163,3 +163,4 @@ Acme is the system of record for `[domain]`, where every `[event]` produces a tr
 - **[Invariants](./invariants.md)** -- The lines you won't cross by construction (the third anchor); the vision names them, this doc owns them.
 - **[Job Spec Template](../templates/job-spec.md)** -- Where each vision outcome becomes a durable, UAT-verifiable job.
 - **[Agentic Delivery](../guides/agentic-delivery.md)** -- How the anchors fuse into the verdict rule every change must clear.
+- **[Positioning and Messaging](../guides/positioning-and-messaging.md)** -- how the vision's outcomes and personas become the copy a buyer hears.

@@ -115,3 +115,5 @@ changes that are reversible within the phase.
   production-readiness gates that guard the move past Private Preview.
 - [Product Analytics](./product-analytics.md): the measurement discipline
   behind wiring up instrumentation before you widen the audience.
+- [Product Marketing](./product-marketing.md): the messaging that must be
+  current before GA.

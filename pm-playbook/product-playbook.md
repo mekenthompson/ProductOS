@@ -229,7 +229,7 @@ A shipped feature that customers can't find, don't understand, or can't adopt on
 
 ### Behaviour
 - **Self-onboarding flows (PLG):** Can each [persona](./personas.md) discover and adopt new capabilities without talking to anyone? If any persona can't self-serve, that's a product gap, not a sales gap.
-- **Sales enablement:** Positioning, demos, and competitive differentiation materials ship alongside (or shortly after) the feature itself. Sales shouldn't reverse-engineer value propositions from changelogs.
+- **Sales enablement:** [Positioning](./product-marketing.md), demos, and competitive differentiation materials ship alongside (or shortly after) the feature itself. Sales shouldn't reverse-engineer value propositions from changelogs.
 - **Structured PoC/PoV process:** Enterprise evaluation follows a repeatable playbook: scoped, time-boxed, with clear success criteria. Not ad-hoc, not different every time.
 - **Adoption tracking:** Discovery → trial → purchase (or activation), tracked end to end. Where in the funnel are we losing people?
 - **Feedback to Learn:** Adoption data, deal win/loss reasons, and PoC outcomes feed directly back into the evidence base for future decisions.
@@ -309,3 +309,4 @@ Everything below is a reference asset produced by this framework. Read them when
 | Deliver with an agentic workforce | [Agentic Delivery](../guides/agentic-delivery.md) |
 | Understand your role (PM) | [PM Handbook](./pm-handbook.md) |
 | Understand how the triad works | [Working Together](./working-together.md) |
+| Position and message a product | [Product Marketing](./product-marketing.md) + [Positioning and Messaging](../guides/positioning-and-messaging.md) |

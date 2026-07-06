@@ -108,3 +108,4 @@ Discovery replaces assumptions with evidence. Do it before you write an RFC.
 - **[RFC guide](../guides/writing-an-rfc.md)**: Where discovery evidence lands
 - **[Delivery Standards](./delivery-standards.md)**: Where discovery fits in the delivery process
 - **[Product Analytics](./product-analytics.md)**: turning what-to-measure into instrumented Signals
+- **[Product Marketing](./product-marketing.md)**: where the personas and job stories become customer-facing copy

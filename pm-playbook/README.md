@@ -42,6 +42,7 @@ This is the judgement layer: how a person runs product day to day.
 | [customer-feedback.md](./customer-feedback.md) | Handling and triaging product feedback. |
 | [rice.md](./rice.md) | RICE scoring framework. |
 | [personas.md](./personas.md) | How to write personas that are load-bearing: who hires the job, what good and bad look like. |
+| [product-marketing.md](./product-marketing.md) | Positioning and messaging as a PM/PMM accountability: who owns the copy kit and when it is refreshed. |
 | [The Anchor Signal](../guides/headline-metric.md) | Picking the signal that anchors a named outcome (and when it collapses to a single headline metric). |
 | [tools-we-use.md](./tools-we-use.md) | Reference toolchain. |
 
