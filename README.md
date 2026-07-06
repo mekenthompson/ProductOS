@@ -49,8 +49,8 @@ This is reference-only: there's no installer, no sync, nothing to run. You copy 
 1. Read the method ([`guides/agentic-delivery.md`](./guides/agentic-delivery.md)) and the [worked example](./guides/worked-example.md) of one job running the loop.
 2. Copy the shapes: `templates/` and the [`AGENTS.md`](./AGENTS.md) contract pattern.
 3. Write your three anchors: [vision](./anchors/product-vision.md), [principles](./anchors/product-principles.md), [invariants](./anchors/invariants.md).
-4. Write your product spec and first Job Spec, using the [`create-job-spec`](./skills/create-job-spec/SKILL.md) skill to interview you through it.
-5. Point your agent at your `AGENTS.md` and run the loop.
+4. Write your product spec and first Job Spec, using the [`create-product-spec`](./skills/create-product-spec/SKILL.md) and [`create-job-spec`](./skills/create-job-spec/SKILL.md) skills to interview you through them.
+5. Point your agent at your `AGENTS.md` and run the loop: draft RFCs with [`create-rfc`](./skills/create-rfc/SKILL.md), gate every document through [`review-doc`](./skills/review-doc/SKILL.md), and guard ratified specs with [`amend-durable-doc`](./skills/amend-durable-doc/SKILL.md).
 
 ---
 
@@ -77,7 +77,7 @@ Full detail on picking a path: [Decision Framework](./pm-playbook/decision-frame
 | **`guides/`** | The OS method: `agentic-delivery` (the verdict rule + four parts), `adopting`, `worked-example`, `strategy-as-code`, `jtbd-guide`, `org-as-an-api`, `writing-an-rfc`, `headline-metric`. |
 | **`templates/`** | The blank shapes: `strategy.md`, `product-spec.md`, `job-spec.md`, `job-links.md`, `rfc.md`, `decision-record.md`. |
 | **`examples/`** | Worked, filled examples: `tempo/` (Tempo, a fictional team-scheduling product, one worked set). |
-| **`skills/`** | Agent-executable skills: `create-job-spec`, `feedback-to-jobs`, `uat-ux-debug`. |
+| **`skills/`** | Agent-executable skills. Creation (interview to alignment, never draft from assumptions): `create-strategy`, `create-product-spec`, `create-job-spec`, `create-rfc`. Gates: `review-doc` (the fresh-process document reviewer), `amend-durable-doc` (the drift guard on ratified docs). Plus `feedback-to-jobs` (demand intake) and `uat-ux-debug` (outcome debugging). |
 | **`AGENTS.md`** | The terse operating contract: read this to *execute* the method. |
 | **`pm-playbook/`** | Separate human-craft layer: the six-phase PM loop, discovery, RICE, personas. It references the OS; the OS never references it. |
 | **`astro.config.mjs`, `src/`, `public/`** | Site plumbing. The Starlight site builds straight from the same markdown files above, this is the machinery, not new content. |
