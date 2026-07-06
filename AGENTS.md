@@ -103,7 +103,7 @@ productos/
 └── skills/                         # agent-executable skills
     ├── create-job-spec/SKILL.md    # interview to alignment, then write the Job Spec
     ├── create-rfc/SKILL.md         # interview to alignment, then write the ship-coupled RFC
-    ├── create-product-spec/SKILL.md# interview to the North Star, outcomes, and job index
+    ├── create-product-spec/SKILL.md # interview to the North Star, outcomes, and job index
     ├── create-strategy/SKILL.md    # interview through the kernel, then write STRATEGY.md
     ├── review-doc/SKILL.md         # the fresh-process document reviewer (APPROVE / REQUEST_CHANGES / BLOCK)
     ├── amend-durable-doc/SKILL.md  # the guarded path for changing diff-protected lines
