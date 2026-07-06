@@ -62,6 +62,7 @@ const ROUTE_OVERRIDES = {
   'skills/feedback-to-jobs/references/theme-structure.md': 'skills/feedback-to-jobs/theme-structure',
   'skills/review-doc/SKILL.md': 'skills/review-doc',
   'skills/uat-ux-debug/SKILL.md': 'skills/uat-ux-debug',
+  'skills/README.md': 'skills',
   'pm-playbook/README.md': 'pm-playbook',
 };
 
