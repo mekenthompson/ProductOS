@@ -118,6 +118,23 @@ rolls up to its outcome's Signal.
 
 ---
 
+## Evidence & confidence
+
+> *Optional. Scale to the stakes.* The evidence behind the outcomes and their
+> Signals, and how much you trust it. This is the product-level bet: that these
+> outcomes, once moved, deliver the North Star. Thin evidence is not a blocker,
+> it just means low confidence, carried honestly into RICE. Link out, don't
+> restate: see [Discovery](../pm-playbook/discovery.md), and the
+> [Research](../pm-playbook/templates/research.md) and [Customer Call](../pm-playbook/templates/customer-call.md)
+> templates.
+
+- **Evidence:** <source -- what it shows>; <source -- what it shows>. Strongest
+  first.
+- **Confidence:** <1-4> on the [RICE Confidence scale](../pm-playbook/rice.md).
+  More evidence raises it.
+
+---
+
 ## Related
 
 - [Product Vision](../anchors/product-vision.md) -- the anchor this spec elaborates

@@ -130,6 +130,21 @@ invariants: [<named lines this job must never cross, by construction>]
   current alternative hurts enough, that they would switch">. If that's
   false, don't build: <what it means for the job>.
 
+## Evidence & confidence
+
+> *Optional. Scale to the stakes.* The evidence behind **The bet**, and how
+> much you trust it. A soft Quick Win can leave this thin; a Full Spec should
+> not. Thin evidence is not a blocker, it just means low confidence, carried
+> honestly into the RICE score below. Link out, don't restate: gathering it is
+> the craft layer's job (see [Discovery](../pm-playbook/discovery.md), and the
+> [Research](../pm-playbook/templates/research.md) and [Customer Call](../pm-playbook/templates/customer-call.md)
+> templates).
+
+- **Evidence:** <source -- what it shows>; <source -- what it shows>. Three
+  bullets max, strongest first.
+- **Confidence:** <1-4>, on the [RICE Confidence scale](../pm-playbook/rice.md):
+  1 hypothesis, 2 directional, 3 strong, 4 validated. More evidence raises it.
+
 ## Measures of success
 
 > How you will know the job is being done, and how it moves the **Signal** of

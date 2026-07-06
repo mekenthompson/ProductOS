@@ -178,11 +178,16 @@ This is the freedom-and-constraint envelope. **Describe the shape of an acceptab
 
 ## Evidence
 
-Three bullets max. Link out, don't restate.
+Three bullets max. Link out, don't restate. Source it from the
+[Research](../pm-playbook/templates/research.md) and [Customer Call](../pm-playbook/templates/customer-call.md)
+templates.
 
 - `[Research doc title]` -- n=X interviews, key insight
 - `[Analytics dashboard / query]` -- current baseline number
 - `[Customer quote source]` -- representative quote
+
+**Confidence:** `[1-4]` on the [RICE Confidence scale](../pm-playbook/rice.md).
+More evidence raises it; thin evidence is low confidence, not a blocker.
 
 ---
 

@@ -104,6 +104,11 @@ _How strong is the evidence?_
 
 > 💡 Could you convince a skeptic with the evidence you have?
 
+The **Evidence & confidence** sections in the [Product Spec](../templates/product-spec.md)
+and [Job Spec](../templates/job-spec.md), and the Evidence section in the
+[RFC](../templates/rfc.md), feed this score. More research and evidence there
+raises Confidence here; that is the loop from discovery to prioritisation.
+
 ---
 
 ### Effort (1–5)
