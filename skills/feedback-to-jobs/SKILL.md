@@ -66,6 +66,17 @@ For each theme, draft a [Job Spec](../../templates/job-spec.md): the standing `j
 
 Keep account and revenue evidence **out** of the Job Spec. That join is a separate concern (see [Job Links](../../templates/job-links.md)); the Job Spec stays clean and durable.
 
+> [!IMPORTANT]
+>
+> **These drafts are unratified.** They were written in batch, from feedback,
+> without the one-question-at-a-time interview -- which means they carry your
+> inferences, not confirmed agreement. Before anything downstream treats one
+> as a contract (an RFC `serves:` it, a pillar funds it), close the gaps with
+> the user via [create-job-spec](../create-job-spec/SKILL.md)'s interview and
+> pass it through [review-doc](../review-doc/SKILL.md). A drafted spec that
+> skips ratification is exactly the assumptions-anchored spec the method
+> warns about.
+
 ## Output
 
 ```
@@ -91,5 +102,7 @@ clusters.md                         ← which raw items rolled into which job (t
 ## Related
 
 - [Job Spec](../../templates/job-spec.md) -- the artefact this skill drafts
+- [create-job-spec](../create-job-spec/SKILL.md) -- the interview that ratifies a draft into a contract
+- [review-doc](../review-doc/SKILL.md) -- the fresh-process gate a draft passes before anything anchors to it
 - [JTBD Guide](../../guides/jtbd-guide.md) -- how to frame a job well
 - [The Org as an API](../../guides/org-as-an-api.md) -- what to do with the jobs once you have them

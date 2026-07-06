@@ -88,7 +88,7 @@ never authors them.
 
 With the anchors in place, name your product's outcomes and its first job.
 
-- Use the **[`product-spec.md`](../templates/product-spec.md)** template to name the North Star, the outcomes (each with a Signal), and start the job index.
+- Use the **[create-product-spec](../skills/create-product-spec/SKILL.md)** skill to write the product spec against the [`product-spec.md`](../templates/product-spec.md) template. It interviews you to a North Star derived from your vision and refuses any outcome that can't name a Signal, so the metric ladder is intact from day one.
 - Use the **[create-job-spec](../skills/create-job-spec/SKILL.md)** skill to write your first Job Spec. It interviews you one question at a time until you and the agent share clarity on the job, the outcome, and the stakes, then it writes the spec. It will not write anything until that agreement exists, a spec written from assumptions is worse than no spec at all.
 
 ---
@@ -97,12 +97,18 @@ With the anchors in place, name your product's outcomes and its first job.
 
 Once your `AGENTS.md`, your anchors, your product spec, and your first Job
 Spec exist, point your coding agent at your `AGENTS.md` and let it run: draft
-the RFC, build against the design loop, run the outcome UAT.
+the RFC with the **[create-rfc](../skills/create-rfc/SKILL.md)** skill (it
+interviews to alignment and won't invent evidence), build against the design
+loop, run the outcome UAT.
 
 Before anything ships, hand the **[reviewer checklist](../AGENTS.md#agentic-delivery-operating-contract)**
-to a separate, fresh-process reviewer, never the author. It returns APPROVE,
-REQUEST_CHANGES, or BLOCK, citing file and line for every blocker. Iterate
-until APPROVE; don't let an automated merge fire before it.
+to a separate, fresh-process reviewer, never the author. For documents, the
+**[review-doc](../skills/review-doc/SKILL.md)** skill is that reviewer. It
+returns APPROVE, REQUEST_CHANGES, or BLOCK, citing file and line for every
+blocker. Iterate until APPROVE; don't let an automated merge fire before it.
+And once specs are ratified, edits to their durable lines go through
+**[amend-durable-doc](../skills/amend-durable-doc/SKILL.md)**, which keeps a
+"durable" spec from decaying into a description of whatever shipped.
 
 That's the whole loop, running on your product instead of this repo's.
 

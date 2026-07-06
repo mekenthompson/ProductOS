@@ -47,7 +47,7 @@ Else: out of scope, however clever.
 - **Scoping / designing →** read the vision; name which outcome the work serves. If none, stop.
 - **Writing or changing a Job Spec →** use [`templates/job-spec.md`](./templates/job-spec.md); keep `job` / `outcome` / `stakes` stable, narrate retired approaches rather than rewriting the job. Same spine every job, depth scales to the stakes: The job (with the struggling moment), Today's alternatives, The bet, Measures of success, Good / bad (with a named silent failure), What the job requires, Prove it, Verdict, Abandon signal, and an optional Production-readiness bar; the `## Prove it` section must be non-empty. Doc-class by frontmatter key: `job:` = durable Job Spec; `serves:` / `artifact:` = churny artefact (e.g. an RFC) that points up to a job; `backs:` = a design record that elaborates or defends an invariant (stays current, not ship-coupled).
   - **Outcome-drift backstop:** the `job` / `outcome` / `stakes` lines are diff-protected. Narrating a retired *implementation approach* is normal; changing the *outcome itself* is not a silent edit. It is a ratified event needing a recorded decision and re-ratification, the same discipline STRATEGY.md demands. A change to those three lines fails review unless it cites its decision record. Otherwise a "durable" Job Spec decays into a description of whatever shipped.
-- **Reviewing →** dispatch a SEPARATE fresh-process reviewer (never the author; it rubber-stamps). It returns APPROVE / REQUEST_CHANGES / BLOCK citing file:line; iterate to APPROVE. Do NOT let an automated merge fire before APPROVE.
+- **Reviewing →** dispatch a SEPARATE fresh-process reviewer (never the author; it rubber-stamps). It returns APPROVE / REQUEST_CHANGES / BLOCK citing file:line; iterate to APPROVE. Do NOT let an automated merge fire before APPROVE. For documents, the reviewer is [`skills/review-doc`](./skills/review-doc/SKILL.md); for changes to diff-protected lines, the edit routes through [`skills/amend-durable-doc`](./skills/amend-durable-doc/SKILL.md) first.
 - **Shipping →** run the outcome UAT (job × surface, real path, independent of unit tests) AND the production-readiness check. Unit-green ≠ outcome-validated ≠ production-ready: three gates, none implies the others.
 
 **Fresh-process reviewer checklist** (hand the reviewer these; an unscoped reviewer rubber-stamps):
@@ -101,9 +101,14 @@ productos/
 │   ├── README.md                   # section landing page
 │   └── ...                         # the six-phase loop, discovery, RICE, personas, templates
 └── skills/                         # agent-executable skills
-    ├── create-job-spec/SKILL.md
-    ├── feedback-to-jobs/SKILL.md
-    └── uat-ux-debug/SKILL.md
+    ├── create-job-spec/SKILL.md    # interview to alignment, then write the Job Spec
+    ├── create-rfc/SKILL.md         # interview to alignment, then write the ship-coupled RFC
+    ├── create-product-spec/SKILL.md# interview to the North Star, outcomes, and job index
+    ├── create-strategy/SKILL.md    # interview through the kernel, then write STRATEGY.md
+    ├── review-doc/SKILL.md         # the fresh-process document reviewer (APPROVE / REQUEST_CHANGES / BLOCK)
+    ├── amend-durable-doc/SKILL.md  # the guarded path for changing diff-protected lines
+    ├── feedback-to-jobs/SKILL.md   # turn raw feedback into jobs and unratified spec drafts
+    └── uat-ux-debug/SKILL.md       # debug a shipped failure from the user outcome
 ```
 
 The site machinery (`astro.config.mjs`, `src/`, `public/`) builds the live Starlight site from these same files; it adds no content of its own.

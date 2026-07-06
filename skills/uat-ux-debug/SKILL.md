@@ -146,3 +146,4 @@ timeout. Shipped behind a staged rollout.
 
 - [Agentic Delivery](../../guides/agentic-delivery.md) -- the outcome-UAT gate this skill debugs against
 - [Job Spec Template](../../templates/job-spec.md) -- the job-spec clauses Step 1 maps failures to
+- [amend-durable-doc](../amend-durable-doc/SKILL.md) -- how a proposed spec clause (a Step 2 `spec-gap` finding) gets applied: body edits proceed; outcome changes need a decision record
