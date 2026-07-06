@@ -157,6 +157,10 @@ Fill the template. Keep it to **one screen**; the frontmatter carries ~80%.
 3. Any coverage gaps surfaced, listed plainly as a backlog.
 4. If the user arrived with a feature request, a one-line note on the job
    you found underneath it and why it's broader than the literal ask.
+5. The [review-doc](../review-doc/SKILL.md) verdict: hand the spec to a
+   fresh-process reviewer (never this process) and iterate to APPROVE. The
+   Step 3 self-check catches what you can see; the reviewer catches what you
+   can't, because you wrote it.
 
 ## The self-teaching check (dogfood this skill)
 
@@ -170,5 +174,7 @@ has to invent structure, the skill failed its own docs test. Fix the skill.
 ## Related
 
 - [Job Spec template](../../templates/job-spec.md) -- the output shape this skill writes to
+- [review-doc](../review-doc/SKILL.md) -- the fresh-process gate every drafted spec exits through
+- [amend-durable-doc](../amend-durable-doc/SKILL.md) -- the guarded path for changing a spec once it's ratified
 - [uat-ux-debug](../uat-ux-debug/SKILL.md) -- debug a change against a job spec
 - [feedback-to-jobs](../feedback-to-jobs/SKILL.md) -- turn a pile of feedback into jobs before speccing them
