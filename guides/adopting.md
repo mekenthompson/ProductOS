@@ -66,6 +66,12 @@ terse, agent-executable version of the method (the gate, the triggers, the
 reviewer checklist), adapted to name your own anchors and templates instead
 of this repo's.
 
+Copy the **skills** too: drop the folders from [`skills/`](../skills/README.md)
+into your repo's `.claude/skills/` so Claude Code (or any agent harness that
+reads the Agent Skills format) discovers them, and re-point their relative
+links at your own templates and anchors. [Using the skills in Claude](../skills/README.md)
+covers where they live, how they trigger, and which one to reach for when.
+
 ---
 
 ## Step 3: Write your three anchors

@@ -47,7 +47,7 @@ invariant.
 This is reference-only: there's no installer, no sync, nothing to run. You copy the shapes and fill them in for your product. The canonical walkthrough is [`guides/adopting.md`](./guides/adopting.md); the compressed version:
 
 1. Read the method ([`guides/agentic-delivery.md`](./guides/agentic-delivery.md)) and the [worked example](./guides/worked-example.md) of one job running the loop.
-2. Copy the shapes: `templates/` and the [`AGENTS.md`](./AGENTS.md) contract pattern.
+2. Copy the shapes: `templates/`, the [`AGENTS.md`](./AGENTS.md) contract pattern, and the [`skills/`](./skills/README.md) folders into your repo's `.claude/skills/` so your agent discovers them.
 3. Write your three anchors: [vision](./anchors/product-vision.md), [principles](./anchors/product-principles.md), [invariants](./anchors/invariants.md).
 4. Write your product spec and first Job Spec, using the [`create-product-spec`](./skills/create-product-spec/SKILL.md) and [`create-job-spec`](./skills/create-job-spec/SKILL.md) skills to interview you through them.
 5. Point your agent at your `AGENTS.md` and run the loop: draft RFCs with [`create-rfc`](./skills/create-rfc/SKILL.md), gate every document through [`review-doc`](./skills/review-doc/SKILL.md), and guard ratified specs with [`amend-durable-doc`](./skills/amend-durable-doc/SKILL.md).
