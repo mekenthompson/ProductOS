@@ -97,7 +97,7 @@ export default defineConfig({
             },
           ],
         },
-        { label: 'Examples', autogenerate: { directory: 'examples' } },
+        { label: 'Examples', autogenerate: { directory: 'examples', collapsed: true } },
         {
           label: 'PM Playbook',
           collapsed: false,
@@ -142,7 +142,7 @@ export default defineConfig({
           label: 'Adopt it',
           items: [
             { label: 'Adopting guide', link: '/guides/adopting/' },
-            { label: 'Skills', autogenerate: { directory: 'skills' } },
+            { label: 'Skills', collapsed: true, autogenerate: { directory: 'skills' } },
             { label: 'Operating contract (AGENTS.md)', link: '/agents/' },
           ],
         },
