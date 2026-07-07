@@ -83,6 +83,7 @@ export default defineConfig({
                 { label: 'Anchors: Product Vision', link: '/anchors/product-vision/' },
                 { label: 'Anchors: Product Principles', link: '/anchors/product-principles/' },
                 { label: 'Anchors: Invariants', link: '/anchors/invariants/' },
+                { label: 'Anchors: Measurement Chain', link: '/anchors/measurement-chain/' },
               ],
             },
             {

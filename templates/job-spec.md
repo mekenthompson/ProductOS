@@ -159,6 +159,10 @@ invariants: [<named lines this job must never cross, by construction>]
 >
 > **Depth:** one line for a Quick Win (name the single leading indicator);
 > mechanism plus one or two indicators for a high-stakes job.
+>
+> The leading indicator named here is the first rung of the
+> [Measurement Chain](../anchors/measurement-chain.md), which maps how it rolls
+> up through the job metric and outcome Signal to the North Star.
 
 - *Mechanism:* <how doing this job changes user behaviour toward the outcome>.
 - *Leading indicator:* <the earliest observable sign it's working, named not

@@ -148,6 +148,7 @@ This same pattern, decompose the definition into moments, log the origin and the
 
 - **[The Anchor Signal](./headline-metric.md)** -- how to pick the Signal this guide instruments and reads.
 - **[Product Vision](../anchors/product-vision.md)** -- names the outcomes and Signals that instrumentation ties back to.
+- **[Measurement Chain](../anchors/measurement-chain.md)** -- the anchor mapping how the events you instrument here roll up to the North Star.
 - **[Job Spec Template](../templates/job-spec.md)** -- the Measures of Success section is the durable brief that drives what you instrument here.
 - **[Agentic Delivery](./agentic-delivery.md)** -- how a moved Signal (or an attributable leading indicator) feeds the verdict rule.
 </content>

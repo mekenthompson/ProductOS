@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: #0B1120; font-family: 'Segoe UI', system-ui, sans-serif; }
+  .stage { padding: 24px; display: inline-block; }
+  .card {
+    background: #1E293B; border-radius: 12px; border: 1px solid #334155;
+    width: 920px; height: 500px; padding: 0;
+  }
+  .card svg { width: 100%; height: 100%; overflow: visible; }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="card"><svg id="hero" viewBox="0 0 920 500"></svg></div>
+  </div>
+<script>
+const ns = 'http://www.w3.org/2000/svg';
+const svg = document.getElementById('hero');
+function el(tag, attrs) { const e = document.createElementNS(ns, tag); for (const [k,v] of Object.entries(attrs)) e.setAttribute(k, v); return e; }
+function txt(x, y, t, o={}) { const e = el('text', { x, y, 'text-anchor': o.anchor||'start', fill: o.fill||'#E2E8F0', 'font-size': o.size||10, 'font-weight': o.weight||400, 'font-family': o.mono ? "'Consolas','SFMono-Regular',ui-monospace,monospace" : (o.serif ? 'Georgia, serif' : "'Segoe UI', system-ui, sans-serif"), 'letter-spacing': o.ls||0 }); e.textContent = t; return e; }
+function add(e){ svg.appendChild(e); return e; }
+
+// ---- palette ----
+const GOLD='#F8C674', GREEN='#34D399', CYAN='#22D3EE', PURPLE='#A78BFA';
+
+const defs = el('defs', {});
+// gold up-arrow marker
+const mgold = el('marker', { id:'ahg', markerWidth:9, markerHeight:9, refX:6.5, refY:4, orient:'auto', markerUnits:'userSpaceOnUse' });
+mgold.appendChild(el('path', { d:'M0,0 L8,4 L0,8 Z', fill:GOLD }));
+defs.appendChild(mgold);
+// gold plate gradient (faint)
+const grad = el('linearGradient', { id:'plate', x1:0, y1:0, x2:0, y2:1 });
+grad.appendChild(el('stop', { offset:'0%', 'stop-color':GOLD, 'stop-opacity':0.15 }));
+grad.appendChild(el('stop', { offset:'100%', 'stop-color':GOLD, 'stop-opacity':0.03 }));
+defs.appendChild(grad);
+// ladder rail gradient: top = green (north star), bottom = gold (leading)
+const rg = el('linearGradient', { id:'rail', x1:0, y1:0, x2:0, y2:1 });
+rg.appendChild(el('stop', { offset:'0%', 'stop-color':GREEN }));
+rg.appendChild(el('stop', { offset:'50%', 'stop-color':PURPLE }));
+rg.appendChild(el('stop', { offset:'100%', 'stop-color':GOLD }));
+defs.appendChild(rg);
+add(defs);
+
+// ---- Header ----
+add(txt(34, 50, 'Measurement Chain', { size:28, weight:800, serif:true, fill:'#F8FAFC' }));
+add(txt(35, 76, 'One ladder. Each rung names the next. The number appears one layer down, where it gets instrumented.', { size:13, fill:'#94A3B8' }));
+
+// ---- column mini-headers ----
+add(txt(44, 106, 'THE RUNG', { size:10, weight:700, fill:'#64748B', ls:2 }));
+add(txt(600, 106, 'TEMPO, TRACED', { size:10, weight:700, fill:'#64748B', ls:2 }));
+
+// ================= LADDER =================
+const cardX = 40, cardW = 300, cardH = 46;
+const railX = 26;
+// rows top -> bottom (North Star at top, Leading indicator at bottom)
+const rungs = [
+  { y:116, accent:GREEN,  name:'North Star',        tag:'QUANTIFIED', gloss:'the one metric the product is judged on',
+    tempo:[ {t:'reconciliation-free cross-location rate', c:'#E2E8F0', w:400},
+            {t:'→ 80%', c:GREEN, w:700} ] },
+  { y:172, accent:PURPLE, name:'Outcome Signal',    tag:'QUANTIFIED', gloss:'a number, a direction, a target',
+    tempo:[ {t:'view-origin rate', c:'#E2E8F0', w:400, inline:{t:'30% → 75%', c:PURPLE, w:700}} ] },
+  { y:228, accent:CYAN,   name:'Job metric',        tag:'QUANTIFIED', gloss:'the indicator, now a number',
+    tempo:[ {t:'share of cross-location bookings', c:'#E2E8F0', w:400},
+            {t:'starting in the view', c:'#CBD5E1', w:400} ] },
+  { y:302, accent:GOLD,   name:'Leading indicator', tag:'NAMED',      gloss:"earliest sign it's working, no number",
+    tempo:[ {t:'bookings start in the unified view;', c:'#E2E8F0', w:400},
+            {t:"'can't see across locations' tickets fall", c:'#CBD5E1', w:400} ] },
+];
+
+const topC = rungs[0].y + cardH/2;      // 139
+const botC = rungs[3].y + cardH/2;      // 325
+
+// ladder rail (rolls UP to the North Star)
+add(el('line', { x1:railX, y1:botC, x2:railX, y2:topC, stroke:'url(#rail)', 'stroke-width':2.6 }));
+// up arrowhead at the very top of the rail
+add(el('path', { d:`M${railX},${topC-16} l6,10 l-6,-3 l-6,3 z`, fill:GREEN }));
+
+rungs.forEach(r => {
+  const cy = r.y + cardH/2;
+  // rail node + tick tying rail to this rung
+  add(el('line', { x1:railX, y1:cy, x2:cardX, y2:cy, stroke:r.accent, 'stroke-width':1.4, opacity:0.5 }));
+  add(el('circle', { cx:railX, cy:cy, r:3.4, fill:'#0B1120', stroke:r.accent, 'stroke-width':1.6 }));
+
+  // faint "traced" tie from rung to its Tempo value
+  add(el('line', { x1:cardX+cardW, y1:cy, x2:594, y2:cy, stroke:'#334155', 'stroke-width':1, 'stroke-dasharray':'2 5', opacity:0.7 }));
+
+  // card
+  const g = el('g', {});
+  g.appendChild(el('rect', { x:cardX, y:r.y, width:cardW, height:cardH, rx:8, fill:'#0F172A', stroke:'#334155', 'stroke-width':1 }));
+  // inset accent bar
+  g.appendChild(el('rect', { x:cardX+4, y:r.y+7, width:4, height:cardH-14, rx:2, fill:r.accent }));
+  // rung name
+  g.appendChild(txt(cardX+22, r.y+20, r.name, { size:14, weight:700, fill:'#F8FAFC' }));
+  // gloss
+  g.appendChild(txt(cardX+22, r.y+37, r.gloss, { size:10.5, fill:'#94A3B8' }));
+  // tag pill (right-aligned in card)
+  const named = r.tag === 'NAMED';
+  const pw = named ? 52 : 84;
+  const px = cardX + cardW - 12 - pw;
+  const faint = r.accent + '22';
+  g.appendChild(el('rect', { x:px, y:r.y+8, width:pw, height:16, rx:8, fill:faint, stroke:r.accent, 'stroke-width':1, opacity:0.9 }));
+  g.appendChild(txt(px+pw/2, r.y+19.5, r.tag, { anchor:'middle', size:8.5, weight:700, fill:r.accent, ls:0.6 }));
+  add(g);
+
+  // Tempo value (right column)
+  const tx = 600;
+  if (r.tempo.length === 1) {
+    const seg = r.tempo[0];
+    const e = add(txt(tx, cy+4.5, seg.t, { size:12.5, weight:seg.w, fill:seg.c }));
+    if (seg.inline) {
+      // measure width then append inline colored segment
+      const w = e.getComputedTextLength();
+      add(txt(tx + w + 12, cy+4.5, seg.inline.t, { size:12.5, weight:seg.inline.w, fill:seg.inline.c }));
+    }
+  } else {
+    add(txt(tx, cy-4, r.tempo[0].t, { size:12.5, weight:r.tempo[0].w, fill:r.tempo[0].c }));
+    add(txt(tx, cy+14, r.tempo[1].t, { size:12.5, weight:r.tempo[1].w, fill:r.tempo[1].c }));
+  }
+});
+
+// ================= SEAM (named vs quantified) =================
+const seamY = 288;
+add(el('line', { x1:railX-2, y1:seamY, x2:566, y2:seamY, stroke:'#475569', 'stroke-width':1, 'stroke-dasharray':'4 4', opacity:0.8 }));
+// pill sitting on the seam
+const spW = 236, spX = cardX + (cardW-spW)/2;
+add(el('rect', { x:spX, y:seamY-9, width:spW, height:18, rx:9, fill:'#0F172A', stroke:'#475569', 'stroke-width':1 }));
+add(txt(spX+16, seamY+3.5, '↑ quantified', { size:9.5, weight:700, fill:'#94A3B8' }));
+add(txt(spX+16+72, seamY+3.5, '·', { size:9.5, weight:700, fill:'#64748B' }));
+add(txt(spX+16+84, seamY+3.5, 'named ↓', { size:9.5, weight:700, fill:'#64748B' }));
+
+// ================= INSTRUMENTATION STRIP =================
+const stX = 40, stW = 840, stY = 360, stH = 66;
+add(el('rect', { x:stX, y:stY, width:stW, height:stH, rx:10, fill:'url(#plate)', stroke:GOLD, 'stroke-width':1.3 }));
+add(txt(stX+22, stY+24, 'INSTRUMENTATION (RFC): the events that compute the Signal', { size:10, weight:700, fill:GOLD, ls:1.2 }));
+
+// event chips
+function chip(x, y, label){
+  const w = label.length*7.1 + 26;
+  add(el('rect', { x, y, width:w, height:24, rx:6, fill:'#0B1120', stroke:'#3F3320', 'stroke-width':1 }));
+  add(el('circle', { cx:x+13, cy:y+12, r:3, fill:GOLD }));
+  add(txt(x+23, y+16, label, { size:11, mono:true, fill:'#E2E8F0' }));
+  return w;
+}
+let cx0 = stX+22;
+const w1 = chip(cx0, stY+34, 'booking_originated_in_unified_view');
+const w2 = chip(cx0 + w1 + 16, stY+34, 'reconciliation_event');
+add(txt(cx0 + w1 + 16 + w2 + 22, stY+50, 'guardrail: booking-conflict > 0.1%', { size:10.5, weight:600, fill:'#94A3B8' }));
+
+// The instrumentation strip sits under the ladder and its own header states
+// it computes the Signal, so no separate arrow is needed.
+
+// ---- bottom caption (gold, one line) ----
+add(txt(40, 462, 'a phrase in the Job Spec, a number in the Product Spec, an event in the RFC. one thread.', { size:11.5, weight:600, fill:GOLD }));
+</script>
+</body>
+</html>

@@ -224,7 +224,7 @@ Fill the table below with the shape you chose (the flag column is illustrative; 
 | Public preview | Opted-in customers | ON for self-selected | Adoption ≥ X, no critical issues | Flag OFF, communicate to opted-in |
 | GA | All customers | ON by default | Maintained for 30 days post-GA | Flag OFF, post-mortem |
 
-**Instrumentation required before private preview:**
+**Instrumentation required before private preview:** the events here are the bottom rung of the [Measurement Chain](../anchors/measurement-chain.md), the layer that computes the Signal every rung above it depends on.
 - [ ] Event: `[event name]` -- measures `[which success signal]`
 - [ ] Dashboard: `[link]` -- covers headline + guardrails
 - [ ] Guardrail alert: `[metric]` triggers if it crosses `[threshold]`

@@ -17,8 +17,10 @@ anchors: [product-vision.md, product-principles.md, invariants.md]
 > words; the job index below carries its quantified form, the *job metric*;
 > that rolls up into the outcome *Signal*; the Signals drive the *North Star*.
 > Ladder: **leading indicator (named) → job metric (quantified) → outcome
-> Signal → North Star.** A job that can't name a metric rolling into its
-> outcome's Signal is a job you can't tell is working.
+> Signal → North Star.** The [Measurement Chain](../anchors/measurement-chain.md)
+> is the anchor that owns that full leading-indicator to North-Star map. A job
+> that can't name a metric rolling into its outcome's Signal is a job you can't
+> tell is working.
 
 ## The product, in one line
 

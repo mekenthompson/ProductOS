@@ -167,6 +167,7 @@ None of these are "the right answer", they're plausible *shapes* for a Signal in
 
 - **[Product Vision](../anchors/product-vision.md)** -- Names the outcomes and their Signals; this guide is how you pick each one.
 - **[Product Principles](../anchors/product-principles.md)** -- Principles keep each feature moving a named Signal.
+- **[Measurement Chain](../anchors/measurement-chain.md)** -- the map from the North Star you pick here down to the leading indicator at the bottom rung.
 - **[RFC Template](../templates/rfc.md)** -- the Guardrails section (Quality / principle guardrails) names the outcome and Signal an RFC advances.
 - **[Agentic Delivery](./agentic-delivery.md)** -- How the outcomes and their Signals feed the verdict rule.
 - **[Product Analytics](./product-analytics.md)** -- how to instrument and read the Signal you just picked.
