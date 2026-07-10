@@ -1,16 +1,17 @@
 ---
 title: PM Playbook
 slug: pm-playbook
-description: "The human product-management craft: the six-phase operating loop, the discipline guides, and the templates that go with them."
+description: "The human product craft, all four disciplines: the six-phase operating loop, the taste and judgement system, the discipline guides, and the templates."
 ---
 
 # PM Playbook
 
-The **human product-management craft**: the six-phase operating loop, the
-discipline guides (discovery, decision-making, RICE, personas, delivery
-standards, release phases), and the templates that go with them.
+The **human product craft**, across the whole function (product management,
+product design, product marketing, research/analytics): the six-phase operating
+loop, the taste and judgement system (craft, calibration, formulations), the
+discipline guides, and the templates that go with them.
 
-This is the judgement layer: how a person runs product day to day.
+This is the judgement layer: how the product team runs day to day.
 
 > **Layering rule.** `pm-playbook` may reference ProductOS core (the anchors in
 > [`../anchors/`](../anchors/product-vision.md) and the method guides in [`../guides/`](../guides/agentic-delivery.md));
@@ -22,8 +23,10 @@ This is the judgement layer: how a person runs product day to day.
 
 - **[product-playbook.md](./product-playbook.md)**: the full six-phase
   operating model (Learn → Decide → Shape → Build → Launch → Sell).
-- **[pm-handbook.md](./pm-handbook.md)**: the PM role, rituals, and first 90
-  days.
+- **[product-handbook.md](./product-handbook.md)**: the team handbook: roles
+  across all four crafts, rituals, and first 90 days.
+- **[craft.md](./craft.md)**: the universal taste loop and the four craft
+  profiles.
 - **[working-together.md](./working-together.md)**: product-triad
   collaboration and ownership.
 
@@ -32,12 +35,16 @@ This is the judgement layer: how a person runs product day to day.
 | Doc | What it is |
 |---|---|
 | [product-playbook.md](./product-playbook.md) | The six-phase operating model (the anchor doc). |
-| [pm-handbook.md](./pm-handbook.md) | PM role, onboarding, rituals, collaboration. |
+| [product-handbook.md](./product-handbook.md) | The team handbook: all four crafts, onboarding, rituals, collaboration. |
+| [craft.md](./craft.md) | The universal taste loop; prediction types, exposures, and failure modes per craft. |
 | [working-together.md](./working-together.md) | Product-triad collaboration and ownership. |
 | [decision-framework.md](./decision-framework.md) | Signal → Standard → Speed (three paths). |
 | [delivery-standards.md](./delivery-standards.md) | Operational workflow with gate checklists. |
 | [release-phases.md](./release-phases.md) | Private Preview → Public Preview → GA. |
 | [discovery.md](./discovery.md) | Validating problems before writing an RFC. |
+| [domain-entry.md](./domain-entry.md) | The ramp protocol: entering a new domain fast, the week-two formulation, the account panel. |
+| [calibration.md](./calibration.md) | The calibration ledger: scoring commercial mechanism predictions per PM. |
+| [learning-accounts.md](./learning-accounts.md) | The deliberately over-served research tier, with the generalisation rule. |
 | [product-analytics.md](./product-analytics.md) | The measurement discipline: what a PM owes, and how a Signal gets stood up and read. |
 | [customer-feedback.md](./customer-feedback.md) | Handling and triaging product feedback. |
 | [rice.md](./rice.md) | RICE scoring framework. |
@@ -54,5 +61,7 @@ This is the judgement layer: how a person runs product day to day.
 | [templates/research.md](./templates/research.md) | Competitive, analytics, surveys, usability testing. |
 | [templates/ritual-review.md](./templates/ritual-review.md) | Monthly dogfooding and competitor reviews. |
 | [templates/post-launch-review.md](./templates/post-launch-review.md) | Measure outcomes, close the loop, decide what's next. |
+| [templates/customer-formulation.md](./templates/customer-formulation.md) | One-page working model of a customer segment; dated, provisional, revised monthly. |
+| [templates/formulation-review.md](./templates/formulation-review.md) | The monthly forum that attacks the understanding, not the solution. |
 
 Keep it product-agnostic: no single company's product baked in as the example.

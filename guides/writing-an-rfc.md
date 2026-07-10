@@ -1,7 +1,7 @@
 ---
 title: Writing an RFC
 description: "How to write, approve, and deliver a JTBD-led RFC: the ship-coupled, per-initiative delivery document"
-last_reviewed: 2026-07-06
+last_reviewed: 2026-07-10
 icon: "📖"
 ---
 
@@ -125,12 +125,12 @@ The [template](../templates/rfc.md) has these sections. The order matters: it's 
 2. **TL;DR** -- Three sentences: the job, what success looks like, the biggest constraint.
 3. **The Job** -- JTBD statement and persona.
 4. **How Users Fail Today** -- Struggling moments with evidence.
-5. **User Success Modes** -- What success looks like *from the user's perspective*.
+5. **User Success Modes** -- What success looks like *from the user's perspective*, plus (Full Spec) the commercial mechanism the bet claims.
 6. **User Failure Modes** -- Hard / soft / silent / adoption failure, with detection signals and pivot/stop triggers.
 7. **Guardrails** -- What cannot break (principles, performance, trust, invariants, out of scope).
 8. **Solution Space** -- Must do / must not do / free to vary.
 9. **Evidence** -- 3 bullets max, linked out.
-10. **Bets & Risks** -- Assumptions and top risks.
+10. **Bets & Risks** -- The key assumptions check ([LB]/[S] marked, each load-bearing assumption with its 90-day disproof) and top risks.
 11. **Rollout** -- Phases, exit criteria, rollback, instrumentation.
 
 ---
@@ -163,6 +163,8 @@ Three flavours of success, in order of weight:
 - **Outcome Signal** -- the specific movement on the named vision outcome's **Signal** (the outcome-level named metric) that this RFC is responsible for.
 
 Plus **leading indicators**, early signals (≤ 2 weeks post-launch) that tell you whether you're on track.
+
+For Full Spec work, add the **commercial mechanism**: the specific, dated commercial claim this bet makes ("closes the workflow gap driving tier-2 churn: tier-2 product-gap churn falls within two renewal cycles"). It is scored **Fired / Partial / Missed / Unscoreable** at the 90-day review and logged in the [calibration ledger](../pm-playbook/calibration.md); a prediction too vague to score is graded Unscoreable, which is worse than wrong. If no mechanism can be named, the bet is a feature in search of a reason.
 
 ### User Failure Modes
 
@@ -200,7 +202,11 @@ Hard limit: 3 bullets, each one linking out. The RFC is not the research documen
 
 ### Bets & Risks
 
-Name what you're betting on. "If the user genuinely doesn't have this struggling moment, the RFC is wrong" is the kind of bet to surface. Risks should have mitigations.
+This is the **key assumptions check**: what must be true *about the customer* for this bet to pay. Mark each assumption **[LB]** (load-bearing: if wrong, the RFC is wrong) or **[S]** (supporting), and for every [LB], name the evidence that would show it's wrong within 90 days: that disproof is what the post-launch review reaches for when the mechanism misses. Load-bearing assumptions should trace to the domain's [Customer Formulation](../pm-playbook/templates/customer-formulation.md); an assumption in neither document is untested twice.
+
+"If the user genuinely doesn't have this struggling moment, the RFC is wrong" is the kind of bet to surface. Risks should have mitigations.
+
+On approval, the commercial mechanism, the [LB] assumptions, and the Confidence score become one [calibration-ledger](../pm-playbook/calibration.md) entry, scored at the 90-day review. Approving an RFC without a ledger entry is an unscored bet.
 
 ### Rollout
 

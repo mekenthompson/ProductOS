@@ -1,7 +1,7 @@
 ---
 title: Handling Product Feedback
 description: How to raise, route, and manage product feedback
-last_reviewed: 2026-07-06
+last_reviewed: 2026-07-10
 icon: "👂"
 ---
 
@@ -117,6 +117,26 @@ Customer 6 months later: *"What has been done on this feedback since I gave it?"
 - Don't say "Nothing's been done" if you can't see anything being done
 - Put it back on product to share the perspective of what has been done in the meantime
 
+
+---
+
+## Churn tagging
+
+Churn is the purest product signal there is: a customer who lived with the product and left. It is also the interview nobody wants to do, which is exactly why it's the highest-yield one. Two rules:
+
+**1. Every churned account gets exactly one primary tag.**
+
+| Tag | Meaning | Routed to |
+|---|---|---|
+| `churn:product-gap` | The product failed a real job for a right-fit customer | Product: enters the feedback queue at top priority |
+| `churn:fit` | Wrong-fit customer; should not have been sold | Sales/CS: an acquisition-quality finding, **not** a roadmap input |
+| `churn:commercial` | Pricing, packaging, or relationship | Commercial team |
+| `churn:unavoidable` | Closed, merged, mandated change | Logged, no action |
+
+Untagged churn is unexplained leak, and the [Commercial Frame](../anchors/measurement-chain.md) treats unexplained leak as a product fire until tagged otherwise. The product-vs-fit distinction is the load-bearing one: it stops fit mistakes polluting the roadmap and stops product gaps hiding behind "bad-fit customer" stories.
+
+**2. Churned accounts are interviewed, not surveyed.** A churn interview is discovery with the politeness removed; treat it as a priority [customer call](./templates/customer-call.md). The domain PM does it (see [Domain Entry](./domain-entry.md), where the churned account is one of the three insiders), tags the account, and feeds what broke into their [Customer Formulation](./templates/customer-formulation.md). If the account won't talk, the AM's post-mortem stands in, clearly labelled second-hand.
+
 ---
 
 ## Related
@@ -124,3 +144,5 @@ Customer 6 months later: *"What has been done on this feedback since I gave it?"
 - **[Discovery](./discovery.md)**: How to validate problems with customer research
 - **[Delivery Standards](./delivery-standards.md)**: Where feedback enters the product loop
 - **[Decision Framework](./decision-framework.md)**: Signal → Standard → Speed
+- **[Measurement Chain, Commercial Frame](../anchors/measurement-chain.md)**: why tagged churn is a rung of the measurement ladder
+- **[Domain Entry](./domain-entry.md)**: the churned account as one of the three insiders

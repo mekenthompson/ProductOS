@@ -105,6 +105,6 @@ Top 3 things to fix or improve.
 
 ## Related
 
-- **PM Handbook:** [Monthly Rituals](../pm-handbook.md#monthly-rituals)
+- **Product Handbook:** [Monthly Rituals](../product-handbook.md#monthly-rituals)
 - **Product Analytics:** [the measurement discipline](../product-analytics.md) behind the monthly Signal read
 - **Projects:** [Link to related projects]

@@ -70,7 +70,13 @@ generic. Do not draft until every item below is settled and confirmed.
   there is no case yet; surface that finding rather than writing around it.
 - **Success, from the user's side.** The behavioural signal, the felt
   experience, and the metric movement with its interval. Push past "we
-  shipped it": what does the *user* now do, feel, or decide?
+  shipped it": what does the *user* now do, feel, or decide? For Full Spec
+  work, also extract the **commercial mechanism**: the specific, dated
+  commercial claim the bet makes (a churn gap closed, an attach rate lifted
+  by a date). Push until it is scoreable: it will be graded Fired / Partial /
+  Missed / Unscoreable at the 90-day review, and vague is graded Unscoreable,
+  which is worse than wrong. If the user cannot name a mechanism, say plainly
+  that the bet reads as a feature in search of a reason.
 - **Failure, all four modes.** Hard, soft, silent, adoption: what does each
   look like *for this initiative*, what root cause would you suspect, what
   signal detects it? The silent one is required and is the one users resist
@@ -86,9 +92,14 @@ generic. Do not draft until every item below is settled and confirmed.
   user starts prescribing components or data models, reflect it back: is that
   a real constraint, or today's best guess that design should be free to
   beat?
-- **Bets, risks, rollout shape.** What are we assuming that, if wrong, makes
-  the RFC wrong? What rollout shape fits (staged, shadow, champion-challenger,
-  flag), and what instrumentation must exist before preview?
+- **Bets, risks, rollout shape.** What are we assuming *about the customer*
+  that, if wrong, makes the RFC wrong? Mark each assumption **[LB]**
+  (load-bearing) or **[S]** (supporting), and for every [LB] get the 90-day
+  disproof: what evidence would show it is wrong. Where the domain has a
+  [Customer Formulation](../../pm-playbook/templates/customer-formulation.md),
+  the [LB] assumptions should trace to it; flag any that trace to neither.
+  Then the rollout shape (staged, shadow, champion-challenger, flag), and what
+  instrumentation must exist before preview.
 - **RICE, scored honestly.** Walk Reach, Impact, Confidence, Effort with the
   user. Confidence is bounded by the evidence gathered above, not by
   enthusiasm.
@@ -104,7 +115,7 @@ Fill [templates/rfc.md](../../templates/rfc.md) exactly: Status table, TL;DR
 Fail Today, Competing Solutions, User Success Modes, User Failure Modes (all
 four, plus anti-patterns and stop/pivot triggers), Guardrails, Solution
 Space, Evidence (three bullets max, linked out, with the Confidence score),
-Bets & Risks, Rollout, Open Questions.
+Bets & Risks (the key assumptions check, [LB]/[S] marked), Rollout, Open Questions.
 
 Rules that hold while writing:
 
@@ -133,7 +144,12 @@ inside: whether your sections are answered or merely occupied.
    user), named with a kebab-case slug.
 2. The up-anchor stated: which outcome it advances, which Job Spec it serves.
 3. The open questions listed with owners: the honest unknowns.
-4. The review-doc verdict, and what (if anything) is still blocking APPROVE.
+4. The calibration handoff: remind the user that on approval the commercial
+   mechanism, the [LB] assumptions, and the Confidence score become one entry
+   in the [calibration ledger](../../pm-playbook/calibration.md), scored at
+   the 90-day review. An approved RFC without a ledger entry is an unscored
+   bet.
+5. The review-doc verdict, and what (if anything) is still blocking APPROVE.
 
 ## The self-teaching check (dogfood this skill)
 

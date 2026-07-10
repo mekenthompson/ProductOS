@@ -1,7 +1,7 @@
 ---
 title: Measurement Chain
 description: How measurement ladders through the framework as one chain, and which artefact owns each rung
-last_reviewed: 2026-07-06
+last_reviewed: 2026-07-10
 icon: "🪜"
 ---
 
@@ -45,6 +45,40 @@ is working.
 
 ---
 
+## The Commercial Frame: the rung above the North Star
+
+The ladder above stops at the product's North Star. The Commercial Frame is the
+rung above it: the revenue-quality view the whole chain must ultimately explain.
+
+> North Star → **net new revenue with the bucket not leaking**: NRR and GRR
+> held, logo retention held, churn tagged and explained.
+
+Three rules make it load-bearing rather than decorative:
+
+1. **The North Star must be able to explain revenue quality.** If the North
+   Star can rise while GRR or logo retention falls, the North Star is misnamed:
+   it is measuring activity, not the outcome customers pay for. Fix the metric,
+   not the story.
+2. **Expansion never launders retention.** Track GRR and logo retention beside
+   NRR. A healthy NRR built on whales expanding over a rotting logo base is a
+   product fire wearing a good quarter's clothes.
+3. **Churn is tagged, always.** Every churned account gets exactly one primary
+   tag: `churn:product-gap` (the product failed a real job), `churn:fit`
+   (wrong-fit customer; an acquisition problem, routed to sales, not the
+   roadmap), `churn:commercial` (pricing/packaging/relationship), or
+   `churn:unavoidable` (business closed, merged, mandated change). Untagged
+   churn is unexplained leak. The tagging workflow lives in
+   [Handling Product Feedback](../pm-playbook/customer-feedback.md).
+
+Accountability splits cleanly at this rung: the **portfolio** answers to the
+Commercial Frame (the product org owns product-gap churn and expansion-mechanism
+health), while **individual judgement** answers one level down, to the
+commercial mechanisms predicted and scored in the
+[calibration ledger](../pm-playbook/calibration.md). Revenue is the scoreboard;
+mechanisms are what a PM controls.
+
+---
+
 ## Who owns each rung
 
 Each rung is defined in exactly one place. This table is the map. Follow the
@@ -57,6 +91,7 @@ owns it.
 | Job metric | quantified form of that indicator | [`../templates/product-spec.md`](../templates/product-spec.md) | "The job index" |
 | Outcome Signal | number + direction + target | [`../templates/product-spec.md`](../templates/product-spec.md) | "Outcomes" (each carries a Signal) |
 | North Star | the top metric | [`../templates/product-spec.md`](../templates/product-spec.md) | "North Star" |
+| Commercial Frame | NRR, GRR, logo retention, tagged churn | this anchor (above); tagging in [`../pm-playbook/customer-feedback.md`](../pm-playbook/customer-feedback.md) | "The Commercial Frame" |
 | Instrumentation (events) | the events that compute the Signal | [`../templates/rfc.md`](../templates/rfc.md) | "Instrumentation required before private preview" |
 
 A short gloss on each rung:
@@ -71,6 +106,8 @@ A short gloss on each rung:
   the outcome Signals decompose.
 - **Instrumentation (events)** -- the events an RFC must ship before private
   preview, which is what actually computes the Signal.
+- **Commercial Frame** -- the revenue-quality rung above the North Star:
+  growth with the bucket not leaking. Defined in this anchor, above.
 
 ---
 
@@ -103,6 +140,7 @@ that make it all countable.
 - [RFC Template](../templates/rfc.md) -- owns the instrumentation: the events that compute the Signal before private preview.
 - [Product Analytics](../guides/product-analytics.md) -- how to instrument the events and read the metrics this chain names.
 - [Headline Metric](../guides/headline-metric.md) -- how to pick the North Star at the top of the ladder.
+- [Calibration](../pm-playbook/calibration.md) -- how predicted commercial mechanisms are scored per PM, one level below the Commercial Frame.
 - [Product Vision](./product-vision.md) -- the first anchor; it names the outcomes whose Signals this chain measures.
 - [Product Principles](./product-principles.md) -- the second anchor; the built-well standards beside this one.
 - [Invariants](./invariants.md) -- the third anchor; the lines you won't cross, beside this map of how you measure.

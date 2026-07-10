@@ -1,7 +1,7 @@
 ---
 title: Post-Launch Review Template
 description: Measure outcomes, close the loop, decide what's next
-last_reviewed: 2026-07-06
+last_reviewed: 2026-07-10
 icon: "📋"
 ---
 
@@ -46,6 +46,30 @@ _Pull metrics from the RFC Success section. Fill in actuals._
 - [ ] **Persona-specific check?** [Each affected persona's vision-lens question improved?]
 
 If none of these improved, why not? What would need to change?
+
+
+---
+
+## Mechanism Check *(90-day review)*
+
+_The RFC made a commercial mechanism prediction. Score it. This is the entry the [calibration ledger](../calibration.md) records._
+
+**Predicted mechanism (from RFC):** [paste verbatim]
+
+| Score | Pick one |
+|---|---|
+| **Fired** | Mechanism happened, predicted direction, attributably |
+| **Partial** | Moved materially less than predicted, or via a different path |
+| **Missed** | Didn't fire, or fired the wrong way |
+| **Unscoreable** | Too vague to score, or attribution impossible. _Worse than Missed: it means the bet was never testable._ |
+
+**Score:** [Fired / Partial / Missed / Unscoreable]
+
+**Which load-bearing assumption broke?** _(Partial/Missed only. This line is where the learning is; feed it back into the domain's [Customer Formulation](./customer-formulation.md).)_
+
+**Attribution note:** _(external factors, seasonality, confounders that qualify the read)_
+
+- [ ] **Ledger updated.** The review is not complete until the entry is scored.
 
 ---
 
@@ -111,3 +135,10 @@ _Schedule all three reviews when you ship, not after. Add calendar invites at la
 ---
 
 **Stopping is not failure.** Failure is continuing to invest in something the data says isn't working.
+
+---
+
+## Related
+
+- [Calibration](../calibration.md) -- the ledger the Mechanism Check feeds
+- [Customer Formulation Template](./customer-formulation.md) -- where broken assumptions get fed back

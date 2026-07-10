@@ -1,7 +1,7 @@
 ---
 title: Product Playbook
 description: A six-phase operating model for product organisations
-last_reviewed: 2026-07-06
+last_reviewed: 2026-07-10
 icon: 🎚️
 ---
 
@@ -82,6 +82,7 @@ Every product decision should be traceable to evidence: customer research, usage
 - **Customer research and interviews** feed a shared evidence base, not individual intuition. Every problem is tagged to a [persona](./personas.md).
 - **Product analytics** are consulted before proposing work (what's used, what's ignored, where do users drop off?)
 - **Customer feedback** is processed systematically: patterns identified, not just loudest voices heard
+- **Churned accounts are interviewed and tagged** (product-gap vs fit vs commercial): the purest signal in the pool. See churn tagging in [Handling Product Feedback](./customer-feedback.md).
 - **Post-launch measurement** (from Phase 5) flows back here, closing the loop
 
 ### Assets
@@ -207,6 +208,8 @@ The real work starts after launch. Shipping is when we start learning whether ou
 
 **Stopping is not failure.** Continuing to invest in something the data says isn't working, that's failure.
 
+At the 90-day review, the RFC's commercial mechanism prediction is also scored (Fired / Partial / Missed / Unscoreable) into the [calibration ledger](./calibration.md): the reviews close the loop on the work; the ledger closes it on the team's judgement.
+
 Analytics tells you *what* (adoption is low). Customer feedback tells you *why* (onboarding is confusing). Together they tell you *what to do* (redesign onboarding, don't add features).
 
 ### Assets
@@ -307,6 +310,7 @@ Everything below is a reference asset produced by this framework. Read them when
 | Write job stories | [JTBD Guide](../guides/jtbd-guide.md) |
 | Write a durable per-job outcome doc | [Job Spec Template](../templates/job-spec.md) |
 | Deliver with an agentic workforce | [Agentic Delivery](../guides/agentic-delivery.md) |
-| Understand your role (PM) | [PM Handbook](./pm-handbook.md) |
+| Understand your role, any craft | [Product Handbook](./product-handbook.md) |
+| Build and measure taste and judgement | [Craft](./craft.md) + [Calibration](./calibration.md) |
 | Understand how the triad works | [Working Together](./working-together.md) |
 | Position and message a product | [Product Marketing](./product-marketing.md) + [Positioning and Messaging](../guides/positioning-and-messaging.md) |
