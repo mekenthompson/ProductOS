@@ -22,11 +22,11 @@ Skills are copy-and-fill, like the rest of ProductOS. Copy the skill folders
 from [`skills/`](https://github.com/mekenthompson/ProductOS/tree/main/skills)
 into wherever your agent discovers skills:
 
-- **Claude Code, per project:** `.claude/skills/` in your repo — the whole
+- **Claude Code, per project:** `.claude/skills/` in your repo, so the whole
   team and any agent working in the repo gets them. This is the recommended
   home: the skills assume they sit next to your anchors, templates, and
   specs, and Step 0 of every skill grounds itself in those documents.
-- **Claude Code, personal:** `~/.claude/skills/` — follows you across every
+- **Claude Code, personal:** `~/.claude/skills/`, follows you across every
   project on your machine.
 - **Other harnesses:** any agent that can read a directory of markdown can
   use them; each `SKILL.md` is self-contained instructions. Point your
@@ -47,7 +47,7 @@ triggers on, and Claude matches your ask against them:
 - *"Define our outcomes and North Star"* → [create-product-spec](/ProductOS/skills/create-product-spec/)
 - *"Draft the H2 strategy"* / *"which jobs get capacity?"* → [create-strategy](/ProductOS/skills/create-strategy/)
 - *"Review this spec before we ratify it"* → [review-doc](/ProductOS/skills/review-doc/)
-- *"Update the job spec — the outcome changed"* → [amend-durable-doc](/ProductOS/skills/amend-durable-doc/)
+- *"Update the job spec, the outcome changed"* → [amend-durable-doc](/ProductOS/skills/amend-durable-doc/)
 - *"Here's a pile of feedback, what jobs is it about?"* → [feedback-to-jobs](/ProductOS/skills/feedback-to-jobs/)
 - *"This works but the user's job didn't get done"* → [uat-ux-debug](/ProductOS/skills/uat-ux-debug/)
 
@@ -57,7 +57,7 @@ In Claude Code you can also invoke one explicitly by name
 Two behaviours to expect, by design:
 
 - **The creation skills interview you.** One question at a time, until you
-  and the agent share clarity — and they will not write the document until
+  and the agent share clarity, and they will not write the document until
   everything is agreed. A spec written from assumptions is worse than no
   spec, because the whole fleet anchors to it. Budget a conversation, not a
   one-shot prompt.
@@ -83,7 +83,7 @@ Two behaviours to expect, by design:
 
 Every creation skill exits through
 [review-doc](/ProductOS/skills/review-doc/), and durable-document edits route
-through [amend-durable-doc](/ProductOS/skills/amend-durable-doc/) — so the
+through [amend-durable-doc](/ProductOS/skills/amend-durable-doc/), so the
 whole document lifecycle has no unguarded entrance. How that maps onto the
 method's gates is the [operating contract](/ProductOS/agents/)'s job; how to
 adopt the whole system is the [adopting guide](/ProductOS/guides/adopting/)'s.
