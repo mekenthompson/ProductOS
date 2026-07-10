@@ -29,7 +29,7 @@ RICE compares projects on the same basis. Three value dimensions divided by effo
 
 ## How It Works
 
-Score Reach, Impact, and Confidence (1–4 each). Score Effort (1–5). Divide.
+Score Reach, Impact, Confidence, and Effort (1–5 each). Divide.
 
 ```
 RICE = (Reach + Impact + Confidence) / Effort
@@ -50,7 +50,7 @@ Grades describe ROI relative to other projects, not what to do with them. A C-gr
 
 ## Dimensions
 
-### Reach (1–4)
+### Reach (1–5)
 
 _How broad is the audience?_
 
@@ -58,14 +58,15 @@ _How broad is the audience?_
 |-------|------------|---------|
 | **1** | Niche: a handful of accounts with a specific need | Specific compliance requirement |
 | **2** | Segment: a defined customer segment | Enterprise-only feature |
-| **3** | Broad: most accounts or a core workflow | Core day-to-day workflow |
-| **4** | Universal: all accounts or all prospects | Onboarding, trial experience |
+| **3** | Widespread: a large share of accounts, or a common secondary workflow | High-usage reporting workflow |
+| **4** | Near-universal: most accounts or a core day-to-day workflow | Core day-to-day workflow |
+| **5** | Universal: all accounts or all prospects | Onboarding, trial experience |
 
-> 💡 Ask yourself: is this a niche need, a segment need, a common need, or a universal need?
+> 💡 Ask yourself: is this a niche need, a segment need, a widespread need, a near-universal need, or a universal need?
 
 ---
 
-### Impact (1–4)
+### Impact (1–5)
 
 _How much does this change the outcome for each affected account?_
 
@@ -76,22 +77,23 @@ This is depth, not breadth. Reach covers how many accounts are touched. Impact c
 | **1** | Nice-to-have: minor convenience | Small friction reduction, no measurable metric movement | Clearer error formatting, UI polish |
 | **2** | Meaningful: measurably better workflow | Efficiency gain, improved satisfaction | Faster page loads, better in-context guidance |
 | **3** | Significant: removes a blocker, prevents churn, or unlocks a new capability | Blocker removal, churn prevention, revenue impact per account | Removes top deal-blocker, prevents at-risk churn |
-| **4** | Step-change: transforms the account's relationship with the product | New revenue stream, 10x improvement, market-creating | A new capability that replaces a category of third-party tools; a foundational AI workflow |
+| **4** | Step-change: transforms the account's relationship with the product | New revenue stream, 10x improvement | A new capability that replaces a category of third-party tools; a foundational AI workflow |
+| **5** | Transformational: redefines the category or becomes core to the product's identity | Market-creating, durable competitive moat | A capability competitors can't easily match; the reason accounts choose Tempo over anything else |
 
-> 💡 Would the customer say "that's nice" (1), "that helps" (2), "that changes things for us" (3), or "that changes everything" (4)?
+> 💡 Would the customer say "that's nice" (1), "that helps" (2), "that changes things for us" (3), "that changes everything" (4), or "that's why we're here" (5)?
 
 **Impact by strategic lever:**
 
-| Lever | 1 | 2 | 3 | 4 |
-|-------|---|---|---|---|
-| **Acquisition** | Slightly smoother trial | Faster time-to-first-value | Removes top deal-blocker | Opens a new market |
-| **Retention** | Reduces a minor annoyance | Improves satisfaction measurably | Prevents likely churn | Makes switching unthinkable |
-| **Expansion** | Small usage growth | Drives meaningful upsell | Unlocks a new paid capability | Creates a new revenue line |
-| **Efficiency** | Saves minutes per week | Saves hours per week or cuts cost | Eliminates a significant burden | Order-of-magnitude improvement |
+| Lever | 1 | 2 | 3 | 4 | 5 |
+|-------|---|---|---|---|---|
+| **Acquisition** | Slightly smoother trial | Faster time-to-first-value | Removes top deal-blocker | Opens a new market | Becomes the category's default reference product |
+| **Retention** | Reduces a minor annoyance | Improves satisfaction measurably | Prevents likely churn | Makes switching unthinkable | Makes the account structurally dependent on the product |
+| **Expansion** | Small usage growth | Drives meaningful upsell | Unlocks a new paid capability | Creates a new revenue line | Becomes the primary driver of account growth |
+| **Efficiency** | Saves minutes per week | Saves hours per week or cuts cost | Eliminates a significant burden | Order-of-magnitude improvement | Redefines how the whole org operates |
 
 ---
 
-### Confidence (1–4)
+### Confidence (1–5)
 
 _How strong is the evidence?_
 
@@ -101,6 +103,7 @@ _How strong is the evidence?_
 | **2** | Directional: some signal, small sample | A few customer mentions, competitor has it | 3 support tickets, 1 customer interview |
 | **3** | Strong: multiple data points converging | Multiple customer requests, pipeline data, support patterns | 10+ requests, 5 deals blocked |
 | **4** | Validated: quantitative data with meaningful sample | Usage analytics, A/B results, survey with n>30 | Funnel data, NPS regression analysis |
+| **5** | Proven: causal evidence, replicated | Controlled experiment, replicated across cohorts or time periods | A/B result confirmed in a second cohort, holds after a seasonality check |
 
 > 💡 Could you convince a skeptic with the evidence you have?
 
