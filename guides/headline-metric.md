@@ -1,7 +1,7 @@
 ---
 title: The Anchor Signal
 description: "How to pick a signal that actually anchors a named outcome, and when to collapse to a single headline metric"
-last_reviewed: 2026-07-06
+last_reviewed: 2026-07-10
 icon: "📖"
 ---
 
@@ -63,6 +63,9 @@ Six properties. Apply them to each Signal the vision names.
 5. **Tied to an industry metric.** When customers and analysts ask how you measure, you can point to an industry standard (DORA, SPACE, NPS, retention cohorts, etc.) and explain the connection. Otherwise you'll struggle to benchmark.
 
 6. **Resistant to gaming.** A team that wants to "win" on the Signal should have to actually improve customer outcomes to do it. If there's a way to move the number that wouldn't help a customer, fix the Signal.
+
+> [!IMPORTANT]
+> **The North Star answers to revenue quality.** One rung above the Signals sits the Commercial Frame (see the [Measurement Chain](../anchors/measurement-chain.md)): net new revenue with GRR and logo retention held. A North Star that can rise while gross retention falls is misnamed: it measures activity, not the outcome customers pay for. Test every candidate against this before crowning it.
 
 > [!IMPORTANT]
 > **A Signal must be attributable.** Don't manufacture a Signal you can't tie back to the work. When many jobs move one number, or external cycles and seasonality swamp it, you can't read a change as evidence your feature worked. Name the confounder, then prefer a leading indicator you *can* attribute over a headline number you can't. "An outcome without a Signal is a slogan" is a rule against vagueness, not a licence for false precision.

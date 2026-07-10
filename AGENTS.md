@@ -8,12 +8,13 @@ last_reviewed: 2026-07-06
 
 This repository is **ProductOS**, a reusable, product-agnostic **agentic-delivery operating system**: the anchors, Job Specs, templates, and agent-executable skills that make delivery *run*. Anything specific to a real product (vision, principles, invariants) is documented as a *guide*: what good looks like, when it's "done," and how to write your own.
 
-The human PM craft (the six-phase loop, discovery, RICE, personas) is a **separate, human-owned layer**, kept in `pm-playbook/`. It's now **published as a top-level section of the live site**, sitting alongside the agentic method, but it stays a distinct layer with a one-way dependency: pm-playbook may reference the core (anchors, guides, templates), the core never references pm-playbook.
+The human product craft (the six-phase loop, discovery, RICE, personas, and the judgement system: craft, the calibration ledger, customer formulations) is a **separate, human-owned layer** covering the whole product function, kept in `pm-playbook/`. It's now **published as a top-level section of the live site**, sitting alongside the agentic method, but it stays a distinct layer with a one-way dependency: pm-playbook may reference the core (anchors, guides, templates), the core never references pm-playbook.
 
 ProductOS stays independent of the day-to-day craft. Two bridges cross the line on purpose:
 
 - **Path-tiering** (Quick Win / Lightweight / Full Spec), the craft's, sets *how* the verdict rule scales.
 - **Evidence**: the templates point at the playbook's discovery guidance for how the evidence behind a job gets gathered.
+- **Measurement**: the Commercial Frame in the measurement-chain anchor points at the playbook's churn-tagging workflow and calibration ledger for how revenue-quality reads are produced and how judgement gets scored. The verdict rule is untouched: calibration is a learning gate, never a shipping gate.
 
 The gates never disappear. Their depth tracks the stakes.
 
@@ -64,7 +65,7 @@ Else: out of scope, however clever.
 ## Repo structure
 
 The whole repo reads as the OS: anchors, the OS method guides, the OS
-templates, and skills. The human PM craft is a separate, human-owned layer,
+templates, and skills. The human product craft is a separate, human-owned layer,
 out of scope here.
 
 ```
@@ -97,7 +98,7 @@ productos/
 │   ├── job-spec.md                 # Tempo Job Spec, full-stakes depth, gate fires on an invariant
 │   ├── job-links.md                # Tempo Job Links for the free-time job (accounts/ARR/renewals)
 │   └── rfc.md                      # Tempo RFC: the unified availability view, ship-coupled
-├── pm-playbook/                    # the human PM craft layer, published as a top-level site section
+├── pm-playbook/                    # the human product craft layer (all four crafts), published as a top-level site section
 │   ├── README.md                   # section landing page
 │   └── ...                         # the six-phase loop, discovery, RICE, personas, templates
 └── skills/                         # agent-executable skills

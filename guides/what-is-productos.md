@@ -1,7 +1,7 @@
 ---
 title: What is ProductOS
 description: "The two-minute explainer: what ProductOS is, the problem it solves, the shape it takes, and the one rule that decides what ships."
-last_reviewed: 2026-07-06
+last_reviewed: 2026-07-10
 icon: "🧭"
 ---
 
@@ -96,12 +96,20 @@ ProductOS is two layers, both live now.
 
 - **The delivery OS** -- the anchors, Job Specs, the verdict rule, design loops,
   outcome UAT, and the agent-executable skills that carry the method end to end.
-- **The PM Playbook** -- the human product-management craft: the six-phase
-  operating loop, discovery, the decision framework, RICE, personas.
+- **The Product Playbook** -- the human craft layer for the whole product
+  function (product management, product design, product marketing,
+  research/analytics): the six-phase operating loop, discovery, the decision
+  framework, RICE, personas, and the judgement system: the universal taste
+  loop in [Craft](../pm-playbook/craft.md), the
+  [calibration ledger](../pm-playbook/calibration.md) that scores every
+  craft's predictions, and the shared
+  [customer formulation](../pm-playbook/templates/customer-formulation.md).
 
-The dependency runs one way. The craft layer may reference the OS; the OS never
-references the craft. You can run the delivery OS on its own, and reach for the
-Playbook when you want the human craft that feeds it.
+The dependency runs one way. The craft layer may reference the OS; the OS
+crosses back only over a handful of named bridges (path-tiering, evidence,
+measurement: see the layering note in [AGENTS.md](../AGENTS.md)). You can run
+the delivery OS on its own, and reach for the Playbook when you want the human
+craft that feeds it.
 
 ---
 

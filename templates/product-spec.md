@@ -34,7 +34,10 @@ anchors: [product-vision.md, product-principles.md, invariants.md]
 > bolted on afterwards. It should decompose into the outcome Signals below:
 > they are its drivers. Where an industry-standard metric fits (DORA, SPACE,
 > retention, activation, NPS), anchor to it so the number reads as credible
-> rather than invented.
+> rather than invented. One rung above it sits the **Commercial Frame**
+> ([Measurement Chain](../anchors/measurement-chain.md)): the North Star must
+> be able to explain movement in revenue quality (NRR, GRR, logo retention).
+> If it can rise while gross retention falls, it is misnamed.
 
 - **Metric:** [one crisply named number]
 - **Definition:** [what is counted, over what window, for whom (tight enough

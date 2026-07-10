@@ -112,8 +112,18 @@ export default defineConfig({
               items: [
                 { label: 'Overview', link: '/pm-playbook/' },
                 { label: 'Product Playbook (six phases)', link: '/pm-playbook/product-playbook/' },
-                { label: 'PM Handbook', link: '/pm-playbook/pm-handbook/' },
+                { label: 'Product Handbook', link: '/pm-playbook/product-handbook/' },
                 { label: 'Working Together', link: '/pm-playbook/working-together/' },
+              ],
+            },
+            {
+              label: 'Craft & judgement',
+              collapsed: true,
+              items: [
+                { label: 'Craft', link: '/pm-playbook/craft/' },
+                { label: 'Domain Entry', link: '/pm-playbook/domain-entry/' },
+                { label: 'Calibration', link: '/pm-playbook/calibration/' },
+                { label: 'Learning Accounts', link: '/pm-playbook/learning-accounts/' },
               ],
             },
             {
@@ -140,6 +150,8 @@ export default defineConfig({
                 { label: 'Template: Research', link: '/pm-playbook/templates/research/' },
                 { label: 'Template: Ritual Review', link: '/pm-playbook/templates/ritual-review/' },
                 { label: 'Template: Post-Launch Review', link: '/pm-playbook/templates/post-launch-review/' },
+                { label: 'Template: Customer Formulation', link: '/pm-playbook/templates/customer-formulation/' },
+                { label: 'Template: Formulation Review', link: '/pm-playbook/templates/formulation-review/' },
               ],
             },
           ],

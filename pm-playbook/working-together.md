@@ -1,7 +1,7 @@
 ---
 title: Working Together
 description: How the product triad (product, engineering, and design) collaborates
-last_reviewed: 2026-07-06
+last_reviewed: 2026-07-10
 icon: "🧩"
 ---
 
@@ -11,7 +11,7 @@ Product, engineering, and design form the product triad. Three disciplines, one 
 
 Everything connects back to the [named outcomes and their signals](../anchors/product-vision.md) in the product vision. Those are what every PR, design review, and post-launch review tests against.
 
-> 📖 Read this alongside [Product Playbook](./product-playbook.md) (the operating model) and [PM Handbook](./pm-handbook.md) (for PMs specifically).
+> 📖 Read this alongside [Product Playbook](./product-playbook.md) (the operating model), the [Product Handbook](./product-handbook.md) (the team handbook), and [Craft](./craft.md) (the judgement layer per discipline). This doc covers decision rights and ownership; Craft covers how each discipline builds and proves judgement.
 
 ---
 

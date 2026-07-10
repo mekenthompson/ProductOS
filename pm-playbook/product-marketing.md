@@ -1,7 +1,7 @@
 ---
 title: Product Marketing
 description: "The positioning-and-messaging discipline for a PM org: who owns the copy kit, when it gets refreshed as specs evolve, and how it feeds sales and the website"
-last_reviewed: 2026-07-06
+last_reviewed: 2026-07-10
 icon: "📢"
 ---
 
@@ -83,9 +83,19 @@ Timing rides on the release rhythm. The messaging is ready **before GA**, not af
 
 ---
 
+## The message is a scored call
+
+Positioning is a prediction: *this framing will move the funnel*. Treat it like one. Every launch narrative ships with a predicted funnel movement and a date ("stage-1→2 conversion lifts in [segment] by [date]"), logged in the [calibration ledger](./calibration.md) like any RFC mechanism and scored when the funnel read lands. **Message pull-through** is the qualitative check beside it: the positioning language appearing in customers' own mouths in win/loss interviews.
+
+This is what keeps the discipline honest. The failure mode it prevents is being judged on whether sales likes the deck rather than whether the message wins deals, which builds fluency and zero judgement. Full PMM craft profile, exposures, and measures: [Craft](./craft.md).
+
+---
+
 ## Related
 
 - **[Positioning and Messaging](../guides/positioning-and-messaging.md)** -- the method: how to derive the copy kit from the specs.
 - **[Copy Kit Template](../templates/copy-kit.md)** -- the artefact this discipline owns and keeps current.
 - **[Discovery](./discovery.md)** -- where the personas and job stories the voice of customer draws from come from.
 - **[Release Phases](./release-phases.md)** -- the rhythm the messaging-ready-before-GA timing rides on.
+- **[Craft](./craft.md)** -- the PMM profile: message/funnel predictions, win/loss exposure, failure modes.
+- **[Calibration](./calibration.md)** -- where the funnel predictions get logged and scored.
