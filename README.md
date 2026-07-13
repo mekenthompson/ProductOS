@@ -11,7 +11,7 @@ That's the front door: the whole method, browsable, searchable, always current. 
 Once you're in:
 
 - **[Adopt it →](https://mekenthompson.github.io/ProductOS/guides/adopting/)** no installer; copy the shapes into your own repo in an afternoon.
-- **[See it filled in on a real product →](https://github.com/switchroom/switchroom/tree/main/reference)** real anchors, a product spec, 20+ Job Specs, held against a live UAT harness.
+- **[See it filled in on a real product →](https://github.com/switchroom/switchroom/tree/main/reference)** switchroom is a separate codebase running ProductOS end to end (a worked example, not the ProductOS source): real anchors, a product spec, 20+ Job Specs, held against a live UAT harness.
 
 ---
 

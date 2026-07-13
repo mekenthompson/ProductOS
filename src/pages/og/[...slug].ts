@@ -11,8 +11,8 @@ export const { getStaticPaths, GET } = await OGImageRoute({
   getImageOptions: (_path, doc) => ({
     title: doc.data.title ?? 'ProductOS',
     description: doc.data.description ?? 'A product operating system: anchors, Job Specs, guides, templates, and agent-executable skills.',
-    bgGradient: [[20, 18, 70], [79, 70, 229]],
-    border: { color: [199, 210, 254], width: 20 },
+    bgGradient: [[10, 31, 82], [20, 102, 248]],
+    border: { color: [158, 192, 255], width: 20 },
     padding: 60,
     font: {
       title: {
@@ -22,7 +22,7 @@ export const { getStaticPaths, GET } = await OGImageRoute({
         lineHeight: 1.3,
       },
       description: {
-        color: [199, 210, 254],
+        color: [158, 192, 255],
         size: 32,
         lineHeight: 1.4,
       },
