@@ -44,7 +44,7 @@ export default defineConfig({
       },
       favicon: '/favicon.svg',
       social: [
-        { icon: 'github', label: 'switchroom', href: 'https://github.com/switchroom/switchroom' },
+        { icon: 'github', label: 'ProductOS on GitHub', href: 'https://github.com/mekenthompson/ProductOS' },
       ],
       lastUpdated: true,
       tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 },
