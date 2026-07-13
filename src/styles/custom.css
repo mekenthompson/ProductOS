@@ -36,3 +36,49 @@
   --sl-color-accent: #1466F8;
   --sl-color-accent-high: #0B2B6B;
 }
+
+/* --- ProductOS brand polish ------------------------------------------- */
+
+/* Hero and link buttons: one set, one radius, one hover language */
+.sl-link-button {
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: background-color 0.15s ease, border-color 0.15s ease,
+    color 0.15s ease;
+}
+.sl-link-button.primary {
+  background: #1466f8;
+  border-color: #1466f8;
+  color: #fff;
+}
+.sl-link-button.primary:hover {
+  background: #0f52c9;
+  border-color: #0f52c9;
+}
+.sl-link-button.secondary:hover {
+  border-color: var(--sl-color-accent);
+  color: var(--sl-color-white);
+}
+.sl-link-button:focus-visible {
+  outline: 2px solid var(--sl-color-accent);
+  outline-offset: 2px;
+}
+
+/* Content links: underline on hover so interactive text is unambiguous */
+.sl-markdown-content a:not(:where(.not-content *)):hover {
+  text-decoration: underline;
+}
+
+/* Blockquotes: a quiet blue spine instead of neutral gray */
+.sl-markdown-content blockquote:not(:where(.not-content *)) {
+  border-inline-start-color: color-mix(
+    in srgb,
+    var(--sl-color-accent) 45%,
+    transparent
+  );
+}
+
+/* Link cards: accent-tinted border on hover, consistent with buttons */
+.sl-link-card:hover {
+  border-color: color-mix(in srgb, var(--sl-color-accent) 55%, transparent);
+}

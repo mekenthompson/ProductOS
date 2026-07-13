@@ -1,6 +1,13 @@
-# ProductOS
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="branding/lockup-horizontal-reversed.svg">
+    <img src="branding/lockup-horizontal.svg" alt="ProductOS" width="380">
+  </picture>
+</p>
 
-**A product operating system in markdown: anchors, Job Specs, a verdict rule, and agent-executable skills that make delivery run.**
+<p align="center"><strong>A product operating system in markdown: anchors, Job Specs, a verdict rule, and agent-executable skills that make delivery run.</strong></p>
+
+---
 
 This is what I actually run product with. Every layer, from why we're building at all down to the single job in front of an agent, gets its own document, so whoever's touching the work, human or agent, has exactly the context that layer needs and makes the right call.
 
