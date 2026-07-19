@@ -39,8 +39,10 @@ export default defineConfig({
         }),
       ],
       logo: {
-        src: './public/favicon.svg',
+        light: './public/img/wordmark-productos.svg',
+        dark: './public/img/wordmark-productos-dark.svg',
         alt: 'ProductOS',
+        replacesTitle: true,
       },
       favicon: '/favicon.svg',
       social: [

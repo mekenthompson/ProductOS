@@ -83,51 +83,46 @@
   border-color: color-mix(in srgb, var(--sl-color-accent) 55%, transparent);
 }
 
-/* Hero wordmark: PIXSOUL pixel wordmark with a soft shadow cast down-left */
-.hero.hero {
-  grid-template-columns: 1fr;
-  gap: 1rem;
+/* Homepage wordmark: PIXSOUL pixel wordmark with a soft shadow cast down-left */
+.pos-home-hero {
+  width: min(100%, 34rem);
+  margin: 0.5rem 0 1.5rem;
 }
-.hero.hero > .hero-html {
-  order: -1;
-  width: min(100%, 46rem);
-  margin-inline: auto;
-  padding: 1.5rem 0.5rem 2rem;
-}
-.hero .pos-wordmark {
+.pos-home-hero .pos-wordmark {
   display: block;
   width: 100%;
 }
-.hero .pos-wordmark img {
+.pos-home-hero .pos-wordmark img {
   display: block;
   width: 100%;
   height: auto;
-  filter: drop-shadow(-5px 10px 4px rgba(0, 0, 0, 0.35));
+  border-radius: 0;
+  cursor: default;
+  filter: drop-shadow(-3px 6px 3px rgba(0, 0, 0, 0.3));
 }
-.hero .pos-wordmark img.pos-wordmark-dark {
+.pos-home-hero .pos-wordmark img.pos-wordmark-dark {
   display: none;
 }
-:root[data-theme='dark'] .hero .pos-wordmark img.pos-wordmark-light {
+:root[data-theme='dark'] .pos-home-hero .pos-wordmark img.pos-wordmark-light {
   display: none;
 }
-:root[data-theme='dark'] .hero .pos-wordmark img.pos-wordmark-dark {
+:root[data-theme='dark'] .pos-home-hero .pos-wordmark img.pos-wordmark-dark {
   display: block;
 }
-:root[data-theme='dark'] .hero .pos-wordmark img {
-  filter: drop-shadow(-5px 10px 5px rgba(0, 0, 0, 0.55));
+:root[data-theme='dark'] .pos-home-hero .pos-wordmark img {
+  filter: drop-shadow(-3px 6px 4px rgba(0, 0, 0, 0.5));
 }
-/* The wordmark carries the product name; keep the h1 for a11y only */
-.hero.hero h1 {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  white-space: nowrap;
-}
-.hero.hero .sl-flex.stacked,
-.hero.hero .sl-flex.copy {
+.pos-home-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
   align-items: center;
-  text-align: center;
+  margin: 1.5rem 0 2rem;
+}
+
+/* Header wordmark: compact, no drop shadow at nav size */
+.site-title img {
+  height: 1.35rem;
+  width: auto;
+  max-width: 100%;
 }

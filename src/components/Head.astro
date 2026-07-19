@@ -49,7 +49,7 @@ const ogImage = customSocialImage
     }
     document.addEventListener('click', function (e) {
       var t = e.target;
-      if (t && t.tagName === 'IMG' && t.closest && t.closest('.sl-markdown-content')) {
+      if (t && t.tagName === 'IMG' && t.closest && t.closest('.sl-markdown-content') && !t.closest('.pos-wordmark')) {
         if (document.querySelector('.pos-lightbox')) return;
         var box = document.createElement('div');
         box.className = 'pos-lightbox';

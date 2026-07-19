@@ -1,38 +1,29 @@
 ---
 title: ProductOS
 description: "A product operating system in markdown, kept next to your code. Reference-only: adopt it by copying the shapes into your own repo, no installer."
-template: splash
-hero:
-  title: ProductOS
-  image:
-    html: >-
-      <span class="pos-wordmark"><img src="/ProductOS/img/wordmark-productos.svg"
-      alt="PRODUCTOS" class="pos-wordmark-light" width="1440" height="240"
-      /><img src="/ProductOS/img/wordmark-productos-dark.svg" alt=""
-      aria-hidden="true" class="pos-wordmark-dark" width="1440" height="240"
-      /></span>
-  tagline: "A product operating system in markdown, kept next to your code."
-  text: >
-    Layered documents that carry each decision down the chain, so judgement
-    stays in the loop while agents do the building. No installer: you adopt it
-    by copying the shapes into your own repo. Proven on a real codebase:
-    20+ Job Specs held against a live UAT harness.
-  actions:
-    - text: What is ProductOS
-      link: /ProductOS/guides/what-is-productos/
-      icon: right-arrow
-      variant: primary
-    - text: See it on GitHub
-      link: https://github.com/mekenthompson/ProductOS
-      icon: external
-      variant: secondary
-    - text: 'Working example: switchroom'
-      link: https://github.com/switchroom/switchroom/tree/main/reference
-      icon: external
-      variant: secondary
+tableOfContents: false
+head:
+  - tag: style
+    content: "h1#_top { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }"
 ---
 
-import { Card, CardGrid, LinkCard, Aside } from '@astrojs/starlight/components';
+import { Card, CardGrid, LinkCard, LinkButton, Aside } from '@astrojs/starlight/components';
+
+<div class="pos-home-hero">
+  <span class="pos-wordmark"><img src="/ProductOS/img/wordmark-productos.svg" alt="" aria-hidden="true" class="pos-wordmark-light" width="1440" height="240" /><img src="/ProductOS/img/wordmark-productos-dark.svg" alt="" aria-hidden="true" class="pos-wordmark-dark" width="1440" height="240" /></span>
+</div>
+
+**A product operating system in markdown, kept next to your code.** Layered
+documents that carry each decision down the chain, so judgement stays in the
+loop while agents do the building. No installer: you adopt it by copying the
+shapes into your own repo. Proven on a real codebase: 20+ Job Specs held
+against a live UAT harness.
+
+<div class="pos-home-actions">
+  <LinkButton href="/ProductOS/guides/what-is-productos/" icon="right-arrow">What is ProductOS</LinkButton>
+  <LinkButton href="https://github.com/mekenthompson/ProductOS" icon="external" variant="secondary">See it on GitHub</LinkButton>
+  <LinkButton href="https://github.com/switchroom/switchroom/tree/main/reference" icon="external" variant="secondary">Working example: switchroom</LinkButton>
+</div>
 
 ![ProductOS: layered markdown next to your code. Each layer carries its decision down the chain, into the verdict rule that ships the change or sends it back.](/ProductOS/img/hero-productos.png)
 
