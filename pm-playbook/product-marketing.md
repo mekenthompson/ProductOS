@@ -97,5 +97,4 @@ This is what keeps the discipline honest. The failure mode it prevents is being 
 - **[Copy Kit Template](../templates/copy-kit.md)** -- the artefact this discipline owns and keeps current.
 - **[Discovery](./discovery.md)** -- where the personas and job stories the voice of customer draws from come from.
 - **[Release Phases](./release-phases.md)** -- the rhythm the messaging-ready-before-GA timing rides on.
-- **[Craft](./craft.md)** -- the PMM profile: message/funnel predictions, win/loss exposure, failure modes.
-- **[Craft](./craft.md)** -- the build loop the funnel predictions belong to.
+- **[Craft](./craft.md)** -- the build loop the funnel predictions belong to, and the PMM profile: message/funnel predictions, win/loss exposure, failure modes.

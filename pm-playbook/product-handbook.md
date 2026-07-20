@@ -176,7 +176,7 @@ Decision rights and triad mechanics: [Working Together](./working-together.md). 
 ## Resources
 
 **Start here:**
-- [Craft](./craft.md): the universal taste loop and the four craft profiles
+- [Craft](./craft.md): the build loop and the four craft profiles
 - [Product Vision](../anchors/product-vision.md) · [Product Playbook](./product-playbook.md) · [Working Together](./working-together.md)
 
 **Guides:**

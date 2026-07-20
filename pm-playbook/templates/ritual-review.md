@@ -47,8 +47,8 @@ Where did you get stuck, confused, or frustrated?
 
 Step back from the walkthrough and read the product at Signal altitude. Once a month, check that each named [Signal](../../guides/product-analytics.md) (see [The Anchor Signal](../../guides/headline-metric.md) for what the Signal is) is still telling the truth about the outcome.
 
-- [ ] **Holding and trending?** For each named Signal, is it at or moving toward target, or drifting away?
-- [ ] **Guardrails intact?** Is any guardrail metric breaching, or creeping toward its limit?
+- [ ] **Holding and trending?** For each named Signal, is it at or moving towards target, or drifting away?
+- [ ] **Guardrails intact?** Is any guardrail metric breaching, or creeping towards its limit?
 - [ ] **One decision from the trend.** What single decision does this month's trend point to (double down, dig in, or leave it)?
 
 ---

@@ -147,7 +147,7 @@ Use the JTBD form:
 
 > **When** `[situation]`, **`[persona]` wants to** `[motivation]`, **so they can** `[outcome]`.
 
-Map the forces around the job in the JTBD sense: what pushes the user toward a new solution, what pulls them, what habit they're fighting. See [JTBD Guide](./jtbd-guide.md). Forces tell you whether the job is *active* (people are looking for solutions) or *latent* (people have settled for the current state). Record them in your discovery notes; a brief summary can go in the RFC body, but the full table is not required in the template.
+Map the forces around the job in the JTBD sense: what pushes the user towards a new solution, what pulls them, what habit they're fighting. See [JTBD Guide](./jtbd-guide.md). Forces tell you whether the job is *active* (people are looking for solutions) or *latent* (people have settled for the current state). Record them in your discovery notes; a brief summary can go in the RFC body, but the full table is not required in the template.
 
 ### How Users Fail Today
 
@@ -312,7 +312,7 @@ An RFC must be re-approved if:
 
 - **Scope changes significantly** -- more than 20% effort change
 - **Timeline slips** -- more than one quarter delay
-- **Business case changes** -- new market conditions, customer landscape, or strategy
+- **Business case changes** -- new market conditions, a shifted customer base, or strategy
 - **Solution-space changes** -- the must-do / must-not-do envelope is broken
 
 Otherwise, ship.

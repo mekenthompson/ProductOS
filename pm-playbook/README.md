@@ -25,7 +25,7 @@ This is the judgement layer: how the product team runs day to day.
   operating model (Learn → Decide → Shape → Build → Launch → Sell).
 - **[product-handbook.md](./product-handbook.md)**: the team handbook: roles
   across all four crafts, rituals, and first 90 days.
-- **[craft.md](./craft.md)**: the universal taste loop and the four craft
+- **[craft.md](./craft.md)**: the build loop and the four craft
   profiles.
 - **[working-together.md](./working-together.md)**: product-triad
   collaboration and ownership.
@@ -36,7 +36,7 @@ This is the judgement layer: how the product team runs day to day.
 |---|---|
 | [product-playbook.md](./product-playbook.md) | The six-phase operating model (the anchor doc). |
 | [product-handbook.md](./product-handbook.md) | The team handbook: all four crafts, onboarding, rituals, collaboration. |
-| [craft.md](./craft.md) | The universal taste loop; prediction types, exposures, and failure modes per craft. |
+| [craft.md](./craft.md) | The build loop; prediction types, exposures, and failure modes per craft. |
 | [working-together.md](./working-together.md) | Product-triad collaboration and ownership. |
 | [decision-framework.md](./decision-framework.md) | Signal → Standard → Speed (three paths). |
 | [delivery-standards.md](./delivery-standards.md) | Operational workflow with gate checklists. |
