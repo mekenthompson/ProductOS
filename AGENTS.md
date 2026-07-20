@@ -8,7 +8,7 @@ last_reviewed: 2026-07-06
 
 This repository is **ProductOS**, a reusable, product-agnostic **agentic-delivery operating system**: the anchors, Job Specs, templates, and agent-executable skills that make delivery *run*. Anything specific to a real product (vision, principles, invariants) is documented as a *guide*: what good looks like, when it's "done," and how to write your own.
 
-The human product craft (the six-phase loop, discovery, RICE, personas, and the judgement system: craft, with predictions written and scored inside the working artefacts) is a **separate, human-owned layer** covering the whole product function, kept in `pm-playbook/`. It's now **published as a top-level section of the live site**, sitting alongside the agentic method, but it stays a distinct layer with a one-way dependency: pm-playbook may reference the core (anchors, guides, templates), the core never references pm-playbook.
+The human product craft (the six-phase loop, discovery, RICE, personas, and the judgement system: craft, with predictions written and scored inside the working artefacts) is a **separate, human-owned layer** covering the whole product function, kept in `product-playbook/`. It's now **published as a top-level section of the live site**, sitting alongside the agentic method, but it stays a distinct layer with a one-way dependency: product-playbook may reference the core (anchors, guides, templates), the core never references product-playbook.
 
 ProductOS stays independent of the day-to-day craft. Two bridges cross the line on purpose:
 
@@ -20,7 +20,7 @@ The gates never disappear. Their depth tracks the stakes.
 
 ## Scope
 
-- **Purpose**: Product management practices, processes, and principles
+- **Purpose**: Product practices, processes, and principles across the whole product craft
 - **Audience**: Product leaders adopting or adapting this for their team
 - **Format**: Markdown. Humans read it via the Starlight site; agents read the raw markdown.
 
@@ -98,7 +98,7 @@ productos/
 │   ├── job-spec.md                 # Tempo Job Spec, full-stakes depth, gate fires on an invariant
 │   ├── job-links.md                # Tempo Job Links for the free-time job (accounts/ARR/renewals)
 │   └── rfc.md                      # Tempo RFC: the unified availability view, ship-coupled
-├── pm-playbook/                    # the human product craft layer (all four crafts), published as a top-level site section
+├── product-playbook/                    # the human product craft layer (all four crafts), published as a top-level site section
 │   ├── README.md                   # section landing page
 │   └── ...                         # the six-phase loop, discovery, RICE, personas, templates
 └── skills/                         # agent-executable skills
@@ -223,7 +223,7 @@ last_reviewed: YYYY-MM-DD
 ### Do NOT
 
 - Make policy changes without human direction
-- Add content outside product management scope
+- Add content outside product scope
 - Create complex directory structures
 - Add automation without explicit request
 - Bake a real or single company's product into the *method itself* (anchors, guides, templates): it must stay product-agnostic and reusable. The one sanctioned exception is the fictional **Tempo** worked example under `examples/`, clearly labelled illustrative and kept out of the normative content

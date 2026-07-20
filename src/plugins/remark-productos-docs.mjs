@@ -15,7 +15,7 @@
  *
  * Only applied to files that live under one of the directories symlinked
  * into src/content/docs/ (guides, anchors, templates, examples, skills,
- * pm-playbook, AGENTS.md). The hand-written src/content/docs/index.mdx is
+ * product-playbook, AGENTS.md). The hand-written src/content/docs/index.mdx is
  * left untouched.
  */
 import { existsSync } from 'node:fs';
@@ -39,7 +39,7 @@ const PUBLISHED_ROOTS = [
   'templates/',
   'examples/',
   'skills/',
-  'pm-playbook/',
+  'product-playbook/',
   'AGENTS.md',
 ];
 
@@ -63,7 +63,7 @@ const ROUTE_OVERRIDES = {
   'skills/review-doc/SKILL.md': 'skills/review-doc',
   'skills/uat-ux-debug/SKILL.md': 'skills/uat-ux-debug',
   'skills/README.md': 'skills',
-  'pm-playbook/README.md': 'pm-playbook',
+  'product-playbook/README.md': 'product-playbook',
 };
 
 function normalize(p) {

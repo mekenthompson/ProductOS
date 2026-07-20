@@ -72,7 +72,7 @@ One path for everything is no path at all. The verdict rule is the *bar*, not th
 | **Approval** | Tech Lead/PM | PM + Tech Lead | Head of Product |
 | **Gates** | Outcome sanity check | Outcome UAT + 2-wk review | Full verdict, 2wk/30d/90d |
 
-Full detail on picking a path: [Decision Framework](./pm-playbook/decision-framework.md).
+Full detail on picking a path: [Decision Framework](./product-playbook/decision-framework.md).
 
 ---
 
@@ -86,7 +86,7 @@ Full detail on picking a path: [Decision Framework](./pm-playbook/decision-frame
 | **`examples/`** | Worked, filled examples: `tempo/` (Tempo, a fictional team-scheduling product, one worked set). |
 | **`skills/`** | Agent-executable skills. Creation (interview to alignment, never draft from assumptions): `create-strategy`, `create-product-spec`, `create-job-spec`, `create-rfc`. Gates: `review-doc` (the fresh-process document reviewer), `amend-durable-doc` (the drift guard on ratified docs). Plus `feedback-to-jobs` (demand intake) and `uat-ux-debug` (outcome debugging). |
 | **`AGENTS.md`** | The terse operating contract: read this to *execute* the method. |
-| **`pm-playbook/`** | Separate human-craft layer for the whole product function (PM, design, marketing, research): the six-phase loop, the judgement system (`craft`, with predictions written and scored inside the working artefacts), discovery, RICE, personas. It references the OS; the OS crosses back only over the named bridges in `AGENTS.md`. |
+| **`product-playbook/`** | Separate human-craft layer for the whole product function (PM, design, marketing, research): the six-phase loop, the judgement system (`craft`, with predictions written and scored inside the working artefacts), discovery, RICE, personas. It references the OS; the OS crosses back only over the named bridges in `AGENTS.md`. |
 | **`astro.config.mjs`, `src/`, `public/`** | Site plumbing. The Starlight site builds straight from the same markdown files above, this is the machinery, not new content. |
 
 ---

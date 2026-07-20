@@ -123,7 +123,7 @@ invariants: [<named lines this job must never cross, by construction>]
 > that would confirm or refute it drifts to [Job Links](./job-links.md) and
 > the RFC). One line, always: even a Quick Win names its bet, if only to show
 > it is safe. How to gather the evidence that kills or confirms the bet is
-> the craft layer's job: see [Discovery](../pm-playbook/discovery.md).
+> the craft layer's job: see [Discovery](../product-playbook/discovery.md).
 
 - **This job assumes:** <the belief about the user or their world the job
   depends on, e.g. "the user hits this situation often enough, and the
@@ -136,13 +136,13 @@ invariants: [<named lines this job must never cross, by construction>]
 > much you trust it. A soft Quick Win can leave this thin; a Full Spec should
 > not. Thin evidence is not a blocker, it just means low confidence, carried
 > honestly into the RICE score below. Link out, don't restate: gathering it is
-> the craft layer's job (see [Discovery](../pm-playbook/discovery.md), and the
-> [Research](../pm-playbook/templates/research.md) and [Customer Call](../pm-playbook/templates/customer-call.md)
+> the craft layer's job (see [Discovery](../product-playbook/discovery.md), and the
+> [Research](../product-playbook/templates/research.md) and [Customer Call](../product-playbook/templates/customer-call.md)
 > templates).
 
 - **Evidence:** <source -- what it shows>; <source -- what it shows>. Three
   bullets max, strongest first.
-- **Confidence:** <1-4>, on the [RICE Confidence scale](../pm-playbook/rice.md):
+- **Confidence:** <1-4>, on the [RICE Confidence scale](../product-playbook/rice.md):
   1 hypothesis, 2 directional, 3 strong, 4 validated. More evidence raises it.
 
 ## Measures of success
@@ -293,4 +293,4 @@ just the happy path.
 - [Job Links Template](./job-links.md) -- the churny join that carries accounts and revenue, kept out of this spec
 - [Agentic Delivery](../guides/agentic-delivery.md) -- how this spec sits in the verdict rule and the gates
 - [Writing an RFC](../guides/writing-an-rfc.md) -- how to write the ship-coupled RFC that references this spec
-- [Discovery](../pm-playbook/discovery.md) -- the craft of gathering the evidence that validates the job and its bet
+- [Discovery](../product-playbook/discovery.md) -- the craft of gathering the evidence that validates the job and its bet

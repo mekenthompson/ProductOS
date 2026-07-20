@@ -1,10 +1,10 @@
 ---
-title: PM Playbook
-slug: pm-playbook
+title: Product Playbook
+slug: product-playbook
 description: "The human product craft, all four disciplines: the six-phase operating loop, the taste and judgement system, the discipline guides, and the templates."
 ---
 
-# PM Playbook
+# Product Playbook
 
 The **human product craft**, across the whole function (product management,
 product design, product marketing, research/analytics): the six-phase operating
@@ -13,15 +13,15 @@ discipline guides, and the templates that go with them.
 
 This is the judgement layer: how the product team runs day to day.
 
-> **Layering rule.** `pm-playbook` may reference ProductOS core (the anchors in
+> **Layering rule.** `product-playbook` may reference ProductOS core (the anchors in
 > [`../anchors/`](../anchors/product-vision.md) and the method guides in [`../guides/`](../guides/agentic-delivery.md));
-> **ProductOS core never references `pm-playbook`.** The dependency runs one
+> **ProductOS core never references `product-playbook`.** The dependency runs one
 > way. Craft cross-references stay relative within this directory; references up
 > into core point at the in-repo core docs.
 
 ## Start here
 
-- **[product-playbook.md](./product-playbook.md)**: the full six-phase
+- **[product-loop.md](./product-loop.md)**: the full six-phase
   operating model (Learn → Decide → Shape → Build → Launch → Sell).
 - **[product-handbook.md](./product-handbook.md)**: the team handbook: roles
   across all four crafts, rituals, and first 90 days.
@@ -34,7 +34,7 @@ This is the judgement layer: how the product team runs day to day.
 
 | Doc | What it is |
 |---|---|
-| [product-playbook.md](./product-playbook.md) | The six-phase operating model (the anchor doc). |
+| [product-loop.md](./product-loop.md) | The six-phase operating model (the anchor doc). |
 | [product-handbook.md](./product-handbook.md) | The team handbook: all four crafts, onboarding, rituals, collaboration. |
 | [craft.md](./craft.md) | The build loop; prediction types, exposures, and failure modes per craft. |
 | [working-together.md](./working-together.md) | Product-triad collaboration and ownership. |
@@ -43,7 +43,7 @@ This is the judgement layer: how the product team runs day to day.
 | [release-phases.md](./release-phases.md) | Private Preview → Public Preview → GA. |
 | [discovery.md](./discovery.md) | Validating problems before writing an RFC. |
 | [domain-expertise.md](./domain-expertise.md) | The ramp protocol: entering a new domain fast, the week-two customer model, staying ramped longitudinally. |
-| [product-analytics.md](./product-analytics.md) | The measurement discipline: what a PM owes, and how a Signal gets stood up and read. |
+| [product-analytics.md](./product-analytics.md) | The measurement discipline: what the team owes, and how a Signal gets stood up and read. |
 | [customer-feedback.md](./customer-feedback.md) | Handling and triaging product feedback. |
 | [rice.md](./rice.md) | RICE scoring framework. |
 | [personas.md](./personas.md) | How to write personas that are load-bearing: who hires the job, what good and bad look like. |

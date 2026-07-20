@@ -11,7 +11,7 @@ Product, engineering, and design form the product triad. Three disciplines, one 
 
 Everything connects back to the [named outcomes and their signals](../anchors/product-vision.md) in the product vision. Those are what every PR, design review, and post-launch review tests against.
 
-> 📖 Read this alongside [Product Playbook](./product-playbook.md) (the operating model), the [Product Handbook](./product-handbook.md) (the team handbook), and [Craft](./craft.md) (the judgement layer per discipline). This doc covers decision rights and ownership; Craft covers how each discipline builds and proves judgement.
+> 📖 Read this alongside [Product Loop](./product-loop.md) (the operating model), the [Product Handbook](./product-handbook.md) (the team handbook), and [Craft](./craft.md) (the judgement layer per discipline). This doc covers decision rights and ownership; Craft covers how each discipline builds and proves judgement.
 
 ---
 
@@ -244,7 +244,7 @@ If the triad can't resolve a disagreement, bring it to your leads with context a
 
 | If you want to... | Go to |
 |-------------------|-------|
-| Understand the full operating model | [Product Playbook](./product-playbook.md) |
+| Understand the full operating model | [Product Loop](./product-loop.md) |
 | See the product vision and personas | [Product Vision](../anchors/product-vision.md) |
 | Understand how we decide what to build | [Decision Framework](./decision-framework.md) |
 | See how RFCs work | [Writing an RFC](../guides/writing-an-rfc.md) |

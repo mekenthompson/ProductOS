@@ -13,7 +13,7 @@ Product is two things: domain expertise and product discipline. Domain expertise
 
 The function owns a simple question: **are we spending engineering time on the highest-leverage work, and did it pay?** Answering it takes all four crafts: the expertise to know what's highest-leverage, the discipline to prove it, ship it, and score it.
 
-Companion to the [Product Playbook](./product-playbook.md) (how the company builds product, the six-phase loop). This one is how the product team operates day to day.
+Companion to the [Product Loop](./product-loop.md) (how the company builds product, the six-phase loop). This one is how the product team operates day to day.
 
 ---
 
@@ -177,7 +177,7 @@ Decision rights and triad mechanics: [Working Together](./working-together.md). 
 
 **Start here:**
 - [Craft](./craft.md): the build loop and the four craft profiles
-- [Product Vision](../anchors/product-vision.md) · [Product Playbook](./product-playbook.md) · [Working Together](./working-together.md)
+- [Product Vision](../anchors/product-vision.md) · [Product Loop](./product-loop.md) · [Working Together](./working-together.md)
 
 **Guides:**
 - [Domain Expertise](./domain-expertise.md)
