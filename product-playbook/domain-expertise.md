@@ -9,15 +9,13 @@ icon: "🧭"
 
 Domain expertise IS the [customer model](../templates/product-spec.md#the-customer-model) plus the learnings the domain has given you: who the customer is, their economics, what they'll accept and pay for (see the [Product Handbook](./product-handbook.md)). It is the asset, and it stays in the domain: change segment or product area and it resets, which is why judgement in a new domain is assessed on trend, not level (see [Craft](./craft.md)). What *does* transfer is craft, the method for rebuilding it. This doc makes that method explicit, so ramping into a domain is a repeatable protocol the whole team runs, not a personality trait we hope to hire. The protocol is craft-agnostic: a designer, PMM, or researcher entering a domain runs the same steps, contributing their craft's sections of the customer model (see [Craft](./craft.md)).
 
-The professions that do this for a living (barristers mastering a new industry per case, journalists going from zero to credible in six weeks, clinical psychologists formulating a new patient) all use the same moves. Steal them.
-
 **When to run this:** joining the team, changing product areas, entering a new segment or market, or inheriting a domain in handover. Expect the full protocol to take 2–4 weeks alongside normal work.
 
 ---
 
 ## The protocol
 
-### 1. Scope like a barrister
+### 1. Scope to the decisions in front of you
 
 Don't try to learn the industry. Learn what the decisions in front of you require. Write down the 2–3 decisions you'll face in the next quarter and let them bound the reading list, the interviews, and the depth. Everything outside that boundary is deferred, not skipped.
 
@@ -33,7 +31,7 @@ The official channels give you the official story. The highest-yield sources are
 |---|---|
 | **A churned account** | They have no reason to be polite and they know exactly where the product failed the job. The interview nobody wants to do is the one worth the most. |
 | **A power user or extreme case** | Someone using the product in a way you didn't design. Extreme cases expose the job's real shape faster than ten average users. |
-| **A tenured insider** | The account manager, support veteran, or (best) an ex-customer now on staff who has watched this segment for years. Debrief them like an expert witness: structured questions, until you can argue their view back to them. |
+| **A tenured insider** | The account manager, support veteran, or (best) an ex-customer now on staff who has watched this segment for years. Debrief them with structured questions until you can argue their view back to them. |
 
 ### 4. Ask the dumb questions early
 
@@ -45,7 +43,7 @@ Every source has an agenda: sales wants the deal, the champion wants their featu
 
 ### 6. Pass the economics bar
 
-You are not ramped until you can sketch, from memory, how your customer makes money and where your product touches it: their revenue drivers, their main costs, the metric their operator is judged on, and what a bad month looks like. If you can't do this, every prioritisation call you make is guesswork wearing a framework.
+You are not ramped until you can sketch, from memory, how your customer makes money and where your product touches it: their revenue drivers, their main costs, the metric their operator is judged on, and what a bad month looks like. If you can't do this, every prioritisation call you make is a guess.
 
 ---
 
