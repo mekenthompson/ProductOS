@@ -147,7 +147,7 @@ Use the JTBD form:
 
 > **When** `[situation]`, **`[persona]` wants to** `[motivation]`, **so they can** `[outcome]`.
 
-Map the forces around the job in the JTBD sense: what pushes the user toward a new solution, what pulls them, what habit they're fighting. See [JTBD Guide](./jtbd-guide.md). Forces tell you whether the job is *active* (people are looking for solutions) or *latent* (people have settled for the current state). Record them in your discovery notes; a brief summary can go in the RFC body, but the full table is not required in the template.
+Map the forces around the job in the JTBD sense: what pushes the user towards a new solution, what pulls them, what habit they're fighting. See [JTBD Guide](./jtbd-guide.md). Forces tell you whether the job is *active* (people are looking for solutions) or *latent* (people have settled for the current state). Record them in your discovery notes; a brief summary can go in the RFC body, but the full table is not required in the template.
 
 ### How Users Fail Today
 
@@ -164,7 +164,7 @@ Three flavours of success, in order of weight:
 
 Plus **leading indicators**, early signals (≤ 2 weeks post-launch) that tell you whether you're on track.
 
-For Full Spec work, add the **commercial mechanism**: the specific, dated commercial claim this bet makes ("closes the workflow gap driving tier-2 churn: tier-2 product-gap churn falls within two renewal cycles"). It is scored **Fired / Partial / Missed / Unscoreable** at the 90-day review and logged in the [calibration ledger](../pm-playbook/calibration.md); a prediction too vague to score is graded Unscoreable, which is worse than wrong. If no mechanism can be named, the bet is a feature in search of a reason.
+For Full Spec work, add the **commercial mechanism**: the specific, dated commercial claim this bet makes ("closes the workflow gap driving tier-2 churn: tier-2 product-gap churn falls within two renewal cycles"). It is scored **Fired / Partial / Missed / Unscoreable** at the 90-day [post-launch review](../pm-playbook/templates/post-launch-review.md); a prediction too vague to score is graded Unscoreable, which is worse than wrong. If no mechanism can be named, the bet is a feature in search of a reason.
 
 ### User Failure Modes
 
@@ -202,11 +202,11 @@ Hard limit: 3 bullets, each one linking out. The RFC is not the research documen
 
 ### Bets & Risks
 
-This is the **key assumptions check**: what must be true *about the customer* for this bet to pay. Mark each assumption **[LB]** (load-bearing: if wrong, the RFC is wrong) or **[S]** (supporting), and for every [LB], name the evidence that would show it's wrong within 90 days: that disproof is what the post-launch review reaches for when the mechanism misses. Load-bearing assumptions should trace to the domain's [Customer Formulation](../pm-playbook/templates/customer-formulation.md); an assumption in neither document is untested twice.
+This is the **key assumptions check**: what must be true *about the customer* for this bet to pay. Mark each assumption **[LB]** (load-bearing: if wrong, the RFC is wrong) or **[S]** (supporting), and for every [LB], name the evidence that would show it's wrong within 90 days: that disproof is what the post-launch review reaches for when the mechanism misses. Load-bearing assumptions should trace to the [customer model](../templates/product-spec.md#the-customer-model) in the Product Spec; an assumption in neither document is untested twice.
 
 "If the user genuinely doesn't have this struggling moment, the RFC is wrong" is the kind of bet to surface. Risks should have mitigations.
 
-On approval, the commercial mechanism, the [LB] assumptions, and the Confidence score become one [calibration-ledger](../pm-playbook/calibration.md) entry, scored at the 90-day review. Approving an RFC without a ledger entry is an unscored bet.
+On approval, the commercial mechanism, the [LB] assumptions, and the Confidence score are the prediction the RFC commits to, scored at the 90-day [post-launch review](../pm-playbook/templates/post-launch-review.md). Approving an RFC without a scoreable mechanism is an unscored bet.
 
 ### Rollout
 
@@ -312,7 +312,7 @@ An RFC must be re-approved if:
 
 - **Scope changes significantly** -- more than 20% effort change
 - **Timeline slips** -- more than one quarter delay
-- **Business case changes** -- new market conditions, customer landscape, or strategy
+- **Business case changes** -- new market conditions, a shifted customer base, or strategy
 - **Solution-space changes** -- the must-do / must-not-do envelope is broken
 
 Otherwise, ship.

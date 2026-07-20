@@ -85,7 +85,7 @@ Timing rides on the release rhythm. The messaging is ready **before GA**, not af
 
 ## The message is a scored call
 
-Positioning is a prediction: *this framing will move the funnel*. Treat it like one. Every launch narrative ships with a predicted funnel movement and a date ("stage-1→2 conversion lifts in [segment] by [date]"), logged in the [calibration ledger](./calibration.md) like any RFC mechanism and scored when the funnel read lands. **Message pull-through** is the qualitative check beside it: the positioning language appearing in customers' own mouths in win/loss interviews.
+Positioning is a prediction: *this framing will move the funnel*. Treat it like one. Every launch narrative ships with a predicted funnel movement and a date ("stage-1→2 conversion lifts in [segment] by [date]"), written before the launch like any RFC mechanism and scored when the funnel read lands. **Message pull-through** is the qualitative check beside it: the positioning language appearing in customers' own mouths in win/loss interviews.
 
 This is what keeps the discipline honest. The failure mode it prevents is being judged on whether sales likes the deck rather than whether the message wins deals, which builds fluency and zero judgement. Full PMM craft profile, exposures, and measures: [Craft](./craft.md).
 
@@ -97,5 +97,4 @@ This is what keeps the discipline honest. The failure mode it prevents is being 
 - **[Copy Kit Template](../templates/copy-kit.md)** -- the artefact this discipline owns and keeps current.
 - **[Discovery](./discovery.md)** -- where the personas and job stories the voice of customer draws from come from.
 - **[Release Phases](./release-phases.md)** -- the rhythm the messaging-ready-before-GA timing rides on.
-- **[Craft](./craft.md)** -- the PMM profile: message/funnel predictions, win/loss exposure, failure modes.
-- **[Calibration](./calibration.md)** -- where the funnel predictions get logged and scored.
+- **[Craft](./craft.md)** -- the build loop the funnel predictions belong to, and the PMM profile: message/funnel predictions, win/loss exposure, failure modes.

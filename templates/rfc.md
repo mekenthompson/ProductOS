@@ -101,7 +101,7 @@ What success looks like **from the user's perspective**. Not "we shipped on time
 - **Behavioural signal** -- User now does X without help / Without errors / Within Y seconds. Observable in [product analytics](../guides/product-analytics.md).
 - **Felt experience** -- When asked, the user describes the experience as `[adjective]`. Observable in NPS verbatims, interviews, or support ticket sentiment.
 - **Headline-metric movement** -- Specifically, this should move `[headline metric]` by `[amount]` for `[persona]`. Measured at `[interval]`.
-- **Commercial mechanism** *(required for Full Spec; optional for Lightweight)* -- The specific, dated commercial claim this bet makes: `[e.g., "closes the workflow gap driving tier-2 churn: tier-2 product-gap churn falls within two renewal cycles" / "makes module X attachable at renewal: attach rate rises by 90d"]`. Scored **Fired / Partial / Missed / Unscoreable** at the 90-day review and logged in the [calibration ledger](../pm-playbook/calibration.md). If you can't name a mechanism, the bet is a feature in search of a reason.
+- **Commercial mechanism** *(required for Full Spec; optional for Lightweight)* -- The specific, dated commercial claim this bet makes: `[e.g., "closes the workflow gap driving tier-2 churn: tier-2 product-gap churn falls within two renewal cycles" / "makes module X attachable at renewal: attach rate rises by 90d"]`. Scored **Fired / Partial / Missed / Unscoreable** at the 90-day [post-launch review](../pm-playbook/templates/post-launch-review.md). If you can't name a mechanism, the bet is a feature in search of a reason.
 - **Leading indicators (≤ 2 weeks post-launch)** -- `[signal 1]`, `[signal 2]`; early reads on whether success is on track.
 
 ---
@@ -200,8 +200,8 @@ What we're assuming, and what would invalidate the RFC.
 this bet to pay. Mark each **[LB]** (load-bearing: if wrong, this RFC is wrong)
 or **[S]** (supporting). For every **[LB]**, name the evidence that would show
 it's wrong within 90 days: that's what the post-launch review checks when the
-mechanism misses. Load-bearing assumptions should trace to the domain's
-[Customer Formulation](../pm-playbook/templates/customer-formulation.md); an
+mechanism misses. Load-bearing assumptions should trace to the
+[customer model](./product-spec.md#the-customer-model) in the Product Spec; an
 assumption that appears in neither is untested twice.
 
 1. **[LB]** `[Assumption 1]` -- *would be disproven by:* …
@@ -209,9 +209,9 @@ assumption that appears in neither is untested twice.
 3. **[S]** `[Assumption 3]` -- *would be disproven by:* …
 
 > On approval, the commercial mechanism, the **[LB]** assumptions, and the
-> Confidence score become one entry in the
-> [calibration ledger](../pm-playbook/calibration.md), scored at the 90-day
-> review. Approving an RFC without a ledger entry is an unscored bet.
+> Confidence score are the prediction this RFC commits to, scored at the
+> 90-day [post-launch review](../pm-playbook/templates/post-launch-review.md).
+> Approving an RFC without a scoreable mechanism is an unscored bet.
 
 **Top risks:**
 
@@ -266,8 +266,8 @@ Known unknowns that resolve on delivery. Tag each with who resolves it. These ar
 - [JTBD Guide](../guides/jtbd-guide.md) -- framing the job
 - [Agentic Delivery](../guides/agentic-delivery.md) -- the verdict rule and the gates this RFC clears
 - [Discovery](../pm-playbook/discovery.md) -- the craft of gathering the evidence this RFC links out to
-- [Calibration](../pm-playbook/calibration.md) -- where this RFC's mechanism prediction and load-bearing assumptions get logged and scored
-- [Customer Formulation](../pm-playbook/templates/customer-formulation.md) -- the domain-level model the assumptions trace to
+- [Post-Launch Review](../pm-playbook/templates/post-launch-review.md) -- where this RFC's mechanism prediction and load-bearing assumptions get scored
+- [Product Spec: the customer model](./product-spec.md#the-customer-model) -- the product-level model the assumptions trace to
 
 ---
 

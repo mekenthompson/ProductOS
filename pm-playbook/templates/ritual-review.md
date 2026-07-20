@@ -1,7 +1,7 @@
 ---
 title: Ritual Review Template
-description: Template for monthly dogfooding and competitor reviews
-last_reviewed: 2026-07-06
+description: "Template for the monthly rituals: dogfooding, onboarding, and competitor reviews"
+last_reviewed: 2026-07-20
 icon: "📋"
 ---
 
@@ -47,8 +47,8 @@ Where did you get stuck, confused, or frustrated?
 
 Step back from the walkthrough and read the product at Signal altitude. Once a month, check that each named [Signal](../../guides/product-analytics.md) (see [The Anchor Signal](../../guides/headline-metric.md) for what the Signal is) is still telling the truth about the outcome.
 
-- [ ] **Holding and trending?** For each named Signal, is it at or moving toward target, or drifting away?
-- [ ] **Guardrails intact?** Is any guardrail metric breaching, or creeping toward its limit?
+- [ ] **Holding and trending?** For each named Signal, is it at or moving towards target, or drifting away?
+- [ ] **Guardrails intact?** Is any guardrail metric breaching, or creeping towards its limit?
 - [ ] **One decision from the trend.** What single decision does this month's trend point to (double down, dig in, or leave it)?
 
 ---
@@ -106,5 +106,7 @@ Top 3 things to fix or improve.
 ## Related
 
 - **Product Handbook:** [Monthly Rituals](../product-handbook.md#monthly-rituals)
+- **Customer model:** [the Product Spec section](../../templates/product-spec.md#the-customer-model) these reviews feed
+- **Craft:** [the crafts in the room](../craft.md) and which sections each owns
 - **Product Analytics:** [the measurement discipline](../product-analytics.md) behind the monthly Signal read
 - **Projects:** [Link to related projects]

@@ -18,6 +18,7 @@ export default defineConfig({
   redirects: {
     '/guides/product-specs/': '/ProductOS/guides/writing-an-rfc/',
     '/pm-playbook/headline-metric/': '/ProductOS/guides/headline-metric/',
+    '/pm-playbook/domain-entry/': '/ProductOS/pm-playbook/domain-expertise/',
     '/examples/tempo-overview/': '/ProductOS/examples/tempo/strategy/',
     '/examples/tempo-strategy/': '/ProductOS/examples/tempo/strategy/plan/',
     '/examples/tempo-product-spec/': '/ProductOS/examples/tempo/product-spec/',
@@ -123,9 +124,7 @@ export default defineConfig({
               collapsed: true,
               items: [
                 { label: 'Craft', link: '/pm-playbook/craft/' },
-                { label: 'Domain Entry', link: '/pm-playbook/domain-entry/' },
-                { label: 'Calibration', link: '/pm-playbook/calibration/' },
-                { label: 'Learning Accounts', link: '/pm-playbook/learning-accounts/' },
+                { label: 'Domain Expertise', link: '/pm-playbook/domain-expertise/' },
               ],
             },
             {
@@ -152,8 +151,6 @@ export default defineConfig({
                 { label: 'Template: Research', link: '/pm-playbook/templates/research/' },
                 { label: 'Template: Ritual Review', link: '/pm-playbook/templates/ritual-review/' },
                 { label: 'Template: Post-Launch Review', link: '/pm-playbook/templates/post-launch-review/' },
-                { label: 'Template: Customer Formulation', link: '/pm-playbook/templates/customer-formulation/' },
-                { label: 'Template: Formulation Review', link: '/pm-playbook/templates/formulation-review/' },
               ],
             },
           ],
