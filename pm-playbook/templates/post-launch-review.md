@@ -52,7 +52,7 @@ If none of these improved, why not? What would need to change?
 
 ## Mechanism Check *(90-day review)*
 
-_The RFC made a commercial mechanism prediction. Score it. This is the entry the [calibration ledger](../calibration.md) records._
+_The RFC made a commercial mechanism prediction. Score it against what actually happened._
 
 **Predicted mechanism (from RFC):** [paste verbatim]
 
@@ -69,7 +69,7 @@ _The RFC made a commercial mechanism prediction. Score it. This is the entry the
 
 **Attribution note:** _(external factors, seasonality, confounders that qualify the read)_
 
-- [ ] **Ledger updated.** The review is not complete until the entry is scored.
+- [ ] **Prediction scored.** The review is not complete until the score is written.
 
 ---
 
@@ -140,5 +140,5 @@ _Schedule all three reviews when you ship, not after. Add calendar invites at la
 
 ## Related
 
-- [Calibration](../calibration.md) -- the ledger the Mechanism Check feeds
+- [Craft](../craft.md) -- the build loop the Mechanism Check closes
 - [Product Spec: the customer model](../../templates/product-spec.md#the-customer-model) -- where broken assumptions get fed back

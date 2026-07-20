@@ -24,8 +24,8 @@ Two legs, and they are not equal.
 **Domain expertise** is being an expert in your customers' jobs to be done: their situation, their forces, their economics, every alternative they could hire instead. Each craft holds a different facet of it: the PM holds the jobs and the money, design holds the behaviour, marketing holds the language, research holds the evidence. This is how the team builds taste, the earned sense of what is worth building, and it is built deliberately, not by osmosis:
 
 - **Entering a domain** follows the [Domain Entry](./domain-entry.md) protocol, whatever your craft: scoped reading, the three insiders, triangulation, the economics bar. It produces the [customer model](../templates/product-spec.md#the-customer-model) in the Product Spec by week two: the team's working model of the customer, dated, labelled a hypothesis, revised on evidence. The model is **multi-author**: each craft owns its sections.
-- **Staying expert** takes longitudinal exposure: PMs own account panels of 8–10 named customers; every craft keeps its signature exposure (see [Craft](./craft.md)) and the 80/20 ratio of immersion to outside comparison.
-- **Staying honest** happens at the [customer-model review](./templates/ritual-review.md#customer-model-review): the monthly, cross-craft ritual where an assigned peer attacks the team's understanding of the customer, not its output.
+- **Staying expert** takes longitudinal exposure: go back to the same customers repeatedly, over years, and keep your craft's signature exposure (see [Craft](./craft.md)) alongside deliberate study of competitors and the wider market.
+- **Staying honest** happens where the work is already reviewed: customer-model claims get attacked in RFC reviews and fed back at [post-launch reviews](./templates/post-launch-review.md), not in a ritual of their own.
 
 **Product discipline** is the mechanics: RFCs backed by evidence, RICE, the verdict rule, instrumentation, measuring what shipped against what was predicted. Most of this handbook is discipline, because discipline is teachable in a way taste is not.
 
@@ -33,7 +33,7 @@ Two legs, and they are not equal.
 
 Taste is not a feeling and not an aesthetic sense. It is a **prediction skill**: the ability to say in advance what the customer will accept and what it will do, and be right more often over time. That makes it buildable the way forecasters build accuracy (explicit calls, real consequences, scored outcomes, high reps) and measurable per person.
 
-The loop is universal; the prediction type is craft-specific: PMs predict **commercial mechanisms**, designers predict **behaviour**, marketers predict **message and funnel movement**, researchers **pre-register findings and forecast metrics**. All four land in one [calibration ledger](./calibration.md) on one scale, and everyone's rolling hit rate and confidence calibration is their judgement's track record. The build loop, the Loewy anchor, and the per-craft application live in **[Craft](./craft.md)**: read it once properly.
+The loop is universal; the prediction type is craft-specific: PMs predict **commercial mechanisms**, designers predict **behaviour**, marketers predict **message and funnel movement**, researchers **pre-register findings and forecast metrics**. All four write the call in the working artefact before reality answers and score it at the review that artefact already gets; the scored calls, over time, are each person's track record. The build loop, the Loewy anchor, and the per-craft application live in **[Craft](./craft.md)**: read it once properly.
 
 In ProductOS you encode taste into the [anchors](../anchors/product-vision.md) and the [specs](../templates/job-spec.md), so agents inherit your judgement instead of generic defaults. But taste never fully transfers to a document; you stay accountable for what you ask an agent to build and what it hands back. The test of real expertise: you can say *why* something is good or bad. An articulate opinion that has never been scored is still an opinion.
 
@@ -41,15 +41,15 @@ In ProductOS you encode taste into the [anchors](../anchors/product-vision.md) a
 
 ## If You Do Only 5 Things
 
-1. **Talk to customers, in your craft's way.** PMs: 3+ conversations per initiative and your account panel quarterly. Design: watch real usage, test with real users. PMM: win/loss interviews and live call listening. Research: field time, not just queries. Evidence, not hearsay.
+1. **Talk to customers, in your craft's way.** PMs: 3+ conversations per initiative, and go back to the same customers repeatedly. Design: watch real usage, test with real users. PMM: win/loss interviews and live call listening. Research: field time, not just queries. Evidence, not hearsay.
 
-2. **Never make an unscored call.** Every material bet carries a written prediction in your craft's terms, with a confidence, before reality answers. RFCs for PMs; pre-test predictions for design; funnel predictions per launch for PMM; pre-registration for research. Logged in the [ledger](./calibration.md).
+2. **Never make an unscored call.** Every material bet carries a written prediction in your craft's terms, with a confidence, before reality answers. RFCs for PMs; pre-test predictions for design; funnel predictions per launch for PMM; pre-registration for research. Scored at the review the artefact already gets.
 
-3. **Complete monthly rituals.** Dogfood, onboarding review, competitor review, and the customer-model cadence. If you don't use your own product (and theirs), you don't understand the problem space, whatever your craft.
+3. **Complete monthly rituals.** Dogfood, onboarding review, competitor review. If you don't use your own product (and theirs), you don't understand the problem space, whatever your craft.
 
-4. **Keep the customer model alive.** Your craft's sections of the [customer model](../templates/product-spec.md#the-customer-model) current, revised on evidence, presented for attack at least quarterly.
+4. **Keep the customer model alive.** Your craft's sections of the [customer model](../templates/product-spec.md#the-customer-model) current, revised on evidence, and open to attack in every review that leans on them.
 
-5. **Measure actual vs predicted.** Post-launch reviews at 2 weeks / 30 days / 90 days close the loop on the work; the ledger closes it on your judgement.
+5. **Measure actual vs predicted.** Post-launch reviews at 2 weeks / 30 days / 90 days close the loop on the work; scoring your predictions there closes it on your judgement.
 
 ---
 
@@ -80,8 +80,8 @@ Outcomes matter more than calendar slots. Lead owner named; everyone contributes
 | **Planned work balanced against emerging needs** | Weekly | PM + Eng | Compare new signals against commitments. |
 | **RFCs compete for engineering time** | Fortnightly | PM | Prioritisation session; [Decision Framework](./decision-framework.md). |
 | **The team understands the product from the customer's side** | Monthly | Every craft | Dogfooding + onboarding review + competitor review, through your craft's lens. |
-| **The team's model of the customer is current and attacked** | Monthly | Rotates | Customer model revised; [customer-model review](./templates/ritual-review.md#customer-model-review) held; each person presents at least quarterly. |
-| **Shipped work measured against predictions** | Post-launch | PM, with craft predictions attached | Reviews at 2wk/30d/90d; Mechanism Check scored; ledger updated. Design and research predictions score earlier, at their own loop length. |
+| **The team's model of the customer is current** | Ongoing | Every craft | Customer model revised on evidence; broken assumptions fed back at post-launch reviews. |
+| **Shipped work measured against predictions** | Post-launch | PM, with craft predictions attached | Reviews at 2wk/30d/90d; Mechanism Check scored. Design and research predictions score earlier, at their own loop length. |
 | **Launches carry a message prediction** | Per launch | PMM | Positioning shipped with a predicted funnel movement and date. |
 
 ---
@@ -95,9 +95,9 @@ The spine is common to all crafts; the craft column is what differs.
 | **Week 1** | Accounts and access. Complete product training. Use the product: build, break, explore with agents. Informal 1:1s across the triad. Listen. | -- |
 | **Week 2** | Start the [Domain Entry](./domain-entry.md) protocol. Draft your sections of the week-two [customer model](../templates/product-spec.md#the-customer-model): it will be wrong, that's the point. Triage your first feedback. | PM: jobs + economics sections. Design: behaviour + acceptance edge. PMM: language + buying committee. Research: evidence grading pass on everyone's sections. |
 | **Week 3** | First contribution shaped with the team. | PM: RFC stub from the discovery backlog, 3+ customer calls. Design: first teardown + a pre-test behavioural prediction. PMM: sit 5 live sales calls; draft the objection map. Research: first pre-registered study. |
-| **Week 4** | Complete all monthly rituals. Present your customer-model sections at your first [customer-model review](./templates/ritual-review.md#customer-model-review). | -- |
-| **Month 2** | First scored call approved and logged in the [ledger](./calibration.md). | PM: RFC approved with mechanism + [LB] assumptions. Design: prediction scored against a usability test. PMM: launch narrative with funnel prediction. Research: pre-registration scored against findings. |
-| **Month 3** | Operating independently; longitudinal exposure locked in. | PM: name your account panel with your manager. Design: teardown rotation set. PMM: win/loss interview quota set. Research: field-time quota set. |
+| **Week 4** | Complete all monthly rituals. Share your customer-model sections with the team for attack. | -- |
+| **Month 2** | First scored call: a written prediction in your craft's artefact, with its scoring date set. | PM: RFC approved with mechanism + [LB] assumptions. Design: prediction scored against a usability test. PMM: launch narrative with funnel prediction. Research: pre-registration scored against findings. |
+| **Month 3** | Operating independently; longitudinal exposure locked in. | PM: standing conversations with the same customers under way. Design: teardown rotation set. PMM: win/loss interview quota set. Research: field-time quota set. |
 
 ---
 
@@ -158,15 +158,12 @@ Experience the product as each persona does, through your craft's lens: PM reads
 End-to-end as a new Admin, monthly. Record ≤10 mins. Raise ≥1 ticket tagged `ritual:onboarding`. You must always find something to improve.
 
 ### Competitor Onboarding Review
-Different competitor each month; complete their onboarding end-to-end; document standouts, gaps, opportunities; share in the team channel. Tag `ritual:competitor`. This is the 20% of the exposure ratio: it's what keeps immersion from becoming going native.
+Different competitor each month; complete their onboarding end-to-end; document standouts, gaps, opportunities; share in the team channel. Tag `ritual:competitor`. This is the outside exposure that keeps immersion from becoming going native.
 
-### Customer-Model Review
-The fourth ritual attacks understanding rather than the product. Cross-craft attendance; assigned opposing counsel; each person presents their sections at least quarterly; every review draws blood. [Template](./templates/ritual-review.md#customer-model-review). Tag `ritual:customer-model`.
-
-Use the [Ritual Review Template](./templates/ritual-review.md) for all three: dogfooding, competitor, and customer-model reviews.
+Use the [Ritual Review Template](./templates/ritual-review.md) for dogfooding, onboarding, and competitor reviews.
 
 ### Ticket Tags
-`ritual:dogfood`, `ritual:onboarding`, `ritual:competitor`, `ritual:customer-model`, `ai-assisted`, `quick-win`.
+`ritual:dogfood`, `ritual:onboarding`, `ritual:competitor`, `ai-assisted`, `quick-win`.
 
 ---
 
@@ -183,7 +180,7 @@ Decision rights and triad mechanics: [Working Together](./working-together.md). 
 - [Product Vision](../anchors/product-vision.md) · [Product Playbook](./product-playbook.md) · [Working Together](./working-together.md)
 
 **Guides:**
-- [Domain Entry](./domain-entry.md) · [Calibration](./calibration.md)
+- [Domain Entry](./domain-entry.md)
 - [Writing an RFC](../guides/writing-an-rfc.md) · [Handling Product Feedback](./customer-feedback.md) · [RICE](./rice.md) · [Decision Framework](./decision-framework.md) · [Discovery](./discovery.md) · [Product Marketing](./product-marketing.md) · [Product Analytics](./product-analytics.md)
 
 **Templates:**

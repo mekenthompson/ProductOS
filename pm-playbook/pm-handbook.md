@@ -7,8 +7,8 @@ icon: "👤"
 
 # PM Handbook → Product Handbook
 
-This handbook has been generalised from PM-only to the whole product function: product management, product design, product marketing, and research/analytics share one operating handbook, one taste loop, and one calibration ledger.
+This handbook has been generalised from PM-only to the whole product function: product management, product design, product marketing, and research/analytics share one operating handbook, one taste loop, and one prediction-scoring discipline.
 
-**Read the [Product Handbook](./product-handbook.md).** PM-specific craft detail (commercial mechanism predictions, account panels, the economics bar) lives in [Craft](./craft.md) and [Domain Entry](./domain-entry.md).
+**Read the [Product Handbook](./product-handbook.md).** PM-specific craft detail (commercial mechanism predictions, longitudinal customer exposure, the economics bar) lives in [Craft](./craft.md) and [Domain Entry](./domain-entry.md).
 
 This stub exists so existing links don't break. Update inbound links to point at `product-handbook.md`; this file will be removed once they're gone.

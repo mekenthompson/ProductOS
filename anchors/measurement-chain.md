@@ -73,8 +73,8 @@ Three rules make it load-bearing rather than decorative:
 Accountability splits cleanly at this rung: the **portfolio** answers to the
 Commercial Frame (the product org owns product-gap churn and expansion-mechanism
 health), while **individual judgement** answers one level down, to the
-commercial mechanisms predicted and scored in the
-[calibration ledger](../pm-playbook/calibration.md). Revenue is the scoreboard;
+commercial mechanisms predicted in RFCs and scored at
+[post-launch reviews](../pm-playbook/templates/post-launch-review.md). Revenue is the scoreboard;
 mechanisms are what a PM controls.
 
 ---
@@ -140,7 +140,7 @@ that make it all countable.
 - [RFC Template](../templates/rfc.md) -- owns the instrumentation: the events that compute the Signal before private preview.
 - [Product Analytics](../guides/product-analytics.md) -- how to instrument the events and read the metrics this chain names.
 - [Headline Metric](../guides/headline-metric.md) -- how to pick the North Star at the top of the ladder.
-- [Calibration](../pm-playbook/calibration.md) -- how predicted commercial mechanisms are scored per PM, one level below the Commercial Frame.
+- [Craft](../pm-playbook/craft.md) -- how predicted commercial mechanisms are scored per PM, one level below the Commercial Frame.
 - [Product Vision](./product-vision.md) -- the first anchor; it names the outcomes whose Signals this chain measures.
 - [Product Principles](./product-principles.md) -- the second anchor; the built-well standards beside this one.
 - [Invariants](./invariants.md) -- the third anchor; the lines you won't cross, beside this map of how you measure.

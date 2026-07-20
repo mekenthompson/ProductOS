@@ -7,7 +7,7 @@ icon: "🧭"
 
 # Domain Entry
 
-Domain expertise is the more valuable leg of product (see the [Product Handbook](./product-handbook.md)), and it doesn't transfer: change segment or product area and your calibration resets, which is why judgement in a new domain is assessed on trend, not level (see [Calibration](./calibration.md)). What *does* transfer is the method for rebuilding it. This doc makes that method explicit, so ramping into a domain is a repeatable protocol the whole team runs, not a personality trait we hope to hire. The protocol is craft-agnostic: a designer, PMM, or researcher entering a domain runs the same steps, contributing their craft's sections of the customer model (see [Craft](./craft.md)).
+Domain expertise is the more valuable leg of product (see the [Product Handbook](./product-handbook.md)), and it doesn't transfer: change segment or product area and your calibration resets, which is why judgement in a new domain is assessed on trend, not level (see [Craft](./craft.md)). What *does* transfer is the method for rebuilding it. This doc makes that method explicit, so ramping into a domain is a repeatable protocol the whole team runs, not a personality trait we hope to hire. The protocol is craft-agnostic: a designer, PMM, or researcher entering a domain runs the same steps, contributing their craft's sections of the customer model (see [Craft](./craft.md)).
 
 The professions that do this for a living (barristers mastering a new industry per case, journalists going from zero to credible in six weeks, clinical psychologists formulating a new patient) all use the same moves. Steal them.
 
@@ -53,20 +53,15 @@ You are not ramped until you can sketch, from memory, how your customer makes mo
 
 By the end of **week two**, draft (or revise) your sections of the [customer model](../templates/product-spec.md#the-customer-model) in the Product Spec: explicitly dated and labelled a hypothesis. Who hires the job and in what situation, the forces on them, what created and what perpetuates the current workaround, their economics, and what must be true for us to win.
 
-It will be wrong. That's the point. A written model is attackable, and attackable is how it improves. Revise it on evidence and present it at the [customer-model review](./templates/ritual-review.md#customer-model-review). Each craft drafts its own sections; research grades the evidence. The model is also the handover artefact: when a domain changes hands, the customer model (with its last-revised trail) transfers the context that otherwise dies in someone's head.
+It will be wrong. That's the point. A written model is attackable, and attackable is how it improves. Revise it on evidence, and let it take fire where the work is already reviewed: an RFC review that leans on a shaky customer claim, or a post-launch review where a broken assumption gets fed back. Each craft drafts its own sections; research grades the evidence. The model is also the handover artefact: when a domain changes hands, the customer model (with its last-revised trail) transfers the context that otherwise dies in someone's head.
 
 ---
 
-## Staying ramped: the account panel
+## Staying ramped
 
-Ramp gets you in. Staying expert takes longitudinal exposure: the same customers, over years, watching how their decisions play out.
+Ramp gets you in. Staying expert takes longitudinal exposure: go back to the same customers repeatedly, over years, watching how their decisions play out. Initiative research (3+ interviews per RFC) samples wide; returning to customers you already know is where depth accumulates, and where you keep passing the economics bar as the market moves. The [Customer Call Template](./templates/customer-call.md) covers the conversation itself.
 
-- Each PM owns a named **account panel of 8–10 customers** in their domain: a spread of segments and health, deliberately including at least one struggling account. The other crafts keep their own signature exposure on the same accounts where possible: design observes them, PMM interviews their wins and losses, research fields with them (see [Craft](./craft.md)).
-- **Quarterly touch minimum** per account. Not a survey, a conversation or a visit; use the [Customer Call Template](./templates/customer-call.md).
-- Panels persist across initiatives. Initiative research (3+ interviews per RFC) samples wider; the panel is where depth accumulates.
-- The panel is where you keep passing the economics bar as the market moves.
-
-The known failure mode of deep immersion is going native: internalising the customer's assumptions along with their knowledge, and going blind to reframes. The antidote is already in the [monthly rituals](./product-handbook.md#monthly-rituals): the competitor review is your structured exposure to how others solve the same class of job. Keep the ratio roughly 80% immersion, 20% outside exposure.
+The known failure mode of deep immersion is going native: internalising the customer's assumptions along with their knowledge, and going blind to reframes. The antidote is already in the [monthly rituals](./product-handbook.md#monthly-rituals): the competitor review is your structured exposure to how others solve the same class of job. Keep studying competitors and the wider market alongside your own customers.
 
 ---
 
@@ -79,16 +74,12 @@ The known failure mode of deep immersion is going native: internalising the cust
 - [ ] Tenured insider debriefed
 - [ ] Economics sketch done from memory, checked by the tenured insider
 - [ ] Week-two customer-model sections written, dated, shared
-- [ ] Customer model presented at first customer-model review
-- [ ] Account panel named
 
 ---
 
 ## Related
 
 - [Product Spec: the customer model](../templates/product-spec.md#the-customer-model) -- the artefact this protocol produces.
-- [Ritual Review Template](./templates/ritual-review.md#customer-model-review) -- where the customer model gets attacked.
 - [Discovery](./discovery.md) -- per-initiative research; this doc is the per-domain layer underneath it.
-- [Calibration](./calibration.md) -- why entering a domain resets your prediction track record, and how the ledger rebuilds it.
 - [Product Handbook, First 90 Days](./product-handbook.md#first-90-days) -- where this protocol slots into onboarding.
-- [Craft](./craft.md) -- the per-craft application of the protocol.
+- [Craft](./craft.md) -- the per-craft application of the protocol, and why calibration resets on domain change.

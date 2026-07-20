@@ -86,7 +86,7 @@ Full detail on picking a path: [Decision Framework](./pm-playbook/decision-frame
 | **`examples/`** | Worked, filled examples: `tempo/` (Tempo, a fictional team-scheduling product, one worked set). |
 | **`skills/`** | Agent-executable skills. Creation (interview to alignment, never draft from assumptions): `create-strategy`, `create-product-spec`, `create-job-spec`, `create-rfc`. Gates: `review-doc` (the fresh-process document reviewer), `amend-durable-doc` (the drift guard on ratified docs). Plus `feedback-to-jobs` (demand intake) and `uat-ux-debug` (outcome debugging). |
 | **`AGENTS.md`** | The terse operating contract: read this to *execute* the method. |
-| **`pm-playbook/`** | Separate human-craft layer for the whole product function (PM, design, marketing, research): the six-phase loop, the judgement system (`craft`, the calibration ledger, the customer-model review), discovery, RICE, personas. It references the OS; the OS crosses back only over the named bridges in `AGENTS.md`. |
+| **`pm-playbook/`** | Separate human-craft layer for the whole product function (PM, design, marketing, research): the six-phase loop, the judgement system (`craft`, with predictions written and scored inside the working artefacts), discovery, RICE, personas. It references the OS; the OS crosses back only over the named bridges in `AGENTS.md`. |
 | **`astro.config.mjs`, `src/`, `public/`** | Site plumbing. The Starlight site builds straight from the same markdown files above, this is the machinery, not new content. |
 
 ---

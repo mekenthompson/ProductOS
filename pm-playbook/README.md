@@ -8,7 +8,7 @@ description: "The human product craft, all four disciplines: the six-phase opera
 
 The **human product craft**, across the whole function (product management,
 product design, product marketing, research/analytics): the six-phase operating
-loop, the taste and judgement system (craft, calibration, the customer model), the
+loop, the taste and judgement system (craft, the customer model), the
 discipline guides, and the templates that go with them.
 
 This is the judgement layer: how the product team runs day to day.
@@ -42,8 +42,7 @@ This is the judgement layer: how the product team runs day to day.
 | [delivery-standards.md](./delivery-standards.md) | Operational workflow with gate checklists. |
 | [release-phases.md](./release-phases.md) | Private Preview → Public Preview → GA. |
 | [discovery.md](./discovery.md) | Validating problems before writing an RFC. |
-| [domain-entry.md](./domain-entry.md) | The ramp protocol: entering a new domain fast, the week-two customer model, the account panel. |
-| [calibration.md](./calibration.md) | The calibration ledger: scoring written predictions, per person, across every craft. |
+| [domain-entry.md](./domain-entry.md) | The ramp protocol: entering a new domain fast, the week-two customer model, staying ramped longitudinally. |
 | [product-analytics.md](./product-analytics.md) | The measurement discipline: what a PM owes, and how a Signal gets stood up and read. |
 | [customer-feedback.md](./customer-feedback.md) | Handling and triaging product feedback. |
 | [rice.md](./rice.md) | RICE scoring framework. |
@@ -58,7 +57,7 @@ This is the judgement layer: how the product team runs day to day.
 |---|---|
 | [templates/customer-call.md](./templates/customer-call.md) | Customer interview and call documentation. |
 | [templates/research.md](./templates/research.md) | Competitive, analytics, surveys, usability testing. |
-| [templates/ritual-review.md](./templates/ritual-review.md) | Monthly dogfooding, competitor, and customer-model reviews. |
+| [templates/ritual-review.md](./templates/ritual-review.md) | Monthly dogfooding, onboarding, and competitor reviews. |
 | [templates/post-launch-review.md](./templates/post-launch-review.md) | Measure outcomes, close the loop, decide what's next. |
 
 Keep it product-agnostic: no single company's product baked in as the example.

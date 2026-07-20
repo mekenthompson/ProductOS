@@ -208,7 +208,7 @@ The real work starts after launch. Shipping is when we start learning whether ou
 
 **Stopping is not failure.** Continuing to invest in something the data says isn't working, that's failure.
 
-At the 90-day review, the RFC's commercial mechanism prediction is also scored (Fired / Partial / Missed / Unscoreable) into the [calibration ledger](./calibration.md): the reviews close the loop on the work; the ledger closes it on the team's judgement.
+At the 90-day review, the RFC's commercial mechanism prediction is also scored (Fired / Partial / Missed / Unscoreable): the reviews close the loop on the work; scoring the prediction closes it on the team's judgement.
 
 Analytics tells you *what* (adoption is low). Customer feedback tells you *why* (onboarding is confusing). Together they tell you *what to do* (redesign onboarding, don't add features).
 
@@ -311,6 +311,6 @@ Everything below is a reference asset produced by this framework. Read them when
 | Write a durable per-job outcome doc | [Job Spec Template](../templates/job-spec.md) |
 | Deliver with an agentic workforce | [Agentic Delivery](../guides/agentic-delivery.md) |
 | Understand your role, any craft | [Product Handbook](./product-handbook.md) |
-| Build and measure taste and judgement | [Craft](./craft.md) + [Calibration](./calibration.md) |
+| Build and measure taste and judgement | [Craft](./craft.md) |
 | Understand how the triad works | [Working Together](./working-together.md) |
 | Position and message a product | [Product Marketing](./product-marketing.md) + [Positioning and Messaging](../guides/positioning-and-messaging.md) |

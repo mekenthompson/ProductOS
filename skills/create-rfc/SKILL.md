@@ -144,11 +144,11 @@ inside: whether your sections are answered or merely occupied.
    user), named with a kebab-case slug.
 2. The up-anchor stated: which outcome it advances, which Job Spec it serves.
 3. The open questions listed with owners: the honest unknowns.
-4. The calibration handoff: remind the user that on approval the commercial
-   mechanism, the [LB] assumptions, and the Confidence score become one entry
-   in the [calibration ledger](../../pm-playbook/calibration.md), scored at
-   the 90-day review. An approved RFC without a ledger entry is an unscored
-   bet.
+4. The scoring handoff: remind the user that on approval the commercial
+   mechanism, the [LB] assumptions, and the Confidence score are the
+   prediction the RFC commits to, scored at the 90-day
+   [post-launch review](../../pm-playbook/templates/post-launch-review.md).
+   An approved RFC whose mechanism never gets scored is an unscored bet.
 5. The review-doc verdict, and what (if anything) is still blocking APPROVE.
 
 ## The self-teaching check (dogfood this skill)

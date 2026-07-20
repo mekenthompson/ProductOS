@@ -164,7 +164,7 @@ Three flavours of success, in order of weight:
 
 Plus **leading indicators**, early signals (≤ 2 weeks post-launch) that tell you whether you're on track.
 
-For Full Spec work, add the **commercial mechanism**: the specific, dated commercial claim this bet makes ("closes the workflow gap driving tier-2 churn: tier-2 product-gap churn falls within two renewal cycles"). It is scored **Fired / Partial / Missed / Unscoreable** at the 90-day review and logged in the [calibration ledger](../pm-playbook/calibration.md); a prediction too vague to score is graded Unscoreable, which is worse than wrong. If no mechanism can be named, the bet is a feature in search of a reason.
+For Full Spec work, add the **commercial mechanism**: the specific, dated commercial claim this bet makes ("closes the workflow gap driving tier-2 churn: tier-2 product-gap churn falls within two renewal cycles"). It is scored **Fired / Partial / Missed / Unscoreable** at the 90-day [post-launch review](../pm-playbook/templates/post-launch-review.md); a prediction too vague to score is graded Unscoreable, which is worse than wrong. If no mechanism can be named, the bet is a feature in search of a reason.
 
 ### User Failure Modes
 
@@ -206,7 +206,7 @@ This is the **key assumptions check**: what must be true *about the customer* fo
 
 "If the user genuinely doesn't have this struggling moment, the RFC is wrong" is the kind of bet to surface. Risks should have mitigations.
 
-On approval, the commercial mechanism, the [LB] assumptions, and the Confidence score become one [calibration-ledger](../pm-playbook/calibration.md) entry, scored at the 90-day review. Approving an RFC without a ledger entry is an unscored bet.
+On approval, the commercial mechanism, the [LB] assumptions, and the Confidence score are the prediction the RFC commits to, scored at the 90-day [post-launch review](../pm-playbook/templates/post-launch-review.md). Approving an RFC without a scoreable mechanism is an unscored bet.
 
 ### Rollout
 

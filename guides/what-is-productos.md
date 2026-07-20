@@ -100,9 +100,8 @@ ProductOS is two layers, both live now.
   function (product management, product design, product marketing,
   research/analytics): the six-phase operating loop, discovery, the decision
   framework, RICE, personas, and the judgement system: the universal taste
-  loop in [Craft](../pm-playbook/craft.md), the
-  [calibration ledger](../pm-playbook/calibration.md) that scores every
-  craft's predictions, and the shared
+  loop in [Craft](../pm-playbook/craft.md), with every craft's predictions
+  written and scored inside the working artefacts, and the shared
   [customer model](../templates/product-spec.md#the-customer-model) each
   craft contributes to.
 
