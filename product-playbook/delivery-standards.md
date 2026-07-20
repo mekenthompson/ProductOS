@@ -461,7 +461,7 @@ Gate requirements scale with the stakes. Small / quick-win work doesn't need Hea
 - [Discovery](./discovery.md): How to validate problems before writing an RFC
 - [Handling Product Feedback](./customer-feedback.md): Processing and routing customer feedback
 - [Decision Framework](./decision-framework.md): Signal → Standard → Speed
-- [Product Playbook](./product-playbook.md): The 6-phase operating model
+- [Product Loop](./product-loop.md): The 6-phase operating model
 - [Product Analytics](./product-analytics.md): the measurement discipline behind these gates
 
 For tool-specific guidance (how to set up custom statuses, automation rules, etc.) see your tracker's docs.

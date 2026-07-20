@@ -101,7 +101,7 @@ What success looks like **from the user's perspective**. Not "we shipped on time
 - **Behavioural signal** -- User now does X without help / Without errors / Within Y seconds. Observable in [product analytics](../guides/product-analytics.md).
 - **Felt experience** -- When asked, the user describes the experience as `[adjective]`. Observable in NPS verbatims, interviews, or support ticket sentiment.
 - **Headline-metric movement** -- Specifically, this should move `[headline metric]` by `[amount]` for `[persona]`. Measured at `[interval]`.
-- **Commercial mechanism** *(required for Full Spec; optional for Lightweight)* -- The specific, dated commercial claim this bet makes: `[e.g., "closes the workflow gap driving tier-2 churn: tier-2 product-gap churn falls within two renewal cycles" / "makes module X attachable at renewal: attach rate rises by 90d"]`. Scored **Fired / Partial / Missed / Unscoreable** at the 90-day [post-launch review](../pm-playbook/templates/post-launch-review.md). If you can't name a mechanism, the bet is a feature in search of a reason.
+- **Commercial mechanism** *(required for Full Spec; optional for Lightweight)* -- The specific, dated commercial claim this bet makes: `[e.g., "closes the workflow gap driving tier-2 churn: tier-2 product-gap churn falls within two renewal cycles" / "makes module X attachable at renewal: attach rate rises by 90d"]`. Scored **Fired / Partial / Missed / Unscoreable** at the 90-day [post-launch review](../product-playbook/templates/post-launch-review.md). If you can't name a mechanism, the bet is a feature in search of a reason.
 - **Leading indicators (≤ 2 weeks post-launch)** -- `[signal 1]`, `[signal 2]`; early reads on whether success is on track.
 
 ---
@@ -180,14 +180,14 @@ This is the freedom-and-constraint envelope. **Describe the shape of an acceptab
 ## Evidence
 
 Three bullets max. Link out, don't restate. Source it from the
-[Research](../pm-playbook/templates/research.md) and [Customer Call](../pm-playbook/templates/customer-call.md)
+[Research](../product-playbook/templates/research.md) and [Customer Call](../product-playbook/templates/customer-call.md)
 templates.
 
 - `[Research doc title]` -- n=X interviews, key insight
 - `[Analytics dashboard / query]` -- current baseline number
 - `[Customer quote source]` -- representative quote
 
-**Confidence:** `[1-4]` on the [RICE Confidence scale](../pm-playbook/rice.md).
+**Confidence:** `[1-4]` on the [RICE Confidence scale](../product-playbook/rice.md).
 More evidence raises it; thin evidence is low confidence, not a blocker.
 
 ---
@@ -210,7 +210,7 @@ assumption that appears in neither is untested twice.
 
 > On approval, the commercial mechanism, the **[LB]** assumptions, and the
 > Confidence score are the prediction this RFC commits to, scored at the
-> 90-day [post-launch review](../pm-playbook/templates/post-launch-review.md).
+> 90-day [post-launch review](../product-playbook/templates/post-launch-review.md).
 > Approving an RFC without a scoreable mechanism is an unscored bet.
 
 **Top risks:**
@@ -265,8 +265,8 @@ Known unknowns that resolve on delivery. Tag each with who resolves it. These ar
 - [Job Spec Template](./job-spec.md) -- the durable per-job outcome doc an RFC references
 - [JTBD Guide](../guides/jtbd-guide.md) -- framing the job
 - [Agentic Delivery](../guides/agentic-delivery.md) -- the verdict rule and the gates this RFC clears
-- [Discovery](../pm-playbook/discovery.md) -- the craft of gathering the evidence this RFC links out to
-- [Post-Launch Review](../pm-playbook/templates/post-launch-review.md) -- where this RFC's mechanism prediction and load-bearing assumptions get scored
+- [Discovery](../product-playbook/discovery.md) -- the craft of gathering the evidence this RFC links out to
+- [Post-Launch Review](../product-playbook/templates/post-launch-review.md) -- where this RFC's mechanism prediction and load-bearing assumptions get scored
 - [Product Spec: the customer model](./product-spec.md#the-customer-model) -- the product-level model the assumptions trace to
 
 ---

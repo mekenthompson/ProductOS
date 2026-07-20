@@ -23,7 +23,7 @@ RICE compares projects on the same basis. Three value dimensions divided by effo
 
 **Applies to:** initiatives scored in an RFC
 **When to score:** During Decide, include in the RFC
-**Owner:** PM assigned to project
+**Owner:** Whoever owns the RFC
 
 ---
 

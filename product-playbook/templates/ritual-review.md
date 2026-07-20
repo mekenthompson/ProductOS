@@ -7,7 +7,7 @@ icon: "📋"
 
 # Ritual Review: [Product Name] ([Date])
 
-**Reviewer:** [PM name]
+**Reviewer:** [Reviewer name]
 **Review type:** Dogfooding (your product) / Competitor Analysis
 **Product area:** [e.g., onboarding, core flow, billing]
 **Persona lens:** User / Admin / Sponsor (for dogfooding)

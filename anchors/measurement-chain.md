@@ -68,13 +68,13 @@ Three rules make it load-bearing rather than decorative:
    roadmap), `churn:commercial` (pricing/packaging/relationship), or
    `churn:unavoidable` (business closed, merged, mandated change). Untagged
    churn is unexplained leak. The tagging workflow lives in
-   [Handling Product Feedback](../pm-playbook/customer-feedback.md).
+   [Handling Product Feedback](../product-playbook/customer-feedback.md).
 
 Accountability splits cleanly at this rung: the **portfolio** answers to the
 Commercial Frame (the product org owns product-gap churn and expansion-mechanism
 health), while **individual judgement** answers one level down, to the
 commercial mechanisms predicted in RFCs and scored at
-[post-launch reviews](../pm-playbook/templates/post-launch-review.md). Revenue is the scoreboard;
+[post-launch reviews](../product-playbook/templates/post-launch-review.md). Revenue is the scoreboard;
 mechanisms are what a PM controls.
 
 ---
@@ -91,7 +91,7 @@ owns it.
 | Job metric | quantified form of that indicator | [`../templates/product-spec.md`](../templates/product-spec.md) | "The job index" |
 | Outcome Signal | number + direction + target | [`../templates/product-spec.md`](../templates/product-spec.md) | "Outcomes" (each carries a Signal) |
 | North Star | the top metric | [`../templates/product-spec.md`](../templates/product-spec.md) | "North Star" |
-| Commercial Frame | NRR, GRR, logo retention, tagged churn | this anchor (above); tagging in [`../pm-playbook/customer-feedback.md`](../pm-playbook/customer-feedback.md) | "The Commercial Frame" |
+| Commercial Frame | NRR, GRR, logo retention, tagged churn | this anchor (above); tagging in [`../product-playbook/customer-feedback.md`](../product-playbook/customer-feedback.md) | "The Commercial Frame" |
 | Instrumentation (events) | the events that compute the Signal | [`../templates/rfc.md`](../templates/rfc.md) | "Instrumentation required before private preview" |
 
 A short gloss on each rung:
@@ -140,7 +140,7 @@ that make it all countable.
 - [RFC Template](../templates/rfc.md) -- owns the instrumentation: the events that compute the Signal before private preview.
 - [Product Analytics](../guides/product-analytics.md) -- how to instrument the events and read the metrics this chain names.
 - [Headline Metric](../guides/headline-metric.md) -- how to pick the North Star at the top of the ladder.
-- [Craft](../pm-playbook/craft.md) -- how predicted commercial mechanisms are scored per PM, one level below the Commercial Frame.
+- [Craft](../product-playbook/craft.md) -- how predicted commercial mechanisms are scored per person, one level below the Commercial Frame.
 - [Product Vision](./product-vision.md) -- the first anchor; it names the outcomes whose Signals this chain measures.
 - [Product Principles](./product-principles.md) -- the second anchor; the built-well standards beside this one.
 - [Invariants](./invariants.md) -- the third anchor; the lines you won't cross, beside this map of how you measure.

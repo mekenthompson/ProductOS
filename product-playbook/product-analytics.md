@@ -1,6 +1,6 @@
 ---
 title: Product Analytics
-description: "The measurement discipline for a PM org: what a PM owes at each stage, what good and bad look like, and how a Signal gets stood up and read in practice"
+description: "The measurement discipline for a product org: what the team owes at each stage, what good and bad look like, and how a Signal gets stood up and read in practice"
 last_reviewed: 2026-07-06
 icon: "📈"
 ---
@@ -9,13 +9,13 @@ icon: "📈"
 
 Measurement is not a phase at the end. It is a running accountability that starts when you write the spec and does not stop until you have closed the loop on whether the thing worked.
 
-This page is the **operating layer**: how measurement fits into how the team actually runs, what a PM is on the hook for, and what "good" looks like. It is deliberately more day-to-day than the method guide.
+This page is the **operating layer**: how measurement fits into how the team actually runs, what the team is on the hook for, and what "good" looks like. It is deliberately more day-to-day than the method guide.
 
-> **Two layers, one split.** The [Product Analytics guide](../guides/product-analytics.md) is the **method**: how to instrument a Signal and read it (event taxonomy, leading indicators, cadence). This page is the **discipline**: what a PM org owes, who owns what, and the rhythm it runs on. When you need to build the instrumentation, go to the guide. When you need to know what you are accountable for, stay here. And to *pick* the Signal in the first place, start with [The Anchor Signal](../guides/headline-metric.md).
+> **Two layers, one split.** The [Product Analytics guide](../guides/product-analytics.md) is the **method**: how to instrument a Signal and read it (event taxonomy, leading indicators, cadence). This page is the **discipline**: what the product org owes, who owns what, and the rhythm it runs on. When you need to build the instrumentation, go to the guide. When you need to know what you are accountable for, stay here. And to *pick* the Signal in the first place, start with [The Anchor Signal](../guides/headline-metric.md).
 
 ---
 
-## What a PM is accountable for
+## What the team is accountable for
 
 Measurement has three stages, and you owe something concrete at each. Skipping the early ones is what produces a launch nobody can grade.
 

@@ -147,7 +147,7 @@ inside: whether your sections are answered or merely occupied.
 4. The scoring handoff: remind the user that on approval the commercial
    mechanism, the [LB] assumptions, and the Confidence score are the
    prediction the RFC commits to, scored at the 90-day
-   [post-launch review](../../pm-playbook/templates/post-launch-review.md).
+   [post-launch review](../../product-playbook/templates/post-launch-review.md).
    An approved RFC whose mechanism never gets scored is an unscored bet.
 5. The review-doc verdict, and what (if anything) is still blocking APPROVE.
 
@@ -167,4 +167,4 @@ complete-looking RFC from the vague ask alone, it failed.
 - [Writing an RFC](../../guides/writing-an-rfc.md) -- lifecycle, paths, and approval
 - [create-job-spec](../create-job-spec/SKILL.md) -- the durable job this RFC serves; run it first if the Job Spec is missing
 - [review-doc](../review-doc/SKILL.md) -- the fresh-process gate this RFC exits through
-- [RICE](../../pm-playbook/rice.md) -- the scoring the Full Spec path carries
+- [RICE](../../product-playbook/rice.md) -- the scoring the Full Spec path carries

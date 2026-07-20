@@ -9,7 +9,7 @@ icon: "📖"
 
 **"One path for everything is no path at all."**
 
-Every idea, request, or problem that reaches a PM needs an answer to one question: **what's the right path for this work?**
+Every idea, request, or problem that reaches the product team needs an answer to one question: **what's the right path for this work?**
 
 Not everything needs an RFC. Not everything is a quick win. Match the path to the size and risk. Don't force everything through the same process.
 
@@ -144,7 +144,7 @@ The PM, informed by the Tech Lead's sizing. If there's disagreement, the PM deci
 
 ## Related
 
-- [Product Playbook](./product-playbook.md): The 6-phase operating model (this framework is Phase 2: DECIDE)
+- [Product Loop](./product-loop.md): The 6-phase operating model (this framework is Phase 2: DECIDE)
 - [Product Vision](../anchors/product-vision.md): Vision and personas
 - [Product Spec](../templates/product-spec.md): Where the outcomes and their Signals live, the success measures a Vision Check reads against
 - [RFC Guide](../guides/writing-an-rfc.md): Full Spec path guidance (writing a ship-coupled RFC)

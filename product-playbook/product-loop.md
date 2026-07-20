@@ -1,11 +1,11 @@
 ---
-title: Product Playbook
+title: The Product Loop
 description: A six-phase operating model for product organisations
 last_reviewed: 2026-07-10
 icon: 🎚️
 ---
 
-# Product Playbook
+# The Product Loop
 
 ## TL;DR
 

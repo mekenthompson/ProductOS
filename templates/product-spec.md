@@ -188,13 +188,13 @@ rolls up to its outcome's Signal.
 > Signals, and how much you trust it. This is the product-level bet: that these
 > outcomes, once moved, deliver the North Star. Thin evidence is not a blocker,
 > it just means low confidence, carried honestly into RICE. Link out, don't
-> restate: see [Discovery](../pm-playbook/discovery.md), and the
-> [Research](../pm-playbook/templates/research.md) and [Customer Call](../pm-playbook/templates/customer-call.md)
+> restate: see [Discovery](../product-playbook/discovery.md), and the
+> [Research](../product-playbook/templates/research.md) and [Customer Call](../product-playbook/templates/customer-call.md)
 > templates.
 
 - **Evidence:** <source -- what it shows>; <source -- what it shows>. Strongest
   first.
-- **Confidence:** <1-4> on the [RICE Confidence scale](../pm-playbook/rice.md).
+- **Confidence:** <1-4> on the [RICE Confidence scale](../product-playbook/rice.md).
   More evidence raises it.
 
 ---
@@ -205,4 +205,4 @@ rolls up to its outcome's Signal.
 - [Product Principles](../anchors/product-principles.md) -- the standards each job is built to
 - [Invariants](../anchors/invariants.md) -- the by-construction lines no job may cross
 - [Job Spec Template](./job-spec.md) -- the durable per-job outcome contract whose `serves:` points back at an outcome here
-- [Discovery](../pm-playbook/discovery.md) -- the craft of grounding a job in evidence before it earns a place in the index
+- [Discovery](../product-playbook/discovery.md) -- the craft of grounding a job in evidence before it earns a place in the index
