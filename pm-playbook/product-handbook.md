@@ -33,7 +33,7 @@ Two legs, and they are not equal.
 
 Taste is not a feeling and not an aesthetic sense. It is a **prediction skill**: the ability to say in advance what the customer will accept and what it will do, and be right more often over time. That makes it buildable the way forecasters build accuracy (explicit calls, real consequences, scored outcomes, high reps) and measurable per person.
 
-The loop is universal; the prediction type is craft-specific: PMs predict **commercial mechanisms**, designers predict **behaviour**, marketers predict **message and funnel movement**, researchers **pre-register findings and forecast metrics**. All four land in one [calibration ledger](./calibration.md) on one scale, and everyone's rolling hit rate and confidence calibration is their judgement's track record. The full loop, the five obligations every craft carries, and the per-craft application live in **[Craft](./craft.md)**: read it once properly.
+The loop is universal; the prediction type is craft-specific: PMs predict **commercial mechanisms**, designers predict **behaviour**, marketers predict **message and funnel movement**, researchers **pre-register findings and forecast metrics**. All four land in one [calibration ledger](./calibration.md) on one scale, and everyone's rolling hit rate and confidence calibration is their judgement's track record. The build loop, the Loewy anchor, and the per-craft application live in **[Craft](./craft.md)**: read it once properly.
 
 In ProductOS you encode taste into the [anchors](../anchors/product-vision.md) and the [specs](../templates/job-spec.md), so agents inherit your judgement instead of generic defaults. But taste never fully transfers to a document; you stay accountable for what you ask an agent to build and what it hands back. The test of real expertise: you can say *why* something is good or bad. An articulate opinion that has never been scored is still an opinion.
 
@@ -183,7 +183,7 @@ Decision rights and triad mechanics: [Working Together](./working-together.md). 
 - [Product Vision](../anchors/product-vision.md) · [Product Playbook](./product-playbook.md) · [Working Together](./working-together.md)
 
 **Guides:**
-- [Domain Entry](./domain-entry.md) · [Calibration](./calibration.md) · [Learning Accounts](./learning-accounts.md)
+- [Domain Entry](./domain-entry.md) · [Calibration](./calibration.md)
 - [Writing an RFC](../guides/writing-an-rfc.md) · [Handling Product Feedback](./customer-feedback.md) · [RICE](./rice.md) · [Decision Framework](./decision-framework.md) · [Discovery](./discovery.md) · [Product Marketing](./product-marketing.md) · [Product Analytics](./product-analytics.md)
 
 **Templates:**

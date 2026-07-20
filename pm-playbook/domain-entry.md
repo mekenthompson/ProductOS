@@ -7,7 +7,7 @@ icon: "🧭"
 
 # Domain Entry
 
-Domain expertise is the more valuable leg of product (see the [Product Handbook](./product-handbook.md)), and it doesn't transfer: change segment or product area and your calibration resets. What *does* transfer is the method for rebuilding it. This doc makes that method explicit, so ramping into a domain is a repeatable protocol the whole team runs, not a personality trait we hope to hire. The protocol is craft-agnostic: a designer, PMM, or researcher entering a domain runs the same steps, contributing their craft's sections of the customer model (see [Craft](./craft.md)).
+Domain expertise is the more valuable leg of product (see the [Product Handbook](./product-handbook.md)), and it doesn't transfer: change segment or product area and your calibration resets, which is why judgement in a new domain is assessed on trend, not level (see [Calibration](./calibration.md)). What *does* transfer is the method for rebuilding it. This doc makes that method explicit, so ramping into a domain is a repeatable protocol the whole team runs, not a personality trait we hope to hire. The protocol is craft-agnostic: a designer, PMM, or researcher entering a domain runs the same steps, contributing their craft's sections of the customer model (see [Craft](./craft.md)).
 
 The professions that do this for a living (barristers mastering a new industry per case, journalists going from zero to credible in six weeks, clinical psychologists formulating a new patient) all use the same moves. Steal them.
 

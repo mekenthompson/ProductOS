@@ -125,7 +125,6 @@ export default defineConfig({
                 { label: 'Craft', link: '/pm-playbook/craft/' },
                 { label: 'Domain Entry', link: '/pm-playbook/domain-entry/' },
                 { label: 'Calibration', link: '/pm-playbook/calibration/' },
-                { label: 'Learning Accounts', link: '/pm-playbook/learning-accounts/' },
               ],
             },
             {

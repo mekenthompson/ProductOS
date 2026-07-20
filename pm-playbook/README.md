@@ -43,8 +43,7 @@ This is the judgement layer: how the product team runs day to day.
 | [release-phases.md](./release-phases.md) | Private Preview → Public Preview → GA. |
 | [discovery.md](./discovery.md) | Validating problems before writing an RFC. |
 | [domain-entry.md](./domain-entry.md) | The ramp protocol: entering a new domain fast, the week-two customer model, the account panel. |
-| [calibration.md](./calibration.md) | The calibration ledger: scoring commercial mechanism predictions per PM. |
-| [learning-accounts.md](./learning-accounts.md) | The deliberately over-served research tier, with the generalisation rule. |
+| [calibration.md](./calibration.md) | The calibration ledger: scoring written predictions, per person, across every craft. |
 | [product-analytics.md](./product-analytics.md) | The measurement discipline: what a PM owes, and how a Signal gets stood up and read. |
 | [customer-feedback.md](./customer-feedback.md) | Handling and triaging product feedback. |
 | [rice.md](./rice.md) | RICE scoring framework. |
