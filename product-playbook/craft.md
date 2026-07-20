@@ -1,21 +1,26 @@
 ---
 title: Craft
-description: "How to build craft in any product discipline: reps on the customer's job, exposure across the quality range, and predictions written before reality answers"
+description: "Craft in any product discipline is the loop itself: reps on the customer's job, exposure across the quality range, and predictions written before reality answers"
 last_reviewed: 2026-07-20
 icon: "🛠️"
 ---
 
 # Craft
 
-Everyone in product is in the business of predicting the customer. The crafts predict different things: a PM predicts what a customer will pay for, a designer predicts what they'll succeed at, a marketer predicts what they'll respond to, a researcher predicts what the evidence will show. **Taste**, in any craft, is a calibrated model of the customer sharp enough to make those predictions before the customer can articulate them. Taste is a prediction skill, not a vibe, and you build it the way any prediction skill gets built: reps, under feedback.
+Everyone in product is in the business of predicting the customer. The crafts predict different things: a PM predicts what a customer will pay for, a designer predicts what they'll succeed at, a marketer predicts what they'll respond to, a researcher predicts what the evidence will show. **Taste**, in any craft, is knowing the customer well enough to deliver value they're prepared to pay for: a calibrated model of the customer sharp enough to make those predictions before the customer can articulate them. Taste is what you get when you combine **craft** with **domain expertise**. It is a prediction skill, not a vibe, and you build it the way any prediction skill gets built: reps, under feedback.
 
-This doc covers the two things that build it: **how to build craft** (the build loop) and **how to build domain expertise** (the ramp, covered in full in [Domain Expertise](./domain-expertise.md)). Nothing here is a ceremony, the predictions and scoring live inside the working artefacts you already produce.
+The two components split cleanly:
+
+- **Craft** is the discipline, and it IS the loop below: reps on the customer's actual job, exposure across the quality range, predictions written before reality answers and scored against it. Craft transfers between domains.
+- **Domain expertise** is the asset: the [customer model](../templates/product-spec.md#the-customer-model) (who the customer is, their economics, what they'll accept and pay for) plus the learnings the domain has given you. It stays in the domain; the ramp is covered in full in [Domain Expertise](./domain-expertise.md).
+
+Nothing here is a ceremony, the predictions and scoring live inside the working artefacts you already produce.
 
 ---
 
-## How to build craft: the build loop
+## Craft is the loop
 
-Three moves, run continuously. Skip any one and the other two stop compounding.
+Craft is not an output of the loop; running the loop IS the craft. Three moves, run continuously. Skip any one and the other two stop compounding, and there is no version of getting great without the reps.
 
 ### 1. Get reps on the customer's job
 
@@ -47,7 +52,9 @@ Revision             the broken assumption feeds back into the customer model
 
 Reps compound. Someone producing constantly without written predictions gets zero reps regardless of output volume; someone doing eight scored calls a year builds a track record. This is why ten years of experience can be one year repeated ten times, and why it doesn't have to be. A call too vague to score is worse than a wrong one, because it gave you no rep.
 
-The predictions live where the work already lives, not in a parallel process: the commercial mechanism in the [RFC](../templates/rfc.md), scored at the [post-launch review](./templates/post-launch-review.md); the pre-test prediction in the test plan; the funnel prediction in the launch narrative; the pre-registration in the study. No standing table, no separate process: the artefact carries the prediction, the review scores it.
+The predictions live where the work already lives, not in a parallel process: the commercial mechanism in the [RFC](../templates/rfc.md), scored at the [post-launch review](./templates/post-launch-review.md); the pre-test prediction in the test plan; the funnel prediction in the launch narrative; the pre-registration in the study. No standing table, no separate process: the artefact carries the prediction, the review scores it, the [Product Spec](../templates/product-spec.md#the-customer-model) holds the customer model.
+
+This is the point of the Product Playbook: the reps are built into the working artefacts, so **doing the work is doing the reps**. The playbook is a training system that multiplies discipline, not a substitute for it. Working here should compound you.
 
 ### The proof this loop works: Loewy
 
@@ -55,11 +62,15 @@ Raymond Loewy, the industrial designer behind half of mid-century America, is th
 
 The **acceptance edge** moves by segment and by domain: one persona tolerates novelty in the workflow and none in the numbers they report upward. Knowing where the edge sits for *your* persona is what taste is: a calibrated prediction of the customer's acceptance, built from reps. Write your edge calls into the customer model, post-launch they're scoreable.
 
-### How improvement shows, in order
+### How improvement shows: the outcome chain
 
-1. **Predictions get sharp enough to test** (1–2 quarters). Fewer calls that reality can't grade.
-2. **Specificity rises** (audit your own scored predictions year on year). "Adoption will improve" becomes "tier-2 product-gap churn falls within two renewal cycles."
-3. **Hit rate** (slowest, noisiest). Judged on trend, not level, especially after a domain change.
+The proof the loop is working is a chain, read in order:
+
+1. **Predictions sharpen** (1–2 quarters). Fewer calls that reality can't grade; specificity rises year on year ("adoption will improve" becomes "tier-2 product-gap churn falls within two renewal cycles"); hit rate trends up (slowest, noisiest; judged on trend, not level, especially after a domain change).
+2. **Leading indicators move** in [product analytics](./product-analytics.md): the behavioural signals the predictions named start shifting.
+3. **Revenue follows** (lagging): churn closed, modules attached, deals won.
+
+Activity that doesn't drive impact is meaningless: reps that never sharpen a prediction, predictions that never move an indicator, indicators that never cash out.
 
 ---
 
@@ -96,7 +107,7 @@ Predictions are **epistemic**: pre-registered findings ("before these churn inte
 
 ## How to build domain expertise
 
-Craft transfers between domains, domain taste doesn't. Change segment or product area and your calibration resets: the acceptance edge sits somewhere new, the economics are different, and your old hit rate is evidence about the old domain. What transfers is the method for rebuilding it.
+Craft transfers between domains; the learnings don't. Domain expertise is the customer model plus what the domain has taught you, and it stays in the domain: change segment or product area and it resets. The acceptance edge sits somewhere new, the economics are different, and your old hit rate is evidence about the old domain. What transfers is the method for rebuilding it.
 
 - **The entry protocol is [Domain Expertise](./domain-expertise.md):** scope to the quarter's decisions, read the archive, find the churned account, the extreme case, and the tenured insider, ask the dumb questions in week one, triangulate everything, and pass the economics bar. It produces the week-two customer model, the artefact that proves the ramp.
 - **Staying expert is longitudinal:** go back to the same customers repeatedly, and keep studying competitors and the wider market, per the build loop above.

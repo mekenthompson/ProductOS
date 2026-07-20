@@ -1,7 +1,7 @@
 ---
 title: Product Handbook
 description: Everything the product team needs to know, across all four crafts
-last_reviewed: 2026-07-10
+last_reviewed: 2026-07-20
 icon: "👥"
 ---
 
@@ -9,7 +9,7 @@ icon: "👥"
 
 Product is a function of four crafts: product management, product design, product marketing, and research/analytics. This handbook is for all of them. It replaces the PM Handbook; where something below is craft-specific, it says so.
 
-Product is two things: domain expertise and product discipline. Domain expertise is being an expert in your customers' jobs to be done. Product discipline is the mechanics of shipping the right stuff, properly. The two are not equal: domain expertise matters more, and it matters more every year, because agents now do the mechanics cheaply. This holds for every craft: an agent can draft the spec, the mock, the launch copy, and the analysis; what stays scarce is knowing which one is right for this customer.
+Product is two things: domain expertise and craft. Domain expertise is the asset: your model of the customer plus the learnings the domain has given you. Craft is the discipline that builds it: reps, exposure, scored predictions. Combined, they produce **taste**: knowing the customer well enough to deliver value they're prepared to pay for. Taste is the goal, and both components are required; there is no version of getting great without the discipline and the reps. Agents make the mechanics cheap, which raises the premium on taste for every craft: an agent can draft the spec, the mock, the launch copy, and the analysis; what stays scarce is knowing which one is right for this customer.
 
 The function owns a simple question: **are we spending engineering time on the highest-leverage work, and did it pay?** Answering it takes all four crafts: the expertise to know what's highest-leverage, the discipline to prove it, ship it, and score it.
 
@@ -19,21 +19,23 @@ Companion to the [Product Loop](./product-loop.md) (how the company builds produ
 
 ## What product is: expertise and discipline
 
-Two legs, and they are not equal.
+Two legs, both required.
 
-**Domain expertise** is being an expert in your customers' jobs to be done: their situation, their forces, their economics, every alternative they could hire instead. Each craft holds a different facet of it: the PM holds the jobs and the money, design holds the behaviour, marketing holds the language, research holds the evidence. This is how the team builds taste, the earned sense of what is worth building, and it is built deliberately, not by osmosis:
+**Domain expertise** is the asset: the [customer model](../templates/product-spec.md#the-customer-model) (who they are, their economics, what they'll accept and pay for) plus the learnings the domain has given you. It stays in the domain: change domains and it resets, so judge new joiners on trend, not level. Each craft holds a different facet of it: the PM holds the jobs and the money, design holds the behaviour, marketing holds the language, research holds the evidence. It is built deliberately, not by osmosis:
 
 - **Entering a domain** follows the [Domain Expertise](./domain-expertise.md) protocol, whatever your craft: scoped reading, the three insiders, triangulation, the economics bar. It produces the [customer model](../templates/product-spec.md#the-customer-model) in the Product Spec by week two: the team's working model of the customer, dated, labelled a hypothesis, revised on evidence. The model is **multi-author**: each craft owns its sections.
 - **Staying expert** takes longitudinal exposure: go back to the same customers repeatedly, over years, and keep your craft's signature exposure (see [Craft](./craft.md)) alongside deliberate study of competitors and the wider market.
 - **Staying honest** happens where the work is already reviewed: customer-model claims get attacked in RFC reviews and fed back at [post-launch reviews](./templates/post-launch-review.md), not in a ritual of their own.
 
-**Product discipline** is the mechanics: RFCs backed by evidence, RICE, the verdict rule, instrumentation, measuring what shipped against what was predicted. Most of this handbook is discipline, because discipline is teachable in a way taste is not.
+**Craft** is the discipline, and it IS the loop: reps on the customer's actual job, exposure across the quality range (competitors included, bad ones too), predictions written before reality answers and scored against it. Craft transfers between domains; the learnings don't. Most of this handbook is craft mechanics (RFCs backed by evidence, RICE, the verdict rule, instrumentation, measuring what shipped against what was predicted), because discipline is teachable in a way taste is not, and the playbook builds the reps into the working artefacts so doing the work is doing the reps. The playbook is a training system that multiplies discipline, not a substitute for it. Working here should compound you.
 
-### Taste: a prediction skill, one loop, four crafts
+### Taste: craft plus domain expertise, one loop, four crafts
 
-Taste is not a feeling and not an aesthetic sense. It is a **prediction skill**: the ability to say in advance what the customer will accept and what it will do, and be right more often over time. That makes it buildable the way forecasters build accuracy (explicit calls, real consequences, scored outcomes, high reps) and measurable per person.
+Taste is not a feeling and not an aesthetic sense. It is craft combined with domain expertise: knowing the customer well enough to deliver value they're prepared to pay for. In practice that's a **prediction skill**: the ability to say in advance what the customer will accept and what it will do, and be right more often over time. That makes it buildable the way forecasters build accuracy (explicit calls, real consequences, scored outcomes, high reps) and measurable per person.
 
 The loop is universal; the prediction type is craft-specific: PMs predict **commercial mechanisms**, designers predict **behaviour**, marketers predict **message and funnel movement**, researchers **pre-register findings and forecast metrics**. All four write the call in the working artefact before reality answers and score it at the review that artefact already gets; the scored calls, over time, are each person's track record. The build loop, the Loewy anchor, and the per-craft application live in **[Craft](./craft.md)**: read it once properly.
+
+The proof it's working is the outcome chain: predictions sharpen, then the leading indicators move in [product analytics](./product-analytics.md), then revenue follows (lagging). Activity that doesn't drive impact is meaningless.
 
 In ProductOS you encode taste into the [anchors](../anchors/product-vision.md) and the [specs](../templates/job-spec.md), so agents inherit your judgement instead of generic defaults. But taste never fully transfers to a document; you stay accountable for what you ask an agent to build and what it hands back. The test of real expertise: you can say *why* something is good or bad. An articulate opinion that has never been scored is still an opinion.
 

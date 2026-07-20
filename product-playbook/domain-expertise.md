@@ -1,13 +1,13 @@
 ---
 title: Domain Expertise
 description: "How anyone in product builds and keeps domain expertise, with the ramp protocol as the spine: entering a new domain fast, the week-two customer model, staying ramped"
-last_reviewed: 2026-07-10
+last_reviewed: 2026-07-20
 icon: "🧭"
 ---
 
 # Domain Expertise
 
-Domain expertise is the more valuable leg of product (see the [Product Handbook](./product-handbook.md)), and it doesn't transfer: change segment or product area and your calibration resets, which is why judgement in a new domain is assessed on trend, not level (see [Craft](./craft.md)). What *does* transfer is the method for rebuilding it. This doc makes that method explicit, so ramping into a domain is a repeatable protocol the whole team runs, not a personality trait we hope to hire. The protocol is craft-agnostic: a designer, PMM, or researcher entering a domain runs the same steps, contributing their craft's sections of the customer model (see [Craft](./craft.md)).
+Domain expertise IS the [customer model](../templates/product-spec.md#the-customer-model) plus the learnings the domain has given you: who the customer is, their economics, what they'll accept and pay for (see the [Product Handbook](./product-handbook.md)). It is the asset, and it stays in the domain: change segment or product area and it resets, which is why judgement in a new domain is assessed on trend, not level (see [Craft](./craft.md)). What *does* transfer is craft, the method for rebuilding it. This doc makes that method explicit, so ramping into a domain is a repeatable protocol the whole team runs, not a personality trait we hope to hire. The protocol is craft-agnostic: a designer, PMM, or researcher entering a domain runs the same steps, contributing their craft's sections of the customer model (see [Craft](./craft.md)).
 
 The professions that do this for a living (barristers mastering a new industry per case, journalists going from zero to credible in six weeks, clinical psychologists formulating a new patient) all use the same moves. Steal them.
 
