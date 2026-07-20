@@ -18,6 +18,7 @@ export default defineConfig({
   redirects: {
     '/guides/product-specs/': '/ProductOS/guides/writing-an-rfc/',
     '/pm-playbook/headline-metric/': '/ProductOS/guides/headline-metric/',
+    '/pm-playbook/domain-entry/': '/ProductOS/pm-playbook/domain-expertise/',
     '/examples/tempo-overview/': '/ProductOS/examples/tempo/strategy/',
     '/examples/tempo-strategy/': '/ProductOS/examples/tempo/strategy/plan/',
     '/examples/tempo-product-spec/': '/ProductOS/examples/tempo/product-spec/',
@@ -123,7 +124,7 @@ export default defineConfig({
               collapsed: true,
               items: [
                 { label: 'Craft', link: '/pm-playbook/craft/' },
-                { label: 'Domain Entry', link: '/pm-playbook/domain-entry/' },
+                { label: 'Domain Expertise', link: '/pm-playbook/domain-expertise/' },
               ],
             },
             {

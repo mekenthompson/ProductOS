@@ -42,7 +42,7 @@ This is the judgement layer: how the product team runs day to day.
 | [delivery-standards.md](./delivery-standards.md) | Operational workflow with gate checklists. |
 | [release-phases.md](./release-phases.md) | Private Preview → Public Preview → GA. |
 | [discovery.md](./discovery.md) | Validating problems before writing an RFC. |
-| [domain-entry.md](./domain-entry.md) | The ramp protocol: entering a new domain fast, the week-two customer model, staying ramped longitudinally. |
+| [domain-expertise.md](./domain-expertise.md) | The ramp protocol: entering a new domain fast, the week-two customer model, staying ramped longitudinally. |
 | [product-analytics.md](./product-analytics.md) | The measurement discipline: what a PM owes, and how a Signal gets stood up and read. |
 | [customer-feedback.md](./customer-feedback.md) | Handling and triaging product feedback. |
 | [rice.md](./rice.md) | RICE scoring framework. |

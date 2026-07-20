@@ -9,7 +9,7 @@ icon: "🛠️"
 
 Everyone in product is in the business of predicting the customer. The crafts predict different things: a PM predicts what a customer will pay for, a designer predicts what they'll succeed at, a marketer predicts what they'll respond to, a researcher predicts what the evidence will show. **Taste**, in any craft, is a calibrated model of the customer sharp enough to make those predictions before the customer can articulate them. Taste is a prediction skill, not a vibe, and you build it the way any prediction skill gets built: reps, under feedback.
 
-This doc covers the two things that build it: **how to build craft** (the build loop) and **how to build domain expertise** (the ramp, covered in full in [Domain Entry](./domain-entry.md)). Nothing here is a ceremony, the predictions and scoring live inside the working artefacts you already produce.
+This doc covers the two things that build it: **how to build craft** (the build loop) and **how to build domain expertise** (the ramp, covered in full in [Domain Expertise](./domain-expertise.md)). Nothing here is a ceremony, the predictions and scoring live inside the working artefacts you already produce.
 
 ---
 
@@ -76,7 +76,7 @@ Every craft runs the same loop off the same shared customer model; what differs 
 
 ### Product management
 
-Predictions are **commercial mechanisms**: the dated claim about churn closed, module attached, win rate lifted, written in the [RFC](../templates/rfc.md) and scored at the [90-day review](./templates/post-launch-review.md). Reps come from going back to the same accounts over time, churned-account interviews, and riding along on sales calls; the economics bar ([Domain Entry](./domain-entry.md)) is the floor. Failure mode: shipping volume without scored bets; the order-taker with a full roadmap and no track record.
+Predictions are **commercial mechanisms**: the dated claim about churn closed, module attached, win rate lifted, written in the [RFC](../templates/rfc.md) and scored at the [90-day review](./templates/post-launch-review.md). Reps come from going back to the same accounts over time, churned-account interviews, and riding along on sales calls; the economics bar ([Domain Expertise](./domain-expertise.md)) is the floor. Failure mode: shipping volume without scored bets; the order-taker with a full roadmap and no track record.
 
 ### Product design
 
@@ -98,7 +98,7 @@ Predictions are **epistemic**: pre-registered findings ("before these churn inte
 
 Craft transfers between domains, domain taste doesn't. Change segment or product area and your calibration resets: the acceptance edge sits somewhere new, the economics are different, and your old hit rate is evidence about the old domain. What transfers is the method for rebuilding it.
 
-- **The entry protocol is [Domain Entry](./domain-entry.md):** scope to the quarter's decisions, read the archive, find the churned account, the extreme case, and the tenured insider, ask the dumb questions in week one, triangulate everything, and pass the economics bar. It produces the week-two customer model, the artefact that proves the ramp.
+- **The entry protocol is [Domain Expertise](./domain-expertise.md):** scope to the quarter's decisions, read the archive, find the churned account, the extreme case, and the tenured insider, ask the dumb questions in week one, triangulate everything, and pass the economics bar. It produces the week-two customer model, the artefact that proves the ramp.
 - **Staying expert is longitudinal:** go back to the same customers repeatedly, and keep studying competitors and the wider market, per the build loop above.
 - **Calibration resets on domain change, and that's expected.** For anyone under two years in a domain, judgement is assessed on **trend, not level**: are the predictions getting sharper, is specificity rising?
 
@@ -115,7 +115,7 @@ Craft transfers between domains, domain taste doesn't. Change segment or product
 
 ## Related
 
-- [Domain Entry](./domain-entry.md) -- the entry protocol; how domain expertise gets built and kept.
+- [Domain Expertise](./domain-expertise.md) -- the entry protocol; how domain expertise gets built and kept.
 - [Post-Launch Review](./templates/post-launch-review.md) -- where the RFC's commercial mechanism prediction gets scored.
 - [Product Handbook](./product-handbook.md) -- the team handbook this doc's loop runs inside.
 - [Product Spec: the customer model](../templates/product-spec.md#the-customer-model) -- the multi-author shared object.

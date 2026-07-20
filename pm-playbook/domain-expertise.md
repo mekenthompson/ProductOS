@@ -1,11 +1,11 @@
 ---
-title: Domain Entry
-description: "The ramp protocol: how anyone in product enters a new domain, segment, or product area and gets dangerous fast"
+title: Domain Expertise
+description: "How anyone in product builds and keeps domain expertise, with the ramp protocol as the spine: entering a new domain fast, the week-two customer model, staying ramped"
 last_reviewed: 2026-07-10
 icon: "🧭"
 ---
 
-# Domain Entry
+# Domain Expertise
 
 Domain expertise is the more valuable leg of product (see the [Product Handbook](./product-handbook.md)), and it doesn't transfer: change segment or product area and your calibration resets, which is why judgement in a new domain is assessed on trend, not level (see [Craft](./craft.md)). What *does* transfer is the method for rebuilding it. This doc makes that method explicit, so ramping into a domain is a repeatable protocol the whole team runs, not a personality trait we hope to hire. The protocol is craft-agnostic: a designer, PMM, or researcher entering a domain runs the same steps, contributing their craft's sections of the customer model (see [Craft](./craft.md)).
 

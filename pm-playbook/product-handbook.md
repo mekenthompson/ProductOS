@@ -23,7 +23,7 @@ Two legs, and they are not equal.
 
 **Domain expertise** is being an expert in your customers' jobs to be done: their situation, their forces, their economics, every alternative they could hire instead. Each craft holds a different facet of it: the PM holds the jobs and the money, design holds the behaviour, marketing holds the language, research holds the evidence. This is how the team builds taste, the earned sense of what is worth building, and it is built deliberately, not by osmosis:
 
-- **Entering a domain** follows the [Domain Entry](./domain-entry.md) protocol, whatever your craft: scoped reading, the three insiders, triangulation, the economics bar. It produces the [customer model](../templates/product-spec.md#the-customer-model) in the Product Spec by week two: the team's working model of the customer, dated, labelled a hypothesis, revised on evidence. The model is **multi-author**: each craft owns its sections.
+- **Entering a domain** follows the [Domain Expertise](./domain-expertise.md) protocol, whatever your craft: scoped reading, the three insiders, triangulation, the economics bar. It produces the [customer model](../templates/product-spec.md#the-customer-model) in the Product Spec by week two: the team's working model of the customer, dated, labelled a hypothesis, revised on evidence. The model is **multi-author**: each craft owns its sections.
 - **Staying expert** takes longitudinal exposure: go back to the same customers repeatedly, over years, and keep your craft's signature exposure (see [Craft](./craft.md)) alongside deliberate study of competitors and the wider market.
 - **Staying honest** happens where the work is already reviewed: customer-model claims get attacked in RFC reviews and fed back at [post-launch reviews](./templates/post-launch-review.md), not in a ritual of their own.
 
@@ -93,7 +93,7 @@ The spine is common to all crafts; the craft column is what differs.
 | Timeline | Everyone | By craft |
 |----------|----------|----------|
 | **Week 1** | Accounts and access. Complete product training. Use the product: build, break, explore with agents. Informal 1:1s across the triad. Listen. | -- |
-| **Week 2** | Start the [Domain Entry](./domain-entry.md) protocol. Draft your sections of the week-two [customer model](../templates/product-spec.md#the-customer-model): it will be wrong, that's the point. Triage your first feedback. | PM: jobs + economics sections. Design: behaviour + acceptance edge. PMM: language + buying committee. Research: evidence grading pass on everyone's sections. |
+| **Week 2** | Start the [Domain Expertise](./domain-expertise.md) protocol. Draft your sections of the week-two [customer model](../templates/product-spec.md#the-customer-model): it will be wrong, that's the point. Triage your first feedback. | PM: jobs + economics sections. Design: behaviour + acceptance edge. PMM: language + buying committee. Research: evidence grading pass on everyone's sections. |
 | **Week 3** | First contribution shaped with the team. | PM: RFC stub from the discovery backlog, 3+ customer calls. Design: first teardown + a pre-test behavioural prediction. PMM: sit 5 live sales calls; draft the objection map. Research: first pre-registered study. |
 | **Week 4** | Complete all monthly rituals. Share your customer-model sections with the team for attack. | -- |
 | **Month 2** | First scored call: a written prediction in your craft's artefact, with its scoring date set. | PM: RFC approved with mechanism + [LB] assumptions. Design: prediction scored against a usability test. PMM: launch narrative with funnel prediction. Research: pre-registration scored against findings. |
@@ -180,7 +180,7 @@ Decision rights and triad mechanics: [Working Together](./working-together.md). 
 - [Product Vision](../anchors/product-vision.md) · [Product Playbook](./product-playbook.md) · [Working Together](./working-together.md)
 
 **Guides:**
-- [Domain Entry](./domain-entry.md)
+- [Domain Expertise](./domain-expertise.md)
 - [Writing an RFC](../guides/writing-an-rfc.md) · [Handling Product Feedback](./customer-feedback.md) · [RICE](./rice.md) · [Decision Framework](./decision-framework.md) · [Discovery](./discovery.md) · [Product Marketing](./product-marketing.md) · [Product Analytics](./product-analytics.md)
 
 **Templates:**
