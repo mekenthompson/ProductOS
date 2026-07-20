@@ -90,6 +90,64 @@ while it chases its Signal.]
 
 **Signal:** [measurable driver, now → target.]
 
+## The customer model
+
+> The product's working model of who hires its jobs and why: dated, explicitly
+> provisional, revised on evidence. This is a hypothesis, not a finding; it
+> exists to be attacked and revised. It is multi-author by craft where the team
+> has the coverage: PM owns jobs, forces, and economics; design owns behaviour
+> and the acceptance edge; PMM owns language and the buying committee; research
+> grades the evidence across all of it. A claim without evidence is labelled
+> `[GUESS]`; a load-bearing claim on a single source is flagged. RFC
+> load-bearing assumptions trace back to this section.
+
+**Last revised:** YYYY-MM-DD -- [one line: what changed, and what evidence forced it]
+**Confidence:** [1-4, RICE scale] -- how much evidence sits under this version
+
+**Who hires the job, in what situation.** Motivation not title, accountability
+named, trigger stated (see the [JTBD Guide](../guides/jtbd-guide.md)):
+
+> **When** [situation/trigger], **[persona: role + what they're judged on]**
+> **wants to** [progress they're making], **so they can** [outcome they care
+> about]. *Relationship to the money:* [chooses it / is handed it / signs the cheque].
+
+**The forces.** Evidence beside each; a force without evidence is a `[GUESS]`.
+
+| Force | Type | Evidence |
+|---|---|---|
+| | Push (pain with status quo) | |
+| | Pull (attraction of new) | |
+| | Anxiety (fear of switching) | |
+| | Habit (inertia of current way) | |
+
+**The workaround.** How the job is done today, what created it, and what
+perpetuates it (switching cost, incentive, org structure, trust); the
+perpetuating factors predict adoption resistance better than any feature gap.
+
+**Behaviour and the acceptance edge.** What they actually do (observed, not
+reported), where they stall, and how much novelty this persona tolerates and
+where (e.g. "tolerates new workflow patterns; zero tolerance for change in the
+numbers they report upward").
+
+**Language and the buying committee.** Their words for the problem and the
+value (verbatim); who champions, evaluates, signs, and vetoes; the top
+objections and what actually answers each.
+
+**Their economics.** How they make money, main costs and margin pressure, the
+number their operator is judged on, what a bad month looks like, and where
+this product touches all of that. Sketchable from memory or you don't know
+the customer yet.
+
+**What must be true for us to win.** The load-bearing assumptions, 3-5
+maximum; each with its evidence and what would show it's wrong. RFC Bets &
+Risks in this product trace here.
+
+1. [Assumption] -- *evidence for:* ... · *what would show it's wrong:* ...
+2. ...
+
+**Known unknowns.** What this model can't yet say, and how each gets closed
+(interview / data pull / debrief), by when.
+
 ## How it functions, at a high level
 
 [3–6 sentences describing how the product works at the level a new team

@@ -200,8 +200,8 @@ What we're assuming, and what would invalidate the RFC.
 this bet to pay. Mark each **[LB]** (load-bearing: if wrong, this RFC is wrong)
 or **[S]** (supporting). For every **[LB]**, name the evidence that would show
 it's wrong within 90 days: that's what the post-launch review checks when the
-mechanism misses. Load-bearing assumptions should trace to the domain's
-[Customer Formulation](../pm-playbook/templates/customer-formulation.md); an
+mechanism misses. Load-bearing assumptions should trace to the
+[customer model](./product-spec.md#the-customer-model) in the Product Spec; an
 assumption that appears in neither is untested twice.
 
 1. **[LB]** `[Assumption 1]` -- *would be disproven by:* …
@@ -267,7 +267,7 @@ Known unknowns that resolve on delivery. Tag each with who resolves it. These ar
 - [Agentic Delivery](../guides/agentic-delivery.md) -- the verdict rule and the gates this RFC clears
 - [Discovery](../pm-playbook/discovery.md) -- the craft of gathering the evidence this RFC links out to
 - [Calibration](../pm-playbook/calibration.md) -- where this RFC's mechanism prediction and load-bearing assumptions get logged and scored
-- [Customer Formulation](../pm-playbook/templates/customer-formulation.md) -- the domain-level model the assumptions trace to
+- [Product Spec: the customer model](./product-spec.md#the-customer-model) -- the product-level model the assumptions trace to
 
 ---
 

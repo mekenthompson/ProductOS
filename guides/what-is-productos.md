@@ -103,7 +103,8 @@ ProductOS is two layers, both live now.
   loop in [Craft](../pm-playbook/craft.md), the
   [calibration ledger](../pm-playbook/calibration.md) that scores every
   craft's predictions, and the shared
-  [customer formulation](../pm-playbook/templates/customer-formulation.md).
+  [customer model](../templates/product-spec.md#the-customer-model) each
+  craft contributes to.
 
 The dependency runs one way. The craft layer may reference the OS; the OS
 crosses back only over a handful of named bridges (path-tiering, evidence,

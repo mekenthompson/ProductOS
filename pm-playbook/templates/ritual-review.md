@@ -1,14 +1,14 @@
 ---
 title: Ritual Review Template
-description: Template for monthly dogfooding and competitor reviews
-last_reviewed: 2026-07-06
+description: "Template for the monthly rituals: dogfooding, competitor reviews, and the customer-model review that attacks the team's understanding rather than the product"
+last_reviewed: 2026-07-20
 icon: "📋"
 ---
 
 # Ritual Review: [Product Name] ([Date])
 
 **Reviewer:** [PM name]
-**Review type:** Dogfooding (your product) / Competitor Analysis
+**Review type:** Dogfooding (your product) / Competitor Analysis / Customer-Model Review
 **Product area:** [e.g., onboarding, core flow, billing]
 **Persona lens:** User / Admin / Sponsor (for dogfooding)
 **Rotation:** [Your competitor list; rotate one per month] (for competitor reviews)
@@ -95,9 +95,49 @@ Top 3 things to fix or improve.
 
 ---
 
+## Customer-Model Review
+
+*(For customer-model reviews only.)* Dogfooding critiques the product;
+competitor review critiques the alternatives; this ritual critiques the
+**understanding**: the [customer model](../../templates/product-spec.md#the-customer-model)
+in the Product Spec. It borrows the clinician's case supervision (even
+veterans present their model to peers, because the known failure mode is
+over-attachment to your own) and the courtroom (someone's explicit job is to
+expose what you don't know). Each craft presents its sections at least
+quarterly.
+
+**Presenter:** [name, craft]
+**Opposing counsel:** [assigned peer -- rotates across crafts; a different craft than the presenter is the default, never their closest collaborator. Research plays counsel by default on evidence grading.]
+**Model under review:** [Product Spec link, last-revised date]
+
+**Rules of engagement:**
+
+1. **Attack the model, not the person.** The presenter defends with evidence or concedes; conceding is a win.
+2. **Opposing counsel prepares.** Reads the model and its evidence in advance; arrives with specific challenges, not vibes.
+3. **Evidence outranks seniority.** A claim survives on its evidence links, not on who wrote it.
+4. **Every review draws blood.** If the model leaves unchanged, the review failed: something is revised, downgraded to `[GUESS]`, or added to known unknowns, every time.
+
+**Attack lines** (counsel works through these; attendees pile on):
+
+- **Observation vs interpretation.** Pick two claims. Is each observed behaviour or an interpretation dressed as one? Source?
+- **Single-source test.** Which load-bearing claims rest on one source, and whose agenda was that source carrying?
+- **The economics test.** Presenter sketches the customer's economics from memory, live; a domain veteran grades it.
+- **Three-real-customers test.** Name three actual accounts this model describes. Does it predict their last three decisions? Where does it fail?
+- **The assumption most likely wrong.** Presenter nominates one unprompted; the room nominates theirs; if they differ, that gap is the finding.
+- **Disconfirming evidence.** What has the presenter seen this quarter that cuts against the model? "Nothing" means they've stopped looking.
+- **Going-native check.** Which of the customer's own assumptions has the presenter absorbed? What would an outsider question about how this job is done at all?
+- **Cross-craft consistency.** Do the sections agree? If the economics say the operator is judged on throughput but the acceptance edge says they resist any workflow change, one is wrong, or the tension is the finding. Attacking another craft's section is the system working.
+
+**Record:** claims that survived · claims revised or downgraded to `[GUESS]` ·
+new known unknowns with owner and close-by date · the assumption most likely
+wrong (presenter's vs room's) · customer model revised with a new last-revised
+line.
+
+---
+
 ## Follow-up Actions
 
-- [ ] Ticket tagged `ritual:onboarding` or `ritual:competitor`: [description]
+- [ ] Ticket tagged `ritual:onboarding`, `ritual:competitor`, or `ritual:customer-model`: [description]
 - [ ] Share in #product
 - [ ] Share recording + top 3 (for dogfooding reviews)
 
@@ -106,5 +146,8 @@ Top 3 things to fix or improve.
 ## Related
 
 - **Product Handbook:** [Monthly Rituals](../product-handbook.md#monthly-rituals)
+- **Customer model:** [the Product Spec section](../../templates/product-spec.md#the-customer-model) the customer-model review attacks
+- **Calibration:** [the ledger](../calibration.md) -- the model feeds predictions; predictions feed the ledger
+- **Craft:** [the crafts in the room](../craft.md) and which sections each owns
 - **Product Analytics:** [the measurement discipline](../product-analytics.md) behind the monthly Signal read
 - **Projects:** [Link to related projects]

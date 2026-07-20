@@ -135,7 +135,7 @@ Churn is the purest product signal there is: a customer who lived with the produ
 
 Untagged churn is unexplained leak, and the [Commercial Frame](../anchors/measurement-chain.md) treats unexplained leak as a product fire until tagged otherwise. The product-vs-fit distinction is the load-bearing one: it stops fit mistakes polluting the roadmap and stops product gaps hiding behind "bad-fit customer" stories.
 
-**2. Churned accounts are interviewed, not surveyed.** A churn interview is discovery with the politeness removed; treat it as a priority [customer call](./templates/customer-call.md). The domain PM does it (see [Domain Entry](./domain-entry.md), where the churned account is one of the three insiders), tags the account, and feeds what broke into their [Customer Formulation](./templates/customer-formulation.md). If the account won't talk, the AM's post-mortem stands in, clearly labelled second-hand.
+**2. Churned accounts are interviewed, not surveyed.** A churn interview is discovery with the politeness removed; treat it as a priority [customer call](./templates/customer-call.md). The domain PM does it (see [Domain Entry](./domain-entry.md), where the churned account is one of the three insiders), tags the account, and feeds what broke into the [customer model](../templates/product-spec.md#the-customer-model) in the Product Spec. If the account won't talk, the AM's post-mortem stands in, clearly labelled second-hand.
 
 ---
 

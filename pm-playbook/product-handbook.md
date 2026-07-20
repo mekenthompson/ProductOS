@@ -23,9 +23,9 @@ Two legs, and they are not equal.
 
 **Domain expertise** is being an expert in your customers' jobs to be done: their situation, their forces, their economics, every alternative they could hire instead. Each craft holds a different facet of it: the PM holds the jobs and the money, design holds the behaviour, marketing holds the language, research holds the evidence. This is how the team builds taste, the earned sense of what is worth building, and it is built deliberately, not by osmosis:
 
-- **Entering a domain** follows the [Domain Entry](./domain-entry.md) protocol, whatever your craft: scoped reading, the three insiders, triangulation, the economics bar. It produces a written [Customer Formulation](./templates/customer-formulation.md) by week two: the team's one-page working model of the customer, dated, labelled a hypothesis, revised monthly. The formulation is **multi-author**: each craft owns its sections.
+- **Entering a domain** follows the [Domain Entry](./domain-entry.md) protocol, whatever your craft: scoped reading, the three insiders, triangulation, the economics bar. It produces the [customer model](../templates/product-spec.md#the-customer-model) in the Product Spec by week two: the team's working model of the customer, dated, labelled a hypothesis, revised on evidence. The model is **multi-author**: each craft owns its sections.
 - **Staying expert** takes longitudinal exposure: PMs own account panels of 8–10 named customers; every craft keeps its signature exposure (see [Craft](./craft.md)) and the 80/20 ratio of immersion to outside comparison.
-- **Staying honest** happens at the [Formulation Review](./templates/formulation-review.md): the monthly, cross-craft forum where an assigned peer attacks the team's understanding of the customer, not its output.
+- **Staying honest** happens at the [customer-model review](./templates/ritual-review.md#customer-model-review): the monthly, cross-craft ritual where an assigned peer attacks the team's understanding of the customer, not its output.
 
 **Product discipline** is the mechanics: RFCs backed by evidence, RICE, the verdict rule, instrumentation, measuring what shipped against what was predicted. Most of this handbook is discipline, because discipline is teachable in a way taste is not.
 
@@ -45,9 +45,9 @@ In ProductOS you encode taste into the [anchors](../anchors/product-vision.md) a
 
 2. **Never make an unscored call.** Every material bet carries a written prediction in your craft's terms, with a confidence, before reality answers. RFCs for PMs; pre-test predictions for design; funnel predictions per launch for PMM; pre-registration for research. Logged in the [ledger](./calibration.md).
 
-3. **Complete monthly rituals.** Dogfood, onboarding review, competitor review, and the formulation cadence. If you don't use your own product (and theirs), you don't understand the problem space, whatever your craft.
+3. **Complete monthly rituals.** Dogfood, onboarding review, competitor review, and the customer-model cadence. If you don't use your own product (and theirs), you don't understand the problem space, whatever your craft.
 
-4. **Keep the formulation alive.** Your craft's sections of the [Customer Formulation](./templates/customer-formulation.md) current, revised on evidence, presented for attack at least quarterly.
+4. **Keep the customer model alive.** Your craft's sections of the [customer model](../templates/product-spec.md#the-customer-model) current, revised on evidence, presented for attack at least quarterly.
 
 5. **Measure actual vs predicted.** Post-launch reviews at 2 weeks / 30 days / 90 days close the loop on the work; the ledger closes it on your judgement.
 
@@ -80,7 +80,7 @@ Outcomes matter more than calendar slots. Lead owner named; everyone contributes
 | **Planned work balanced against emerging needs** | Weekly | PM + Eng | Compare new signals against commitments. |
 | **RFCs compete for engineering time** | Fortnightly | PM | Prioritisation session; [Decision Framework](./decision-framework.md). |
 | **The team understands the product from the customer's side** | Monthly | Every craft | Dogfooding + onboarding review + competitor review, through your craft's lens. |
-| **The team's model of the customer is current and attacked** | Monthly | Rotates | Formulation revised; [Formulation Review](./templates/formulation-review.md) held; each person presents at least quarterly. |
+| **The team's model of the customer is current and attacked** | Monthly | Rotates | Customer model revised; [customer-model review](./templates/ritual-review.md#customer-model-review) held; each person presents at least quarterly. |
 | **Shipped work measured against predictions** | Post-launch | PM, with craft predictions attached | Reviews at 2wk/30d/90d; Mechanism Check scored; ledger updated. Design and research predictions score earlier, at their own loop length. |
 | **Launches carry a message prediction** | Per launch | PMM | Positioning shipped with a predicted funnel movement and date. |
 
@@ -93,9 +93,9 @@ The spine is common to all crafts; the craft column is what differs.
 | Timeline | Everyone | By craft |
 |----------|----------|----------|
 | **Week 1** | Accounts and access. Complete product training. Use the product: build, break, explore with agents. Informal 1:1s across the triad. Listen. | -- |
-| **Week 2** | Start the [Domain Entry](./domain-entry.md) protocol. Draft your sections of the week-two [Customer Formulation](./templates/customer-formulation.md): it will be wrong, that's the point. Triage your first feedback. | PM: jobs + economics sections. Design: behaviour + acceptance edge. PMM: language + buying committee. Research: evidence grading pass on everyone's sections. |
+| **Week 2** | Start the [Domain Entry](./domain-entry.md) protocol. Draft your sections of the week-two [customer model](../templates/product-spec.md#the-customer-model): it will be wrong, that's the point. Triage your first feedback. | PM: jobs + economics sections. Design: behaviour + acceptance edge. PMM: language + buying committee. Research: evidence grading pass on everyone's sections. |
 | **Week 3** | First contribution shaped with the team. | PM: RFC stub from the discovery backlog, 3+ customer calls. Design: first teardown + a pre-test behavioural prediction. PMM: sit 5 live sales calls; draft the objection map. Research: first pre-registered study. |
-| **Week 4** | Complete all monthly rituals. Present your formulation sections at your first [Formulation Review](./templates/formulation-review.md). | -- |
+| **Week 4** | Complete all monthly rituals. Present your customer-model sections at your first [customer-model review](./templates/ritual-review.md#customer-model-review). | -- |
 | **Month 2** | First scored call approved and logged in the [ledger](./calibration.md). | PM: RFC approved with mechanism + [LB] assumptions. Design: prediction scored against a usability test. PMM: launch narrative with funnel prediction. Research: pre-registration scored against findings. |
 | **Month 3** | Operating independently; longitudinal exposure locked in. | PM: name your account panel with your manager. Design: teardown rotation set. PMM: win/loss interview quota set. Research: field-time quota set. |
 
@@ -160,13 +160,13 @@ End-to-end as a new Admin, monthly. Record ≤10 mins. Raise ≥1 ticket tagged 
 ### Competitor Onboarding Review
 Different competitor each month; complete their onboarding end-to-end; document standouts, gaps, opportunities; share in the team channel. Tag `ritual:competitor`. This is the 20% of the exposure ratio: it's what keeps immersion from becoming going native.
 
-### Formulation Review
-The fourth ritual attacks understanding rather than the product. Cross-craft attendance; assigned opposing counsel; each person presents their sections at least quarterly; every review draws blood. [Template](./templates/formulation-review.md). Tag `ritual:formulation`.
+### Customer-Model Review
+The fourth ritual attacks understanding rather than the product. Cross-craft attendance; assigned opposing counsel; each person presents their sections at least quarterly; every review draws blood. [Template](./templates/ritual-review.md#customer-model-review). Tag `ritual:customer-model`.
 
-Use the [Ritual Review Template](./templates/ritual-review.md) for dogfooding and competitor reviews.
+Use the [Ritual Review Template](./templates/ritual-review.md) for all three: dogfooding, competitor, and customer-model reviews.
 
 ### Ticket Tags
-`ritual:dogfood`, `ritual:onboarding`, `ritual:competitor`, `ritual:formulation`, `ai-assisted`, `quick-win`.
+`ritual:dogfood`, `ritual:onboarding`, `ritual:competitor`, `ritual:customer-model`, `ai-assisted`, `quick-win`.
 
 ---
 
@@ -187,7 +187,7 @@ Decision rights and triad mechanics: [Working Together](./working-together.md). 
 - [Writing an RFC](../guides/writing-an-rfc.md) · [Handling Product Feedback](./customer-feedback.md) · [RICE](./rice.md) · [Decision Framework](./decision-framework.md) · [Discovery](./discovery.md) · [Product Marketing](./product-marketing.md) · [Product Analytics](./product-analytics.md)
 
 **Templates:**
-- [RFC](../templates/rfc.md) · [Job Spec](../templates/job-spec.md) · [Post-Launch Review](./templates/post-launch-review.md) · [Research](./templates/research.md) · [Customer Call](./templates/customer-call.md) · [Customer Formulation](./templates/customer-formulation.md) · [Formulation Review](./templates/formulation-review.md)
+- [RFC](../templates/rfc.md) · [Job Spec](../templates/job-spec.md) · [Post-Launch Review](./templates/post-launch-review.md) · [Research](./templates/research.md) · [Customer Call](./templates/customer-call.md)
 
 **Operational:**
 - [Delivery Standards](./delivery-standards.md) · [Release Phases](./release-phases.md)

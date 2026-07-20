@@ -7,7 +7,7 @@ icon: "🧭"
 
 # Domain Entry
 
-Domain expertise is the more valuable leg of product (see the [Product Handbook](./product-handbook.md)), and it doesn't transfer: change segment or product area and your calibration resets. What *does* transfer is the method for rebuilding it. This doc makes that method explicit, so ramping into a domain is a repeatable protocol the whole team runs, not a personality trait we hope to hire. The protocol is craft-agnostic: a designer, PMM, or researcher entering a domain runs the same steps, contributing their craft's sections of the formulation (see [Craft](./craft.md)).
+Domain expertise is the more valuable leg of product (see the [Product Handbook](./product-handbook.md)), and it doesn't transfer: change segment or product area and your calibration resets. What *does* transfer is the method for rebuilding it. This doc makes that method explicit, so ramping into a domain is a repeatable protocol the whole team runs, not a personality trait we hope to hire. The protocol is craft-agnostic: a designer, PMM, or researcher entering a domain runs the same steps, contributing their craft's sections of the customer model (see [Craft](./craft.md)).
 
 The professions that do this for a living (barristers mastering a new industry per case, journalists going from zero to credible in six weeks, clinical psychologists formulating a new patient) all use the same moves. Steal them.
 
@@ -41,7 +41,7 @@ Week one is when basic questions are free. Keep a running dumb-questions list an
 
 ### 5. Triangulate everything
 
-Every source has an agenda: sales wants the deal, the champion wants their feature, the buyer isn't the user, the churned account is settling scores. No claim enters your formulation on one source. Two independent sources minimum for anything load-bearing.
+Every source has an agenda: sales wants the deal, the champion wants their feature, the buyer isn't the user, the churned account is settling scores. No claim enters your customer model on one source. Two independent sources minimum for anything load-bearing.
 
 ### 6. Pass the economics bar
 
@@ -49,11 +49,11 @@ You are not ramped until you can sketch, from memory, how your customer makes mo
 
 ---
 
-## The formulation: the artefact that proves the ramp
+## The customer model: the artefact that proves the ramp
 
-By the end of **week two**, write a [Customer Formulation](./templates/customer-formulation.md): one page, explicitly dated and labelled a hypothesis. Who hires the job and in what situation, the forces on them, what created and what perpetuates the current workaround, their economics, and what must be true for us to win.
+By the end of **week two**, draft (or revise) your sections of the [customer model](../templates/product-spec.md#the-customer-model) in the Product Spec: explicitly dated and labelled a hypothesis. Who hires the job and in what situation, the forces on them, what created and what perpetuates the current workaround, their economics, and what must be true for us to win.
 
-It will be wrong. That's the point. A written formulation is attackable, and attackable is how it improves. Revise it monthly and present it at [Formulation Review](./templates/formulation-review.md). Each craft drafts its own sections; research grades the evidence. The formulation is also the handover artefact: when a domain changes hands, the formulation (with its revision log) transfers the context that otherwise dies in someone's head.
+It will be wrong. That's the point. A written model is attackable, and attackable is how it improves. Revise it on evidence and present it at the [customer-model review](./templates/ritual-review.md#customer-model-review). Each craft drafts its own sections; research grades the evidence. The model is also the handover artefact: when a domain changes hands, the customer model (with its last-revised trail) transfers the context that otherwise dies in someone's head.
 
 ---
 
@@ -78,16 +78,16 @@ The known failure mode of deep immersion is going native: internalising the cust
 - [ ] Extreme case interviewed
 - [ ] Tenured insider debriefed
 - [ ] Economics sketch done from memory, checked by the tenured insider
-- [ ] Week-two formulation written, dated, shared
-- [ ] Formulation presented at first Formulation Review
+- [ ] Week-two customer-model sections written, dated, shared
+- [ ] Customer model presented at first customer-model review
 - [ ] Account panel named
 
 ---
 
 ## Related
 
-- [Customer Formulation Template](./templates/customer-formulation.md) -- the artefact this protocol produces.
-- [Formulation Review Template](./templates/formulation-review.md) -- where the formulation gets attacked.
+- [Product Spec: the customer model](../templates/product-spec.md#the-customer-model) -- the artefact this protocol produces.
+- [Ritual Review Template](./templates/ritual-review.md#customer-model-review) -- where the customer model gets attacked.
 - [Discovery](./discovery.md) -- per-initiative research; this doc is the per-domain layer underneath it.
 - [Calibration](./calibration.md) -- why entering a domain resets your prediction track record, and how the ledger rebuilds it.
 - [Product Handbook, First 90 Days](./product-handbook.md#first-90-days) -- where this protocol slots into onboarding.

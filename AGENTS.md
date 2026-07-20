@@ -8,7 +8,7 @@ last_reviewed: 2026-07-06
 
 This repository is **ProductOS**, a reusable, product-agnostic **agentic-delivery operating system**: the anchors, Job Specs, templates, and agent-executable skills that make delivery *run*. Anything specific to a real product (vision, principles, invariants) is documented as a *guide*: what good looks like, when it's "done," and how to write your own.
 
-The human product craft (the six-phase loop, discovery, RICE, personas, and the judgement system: craft, the calibration ledger, customer formulations) is a **separate, human-owned layer** covering the whole product function, kept in `pm-playbook/`. It's now **published as a top-level section of the live site**, sitting alongside the agentic method, but it stays a distinct layer with a one-way dependency: pm-playbook may reference the core (anchors, guides, templates), the core never references pm-playbook.
+The human product craft (the six-phase loop, discovery, RICE, personas, and the judgement system: craft, the calibration ledger, the customer-model review) is a **separate, human-owned layer** covering the whole product function, kept in `pm-playbook/`. It's now **published as a top-level section of the live site**, sitting alongside the agentic method, but it stays a distinct layer with a one-way dependency: pm-playbook may reference the core (anchors, guides, templates), the core never references pm-playbook.
 
 ProductOS stays independent of the day-to-day craft. Two bridges cross the line on purpose:
 

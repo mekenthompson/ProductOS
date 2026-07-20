@@ -152,8 +152,6 @@ export default defineConfig({
                 { label: 'Template: Research', link: '/pm-playbook/templates/research/' },
                 { label: 'Template: Ritual Review', link: '/pm-playbook/templates/ritual-review/' },
                 { label: 'Template: Post-Launch Review', link: '/pm-playbook/templates/post-launch-review/' },
-                { label: 'Template: Customer Formulation', link: '/pm-playbook/templates/customer-formulation/' },
-                { label: 'Template: Formulation Review', link: '/pm-playbook/templates/formulation-review/' },
               ],
             },
           ],

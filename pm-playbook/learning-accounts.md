@@ -41,7 +41,7 @@ Review the roster every six months. Graduating an account out is normal: when th
 ## Running the tier
 
 - **One PM owns each learning account**, and it sits inside their [account panel](./domain-entry.md#staying-ramped-the-account-panel). The PM, not the AM, owns the learning agenda.
-- **Expert-witness debriefs, monthly.** Structured sessions with the account's operators: the PM questions until they can argue the customer's view back to them. Captured with the [Customer Call Template](./templates/customer-call.md), fed into the PM's [formulation](./templates/customer-formulation.md).
+- **Expert-witness debriefs, monthly.** Structured sessions with the account's operators: the PM questions until they can argue the customer's view back to them. Captured with the [Customer Call Template](./templates/customer-call.md), fed into the PM's sections of the [customer model](../templates/product-spec.md#the-customer-model).
 - **Requests skip no gates.** Learning-account requests still pass Signal → Standard → Speed. What the tier buys is priority attention and depth of contact, not a bypass around the [Decision Framework](./decision-framework.md).
 - **The generalisation review.** Quarterly, per product area: walk the list of learning-account work and its tags. Anything tagged **experiment** past its decision date gets forced to a tag. Anything tagged **generalises** must name the [Job Spec](../templates/job-spec.md) it now serves. This review is what keeps the hard rule real.
 
@@ -50,7 +50,7 @@ Review the roster every six months. Graduating an account out is normal: when th
 ## What the tier yields
 
 - **First instances of segment jobs**, seen early and in full context, before they show up as feedback-queue patterns.
-- **Ground truth for formulations.** The account's operators and economics are where a PM's formulation gets tested against reality between Formulation Reviews.
+- **Ground truth for the customer model.** The account's operators and economics are where a PM's model gets tested against reality between customer-model reviews.
 - **Honest failure data.** An over-served account that still won't adopt something is the strongest disconfirming evidence available; log it in the [calibration ledger](./calibration.md) like any other outcome.
 
 ---
@@ -70,6 +70,6 @@ Review the roster every six months. Graduating an account out is normal: when th
 
 - [Domain Entry](./domain-entry.md) -- the account panel this tier sits inside.
 - [Decision Framework](./decision-framework.md) -- learning-account requests pass the same gates.
-- [Customer Formulation Template](./templates/customer-formulation.md) -- where the debriefs land.
+- [Product Spec: the customer model](../templates/product-spec.md#the-customer-model) -- where the debriefs land.
 - [Calibration](./calibration.md) -- learning-account outcomes are scored like any other.
 - [Handling Product Feedback](./customer-feedback.md) -- the wide funnel this tier complements; the tier is depth, the queue is breadth.

@@ -65,7 +65,7 @@ _The RFC made a commercial mechanism prediction. Score it. This is the entry the
 
 **Score:** [Fired / Partial / Missed / Unscoreable]
 
-**Which load-bearing assumption broke?** _(Partial/Missed only. This line is where the learning is; feed it back into the domain's [Customer Formulation](./customer-formulation.md).)_
+**Which load-bearing assumption broke?** _(Partial/Missed only. This line is where the learning is; feed it back into the [customer model](../../templates/product-spec.md#the-customer-model) in the Product Spec.)_
 
 **Attribution note:** _(external factors, seasonality, confounders that qualify the read)_
 
@@ -141,4 +141,4 @@ _Schedule all three reviews when you ship, not after. Add calendar invites at la
 ## Related
 
 - [Calibration](../calibration.md) -- the ledger the Mechanism Check feeds
-- [Customer Formulation Template](./customer-formulation.md) -- where broken assumptions get fed back
+- [Product Spec: the customer model](../../templates/product-spec.md#the-customer-model) -- where broken assumptions get fed back

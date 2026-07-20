@@ -95,8 +95,8 @@ generic. Do not draft until every item below is settled and confirmed.
 - **Bets, risks, rollout shape.** What are we assuming *about the customer*
   that, if wrong, makes the RFC wrong? Mark each assumption **[LB]**
   (load-bearing) or **[S]** (supporting), and for every [LB] get the 90-day
-  disproof: what evidence would show it is wrong. Where the domain has a
-  [Customer Formulation](../../pm-playbook/templates/customer-formulation.md),
+  disproof: what evidence would show it is wrong. Where the Product Spec has a filled
+  [customer model](../../templates/product-spec.md#the-customer-model),
   the [LB] assumptions should trace to it; flag any that trace to neither.
   Then the rollout shape (staged, shadow, champion-challenger, flag), and what
   instrumentation must exist before preview.

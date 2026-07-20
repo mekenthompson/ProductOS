@@ -8,7 +8,7 @@ description: "The human product craft, all four disciplines: the six-phase opera
 
 The **human product craft**, across the whole function (product management,
 product design, product marketing, research/analytics): the six-phase operating
-loop, the taste and judgement system (craft, calibration, formulations), the
+loop, the taste and judgement system (craft, calibration, the customer model), the
 discipline guides, and the templates that go with them.
 
 This is the judgement layer: how the product team runs day to day.
@@ -42,7 +42,7 @@ This is the judgement layer: how the product team runs day to day.
 | [delivery-standards.md](./delivery-standards.md) | Operational workflow with gate checklists. |
 | [release-phases.md](./release-phases.md) | Private Preview → Public Preview → GA. |
 | [discovery.md](./discovery.md) | Validating problems before writing an RFC. |
-| [domain-entry.md](./domain-entry.md) | The ramp protocol: entering a new domain fast, the week-two formulation, the account panel. |
+| [domain-entry.md](./domain-entry.md) | The ramp protocol: entering a new domain fast, the week-two customer model, the account panel. |
 | [calibration.md](./calibration.md) | The calibration ledger: scoring commercial mechanism predictions per PM. |
 | [learning-accounts.md](./learning-accounts.md) | The deliberately over-served research tier, with the generalisation rule. |
 | [product-analytics.md](./product-analytics.md) | The measurement discipline: what a PM owes, and how a Signal gets stood up and read. |
@@ -59,9 +59,7 @@ This is the judgement layer: how the product team runs day to day.
 |---|---|
 | [templates/customer-call.md](./templates/customer-call.md) | Customer interview and call documentation. |
 | [templates/research.md](./templates/research.md) | Competitive, analytics, surveys, usability testing. |
-| [templates/ritual-review.md](./templates/ritual-review.md) | Monthly dogfooding and competitor reviews. |
+| [templates/ritual-review.md](./templates/ritual-review.md) | Monthly dogfooding, competitor, and customer-model reviews. |
 | [templates/post-launch-review.md](./templates/post-launch-review.md) | Measure outcomes, close the loop, decide what's next. |
-| [templates/customer-formulation.md](./templates/customer-formulation.md) | One-page working model of a customer segment; dated, provisional, revised monthly. |
-| [templates/formulation-review.md](./templates/formulation-review.md) | The monthly forum that attacks the understanding, not the solution. |
 
 Keep it product-agnostic: no single company's product baked in as the example.

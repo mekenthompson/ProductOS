@@ -202,7 +202,7 @@ Hard limit: 3 bullets, each one linking out. The RFC is not the research documen
 
 ### Bets & Risks
 
-This is the **key assumptions check**: what must be true *about the customer* for this bet to pay. Mark each assumption **[LB]** (load-bearing: if wrong, the RFC is wrong) or **[S]** (supporting), and for every [LB], name the evidence that would show it's wrong within 90 days: that disproof is what the post-launch review reaches for when the mechanism misses. Load-bearing assumptions should trace to the domain's [Customer Formulation](../pm-playbook/templates/customer-formulation.md); an assumption in neither document is untested twice.
+This is the **key assumptions check**: what must be true *about the customer* for this bet to pay. Mark each assumption **[LB]** (load-bearing: if wrong, the RFC is wrong) or **[S]** (supporting), and for every [LB], name the evidence that would show it's wrong within 90 days: that disproof is what the post-launch review reaches for when the mechanism misses. Load-bearing assumptions should trace to the [customer model](../templates/product-spec.md#the-customer-model) in the Product Spec; an assumption in neither document is untested twice.
 
 "If the user genuinely doesn't have this struggling moment, the RFC is wrong" is the kind of bet to surface. Risks should have mitigations.
 
