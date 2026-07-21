@@ -4,8 +4,10 @@ import Default from '@astrojs/starlight/components/Head.astro';
 const { starlightRoute } = Astro.locals;
 const { entry } = starlightRoute;
 
-const siteUrl = 'https://mekenthompson.github.io';
-const base = '/ProductOS';
+if (!Astro.site) throw new Error('The Astro site URL is required to build page metadata');
+
+const siteUrl = Astro.site.origin;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 const pageTitle = entry.data.title
   ? `${entry.data.title} | ProductOS`
