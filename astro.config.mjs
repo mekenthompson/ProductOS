@@ -5,8 +5,11 @@ import sitemap from '@astrojs/sitemap';
 import starlightLinksValidator from 'starlight-links-validator';
 import remarkProductosDocs from './src/plugins/remark-productos-docs.mjs';
 
+const repository = process.env.GITHUB_REPOSITORY ?? 'mekenthompson/ProductOS';
+const [repositoryOwner] = repository.split('/');
+
 export default defineConfig({
-  site: 'https://mekenthompson.github.io',
+  site: `https://${repositoryOwner}.github.io`,
   base: '/ProductOS/',
   prefetch: true,
   markdown: {
@@ -70,7 +73,7 @@ export default defineConfig({
       },
       favicon: '/favicon.svg',
       social: [
-        { icon: 'github', label: 'ProductOS on GitHub', href: 'https://github.com/mekenthompson/ProductOS' },
+        { icon: 'github', label: 'ProductOS on GitHub', href: `https://github.com/${repository}` },
       ],
       lastUpdated: true,
       tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 },
