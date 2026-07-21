@@ -6,7 +6,7 @@ import starlightLinksValidator from 'starlight-links-validator';
 import remarkProductosDocs from './src/plugins/remark-productos-docs.mjs';
 
 const repository = process.env.GITHUB_REPOSITORY ?? 'mekenthompson/ProductOS';
-const [repositoryOwner] = repository.split('/');
+const repositoryOwner = repository.split('/')[0].toLowerCase();
 
 export default defineConfig({
   site: `https://${repositoryOwner}.github.io`,
