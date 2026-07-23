@@ -33,8 +33,13 @@ jobs:
       # holds symlinks into the repo root (anchors/, guides/, etc.), which git
       # checkout restores as real symlinks. `npm run build` is a plain Astro
       # build (content layer + link validator), no separate sync step.
+      # CUSTOM_DOMAIN activates only for the canonical repo: the site builds
+      # for https://theproductos.com/ at the domain root. Forks leave it
+      # unset and keep the derived <owner>.github.io/<repo>/ default.
       - name: Build
         run: npm run build
+        env:
+          CUSTOM_DOMAIN: ${{ github.repository == 'mekenthompson/ProductOS' && 'theproductos.com' || '' }}
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:

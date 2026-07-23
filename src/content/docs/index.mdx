@@ -10,7 +10,7 @@ head:
 import { Card, CardGrid, LinkCard, LinkButton, Aside } from '@astrojs/starlight/components';
 
 <div class="pos-home-hero">
-  <span class="pos-wordmark"><img src="/ProductOS/img/wordmark-productos.svg" alt="" aria-hidden="true" class="pos-wordmark-light" width="1440" height="240" /><img src="/ProductOS/img/wordmark-productos-dark.svg" alt="" aria-hidden="true" class="pos-wordmark-dark" width="1440" height="240" /></span>
+  <span class="pos-wordmark"><img src={`${import.meta.env.BASE_URL}img/wordmark-productos.svg`} alt="" aria-hidden="true" class="pos-wordmark-light" width="1440" height="240" /><img src={`${import.meta.env.BASE_URL}img/wordmark-productos-dark.svg`} alt="" aria-hidden="true" class="pos-wordmark-dark" width="1440" height="240" /></span>
 </div>
 
 **A product operating system in markdown, kept next to your code.** Layered
@@ -20,12 +20,12 @@ shapes into your own repo. Proven on a real codebase: 20+ Job Specs held
 against a live UAT harness.
 
 <div class="pos-home-actions">
-  <LinkButton href="/ProductOS/guides/what-is-productos/" icon="right-arrow">What is ProductOS</LinkButton>
+  <LinkButton href={`${import.meta.env.BASE_URL}guides/what-is-productos/`} icon="right-arrow">What is ProductOS</LinkButton>
   <LinkButton href="https://github.com/mekenthompson/ProductOS" icon="external" variant="secondary">See it on GitHub</LinkButton>
   <LinkButton href="https://github.com/switchroom/switchroom/tree/main/reference" icon="external" variant="secondary">Working example: switchroom</LinkButton>
 </div>
 
-![ProductOS: layered markdown next to your code. Each layer carries its decision down the chain, into the verdict rule that ships the change or sends it back.](/ProductOS/img/hero-productos.png)
+![ProductOS: layered markdown next to your code. Each layer carries its decision down the chain, into the verdict rule that ships the change or sends it back.](/img/hero-productos.png)
 
 <div style="margin: 2rem 0;">
 
@@ -73,13 +73,13 @@ ProductOS is two layers, both live now, not a roadmap.
     Anchors, Job Specs, the verdict rule, design loops, outcome UAT, and the
     agent-executable skills that carry the method end to end.
 
-    [Agentic Delivery](/ProductOS/guides/agentic-delivery/)
+    [Agentic Delivery](/guides/agentic-delivery/)
   </Card>
   <Card title="The Product Playbook">
     The human product craft, all four disciplines: the six-phase operating
     loop, discovery, the decision framework, RICE, personas.
 
-    [Product Playbook](/ProductOS/product-playbook/)
+    [Product Playbook](/product-playbook/)
   </Card>
 </CardGrid>
 
@@ -127,19 +127,19 @@ needs and nothing it doesn't.
     Given finite capacity, which jobs are funded now and which are deferred, and
     why. The context leadership and PMM work from.
 
-    [Strategy as code](/ProductOS/guides/strategy-as-code/)
+    [Strategy as code](/guides/strategy-as-code/)
   </Card>
   <Card title="Product definition">
     What the product is, the outcomes it drives, and the jobs it owns. The
     anchors that hold and the product spec that lists the work.
 
-    [Anchors](/ProductOS/anchors/product-vision/) · [Product spec](/ProductOS/templates/product-spec/)
+    [Anchors](/anchors/product-vision/) · [Product spec](/templates/product-spec/)
   </Card>
   <Card title="Job definition">
     The durable, outcome-focused contract for a single job, proven by its UAT.
     What engineering and design build against.
 
-    [Job spec](/ProductOS/templates/job-spec/)
+    [Job spec](/templates/job-spec/)
   </Card>
 </CardGrid>
 
@@ -152,20 +152,20 @@ the chain without losing the plot. One source of context, both audiences.
 There's no installer. You adopt ProductOS by writing these five things into
 your own repo.
 
-1. **Read the method**, [Agentic Delivery](/ProductOS/guides/agentic-delivery/): the four parts and the verdict rule.
-2. **Copy the shapes**: the templates for [anchors](/ProductOS/anchors/product-vision/), [product spec](/ProductOS/templates/product-spec/), and [Job Spec](/ProductOS/templates/job-spec/).
-3. **Write your anchors**: [vision](/ProductOS/anchors/product-vision/), [principles](/ProductOS/anchors/product-principles/), [invariants](/ProductOS/anchors/invariants/). The why, the built-well, the never-cross.
-4. **Write your product spec and first Job Spec**, using the [create-product-spec](/ProductOS/skills/create-product-spec/) and [create-job-spec](/ProductOS/skills/create-job-spec/) skills to interview you and write them.
-5. **Point your agent at your AGENTS.md** so it reads the same documents as executable guidance: drafting RFCs with [create-rfc](/ProductOS/skills/create-rfc/), gating every document through [review-doc](/ProductOS/skills/review-doc/), and guarding ratified specs with [amend-durable-doc](/ProductOS/skills/amend-durable-doc/).
+1. **Read the method**, [Agentic Delivery](/guides/agentic-delivery/): the four parts and the verdict rule.
+2. **Copy the shapes**: the templates for [anchors](/anchors/product-vision/), [product spec](/templates/product-spec/), and [Job Spec](/templates/job-spec/).
+3. **Write your anchors**: [vision](/anchors/product-vision/), [principles](/anchors/product-principles/), [invariants](/anchors/invariants/). The why, the built-well, the never-cross.
+4. **Write your product spec and first Job Spec**, using the [create-product-spec](/skills/create-product-spec/) and [create-job-spec](/skills/create-job-spec/) skills to interview you and write them.
+5. **Point your agent at your AGENTS.md** so it reads the same documents as executable guidance: drafting RFCs with [create-rfc](/skills/create-rfc/), gating every document through [review-doc](/skills/review-doc/), and guarding ratified specs with [amend-durable-doc](/skills/amend-durable-doc/).
 
 <LinkCard
   title="The adopting guide"
-  href="/ProductOS/guides/adopting/"
+  href={`${import.meta.env.BASE_URL}guides/adopting/`}
   description="The full walkthrough: read the method, copy the shapes, write your anchors and first Job Spec, wire up your agent."
 />
 
 <LinkCard
   title="Using the skills in Claude"
-  href="/ProductOS/skills/"
+  href={`${import.meta.env.BASE_URL}skills/`}
   description="Where the skills live, how to install them in Claude Code (.claude/skills/), how they trigger, and which one to reach for at each point in the loop."
 />

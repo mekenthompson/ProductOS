@@ -22,14 +22,16 @@ import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { visit } from 'unist-util-visit';
+import { baseNoSlash } from '../site-config.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(__dirname, '..', '..');
 const DOCS_DIR = path.join(REPO_ROOT, 'src', 'content', 'docs');
 
-// The site is served under this base path (must match astro.config `base`).
-// Markdown links are not auto-prefixed with base, so we bake it in here.
-const BASE = '/ProductOS';
+// The active base prefix ('' at the domain root, '/<repo>' on a GitHub
+// project page). Markdown links are not auto-prefixed with base, so we bake
+// it in here; content is written root-relative and works in both modes.
+const BASE = baseNoSlash;
 
 // Top-level entries under src/content/docs/ that are symlinks into the repo
 // (as opposed to index.mdx, which is hand-written and untouched).
@@ -168,14 +170,24 @@ export default function remarkProductosDocs() {
     if (!filePath || !filePath.startsWith(DOCS_DIR + path.sep)) return;
 
     const srcRel = normalize(path.relative(DOCS_DIR, filePath));
-    if (!isPublished(srcRel)) return;
+    const isHomepage = srcRel === 'index.mdx';
+    if (!isHomepage && !isPublished(srcRel)) return;
 
     const srcRelDir = path.posix.dirname(srcRel);
 
     visit(tree, ['link', 'image'], (node) => {
+      // Root-relative internal links/images are written without the base;
+      // prefix the active base so they work in both hosting modes.
+      if (node.url.startsWith('/') && BASE && !node.url.startsWith(`${BASE}/`)) {
+        node.url = BASE + node.url;
+        return;
+      }
+      if (isHomepage) return;
       const rewritten = rewriteTarget(node.url, srcRelDir === '.' ? '' : srcRelDir);
       if (rewritten != null) node.url = rewritten;
     });
+
+    if (isHomepage) return;
 
     alertsToAsides(tree);
     stripDuplicateLeadingH1(tree);
