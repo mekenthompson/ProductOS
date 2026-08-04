@@ -39,7 +39,58 @@ Customers are smart, impatient, and have options. Every hour of engineering time
 
 The [Product Vision](../anchors/product-vision.md) sets the direction and names the outcomes (up to four), each carrying its own Signal, the readable metric that tells you the outcome is holding. (Where a single number captures the whole product, that collapses to one headline metric, but treat it as one outcome with one Signal.) This document describes the **Product Loop**: a six-phase closed loop for how ideas become outcomes. It isn't bureaucracy. It's a shared operating system for product decisions.
 
-![Product Loop: Learn → Decide → Shape → Build → Launch → Sell](images/product-loop.png)
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The Product Loop: six phases in a row from left to right, Learn, Decide, Shape, Build, Launch, then Sell, each feeding the next, with a return arrow from Sell back to Learn that closes the loop." viewBox="0 0 1550 236" class="pos-loop-diagram" style="width:100%;height:auto;max-width:920px;display:block;margin:1.5rem auto;">
+<title>The Product Loop</title>
+<style>
+.pos-loop-diagram text{font-family:inherit}
+.pos-loop-diagram .box{fill:var(--sl-color-gray-6);stroke:var(--sl-color-gray-5);stroke-width:1.2}
+.pos-loop-diagram .title{fill:var(--sl-color-white);font-weight:700;font-size:21px}
+.pos-loop-diagram .num{fill:var(--sl-color-text-accent)}
+.pos-loop-diagram .rule{fill:var(--sl-color-text-accent)}
+.pos-loop-diagram .desc{fill:var(--sl-color-gray-2);font-size:14.5px}
+.pos-loop-diagram .flow{stroke:var(--sl-color-text-accent);stroke-width:2.4;fill:none}
+.pos-loop-diagram .arrowhead{fill:var(--sl-color-text-accent)}
+.pos-loop-diagram .cap{fill:var(--sl-color-gray-3);font-size:14px;font-style:italic}
+</style>
+<defs><marker id="posLoopArrow" markerWidth="9" markerHeight="9" refX="6.5" refY="3.5" orient="auto" markerUnits="userSpaceOnUse"><path class="arrowhead" d="M0,0 L7,3.5 L0,7 Z"/></marker></defs>
+<rect class="box" x="30" y="24" width="210" height="118" rx="12" ry="12"/>
+<text class="title" x="50" y="64"><tspan class="num">1</tspan><tspan dx="9">Learn</tspan></text>
+<rect class="rule" x="51" y="74" width="26" height="3" rx="1.5"/>
+<text class="desc" x="50" y="104">Evidence, not</text>
+<text class="desc" x="50" y="124">assumptions</text>
+<rect class="box" x="286" y="24" width="210" height="118" rx="12" ry="12"/>
+<text class="title" x="306" y="64"><tspan class="num">2</tspan><tspan dx="9">Decide</tspan></text>
+<rect class="rule" x="307" y="74" width="26" height="3" rx="1.5"/>
+<text class="desc" x="306" y="104">Signal, Standard,</text>
+<text class="desc" x="306" y="124">Speed</text>
+<rect class="box" x="542" y="24" width="210" height="118" rx="12" ry="12"/>
+<text class="title" x="562" y="64"><tspan class="num">3</tspan><tspan dx="9">Shape</tspan></text>
+<rect class="rule" x="563" y="74" width="26" height="3" rx="1.5"/>
+<text class="desc" x="562" y="104">Align scope</text>
+<text class="desc" x="562" y="124">before build</text>
+<rect class="box" x="798" y="24" width="210" height="118" rx="12" ry="12"/>
+<text class="title" x="818" y="64"><tspan class="num">4</tspan><tspan dx="9">Build</tspan></text>
+<rect class="rule" x="819" y="74" width="26" height="3" rx="1.5"/>
+<text class="desc" x="818" y="104">Build to the</text>
+<text class="desc" x="818" y="124">standard</text>
+<rect class="box" x="1054" y="24" width="210" height="118" rx="12" ry="12"/>
+<text class="title" x="1074" y="64"><tspan class="num">5</tspan><tspan dx="9">Launch</tspan></text>
+<rect class="rule" x="1075" y="74" width="26" height="3" rx="1.5"/>
+<text class="desc" x="1074" y="104">Measure what</text>
+<text class="desc" x="1074" y="124">shipped</text>
+<rect class="box" x="1310" y="24" width="210" height="118" rx="12" ry="12"/>
+<text class="title" x="1330" y="64"><tspan class="num">6</tspan><tspan dx="9">Sell</tspan></text>
+<rect class="rule" x="1331" y="74" width="26" height="3" rx="1.5"/>
+<text class="desc" x="1330" y="104">Built isn't</text>
+<text class="desc" x="1330" y="124">sold yet</text>
+<line class="flow" x1="247" y1="83" x2="279" y2="83" marker-end="url(#posLoopArrow)"/>
+<line class="flow" x1="503" y1="83" x2="535" y2="83" marker-end="url(#posLoopArrow)"/>
+<line class="flow" x1="759" y1="83" x2="791" y2="83" marker-end="url(#posLoopArrow)"/>
+<line class="flow" x1="1015" y1="83" x2="1047" y2="83" marker-end="url(#posLoopArrow)"/>
+<line class="flow" x1="1271" y1="83" x2="1303" y2="83" marker-end="url(#posLoopArrow)"/>
+<path class="flow" d="M1415 142 L1415 200 Q1415 214 1401 214 L149 214 Q135 214 135 200 L135 150" marker-end="url(#posLoopArrow)"/>
+<text class="cap" x="775" y="182" text-anchor="middle">The loop closes back to the start</text>
+</svg>
 
 The loop starts with learning and ends with learning. Everything we ship generates data. That data feeds the next decision. This is the system.
 
