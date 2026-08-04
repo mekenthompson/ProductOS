@@ -5,7 +5,7 @@ last_reviewed: 2026-07-06
 icon: "🔌"
 ---
 
-![The Org as an API: a wide dark schematic joining feedback, support, CRM, and finance systems around a single shared job.](/ProductOS/img/hero-org-as-an-api.png)
+![The Org as an API: a wide dark schematic joining feedback, support, CRM, and finance systems around a single shared job.](/img/hero-org-as-an-api.png)
 
 # The Org as an API
 

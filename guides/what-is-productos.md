@@ -7,7 +7,7 @@ icon: "🧭"
 
 # What is ProductOS
 
-![ProductOS: layered markdown next to your code. Each layer carries its decision down the chain, into the verdict rule that ships the change or sends it back.](/ProductOS/img/hero-productos.png)
+![ProductOS: layered markdown next to your code. Each layer carries its decision down the chain, into the verdict rule that ships the change or sends it back.](/img/hero-productos.png)
 
 ProductOS is a product operating system written in markdown and kept next to
 your code. Layered documents that carry each decision down the chain, so

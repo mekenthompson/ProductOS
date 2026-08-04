@@ -4,56 +4,62 @@ import starlight from '@astrojs/starlight';
 import sitemap from '@astrojs/sitemap';
 import starlightLinksValidator from 'starlight-links-validator';
 import remarkProductosDocs from './src/plugins/remark-productos-docs.mjs';
+import { repository, site, base, baseNoSlash } from './src/site-config.mjs';
 
-const repository = process.env.GITHUB_REPOSITORY ?? 'mekenthompson/ProductOS';
-const repositoryOwner = repository.split('/')[0].toLowerCase();
+// Prefix the active base onto every redirect destination (sources get the
+// base from Astro itself).
+function withBase(redirects) {
+  return Object.fromEntries(
+    Object.entries(redirects).map(([from, to]) => [from, baseNoSlash + to])
+  );
+}
 
 export default defineConfig({
-  site: `https://${repositoryOwner}.github.io`,
-  base: '/ProductOS/',
+  site,
+  base,
   prefetch: true,
   markdown: {
     remarkPlugins: [remarkProductosDocs],
   },
   // Old site slugs redirected to their new home. Astro prefixes `base` on
-  // the SOURCE side only; destinations must be written with the /ProductOS/
-  // base included or the meta-refresh targets 404 on GitHub Pages.
-  redirects: {
-    '/guides/product-specs/': '/ProductOS/guides/writing-an-rfc/',
-    '/pm-playbook/headline-metric/': '/ProductOS/guides/headline-metric/',
-    '/pm-playbook/domain-entry/': '/ProductOS/product-playbook/domain-expertise/',
+  // the SOURCE side only; destinations are written root-relative here and
+  // get the active base prefixed below, so both hosting modes work.
+  redirects: withBase({
+    '/guides/product-specs/': '/guides/writing-an-rfc/',
+    '/pm-playbook/headline-metric/': '/guides/headline-metric/',
+    '/pm-playbook/domain-entry/': '/product-playbook/domain-expertise/',
     // pm-playbook/ renamed to product-playbook/ (the layer covers all four
     // product crafts, not just PM). One redirect per old page.
-    '/pm-playbook/': '/ProductOS/product-playbook/',
-    '/pm-playbook/product-playbook/': '/ProductOS/product-playbook/product-loop/',
-    '/pm-playbook/product-handbook/': '/ProductOS/product-playbook/product-handbook/',
-    '/pm-playbook/pm-handbook/': '/ProductOS/product-playbook/pm-handbook/',
-    '/pm-playbook/working-together/': '/ProductOS/product-playbook/working-together/',
-    '/pm-playbook/craft/': '/ProductOS/product-playbook/craft/',
-    '/pm-playbook/domain-expertise/': '/ProductOS/product-playbook/domain-expertise/',
-    '/pm-playbook/decision-framework/': '/ProductOS/product-playbook/decision-framework/',
-    '/pm-playbook/delivery-standards/': '/ProductOS/product-playbook/delivery-standards/',
-    '/pm-playbook/release-phases/': '/ProductOS/product-playbook/release-phases/',
-    '/pm-playbook/discovery/': '/ProductOS/product-playbook/discovery/',
-    '/pm-playbook/product-analytics/': '/ProductOS/product-playbook/product-analytics/',
-    '/pm-playbook/product-marketing/': '/ProductOS/product-playbook/product-marketing/',
-    '/pm-playbook/customer-feedback/': '/ProductOS/product-playbook/customer-feedback/',
-    '/pm-playbook/rice/': '/ProductOS/product-playbook/rice/',
-    '/pm-playbook/personas/': '/ProductOS/product-playbook/personas/',
-    '/pm-playbook/tools-we-use/': '/ProductOS/product-playbook/tools-we-use/',
-    '/pm-playbook/templates/customer-call/': '/ProductOS/product-playbook/templates/customer-call/',
-    '/pm-playbook/templates/research/': '/ProductOS/product-playbook/templates/research/',
-    '/pm-playbook/templates/ritual-review/': '/ProductOS/product-playbook/templates/ritual-review/',
-    '/pm-playbook/templates/post-launch-review/': '/ProductOS/product-playbook/templates/post-launch-review/',
-    '/examples/tempo-overview/': '/ProductOS/examples/tempo/strategy/',
-    '/examples/tempo-strategy/': '/ProductOS/examples/tempo/strategy/plan/',
-    '/examples/tempo-product-spec/': '/ProductOS/examples/tempo/product-spec/',
-    '/examples/tempo-job-spec/': '/ProductOS/examples/tempo/job-spec/',
-    '/examples/tempo-job-links/': '/ProductOS/examples/tempo/job-links/',
-    '/examples/tempo-rfc/': '/ProductOS/examples/tempo/rfc/',
-    '/examples/tempo-decision-2026-01/': '/ProductOS/examples/tempo/strategy/decisions/2026-01-15-initial-h1-strategy/',
-    '/examples/tempo-decision-2026-04/': '/ProductOS/examples/tempo/strategy/decisions/2026-04-22-gridline-integration-move/',
-  },
+    '/pm-playbook/': '/product-playbook/',
+    '/pm-playbook/product-playbook/': '/product-playbook/product-loop/',
+    '/pm-playbook/product-handbook/': '/product-playbook/product-handbook/',
+    '/pm-playbook/pm-handbook/': '/product-playbook/pm-handbook/',
+    '/pm-playbook/working-together/': '/product-playbook/working-together/',
+    '/pm-playbook/craft/': '/product-playbook/craft/',
+    '/pm-playbook/domain-expertise/': '/product-playbook/domain-expertise/',
+    '/pm-playbook/decision-framework/': '/product-playbook/decision-framework/',
+    '/pm-playbook/delivery-standards/': '/product-playbook/delivery-standards/',
+    '/pm-playbook/release-phases/': '/product-playbook/release-phases/',
+    '/pm-playbook/discovery/': '/product-playbook/discovery/',
+    '/pm-playbook/product-analytics/': '/product-playbook/product-analytics/',
+    '/pm-playbook/product-marketing/': '/product-playbook/product-marketing/',
+    '/pm-playbook/customer-feedback/': '/product-playbook/customer-feedback/',
+    '/pm-playbook/rice/': '/product-playbook/rice/',
+    '/pm-playbook/personas/': '/product-playbook/personas/',
+    '/pm-playbook/tools-we-use/': '/product-playbook/tools-we-use/',
+    '/pm-playbook/templates/customer-call/': '/product-playbook/templates/customer-call/',
+    '/pm-playbook/templates/research/': '/product-playbook/templates/research/',
+    '/pm-playbook/templates/ritual-review/': '/product-playbook/templates/ritual-review/',
+    '/pm-playbook/templates/post-launch-review/': '/product-playbook/templates/post-launch-review/',
+    '/examples/tempo-overview/': '/examples/tempo/strategy/',
+    '/examples/tempo-strategy/': '/examples/tempo/strategy/plan/',
+    '/examples/tempo-product-spec/': '/examples/tempo/product-spec/',
+    '/examples/tempo-job-spec/': '/examples/tempo/job-spec/',
+    '/examples/tempo-job-links/': '/examples/tempo/job-links/',
+    '/examples/tempo-rfc/': '/examples/tempo/rfc/',
+    '/examples/tempo-decision-2026-01/': '/examples/tempo/strategy/decisions/2026-01-15-initial-h1-strategy/',
+    '/examples/tempo-decision-2026-04/': '/examples/tempo/strategy/decisions/2026-04-22-gridline-integration-move/',
+  }),
   integrations: [
     sitemap(),
     starlight({

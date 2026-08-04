@@ -11,13 +11,15 @@
 
 This is what I actually run product with. Every layer, from why we're building at all down to the single job in front of an agent, gets its own document, so whoever's touching the work, human or agent, has exactly the context that layer needs and makes the right call.
 
-### 👉 Read it on the web: **[mekenthompson.github.io/ProductOS](https://mekenthompson.github.io/ProductOS/)**
+### 👉 Read it on the web: **[theproductos.com](https://theproductos.com/)**
 
 That's the front door: the whole method, browsable, searchable, always current. This repo is the source the site builds from; if you just want to *read* ProductOS, start on the site.
 
+Hosting is dual-mode: the canonical deploy sets `CUSTOM_DOMAIN` in the deploy workflow and serves https://theproductos.com/ at the domain root, while a fork needs no configuration at all and automatically hosts a working copy at its own `https://<owner>.github.io/<repo>/` project page (the site and base URLs are derived from the repository, see `src/site-config.mjs`).
+
 Once you're in:
 
-- **[Adopt it →](https://mekenthompson.github.io/ProductOS/guides/adopting/)** no installer; copy the shapes into your own repo in an afternoon.
+- **[Adopt it →](https://theproductos.com/guides/adopting/)** no installer; copy the shapes into your own repo in an afternoon.
 - **[See it filled in on a real product →](https://github.com/switchroom/switchroom/tree/main/reference)** switchroom is a separate codebase running ProductOS end to end (a worked example, not the ProductOS source): real anchors, a product spec, 20+ Job Specs, held against a live UAT harness.
 
 ---

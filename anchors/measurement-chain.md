@@ -7,7 +7,7 @@ icon: "🪜"
 
 # Measurement Chain
 
-![A four-rung ladder rising from a named leading indicator, through a quantified job metric, to an outcome Signal, to the North Star at the top, with instrumentation events wiring underneath every rung.](/ProductOS/img/hero-measurement-chain.png)
+![A four-rung ladder rising from a named leading indicator, through a quantified job metric, to an outcome Signal, to the North Star at the top, with instrumentation events wiring underneath every rung.](/img/hero-measurement-chain.png)
 
 The Measurement Chain is the fourth anchor, beside the [Vision](./product-vision.md)
 (the *why*), the [Principles](./product-principles.md) (the *built-well*
