@@ -113,6 +113,21 @@ craft that feeds it.
 
 ---
 
+## The Product Loop
+
+The craft layer runs on a single operating model: a six-phase loop that carries
+an idea from evidence to revenue and back. Learn (evidence, not assumptions),
+Decide (Signal, Standard, Speed), Shape (align scope before build), Build (build
+to the standard), Launch (measure what shipped), Sell (built isn't sold yet).
+Each phase feeds the next, and the loop closes back to the start: everything you
+ship generates the evidence the next cycle learns from.
+
+Read the [Product Loop](../product-playbook/product-loop.md) for the full model:
+what each phase believes, does, and produces, and how the loop closes back to
+learning.
+
+---
+
 ## Where to next
 
 Understanding first, then the paths onward.
