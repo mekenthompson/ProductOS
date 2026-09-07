@@ -165,7 +165,10 @@ export default defineConfig({
               items: [
                 { label: 'Decision Framework', link: '/product-playbook/decision-framework/' },
                 { label: 'Delivery Standards', link: '/product-playbook/delivery-standards/' },
+                { label: 'Lifecycle', link: '/product-playbook/lifecycle/' },
+                { label: 'Gates and Approvals', link: '/product-playbook/gates/' },
                 { label: 'Release Phases', link: '/product-playbook/release-phases/' },
+                { label: 'Project Standards', link: '/product-playbook/project-standards/' },
                 { label: 'Discovery', link: '/product-playbook/discovery/' },
                 { label: 'Product Analytics', link: '/product-playbook/product-analytics/' },
                 { label: 'Product Marketing', link: '/product-playbook/product-marketing/' },

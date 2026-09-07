@@ -8,9 +8,9 @@ last_reviewed: 2026-07-06
 
 This repository is **ProductOS**, a reusable, product-agnostic **agentic-delivery operating system**: the anchors, Job Specs, templates, and agent-executable skills that make delivery *run*. Anything specific to a real product (vision, principles, invariants) is documented as a *guide*: what good looks like, when it's "done," and how to write your own.
 
-The human product craft (the six-phase loop, discovery, RICE, personas, and the judgement system: craft, with predictions written and scored inside the working artefacts) is a **separate, human-owned layer** covering the whole product function, kept in `product-playbook/`. It's now **published as a top-level section of the live site**, sitting alongside the agentic method, but it stays a distinct layer with a one-way dependency: product-playbook may reference the core (anchors, guides, templates), the core never references product-playbook.
+The human product craft (the six-phase loop, discovery, RICE, personas, and the judgement system: craft, with predictions written and scored inside the working artefacts) is a **separate, human-owned layer** covering the whole product function, kept in `product-playbook/`. It's now **published as a top-level section of the live site**, sitting alongside the agentic method, but it stays a distinct layer with a one-way dependency: product-playbook may reference the core (anchors, guides, templates), the core crosses back only over the named bridges below.
 
-ProductOS stays independent of the day-to-day craft. Two bridges cross the line on purpose:
+ProductOS stays independent of the day-to-day craft. Three bridges cross the line on purpose:
 
 - **Path-tiering** (Quick Win / Lightweight / Full Spec), the craft's, sets *how* the verdict rule scales.
 - **Evidence**: the templates point at the playbook's discovery guidance for how the evidence behind a job gets gathered.
