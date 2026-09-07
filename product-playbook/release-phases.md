@@ -1,7 +1,7 @@
 ---
 title: Release Phases
 description: How a feature moves from behind a flag to everyone (Private Preview → Public Preview → GA), each with its audience, flag state, and entry/exit criteria
-last_reviewed: 2026-07-06
+last_reviewed: 2026-09-07
 icon: "🚦"
 ---
 
@@ -15,7 +15,20 @@ phase is reversible: if something breaks, turn the flag off.
 This is tracker-agnostic: the phase names are what matter, not the tool.
 Release phase is *how widely it's on*. That's a separate thing from the work's
 **stakes / [path](./decision-framework.md)**, which drive *how much GTM
-investment, approval depth, and gate rigour* the release gets.
+investment, approval depth, and gate rigour* the release gets. The gates
+themselves, with their checklists and approvers, live in
+[Gates and Approvals](./gates.md); this page owns the phases.
+
+---
+
+## Audience + flag state, at a glance
+
+| Phase | Lifecycle status | Flag state | Who can access | Purpose |
+|---|---|---|---|---|
+| Behind the flag | Building | OFF (internal override) | Dev team only | Build + test in production |
+| **Private Preview** | In Preview | ON for specific accounts | 5–10 trusted customers | Feedback from friendly users, low blast radius |
+| **Public Preview** | GTM Launch Planning | ON for a % / opted-in | Preview cohort | Test at scale before GA |
+| **GA** | Launched | ON for all (or gradual %) | All customers | Full rollout, still disable-able |
 
 ---
 
@@ -41,7 +54,8 @@ investment, approval depth, and gate rigour* the release gets.
   radius. Fix critical bugs, watch production stability, and confirm the
   outcome holds outside the building.
 - **Exit:** private-preview feedback summarised, critical tickets resolved,
-  stability holding, then the **Launch Readiness Check** gate (below).
+  stability holding, then the
+  [Launch Readiness Check](./gates.md#gate-2-launch-readiness-check).
 
 ### 2. Public Preview
 
@@ -50,8 +64,8 @@ investment, approval depth, and gate rigour* the release gets.
 - **Purpose:** test at scale before committing to everyone: load, edge
   cases, adoption signal, support volume. This is where you learn whether it
   works for a broad base, not just the friendly accounts.
-- **Exit:** adoption and stability thresholds met, no critical issues, GA
-  sign-off.
+- **Exit:** adoption and stability thresholds met, no critical issues, then
+  [GA sign-off](./gates.md#ga-sign-off).
 
 ### 3. General Availability (GA)
 
@@ -59,38 +73,25 @@ investment, approval depth, and gate rigour* the release gets.
 - **Flag:** ON for all (still disable-able).
 - **Purpose:** full rollout, announced. The feature is now the default.
 - **After GA:** maintain the flag for a stabilisation window; run the
-  [post-launch reviews](./delivery-standards.md#post-ship-reviews) at 2 weeks /
+  [post-launch reviews](./templates/post-launch-review.md) at 2 weeks /
   30 days / 60–90 days and make the explicit call (accelerate / iterate /
   pivot / investigate / stop).
 
 ---
 
-## Audience + flag state, at a glance
+## Widening the audience
 
-| Phase | Flag state | Who can access | Purpose |
-|---|---|---|---|
-| Behind the flag | OFF (internal override) | Dev team only | Build + test in production |
-| **Private Preview** | ON for specific accounts | 5–10 trusted customers | Feedback from friendly users, low blast radius |
-| **Public Preview** | ON for a % / opted-in | Preview cohort | Test at scale before GA |
-| **GA** | ON for all (or gradual %) | All customers | Full rollout, still disable-able |
+Moving past Private Preview is a real checkpoint, not a flag flip: the
+**Launch Readiness Check**. Its checklist and approver are on one page,
+[Gates and Approvals](./gates.md#gate-2-launch-readiness-check). Don't widen
+until it's closed. Moving past Public Preview has its own, lighter check,
+[GA sign-off](./gates.md#ga-sign-off).
 
----
-
-## The gate between private and wider release
-
-Moving past Private Preview is a real checkpoint: the **Launch Readiness
-Check**. Don't widen the audience until all of this is true:
-
-- the feature is deployed behind a flag in production,
-- the **outcome UAT** is complete (the user's job is proven end-to-end), and
-  **production-readiness** is validated (security / reliability / scale /
-  availability, to the stakes): two distinct gates, neither implies the
-  other,
-- success metrics are instrumented and guardrail metrics identified,
-- private-preview feedback is summarised and critical tickets resolved.
-
-Gate depth scales with the stakes. Full gate detail: [Delivery Standards →
-Gates](./delivery-standards.md#gates-and-approvals).
+The per-initiative version of this table, with *this* release's audiences,
+exit criteria, and rollback, is the Rollout section of the
+[RFC](../templates/rfc.md). Feature-flag on/off is one release shape, not the
+only one; see [Writing an RFC → Rollout](../guides/writing-an-rfc.md#rollout)
+for staged, shadow, and champion-challenger shapes.
 
 ---
 
@@ -104,8 +105,11 @@ changes that are reversible within the phase.
 
 ## Related
 
-- [Delivery Standards](./delivery-standards.md): the full lifecycle and gates
-  these phases sit inside.
+- [Gates and Approvals](./gates.md): the checklists and approvers between
+  phases.
+- [Lifecycle](./lifecycle.md): the delivery statuses each phase maps to.
+- [Delivery Standards](./delivery-standards.md): the front door to the
+  workflow these phases sit inside.
 - [RFC Template → Rollout](../templates/rfc.md): the per-initiative rollout
   table where a team records the audience, exit criteria, and rollback for
   each phase of *this* release.

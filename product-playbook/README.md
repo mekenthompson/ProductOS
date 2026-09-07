@@ -39,8 +39,11 @@ This is the judgement layer: how the product team runs day to day.
 | [craft.md](./craft.md) | The build loop; prediction types, exposures, and failure modes per craft. |
 | [working-together.md](./working-together.md) | Product-triad collaboration and ownership. |
 | [decision-framework.md](./decision-framework.md) | Signal → Standard → Speed (three paths). |
-| [delivery-standards.md](./delivery-standards.md) | Operational workflow with gate checklists. |
+| [delivery-standards.md](./delivery-standards.md) | The delivery workflow front door: the five-step version and where the detail lives. |
+| [lifecycle.md](./lifecycle.md) | Where is my project? Statuses and what happens in each (Shape → Build → Go to Market). |
+| [gates.md](./gates.md) | Can I move forward? Gate checklists and who signs off. |
 | [release-phases.md](./release-phases.md) | Private Preview → Public Preview → GA. |
+| [project-standards.md](./project-standards.md) | How we run projects: work breakdown, project fields, weekly updates, Fast Path, escalation. |
 | [discovery.md](./discovery.md) | Validating problems before writing an RFC. |
 | [domain-expertise.md](./domain-expertise.md) | The ramp protocol: entering a new domain fast, the week-two customer model, staying ramped longitudinally. |
 | [product-analytics.md](./product-analytics.md) | The measurement discipline: what the team owes, and how a Signal gets stood up and read. |

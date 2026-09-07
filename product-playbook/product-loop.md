@@ -227,7 +227,7 @@ Product principles aren't aspirations for some future state. They're engineering
 - Product principles as PR/design review checklist
 - Instrumentation requirements in [RFC Template](../templates/rfc.md); the measurement discipline is [Product Analytics](./product-analytics.md)
 - Success metrics defined before build starts
-- [Delivery Standards](./delivery-standards.md): Operational workflow with gate checklists
+- [Delivery Standards](./delivery-standards.md): the delivery workflow front door; the gate checklists are in [Gates and Approvals](./gates.md)
 
 ### Why It Matters
 Consistency makes a product feel trustworthy. Instrumentation makes the feedback loop possible. Without both, we're shipping blind into an inconsistent experience.

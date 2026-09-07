@@ -189,4 +189,4 @@ Decision rights and triad mechanics: [Working Together](./working-together.md). 
 - [RFC](../templates/rfc.md) · [Job Spec](../templates/job-spec.md) · [Post-Launch Review](./templates/post-launch-review.md) · [Research](./templates/research.md) · [Customer Call](./templates/customer-call.md)
 
 **Operational:**
-- [Delivery Standards](./delivery-standards.md) · [Release Phases](./release-phases.md)
+- [Delivery Standards](./delivery-standards.md) · [Lifecycle](./lifecycle.md) · [Gates and Approvals](./gates.md) · [Release Phases](./release-phases.md) · [Project Standards](./project-standards.md)
