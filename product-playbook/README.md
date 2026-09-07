@@ -14,10 +14,11 @@ discipline guides, and the templates that go with them.
 This is the judgement layer: how the product team runs day to day.
 
 > **Layering rule.** `product-playbook` may reference ProductOS core (the anchors in
-> [`../anchors/`](../anchors/product-vision.md) and the method guides in [`../guides/`](../guides/agentic-delivery.md));
-> **ProductOS core never references `product-playbook`.** The dependency runs one
-> way. Craft cross-references stay relative within this directory; references up
-> into core point at the in-repo core docs.
+> [`../anchors/`](../anchors/product-vision.md) and the method guides in [`../guides/`](../guides/agentic-delivery.md)).
+> **ProductOS core crosses back only over the named bridges in
+> [`AGENTS.md`](../AGENTS.md)** (path-tiering, evidence, measurement); anything
+> else stays one-way. Craft cross-references stay relative within this directory;
+> references up into core point at the in-repo core docs.
 
 ## Start here
 

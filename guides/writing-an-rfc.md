@@ -80,7 +80,7 @@ An RFC is approved in draft and stays alive through ship. Decisions made during 
 |------|------|---------------|--------------|
 | **Quick Win** | ≤ half a day | Nothing. Flag with EM/PM, then ship. Changelog if UX, support notification always. | EM/PM alignment |
 | **Lightweight** | Half a day – 2 weeks | 1-page brief (Problem, Solution, Acceptance Criteria, Metrics, Persona) | PM + Tech Lead |
-| **Full Spec** | > 2 weeks | Full RFC using the [template](../templates/rfc.md) | Senior product sign-off |
+| **Full Spec** | > 2 weeks | Full RFC using the [template](../templates/rfc.md) | Head of Product sign-off |
 
 Pick the path by the size and stakes of the work.
 
@@ -278,7 +278,7 @@ Approval depth scales with the path and the stakes of the work.
 |---|---|---|
 | **Quick Win** (≤ half a day) | EM/PM alignment | Same day |
 | **Lightweight** (half a day – 2 weeks) | PM + Tech Lead | 3 business days |
-| **Full Spec** (> 2 weeks) | Senior product sign-off (SVP Product; + exec sign-off for the highest-stakes launches) | 5 business days |
+| **Full Spec** (> 2 weeks) | Senior product sign-off (Head of Product; + exec sign-off for the highest-stakes launches) | 5 business days |
 
 ### Verdict gate
 
