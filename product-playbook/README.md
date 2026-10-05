@@ -43,7 +43,7 @@ This is the judgement layer: how the product team runs day to day.
 | [delivery-standards.md](./delivery-standards.md) | The delivery workflow front door: the five-step version and where the detail lives. |
 | [lifecycle.md](./lifecycle.md) | Where is my project? Statuses and what happens in each (Shape → Build → Go to Market). |
 | [gates.md](./gates.md) | Can I move forward? Gate checklists and who signs off. |
-| [release-phases.md](./release-phases.md) | Private Preview → Public Preview → GA. |
+| [release-phases.md](./release-phases.md) | What counts as a release, why we phase, and Private Preview → Public Preview → GA with what each commits us to. |
 | [project-standards.md](./project-standards.md) | How we run projects: work breakdown, project fields, weekly updates, Fast Path, escalation. |
 | [discovery.md](./discovery.md) | Validating problems before writing an RFC. |
 | [domain-expertise.md](./domain-expertise.md) | The ramp protocol: entering a new domain fast, the week-two customer model, staying ramped longitudinally. |
@@ -62,6 +62,7 @@ This is the judgement layer: how the product team runs day to day.
 | [templates/customer-call.md](./templates/customer-call.md) | Customer interview and call documentation. |
 | [templates/research.md](./templates/research.md) | Competitive, analytics, surveys, usability testing. |
 | [templates/ritual-review.md](./templates/ritual-review.md) | Monthly dogfooding, onboarding, and competitor reviews. |
+| [templates/release-record.md](./templates/release-record.md) | One record per release per phase: the gate checklist, the evidence, the two-week score. |
 | [templates/post-launch-review.md](./templates/post-launch-review.md) | Measure outcomes, close the loop, decide what's next. |
 
 Keep it product-agnostic: no single company's product baked in as the example.

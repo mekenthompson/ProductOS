@@ -185,6 +185,7 @@ export default defineConfig({
                 { label: 'Template: Customer Call', link: '/product-playbook/templates/customer-call/' },
                 { label: 'Template: Research', link: '/product-playbook/templates/research/' },
                 { label: 'Template: Ritual Review', link: '/product-playbook/templates/ritual-review/' },
+                { label: 'Template: Release Record', link: '/product-playbook/templates/release-record/' },
                 { label: 'Template: Post-Launch Review', link: '/product-playbook/templates/post-launch-review/' },
               ],
             },

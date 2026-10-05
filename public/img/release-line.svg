@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 310" role="img" aria-label="Two columns separated by a vertical line. Left, not a release: bug fix, incident fix, maintenance and refactors, in production but switched off. Right, a release: flag on for one account, opt-in preview, on by default, a step in the job changes, a new product. An arrow labelled turn it on crosses from switched off to flag on for one account."><style>
+text{font-family:"Plus Jakarta Sans","Segoe UI",Roboto,Helvetica,Arial,sans-serif;fill:#191919}
+.t-muted{fill:#5F6267}.t-accent{fill:#0033FF;font-weight:600}.t-onaccent{fill:#FFFFFF;font-weight:600}.t-onaccent-body{fill:#FFFFFF;font-weight:400}.t-strong{font-weight:600}
+.box{fill:#FFFFFF;stroke:#E4E4E7;stroke-width:1}.box-soft{fill:#F4F4F5;stroke:#E4E4E7;stroke-width:1}.box-accent{fill:#0033FF;stroke:#0033FF}.box-accent-soft{fill:#EEF2FF;stroke:#0033FF;stroke-width:1}
+.ln{stroke:#5F6267;stroke-width:1.5;fill:none}.ln-accent{stroke:#0033FF;stroke-width:1.5;fill:none}.ln-dash{stroke:#5F6267;stroke-width:1.5;fill:none;stroke-dasharray:5 5}
+.wedge{fill:#EEF2FF;stroke:#0033FF;stroke-width:1}.arrow{fill:#5F6267}.arrow-accent{fill:#0033FF}
+</style><rect width="760" height="310" fill="#FFFFFF"/>
+      <defs>
+        <marker id="ar1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="arrow-accent"/></marker>
+      </defs>
+      <text x="380" y="22" text-anchor="middle" class="t-strong" font-size="13">The line: a customer can see or do something different</text>
+      <line x1="380" y1="38" x2="380" y2="300" class="ln-dash"/>
+
+      <text x="20" y="60" font-size="14" class="t-strong">Not a release</text>
+      <text x="20" y="78" font-size="12" class="t-muted">Normal engineering process. No sign-off.</text>
+      <text x="420" y="60" font-size="14" class="t-accent">A release</text>
+      <text x="420" y="78" font-size="12" class="t-muted">Release phases and the gate apply.</text>
+
+      <g font-size="13">
+        <rect x="20" y="96" width="320" height="34" rx="6" class="box"/><text x="36" y="118">Bug fix</text>
+        <rect x="20" y="140" width="320" height="34" rx="6" class="box"/><text x="36" y="162">Incident fix</text>
+        <rect x="20" y="184" width="320" height="34" rx="6" class="box"/><text x="36" y="206">Maintenance and refactors</text>
+        <rect x="20" y="228" width="320" height="34" rx="6" class="box-soft"/><text x="36" y="250">In production, switched off</text>
+
+        <rect x="420" y="96" width="320" height="34" rx="6" class="box-accent-soft"/><text x="436" y="118">Flag on for one account, even a pilot</text>
+        <rect x="420" y="140" width="320" height="34" rx="6" class="box-accent-soft"/><text x="436" y="162">Opt-in preview</text>
+        <rect x="420" y="184" width="320" height="34" rx="6" class="box-accent-soft"/><text x="436" y="206">On by default</text>
+        <rect x="420" y="228" width="320" height="34" rx="6" class="box-accent-soft"/><text x="436" y="250">A step in the customer's job changes</text>
+        <rect x="420" y="272" width="320" height="34" rx="6" class="box-accent-soft"/><text x="436" y="294">A new product</text>
+      </g>
+
+      <path d="M340,245 C370,245 390,113 420,113" class="ln-accent" marker-end="url(#ar1)"/>
+      <rect x="339" y="167" width="82" height="24" rx="6" class="box"/>
+      <text x="380" y="183" text-anchor="middle" font-size="12" class="t-accent">turn it on</text>
+    </svg>

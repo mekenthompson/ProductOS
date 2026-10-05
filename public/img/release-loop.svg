@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 280" role="img" aria-label="A loop of five steps: Decide, Prove, Walk through, Switch on, Learn. An arrow returns from Learn to Decide labelled two weeks later: widen, hold, or pull."><style>
+text{font-family:"Plus Jakarta Sans","Segoe UI",Roboto,Helvetica,Arial,sans-serif;fill:#191919}
+.t-muted{fill:#5F6267}.t-accent{fill:#0033FF;font-weight:600}.t-onaccent{fill:#FFFFFF;font-weight:600}.t-onaccent-body{fill:#FFFFFF;font-weight:400}.t-strong{font-weight:600}
+.box{fill:#FFFFFF;stroke:#E4E4E7;stroke-width:1}.box-soft{fill:#F4F4F5;stroke:#E4E4E7;stroke-width:1}.box-accent{fill:#0033FF;stroke:#0033FF}.box-accent-soft{fill:#EEF2FF;stroke:#0033FF;stroke-width:1}
+.ln{stroke:#5F6267;stroke-width:1.5;fill:none}.ln-accent{stroke:#0033FF;stroke-width:1.5;fill:none}.ln-dash{stroke:#5F6267;stroke-width:1.5;fill:none;stroke-dasharray:5 5}
+.wedge{fill:#EEF2FF;stroke:#0033FF;stroke-width:1}.arrow{fill:#5F6267}.arrow-accent{fill:#0033FF}
+</style><rect width="780" height="280" fill="#FFFFFF"/>
+      <defs>
+        <marker id="ar3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="arrow"/></marker>
+        <marker id="ar3a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="arrow-accent"/></marker>
+      </defs>
+
+      <g font-size="12">
+        <rect x="20" y="60" width="128" height="104" rx="6" class="box"/>
+        <text x="36" y="86" font-size="15" class="t-strong">Decide</text>
+        <text x="36" y="108" class="t-muted">Owner, type,</text>
+        <text x="36" y="124" class="t-muted">Job Spec measures,</text>
+        <text x="36" y="140" class="t-muted">price hypothesis.</text>
+
+        <line x1="148" y1="112" x2="174" y2="112" class="ln" marker-end="url(#ar3)"/>
+
+        <rect x="176" y="60" width="128" height="104" rx="6" class="box"/>
+        <text x="192" y="86" font-size="15" class="t-strong">Prove</text>
+        <text x="192" y="108" class="t-muted">Gate lines ticked,</text>
+        <text x="192" y="124" class="t-muted">evidence linked</text>
+        <text x="192" y="140" class="t-muted">in the record.</text>
+
+        <line x1="304" y1="112" x2="330" y2="112" class="ln" marker-end="url(#ar3)"/>
+
+        <rect x="332" y="60" width="128" height="104" rx="6" class="box-accent"/>
+        <text x="348" y="86" font-size="15" class="t-onaccent">Walk through</text>
+        <text x="348" y="108" class="t-onaccent-body">Approver, live, on the</text>
+        <text x="348" y="124" class="t-onaccent-body">real customer path.</text>
+        <text x="348" y="140" class="t-onaccent-body">Yes in writing.</text>
+
+        <line x1="460" y1="112" x2="486" y2="112" class="ln" marker-end="url(#ar3)"/>
+
+        <rect x="488" y="60" width="128" height="104" rx="6" class="box"/>
+        <text x="504" y="86" font-size="15" class="t-strong">Switch on</text>
+        <text x="504" y="108" class="t-muted">For the agreed</text>
+        <text x="504" y="124" class="t-muted">audience.</text>
+        <text x="504" y="140" class="t-muted">No wider.</text>
+
+        <line x1="616" y1="112" x2="642" y2="112" class="ln" marker-end="url(#ar3)"/>
+
+        <rect x="644" y="60" width="116" height="104" rx="6" class="box"/>
+        <text x="660" y="86" font-size="15" class="t-strong">Learn</text>
+        <text x="660" y="108" class="t-muted">Two weeks.</text>
+        <text x="660" y="124" class="t-muted">Working or not,</text>
+        <text x="660" y="140" class="t-muted">against the plan.</text>
+        <text x="660" y="156" class="t-muted">Score the call.</text>
+      </g>
+
+      <!-- return path -->
+      <path d="M702,164 L702,214 L84,214 L84,166" class="ln-accent" marker-end="url(#ar3a)"/>
+      <rect x="232" y="201" width="326" height="26" rx="6" class="box"/>
+      <text x="395" y="219" text-anchor="middle" font-size="12" class="t-accent">Widen, hold, or pull. Then decide again.</text>
+
+      <text x="390" y="262" text-anchor="middle" font-size="12" class="t-muted">Score each phase the way we score every product call: fired, partial, missed, or unscoreable.</text>
+    </svg>
