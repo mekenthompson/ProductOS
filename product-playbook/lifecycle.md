@@ -1,7 +1,7 @@
 ---
 title: Lifecycle
 description: "Where is my project? The three phase groups, the delivery statuses, and what happens in each: Shape → Build → Go to Market"
-last_reviewed: 2026-09-07
+last_reviewed: 2026-10-05
 icon: "🔁"
 ---
 
@@ -17,7 +17,9 @@ The statuses are conventions you implement in whichever issue tracker your team 
 
 Product delivery flows through **3 phase groups** with **3 gates**:
 
-**Shape** (Backlog → Shaping) → *Shaping Checkpoint* → **Build** (Readying for Build → Building → In Preview) → *Launch Readiness Check* → **Go to Market** (Ready for GTM → GTM Launch Planning → Ready for Launch → Launched) → *Launch Retro Check*
+**Shape** (Backlog → Shaping) → *Shaping Checkpoint* → **Build** (Readying for Build → *Launch Readiness Check* → In Preview) → *Launch Readiness Check* → **Go to Market** (Ready for GTM → GTM Launch Planning → *Launch Readiness Check* → Ready for Launch → Launched) → *Launch Retro Check*
+
+The [Launch Readiness Check](./gates.md#gate-2-launch-readiness-check) runs before every [release phase](./release-phases.md): turning a flag on for one account is a release. Same checklist each time, stricter "done" each run.
 
 Projects can also be **Cancelled**, moved by PM or GTM Lead via agreement with Product.
 
@@ -106,22 +108,27 @@ The product is one thing. Our three product principles are engineering standards
 - Train support team
 - Set up metrics and monitoring
 - Outcome UAT in a production-like environment: validate the user's job end-to-end (job × surface), independent of unit tests (see [Agentic Delivery](../guides/agentic-delivery.md))
+- Write the pricing hypothesis (price point, metric, model, who pays)
+- Flip the kill switch off and on in production
+- Pass the first run of the [Launch Readiness Check](./gates.md#gate-2-launch-readiness-check); open the [release record](./templates/release-record.md)
 
 **In Preview:**
-- Enable flag for 5-10 trusted customer accounts (Private Preview)
+- Enable flag for 5-10 trusted customer accounts (Private Preview), Preview label showing in product and docs
 - Gather feedback from preview customers
 - Fix critical bugs
 - Monitor production stability
 - Summarise Private Preview results
+- Two-week read: widen, hold or pull
 
 ### Deliverables
 
 - [RFC](../templates/rfc.md) (delivery document)
+- [Release record](./templates/release-record.md) per phase
 - Instrumentation: events + dashboards covering all RFC success metrics
 - Architecture Decision Records (ADRs) for irreversible decisions
 - Changelog Draft
 
-**Exit:** the [Launch Readiness Check](./gates.md#gate-2-launch-readiness-check).
+**Exit:** the second run of the [Launch Readiness Check](./gates.md#gate-2-launch-readiness-check).
 
 ---
 
@@ -143,18 +150,20 @@ Shipping is the beginning, not the end. A feature nobody uses isn't a success, i
 ### What You Do
 
 **Ready for GTM → GTM Launch Planning:**
-- Widen the flag to the Public Preview cohort (see [Release Phases](./release-phases.md))
+- Widen the flag to the Public Preview cohort (see [Release Phases](./release-phases.md)); Preview label stays on
+- Show indicative pricing to the cohort and record willingness to pay
 - Write customer documentation
 - Write release notes and changelog
 - Train Sales team (positioning, value), for higher-stakes launches
 - Train Support team (functionality)
 - Prepare launch materials (blog, email, social), for higher-stakes launches
 - Execute launch activities
-- Get [GA sign-off](./gates.md#ga-sign-off)
+- Two-week read on the Public Preview cohort: widen, hold or pull
+- Pass the third run of the [Launch Readiness Check](./gates.md#gate-2-launch-readiness-check)
 
 **Ready for Launch → Launched:**
 - Publish announcement and release notes
-- Enable feature for broader rollout (gradual % or full)
+- Enable feature for broader rollout (gradual % or full); remove the Preview label
 - Monitor adoption metrics
 - Respond to customer feedback
 - Track self-onboarding conversion

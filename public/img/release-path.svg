@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 330" role="img" aria-label="Build, then three phases left to right: Private Preview, Public Preview, General Availability. Before each phase is the same gate, the Launch Readiness Check. A wedge beneath grows wider from private preview to GA showing exposure widening. A dashed arrow above runs back from any phase to Build, labelled kill switch, same day, customer data intact."><style>
+text{font-family:"Plus Jakarta Sans","Segoe UI",Roboto,Helvetica,Arial,sans-serif;fill:#191919}
+.t-muted{fill:#5F6267}.t-accent{fill:#0033FF;font-weight:600}.t-onaccent{fill:#FFFFFF;font-weight:600}.t-onaccent-body{fill:#FFFFFF;font-weight:400}.t-strong{font-weight:600}
+.box{fill:#FFFFFF;stroke:#E4E4E7;stroke-width:1}.box-soft{fill:#F4F4F5;stroke:#E4E4E7;stroke-width:1}.box-accent{fill:#0033FF;stroke:#0033FF}.box-accent-soft{fill:#EEF2FF;stroke:#0033FF;stroke-width:1}
+.ln{stroke:#5F6267;stroke-width:1.5;fill:none}.ln-accent{stroke:#0033FF;stroke-width:1.5;fill:none}.ln-dash{stroke:#5F6267;stroke-width:1.5;fill:none;stroke-dasharray:5 5}
+.wedge{fill:#EEF2FF;stroke:#0033FF;stroke-width:1}.arrow{fill:#5F6267}.arrow-accent{fill:#0033FF}
+</style><rect width="940" height="330" fill="#FFFFFF"/>
+      <defs>
+        <marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="arrow"/></marker>
+        <marker id="ar2a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="arrow-accent"/></marker>
+      </defs>
+
+      <!-- kill switch return -->
+      <path d="M860,70 L860,30 L95,30 L95,70" class="ln-dash" marker-end="url(#ar2)"/>
+      <rect x="305" y="17" width="350" height="26" rx="6" class="box"/>
+      <text x="480" y="35" text-anchor="middle" font-size="12" class="t-muted">Kill switch at every phase: off the same day, data intact</text>
+
+      <!-- Build -->
+      <rect x="20" y="70" width="150" height="150" rx="6" class="box-soft"/>
+      <text x="36" y="96" font-size="15" class="t-strong">Build</text>
+      <text x="36" y="118" font-size="12" class="t-muted">In production,</text>
+      <text x="36" y="134" font-size="12" class="t-muted">switched off.</text>
+      <text x="36" y="160" font-size="12" class="t-muted">Define the job, the</text>
+      <text x="36" y="176" font-size="12" class="t-muted">measures and the</text>
+      <text x="36" y="192" font-size="12" class="t-muted">price first.</text>
+
+      <!-- gate 1 -->
+      <line x1="170" y1="145" x2="196" y2="145" class="ln" marker-end="url(#ar2)"/>
+      <rect x="198" y="70" width="34" height="150" rx="6" class="box-accent"/>
+      <text x="220" y="145" text-anchor="middle" font-size="11" class="t-onaccent" transform="rotate(-90 220 145)">Readiness Check</text>
+      <line x1="232" y1="145" x2="258" y2="145" class="ln" marker-end="url(#ar2)"/>
+
+      <!-- Private preview -->
+      <rect x="260" y="70" width="190" height="150" rx="6" class="box"/>
+      <text x="276" y="96" font-size="15" class="t-strong">Private preview</text>
+      <text x="276" y="118" font-size="12" class="t-muted">Named accounts. No price.</text>
+      <text x="276" y="134" font-size="12" class="t-muted">No SLA. Preview label.</text>
+      <text x="276" y="160" font-size="12" class="t-accent">Learns</text>
+      <text x="276" y="176" font-size="12">Does it hold up in real use?</text>
+      <text x="276" y="192" font-size="12">Does it solve the job?</text>
+      <text x="276" y="208" font-size="12">Price hypothesis on paper.</text>
+
+      <!-- gate 2 -->
+      <line x1="450" y1="145" x2="476" y2="145" class="ln" marker-end="url(#ar2)"/>
+      <rect x="478" y="70" width="34" height="150" rx="6" class="box-accent"/>
+      <text x="500" y="145" text-anchor="middle" font-size="11" class="t-onaccent" transform="rotate(-90 500 145)">Readiness Check</text>
+      <line x1="512" y1="145" x2="538" y2="145" class="ln" marker-end="url(#ar2)"/>
+
+      <!-- Public preview -->
+      <rect x="540" y="70" width="190" height="150" rx="6" class="box"/>
+      <text x="556" y="96" font-size="15" class="t-strong">Public preview</text>
+      <text x="556" y="118" font-size="12" class="t-muted">Opt-in. Indicative price.</text>
+      <text x="556" y="134" font-size="12" class="t-muted">No SLA. Preview label.</text>
+      <text x="556" y="160" font-size="12" class="t-accent">Learns</text>
+      <text x="556" y="176" font-size="12">Does it hold at scale?</text>
+      <text x="556" y="192" font-size="12">Will they pay, at that price?</text>
+      <text x="556" y="208" font-size="12">Can the business carry it?</text>
+
+      <!-- gate 3 -->
+      <line x1="730" y1="145" x2="756" y2="145" class="ln" marker-end="url(#ar2)"/>
+      <rect x="758" y="70" width="34" height="150" rx="6" class="box-accent"/>
+      <text x="780" y="145" text-anchor="middle" font-size="11" class="t-onaccent" transform="rotate(-90 780 145)">Readiness Check</text>
+      <line x1="792" y1="145" x2="818" y2="145" class="ln" marker-end="url(#ar2)"/>
+
+      <!-- GA -->
+      <rect x="820" y="70" width="100" height="150" rx="6" class="box-accent-soft"/>
+      <text x="836" y="96" font-size="15" class="t-strong">GA</text>
+      <text x="836" y="118" font-size="12" class="t-muted">Everyone.</text>
+      <text x="836" y="134" font-size="12" class="t-muted">Sold, supported,</text>
+      <text x="836" y="150" font-size="12" class="t-muted">committed.</text>
+      <text x="836" y="176" font-size="12" class="t-accent">Learns</text>
+      <text x="836" y="192" font-size="12">Did we call it</text>
+      <text x="836" y="208" font-size="12">right?</text>
+
+      <!-- exposure wedge -->
+      <text x="20" y="262" font-size="12" class="t-strong">Who can</text>
+      <text x="20" y="278" font-size="12" class="t-strong">see it</text>
+      <polygon points="260,290 920,290 920,246 260,284" class="wedge"/>
+      <text x="95" y="310" text-anchor="middle" font-size="12" class="t-muted">nobody</text>
+      <text x="355" y="310" text-anchor="middle" font-size="12" class="t-muted">a handful of accounts</text>
+      <text x="635" y="310" text-anchor="middle" font-size="12" class="t-muted">anyone who opts in</text>
+      <text x="870" y="310" text-anchor="middle" font-size="12" class="t-muted">every customer</text>
+    </svg>

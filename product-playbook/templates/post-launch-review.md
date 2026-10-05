@@ -1,7 +1,7 @@
 ---
 title: Post-Launch Review Template
 description: Measure outcomes, close the loop, decide what's next
-last_reviewed: 2026-07-10
+last_reviewed: 2026-10-05
 icon: "📋"
 ---
 
@@ -11,6 +11,18 @@ icon: "📋"
 **Shipped:** [Date]
 **Review type:** 2-week / 30-day / 90-day
 **Reviewer:** [Reviewer name]
+
+---
+
+## The two-week read (per phase)
+
+_Every [release phase](../release-phases.md) ends with a two-week read, not only GA. It decides exposure, not investment: widen, hold or pull. Record it in the phase's [release record](./release-record.md); the sections below are for the post-GA reviews._
+
+- **Working metric:** the Job Spec's leading indicator, actual vs target
+- **Not-working signal:** guardrail or abandon signal, hit or not hit
+- **Pricing call** (previews): Right / Over / Under
+- **Call scored:** Fired / Partial / Missed / Unscoreable, with the reason
+- **Decision:** Widen · Hold · Pull
 
 ---
 
@@ -126,7 +138,8 @@ _Customer feedback, support tickets, sales conversations since launch._
 
 | Review | When | Focus |
 |--------|------|-------|
-| **2-week** | 2 weeks post-launch | Early signal. Is it being used? Any red flags? Quick fixes needed? |
+| **2-week read** | 2 weeks after *each* phase goes on | Working or not, against the Job Spec measures. Widen, hold or pull. |
+| **2-week** | 2 weeks post-GA | Early signal. Is it being used? Any red flags? Quick fixes needed? |
 | **30-day** | 30 days post-launch | Trend check. Adoption trajectory. Feedback patterns emerging. |
 | **90-day** | 60-90 days post-launch | Full review. Data meets decision. Accelerate/Iterate/Pivot/Investigate/Stop. |
 
@@ -140,5 +153,6 @@ _Schedule all three reviews when you ship, not after. Add calendar invites at la
 
 ## Related
 
+- [Release Record](./release-record.md) -- where the per-phase two-week read is recorded
 - [Craft](../craft.md) -- the build loop the Mechanism Check closes
 - [Product Spec: the customer model](../../templates/product-spec.md#the-customer-model) -- where broken assumptions get fed back

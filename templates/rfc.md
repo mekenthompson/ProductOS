@@ -231,16 +231,19 @@ Release shapes (staged rollout, shadow run, champion-challenger, artefact rollba
 
 Fill the table below with the shape you chose (the flag column is illustrative; replace it with ramp %, shadow, or artefact version as fits):
 
-| Phase | Audience | Flag state | Exit criteria | Rollback |
-|---|---|---|---|---|
-| Private preview | 5–10 trusted accounts | ON for opted-in | `[signal 1]` ✓, `[signal 2]` ✓ | Flag OFF, no data left behind |
-| Public preview | Opted-in customers | ON for self-selected | Adoption ≥ X, no critical issues | Flag OFF, communicate to opted-in |
-| GA | All customers | ON by default | Maintained for 30 days post-GA | Flag OFF, post-mortem |
+| Phase | Audience | Flag state | Commitments | Exit criteria | Rollback |
+|---|---|---|---|---|---|
+| Private preview | 5–10 trusted accounts | ON for opted-in | No SLA, no price shown, Preview label | `[leading indicator]` moving, guardrails quiet, two-week read says widen | Flag OFF same day, no data left behind |
+| Public preview | Opted-in customers | ON for self-selected | No SLA, indicative price shown, Preview label | Adoption ≥ X, no critical issues, pricing evidence in | Flag OFF with notice to opted-in |
+| GA | All customers | ON by default | Standard SLA, price locked, label removed | Maintained for 30 days post-GA | Flag OFF, post-mortem |
+
+The commitments column is the per-phase default from [Release Phases](../product-playbook/release-phases.md#what-each-phase-commits-us-to); change it here only with a reason. The [Launch Readiness Check](../product-playbook/gates.md#gate-2-launch-readiness-check) runs before each row.
 
 **Instrumentation required before private preview:** the events here are the bottom rung of the [Measurement Chain](../anchors/measurement-chain.md), the layer that computes the Signal every rung above it depends on.
 - [ ] Event: `[event name]` -- measures `[which success signal]`
 - [ ] Dashboard: `[link]` -- covers headline + guardrails
 - [ ] Guardrail alert: `[metric]` triggers if it crosses `[threshold]`
+- [ ] Pricing hypothesis: `[price point]` on `[metric / model]`, paid by `[role]` -- indicative price shown in public preview, evidence read before GA
 
 ---
 

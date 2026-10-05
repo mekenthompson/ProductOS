@@ -1,7 +1,7 @@
 ---
 title: "Decision Framework: Signal → Standard → Speed"
 description: How to decide the right path for any piece of work
-last_reviewed: 2026-07-06
+last_reviewed: 2026-10-05
 icon: "📖"
 ---
 
@@ -23,8 +23,9 @@ Not everything needs an RFC. Not everything is a quick win. Match the path to th
 | **Process** | Flag with Tech Lead/PM, then ship | 1-page brief | Full RFC |
 | **Approval** | Tech Lead/PM alignment | PM + Tech Lead | Head of Product sign-off |
 | **Documentation** | Changelog if UX. Support notification always. | Problem, Solution, Acceptance Criteria, Metrics, Persona | RFC ([template](../templates/rfc.md)), RICE score |
-| **Feature flag** | Optional | Yes | Yes |
-| **Post-launch review** | No | 2-week check-in | 2wk / 30d / 90d reviews |
+| **Feature flag** | Required if customer-visible, otherwise optional | Yes | Yes |
+| **Release phases** | Straight to GA, one run of the gate | Straight to GA, one run of the gate (Private Preview first if the steps of the customer's job change) | Private Preview → Public Preview → GA, three runs of the gate |
+| **Post-launch review** | Two-week read | Two-week read per phase | Two-week read per phase, then 30d / 90d reviews |
 
 ---
 
@@ -55,10 +56,10 @@ If Standard fails, redesign the approach before you spend engineering time. A fa
 How big is the work? This determines the path.
 
 **≤ half a day → Quick Win**
-Flag it with your Tech Lead or PM. If it aligns with the team's current priorities, get on with it. No RFC needed, but use judgement: each team has a limited budget for Quick Wins per sprint so we stay focused on strategic work. Changelog if it changes UX. Always notify support. Tag it `quick-win` in your tracker.
+Flag it with your Tech Lead or PM. If it aligns with the team's current priorities, get on with it. No RFC needed, but use judgement: each team has a limited budget for Quick Wins per sprint so we stay focused on strategic work. If a customer will see it, it is a [release](./release-phases.md#what-counts-as-a-release): ship it behind a flag and run the [Launch Readiness Check](./gates.md#gate-2-launch-readiness-check) once, at Quick Win depth. Changelog if it changes UX. Always notify support. Tag it `quick-win` in your tracker.
 
 **Half a day – 2 weeks → Lightweight**
-Write a 1-page brief (see template below). Get PM + Tech Lead sign-off. Ship behind a feature flag. Do a 2-week check-in after launch.
+Write a 1-page brief (see template below). Get PM + Tech Lead sign-off. Ship behind a feature flag through one run of the [Launch Readiness Check](./gates.md#gate-2-launch-readiness-check), straight to GA unless the steps of the customer's job change, in which case Private Preview first. Two-week read after each phase.
 
 **> 2 weeks → Full Spec**
 Write a full [RFC](../templates/rfc.md) with a RICE score. Get Head of Product sign-off. Follow the full delivery process. The RFC references the relevant [Job Spec](../templates/job-spec.md), the durable outcome contract that outlives this initiative.
