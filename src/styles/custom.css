@@ -120,9 +120,11 @@
   margin: 1.5rem 0 2rem;
 }
 
-/* Header wordmark: compact, no drop shadow at nav size */
+/* Header wordmark: each 20-unit SVG tile lands on a 2px screen grid.
+   Fractional scaling makes the crisp-edged pixel strokes look broken. */
 .site-title img {
-  height: 1.35rem;
-  width: auto;
+  height: 24px;
+  width: 144px;
   max-width: 100%;
+  flex-shrink: 0;
 }
