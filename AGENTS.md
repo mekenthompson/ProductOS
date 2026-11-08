@@ -74,7 +74,8 @@ productos/
 ├── anchors/                        # the three anchors (human-owned)
 │   ├── product-vision.md           # How to write the product vision (guide + template)
 │   ├── product-principles.md       # How to write the standards your product is built to
-│   └── invariants.md               # The lines you won't cross by construction
+│   ├── invariants.md               # The lines you won't cross by construction
+│   └── measurement-chain.md        # How measurement ladders through the framework, and which artefact owns each rung
 ├── guides/                         # the OS method
 │   ├── agentic-delivery.md         # The four-part method (anchors, Job Specs, design loops, outcome UAT)
 │   ├── jtbd-guide.md               # Jobs to be Done in ProductOS (Christensen/Moesta/Klement, applied)
@@ -83,14 +84,18 @@ productos/
 │   ├── org-as-an-api.md            # Sequence the roadmap by joining feedback/support/CRM/finance around the job
 │   ├── adopting.md                 # How to bring ProductOS onto an existing product
 │   ├── writing-an-rfc.md           # RFC how-to (lifecycle, approval, delivery)
-│   └── strategy-as-code.md         # Strategy as a versioned, diffable artefact with decision records
+│   ├── strategy-as-code.md         # Strategy as a versioned, diffable artefact with decision records
+│   ├── positioning-and-messaging.md # Positioning and messaging derived from the specs you already have
+│   ├── product-analytics.md        # Instrumenting and reading a Signal
+│   └── what-is-productos.md        # The two-minute explainer
 ├── templates/                      # the OS blank shapes
 │   ├── product-spec.md             # The product-level layer: North Star, outcomes with Signals, the job index
 │   ├── job-spec.md                 # The durable per-job outcome doc (job/outcome/stakes; same spine, depth scales to stakes; outlives any RFC)
 │   ├── job-links.md                # The churny per-job join (accounts/ARR/renewals); serves: a Job Spec
 │   ├── rfc.md                      # The ship-coupled, per-initiative delivery doc (JTBD-led)
 │   ├── strategy.md                 # The STRATEGY.md spine (situation/thesis/pillars/deferrals/data-gaps)
-│   └── decision-record.md          # Dated record of why a strategy change was made; links to its commit
+│   ├── decision-record.md          # Dated record of why a strategy change was made; links to its commit
+│   └── copy-kit.md                 # The COPY-KIT.md a product keeps next to its specs
 ├── examples/tempo/                 # the single worked set: one fictional company (Tempo) in every layer
 │   ├── README.md                   # short overview: what Tempo is, the set in doc order
 │   ├── strategy/                   # Tempo strategy: README (front door), STRATEGY.md, decisions/
